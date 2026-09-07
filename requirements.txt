@@ -1,0 +1,14 @@
+APScheduler==3.10.4
+EbookLib==0.18
+feedparser==6.0.11
+Flask==3.1.0
+gunicorn==23.0.0
+google-api-python-client==2.160.0
+google-auth==2.38.0
+lxml_html_clean==0.4.1
+openai==1.63.2
+PyYAML==6.0.2
+pytest==8.3.4
+python-dotenv==1.0.1
+readability-lxml==0.8.1
+requests==2.32.3

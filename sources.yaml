@@ -1,0 +1,21 @@
+# Edit this file and commit the changes: it is the editorial source of truth.
+edition:
+  title: "Mads Morgen"
+  language: da
+  max_articles: 8
+  timezone: Europe/Copenhagen
+  schedule: "30 5 * * *" # 05:30 every day, in the timezone above
+  topics:
+    - Danmark
+    - verden
+    - teknologi
+    - videnskab
+    - kultur
+sources:
+  - name: DR Nyheder
+    url: https://www.dr.dk/nyheder/service/feeds/senestenyt
+    enabled: true
+  - name: The Guardian World
+    url: https://www.theguardian.com/world/rss
+    enabled: true
+
