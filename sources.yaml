@@ -10,6 +10,10 @@ edition:
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
     - Danmark
+    - dansk politik
+    - politik
+    - økonomi
+    - samfund
     - verden
     - teknologi
     - videnskab
@@ -17,12 +21,13 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 4
+  max_queries: 5
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
     - "dansk film kulturpolitik Det Danske Filminstitut nyheder -site:dfi.dk"
     - "kulturpolitik kultur analyse Esben Danielsen nyheder og analyser"
+    - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
 images:
   enabled: true
   max_per_article: 1

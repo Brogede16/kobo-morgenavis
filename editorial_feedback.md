@@ -18,3 +18,4 @@ Når du sender links til artikler, du ville eller ikke ville læse, gemmer Codex
 ## Historik
 
 - 2026-09-07: V1 oprettet med danske/verdens-, teknologi-, videnskabs- og kultur-emner.
+- 2026-09-07: Første kalibrering: prioriter substans, analyse og konsekvenser. Fravælg isolerede tekniske specifikationer og sensationspræget AI-risiko uden brugbar indsigt. Udvidet med dansk/international politik, samfund og økonomi.

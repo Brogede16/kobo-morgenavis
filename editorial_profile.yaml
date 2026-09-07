@@ -8,13 +8,15 @@ editorial:
   priorities:
     - Denmark and the world
     - technology, science, culture, and ideas
+    - Danish politics, public policy, economics, and society
+    - international politics and geopolitics when it explains consequences
     - significance over novelty
     - Apple/Mac, AI models, meaningful new AI features, and credible product leaks
     - Danish film, film policy, culture analysis, and Esben Danielsen's public analysis
   exclusions:
     - podcast launches
     - sponsored content, advertorials, giveaways, and affiliate shopping
-    - trivial rumours and repetitive live-blog updates
+    - trivial rumours, isolated technical specifications, and repetitive live-blog updates
     - generic “top stories” roundups as reading items
     - reviews of non-Apple hardware unless the wider technology angle is exceptional
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain."
@@ -32,11 +34,36 @@ examples:
       reason: "New AI models, capabilities, and implications are interesting."
     - url: https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/
       reason: "Changes to AI products, capability, price, and restrictions are useful."
+    - url: https://www.macrumors.com/2026/09/07/leak-hints-at-four-new-apple-watch-features/
+      reason: "Useful Apple leak with concrete user-facing features."
+    - url: https://www.macrumors.com/2026/09/07/apple-squeeze-more-revenue-from-app-store/
+      reason: "Apple business strategy and platform consequences are interesting."
+    - url: https://www.macrumors.com/2026/09/04/apple-home-security-camera-2027/
+      reason: "Apple AI product direction is relevant."
+    - url: https://www.macrumors.com/2026/09/04/macos-26-7-code-game-controllers/
+      reason: "A specific code discovery about future Apple products is useful."
+    - url: https://www.theguardian.com/technology/2026/apr/20/john-ternus-apple-ceo-tim-cook
+      reason: "Company leadership and strategic context add depth."
+    - url: https://www.theguardian.com/technology/2026/sep/03/nvidia-to-buy-hugging-face-in-129bn-deal
+      reason: "Major AI-platform shifts and their implications are interesting."
+    - url: https://www.theguardian.com/technology/2026/sep/05/uncontrollable-ai-artificial-general-intelligence-warnings
+      reason: "Longer AI governance analysis is useful when it is substantive rather than sensational."
+    - url: https://kulturensanalyseinstitut.dk/viden-artikler/rapport-midlertidig-kunst-i-byrummet/
+      reason: "In-depth culture analysis is welcome."
+    - url: https://kulturensanalyseinstitut.dk/wp-content/uploads/2026/08/Datadyk-og-indsigter-AUG26.pdf
+      reason: "Data-backed insight into Danish cultural life is useful."
+    - url: https://www.kl.dk/nyheder/kultur-og-fritid/2026/ny-webinarraekke-for-kulturpolitikere-kulturlivet-med-lokalpolitiske-briller
+      reason: "Culture policy with Esben Danielsen is relevant."
   skip:
     - url: https://www.macrumors.com/2026/09/05/top-stories-suprise-and-shine-preview/
       reason: "Do not select roundup/top-stories posts as reading items; use them only to discover newer original stories."
     - url: https://www.macrumors.com/review/acer-6k-touchscreen-display/
       reason: "Non-Apple hardware reviews are normally not relevant."
+    - url: https://www.macrumors.com/2026/09/03/iphone-18-pro-chip-leak-suggests-improvements/
+      reason: "A narrowly technical chip-spec leak lacks sufficient real-world relevance on its own."
+    - url: https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/
+      reason: "Avoid sensational AI-risk framing unless it delivers solid, useful insight."
+
 
 # Add a compact record for feedback examples, for instance:
 # read:

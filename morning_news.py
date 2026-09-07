@@ -51,8 +51,8 @@ def editorial_prompt_profile():
     return {
         "editorial": {key: value if not isinstance(value, str) else value[:500] for key, value in editorial.items()},
         "examples": {
-            "read": [compact_example(item) for item in examples.get("read", [])[:12] if isinstance(item, dict)],
-            "skip": [compact_example(item) for item in examples.get("skip", [])[:12] if isinstance(item, dict)],
+            "read": [compact_example(item) for item in examples.get("read", [])[-12:] if isinstance(item, dict)],
+            "skip": [compact_example(item) for item in examples.get("skip", [])[-12:] if isinstance(item, dict)],
         },
     }
 
