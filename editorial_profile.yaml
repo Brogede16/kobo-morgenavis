@@ -6,6 +6,7 @@ editorial:
     short_updates: "6-7 concise updates that matter today"
     longreads: "2-3 substantive analyses, explainers, or investigations"
     breadth: "Keep the core balance: Denmark/world, AI and technology, science, politics, culture, and selected personal interests. A stronger culture section must never crowd out the other core areas."
+    political_floor: "When the news day permits, include 1-2 concrete Danish political or public-policy stories: a decision, proposal, conflict, budget, regulation, or consequence — not merely a ceremonial appearance or a media roundup."
   priorities:
     - Denmark and the world
     - technology, science, culture, and ideas
@@ -71,13 +72,14 @@ editorial:
     - Apple and gadget rumours that merely change a specification, not what the product enables or how it is used
     - routine band-podcast mentions and minor celebrity/social updates
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain. No single source should dominate an edition. Use specialist outlets as one voice among several."
-  paywall_policy: "Information and Kulturmonitor may be used as signals for a topic or angle. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
+  paywall_policy: "Politiken, Information, and Kulturmonitor may be used as signals for a topic, angle, or story worth investigating. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
   film_policy: "Cover news about the Danish Film Institute through independent reporting, policy, funding, films, and industry impact — not the institute's own press releases or event promotion."
   culture_policy: "Prefer concrete cases and useful analysis over abstract cultural theory. A concise, practical piece about how an institution reaches younger audiences can beat a longer, more ponderous feature on the same subject. Institutional press releases may be a lead, but need independent context before they become a reading item. Cover big cultural events and releases when they have real Danish relevance — for example a major international artist, exhibition, film, or cultural moment — but not routine domestic pop-release promotion. DR Kultur is a useful source alongside independent coverage."
   daily_readiness_test: "Every selected story should earn its place by helping the reader understand what matters today, anticipate a likely conversation, or gain useful context. Maintain a clear Danish frame while including international developments with consequences or resonance in Denmark."
   photography_source_policy: "For photography learning, prefer Magnum Learn, Canon Learning/Canon Europe, Nikon Learn, Adobe Photography, Digital Photography Review when it teaches, National Geographic photographers, established professional photographers, Royal Photographic Society, and selectively PetaPixel tutorials or interviews. Do not select camera shopping or ordinary gear-release coverage."
   gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
   place_and_systems_policy: "These stories should be selected for substance: a meaningful project, real operational insight, strong case study, or a concrete consequence. Treat event-production, hospitality, pricing, infrastructure, and institutional-business stories as longread-friendly rather than daily filler."
+  readability_policy: "Do not select institutional press releases, official news roundups, or technically dense research announcements as the main reading item when a clearer journalistic explainer is available. A science story must explain the surprising question, what changed, and why it matters in ordinary Danish; primary sources may support the summary but should not become homework."
 examples:
   read:
     - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/
