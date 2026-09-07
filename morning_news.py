@@ -376,8 +376,23 @@ def upload_to_drive(path):
     metadata = {"name": path.name, "parents": [folder_id], "mimeType": "application/epub+zip"}
     media = MediaFileUpload(str(path), mimetype="application/epub+zip", resumable=True)
     if existing:
-        return drive.files().update(fileId=existing[0]["id"], body=metadata, media_body=media, fields="id,name").execute()
-    return drive.files().create(body=metadata, media_body=media, fields="id,name").execute()
+        uploaded = drive.files().update(fileId=existing[0]["id"], body=metadata, media_body=media, fields="id,name").execute()
+    else:
+        uploaded = drive.files().create(body=metadata, media_body=media, fields="id,name").execute()
+    prune_old_drive_editions(drive, folder_id)
+    return uploaded
+
+
+def prune_old_drive_editions(drive, folder_id, keep=10):
+    """Keep the Kobo folder tidy: retain only the ten newest generated editions."""
+    files = drive.files().list(
+        q=f"'{folder_id}' in parents and name contains 'mads-morgen-' and trashed=false",
+        orderBy="createdTime desc",
+        fields="files(id,name,createdTime)",
+        pageSize=100,
+    ).execute().get("files", [])
+    for file in files[keep:]:
+        drive.files().delete(fileId=file["id"]).execute()
 
 
 def run_edition(settings=None, use_web_search=None):

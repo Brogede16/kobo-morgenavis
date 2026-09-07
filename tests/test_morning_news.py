@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, select_articles
+from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
 
 
 def settings():
@@ -69,3 +69,20 @@ def test_web_candidates_are_reserved_before_global_cap():
     feeds = [{"title": str(i), "source": "RSS", "url": f"https://rss/{i}", "summary": ""} for i in range(5)]
     web = [{"title": str(i), "source": "Web", "url": f"https://web/{i}", "summary": ""} for i in range(2)]
     assert [item["source"] for item in merge_candidate_pools(feeds, web, configured)] == ["RSS", "RSS", "Web", "Web"]
+
+
+def test_drive_retention_deletes_only_editions_beyond_ten():
+    class Files:
+        def __init__(self):
+            self.deleted = []
+
+        def list(self, **kwargs):
+            return type("Request", (), {"execute": lambda _: {"files": [{"id": str(i)} for i in range(12)]}})()
+
+        def delete(self, fileId):
+            self.deleted.append(fileId)
+            return type("Request", (), {"execute": lambda _: {}})()
+
+    files = Files()
+    prune_old_drive_editions(type("Drive", (), {"files": lambda _: files})(), "folder")
+    assert files.deleted == ["10", "11"]

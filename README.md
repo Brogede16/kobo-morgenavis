@@ -43,13 +43,15 @@ Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke 
 
 ### Feedback fra den lille hjemmeside
 
-Efter en udgave er kørt, viser forsiden dens valgte artikler med **Mere af den slags** og **Mindre af den slags**. Du kan valgfrit markere, om det drejer sig om emne, vinkel, dybde, nørdeniveau eller kilde. Feedback er lavet til at blive givet lejlighedsvist, ikke hver dag. Når GitHub-feedback er slået til, gemmer hvert klik artikelens titel, kilde, URL, korte resumé og dit valg i `feedback/events.jsonl` på den separate GitHub-branch `feedback-data`; dagens artikelkort arkiveres som `feedback/editions/YYYY-MM-DD.json` samme sted. Der bevares altid højst de seneste ti dagsudgaver; den ældste slettes ved næste kørsel. Den branche deployes ikke af Render, som fortsat følger `main`.
+Efter en udgave er kørt, viser forsiden dens valgte artikler med **Mere af den slags** og **Mindre af den slags**. Du kan valgfrit markere, om det drejer sig om emne, vinkel, dybde, om det er uinteressant, eller om det er godt men for nørdet. Feedback er lavet til at blive givet lejlighedsvist, ikke hver dag. Når GitHub-feedback er slået til, gemmer hvert klik artikelens titel, kilde, URL, korte resumé og dit valg i `feedback/events.jsonl` på den separate GitHub-branch `feedback-data`; dagens artikelkort arkiveres som `feedback/editions/YYYY-MM-DD.json` samme sted. Der bevares altid højst de seneste ti dagsudgaver; den ældste slettes ved næste kørsel. Den branche deployes ikke af Render, som fortsat følger `main`.
 
 Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo-morgenavis` og `GITHUB_FEEDBACK_TOKEN`. Tokenet skal være en GitHub fine-grained personal access token begrænset til dette ene repo med **Contents: Read and write**. Appen opretter selv `feedback-data` ved første synkronisering. Klikfeedback indgår som kompakte signaler i den næste Gemini-udvælgelse; den redigerede, varige profil kan derefter opdateres og committes til `main`.
 
 ### Langt, kort og grafik
 
 Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes højst ét hero-billede pr. artikel fra sidens Open Graph-metadata og pakkes *ind i* EPUB’en. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
+
+Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis slettes permanent ved næste succesfulde upload; andre filer i mappen berøres ikke.
 
 ## Secrets og miljøvariabler
 
