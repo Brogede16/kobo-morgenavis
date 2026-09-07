@@ -39,3 +39,31 @@ sources:
     url: https://www.theguardian.com/world/rss
     enabled: true
     format: mixed
+  - name: BBC World
+    url: https://feeds.bbci.co.uk/news/world/rss.xml
+    enabled: true
+    format: short
+  - name: BBC Technology
+    url: https://feeds.bbci.co.uk/news/technology/rss.xml
+    enabled: true
+    format: short
+  - name: Ars Technica
+    url: https://feeds.arstechnica.com/arstechnica/index
+    enabled: true
+    format: mixed
+  - name: WIRED
+    url: https://www.wired.com/feed/rss
+    enabled: true
+    format: mixed
+  - name: MIT Technology Review
+    url: https://www.technologyreview.com/feed/
+    enabled: true
+    format: longread
+  - name: The Guardian Technology
+    url: https://www.theguardian.com/uk/technology/rss
+    enabled: true
+    format: mixed
+  - name: The Conversation
+    url: https://theconversation.com/global/articles.atom
+    enabled: true
+    format: longread
