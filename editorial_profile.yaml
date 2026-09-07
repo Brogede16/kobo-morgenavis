@@ -19,11 +19,26 @@ editorial:
     - museum development, younger audiences, visitor data, cultural participation, and the changing economics of cinemas
     - cultural institutions' brand partnerships and sponsorship, especially when the story examines independence, audience value, or the trade-off involved
     - practical AI in cultural institutions and other real-world work, rather than vague futurism
+    - concrete audience development: methods, cases, young audiences, behaviour, segmentation, CRM, visitor surveys, and how insight changes programming or the guest experience
+    - cultural institutions that try new formats, hours, events, memberships, services, and alternative revenue models
+    - practical cultural technology: ticketing, automation, APIs, data, and digital experiences with a clear application
+    - AI agents and the consequences of AI acting more independently; what new capabilities practically enable, rather than version-number coverage
+    - vibe coding, solo builders, AI-assisted software, small apps, automations, and people building without a conventional developer background
+    - unusual, forward-looking AI ideas, architectures, research groups, or startups when the underlying idea is genuinely compelling
     - astronomy and space science when there is a substantial discovery, dataset, or new way to understand the universe
+    - cosmology and accessible science journalism about dark matter, dark energy, extra dimensions, and other big questions
+    - major discoveries in biology, evolution, archaeology, geology, oceans, climate, and human history
+    - interactive maps, visualisations, public datasets, and projects the reader can explore firsthand
+    - hidden places and systems: bunkers, tunnels, archives, datacentres, infrastructure, underground sites, and normally inaccessible systems
+    - historical mysteries and new discoveries that revise what we thought we knew
     - meaningful wearable launches, features, and health/technology developments
     - major gaming news for Age of Empires, Warcraft, survival games, 7 Days to Die, and GTA — only launches, major expansions, or genuinely consequential changes
     - Planet Zoo as a personal deep-interest: major news, a sequel, expansion, or substantial change deserves more context than ordinary game coverage
-    - beginner-friendly photography learning from established, credible educators or institutions
+    - beginner-to-intermediate photography learning from established, credible educators or institutions — learning, not product news
+    - personal technology that changes everyday use: Kobo/e-ink, automation, sensors, smart home, and purposeful devices
+    - nerd-built internet projects: personal newspapers, maps, Raspberry Pi builds, unusual databases, and ambitious individual projects
+    - major news about The Cure, New Order, Depeche Mode, and Kraftwerk: albums, significant tours, reunions, breakups, or substantial interviews
+    - subcultures, especially the emergence or revival of scenes, music, fashion, clubs, and communities
     - culture and film gossip when it reveals power, money, conflict, ownership, or creative direction
   exclusions:
     - podcast launches
@@ -33,11 +48,15 @@ editorial:
     - reviews of non-Apple hardware unless the wider technology angle is exceptional
     - minor game patches, routine seasonal updates, and low-consequence gaming rumours
     - generic photography gear shopping, unverified tutorials, and low-quality creator content
+    - Apple and gadget rumours that merely change a specification, not what the product enables or how it is used
+    - routine band-podcast mentions and minor celebrity/social updates
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain. No single source should dominate an edition. Use specialist outlets as one voice among several."
   paywall_policy: "Information and Kulturmonitor may be used as signals for a topic or angle. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
   film_policy: "Cover news about the Danish Film Institute through independent reporting, policy, funding, films, and industry impact — not the institute's own press releases or event promotion."
   culture_policy: "Prefer concrete cases and useful analysis over abstract cultural theory. A concise, practical piece about how an institution reaches younger audiences can beat a longer, more ponderous feature on the same subject. Institutional press releases may be a lead, but need independent context before they become a reading item. Cover big cultural events and releases when they have real Danish relevance — for example a major international artist, exhibition, film, or cultural moment — but not routine domestic pop-release promotion. DR Kultur is a useful source alongside independent coverage."
   daily_readiness_test: "Every selected story should earn its place by helping the reader understand what matters today, anticipate a likely conversation, or gain useful context. Maintain a clear Danish frame while including international developments with consequences or resonance in Denmark."
+  photography_source_policy: "For photography learning, prefer Magnum Learn, Canon Learning/Canon Europe, Nikon Learn, Adobe Photography, Digital Photography Review when it teaches, National Geographic photographers, established professional photographers, Royal Photographic Society, and selectively PetaPixel tutorials or interviews. Do not select camera shopping or ordinary gear-release coverage."
+  gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
 examples:
   read:
     - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/
