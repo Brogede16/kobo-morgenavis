@@ -78,7 +78,7 @@ def fetch_candidates(settings):
                     "format": source.get("format", "mixed"),
                 })
     # An article syndicated in several feeds should appear once.
-    return list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
+    return list({item["url"]: item for item in candidates}.values())
 
 
 def fetch_news_site_signals(settings):
@@ -100,7 +100,7 @@ def fetch_news_site_signals(settings):
             response.raise_for_status()
             document = lxml_html.fromstring(response.content)
             hostname = urlparse(url).netloc
-            seen, found = set(), 0
+            seen, found, previewed = set(), 0, 0
             for anchor in document.xpath("//a[@href]"):
                 title = " ".join(anchor.xpath(".//text()")).strip()
                 href = urljoin(url, anchor.get("href", ""))
@@ -108,13 +108,38 @@ def fetch_news_site_signals(settings):
                         urlparse(href).netloc != hostname):
                     continue
                 seen.add(href)
-                signals.append({"source": site.get("name", hostname), "title": title[:220], "url": href})
+                signal = {"source": site.get("name", hostname), "title": title[:220], "url": href}
+                if previewed < int(site.get("max_previews", 3)):
+                    preview = fetch_public_preview(href)
+                    if preview:
+                        signal["preview"] = preview
+                    previewed += 1
+                signals.append(signal)
                 found += 1
                 if found >= int(site.get("max_items", 8)):
                     break
         except (requests.RequestException, ValueError, TypeError) as exc:
             logger.info("Could not read news signals from %s (%s)", url, exc)
     return signals
+
+
+def fetch_public_preview(url):
+    """Return a short public description for editorial understanding, not EPUB use."""
+    try:
+        response = requests.get(url, timeout=12, headers={"User-Agent": "MadsMorgen/1.0 (+personal reader)"})
+        response.raise_for_status()
+        document = lxml_html.fromstring(response.content)
+        descriptions = document.xpath(
+            "//meta[translate(@name, 'DESCRIPTION', 'description')='description']/@content | "
+            "//meta[@property='og:description']/@content"
+        )
+        preview = " ".join(descriptions).strip()
+        if not preview:
+            paragraphs = [" ".join(node.xpath(".//text()")).strip() for node in document.xpath("//p")]
+            preview = next((text for text in paragraphs if len(text) >= 80), "")
+        return re.sub(r"\s+", " ", preview)[:420]
+    except (requests.RequestException, ValueError, TypeError):
+        return ""
 
 
 def fetch_web_candidates(settings):
@@ -155,6 +180,16 @@ def shortlist_candidates(candidates, settings):
         text = (item["title"] + " " + item["summary"]).lower()
         return sum(term in text for term in topics.split()) + len(item["summary"]) / 10000
     return sorted(candidates, key=score, reverse=True)[:int(settings["edition"].get("ai_shortlist_size", 80))]
+
+
+def merge_candidate_pools(feed_candidates, web_candidates, settings):
+    """Reserve room for web/news-radar results before applying the global cap."""
+    edition = settings["edition"]
+    total_limit = int(edition["max_candidates"])
+    reserve = min(len(web_candidates), int(edition.get("web_candidate_reserve", 30)))
+    combined = feed_candidates[:max(0, total_limit - reserve)] + web_candidates
+    deduped = list({item["url"]: item for item in combined}.values())
+    return deduped[:total_limit]
 
 
 def enforce_source_diversity(selected, candidates, settings):
@@ -317,8 +352,9 @@ def run_edition(settings=None, use_web_search=None):
     candidates = fetch_candidates(settings)
     web_config = settings.get("web_search", {})
     if use_web_search if use_web_search is not None else web_config.get("enabled_for_schedule", False):
-        candidates.extend(fetch_web_candidates(settings))
-        candidates = list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
+        candidates = merge_candidate_pools(candidates, fetch_web_candidates(settings), settings)
+    else:
+        candidates = candidates[:int(settings["edition"]["max_candidates"])]
     articles = select_articles(candidates, settings)
     if not articles:
         raise RuntimeError("No articles found; EPUB was not generated")

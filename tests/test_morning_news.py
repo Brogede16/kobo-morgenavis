@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, select_articles
+from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, select_articles
 
 
 def settings():
@@ -43,3 +43,11 @@ def test_source_diversity_caps_a_single_outlet():
     configured["edition"]["max_articles"] = 3
     configured["edition"]["max_articles_per_source"] = 2
     assert [item["source"] for item in enforce_source_diversity(items, items, configured)] == ["One", "One", "Two"]
+
+
+def test_web_candidates_are_reserved_before_global_cap():
+    configured = settings()
+    configured["edition"].update({"max_candidates": 4, "web_candidate_reserve": 2})
+    feeds = [{"title": str(i), "source": "RSS", "url": f"https://rss/{i}", "summary": ""} for i in range(5)]
+    web = [{"title": str(i), "source": "Web", "url": f"https://web/{i}", "summary": ""} for i in range(2)]
+    assert [item["source"] for item in merge_candidate_pools(feeds, web, configured)] == ["RSS", "RSS", "Web", "Web"]
