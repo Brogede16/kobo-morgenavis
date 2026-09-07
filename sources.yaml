@@ -19,6 +19,9 @@ edition:
     - teknologi
     - videnskab
     - kultur
+    - museer
+    - spil
+    - fotografi
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
@@ -28,7 +31,7 @@ web_search:
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
     - "dansk film kulturpolitik Det Danske Filminstitut -site:dfi.dk Esben Danielsen analyser"
     - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
-    - "AI teknologi geopolitik overvågning aktuelle analyser prefer site:restofworld.org OR site:404media.co OR site:arstechnica.com OR site:wired.com"
+    - "museer kulturinstitutioner publikum data brand partnerships biografer AI kultur aktuelle analyser"
 source_limits:
   MacRumors: 1
   TechCrunch: 2

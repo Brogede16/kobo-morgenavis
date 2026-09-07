@@ -13,15 +13,26 @@ editorial:
     - significance over novelty
     - Apple/Mac, AI models, meaningful new AI features, and credible product leaks
     - Danish film, film policy, culture analysis, and Esben Danielsen's public analysis
+    - museum development, younger audiences, visitor data, cultural participation, and the changing economics of cinemas
+    - cultural institutions' brand partnerships and sponsorship, especially when the story examines independence, audience value, or the trade-off involved
+    - practical AI in cultural institutions and other real-world work, rather than vague futurism
+    - astronomy and space science when there is a substantial discovery, dataset, or new way to understand the universe
+    - meaningful wearable launches, features, and health/technology developments
+    - major gaming news for Age of Empires, Warcraft, survival games, and 7 Days to Die — only launches, major expansions, or genuinely consequential changes
+    - beginner-friendly photography learning from established, credible educators or institutions
+    - culture and film gossip when it reveals power, money, conflict, ownership, or creative direction
   exclusions:
     - podcast launches
     - sponsored content, advertorials, giveaways, and affiliate shopping
     - trivial rumours, isolated technical specifications, and repetitive live-blog updates
     - generic “top stories” roundups as reading items
     - reviews of non-Apple hardware unless the wider technology angle is exceptional
+    - minor game patches, routine seasonal updates, and low-consequence gaming rumours
+    - generic photography gear shopping, unverified tutorials, and low-quality creator content
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain. No single source should dominate an edition. Use specialist outlets as one voice among several."
   paywall_policy: "Information and Kulturmonitor may be used as signals for a topic or angle. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
   film_policy: "Cover news about the Danish Film Institute through independent reporting, policy, funding, films, and industry impact — not the institute's own press releases or event promotion."
+  culture_policy: "Prefer concrete cases and useful analysis over abstract cultural theory. A concise, practical piece about how an institution reaches younger audiences can beat a longer, more ponderous feature on the same subject. Institutional press releases may be a lead, but need independent context before they become a reading item."
 examples:
   read:
     - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/
@@ -54,6 +65,18 @@ examples:
       reason: "Data-backed insight into Danish cultural life is useful."
     - url: https://www.kl.dk/nyheder/kultur-og-fritid/2026/ny-webinarraekke-for-kulturpolitikere-kulturlivet-med-lokalpolitiske-briller
       reason: "Culture policy with Esben Danielsen is relevant."
+    - url: https://www.cultureowl.com/industry-news/how-museums-can-attract-younger-audiences
+      reason: "Practical, focused coverage of how museums reach younger audiences is more appealing than a long, diffuse cultural feature on the same theme."
+    - url: https://www.whiteladies-picturehouse.com/event-based-screenings-changing-business-models/
+      reason: "The changing business model of cinemas and event-based programming is relevant culture-industry coverage."
+    - url: https://www.dst.dk/da/Statistik/udgivelser/NytHtml?cid=53124
+      reason: "Official Danish statistics can provide useful, concrete context for culture and society."
+    - url: https://www.museumsassociation.org/museums-journal/opinion/2026/07/just-dont-let-it-turn-into-disney-why-brand-partnerships-need-a-better-test/
+      reason: "Critical analysis of museum brand partnerships and institutional independence is welcome."
+    - url: https://aim-museums.co.uk/news/where-do-i-start-with-ai/
+      reason: "Practical, credible guidance on AI for museums is useful."
+    - url: https://www.wired.com/story/astronomers-complete-largest-map-of-space-yes-you-can-play-with-it/
+      reason: "Major astronomy datasets and discoveries are interesting when they explain why the result matters."
   skip:
     - url: https://www.macrumors.com/2026/09/05/top-stories-suprise-and-shine-preview/
       reason: "Do not select roundup/top-stories posts as reading items; use them only to discover newer original stories."
@@ -78,7 +101,7 @@ examples:
     - url: https://www.theguardian.com/business/2026/sep/05/food-delivery-riders-platforms-open-ai-black-box-cut-pay
       reason: "This labour-platform angle is not a priority."
     - url: https://techcrunch.com/2026/09/05/oura-is-going-public-but-these-smart-ring-companies-are-coming-for-its-crown/
-      reason: "Wearable-business news is not a priority."
+      reason: "An IPO and competitive-business framing alone is not enough; wearable product features, launches, and meaningful health technology remain relevant."
     - url: https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/
       reason: "Too technical and niche."
     - url: https://www.theguardian.com/us-news/2026/sep/04/trump-argentina-falklands-uk
@@ -88,7 +111,7 @@ examples:
     - url: https://www.theguardian.com/technology/2026/sep/06/online-bookies-privacy-breaches-cookies-tracking
       reason: "This privacy-regulation angle is not a priority."
     - url: https://techcrunch.com/2026/09/07/a-secret-new-elizabeth-holmes-documentary-stuns-telluride/
-      reason: "Entertainment-industry gossip is not a priority."
+      reason: "Celebrity/documentary gossip alone is not enough; culture and film gossip can be selected when it reveals meaningful power, money, conflict, ownership, or creative consequences."
 
 
 # Add a compact record for feedback examples, for instance:
