@@ -25,7 +25,7 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 6
+  max_queries: 7
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -33,6 +33,7 @@ web_search:
     - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
     - "museer kulturinstitutioner publikum data brand partnerships biografer AI kultur aktuelle analyser"
     - "site:dr.dk/kultur dansk kulturpolitik store kulturelle begivenheder udstillinger koncerter film aktuelle nyheder"
+    - "Warcraft Age of Empires Planet Zoo GTA survival games major announcement sequel expansion release date news"
 source_limits:
   MacRumors: 1
   TechCrunch: 2

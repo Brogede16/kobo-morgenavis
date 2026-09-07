@@ -5,6 +5,7 @@ editorial:
   desired_mix:
     short_updates: "6-7 concise updates that matter today"
     longreads: "2-3 substantive analyses, explainers, or investigations"
+    breadth: "Keep the core balance: Denmark/world, AI and technology, science, politics, culture, and selected personal interests. A stronger culture section must never crowd out the other core areas."
   priorities:
     - Denmark and the world
     - technology, science, culture, and ideas
@@ -20,7 +21,8 @@ editorial:
     - practical AI in cultural institutions and other real-world work, rather than vague futurism
     - astronomy and space science when there is a substantial discovery, dataset, or new way to understand the universe
     - meaningful wearable launches, features, and health/technology developments
-    - major gaming news for Age of Empires, Warcraft, survival games, and 7 Days to Die — only launches, major expansions, or genuinely consequential changes
+    - major gaming news for Age of Empires, Warcraft, survival games, 7 Days to Die, and GTA — only launches, major expansions, or genuinely consequential changes
+    - Planet Zoo as a personal deep-interest: major news, a sequel, expansion, or substantial change deserves more context than ordinary game coverage
     - beginner-friendly photography learning from established, credible educators or institutions
     - culture and film gossip when it reveals power, money, conflict, ownership, or creative direction
   exclusions:
@@ -80,6 +82,8 @@ examples:
       reason: "Practical, credible guidance on AI for museums is useful."
     - url: https://www.wired.com/story/astronomers-complete-largest-map-of-space-yes-you-can-play-with-it/
       reason: "Major astronomy datasets and discoveries are interesting when they explain why the result matters."
+    - url: https://www.planetzoogame.com/
+      reason: "Planet Zoo is a particular personal interest. A sequel, major expansion, or substantial new direction should receive deeper coverage."
   skip:
     - url: https://www.macrumors.com/2026/09/05/top-stories-suprise-and-shine-preview/
       reason: "Do not select roundup/top-stories posts as reading items; use them only to discover newer original stories."
