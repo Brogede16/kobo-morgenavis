@@ -63,6 +63,32 @@ examples:
       reason: "A narrowly technical chip-spec leak lacks sufficient real-world relevance on its own."
     - url: https://techcrunch.com/2026/09/04/openais-rogue-agents-keep-escaping-with-no-formal-process-to-investigate-them/
       reason: "Avoid sensational AI-risk framing unless it delivers solid, useful insight."
+    - url: https://www.macrumors.com/2026/09/04/iphone-duo/
+      reason: "Too vague as a headline; do not select teaser-like product speculation."
+    - url: https://arstechnica.com/ai/2026/09/anthropics-2-trillion-ipo-puts-powerful-external-trustees-in-spotlight/
+      reason: "Corporate-governance framing is not sufficiently compelling on its own."
+    - url: https://www.wired.com/story/openai-astra-first-ai-model-with-critical-cyber-abilities/
+      reason: "Avoid dramatic cyber-capability framing without practical insight."
+    - url: https://www.wired.com/story/whispering-complaints-into-your-phone-may-be-the-future-of-customer-feedback/
+      reason: "Consumer-product speculation is too slight."
+    - url: https://www.theguardian.com/technology/2026/sep/01/datacenter-backlash-conservatives-silicon-valley
+      reason: "Do not repeat closely similar datacentre-politics stories in one edition."
+    - url: https://www.theguardian.com/world/2026/sep/02/wednesday-briefing-whats-behind-the-global-backlash-against-datacentres
+      reason: "Do not repeat closely similar datacentre-politics stories in one edition."
+    - url: https://www.theguardian.com/business/2026/sep/05/food-delivery-riders-platforms-open-ai-black-box-cut-pay
+      reason: "This labour-platform angle is not a priority."
+    - url: https://techcrunch.com/2026/09/05/oura-is-going-public-but-these-smart-ring-companies-are-coming-for-its-crown/
+      reason: "Wearable-business news is not a priority."
+    - url: https://arstechnica.com/security/2026/09/once-popular-for-attacking-ai-ascii-smuggling-is-embraced-by-spammers/
+      reason: "Too technical and niche."
+    - url: https://www.theguardian.com/us-news/2026/sep/04/trump-argentina-falklands-uk
+      reason: "This geopolitical angle is too peripheral."
+    - url: https://arstechnica.com/tech-policy/2026/09/trump-admin-fights-abc-lawsuit-as-watchdogs-worry-disney-will-settle-with-fcc/
+      reason: "US media-regulation detail is not a priority."
+    - url: https://www.theguardian.com/technology/2026/sep/06/online-bookies-privacy-breaches-cookies-tracking
+      reason: "This privacy-regulation angle is not a priority."
+    - url: https://techcrunch.com/2026/09/07/a-secret-new-elizabeth-holmes-documentary-stuns-telluride/
+      reason: "Entertainment-industry gossip is not a priority."
 
 
 # Add a compact record for feedback examples, for instance:
