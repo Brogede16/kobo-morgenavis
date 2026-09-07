@@ -7,6 +7,7 @@ import os
 import re
 from datetime import date
 from pathlib import Path
+from urllib.parse import urljoin, urlparse
 
 import feedparser
 import yaml
@@ -17,6 +18,7 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 from google import genai
 from google.genai import types
+from lxml import html as lxml_html
 from readability import Document
 import requests
 
@@ -79,14 +81,54 @@ def fetch_candidates(settings):
     return list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
 
 
+def fetch_news_site_signals(settings):
+    """Read headline-level signals from selected news sections, never article bodies.
+
+    Paywalled publishers remain editorial radar only. Their headlines inform the
+    grounded search below, which must return accessible reporting instead.
+    """
+    signals = []
+    config = settings.get("news_site_signals", {})
+    for site in config.get("sites", []):
+        if not site.get("enabled", True):
+            continue
+        url = site.get("url", "")
+        if not url.startswith("https://"):
+            continue
+        try:
+            response = requests.get(url, timeout=12, headers={"User-Agent": "MadsMorgen/1.0 (+personal reader)"})
+            response.raise_for_status()
+            document = lxml_html.fromstring(response.content)
+            hostname = urlparse(url).netloc
+            seen, found = set(), 0
+            for anchor in document.xpath("//a[@href]"):
+                title = " ".join(anchor.xpath(".//text()")).strip()
+                href = urljoin(url, anchor.get("href", ""))
+                if (not 28 <= len(title) <= 220 or href in seen or
+                        urlparse(href).netloc != hostname):
+                    continue
+                seen.add(href)
+                signals.append({"source": site.get("name", hostname), "title": title[:220], "url": href})
+                found += 1
+                if found >= int(site.get("max_items", 8)):
+                    break
+        except (requests.RequestException, ValueError, TypeError) as exc:
+            logger.info("Could not read news signals from %s (%s)", url, exc)
+    return signals
+
+
 def fetch_web_candidates(settings):
-    """Use at most a couple of search queries; disabled by default to control spend."""
+    """Use one bounded, grounded search for configured topics and news-site signals."""
     config = settings.get("web_search", {})
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key or not config.get("queries"):
         return []
     queries = config["queries"][:int(config.get("max_queries", 2))]
+    signals = fetch_news_site_signals(settings)
     prompt = ("Find aktuelle, troværdige nyhedsartikler for disse søgninger: " + json.dumps(queries, ensure_ascii=False) +
+              ". Headlines from selected Danish news sites are editorial leads only: " +
+              json.dumps(signals[:24], ensure_ascii=False) +
+              ". For a lead from a paywalled site, find accessible original or independent reporting about the same matter; never return a paywalled page. " +
               '. Return ONLY JSON: {"articles":[{"title":"...","url":"https://...","source":"...","summary":"max 240 chars"}]}. '
               "Return at most 8 articles total; only direct article URLs.")
     response = genai.Client(api_key=api_key).models.generate_content(

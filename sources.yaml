@@ -25,7 +25,7 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 16
+  max_queries: 17
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -44,6 +44,19 @@ web_search:
     - "major cyber attack explained USB JPEG Bluetooth QR code standard cinema laser IMAX 70mm HDR AI generated game prototype management game"
     - "animal cognition octopus crow raven whale elephant geoengineering Dyson sphere astronomical anomaly Denmark critical infrastructure bunker tunnel metro utilities"
     - "site:politiken.dk/politik OR site:information.dk Danmark politik reform lovforslag minister konflikt analyse OR site:kulturmonitor.dk kulturpolitik"
+news_site_signals:
+  # Headline-level editorial radar. These URLs are not copied into the EPUB.
+  # The bounded Gemini Google Search call seeks accessible reporting on the leads.
+  sites:
+    - name: Politiken Politik
+      url: https://politiken.dk/politik/
+      max_items: 8
+    - name: Information Indland
+      url: https://www.information.dk/indland
+      max_items: 8
+    - name: Kulturmonitor
+      url: https://kulturmonitor.dk/
+      max_items: 8
 source_limits:
   MacRumors: 1
   TechCrunch: 2

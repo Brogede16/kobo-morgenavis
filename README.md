@@ -6,7 +6,7 @@ Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del
 
 ## Sådan virker den
 
-`sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. kilde), kombinerer det med tre faste Google-søgninger og triagerer lokalt ned til en AI-shortlist. Derefter vælger Gemini den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
+`sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. RSS-kilde), læser et lille sæt danske nyhedssektioner på **overskriftsniveau** og kombinerer det med én begrænset, Google-grounded søgekørsel. Overskrifter fra Politiken, Information og Kulturmonitor er kun redaktionel radar: appen kopierer aldrig deres tekst eller leverer en betalingsmuret artikel, men finder i stedet tilgængelig original eller uafhængig dækning af sagen. Derefter triageres der lokalt ned til en AI-shortlist, og Gemini vælger den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
 
 Kildediversitet håndhæves også i kode: standarden er højst to artikler pr. outlet, og MacRumors højst én. Rest of World og 404 Media indgår som web-radarer, så teknologidækningen ikke alene følger produktnyheder eller de største teknologimedier.
 
@@ -37,9 +37,9 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk med fem redaktionelt afgrænsede søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Den komplette redaktionelle historik bliver i Git, mens de seneste 12 positive og 12 negative feedback-eksempler indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
+Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk med afgrænsede redaktionelle søgespor og 700 outputtokens; der er stadig kun ét søgekald pr. udgave. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Den komplette redaktionelle historik bliver i Git, mens de seneste 12 positive og 12 negative feedback-eksempler indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
 
-Paywalls som Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
+Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
 ### Langt, kort og grafik
 
@@ -82,6 +82,6 @@ Render deployer automatisk ved push til `main`. Loggene i Render viser antal fun
 
 ## Begrænsninger i v1
 
-- Kun RSS-feeds i første version; enkelte websites kan senere tilføjes som særskilte adapters.
+- RSS-feeds er stadig hovedkilder. Et lille, konfigureret sæt nyhedssektioner kan læses på overskriftsniveau som redaktionel radar; layout- eller adgangsændringer hos de enkelte sites kan gøre et signal midlertidigt utilgængeligt.
 - Artikelsider hentes kun som almindelige web-sider og kan falde tilbage til RSS-resumé, hvis de er blokerede.
 - Drive-import til Kobo er et Kobo-trin, ikke en automatisk push-kanal.
