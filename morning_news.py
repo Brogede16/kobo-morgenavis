@@ -331,17 +331,20 @@ def build_epub(articles, settings, output_dir=ROOT / "output"):
     intro.content = f"<h1>{html.escape(title)}</h1><p>{len(articles)} udvalgte historier.</p>"
     book.add_item(intro)
     chapters = [intro]
+    images_added = 0
+    image_settings = settings.get("images", {})
+    image_limit = int(image_settings.get("max_per_edition", len(articles)))
     for number, article in enumerate(articles, start=1):
         chapter = epub.EpubHtml(title=article["title"], file_name=f"article-{number}.xhtml", lang="da")
         image_markup = ""
-        image_settings = settings.get("images", {})
-        if image_settings.get("enabled", False):
+        if image_settings.get("enabled", False) and images_added < image_limit:
             image = hero_image(article["url"], int(image_settings.get("max_width", 1200)), int(image_settings.get("max_bytes", 2500000)))
             if image:
                 raw, extension, mime_type = image
                 filename = f"images/article-{number}.{extension}"
                 book.add_item(epub.EpubItem(uid=f"image-{number}", file_name=filename, media_type=mime_type, content=raw))
                 image_markup = f'<p><img src="{filename}" alt="" /></p>'
+                images_added += 1
         chapter.content = (f"<h1>{html.escape(article['title'])}</h1><p><em>{html.escape(article['source'])}</em></p>{image_markup}"
                            f"{article_body(article['url'], article['summary'])}<p><a href=\"{html.escape(article['url'])}\">Læs originalen</a></p>")
         book.add_item(chapter)

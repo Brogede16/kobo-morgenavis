@@ -49,7 +49,7 @@ Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo
 
 ### Langt, kort og grafik
 
-Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes højst ét hero-billede pr. artikel fra sidens Open Graph-metadata og pakkes *ind i* EPUB’en. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
+Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
 
 Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis slettes permanent ved næste succesfulde upload; andre filer i mappen berøres ikke.
 

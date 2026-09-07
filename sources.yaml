@@ -86,7 +86,7 @@ source_limits:
   WIRED: 2
 images:
   enabled: true
-  max_per_article: 1
+  max_per_edition: 4
   max_width: 1200
   max_bytes: 2500000
 collection:
