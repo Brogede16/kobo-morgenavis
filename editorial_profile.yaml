@@ -31,6 +31,26 @@ editorial:
     - interactive maps, visualisations, public datasets, and projects the reader can explore firsthand
     - hidden places and systems: bunkers, tunnels, archives, datacentres, infrastructure, underground sites, and normally inaccessible systems
     - historical mysteries and new discoveries that revise what we thought we knew
+    - Copenhagen in transformation: substantial new public spaces, cultural buildings, metro, harbour, climate adaptation, tourism, and major city projects
+    - how large cultural institutions work behind the scenes: museums, cinemas, festivals, and venues as organisations
+    - hospitality in culture: the practical choices that make a venue feel generous, welcoming, and worth visiting before the programme begins
+    - museum and cultural retail: shops, books, merch, limited editions, and retail as part of the visitor experience
+    - programme curation in film, music, talks, and art: how a coherent, compelling series is put together
+    - cultural trends before they become mainstream, including internet aesthetics across TikTok, Tumblr, Pinterest, gaming, fashion, and music
+    - animal cognition, especially meaningful research on octopuses, corvids, whales, elephants, and other unusually intelligent animals
+    - serious investigations of astronomical anomalies and megastructures, including Dyson-sphere-like ideas when researchers are doing real work
+    - geoengineering, including both potential and the difficult risks and governance questions
+    - cybersecurity for normal people: major hacks and clever attacks explained through their actual consequences
+    - standards and mundane systems that shape daily life, such as USB, JPEG, Bluetooth, QR codes, and media/container formats
+    - cinema technology when a development is significant and perceptible: projection, laser, sound, screens, IMAX, 70mm, and HDR
+    - cultural institutions' secondary revenue: hire, events, restaurant, retail, rooftops, sponsorship, and membership
+    - unusual events in unusual places and the production logic that makes them possible
+    - event production behind the scenes: logistics, technical production, security, guest flow, and operational software — primarily as useful longreads
+    - cultural pricing, value perception, access, membership, and the trade-off between ticket price and participation
+    - young people as genuine co-creators through youth boards, academies, open calls, and real decision-making power
+    - Copenhagen cultural history and lost places: cinemas, clubs, venues, museums, and scenes that no longer exist
+    - Denmark below ground and its critical infrastructure: tunnels, bunkers, utilities, sewerage, metro, basements, electricity, internet, water, and transport resilience
+    - AI-generated games and prototypes: how far a single person can go from an idea to a working management/strategy game
     - meaningful wearable launches, features, and health/technology developments
     - major gaming news for Age of Empires, Warcraft, survival games, 7 Days to Die, and GTA — only launches, major expansions, or genuinely consequential changes
     - Planet Zoo as a personal deep-interest: major news, a sequel, expansion, or substantial change deserves more context than ordinary game coverage
@@ -57,6 +77,7 @@ editorial:
   daily_readiness_test: "Every selected story should earn its place by helping the reader understand what matters today, anticipate a likely conversation, or gain useful context. Maintain a clear Danish frame while including international developments with consequences or resonance in Denmark."
   photography_source_policy: "For photography learning, prefer Magnum Learn, Canon Learning/Canon Europe, Nikon Learn, Adobe Photography, Digital Photography Review when it teaches, National Geographic photographers, established professional photographers, Royal Photographic Society, and selectively PetaPixel tutorials or interviews. Do not select camera shopping or ordinary gear-release coverage."
   gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
+  place_and_systems_policy: "These stories should be selected for substance: a meaningful project, real operational insight, strong case study, or a concrete consequence. Treat event-production, hospitality, pricing, infrastructure, and institutional-business stories as longread-friendly rather than daily filler."
 examples:
   read:
     - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/

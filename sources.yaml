@@ -25,7 +25,7 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 12
+  max_queries: 15
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -40,6 +40,9 @@ web_search:
     - "photography learning beginner tutorial site:magnumphotos.com OR site:canon-europe.com OR site:nikon.com OR site:adobe.com OR site:rps.org"
     - "Kobo e-ink smart home automation sensors Raspberry Pi personal technology interesting internet project map database"
     - "The Cure New Order Depeche Mode Kraftwerk new album major tour reunion subculture shoegaze clubs music scene"
+    - "Copenhagen new public space culture building metro harbour climate adaptation tourism museum cinema festival hospitality retail event production cultural pricing youth board"
+    - "major cyber attack explained USB JPEG Bluetooth QR code standard cinema laser IMAX 70mm HDR AI generated game prototype management game"
+    - "animal cognition octopus crow raven whale elephant geoengineering Dyson sphere astronomical anomaly Denmark critical infrastructure bunker tunnel metro utilities"
 source_limits:
   MacRumors: 1
   TechCrunch: 2
