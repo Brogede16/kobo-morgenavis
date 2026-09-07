@@ -9,14 +9,34 @@ editorial:
     - Denmark and the world
     - technology, science, culture, and ideas
     - significance over novelty
+    - Apple/Mac, AI models, meaningful new AI features, and credible product leaks
+    - Danish film, film policy, culture analysis, and Esben Danielsen's public analysis
   exclusions:
     - podcast launches
     - sponsored content, advertorials, giveaways, and affiliate shopping
     - trivial rumours and repetitive live-blog updates
+    - generic “top stories” roundups as reading items
+    - reviews of non-Apple hardware unless the wider technology angle is exceptional
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain."
+  paywall_policy: "Information and Kulturmonitor may be used as signals for a topic or angle. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
+  film_policy: "Cover news about the Danish Film Institute through independent reporting, policy, funding, films, and industry impact — not the institute's own press releases or event promotion."
 examples:
-  read: []
-  skip: []
+  read:
+    - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/
+      reason: "Credible Apple-product leaks are interesting."
+    - url: https://www.macrumors.com/2026/09/04/anthropics-claude-is-coming-to-carplay/
+      reason: "The overlap between AI and the Apple ecosystem is especially relevant."
+    - url: https://techcrunch.com/video/what-will-apples-john-ternus-era-look-like/
+      reason: "Apple strategy and leadership analysis is useful."
+    - url: https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/
+      reason: "New AI models, capabilities, and implications are interesting."
+    - url: https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/
+      reason: "Changes to AI products, capability, price, and restrictions are useful."
+  skip:
+    - url: https://www.macrumors.com/2026/09/05/top-stories-suprise-and-shine-preview/
+      reason: "Do not select roundup/top-stories posts as reading items; use them only to discover newer original stories."
+    - url: https://www.macrumors.com/review/acer-6k-touchscreen-display/
+      reason: "Non-Apple hardware reviews are normally not relevant."
 
 # Add a compact record for feedback examples, for instance:
 # read:

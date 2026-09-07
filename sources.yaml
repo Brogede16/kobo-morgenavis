@@ -17,11 +17,12 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 3
+  max_queries: 4
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
-    - "positive eller væsentlige kulturhistorier i dag"
-    - "vigtige longread analyser i dag verden teknologi videnskab"
+    - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
+    - "dansk film kulturpolitik Det Danske Filminstitut nyheder -site:dfi.dk"
+    - "kulturpolitik kultur analyse Esben Danielsen nyheder og analyser"
 images:
   enabled: true
   max_per_article: 1
@@ -66,3 +67,11 @@ sources:
     url: https://theconversation.com/global/articles.atom
     enabled: true
     format: longread
+  - name: MacRumors
+    url: https://www.macrumors.com/macrumors.xml
+    enabled: true
+    format: mixed
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    enabled: true
+    format: mixed

@@ -35,7 +35,9 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk: højst tre søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Den komplette redaktionelle historik bliver i Git, mens højst 12 positive og 12 negative feedback-eksempler indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
+Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk med fire redaktionelt afgrænsede søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Den komplette redaktionelle historik bliver i Git, mens højst 12 positive og 12 negative feedback-eksempler indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
+
+Paywalls som Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
 ### Langt, kort og grafik
 
