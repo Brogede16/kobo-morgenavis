@@ -39,6 +39,24 @@ def load_editorial_profile(path=ROOT / "editorial_profile.yaml"):
         return yaml.safe_load(file) or {}
 
 
+def editorial_prompt_profile():
+    """Keep an extensive Git profile, but pass a stable compact brief to Gemini."""
+    profile = load_editorial_profile()
+    editorial = profile.get("editorial", {})
+    examples = profile.get("examples", {})
+
+    def compact_example(item):
+        return {"url": str(item.get("url", ""))[:300], "reason": str(item.get("reason", ""))[:240]}
+
+    return {
+        "editorial": {key: value if not isinstance(value, str) else value[:500] for key, value in editorial.items()},
+        "examples": {
+            "read": [compact_example(item) for item in examples.get("read", [])[:12] if isinstance(item, dict)],
+            "skip": [compact_example(item) for item in examples.get("skip", [])[:12] if isinstance(item, dict)],
+        },
+    }
+
+
 def fetch_candidates(settings):
     candidates = []
     for source in settings["sources"]:
@@ -109,7 +127,7 @@ def select_articles(candidates, settings):
     maximum = int(settings["edition"].get("max_summary_characters", 260))
     compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "format": c.get("format", "mixed"),
                 "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
-    profile = load_editorial_profile()
+    profile = editorial_prompt_profile()
     prompt = (
         "You are the editor of a Danish morning newspaper. Pick the most useful, varied "
         f"{limit} articles for topics {settings['edition']['topics']}. Aim for the reader's desired mix, "

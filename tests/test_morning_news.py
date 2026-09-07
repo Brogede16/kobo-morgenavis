@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from morning_news import build_epub, load_settings, select_articles
+from morning_news import build_epub, editorial_prompt_profile, load_settings, select_articles
 
 
 def settings():
@@ -27,3 +27,10 @@ def test_build_epub(tmp_path, monkeypatch):
     monkeypatch.setattr("morning_news.article_body", lambda url, fallback: "<p>Tekst</p>")
     path = build_epub([{"title": "Historie", "source": "Kilde", "url": "https://example.test", "summary": "Kort"}], settings(), tmp_path)
     assert path.exists() and path.suffix == ".epub"
+
+
+def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
+    profile = tmp_path / "editorial.yaml"
+    profile.write_text("editorial: {voice: Calm}\nexamples:\n  read:\n" + "\n".join(f"    - url: https://x/{i}\n      reason: useful" for i in range(15)))
+    monkeypatch.setattr("morning_news.load_editorial_profile", lambda: __import__("yaml").safe_load(profile.read_text()))
+    assert len(editorial_prompt_profile()["examples"]["read"]) == 12
