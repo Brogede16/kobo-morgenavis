@@ -15,7 +15,8 @@ from google.oauth2 import service_account
 from google.oauth2.credentials import Credentials
 from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
-from openai import OpenAI
+from google import genai
+from google.genai import types
 from readability import Document
 import requests
 
@@ -33,7 +34,7 @@ def load_settings(path=ROOT / "sources.yaml"):
     return data
 
 
-def load_reader_profile(path=ROOT / "reader_profile.yaml"):
+def load_editorial_profile(path=ROOT / "editorial_profile.yaml"):
     with open(path, encoding="utf-8") as file:
         return yaml.safe_load(file) or {}
 
@@ -63,20 +64,22 @@ def fetch_candidates(settings):
 def fetch_web_candidates(settings):
     """Use at most a couple of search queries; disabled by default to control spend."""
     config = settings.get("web_search", {})
-    api_key = os.environ.get("OPENAI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key or not config.get("queries"):
         return []
     queries = config["queries"][:int(config.get("max_queries", 2))]
     prompt = ("Find aktuelle, troværdige nyhedsartikler for disse søgninger: " + json.dumps(queries, ensure_ascii=False) +
               '. Return ONLY JSON: {"articles":[{"title":"...","url":"https://...","source":"...","summary":"max 240 chars"}]}. '
               "Return at most 8 articles total; only direct article URLs.")
-    response = OpenAI(api_key=api_key).responses.create(
-        model=os.environ.get("OPENAI_MODEL", "gpt-5-mini"), input=prompt, store=False,
-        tools=[{"type": "web_search_preview"}], max_output_tokens=700,
-        text={"format": {"type": "json_object"}, "verbosity": "low"},
+    response = genai.Client(api_key=api_key).models.generate_content(
+        model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"), contents=prompt,
+        config=types.GenerateContentConfig(
+            tools=[types.Tool(google_search=types.GoogleSearch())],
+            response_mime_type="application/json", max_output_tokens=700,
+        ),
     )
     try:
-        articles = json.loads(response.output_text).get("articles", [])
+        articles = json.loads(response.text).get("articles", [])
         return [{"title": a["title"], "url": a["url"], "source": a.get("source", "Web"),
                  "summary": a.get("summary", "")[:240]} for a in articles
                 if isinstance(a, dict) and a.get("title") and str(a.get("url", "")).startswith("https://")]
@@ -98,15 +101,15 @@ def select_articles(candidates, settings):
     limit = int(settings["edition"]["max_articles"])
     if not candidates:
         return []
-    api_key = os.environ.get("OPENAI_API_KEY")
+    api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
-        logger.warning("OPENAI_API_KEY absent; selecting newest feed items without AI")
+        logger.warning("GEMINI_API_KEY absent; selecting newest feed items without AI")
         return candidates[:limit]
     candidates = shortlist_candidates(candidates, settings)
     maximum = int(settings["edition"].get("max_summary_characters", 260))
     compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "format": c.get("format", "mixed"),
                 "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
-    profile = load_reader_profile()
+    profile = load_editorial_profile()
     prompt = (
         "You are the editor of a Danish morning newspaper. Pick the most useful, varied "
         f"{limit} articles for topics {settings['edition']['topics']}. Aim for the reader's desired mix, "
@@ -116,12 +119,12 @@ def select_articles(candidates, settings):
         '{"selected":[integer indexes]}. Do not include more than the limit. Candidates: '
         + json.dumps(compact, ensure_ascii=False)
     )
-    response = OpenAI(api_key=api_key).responses.create(
-        model=os.environ.get("OPENAI_MODEL", "gpt-5-mini"), input=prompt, store=False,
-        text={"format": {"type": "json_object"}, "verbosity": "low"}, max_output_tokens=400,
+    response = genai.Client(api_key=api_key).models.generate_content(
+        model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"), contents=prompt,
+        config=types.GenerateContentConfig(response_mime_type="application/json", max_output_tokens=400),
     )
     try:
-        indexes = json.loads(response.output_text)["selected"]
+        indexes = json.loads(response.text)["selected"]
         return [candidates[i] for i in indexes if isinstance(i, int) and 0 <= i < len(candidates)][:limit]
     except (ValueError, KeyError, TypeError) as exc:
         logger.warning("AI selection malformed (%s); using feed order", exc)

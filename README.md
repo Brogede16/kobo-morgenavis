@@ -6,7 +6,7 @@ Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del
 
 ## Sådan virker den
 
-`sources.yaml` er redaktionens source of truth og versioneres i Git. Den henter bredt (op til 25 indslag pr. kilde), kombinerer det med tre faste web-søgninger og triagerer lokalt ned til en AI-shortlist. Derefter vælger OpenAI den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. Se [reader_profile.yaml](reader_profile.yaml) og [editorial_feedback.md](editorial_feedback.md) for, hvordan dine beskeder her bliver til konkrete og sporbare justeringer.
+`sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. kilde), kombinerer det med tre faste Google-søgninger og triagerer lokalt ned til en AI-shortlist. Derefter vælger Gemini den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
 
 ## Kør nu
 
@@ -27,7 +27,7 @@ python -c "from morning_news import run_edition; print(run_edition())"
 flask --app app run
 ```
 
-Uden `OPENAI_API_KEY` vælger den de første fundne historier, så resten af kæden stadig kan testes. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
+Uden `GEMINI_API_KEY` vælger den de første fundne historier, så resten af kæden stadig kan testes. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
 
 ## Konfiguration
 
@@ -35,7 +35,7 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Websøgning er slået til automatisk: højst tre søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Sæt et projektbudget/spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
+Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk: højst tre søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
 
 ### Langt, kort og grafik
 
@@ -47,8 +47,8 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 
 | Variabel | Krævet | Formål |
 | --- | --- | --- |
-| `OPENAI_API_KEY` | Ja for AI-udvælgelse | Nøglen til OpenAI API |
-| `OPENAI_MODEL` | Nej | Standard er `gpt-5-mini` |
+| `GEMINI_API_KEY` | Ja for AI-udvælgelse | API-nøgle fra Google AI Studio / Gemini API |
+| `GEMINI_MODEL` | Nej | Standard er `gemini-2.5-flash` |
 | `GOOGLE_DRIVE_FOLDER_ID` | Ja for upload | ID fra Drive-mappens URL |
 | `GOOGLE_OAUTH_CLIENT_ID` | Ja for normal Drive-upload | OAuth-klient-id fra dit Google Cloud-projekt |
 | `GOOGLE_OAUTH_CLIENT_SECRET` | Ja for normal Drive-upload | OAuth-klienthemmelighed |

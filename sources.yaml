@@ -15,8 +15,7 @@ edition:
     - videnskab
     - kultur
 web_search:
-  # Web search uses a separate OpenAI web-search tool call. Keep it off in the
-  # scheduled edition unless it proves valuable enough to justify its cost.
+  # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
   max_queries: 3
   queries:

@@ -18,7 +18,7 @@ def test_load_settings(tmp_path):
 
 
 def test_select_without_key(monkeypatch):
-    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
+    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     candidates = [{"title": str(i), "source": "x", "url": f"https://x/{i}", "summary": "s"} for i in range(3)]
     assert len(select_articles(candidates, settings())) == 2
 

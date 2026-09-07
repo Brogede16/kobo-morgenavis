@@ -1,0 +1,27 @@
+# This is the durable editorial brief. It is versioned in Git and updated when
+# Mads gives feedback in this conversation. Keep examples concise and useful.
+editorial:
+  voice: "Danish morning briefing: intelligent, calm, useful, never clickbait."
+  desired_mix:
+    short_updates: "6-7 concise updates that matter today"
+    longreads: "2-3 substantive analyses, explainers, or investigations"
+  priorities:
+    - Denmark and the world
+    - technology, science, culture, and ideas
+    - significance over novelty
+  exclusions:
+    - podcast launches
+    - sponsored content, advertorials, giveaways, and affiliate shopping
+    - trivial rumours and repetitive live-blog updates
+  source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain."
+examples:
+  read: []
+  skip: []
+
+# Add a compact record for feedback examples, for instance:
+# read:
+#   - url: https://www.macrumors.com/example
+#     reason: "Useful new-product analysis with practical implications"
+# skip:
+#   - url: https://www.macrumors.com/example-podcast
+#     reason: "Podcast promotion; no substantive news"
