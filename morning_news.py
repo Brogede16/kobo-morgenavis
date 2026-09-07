@@ -50,7 +50,32 @@ def fetch_candidates(settings):
                     "url": link, "summary": re.sub("<[^>]+>", "", entry.get("summary", ""))[:700],
                 })
     # An article syndicated in several feeds should appear once.
-    return list({item["url"]: item for item in candidates}.values())
+    return list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
+
+
+def fetch_web_candidates(settings):
+    """Use at most a couple of search queries; disabled by default to control spend."""
+    config = settings.get("web_search", {})
+    api_key = os.environ.get("OPENAI_API_KEY")
+    if not api_key or not config.get("queries"):
+        return []
+    queries = config["queries"][:int(config.get("max_queries", 2))]
+    prompt = ("Find aktuelle, troværdige nyhedsartikler for disse søgninger: " + json.dumps(queries, ensure_ascii=False) +
+              '. Return ONLY JSON: {"articles":[{"title":"...","url":"https://...","source":"...","summary":"max 240 chars"}]}. '
+              "Return at most 8 articles total; only direct article URLs.")
+    response = OpenAI(api_key=api_key).responses.create(
+        model=os.environ.get("OPENAI_MODEL", "gpt-5-mini"), input=prompt, store=False,
+        tools=[{"type": "web_search_preview"}], max_output_tokens=700,
+        text={"format": {"type": "json_object"}, "verbosity": "low"},
+    )
+    try:
+        articles = json.loads(response.output_text).get("articles", [])
+        return [{"title": a["title"], "url": a["url"], "source": a.get("source", "Web"),
+                 "summary": a.get("summary", "")[:240]} for a in articles
+                if isinstance(a, dict) and a.get("title") and str(a.get("url", "")).startswith("https://")]
+    except (ValueError, TypeError, KeyError) as exc:
+        logger.warning("Web search response malformed (%s)", exc)
+        return []
 
 
 def select_articles(candidates, settings):
@@ -61,7 +86,8 @@ def select_articles(candidates, settings):
     if not api_key:
         logger.warning("OPENAI_API_KEY absent; selecting newest feed items without AI")
         return candidates[:limit]
-    compact = [{"i": i, "title": c["title"], "source": c["source"], "summary": c["summary"]} for i, c in enumerate(candidates)]
+    maximum = int(settings["edition"].get("max_summary_characters", 320))
+    compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
     prompt = (
         "You are the editor of a Danish morning newspaper. Pick the most useful, varied "
         f"{limit} articles for topics {settings['edition']['topics']}. Return ONLY JSON: "
@@ -70,7 +96,7 @@ def select_articles(candidates, settings):
     )
     response = OpenAI(api_key=api_key).responses.create(
         model=os.environ.get("OPENAI_MODEL", "gpt-5-mini"), input=prompt, store=False,
-        text={"format": {"type": "json_object"}}, max_output_tokens=500,
+        text={"format": {"type": "json_object"}, "verbosity": "low"}, max_output_tokens=400,
     )
     try:
         indexes = json.loads(response.output_text)["selected"]
@@ -137,9 +163,13 @@ def upload_to_drive(path):
     return drive.files().create(body=metadata, media_body=media, fields="id,name").execute()
 
 
-def run_edition(settings=None):
+def run_edition(settings=None, use_web_search=None):
     settings = settings or load_settings()
     candidates = fetch_candidates(settings)
+    web_config = settings.get("web_search", {})
+    if use_web_search if use_web_search is not None else web_config.get("enabled_for_schedule", False):
+        candidates.extend(fetch_web_candidates(settings))
+        candidates = list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
     articles = select_articles(candidates, settings)
     if not articles:
         raise RuntimeError("No articles found; EPUB was not generated")
@@ -147,4 +177,3 @@ def run_edition(settings=None):
     uploaded = upload_to_drive(path) if os.environ.get("GOOGLE_DRIVE_FOLDER_ID") else None
     logger.info("Edition complete: %s (%s articles)%s", path, len(articles), " uploaded" if uploaded else "")
     return {"path": str(path), "articles": len(articles), "drive_file": uploaded}
-

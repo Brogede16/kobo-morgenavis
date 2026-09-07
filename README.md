@@ -6,7 +6,13 @@ Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del
 
 ## Sådan virker den
 
-`sources.yaml` er redaktionens source of truth og versioneres i Git. Ved hver kørsel hentes aktive RSS-feeds, OpenAI udvælger de mest relevante og varierede historier, artiklerne renderes til en EPUB, og filen lægges i den valgte Google Drive-mappe.
+`sources.yaml` er redaktionens source of truth og versioneres i Git. Ved hver kørsel hentes aktive RSS-feeds, OpenAI udvælger de mest relevante og varierede historier, artiklerne renderes til en EPUB, og filen lægges i den valgte Google Drive-mappe. Se [editorial_feedback.md](editorial_feedback.md) for, hvordan ændringer fra dine beskeder her bliver til konkrete og sporbare justeringer.
+
+## Kør nu
+
+Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Den kører hele kæden med det samme og uploader EPUB’en til Google Drive. Du kan valgfrit markere “Søg også på nettet denne ene gang”. Det kræver ingen ny Render-tjeneste.
+
+Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Tilføj `?web_search=true` kun når den ekstra web-søgning ønskes.
 
 Kobo Libra Colour understøtter Google Drive direkte. Forbind Kobo-kontoen med Google Drive én gang på læseren, og brug den automatisk oprettede **`Rakuten Kobo`**-mappe som upload-mappe. Når Kobo synkroniserer over Wi‑Fi, henter den nye DRM-frie EPUB’er; de kan også ses under **More → My Google Drive**. Det er en officiel Kobo-funktion, ikke en uofficiel Kobo-API-integration.
 
@@ -25,7 +31,11 @@ Uden `OPENAI_API_KEY` vælger den de første fundne historier, så resten af kæ
 
 ## Konfiguration
 
-Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`).
+Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`). `web_search` er slået fra for den planlagte kørsel som standard, men kan vælges på “kør nu”-siden eller bevidst aktiveres i konfigurationen.
+
+### Token- og forbrugsramme
+
+Den normale udgave laver **ét** AI-kald til udvælgelse: højst 40 kandidater, højst 320 tegn RSS-resumé pr. kandidat og højst 400 outputtokens. Artiklerne hentes og lægges i EPUB uden AI-opsummering. Det gør forbruget stabilt og lavt. Websøgning er en særskilt OpenAI tool-kørsel med højst to søgninger og 700 outputtokens; den er derfor valgfri og deaktiveret for planlagte kørsler. Sæt et projektbudget/spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
 
 ## Secrets og miljøvariabler
 
@@ -38,6 +48,8 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 | `GOOGLE_DRIVE_FOLDER_ID` | Ja for upload | ID fra Drive-mappens URL |
 | `GOOGLE_SERVICE_ACCOUNT_JSON_B64` | Ja for upload | Base64-kodet Google service-account JSON |
 | `RUN_NOW_TOKEN` | Anbefalet | Beskytter `POST /run-now` |
+| `ADMIN_USERNAME` | Nej | Brugernavn til den lille kør-nu-side; standard `mads` |
+| `ADMIN_PASSWORD` | Ja for kør-nu-side | Stærkt, unikt login til forsiden |
 
 Opret en Google Cloud service account med Drive API aktiveret, del den Kobo-oprettede **`Rakuten Kobo`**-mappe med service-accountens e-mailadresse som **Editor**, og kod JSON-nøglen til én base64-linje:
 
@@ -50,8 +62,8 @@ base64 -i service-account.json | tr -d '\n'
 1. Opret et GitHub-repo og push denne mappe til `main`.
 2. I Render: vælg **New → Blueprint**, forbind repoet, og lad Render læse `render.yaml`.
 3. Udfyld de tre secrets i tabellen ovenfor. `RUN_NOW_TOKEN` oprettes automatisk af Blueprintet.
-4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel.
-5. Test manuelt med en POST til `/run-now` og headeren `Authorization: Bearer <RUN_NOW_TOKEN>`.
+4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel. Åbn `/` og log ind for at køre en prøveudgave.
+5. Alternativt: test med en POST til `/run-now` og headeren `Authorization: Bearer <RUN_NOW_TOKEN>`.
 
 Render deployer automatisk ved push til `main`. Loggene i Render viser antal fundne historier, fejl pr. feed og resultatet af uploaden.
 
