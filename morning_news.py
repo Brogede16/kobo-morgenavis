@@ -52,8 +52,23 @@ def editorial_prompt_profile():
     def compact_example(item):
         return {"url": str(item.get("url", ""))[:300], "reason": str(item.get("reason", ""))[:240]}
 
+    tiers = editorial.get("priority_tiers", {})
+    compact_editorial = {
+        "voice": str(editorial.get("voice", ""))[:350],
+        "desired_mix": editorial.get("desired_mix", {}),
+        "daily_structure": editorial.get("daily_structure", [])[:8],
+        "priority_tiers": {key: value[:6] for key, value in tiers.items() if isinstance(value, list)},
+        "exclusions": editorial.get("exclusions", [])[:12],
+        "source_policy": str(editorial.get("source_policy", ""))[:500],
+        "source_roles": str(editorial.get("source_roles", ""))[:500],
+        "paywall_policy": str(editorial.get("paywall_policy", ""))[:500],
+        "readability_policy": str(editorial.get("readability_policy", ""))[:500],
+        "daily_readiness_test": str(editorial.get("daily_readiness_test", ""))[:500],
+        "gaming_policy": str(editorial.get("gaming_policy", ""))[:500],
+        "photography_source_policy": str(editorial.get("photography_source_policy", ""))[:500],
+    }
     return {
-        "editorial": {key: value if not isinstance(value, str) else value[:500] for key, value in editorial.items()},
+        "editorial": compact_editorial,
         "examples": {
             "read": [compact_example(item) for item in examples.get("read", [])[-12:] if isinstance(item, dict)],
             "skip": [compact_example(item) for item in examples.get("skip", [])[-12:] if isinstance(item, dict)],
@@ -195,15 +210,30 @@ def merge_candidate_pools(feed_candidates, web_candidates, settings):
 
 
 def enforce_source_diversity(selected, candidates, settings):
-    """Keep one outlet from becoming the morning newspaper's whole worldview."""
+    """Avoid one outlet — or one underlying story — taking over the edition."""
     default_limit = int(settings["edition"].get("max_articles_per_source", 2))
     limits = settings.get("source_limits", {})
     counts, result, seen = {}, [], set()
 
+    def story_terms(article):
+        words = re.findall(r"[a-zæøå0-9]{4,}", article["title"].lower())
+        ignored = {"this", "that", "with", "from", "over", "will", "have", "into", "about", "after", "news", "siger", "dansk", "denmark"}
+        return set(words) - ignored
+
+    def duplicates_story(article):
+        terms = story_terms(article)
+        if not terms:
+            return False
+        for existing in result:
+            other = story_terms(existing)
+            if len(terms & other) >= 3 and len(terms & other) / min(len(terms), len(other)) >= 0.6:
+                return True
+        return False
+
     def add(article):
         source = article["source"]
         limit = int(limits.get(source, default_limit))
-        if article["url"] not in seen and counts.get(source, 0) < limit:
+        if article["url"] not in seen and counts.get(source, 0) < limit and not duplicates_story(article):
             result.append(article)
             seen.add(article["url"])
             counts[source] = counts.get(source, 0) + 1

@@ -26,7 +26,7 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 17
+  max_queries: 18
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -45,6 +45,7 @@ web_search:
     - "major cyber attack explained USB JPEG Bluetooth QR code standard cinema laser IMAX 70mm HDR AI generated game prototype management game"
     - "animal cognition octopus crow raven whale elephant geoengineering Dyson sphere astronomical anomaly Denmark critical infrastructure bunker tunnel metro utilities"
     - "site:politiken.dk/politik OR site:information.dk Danmark politik reform lovforslag minister konflikt analyse OR site:kulturmonitor.dk kulturpolitik"
+    - "site:altinget.dk dansk politik forlig lovforslag reform kommune region analyse OR site:zetland.dk dansk samfund politik"
 news_site_signals:
   # Headline-level editorial radar. These URLs are not copied into the EPUB.
   # The bounded Gemini Google Search call seeks accessible reporting on the leads.
@@ -67,6 +68,14 @@ news_site_signals:
       max_previews: 3
     - name: Kulturmonitor
       url: https://kulturmonitor.dk/
+      max_items: 8
+      max_previews: 3
+    - name: Altinget
+      url: https://www.altinget.dk/
+      max_items: 8
+      max_previews: 3
+    - name: Zetland
+      url: https://www.zetland.dk/
       max_items: 8
       max_previews: 3
 source_limits:

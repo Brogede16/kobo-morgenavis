@@ -20,13 +20,13 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Mads Morgen</title>
-<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem}button{padding:.55rem .8rem;font-size:1rem}label{display:block;margin:1rem 0}.result{padding:1rem;background:#eef8f0}.article{border-top:1px solid #ddd;padding:1rem 0}.article p{margin:.35rem 0}.actions{display:flex;gap:.5rem;margin-top:.7rem}.less{background:#fff;border:1px solid #999}</style>
+<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem}button,select{padding:.55rem .8rem;font-size:1rem}label{display:block;margin:1rem 0}.result{padding:1rem;background:#eef8f0}.article{border-top:1px solid #ddd;padding:1rem 0}.article p{margin:.35rem 0}.actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}.less{background:#fff;border:1px solid #999}</style>
 <h1>Mads Morgen</h1><p>Næste planlagte udgave: {{ next_run }}</p>
 {% if result %}<p class=result>{{ result }}</p>{% endif %}
 <form method=post action=\"{{ url_for('run_from_page') }}\"><label><input type=checkbox name=web_search> Søg også på nettet denne ene gang</label><button>Lav og send avis nu</button></form>
 {% if edition %}<h2>Seneste udgave</h2><p>Fortæl gerne indimellem, hvad du vil have mere eller mindre af. Det bruges i næste udvælgelse.</p>
 {% for article in edition.articles %}<article class=article><a href=\"{{ article.url }}\" target=\"_blank\" rel=\"noreferrer\"><strong>{{ article.title }}</strong></a><p>{{ article.source }} · {{ article.summary }}</p>
-{% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=title value=\"{{ article.title }}\"><input type=hidden name=source value=\"{{ article.source }}\"><input type=hidden name=url value=\"{{ article.url }}\"><input type=hidden name=summary value=\"{{ article.summary }}\"><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>{% endfor %}
+{% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=title value=\"{{ article.title }}\"><input type=hidden name=source value=\"{{ article.source }}\"><input type=hidden name=url value=\"{{ article.url }}\"><input type=hidden name=summary value=\"{{ article.summary }}\"><select name=reason aria-label=\"Hvorfor?\"><option value=\"\">Valgfrit: hvorfor?</option><option value=\"great_topic\">Fedt emne</option><option value=\"great_angle\">God vinkel</option><option value=\"great_depth\">God dybde</option><option value=\"too_thin\">For tynd</option><option value=\"too_technical\">For nørdet</option><option value=\"wrong_angle\">Forkert vinkel</option><option value=\"wrong_source\">Forkert kilde</option></select><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>{% endfor %}
 {% elif not feedback_enabled %}<p><em>Feedback vises her, når GitHub-feedbacknøglen er sat op, og den næste udgave er lavet.</em></p>{% endif %}
 <p>Den færdige EPUB lægges i Google Drive-mappen Rakuten Kobo.</p></html>"""
 
@@ -37,10 +37,17 @@ def create_app():
     timezone = ZoneInfo(settings["edition"]["timezone"])
     scheduler = BackgroundScheduler(timezone=timezone)
 
+    def save_feedback_edition(result):
+        """A GitHub feedback outage must never block delivery to Kobo."""
+        try:
+            record_edition(result["article_list"])
+        except Exception:
+            logger.exception("Could not record edition for feedback")
+
     def scheduled_run():
         try:
             result = run_edition(settings)
-            record_edition(result["article_list"])
+            save_feedback_edition(result)
         except Exception:
             logger.exception("Morning edition failed")
 
@@ -83,7 +90,7 @@ def create_app():
     @page_auth
     def run_from_page():
         result = run_edition(settings, use_web_search=bool(request.form.get("web_search")))
-        record_edition(result["article_list"])
+        save_feedback_edition(result)
         return render_template_string(PAGE, next_run=scheduler.get_job("morning-edition").next_run_time,
                                       result=f"Færdig: {result['articles']} historier er sendt til Drive.",
                                       edition=latest_edition(), feedback_enabled=feedback_configured())
@@ -91,7 +98,7 @@ def create_app():
     @app.post("/feedback")
     @page_auth
     def article_feedback():
-        article = {key: request.form.get(key, "") for key in ("title", "source", "url", "summary")}
+        article = {key: request.form.get(key, "") for key in ("title", "source", "url", "summary", "reason")}
         try:
             saved = add_feedback(article, request.form.get("direction", ""))
         except ValueError:
@@ -109,7 +116,7 @@ def create_app():
         if token and request.headers.get("Authorization") != f"Bearer {token}":
             return jsonify(error="unauthorized"), 401
         result = run_edition(settings, use_web_search=request.args.get("web_search") == "true")
-        record_edition(result["article_list"])
+        save_feedback_edition(result)
         return jsonify(result)
 
     return app

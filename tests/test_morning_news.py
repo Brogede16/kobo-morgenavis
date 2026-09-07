@@ -36,6 +36,24 @@ def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
     assert len(editorial_prompt_profile()["examples"]["read"]) == 12
 
 
+def test_editorial_prompt_profile_uses_compact_priority_tiers(monkeypatch):
+    profile = {
+        "editorial": {
+            "voice": "V",
+            "priorities": ["legacy"] * 50,
+            "priority_tiers": {"daily_core": [str(i) for i in range(10)]},
+            "daily_structure": [str(i) for i in range(10)],
+            "exclusions": [str(i) for i in range(20)],
+        },
+        "examples": {},
+    }
+    monkeypatch.setattr("morning_news.load_editorial_profile", lambda: profile)
+    compact = editorial_prompt_profile()["editorial"]
+    assert "priorities" not in compact
+    assert len(compact["priority_tiers"]["daily_core"]) == 6
+    assert len(compact["daily_structure"]) == 8
+
+
 def test_source_diversity_caps_a_single_outlet():
     items = [{"title": str(i), "source": "One", "url": f"https://one/{i}", "summary": ""} for i in range(3)]
     items += [{"title": "other", "source": "Two", "url": "https://two/1", "summary": ""}]

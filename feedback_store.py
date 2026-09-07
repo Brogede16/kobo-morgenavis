@@ -15,6 +15,8 @@ API = "https://api.github.com"
 BRANCH = os.environ.get("GITHUB_FEEDBACK_BRANCH", "feedback-data")
 LATEST_PATH = "feedback/latest_edition.json"
 EVENTS_PATH = "feedback/events.jsonl"
+EDITIONS_PREFIX = "feedback/editions"
+RETENTION_DAYS = 10
 
 
 def configured():
@@ -77,18 +79,49 @@ def _write(path, text, message):
     response.raise_for_status()
 
 
+def _delete(path, message):
+    """Delete an old edition once it is outside the ten-day retention window."""
+    _ensure_branch()
+    _, sha = _read(path)
+    if not sha:
+        return
+    response = requests.delete(
+        _url(path), headers=_headers(), timeout=15,
+        json={"message": message, "sha": sha, "branch": BRANCH},
+    )
+    response.raise_for_status()
+
+
+def _prune_editions():
+    repository = os.environ["GITHUB_REPOSITORY"]
+    response = requests.get(
+        f"{API}/repos/{repository}/contents/{EDITIONS_PREFIX}", headers=_headers(),
+        params={"ref": BRANCH}, timeout=12,
+    )
+    if response.status_code == 404:
+        return
+    response.raise_for_status()
+    editions = sorted(item["path"] for item in response.json() if item.get("name", "").endswith(".json"))
+    for path in editions[:-RETENTION_DAYS]:
+        _delete(path, "Remove expired Mads Morgen edition")
+
+
 def record_edition(articles):
     """Store selected metadata; article bodies never enter GitHub."""
     if not configured():
         return False
+    created_at = datetime.now(timezone.utc)
     edition = {
-        "created_at": datetime.now(timezone.utc).isoformat(),
+        "created_at": created_at.isoformat(),
         "articles": [
             {key: str(article.get(key, ""))[:500] for key in ("title", "source", "url", "summary", "format")}
             for article in articles
         ],
     }
-    _write(LATEST_PATH, json.dumps(edition, ensure_ascii=False, indent=2) + "\n", "Record latest Mads Morgen edition")
+    encoded = json.dumps(edition, ensure_ascii=False, indent=2) + "\n"
+    _write(LATEST_PATH, encoded, "Record latest Mads Morgen edition")
+    _write(f"{EDITIONS_PREFIX}/{created_at.date().isoformat()}.json", encoded, "Archive Mads Morgen edition")
+    _prune_editions()
     return True
 
 
@@ -116,6 +149,7 @@ def add_feedback(article, direction):
         "source": str(article.get("source", ""))[:160],
         "url": str(article.get("url", ""))[:500],
         "summary": str(article.get("summary", ""))[:500],
+        "reason": str(article.get("reason", ""))[:80],
     }
     lines = (existing or "").splitlines()[-999:]
     lines.append(json.dumps(event, ensure_ascii=False))
