@@ -1,0 +1,139 @@
+"""GitHub-backed edition and feedback storage.
+
+The feedback branch is deliberately separate from main: clicks do not redeploy
+the Render service, yet remain portable, editable, and versioned in GitHub.
+"""
+import base64
+import json
+import os
+from datetime import datetime, timezone
+
+import requests
+
+
+API = "https://api.github.com"
+BRANCH = os.environ.get("GITHUB_FEEDBACK_BRANCH", "feedback-data")
+LATEST_PATH = "feedback/latest_edition.json"
+EVENTS_PATH = "feedback/events.jsonl"
+
+
+def configured():
+    return bool(os.environ.get("GITHUB_FEEDBACK_TOKEN") and os.environ.get("GITHUB_REPOSITORY"))
+
+
+def _headers():
+    return {
+        "Accept": "application/vnd.github+json",
+        "Authorization": f"Bearer {os.environ['GITHUB_FEEDBACK_TOKEN']}",
+        "X-GitHub-Api-Version": "2022-11-28",
+    }
+
+
+def _url(path):
+    return f"{API}/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{path}"
+
+
+def _ensure_branch():
+    """Create the feedback branch from main when the token is first used."""
+    repository = os.environ["GITHUB_REPOSITORY"]
+    headers = _headers()
+    existing = requests.get(f"{API}/repos/{repository}/git/ref/heads/{BRANCH}", headers=headers, timeout=12)
+    if existing.status_code == 200:
+        return
+    if existing.status_code != 404:
+        existing.raise_for_status()
+    main = requests.get(f"{API}/repos/{repository}/git/ref/heads/main", headers=headers, timeout=12)
+    main.raise_for_status()
+    created = requests.post(
+        f"{API}/repos/{repository}/git/refs", headers=headers, timeout=12,
+        json={"ref": f"refs/heads/{BRANCH}", "sha": main.json()["object"]["sha"]},
+    )
+    if created.status_code not in (201, 422):
+        created.raise_for_status()
+
+
+def _read(path):
+    if not configured():
+        return None, None
+    response = requests.get(_url(path), headers=_headers(), params={"ref": BRANCH}, timeout=12)
+    if response.status_code == 404:
+        return None, None
+    response.raise_for_status()
+    payload = response.json()
+    return base64.b64decode(payload["content"]).decode("utf-8"), payload["sha"]
+
+
+def _write(path, text, message):
+    _ensure_branch()
+    _, sha = _read(path)
+    payload = {
+        "message": message,
+        "content": base64.b64encode(text.encode("utf-8")).decode("ascii"),
+        "branch": BRANCH,
+    }
+    if sha:
+        payload["sha"] = sha
+    response = requests.put(_url(path), headers=_headers(), json=payload, timeout=15)
+    response.raise_for_status()
+
+
+def record_edition(articles):
+    """Store selected metadata; article bodies never enter GitHub."""
+    if not configured():
+        return False
+    edition = {
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "articles": [
+            {key: str(article.get(key, ""))[:500] for key in ("title", "source", "url", "summary", "format")}
+            for article in articles
+        ],
+    }
+    _write(LATEST_PATH, json.dumps(edition, ensure_ascii=False, indent=2) + "\n", "Record latest Mads Morgen edition")
+    return True
+
+
+def latest_edition():
+    text, _ = _read(LATEST_PATH)
+    if not text:
+        return None
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return None
+
+
+def add_feedback(article, direction):
+    """Append an explicit preference to a compact, versioned JSONL event log."""
+    if direction not in {"more", "less"}:
+        raise ValueError("Feedback must be 'more' or 'less'")
+    if not configured():
+        return False
+    existing, _ = _read(EVENTS_PATH)
+    event = {
+        "created_at": datetime.now(timezone.utc).isoformat(),
+        "direction": direction,
+        "title": str(article.get("title", ""))[:300],
+        "source": str(article.get("source", ""))[:160],
+        "url": str(article.get("url", ""))[:500],
+        "summary": str(article.get("summary", ""))[:500],
+    }
+    lines = (existing or "").splitlines()[-999:]
+    lines.append(json.dumps(event, ensure_ascii=False))
+    _write(EVENTS_PATH, "\n".join(lines) + "\n", f"Record feedback: {direction}")
+    return True
+
+
+def recent_feedback(limit=30):
+    """Return compact signals for the next editorial selection."""
+    text, _ = _read(EVENTS_PATH)
+    if not text:
+        return []
+    events = []
+    for line in text.splitlines()[-limit:]:
+        try:
+            event = json.loads(line)
+            if event.get("direction") in {"more", "less"}:
+                events.append({key: event.get(key, "") for key in ("direction", "title", "source", "summary")})
+        except json.JSONDecodeError:
+            continue
+    return events

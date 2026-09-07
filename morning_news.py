@@ -22,6 +22,8 @@ from lxml import html as lxml_html
 from readability import Document
 import requests
 
+from feedback_store import recent_feedback
+
 logger = logging.getLogger(__name__)
 ROOT = Path(__file__).parent
 
@@ -228,6 +230,7 @@ def select_articles(candidates, settings):
     compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "format": c.get("format", "mixed"),
                 "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
     profile = editorial_prompt_profile()
+    profile["recent_feedback"] = recent_feedback()
     prompt = (
         "You are the editor of a Danish morning newspaper. Pick the most useful, varied "
         f"{limit} articles for topics {settings['edition']['topics']}. Aim for the reader's desired mix, "
@@ -361,4 +364,4 @@ def run_edition(settings=None, use_web_search=None):
     path = build_epub(articles, settings)
     uploaded = upload_to_drive(path) if os.environ.get("GOOGLE_DRIVE_FOLDER_ID") else None
     logger.info("Edition complete: %s (%s articles)%s", path, len(articles), " uploaded" if uploaded else "")
-    return {"path": str(path), "articles": len(articles), "drive_file": uploaded}
+    return {"path": str(path), "articles": len(articles), "article_list": articles, "drive_file": uploaded}

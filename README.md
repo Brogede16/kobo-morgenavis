@@ -41,6 +41,12 @@ Den normale udgave samler op til 240 kandidater og bruger gratis lokal triage f�
 
 Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
+### Feedback fra den lille hjemmeside
+
+Efter en udgave er kørt, viser forsiden dens valgte artikler med **Mere af den slags** og **Mindre af den slags**. Feedback er lavet til at blive givet lejlighedsvist, ikke hver dag. Når GitHub-feedback er slået til, gemmer hvert klik artikelens titel, kilde, URL, korte resumé og dit valg i `feedback/events.jsonl` på den separate GitHub-branch `feedback-data`; dagens artikelkort gemmes som `feedback/latest_edition.json` samme sted. Den branche deployes ikke af Render, som fortsat følger `main`.
+
+Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo-morgenavis` og `GITHUB_FEEDBACK_TOKEN`. Tokenet skal være en GitHub fine-grained personal access token begrænset til dette ene repo med **Contents: Read and write**. Appen opretter selv `feedback-data` ved første synkronisering. Klikfeedback indgår som kompakte signaler i den næste Gemini-udvælgelse; den redigerede, varige profil kan derefter opdateres og committes til `main`.
+
 ### Langt, kort og grafik
 
 Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes højst ét hero-billede pr. artikel fra sidens Open Graph-metadata og pakkes *ind i* EPUB’en. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
@@ -53,6 +59,9 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 | --- | --- | --- |
 | `GEMINI_API_KEY` | Ja for AI-udvælgelse | API-nøgle fra Google AI Studio / Gemini API |
 | `GEMINI_MODEL` | Nej | Standard er `gemini-2.5-flash` |
+| `GITHUB_REPOSITORY` | Nej | Repo til GitHub-baseret feedback, fx `Brogede16/kobo-morgenavis` |
+| `GITHUB_FEEDBACK_BRANCH` | Nej | Standard er `feedback-data`; klik her deployer ikke appen |
+| `GITHUB_FEEDBACK_TOKEN` | Nej | Fine-grained token med Contents read/write til det ene repo |
 | `GOOGLE_DRIVE_FOLDER_ID` | Ja for upload | ID fra Drive-mappens URL |
 | `GOOGLE_OAUTH_CLIENT_ID` | Ja for normal Drive-upload | OAuth-klient-id fra dit Google Cloud-projekt |
 | `GOOGLE_OAUTH_CLIENT_SECRET` | Ja for normal Drive-upload | OAuth-klienthemmelighed |
