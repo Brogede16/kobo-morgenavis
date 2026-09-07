@@ -25,13 +25,14 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 5
+  max_queries: 6
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
     - "dansk film kulturpolitik Det Danske Filminstitut -site:dfi.dk Esben Danielsen analyser"
     - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
     - "museer kulturinstitutioner publikum data brand partnerships biografer AI kultur aktuelle analyser"
+    - "site:dr.dk/kultur dansk kulturpolitik store kulturelle begivenheder udstillinger koncerter film aktuelle nyheder"
 source_limits:
   MacRumors: 1
   TechCrunch: 2
