@@ -6,7 +6,7 @@ Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del
 
 ## Sådan virker den
 
-`sources.yaml` er redaktionens source of truth og versioneres i Git. Ved hver kørsel hentes aktive RSS-feeds, OpenAI udvælger de mest relevante og varierede historier, artiklerne renderes til en EPUB, og filen lægges i den valgte Google Drive-mappe. Se [editorial_feedback.md](editorial_feedback.md) for, hvordan ændringer fra dine beskeder her bliver til konkrete og sporbare justeringer.
+`sources.yaml` er redaktionens source of truth og versioneres i Git. Den henter bredt (op til 25 indslag pr. kilde), kombinerer det med tre faste web-søgninger og triagerer lokalt ned til en AI-shortlist. Derefter vælger OpenAI den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. Se [reader_profile.yaml](reader_profile.yaml) og [editorial_feedback.md](editorial_feedback.md) for, hvordan dine beskeder her bliver til konkrete og sporbare justeringer.
 
 ## Kør nu
 
@@ -35,7 +35,11 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Den normale udgave laver **ét** AI-kald til udvælgelse: højst 40 kandidater, højst 320 tegn RSS-resumé pr. kandidat og højst 400 outputtokens. Artiklerne hentes og lægges i EPUB uden AI-opsummering. Det gør forbruget stabilt og lavt. Websøgning er en særskilt OpenAI tool-kørsel med højst to søgninger og 700 outputtokens; den er derfor valgfri og deaktiveret for planlagte kørsler. Sæt et projektbudget/spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
+Den normale udgave samler op til 180 RSS-kandidater, men bruger gratis lokal triage før AI-kaldet. Redaktøren ser højst 80 korte resuméer á 260 tegn og må bruge 400 outputtokens. Websøgning er slået til automatisk: højst tre søgninger og 700 outputtokens. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Sæt et projektbudget/spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
+
+### Langt, kort og grafik
+
+Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes højst ét hero-billede pr. artikel fra sidens Open Graph-metadata og pakkes *ind i* EPUB’en. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
 
 ## Secrets og miljøvariabler
 
@@ -46,12 +50,17 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 | `OPENAI_API_KEY` | Ja for AI-udvælgelse | Nøglen til OpenAI API |
 | `OPENAI_MODEL` | Nej | Standard er `gpt-5-mini` |
 | `GOOGLE_DRIVE_FOLDER_ID` | Ja for upload | ID fra Drive-mappens URL |
-| `GOOGLE_SERVICE_ACCOUNT_JSON_B64` | Ja for upload | Base64-kodet Google service-account JSON |
+| `GOOGLE_OAUTH_CLIENT_ID` | Ja for normal Drive-upload | OAuth-klient-id fra dit Google Cloud-projekt |
+| `GOOGLE_OAUTH_CLIENT_SECRET` | Ja for normal Drive-upload | OAuth-klienthemmelighed |
+| `GOOGLE_OAUTH_REFRESH_TOKEN` | Ja for normal Drive-upload | Langlivet brugeradgang til Kobo-mappen |
+| `GOOGLE_SERVICE_ACCOUNT_JSON_B64` | Alternativ | Base64-kodet service-account JSON |
 | `RUN_NOW_TOKEN` | Anbefalet | Beskytter `POST /run-now` |
 | `ADMIN_USERNAME` | Nej | Brugernavn til den lille kør-nu-side; standard `mads` |
 | `ADMIN_PASSWORD` | Ja for kør-nu-side | Stærkt, unikt login til forsiden |
 
-Opret en Google Cloud service account med Drive API aktiveret, del den Kobo-oprettede **`Rakuten Kobo`**-mappe med service-accountens e-mailadresse som **Editor**, og kod JSON-nøglen til én base64-linje:
+En almindelig **Google API key kan ikke skrive til din private Google Drive**; den identificerer et projekt, men giver ikke brugeradgang. Brug i stedet en OAuth-klient med `drive.file`-adgang som standard. Det lader Render skrive kun til den udpegede **`Rakuten Kobo`**-mappe på dine vegne. Gem client-id, client-secret og refresh token som Render-secrets. Service account er stadig en mulig reserve, men Google advarer om, at den ikke ejer filer i din personlige Drive på samme måde.
+
+Hvis service account bruges: del den Kobo-oprettede **`Rakuten Kobo`**-mappe med service-accountens e-mailadresse som **Editor**, og kod JSON-nøglen til én base64-linje:
 
 ```bash
 base64 -i service-account.json | tr -d '\n'

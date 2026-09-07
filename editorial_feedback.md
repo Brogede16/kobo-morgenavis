@@ -13,6 +13,8 @@ Skriv naturligt, for eksempel:
 
 Codex omsætter feedbacken til en konkret ændring i `sources.yaml` (kilder, emner, antal, søgeord eller budget) og tilføjer en kort post nedenfor. Ændringen testes, committes og pushes, når GitHub-remote er sat op. Der må aldrig gemmes API-nøgler eller adgangskoder i denne fil.
 
+Når du sender links til artikler, du ville eller ikke ville læse, gemmer Codex også en kort begrundelse i `reader_profile.yaml`. Det betyder, at udvælgelsen lærer artikeltypen og vinklen — ikke bare domænet. Fx kan produktanalyser fra MacRumors vælges, mens podcast-lanceringer fra samme domæne fravælges.
+
 ## Historik
 
 - 2026-09-07: V1 oprettet med danske/verdens-, teknologi-, videnskabs- og kultur-emner.

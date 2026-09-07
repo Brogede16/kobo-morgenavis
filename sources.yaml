@@ -2,9 +2,10 @@
 edition:
   title: "Mads Morgen"
   language: da
-  max_articles: 8
-  max_candidates: 40
-  max_summary_characters: 320
+  max_articles: 10
+  max_candidates: 180 # Broad collection; the model only sees the shortlisted items below.
+  ai_shortlist_size: 80
+  max_summary_characters: 260
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
@@ -16,15 +17,25 @@ edition:
 web_search:
   # Web search uses a separate OpenAI web-search tool call. Keep it off in the
   # scheduled edition unless it proves valuable enough to justify its cost.
-  enabled_for_schedule: false
-  max_queries: 2
+  enabled_for_schedule: true
+  max_queries: 3
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "positive eller væsentlige kulturhistorier i dag"
+    - "vigtige longread analyser i dag verden teknologi videnskab"
+images:
+  enabled: true
+  max_per_article: 1
+  max_width: 1200
+  max_bytes: 2500000
+collection:
+  max_items_per_source: 25
 sources:
   - name: DR Nyheder
     url: https://www.dr.dk/nyheder/service/feeds/senestenyt
     enabled: true
+    format: short
   - name: The Guardian World
     url: https://www.theguardian.com/world/rss
     enabled: true
+    format: mixed
