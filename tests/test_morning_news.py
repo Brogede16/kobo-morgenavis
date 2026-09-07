@@ -1,6 +1,6 @@
 from pathlib import Path
 
-from morning_news import build_epub, editorial_prompt_profile, load_settings, select_articles
+from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, select_articles
 
 
 def settings():
@@ -34,3 +34,12 @@ def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
     profile.write_text("editorial: {voice: Calm}\nexamples:\n  read:\n" + "\n".join(f"    - url: https://x/{i}\n      reason: useful" for i in range(15)))
     monkeypatch.setattr("morning_news.load_editorial_profile", lambda: __import__("yaml").safe_load(profile.read_text()))
     assert len(editorial_prompt_profile()["examples"]["read"]) == 12
+
+
+def test_source_diversity_caps_a_single_outlet():
+    items = [{"title": str(i), "source": "One", "url": f"https://one/{i}", "summary": ""} for i in range(3)]
+    items += [{"title": "other", "source": "Two", "url": "https://two/1", "summary": ""}]
+    configured = settings()
+    configured["edition"]["max_articles"] = 3
+    configured["edition"]["max_articles_per_source"] = 2
+    assert [item["source"] for item in enforce_source_diversity(items, items, configured)] == ["One", "One", "Two"]

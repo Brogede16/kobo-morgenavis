@@ -8,6 +8,8 @@ Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del
 
 `sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. kilde), kombinerer det med tre faste Google-søgninger og triagerer lokalt ned til en AI-shortlist. Derefter vælger Gemini den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
 
+Kildediversitet håndhæves også i kode: standarden er højst to artikler pr. outlet, og MacRumors højst én. Rest of World og 404 Media indgår som web-radarer, så teknologidækningen ikke alene følger produktnyheder eller de største teknologimedier.
+
 ## Kør nu
 
 Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Den kører hele kæden med det samme og uploader EPUB’en til Google Drive. Du kan valgfrit markere “Søg også på nettet denne ene gang”. Det kræver ingen ny Render-tjeneste.

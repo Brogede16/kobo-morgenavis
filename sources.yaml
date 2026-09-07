@@ -6,6 +6,7 @@ edition:
   max_candidates: 180 # Broad collection; the model only sees the shortlisted items below.
   ai_shortlist_size: 80
   max_summary_characters: 260
+  max_articles_per_source: 2
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
@@ -25,9 +26,15 @@ web_search:
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
-    - "dansk film kulturpolitik Det Danske Filminstitut nyheder -site:dfi.dk"
-    - "kulturpolitik kultur analyse Esben Danielsen nyheder og analyser"
+    - "dansk film kulturpolitik Det Danske Filminstitut -site:dfi.dk Esben Danielsen analyser"
     - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
+    - "AI teknologi geopolitik overvågning aktuelle analyser prefer site:restofworld.org OR site:404media.co OR site:arstechnica.com OR site:wired.com"
+source_limits:
+  MacRumors: 1
+  TechCrunch: 2
+  The Guardian Technology: 2
+  Ars Technica: 2
+  WIRED: 2
 images:
   enabled: true
   max_per_article: 1

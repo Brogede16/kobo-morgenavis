@@ -115,6 +115,29 @@ def shortlist_candidates(candidates, settings):
     return sorted(candidates, key=score, reverse=True)[:int(settings["edition"].get("ai_shortlist_size", 80))]
 
 
+def enforce_source_diversity(selected, candidates, settings):
+    """Keep one outlet from becoming the morning newspaper's whole worldview."""
+    default_limit = int(settings["edition"].get("max_articles_per_source", 2))
+    limits = settings.get("source_limits", {})
+    counts, result, seen = {}, [], set()
+
+    def add(article):
+        source = article["source"]
+        limit = int(limits.get(source, default_limit))
+        if article["url"] not in seen and counts.get(source, 0) < limit:
+            result.append(article)
+            seen.add(article["url"])
+            counts[source] = counts.get(source, 0) + 1
+
+    for article in selected:
+        add(article)
+    for article in candidates:
+        if len(result) >= int(settings["edition"]["max_articles"]):
+            break
+        add(article)
+    return result
+
+
 def select_articles(candidates, settings):
     limit = int(settings["edition"]["max_articles"])
     if not candidates:
@@ -143,7 +166,8 @@ def select_articles(candidates, settings):
     )
     try:
         indexes = json.loads(response.text)["selected"]
-        return [candidates[i] for i in indexes if isinstance(i, int) and 0 <= i < len(candidates)][:limit]
+        selected = [candidates[i] for i in indexes if isinstance(i, int) and 0 <= i < len(candidates)][:limit]
+        return enforce_source_diversity(selected, candidates, settings)
     except (ValueError, KeyError, TypeError) as exc:
         logger.warning("AI selection malformed (%s); using feed order", exc)
         return candidates[:limit]
