@@ -54,6 +54,7 @@ def fetch_candidates(settings):
                 candidates.append({
                     "source": source["name"], "title": title,
                     "url": link, "summary": re.sub("<[^>]+>", "", entry.get("summary", ""))[:700],
+                    "format": source.get("format", "mixed"),
                 })
     # An article syndicated in several feeds should appear once.
     return list({item["url"]: item for item in candidates}.values())[:settings["edition"]["max_candidates"]]
@@ -103,7 +104,8 @@ def select_articles(candidates, settings):
         return candidates[:limit]
     candidates = shortlist_candidates(candidates, settings)
     maximum = int(settings["edition"].get("max_summary_characters", 260))
-    compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
+    compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "format": c.get("format", "mixed"),
+                "summary": c["summary"][:maximum]} for i, c in enumerate(candidates)]
     profile = load_reader_profile()
     prompt = (
         "You are the editor of a Danish morning newspaper. Pick the most useful, varied "
