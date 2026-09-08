@@ -25,7 +25,7 @@ edition:
     - spil
     - fotografi
 web_search:
-  # Gemini Google Search grounding runs in the scheduled edition.
+  # OpenAI web search runs in the scheduled edition.
   enabled_for_schedule: true
   rotating_queries_per_day: 3 # Four core searches plus three rotating specialist searches.
   queries:
@@ -49,7 +49,7 @@ web_search:
     - "site:altinget.dk dansk politik forlig lovforslag reform kommune region analyse OR site:zetland.dk dansk samfund politik"
 news_site_signals:
   # Headline-level editorial radar. These URLs are not copied into the EPUB.
-  # The bounded Gemini Google Search call seeks accessible reporting on the leads.
+  # The bounded OpenAI web search call seeks accessible reporting on the leads.
   sites:
     - name: DR Politik
       url: https://www.dr.dk/nyheder/politik
@@ -98,8 +98,7 @@ collection:
   max_http_requests: 180
   max_download_bytes: 35000000
 ai:
-  model: gemini-3.6-flash
-  fallback_model: gemini-3.5-flash
+  model: gpt-5-mini
   max_prompt_characters: 55000
   search_output_tokens: 1600
   selection_output_tokens: 2400

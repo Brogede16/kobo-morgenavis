@@ -1,10 +1,9 @@
-"""Bounded news collection, Gemini selection, and EPUB delivery."""
+"""Bounded news collection, OpenAI selection, and EPUB delivery."""
 import html
 import json
 import logging
 import os
 import re
-import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -14,9 +13,8 @@ from zoneinfo import ZoneInfo
 import feedparser
 import requests
 import yaml
-from google import genai
-from google.genai import types
 from lxml import etree, html as lxml_html
+from openai import OpenAI
 
 from editorial import compact_profile, dedupe, diverse_selection, fair_sample
 from feedback_store import editorial_note, recent_feedback, record_edition
@@ -157,48 +155,28 @@ def fetch_news_site_signals(settings, reader=None, source_health=None):
     return signals
 
 
-def gemini_call(prompt, settings, search=False):
+def ai_call(prompt, settings, search=False):
     config = settings.get("ai", {})
     if len(prompt) > int(config.get("max_prompt_characters", 55000)):
         raise ValueError("AI prompt exceeds configured character budget")
-    # Gemini 3.6 supports "minimal": enough for clean structured selection while
-    # avoiding the dynamic thinking spend intended for harder reasoning tasks.
-    options = {"max_output_tokens": int(config.get("search_output_tokens" if search else "selection_output_tokens", 3000)),
-               "thinking_config": types.ThinkingConfig(thinking_level="minimal")}
+    options = {
+        "model": os.environ.get("OPENAI_MODEL", config.get("model", "gpt-5-mini")),
+        "input": prompt,
+        "max_output_tokens": int(config.get("search_output_tokens" if search else "selection_output_tokens", 3000)),
+        "reasoning": {"effort": "minimal"},
+        "store": False,
+    }
     if search:
-        options["tools"] = [types.Tool(google_search=types.GoogleSearch())]
+        options["tools"] = [{"type": "web_search", "search_context_size": "low"}]
     else:
-        options["response_mime_type"] = "application/json"
-    client = genai.Client(api_key=os.environ["GEMINI_API_KEY"], http_options=types.HttpOptions(timeout=90000))
-    primary = os.environ.get("GEMINI_MODEL", config.get("model", "gemini-3.6-flash"))
-    models = [primary]
-    fallback = config.get("fallback_model", "")
-    if fallback and fallback not in models:
-        models.append(fallback)
-    response = None
-    try:
-        for model in models:
-            try:
-                response = client.models.generate_content(model=model, contents=prompt,
-                                                          config=types.GenerateContentConfig(**options))
-                break
-            except Exception as exc:
-                code = getattr(exc, "status_code", getattr(exc, "code", None))
-                if code not in {429, 503} or model == models[-1]:
-                    raise
-                logger.warning("Gemini model %s temporarily unavailable; trying fallback", model)
-                time.sleep(2)
-    finally:
-        close = getattr(client, "close", None)
-        if callable(close):
-            close()
-    if response is None:
-        raise RuntimeError("Gemini returned no response")
-    logger.info("Gemini %s usage: %s", "search" if search else "selection", response.usage_metadata)
-    value = (response.text or "").strip()
+        options["text"] = {"format": {"type": "json_object"}}
+    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=90.0)
+    response = client.responses.create(**options)
+    logger.info("OpenAI %s usage: %s", "search" if search else "selection", response.usage)
+    value = (response.output_text or "").strip()
     if value.startswith("```"):
         value = value.split("\n", 1)[-1].rsplit("```", 1)[0]
-    # Gemini 3 may prefix the answer with a small JSON thought fragment. Accept
+    # A model may prefix the answer with a small JSON fragment. Accept
     # only the object that has the response shape we requested.
     decoder = json.JSONDecoder()
     for candidate in (value, re.sub(r'([,{]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:', r'\1"\2":', value)):
@@ -210,11 +188,11 @@ def gemini_call(prompt, settings, search=False):
                 continue
             if isinstance(parsed, dict) and ("selected" in parsed or "articles" in parsed):
                 return parsed
-    raise ValueError("Gemini response did not contain the requested JSON object")
+    raise ValueError("OpenAI response did not contain the requested JSON object")
 
 
 def fetch_web_candidates(settings, reader=None, source_health=None):
-    if not os.environ.get("GEMINI_API_KEY"):
+    if not os.environ.get("OPENAI_API_KEY"):
         return []
     reader = reader or WebReader()
     config = settings.get("web_search", {})
@@ -235,7 +213,7 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
               "Queries: " + json.dumps(queries, ensure_ascii=False) + " Leads: " + json.dumps(signals, ensure_ascii=False))
     found = []
     try:
-        payload = gemini_call(prompt, settings, search=True)
+        payload = ai_call(prompt, settings, search=True)
         for item in payload.get("articles", [])[:12]:
             if not isinstance(item, dict) or not canonical_url(item.get("url", "")):
                 continue
@@ -251,10 +229,10 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
     except Exception as exc:
         logger.warning("Search unavailable (%s); using feeds and open radar", type(exc).__name__)
         if source_health is not None:
-            source_health["Gemini websøgning"] = {"status": "fejl", "items": 0}
+            source_health["OpenAI websøgning"] = {"status": "fejl", "items": 0}
     else:
         if source_health is not None:
-            source_health["Gemini websøgning"] = {"status": "ok", "items": len(found)}
+            source_health["OpenAI websøgning"] = {"status": "ok", "items": len(found)}
     for signal in signals:
         if signal.get("role") == "reading" and signal.get("preview"):
             if not signal.get("published") or fresh(signal["published"]):
@@ -282,8 +260,8 @@ def enforce_source_diversity(selected, candidates, settings):
 
 
 def select_articles(candidates, settings):
-    if not os.environ.get("GEMINI_API_KEY"):
-        raise RuntimeError("GEMINI_API_KEY mangler. Ingen uredigeret avis er sendt.")
+    if not os.environ.get("OPENAI_API_KEY"):
+        raise RuntimeError("OPENAI_API_KEY mangler. Ingen uredigeret avis er sendt.")
     candidates = shortlist_candidates(candidates, settings)
     if not candidates:
         return []
@@ -316,7 +294,7 @@ def select_articles(candidates, settings):
         if len(payload["candidates"]) <= 10:
             raise ValueError("Editorial context too large")
         payload["candidates"] = fair_sample(payload["candidates"], len(payload["candidates"]) - 5)
-    result = gemini_call(instructions + json.dumps(payload, ensure_ascii=False), settings)
+    result = ai_call(instructions + json.dumps(payload, ensure_ascii=False), settings)
     sent_indexes = {c["i"] for c in payload["candidates"]}
     approved = []
     for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:4]):
@@ -335,8 +313,8 @@ def select_articles(candidates, settings):
 
 def run_edition(settings=None, use_web_search=None):
     settings = settings or load_settings()
-    if not os.environ.get("GEMINI_API_KEY"):
-        raise RuntimeError("GEMINI_API_KEY mangler. Tilføj nøglen før første udgave.")
+    if not os.environ.get("OPENAI_API_KEY"):
+        raise RuntimeError("OPENAI_API_KEY mangler. Tilføj nøglen før første udgave.")
     collection = settings.get("collection", {})
     reader = WebReader(max_requests=int(collection.get("max_http_requests", 180)),
                        max_bytes=int(collection.get("max_download_bytes", 35000000)))

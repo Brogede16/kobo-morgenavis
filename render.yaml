@@ -8,10 +8,10 @@ services:
     healthCheckPath: /healthz
     autoDeploy: true
     envVars:
-      - key: GEMINI_API_KEY
+      - key: OPENAI_API_KEY
         sync: false
-      - key: GEMINI_MODEL
-        value: gemini-3.6-flash
+      - key: OPENAI_MODEL
+        value: gpt-5-mini
       - key: GOOGLE_DRIVE_FOLDER_ID
         sync: false
       - key: GOOGLE_OAUTH_CLIENT_ID

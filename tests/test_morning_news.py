@@ -22,9 +22,9 @@ def test_load_settings(tmp_path):
 
 
 def test_select_without_key(monkeypatch):
-    monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+    monkeypatch.delenv("OPENAI_API_KEY", raising=False)
     candidates = [{"title": str(i), "source": "x", "url": f"https://x/{i}", "summary": "s"} for i in range(3)]
-    with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
+    with pytest.raises(RuntimeError, match="OPENAI_API_KEY"):
         select_articles(candidates, settings())
 
 
@@ -52,37 +52,14 @@ def test_editorial_note_is_explicit_about_feedback(monkeypatch):
 
 def test_model_json_parser_repairs_only_bare_object_keys(monkeypatch):
     class Client:
-        class Models:
-            def generate_content(self, **kwargs):
-                return type("Response", (), {"text": '[]\n{selected:[{"i": 1, "why": "ok",},],}', "usage_metadata": None})()
-        models = Models()
-    monkeypatch.setattr("morning_news.genai.Client", lambda **kwargs: Client())
-    monkeypatch.setenv("GEMINI_API_KEY", "test")
-    from morning_news import gemini_call
-    assert gemini_call("test", settings())["selected"][0]["i"] == 1
-
-
-def test_gemini_retries_with_fallback_after_new_sdk_503(monkeypatch):
-    calls = []
-    class Busy(Exception):
-        code = 503
-    class Client:
-        class Models:
-            def generate_content(self, model, **kwargs):
-                calls.append(model)
-                if model == "primary":
-                    raise Busy()
-                return type("Response", (), {"text": '{"selected": []}', "usage_metadata": None})()
-        models = Models()
-    monkeypatch.setattr("morning_news.genai.Client", lambda **kwargs: Client())
-    monkeypatch.setattr("morning_news.time.sleep", lambda _: None)
-    monkeypatch.setenv("GEMINI_API_KEY", "test")
-    monkeypatch.setenv("GEMINI_MODEL", "primary")
-    configured = settings()
-    configured["ai"] = {"fallback_model": "fallback"}
-    from morning_news import gemini_call
-    assert gemini_call("test", configured) == {"selected": []}
-    assert calls == ["primary", "fallback"]
+        class Responses:
+            def create(self, **kwargs):
+                return type("Response", (), {"output_text": '[]\n{selected:[{"i": 1, "why": "ok",},],}', "usage": None})()
+        responses = Responses()
+    monkeypatch.setattr("morning_news.OpenAI", lambda **kwargs: Client())
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    from morning_news import ai_call
+    assert ai_call("test", settings())["selected"][0]["i"] == 1
 
 
 def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):

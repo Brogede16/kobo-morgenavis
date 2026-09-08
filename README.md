@@ -1,12 +1,12 @@
 # Kobo Morgenavis
 
-En lille, GitHub-styret service der hver morgen bygger en EPUB: RSS-kilder og automatisk websøgning → Gemini-redaktør → EPUB → Google Drive → Kobo.
+En lille, GitHub-styret service der hver morgen bygger en EPUB: RSS-kilder og automatisk websøgning → OpenAI-redaktør → EPUB → Google Drive → Kobo.
 
 Der er et enkelt, loginbeskyttet kontrolpanel, men ingen fancy frontend og intet Render Cron Job. I stedet er planlæggeren en del af den eksisterende Render-webservice. Det undgår en ekstra Cron-tjeneste, men kræver en **altid kørende Render-instans**. En Free-webservice kan sove og må derfor ikke bruges til den daglige planlægning.
 
 ## Sådan virker den
 
-`sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. RSS-kilde), læser et lille sæt danske nyhedssektioner på **overskrifts- og previewniveau** og kombinerer det med én begrænset, Google-grounded søgekørsel. For højst tre relevante links pr. sektion læses en kort offentlig beskrivelse eller indledning; det hjælper redaktøren med at forstå sagen uden at gøre det til en ny, token-tung AI-proces. Politiken, Information og Kulturmonitor er kun redaktionel radar: appen kopierer aldrig deres tekst eller leverer en betalingsmuret artikel, men finder i stedet tilgængelig original eller uafhængig dækning af sagen. Derefter triageres der lokalt ned til en AI-shortlist, og Gemini vælger den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
+`sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 25 indslag pr. RSS-kilde), læser et lille sæt danske nyhedssektioner på **overskrifts- og previewniveau** og kombinerer det med én begrænset OpenAI-websøgning. For højst tre relevante links pr. sektion læses en kort offentlig beskrivelse eller indledning; det hjælper redaktøren med at forstå sagen uden at gøre det til en ny, token-tung AI-proces. Politiken, Information og Kulturmonitor er kun redaktionel radar: appen kopierer aldrig deres tekst eller leverer en betalingsmuret artikel, men finder i stedet tilgængelig original eller uafhængig dækning af sagen. Derefter triageres der lokalt ned til en AI-shortlist, og OpenAI vælger den færdige blanding: 6-7 korte, vigtige opdateringer og 2-3 longreads/analyser. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
 
 Kildediversitet håndhæves også i kode: standarden er højst to artikler pr. outlet, og MacRumors højst én. Rest of World og 404 Media indgår som web-radarer, så teknologidækningen ikke alene følger produktnyheder eller de største teknologimedier.
 
@@ -29,7 +29,7 @@ python -c "from morning_news import run_edition; print(run_edition())"
 flask --app app run
 ```
 
-Uden `GEMINI_API_KEY` afbrydes kørslen, så der aldrig sendes en uredigeret avis. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
+Uden `OPENAI_API_KEY` afbrydes kørslen, så der aldrig sendes en uredigeret avis. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
 
 ## Konfiguration
 
@@ -45,11 +45,11 @@ Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke 
 
 Efter en udgave er kørt, viser forsiden dens valgte artikler med **Mere af den slags** og **Mindre af den slags**. Du kan valgfrit markere, om det drejer sig om emne, vinkel, dybde, om det er uinteressant, eller om det er godt men for nørdet. Feedback er lavet til at blive givet lejlighedsvist, ikke hver dag. Når GitHub-feedback er slået til, gemmer hvert klik artikelens titel, kilde, URL, korte resumé og dit valg i `feedback/events.jsonl` på den separate GitHub-branch `feedback-data`; dagens artikelkort arkiveres som `feedback/editions/YYYY-MM-DD.json` samme sted. Der bevares altid højst de seneste ti dagsudgaver; den ældste slettes ved næste kørsel. Den branche deployes ikke af Render, som fortsat følger `main`.
 
-Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo-morgenavis` og `GITHUB_FEEDBACK_TOKEN`. Tokenet skal være en GitHub fine-grained personal access token begrænset til dette ene repo med **Contents: Read and write**. Appen opretter selv `feedback-data` ved første synkronisering. Klikfeedback indgår som kompakte signaler i den næste Gemini-udvælgelse; den redigerede, varige profil kan derefter opdateres og committes til `main`.
+Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo-morgenavis` og `GITHUB_FEEDBACK_TOKEN`. Tokenet skal være en GitHub fine-grained personal access token begrænset til dette ene repo med **Contents: Read and write**. Appen opretter selv `feedback-data` ved første synkronisering. Klikfeedback indgår som kompakte signaler i den næste OpenAI-udvælgelse; den redigerede, varige profil kan derefter opdateres og committes til `main`.
 
 ### Gennemsigtighed uden ekstra AI-forbrug
 
-Forsiden viser for hver artikel den korte redaktionelle begrundelse, som allerede blev lavet ved udvælgelsen. Den viser også en ugentlig, regelbaseret note om de seneste kliksignaler og en sammenfoldet kildestatus for den pågældende udgave. Det kræver ingen ekstra Gemini-kald: noten tæller kun den feedback, du selv har givet, og kildestatus kommer fra den allerede gennemførte indsamling. EPUB’ens overblik opdeles i **Danmark og kultur**, **Teknologi og verden** og **Fordybelse**, så den er hurtigere at skimme på Kobo.
+Forsiden viser for hver artikel den korte redaktionelle begrundelse, som allerede blev lavet ved udvælgelsen. Den viser også en ugentlig, regelbaseret note om de seneste kliksignaler og en sammenfoldet kildestatus for den pågældende udgave. Det kræver ingen ekstra OpenAI-kald: noten tæller kun den feedback, du selv har givet, og kildestatus kommer fra den allerede gennemførte indsamling. EPUB’ens overblik opdeles i **Danmark og kultur**, **Teknologi og verden** og **Fordybelse**, så den er hurtigere at skimme på Kobo.
 
 ### Langt, kort og grafik
 
@@ -63,8 +63,8 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 
 | Variabel | Krævet | Formål |
 | --- | --- | --- |
-| `GEMINI_API_KEY` | Ja for AI-udvælgelse | API-nøgle fra Google AI Studio / Gemini API |
-| `GEMINI_MODEL` | Nej | Standard er `gemini-3.6-flash`; ved midlertidig kapacitetsfejl bruges `gemini-3.5-flash` som reserve |
+| `OPENAI_API_KEY` | Ja for AI-udvælgelse | OpenAI API-nøgle |
+| `OPENAI_MODEL` | Nej | Standard er `gpt-5-mini` |
 | `GITHUB_REPOSITORY` | Nej | Repo til GitHub-baseret feedback, fx `Brogede16/kobo-morgenavis` |
 | `GITHUB_FEEDBACK_BRANCH` | Nej | Standard er `feedback-data`; klik her deployer ikke appen |
 | `GITHUB_FEEDBACK_TOKEN` | Nej | Fine-grained token med Contents read/write til det ene repo |
@@ -89,7 +89,7 @@ base64 -i service-account.json | tr -d '\n'
 
 1. Opret et GitHub-repo og push denne mappe til `main`.
 2. I Render: vælg **New → Blueprint**, forbind repoet, og lad Render læse `render.yaml`.
-3. Udfyld Gemini-, Drive-, GitHub- og login-secrets fra tabellen ovenfor. `RUN_NOW_TOKEN` og en første admin-adgangskode oprettes automatisk af Blueprintet.
+3. Udfyld OpenAI-, Drive-, GitHub- og login-secrets fra tabellen ovenfor. `RUN_NOW_TOKEN` og en første admin-adgangskode oprettes automatisk af Blueprintet.
 4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel. Åbn `/` og log ind for at køre en prøveudgave.
 5. Alternativt: test med en POST til `/run-now` og headeren `Authorization: Bearer <RUN_NOW_TOKEN>`.
 
