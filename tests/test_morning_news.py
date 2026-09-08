@@ -50,6 +50,41 @@ def test_editorial_note_is_explicit_about_feedback(monkeypatch):
     assert "god dybde" in editorial_note()
 
 
+def test_model_json_parser_repairs_only_bare_object_keys(monkeypatch):
+    class Client:
+        class Models:
+            def generate_content(self, **kwargs):
+                return type("Response", (), {"text": '[]\n{selected:[{"i": 1, "why": "ok",},],}', "usage_metadata": None})()
+        models = Models()
+    monkeypatch.setattr("morning_news.genai.Client", lambda **kwargs: Client())
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    from morning_news import gemini_call
+    assert gemini_call("test", settings())["selected"][0]["i"] == 1
+
+
+def test_gemini_retries_with_fallback_after_new_sdk_503(monkeypatch):
+    calls = []
+    class Busy(Exception):
+        code = 503
+    class Client:
+        class Models:
+            def generate_content(self, model, **kwargs):
+                calls.append(model)
+                if model == "primary":
+                    raise Busy()
+                return type("Response", (), {"text": '{"selected": []}', "usage_metadata": None})()
+        models = Models()
+    monkeypatch.setattr("morning_news.genai.Client", lambda **kwargs: Client())
+    monkeypatch.setattr("morning_news.time.sleep", lambda _: None)
+    monkeypatch.setenv("GEMINI_API_KEY", "test")
+    monkeypatch.setenv("GEMINI_MODEL", "primary")
+    configured = settings()
+    configured["ai"] = {"fallback_model": "fallback"}
+    from morning_news import gemini_call
+    assert gemini_call("test", configured) == {"selected": []}
+    assert calls == ["primary", "fallback"]
+
+
 def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
     profile = tmp_path / "editorial.yaml"
     profile.write_text("editorial: {voice: Calm}\nexamples:\n  read:\n" + "\n".join(f"    - url: https://x/{i}\n      reason: useful" for i in range(15)))

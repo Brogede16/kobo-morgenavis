@@ -11,7 +11,7 @@ services:
       - key: GEMINI_API_KEY
         sync: false
       - key: GEMINI_MODEL
-        value: gemini-2.5-flash
+        value: gemini-3.6-flash
       - key: GOOGLE_DRIVE_FOLDER_ID
         sync: false
       - key: GOOGLE_OAUTH_CLIENT_ID

@@ -98,6 +98,8 @@ collection:
   max_http_requests: 180
   max_download_bytes: 35000000
 ai:
+  model: gemini-3.6-flash
+  fallback_model: gemini-3.5-flash
   max_prompt_characters: 55000
   search_output_tokens: 1600
   selection_output_tokens: 2400

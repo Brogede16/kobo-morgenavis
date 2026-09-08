@@ -4,6 +4,7 @@ import json
 import logging
 import os
 import re
+import time
 from datetime import datetime, timedelta, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -160,23 +161,56 @@ def gemini_call(prompt, settings, search=False):
     config = settings.get("ai", {})
     if len(prompt) > int(config.get("max_prompt_characters", 55000)):
         raise ValueError("AI prompt exceeds configured character budget")
+    # Gemini 3.6 supports "minimal": enough for clean structured selection while
+    # avoiding the dynamic thinking spend intended for harder reasoning tasks.
     options = {"max_output_tokens": int(config.get("search_output_tokens" if search else "selection_output_tokens", 3000)),
-               "thinking_config": types.ThinkingConfig(thinking_budget=0)}
+               "thinking_config": types.ThinkingConfig(thinking_level="minimal")}
     if search:
         options["tools"] = [types.Tool(google_search=types.GoogleSearch())]
     else:
         options["response_mime_type"] = "application/json"
     client = genai.Client(api_key=os.environ["GEMINI_API_KEY"], http_options=types.HttpOptions(timeout=90000))
+    primary = os.environ.get("GEMINI_MODEL", config.get("model", "gemini-3.6-flash"))
+    models = [primary]
+    fallback = config.get("fallback_model", "")
+    if fallback and fallback not in models:
+        models.append(fallback)
+    response = None
     try:
-        response = client.models.generate_content(model=os.environ.get("GEMINI_MODEL", "gemini-2.5-flash"),
-                                                  contents=prompt, config=types.GenerateContentConfig(**options))
+        for model in models:
+            try:
+                response = client.models.generate_content(model=model, contents=prompt,
+                                                          config=types.GenerateContentConfig(**options))
+                break
+            except Exception as exc:
+                code = getattr(exc, "status_code", getattr(exc, "code", None))
+                if code not in {429, 503} or model == models[-1]:
+                    raise
+                logger.warning("Gemini model %s temporarily unavailable; trying fallback", model)
+                time.sleep(2)
     finally:
-        client.close()
+        close = getattr(client, "close", None)
+        if callable(close):
+            close()
+    if response is None:
+        raise RuntimeError("Gemini returned no response")
     logger.info("Gemini %s usage: %s", "search" if search else "selection", response.usage_metadata)
     value = (response.text or "").strip()
     if value.startswith("```"):
         value = value.split("\n", 1)[-1].rsplit("```", 1)[0]
-    return json.loads(value)
+    # Gemini 3 may prefix the answer with a small JSON thought fragment. Accept
+    # only the object that has the response shape we requested.
+    decoder = json.JSONDecoder()
+    for candidate in (value, re.sub(r'([,{]\s*)([A-Za-z_][A-Za-z0-9_]*)\s*:', r'\1"\2":', value)):
+        candidate = re.sub(r",\s*([}\]])", r"\1", candidate)
+        for match in re.finditer(r"[\[{]", candidate):
+            try:
+                parsed, _ = decoder.raw_decode(candidate[match.start():])
+            except json.JSONDecodeError:
+                continue
+            if isinstance(parsed, dict) and ("selected" in parsed or "articles" in parsed):
+                return parsed
+    raise ValueError("Gemini response did not contain the requested JSON object")
 
 
 def fetch_web_candidates(settings, reader=None, source_health=None):

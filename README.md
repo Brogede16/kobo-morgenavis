@@ -64,7 +64,7 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 | Variabel | Krævet | Formål |
 | --- | --- | --- |
 | `GEMINI_API_KEY` | Ja for AI-udvælgelse | API-nøgle fra Google AI Studio / Gemini API |
-| `GEMINI_MODEL` | Nej | Standard er `gemini-2.5-flash` |
+| `GEMINI_MODEL` | Nej | Standard er `gemini-3.6-flash`; ved midlertidig kapacitetsfejl bruges `gemini-3.5-flash` som reserve |
 | `GITHUB_REPOSITORY` | Nej | Repo til GitHub-baseret feedback, fx `Brogede16/kobo-morgenavis` |
 | `GITHUB_FEEDBACK_BRANCH` | Nej | Standard er `feedback-data`; klik her deployer ikke appen |
 | `GITHUB_FEEDBACK_TOKEN` | Nej | Fine-grained token med Contents read/write til det ene repo |
