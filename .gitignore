@@ -4,6 +4,8 @@ __pycache__/
 .pytest_cache/
 *.py[cod]
 output/
+outputs/
+work/
+.DS_Store
 logs/
 service-account.json
-

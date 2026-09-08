@@ -1,0 +1,70 @@
+"""Bounded public-web retrieval shared by feeds, previews and EPUB extraction."""
+import ipaddress
+import socket
+from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
+
+import requests
+
+
+def canonical_url(url):
+    try:
+        parts = urlsplit(str(url))
+        if parts.scheme not in {"http", "https"} or not parts.hostname or parts.username or parts.password:
+            return ""
+        if parts.port not in {None, 80, 443}:
+            return ""
+        query = [(k, v) for k, v in parse_qsl(parts.query, keep_blank_values=True)
+                 if not k.lower().startswith("utm_") and k.lower() not in {"fbclid", "gclid"}]
+        return urlunsplit((parts.scheme.lower(), parts.netloc.lower(), parts.path or "/", urlencode(query), ""))
+    except ValueError:
+        return ""
+
+
+def public_url(url):
+    url = canonical_url(url)
+    if not url:
+        raise ValueError("Invalid public URL")
+    host = urlsplit(url).hostname
+    try:
+        addresses = socket.getaddrinfo(host, None, type=socket.SOCK_STREAM)
+    except OSError as exc:
+        raise ValueError("Could not resolve public host") from exc
+    if not addresses or any(not ipaddress.ip_address(row[4][0]).is_global for row in addresses):
+        raise ValueError("Non-public destination")
+    return url
+
+
+class WebReader:
+    """One edition's cache, request count and actual downloaded-byte budget."""
+
+    def __init__(self, max_requests=180, max_bytes=35_000_000):
+        self.max_requests, self.max_bytes = max_requests, max_bytes
+        self.requests = self.bytes = 0
+        self.cache = {}
+
+    def get(self, url, limit=1_500_000):
+        url = canonical_url(url)
+        if url in self.cache:
+            return self.cache[url]
+        original = url
+        for _ in range(5):
+            url = public_url(url)
+            if self.requests >= self.max_requests or self.bytes >= self.max_bytes:
+                raise ValueError("Edition download budget exhausted")
+            self.requests += 1
+            with requests.get(url, timeout=(5, 12), stream=True, allow_redirects=False,
+                              headers={"User-Agent": "MadsMorgen/1.1 (personal news reader)"}) as response:
+                if response.is_redirect:
+                    url = urljoin(url, response.headers["Location"])
+                    continue
+                response.raise_for_status()
+                content = bytearray()
+                for chunk in response.iter_content(16384):
+                    self.bytes += len(chunk)
+                    content.extend(chunk)
+                    if len(content) > limit or self.bytes > self.max_bytes:
+                        raise ValueError("Download exceeds byte limit")
+                result = (bytes(content), response.headers.get("Content-Type", ""), url)
+                self.cache[original] = result
+                return result
+        raise ValueError("Too many redirects")

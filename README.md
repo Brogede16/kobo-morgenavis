@@ -1,8 +1,8 @@
 # Kobo Morgenavis
 
-En lille, GitHub-styret service der hver morgen bygger en EPUB: RSS-kilder → AI-redaktør → EPUB → Google Drive → Kobo.
+En lille, GitHub-styret service der hver morgen bygger en EPUB: RSS-kilder og automatisk websøgning → Gemini-redaktør → EPUB → Google Drive → Kobo.
 
-Der er ingen frontend og ingen Render Cron Job. I stedet er planlæggeren en del af den eksisterende Render-webservice. Det er bevidst for at undgå ekstra Cron-omkostning, men den kræver en **altid kørende Render-instans**. En Free-webservice kan sove og må derfor ikke bruges til den daglige planlægning. `render.yaml` bruger `starter`; hvis din eksisterende service allerede holdes vågen, kan den samme kode i stedet indgå dér.
+Der er et enkelt, loginbeskyttet kontrolpanel, men ingen fancy frontend og intet Render Cron Job. I stedet er planlæggeren en del af den eksisterende Render-webservice. Det undgår en ekstra Cron-tjeneste, men kræver en **altid kørende Render-instans**. En Free-webservice kan sove og må derfor ikke bruges til den daglige planlægning.
 
 ## Sådan virker den
 
@@ -12,9 +12,9 @@ Kildediversitet håndhæves også i kode: standarden er højst to artikler pr. o
 
 ## Kør nu
 
-Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Den kører hele kæden med det samme og uploader EPUB’en til Google Drive. Du kan valgfrit markere “Søg også på nettet denne ene gang”. Det kræver ingen ny Render-tjeneste.
+Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Den kører hele kæden inklusive websøgning og uploader EPUB’en til Google Drive.
 
-Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Tilføj `?web_search=true` kun når den ekstra web-søgning ønskes.
+Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Websøgning er standard; `?web_search=false` er kun til fejlsøgning.
 
 Kobo Libra Colour understøtter Google Drive direkte. Forbind Kobo-kontoen med Google Drive én gang på læseren, og brug den automatisk oprettede **`Rakuten Kobo`**-mappe som upload-mappe. Når Kobo synkroniserer over Wi‑Fi, henter den nye DRM-frie EPUB’er; de kan også ses under **More → My Google Drive**. Det er en officiel Kobo-funktion, ikke en uofficiel Kobo-API-integration.
 
@@ -29,15 +29,15 @@ python -c "from morning_news import run_edition; print(run_edition())"
 flask --app app run
 ```
 
-Uden `GEMINI_API_KEY` vælger den de første fundne historier, så resten af kæden stadig kan testes. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
+Uden `GEMINI_API_KEY` afbrydes kørslen, så der aldrig sendes en uredigeret avis. Uden Drive-variabler gemmes EPUB’en kun i `output/`.
 
 ## Konfiguration
 
-Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`). `web_search` er slået fra for den planlagte kørsel som standard, men kan vælges på “kør nu”-siden eller bevidst aktiveres i konfigurationen.
+Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`). Websøgning er slået til for både planlagte og manuelle kørsler; fire kernespor suppleres af tre dagligt roterende specialspor.
 
 ### Token- og forbrugsramme
 
-Den normale udgave samler op til 240 kandidater og bruger gratis lokal triage før AI-kaldet. 35 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren ser højst 120 korte resuméer á 260 tegn og må bruge 400 outputtokens. Gemini Google Search-grounding er slået til automatisk med afgrænsede redaktionelle søgespor og 700 outputtokens; der er stadig kun ét søgekald pr. udgave. Artiklerne omskrives ikke af AI. Det giver bred dækning uden at sende fulde artikler eller et ubegrænset antal kandidater til modellen. Den komplette redaktionelle historik bliver i Git, mens de seneste 12 positive og 12 negative feedback-eksempler indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
+Den normale udgave samler op til 240 kandidater og bruger gratis lokal triage før AI-kaldet. 35 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren ser højst 120 korte resuméer á 260 tegn, men prompten har samtidig et hårdt loft på 55.000 tegn. Google-grounded søgning kører i ét afgrænset kald med højst 1.600 outputtokens; selve valget har højst 2.400. Artiklerne omskrives ikke af AI. Den komplette redaktionelle historik bliver i Git, mens kun fire relevante positive og negative eksempler samt kompakt klikfeedback indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
 
 Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
@@ -51,7 +51,7 @@ Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo
 
 Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
 
-Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis slettes permanent ved næste succesfulde upload; andre filer i mappen berøres ikke.
+Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke.
 
 ## Secrets og miljøvariabler
 
@@ -85,7 +85,7 @@ base64 -i service-account.json | tr -d '\n'
 
 1. Opret et GitHub-repo og push denne mappe til `main`.
 2. I Render: vælg **New → Blueprint**, forbind repoet, og lad Render læse `render.yaml`.
-3. Udfyld de tre secrets i tabellen ovenfor. `RUN_NOW_TOKEN` oprettes automatisk af Blueprintet.
+3. Udfyld Gemini-, Drive-, GitHub- og login-secrets fra tabellen ovenfor. `RUN_NOW_TOKEN` og en første admin-adgangskode oprettes automatisk af Blueprintet.
 4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel. Åbn `/` og log ind for at køre en prøveudgave.
 5. Alternativt: test med en POST til `/run-now` og headeren `Authorization: Bearer <RUN_NOW_TOKEN>`.
 
@@ -94,5 +94,5 @@ Render deployer automatisk ved push til `main`. Loggene i Render viser antal fun
 ## Begrænsninger i v1
 
 - RSS-feeds er stadig hovedkilder. Et lille, konfigureret sæt nyhedssektioner kan læses på overskriftsniveau som redaktionel radar; layout- eller adgangsændringer hos de enkelte sites kan gøre et signal midlertidigt utilgængeligt.
-- Artikelsider hentes kun som almindelige web-sider og kan falde tilbage til RSS-resumé, hvis de er blokerede.
+- Artikelsider hentes kun som almindelige web-sider. Blokerede, betalingsmurede eller tydeligt ufuldstændige artikler kommer ikke med i EPUB’en.
 - Drive-import til Kobo er et Kobo-trin, ikke en automatisk push-kanal.

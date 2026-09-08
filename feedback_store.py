@@ -12,11 +12,14 @@ import requests
 
 
 API = "https://api.github.com"
-BRANCH = os.environ.get("GITHUB_FEEDBACK_BRANCH", "feedback-data")
 LATEST_PATH = "feedback/latest_edition.json"
 EVENTS_PATH = "feedback/events.jsonl"
 EDITIONS_PREFIX = "feedback/editions"
 RETENTION_DAYS = 10
+
+
+def branch():
+    return os.environ.get("GITHUB_FEEDBACK_BRANCH", "feedback-data")
 
 
 def configured():
@@ -39,7 +42,7 @@ def _ensure_branch():
     """Create the feedback branch from main when the token is first used."""
     repository = os.environ["GITHUB_REPOSITORY"]
     headers = _headers()
-    existing = requests.get(f"{API}/repos/{repository}/git/ref/heads/{BRANCH}", headers=headers, timeout=12)
+    existing = requests.get(f"{API}/repos/{repository}/git/ref/heads/{branch()}", headers=headers, timeout=12)
     if existing.status_code == 200:
         return
     if existing.status_code != 404:
@@ -48,7 +51,7 @@ def _ensure_branch():
     main.raise_for_status()
     created = requests.post(
         f"{API}/repos/{repository}/git/refs", headers=headers, timeout=12,
-        json={"ref": f"refs/heads/{BRANCH}", "sha": main.json()["object"]["sha"]},
+        json={"ref": f"refs/heads/{branch()}", "sha": main.json()["object"]["sha"]},
     )
     if created.status_code not in (201, 422):
         created.raise_for_status()
@@ -57,7 +60,7 @@ def _ensure_branch():
 def _read(path):
     if not configured():
         return None, None
-    response = requests.get(_url(path), headers=_headers(), params={"ref": BRANCH}, timeout=12)
+    response = requests.get(_url(path), headers=_headers(), params={"ref": branch()}, timeout=12)
     if response.status_code == 404:
         return None, None
     response.raise_for_status()
@@ -71,7 +74,7 @@ def _write(path, text, message):
     payload = {
         "message": message,
         "content": base64.b64encode(text.encode("utf-8")).decode("ascii"),
-        "branch": BRANCH,
+        "branch": branch(),
     }
     if sha:
         payload["sha"] = sha
@@ -87,7 +90,7 @@ def _delete(path, message):
         return
     response = requests.delete(
         _url(path), headers=_headers(), timeout=15,
-        json={"message": message, "sha": sha, "branch": BRANCH},
+        json={"message": message, "sha": sha, "branch": branch()},
     )
     response.raise_for_status()
 
@@ -96,7 +99,7 @@ def _prune_editions():
     repository = os.environ["GITHUB_REPOSITORY"]
     response = requests.get(
         f"{API}/repos/{repository}/contents/{EDITIONS_PREFIX}", headers=_headers(),
-        params={"ref": BRANCH}, timeout=12,
+        params={"ref": branch()}, timeout=12,
     )
     if response.status_code == 404:
         return
@@ -139,6 +142,11 @@ def add_feedback(article, direction):
     """Append an explicit preference to a compact, versioned JSONL event log."""
     if direction not in {"more", "less"}:
         raise ValueError("Feedback must be 'more' or 'less'")
+    valid_reasons = {"", "great_match", "great_depth", "surprising", "uninteresting",
+                     "good_but_too_technical", "too_thin", "too_long", "too_promotional",
+                     "too_old", "duplicate"}
+    if article.get("reason", "") not in valid_reasons:
+        raise ValueError("Unknown feedback reason")
     if not configured():
         return False
     existing, _ = _read(EVENTS_PATH)
@@ -167,7 +175,7 @@ def recent_feedback(limit=30):
         try:
             event = json.loads(line)
             if event.get("direction") in {"more", "less"}:
-                events.append({key: event.get(key, "") for key in ("direction", "title", "source", "summary")})
+                events.append({key: event.get(key, "") for key in ("direction", "title", "source", "summary", "reason")})
         except json.JSONDecodeError:
             continue
     return events

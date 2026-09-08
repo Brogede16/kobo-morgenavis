@@ -14,9 +14,19 @@ services:
         value: gemini-2.5-flash
       - key: GOOGLE_DRIVE_FOLDER_ID
         sync: false
+      - key: GOOGLE_OAUTH_CLIENT_ID
+        sync: false
+      - key: GOOGLE_OAUTH_CLIENT_SECRET
+        sync: false
+      - key: GOOGLE_OAUTH_REFRESH_TOKEN
+        sync: false
       - key: GOOGLE_SERVICE_ACCOUNT_JSON_B64
         sync: false
       - key: RUN_NOW_TOKEN
+        generateValue: true
+      - key: ADMIN_USERNAME
+        value: mads
+      - key: ADMIN_PASSWORD
         generateValue: true
       - key: GITHUB_REPOSITORY
         value: Brogede16/kobo-morgenavis

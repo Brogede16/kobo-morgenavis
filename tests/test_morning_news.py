@@ -1,5 +1,7 @@
 from pathlib import Path
 
+import pytest
+
 from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
 
 
@@ -20,12 +22,14 @@ def test_load_settings(tmp_path):
 def test_select_without_key(monkeypatch):
     monkeypatch.delenv("GEMINI_API_KEY", raising=False)
     candidates = [{"title": str(i), "source": "x", "url": f"https://x/{i}", "summary": "s"} for i in range(3)]
-    assert len(select_articles(candidates, settings())) == 2
+    with pytest.raises(RuntimeError, match="GEMINI_API_KEY"):
+        select_articles(candidates, settings())
 
 
-def test_build_epub(tmp_path, monkeypatch):
-    monkeypatch.setattr("morning_news.article_body", lambda url, fallback: "<p>Tekst</p>")
-    path = build_epub([{"title": "Historie", "source": "Kilde", "url": "https://example.test", "summary": "Kort"}], settings(), tmp_path)
+def test_build_epub(tmp_path):
+    article = {"title": "Historie", "source": "Kilde", "url": "https://example.test", "summary": "Kort",
+               "body": "<div><p>Tekst</p></div>", "why": "Relevant", "reading_minutes": 1}
+    path = build_epub([article], settings(), tmp_path)
     assert path.exists() and path.suffix == ".epub"
 
 
@@ -33,7 +37,7 @@ def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
     profile = tmp_path / "editorial.yaml"
     profile.write_text("editorial: {voice: Calm}\nexamples:\n  read:\n" + "\n".join(f"    - url: https://x/{i}\n      reason: useful" for i in range(15)))
     monkeypatch.setattr("morning_news.load_editorial_profile", lambda: __import__("yaml").safe_load(profile.read_text()))
-    assert len(editorial_prompt_profile()["examples"]["read"]) == 12
+    assert len(editorial_prompt_profile()["examples"]["read"]) == 4
 
 
 def test_editorial_prompt_profile_uses_compact_priority_tiers(monkeypatch):
@@ -50,8 +54,8 @@ def test_editorial_prompt_profile_uses_compact_priority_tiers(monkeypatch):
     monkeypatch.setattr("morning_news.load_editorial_profile", lambda: profile)
     compact = editorial_prompt_profile()["editorial"]
     assert "priorities" not in compact
-    assert len(compact["priority_tiers"]["daily_core"]) == 6
-    assert len(compact["daily_structure"]) == 8
+    assert len(compact["priority_tiers"]["daily_core"]) == 10
+    assert len(compact["daily_structure"]) == 10
 
 
 def test_source_diversity_caps_a_single_outlet():
@@ -74,15 +78,19 @@ def test_web_candidates_are_reserved_before_global_cap():
 def test_drive_retention_deletes_only_editions_beyond_ten():
     class Files:
         def __init__(self):
-            self.deleted = []
+            self.trashed = []
 
         def list(self, **kwargs):
-            return type("Request", (), {"execute": lambda _: {"files": [{"id": str(i)} for i in range(12)]}})()
+            records = [{"id": str(i), "name": f"mads-morgen-2026-08-{i + 1:02d}.epub",
+                        "mimeType": "application/epub+zip"} for i in range(12)]
+            records.append({"id": "other", "name": "private.epub", "mimeType": "application/epub+zip"})
+            return type("Request", (), {"execute": lambda _: {"files": records}})()
 
-        def delete(self, fileId):
-            self.deleted.append(fileId)
+        def update(self, fileId, body):
+            if body.get("trashed"):
+                self.trashed.append(fileId)
             return type("Request", (), {"execute": lambda _: {}})()
 
     files = Files()
     prune_old_drive_editions(type("Drive", (), {"files": lambda _: files})(), "folder")
-    assert files.deleted == ["10", "11"]
+    assert files.trashed == ["1", "0"]

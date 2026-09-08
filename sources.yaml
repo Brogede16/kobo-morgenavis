@@ -8,6 +8,7 @@ edition:
   ai_shortlist_size: 120
   max_summary_characters: 260
   max_articles_per_source: 2
+  minimum_articles: 5 # Do not deliver a thin or broken edition.
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
@@ -26,7 +27,7 @@ edition:
 web_search:
   # Gemini Google Search grounding runs in the scheduled edition.
   enabled_for_schedule: true
-  max_queries: 18
+  rotating_queries_per_day: 3 # Four core searches plus three rotating specialist searches.
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -52,10 +53,12 @@ news_site_signals:
   sites:
     - name: DR Politik
       url: https://www.dr.dk/nyheder/politik
+      role: reading
       max_items: 8
       max_previews: 3
     - name: DR Kultur
       url: https://www.dr.dk/kultur
+      role: reading
       max_items: 8
       max_previews: 3
     - name: Politiken Politik
@@ -91,6 +94,13 @@ images:
   max_bytes: 2500000
 collection:
   max_items_per_source: 25
+  max_news_age_days: 3
+  max_http_requests: 180
+  max_download_bytes: 35000000
+ai:
+  max_prompt_characters: 55000
+  search_output_tokens: 1600
+  selection_output_tokens: 2400
 sources:
   - name: DR Nyheder
     url: https://www.dr.dk/nyheder/service/feeds/senestenyt

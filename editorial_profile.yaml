@@ -33,14 +33,14 @@ editorial:
     - significance over novelty
     - Apple/Mac, AI models, meaningful new AI features, and credible product leaks
     - Danish film, film policy, culture analysis, and Esben Danielsen's public analysis
-    - Danish politics and culture policy: the decisions, institutions, budgets, people, and conflicts that shape cultural life in Denmark
-    - major physical cultural events and releases viewed in a Danish context: exhibitions, concerts, festivals, films, books, and international artists that genuinely matter here
+    - "Danish politics and culture policy: the decisions, institutions, budgets, people, and conflicts that shape cultural life in Denmark"
+    - "major physical cultural events and releases viewed in a Danish context: exhibitions, concerts, festivals, films, books, and international artists that genuinely matter here"
     - museum development, younger audiences, visitor data, cultural participation, and the changing economics of cinemas
     - cultural institutions' brand partnerships and sponsorship, especially when the story examines independence, audience value, or the trade-off involved
     - practical AI in cultural institutions and other real-world work, rather than vague futurism
-    - concrete audience development: methods, cases, young audiences, behaviour, segmentation, CRM, visitor surveys, and how insight changes programming or the guest experience
+    - "concrete audience development: methods, cases, young audiences, behaviour, segmentation, CRM, visitor surveys, and how insight changes programming or the guest experience"
     - cultural institutions that try new formats, hours, events, memberships, services, and alternative revenue models
-    - practical cultural technology: ticketing, automation, APIs, data, and digital experiences with a clear application
+    - "practical cultural technology: ticketing, automation, APIs, data, and digital experiences with a clear application"
     - AI agents and the consequences of AI acting more independently; what new capabilities practically enable, rather than version-number coverage
     - vibe coding, solo builders, AI-assisted software, small apps, automations, and people building without a conventional developer background
     - unusual, forward-looking AI ideas, architectures, research groups, or startups when the underlying idea is genuinely compelling
@@ -48,35 +48,35 @@ editorial:
     - cosmology and accessible science journalism about dark matter, dark energy, extra dimensions, and other big questions
     - major discoveries in biology, evolution, archaeology, geology, oceans, climate, and human history
     - interactive maps, visualisations, public datasets, and projects the reader can explore firsthand
-    - hidden places and systems: bunkers, tunnels, archives, datacentres, infrastructure, underground sites, and normally inaccessible systems
+    - "hidden places and systems: bunkers, tunnels, archives, datacentres, infrastructure, underground sites, and normally inaccessible systems"
     - historical mysteries and new discoveries that revise what we thought we knew
-    - Copenhagen in transformation: substantial new public spaces, cultural buildings, metro, harbour, climate adaptation, tourism, and major city projects
-    - how large cultural institutions work behind the scenes: museums, cinemas, festivals, and venues as organisations
-    - hospitality in culture: the practical choices that make a venue feel generous, welcoming, and worth visiting before the programme begins
-    - museum and cultural retail: shops, books, merch, limited editions, and retail as part of the visitor experience
-    - programme curation in film, music, talks, and art: how a coherent, compelling series is put together
+    - "Copenhagen in transformation: substantial new public spaces, cultural buildings, metro, harbour, climate adaptation, tourism, and major city projects"
+    - "how large cultural institutions work behind the scenes: museums, cinemas, festivals, and venues as organisations"
+    - "hospitality in culture: the practical choices that make a venue feel generous, welcoming, and worth visiting before the programme begins"
+    - "museum and cultural retail: shops, books, merch, limited editions, and retail as part of the visitor experience"
+    - "programme curation in film, music, talks, and art: how a coherent, compelling series is put together"
     - cultural trends before they become mainstream, including internet aesthetics across TikTok, Tumblr, Pinterest, gaming, fashion, and music
     - animal cognition, especially meaningful research on octopuses, corvids, whales, elephants, and other unusually intelligent animals
     - serious investigations of astronomical anomalies and megastructures, including Dyson-sphere-like ideas when researchers are doing real work
     - geoengineering, including both potential and the difficult risks and governance questions
-    - cybersecurity for normal people: major hacks and clever attacks explained through their actual consequences
+    - "cybersecurity for normal people: major hacks and clever attacks explained through their actual consequences"
     - standards and mundane systems that shape daily life, such as USB, JPEG, Bluetooth, QR codes, and media/container formats
-    - cinema technology when a development is significant and perceptible: projection, laser, sound, screens, IMAX, 70mm, and HDR
-    - cultural institutions' secondary revenue: hire, events, restaurant, retail, rooftops, sponsorship, and membership
+    - "cinema technology when a development is significant and perceptible: projection, laser, sound, screens, IMAX, 70mm, and HDR"
+    - "cultural institutions' secondary revenue: hire, events, restaurant, retail, rooftops, sponsorship, and membership"
     - unusual events in unusual places and the production logic that makes them possible
-    - event production behind the scenes: logistics, technical production, security, guest flow, and operational software — primarily as useful longreads
+    - "event production behind the scenes: logistics, technical production, security, guest flow, and operational software — primarily as useful longreads"
     - cultural pricing, value perception, access, membership, and the trade-off between ticket price and participation
     - young people as genuine co-creators through youth boards, academies, open calls, and real decision-making power
-    - Copenhagen cultural history and lost places: cinemas, clubs, venues, museums, and scenes that no longer exist
-    - Denmark below ground and its critical infrastructure: tunnels, bunkers, utilities, sewerage, metro, basements, electricity, internet, water, and transport resilience
-    - AI-generated games and prototypes: how far a single person can go from an idea to a working management/strategy game
+    - "Copenhagen cultural history and lost places: cinemas, clubs, venues, museums, and scenes that no longer exist"
+    - "Denmark below ground and its critical infrastructure: tunnels, bunkers, utilities, sewerage, metro, basements, electricity, internet, water, and transport resilience"
+    - "AI-generated games and prototypes: how far a single person can go from an idea to a working management/strategy game"
     - meaningful wearable launches, features, and health/technology developments
     - major gaming news for Age of Empires, Warcraft, survival games, 7 Days to Die, and GTA — only launches, major expansions, or genuinely consequential changes
-    - Planet Zoo as a personal deep-interest: major news, a sequel, expansion, or substantial change deserves more context than ordinary game coverage
+    - "Planet Zoo as a personal deep-interest: major news, a sequel, expansion, or substantial change deserves more context than ordinary game coverage"
     - beginner-to-intermediate photography learning from established, credible educators or institutions — learning, not product news
-    - personal technology that changes everyday use: Kobo/e-ink, automation, sensors, smart home, and purposeful devices
-    - nerd-built internet projects: personal newspapers, maps, Raspberry Pi builds, unusual databases, and ambitious individual projects
-    - major news about The Cure, New Order, Pink Floyd, and Kraftwerk: albums, significant tours, reunions, breakups, or substantial interviews
+    - "personal technology that changes everyday use: Kobo/e-ink, automation, sensors, smart home, and purposeful devices"
+    - "nerd-built internet projects: personal newspapers, maps, Raspberry Pi builds, unusual databases, and ambitious individual projects"
+    - "major news about The Cure, New Order, Pink Floyd, and Kraftwerk: albums, significant tours, reunions, breakups, or substantial interviews"
     - subcultures, especially the emergence or revival of scenes, music, fashion, clubs, and communities
     - culture and film gossip when it reveals power, money, conflict, ownership, or creative direction
   exclusions:
@@ -99,6 +99,7 @@ editorial:
   gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
   place_and_systems_policy: "These stories should be selected for substance: a meaningful project, real operational insight, strong case study, or a concrete consequence. Treat event-production, hospitality, pricing, infrastructure, and institutional-business stories as longread-friendly rather than daily filler."
   readability_policy: "Do not select institutional press releases, official news roundups, or technically dense research announcements as the main reading item when a clearer journalistic explainer is available. A science story must explain the surprising question, what changed, and why it matters in ordinary Danish; primary sources may support the summary but should not become homework."
+  sexuality_policy: "Sexuality, intimacy, and erotic culture are neither excluded nor automatically promoted. Select them on the same demanding standard as everything else when the reporting is genuinely interesting, insightful, culturally relevant, or surprising — never merely for titillation."
 examples:
   read:
     - url: https://www.macrumors.com/2026/09/07/five-iphone-18-pro-camera-features-seemingly-leak/
