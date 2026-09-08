@@ -18,7 +18,7 @@ from google.genai import types
 from lxml import etree, html as lxml_html
 
 from editorial import compact_profile, dedupe, diverse_selection, fair_sample
-from feedback_store import recent_feedback, record_edition
+from feedback_store import editorial_note, recent_feedback, record_edition
 from news_io import WebReader, canonical_url
 from newspaper import build_epub, prepare_article
 from drive_delivery import upload_to_drive, prune_old_drive_editions
@@ -66,7 +66,7 @@ def fresh(value, days=3):
     return stamp is not None and now - timedelta(days=days) <= stamp <= now + timedelta(hours=2)
 
 
-def fetch_candidates(settings, reader=None):
+def fetch_candidates(settings, reader=None, source_health=None):
     reader = reader or WebReader()
     candidates = []
     days = int(settings.get("collection", {}).get("max_news_age_days", 3))
@@ -87,8 +87,12 @@ def fetch_candidates(settings, reader=None):
                         "format": source.get("format", "mixed"), "published": published,
                         "role": source.get("role", "reading"), "pool": "rss"})
             logger.info("Feed %s: %s entries", source["name"], len(feed.entries))
+            if source_health is not None:
+                source_health[source["name"]] = {"status": "ok", "items": len(feed.entries)}
         except (requests.RequestException, ValueError, etree.Error) as exc:
             logger.warning("Feed unavailable %s (%s)", source["name"], type(exc).__name__)
+            if source_health is not None:
+                source_health[source["name"]] = {"status": "fejl", "items": 0}
     return dedupe(candidates)
 
 
@@ -111,7 +115,7 @@ def fetch_public_preview(url):
         return ""
 
 
-def fetch_news_site_signals(settings, reader=None):
+def fetch_news_site_signals(settings, reader=None, source_health=None):
     reader = reader or WebReader()
     signals = []
     for site in settings.get("news_site_signals", {}).get("sites", []):
@@ -143,8 +147,12 @@ def fetch_news_site_signals(settings, reader=None):
                     break
             signals.extend(source_signals)
             logger.info("Radar %s: %s leads", site["name"], len(source_signals))
+            if source_health is not None:
+                source_health[site["name"]] = {"status": "ok", "items": len(source_signals)}
         except (requests.RequestException, ValueError, etree.Error) as exc:
             logger.warning("Radar unavailable %s (%s)", site["name"], type(exc).__name__)
+            if source_health is not None:
+                source_health[site["name"]] = {"status": "fejl", "items": 0}
     return signals
 
 
@@ -171,12 +179,12 @@ def gemini_call(prompt, settings, search=False):
     return json.loads(value)
 
 
-def fetch_web_candidates(settings, reader=None):
+def fetch_web_candidates(settings, reader=None, source_health=None):
     if not os.environ.get("GEMINI_API_KEY"):
         return []
     reader = reader or WebReader()
     config = settings.get("web_search", {})
-    signals = fair_sample(fetch_news_site_signals(settings, reader), 28)
+    signals = fair_sample(fetch_news_site_signals(settings, reader, source_health), 28)
     queries = config.get("queries", [])
     core, rotation = queries[:4], queries[4:]
     if rotation:
@@ -208,6 +216,11 @@ def fetch_web_candidates(settings, reader=None):
                 continue
     except Exception as exc:
         logger.warning("Search unavailable (%s); using feeds and open radar", type(exc).__name__)
+        if source_health is not None:
+            source_health["Gemini websøgning"] = {"status": "fejl", "items": 0}
+    else:
+        if source_health is not None:
+            source_health["Gemini websøgning"] = {"status": "ok", "items": len(found)}
     for signal in signals:
         if signal.get("role") == "reading" and signal.get("preview"):
             if not signal.get("published") or fresh(signal["published"]):
@@ -293,9 +306,10 @@ def run_edition(settings=None, use_web_search=None):
     collection = settings.get("collection", {})
     reader = WebReader(max_requests=int(collection.get("max_http_requests", 180)),
                        max_bytes=int(collection.get("max_download_bytes", 35000000)))
-    feeds = fetch_candidates(settings, reader)
+    source_health = {}
+    feeds = fetch_candidates(settings, reader, source_health)
     use_web = settings.get("web_search", {}).get("enabled_for_schedule", True) if use_web_search is None else use_web_search
-    web = fetch_web_candidates(settings, reader) if use_web else []
+    web = fetch_web_candidates(settings, reader, source_health) if use_web else []
     candidates = merge_candidate_pools(feeds, web, settings)
     approved = select_articles(candidates, settings)
     prepared = []
@@ -313,9 +327,15 @@ def run_edition(settings=None, use_web_search=None):
     path = build_epub(prepared, settings, reader=reader)
     uploaded = upload_to_drive(path) if os.environ.get("GOOGLE_DRIVE_FOLDER_ID") else None
     metadata = [{k: v for k, v in a.items() if k not in {"body", "image_url"}} for a in prepared]
-    result = {"path": str(path), "articles": len(prepared), "article_list": metadata, "drive_file": uploaded}
+    report = {
+        "editor_note": editorial_note(),
+        "collection": {"rss_candidates": len(feeds), "web_candidates": len(web), "total_candidates": len(candidates)},
+        "source_health": source_health,
+    }
+    result = {"path": str(path), "articles": len(prepared), "article_list": metadata,
+              "drive_file": uploaded, "report": report}
     try:
-        result["github_saved"] = record_edition(metadata)
+        result["github_saved"] = record_edition(metadata, report)
     except Exception as exc:
         result["github_saved"] = False
         logger.warning("Edition created, archive upload failed (%s)", type(exc).__name__)

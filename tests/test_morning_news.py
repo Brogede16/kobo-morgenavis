@@ -2,7 +2,9 @@ from pathlib import Path
 
 import pytest
 
+from feedback_store import editorial_note
 from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
+from newspaper import overview_group
 
 
 def settings():
@@ -31,6 +33,21 @@ def test_build_epub(tmp_path):
                "body": "<div><p>Tekst</p></div>", "why": "Relevant", "reading_minutes": 1}
     path = build_epub([article], settings(), tmp_path)
     assert path.exists() and path.suffix == ".epub"
+
+
+def test_overview_groups_make_the_newspaper_scannable():
+    assert overview_group({"section": "Dansk politik"}) == "Danmark og kultur"
+    assert overview_group({"section": "AI og teknologi"}) == "Teknologi og verden"
+    assert overview_group({"section": "Rumforskning"}) == "Fordybelse"
+
+
+def test_editorial_note_is_explicit_about_feedback(monkeypatch):
+    monkeypatch.setattr("feedback_store.recent_feedback", lambda limit: [
+        {"created_at": "2026-09-08T08:00:00+00:00", "direction": "more", "reason": "great_depth"},
+        {"created_at": "2026-09-08T08:00:00+00:00", "direction": "less", "reason": "too_thin"},
+    ])
+    assert "1 'mere' og 1 'mindre'" in editorial_note()
+    assert "god dybde" in editorial_note()
 
 
 def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):

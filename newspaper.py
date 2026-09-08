@@ -29,7 +29,17 @@ p {margin:0 0 1em} a {color:#12594d}
 .why {border-left:.25em solid #5e897d;padding:.7em;background:#edf4ef;font-family:sans-serif;font-size:.9em}
 .cover {margin-top:15%}.cover h1 {font-size:2.5em}
 img {max-width:100%;height:auto} figure {margin:1em 0} li {margin-bottom:.6em}
+.overview-group {border-top:2px solid #dce7e1;margin-top:1.6em;padding-top:.4em}
 """
+
+
+def overview_group(article):
+    value = (article.get("section", "") + " " + article.get("title", "")).lower()
+    if any(word in value for word in ("danmark", "politik", "samfund", "økonomi", "kulturpolitik", "københavn")):
+        return "Danmark og kultur"
+    if any(word in value for word in ("ai", "teknologi", "apple", "mac", "verden", "global", "cyber")):
+        return "Teknologi og verden"
+    return "Fordybelse"
 
 
 def sanitise_body(content, base_url):
@@ -110,9 +120,16 @@ def build_epub(articles, settings, output_dir=None, reader=None):
         f'<div class="cover"><p class="kicker">DIN PERSONLIGE MORGENAVIS</p><h1>{e(settings["edition"]["title"])}</h1>'
         f'<p>{today}</p><p>{len(articles)} historier · cirka {sum(a.get("reading_minutes", 1) for a in articles)} minutters læsning</p>'
         '<p>Det, der er værd at vide, før dagen begynder.</p></div>')
-    overview = chapter("Dagens overblik", "overview.xhtml", '<h1>Dagens overblik</h1><ol>' + "".join(
-        f'<li><a href="article-{i}.xhtml">{e(a["title"])}</a><p>{e(a.get("why", ""))}</p></li>'
-        for i, a in enumerate(articles, 1)) + "</ol>")
+    groups = {"Danmark og kultur": [], "Teknologi og verden": [], "Fordybelse": []}
+    for i, article in enumerate(articles, 1):
+        groups[overview_group(article)].append((i, article))
+    overview_body = '<h1>Dagens overblik</h1><p>De vigtigste historier først; læs resten, når du har tid.</p>'
+    for heading, entries in groups.items():
+        if entries:
+            overview_body += f'<section class="overview-group"><h2>{e(heading)}</h2><ol>' + "".join(
+                f'<li><a href="article-{i}.xhtml">{e(a["title"])}</a><p>{e(a.get("why", ""))}</p></li>'
+                for i, a in entries) + "</ol></section>"
+    overview = chapter("Dagens overblik", "overview.xhtml", overview_body)
     chapters = [cover, overview]
     image_settings, images_added = settings.get("images", {}), 0
     for i, article in enumerate(articles, 1):

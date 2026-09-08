@@ -6,7 +6,7 @@ the Render service, yet remain portable, editable, and versioned in GitHub.
 import base64
 import json
 import os
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 
 import requests
 
@@ -109,7 +109,7 @@ def _prune_editions():
         _delete(path, "Remove expired Mads Morgen edition")
 
 
-def record_edition(articles):
+def record_edition(articles, report=None):
     """Store selected metadata; article bodies never enter GitHub."""
     if not configured():
         return False
@@ -117,10 +117,14 @@ def record_edition(articles):
     edition = {
         "created_at": created_at.isoformat(),
         "articles": [
-            {key: str(article.get(key, ""))[:500] for key in ("title", "source", "url", "summary", "format")}
+            {key: str(article.get(key, ""))[:500] for key in (
+                "title", "source", "url", "summary", "format", "section", "why", "reading_minutes"
+            )}
             for article in articles
         ],
     }
+    if report:
+        edition["report"] = report
     encoded = json.dumps(edition, ensure_ascii=False, indent=2) + "\n"
     _write(LATEST_PATH, encoded, "Record latest Mads Morgen edition")
     _write(f"{EDITIONS_PREFIX}/{created_at.date().isoformat()}.json", encoded, "Archive Mads Morgen edition")
@@ -175,7 +179,38 @@ def recent_feedback(limit=30):
         try:
             event = json.loads(line)
             if event.get("direction") in {"more", "less"}:
-                events.append({key: event.get(key, "") for key in ("direction", "title", "source", "summary", "reason")})
+                events.append({key: event.get(key, "") for key in ("created_at", "direction", "title", "source", "summary", "reason")})
         except json.JSONDecodeError:
             continue
     return events
+
+
+def editorial_note(days=7):
+    """A transparent, non-AI weekly note based only on explicit clicks."""
+    now = datetime.now(timezone.utc)
+    recent = []
+    for event in recent_feedback(limit=200):
+        try:
+            created = datetime.fromisoformat(event.get("created_at", "").replace("Z", "+00:00"))
+            if now - created <= timedelta(days=days):
+                recent.append(event)
+        except (TypeError, ValueError):
+            continue
+    if not recent:
+        return "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil."
+    more = sum(item["direction"] == "more" for item in recent)
+    less = len(recent) - more
+    reasons = {}
+    for item in recent:
+        reason = item.get("reason", "")
+        if reason:
+            reasons[reason] = reasons.get(reason, 0) + 1
+    labels = {
+        "great_match": "godt emne og vinkel", "great_depth": "god dybde", "surprising": "overraskende fund",
+        "uninteresting": "uinteressant", "good_but_too_technical": "godt, men for nørdet",
+        "too_thin": "for tyndt", "too_long": "for langt", "too_promotional": "for meget PR",
+        "too_old": "for gammelt", "duplicate": "gentagelse",
+    }
+    strongest = max(reasons, key=reasons.get) if reasons else ""
+    ending = f" Det hyppigste signal var: {labels.get(strongest, strongest)}." if strongest else ""
+    return f"Ugens feedback: {more} 'mere' og {less} 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner." + ending

@@ -20,13 +20,15 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Mads Morgen</title>
-<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem}button,select{padding:.55rem .8rem;font-size:1rem}label{display:block;margin:1rem 0}.result{padding:1rem;background:#eef8f0}.article{border-top:1px solid #ddd;padding:1rem 0}.article p{margin:.35rem 0}.actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}.less{background:#fff;border:1px solid #999}</style>
+<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem;color:#16201c}button,select{padding:.55rem .8rem;font-size:1rem}.result,.note{padding:1rem;background:#eef8f0}.note{border-left:4px solid #5e897d}.article{border-top:1px solid #ddd;padding:1rem 0}.article p{margin:.35rem 0}.why{color:#31584d}.actions{display:flex;flex-wrap:wrap;gap:.5rem;margin-top:.7rem}.less{background:#fff;border:1px solid #999}details{margin:1.5rem 0;font-size:.9rem}.ok{color:#17663c}.error{color:#9d2831}</style>
 <h1>Mads Morgen</h1><p>Næste planlagte udgave: {{ next_run }}</p>
 {% if result %}<p class=result>{{ result }}</p>{% endif %}
 <form method=post action=\"{{ url_for('run_from_page') }}\"><p>En manuel kørsel bruger også den automatiske websøgning.</p><button>Lav og send avis nu</button></form>
 {% if edition %}<h2>Seneste udgave</h2><p>Fortæl gerne indimellem, hvad du vil have mere eller mindre af. Det bruges i næste udvælgelse.</p>
-{% for article in edition.articles %}<article class=article><a href=\"{{ article.url }}\" target=\"_blank\" rel=\"noreferrer\"><strong>{{ article.title }}</strong></a><p>{{ article.source }} · {{ article.summary }}</p>
-{% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=url value=\"{{ article.url }}\"><select name=reason aria-label=\"Hvorfor?\"><option value=\"\">Valgfrit: hvorfor?</option><option value=\"great_match\">Godt emne og vinkel</option><option value=\"great_depth\">God dybde</option><option value=\"surprising\">Overraskende fed</option><option value=\"uninteresting\">Uinteressant</option><option value=\"good_but_too_technical\">God, men for nørdet</option><option value=\"too_thin\">For tynd</option><option value=\"too_long\">For lang eller kedelig</option><option value=\"too_promotional\">For meget PR</option><option value=\"too_old\">For gammel</option><option value=\"duplicate\">Gentagelse</option></select><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>{% endfor %}
+{% if edition.report and edition.report.editor_note %}<p class=note><strong>Redaktørens note</strong><br>{{ edition.report.editor_note }}</p>{% endif %}
+{% for article in edition.articles %}<article class=article><p><small>{{ article.section }} · {{ article.reading_minutes }} min.</small></p><a href=\"{{ article.url }}\" target=\"_blank\" rel=\"noreferrer\"><strong>{{ article.title }}</strong></a><p>{{ article.source }} · {{ article.summary }}</p><p class=why><strong>Hvorfor den er med:</strong> {{ article.why }}</p>
+{% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=url value=\"{{ article.url }}\"><select name=reason aria-label=\"Hvorfor?\"><option value=\"\">Valgfrit: hvorfor?</option><option value=\"great_match\">Godt emne og vinkel</option><option value=\"great_depth\">God dybde</option><option value=\"surprising\">Overraskende fed</option><option value=\"uninteresting\">Uinteressant</option><option value=\"good_but_too_technical\">God, men for nørdet</option><option value=\"too_thin\">For tynd</option><option value=\"too_long\">For lang eller kedelig</option><option value=\"too_promotional\">For meget PR</option><option value=\"too_old\">For gammel</option><option value=\"duplicate\">Gentagelse</option></select><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>
+{% endfor %}{% if edition.report and edition.report.source_health %}<details><summary>Kildestatus for denne udgave</summary><ul>{% for name, state in edition.report.source_health.items() %}<li class=\"{{ 'ok' if state.status == 'ok' else 'error' }}\">{{ name }}: {{ state.status }}{% if state.status == 'ok' %} ({{ state.items }} fund){% endif %}</li>{% endfor %}</ul></details>{% endif %}
 {% elif not feedback_enabled %}<p><em>Feedback vises her, når GitHub-feedbacknøglen er sat op, og den næste udgave er lavet.</em></p>{% endif %}
 <p>Den færdige EPUB lægges i Google Drive-mappen Rakuten Kobo.</p></html>"""
 
@@ -67,28 +69,30 @@ def create_app(start_scheduler=True):
             return handler(*args, **kwargs)
         return wrapped
 
+    def next_run():
+        job = scheduler.get_job("morning-edition")
+        return getattr(job, "next_run_time", None) or "ukendt"
+
     @app.get("/healthz")
     def healthz():
-        job = scheduler.get_job("morning-edition")
-        return jsonify(status="ok", next_run=str(job.next_run_time) if job else None)
+        return jsonify(status="ok", next_run=str(next_run()))
 
     @app.get("/")
     @page_auth
     def home():
-        job = scheduler.get_job("morning-edition")
         try:
             edition = latest_edition()
         except Exception:
             logger.exception("Could not load latest feedback edition")
             edition = None
-        return render_template_string(PAGE, next_run=job.next_run_time if job else "ukendt", result=None,
+        return render_template_string(PAGE, next_run=next_run(), result=None,
                                       edition=edition, feedback_enabled=feedback_configured())
 
     @app.post("/run")
     @page_auth
     def run_from_page():
         result = run_edition(settings, use_web_search=True)
-        return render_template_string(PAGE, next_run=scheduler.get_job("morning-edition").next_run_time,
+        return render_template_string(PAGE, next_run=next_run(),
                                       result=f"Færdig: {result['articles']} historier er sendt til Drive.",
                                       edition=latest_edition(), feedback_enabled=feedback_configured())
 
@@ -105,9 +109,8 @@ def create_app(start_scheduler=True):
             saved = add_feedback(article, request.form.get("direction", ""))
         except ValueError:
             return Response("Ugyldig feedback", 400)
-        job = scheduler.get_job("morning-edition")
         message = "Gemte din feedback i GitHub." if saved else "GitHub-feedback er ikke sat op endnu."
-        return render_template_string(PAGE, next_run=job.next_run_time if job else "ukendt", result=message,
+        return render_template_string(PAGE, next_run=next_run(), result=message,
                                       edition=latest_edition(), feedback_enabled=feedback_configured())
 
     @app.post("/run-now")

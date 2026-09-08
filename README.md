@@ -47,6 +47,10 @@ Efter en udgave er kørt, viser forsiden dens valgte artikler med **Mere af den 
 
 Sæt disse Render-secrets for at aktivere det: `GITHUB_REPOSITORY=Brogede16/kobo-morgenavis` og `GITHUB_FEEDBACK_TOKEN`. Tokenet skal være en GitHub fine-grained personal access token begrænset til dette ene repo med **Contents: Read and write**. Appen opretter selv `feedback-data` ved første synkronisering. Klikfeedback indgår som kompakte signaler i den næste Gemini-udvælgelse; den redigerede, varige profil kan derefter opdateres og committes til `main`.
 
+### Gennemsigtighed uden ekstra AI-forbrug
+
+Forsiden viser for hver artikel den korte redaktionelle begrundelse, som allerede blev lavet ved udvælgelsen. Den viser også en ugentlig, regelbaseret note om de seneste kliksignaler og en sammenfoldet kildestatus for den pågældende udgave. Det kræver ingen ekstra Gemini-kald: noten tæller kun den feedback, du selv har givet, og kildestatus kommer fra den allerede gennemførte indsamling. EPUB’ens overblik opdeles i **Danmark og kultur**, **Teknologi og verden** og **Fordybelse**, så den er hurtigere at skimme på Kobo.
+
 ### Langt, kort og grafik
 
 Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
