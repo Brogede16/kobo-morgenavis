@@ -44,7 +44,7 @@ def overview_group(article):
 
 def sanitise_body(content, base_url):
     root = lxml_html.fragment_fromstring(content, create_parent="div")
-    for node in root.xpath("//script|//style|//iframe|//form|//nav|//footer|//aside|//img|//picture|//svg|//video|//audio|//object"):
+    for node in root.xpath("//script|//style|//iframe|//form|//nav|//footer|//aside|//img|//picture|//svg|//video|//audio|//object|//pre|//code"):
         if node.getparent() is not None:
             node.drop_tree()
     allowed = {"div", "p", "h2", "h3", "h4", "blockquote", "ul", "ol", "li", "strong", "em", "b", "i", "a", "br", "span"}
@@ -69,7 +69,8 @@ def prepare_article(article, reader):
             return None
         body = sanitise_body(Document(raw).summary(html_partial=True), url)
         text = lxml_html.fromstring(body).text_content()
-        if len(text.split()) < 180:
+        minimum_words = 550 if article.get("format") == "longread" else 260
+        if len(text.split()) < minimum_words:
             logger.info("Skipping incomplete article from %s", article.get("source"))
             return None
         images = page.xpath("//meta[@property='og:image' or @name='og:image']/@content")
@@ -150,7 +151,7 @@ def build_epub(articles, settings, output_dir=None, reader=None):
             raise ValueError("Only prepared, readable articles may enter an EPUB")
         content = (f'<p class="kicker">{e(article.get("section", "Udvalgt"))}</p><h1>{e(article["title"])}</h1>'
                    f'<p class="source">{e(article["source"])} · {article.get("reading_minutes", 1)} min.</p>{picture}'
-                   f'<div class="why"><strong>Hvorfor den er med:</strong> {e(article.get("why", ""))}</div>'
+                   f'<div class="why"><strong>Kort fortalt:</strong> {e(article.get("why", ""))}</div>'
                    f'<div lang="{e(article.get("language", "und"))}">{body}</div>'
                    f'<p><a href="{e(article["url"], quote=True)}">Læs originalen</a></p>')
         chapters.append(chapter(article["title"], f"article-{i}.xhtml", content))

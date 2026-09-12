@@ -2,13 +2,13 @@
 edition:
   title: "Mads Morgen"
   language: da
-  max_articles: 10
-  max_candidates: 240 # Broad collection; the model only sees the shortlisted items below.
-  web_candidate_reserve: 35 # Prevent RSS volume from crowding out news-radar and web results.
-  ai_shortlist_size: 120
-  max_summary_characters: 260
-  max_articles_per_source: 2
-  minimum_articles: 5 # Do not deliver a thin or broken edition.
+  max_articles: 22
+  max_candidates: 360 # Broad collection; the model only sees the shortlisted items below.
+  web_candidate_reserve: 55 # Prevent RSS volume from crowding out news-radar and web results.
+  ai_shortlist_size: 140
+  max_summary_characters: 360
+  max_articles_per_source: 3
+  minimum_articles: 14 # Do not deliver a thin or broken edition.
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
@@ -93,15 +93,15 @@ images:
   max_width: 1200
   max_bytes: 2500000
 collection:
-  max_items_per_source: 25
+  max_items_per_source: 35
   max_news_age_days: 3
-  max_http_requests: 180
-  max_download_bytes: 35000000
+  max_http_requests: 260
+  max_download_bytes: 50000000
 ai:
   model: gpt-5-mini
-  max_prompt_characters: 55000
-  search_output_tokens: 1600
-  selection_output_tokens: 2400
+  max_prompt_characters: 70000
+  search_output_tokens: 2200
+  selection_output_tokens: 4200
 sources:
   - name: DR Nyheder
     url: https://www.dr.dk/nyheder/service/feeds/senestenyt

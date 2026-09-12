@@ -147,7 +147,7 @@ def add_feedback(article, direction):
     if direction not in {"more", "less"}:
         raise ValueError("Feedback must be 'more' or 'less'")
     valid_reasons = {"", "great_match", "great_depth", "surprising", "uninteresting",
-                     "good_but_too_technical", "too_thin", "too_long", "too_promotional",
+                     "too_generic", "unclear", "good_but_too_technical", "too_thin", "too_long", "too_promotional",
                      "too_old", "duplicate"}
     if article.get("reason", "") not in valid_reasons:
         raise ValueError("Unknown feedback reason")
@@ -207,7 +207,7 @@ def editorial_note(days=7):
             reasons[reason] = reasons.get(reason, 0) + 1
     labels = {
         "great_match": "godt emne og vinkel", "great_depth": "god dybde", "surprising": "overraskende fund",
-        "uninteresting": "uinteressant", "good_but_too_technical": "godt, men for nørdet",
+        "uninteresting": "uinteressant", "too_generic": "for generisk verdensnyhed", "unclear": "for svært eller uklart skrevet", "good_but_too_technical": "godt, men for nørdet",
         "too_thin": "for tyndt", "too_long": "for langt", "too_promotional": "for meget PR",
         "too_old": "for gammelt", "duplicate": "gentagelse",
     }

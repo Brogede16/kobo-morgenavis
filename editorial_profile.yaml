@@ -3,8 +3,8 @@
 editorial:
   voice: "Danish morning briefing: intelligent, calm, useful, never clickbait. The reader should feel prepared for the day and ahead of the conversations that matter."
   desired_mix:
-    short_updates: "6-7 concise updates that matter today"
-    longreads: "2-3 substantive analyses, explainers, or investigations"
+    short_updates: "12-15 concise but properly explained updates that matter today"
+    longreads: "6-8 substantive analyses, explainers, investigations, or deep-interest stories"
     breadth: "Keep the core balance: Denmark/world, AI and technology, science, politics, culture, and selected personal interests. A stronger culture section must never crowd out the other core areas."
     political_floor: "When the news day permits, include 1-2 concrete Danish political or public-policy stories: a decision, proposal, conflict, budget, regulation, or consequence — not merely a ceremonial appearance or a media roundup."
   daily_structure:
@@ -13,7 +13,7 @@ editorial:
     - "1 AI, technology, Apple, or personal-technology story that changes real use or understanding"
     - "1 Danish culture, culture-policy, or major cultural event/release with genuine Danish relevance"
     - "1 personal high-interest story when there is a truly meaningful development"
-    - "2-3 varied discoveries or longreads: science, city, systems, culture operations, history, or subculture"
+    - "6-8 varied discoveries or longreads: science, city, systems, culture operations, history, or subculture"
   priority_tiers:
     daily_core:
       - Danish politics, public policy, economy, society, and culture policy
@@ -89,12 +89,14 @@ editorial:
     - generic photography gear shopping, unverified tutorials, and low-quality creator content
     - Apple and gadget rumours that merely change a specification, not what the product enables or how it is used
     - routine band-podcast mentions and minor celebrity/social updates
+    - generic foreign accidents, death-toll updates, fires, crime, and disaster-wire stories without a clear Danish or European policy, security, or economic consequence
+    - NGO campaigns, charity-fund announcements, and global health or human-rights initiatives written in institutional jargon, unless the consequence is unusually concrete and directly relevant
   source_policy: "Judge each story on its own merits; a good and a bad story can come from the same domain. No single source should dominate an edition. Use specialist outlets as one voice among several."
   source_roles: "Politiken, Information, Kulturmonitor, and Altinget are editorial radar, not automatic reading links. DR and independent reporting can be direct reading sources. Official bodies such as Folketinget are background or primary documentation, never the main reading item when journalistic reporting is available."
   paywall_policy: "Politiken, Information, and Kulturmonitor may be used as signals for a topic, angle, or story worth investigating. Do not select inaccessible paywalled copy as a reading item; seek an original, accessible, or independently reported source instead."
   film_policy: "Cover news about the Danish Film Institute through independent reporting, policy, funding, films, and industry impact — not the institute's own press releases or event promotion."
   culture_policy: "Prefer concrete cases and useful analysis over abstract cultural theory. A concise, practical piece about how an institution reaches younger audiences can beat a longer, more ponderous feature on the same subject. Institutional press releases may be a lead, but need independent context before they become a reading item. Cover big cultural events and releases when they have real Danish relevance — for example a major international artist, exhibition, film, or cultural moment — but not routine domestic pop-release promotion. DR Kultur is a useful source alongside independent coverage."
-  daily_readiness_test: "Every selected story should earn its place by helping the reader understand what matters today, anticipate a likely conversation, or gain useful context. Maintain a clear Danish frame while including international developments with consequences or resonance in Denmark."
+  daily_readiness_test: "Every selected story should earn its place by helping the reader understand what matters today, anticipate a likely conversation, or gain useful context. Maintain a clear Danish frame while including international developments with consequences or resonance in Denmark. This is not a general world-news wire: a foreign tragedy alone is not enough."
   photography_source_policy: "For photography learning, prefer Magnum Learn, Canon Learning/Canon Europe, Nikon Learn, Adobe Photography, Digital Photography Review when it teaches, National Geographic photographers, established professional photographers, Royal Photographic Society, and selectively PetaPixel tutorials or interviews. Do not select camera shopping or ordinary gear-release coverage."
   gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
   place_and_systems_policy: "These stories should be selected for substance: a meaningful project, real operational insight, strong case study, or a concrete consequence. Treat event-production, hospitality, pricing, infrastructure, and institutional-business stories as longread-friendly rather than daily filler."
