@@ -32,6 +32,12 @@ PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Mads M
 {% elif not feedback_enabled %}<p><em>Feedback vises her, når GitHub-feedbacknøglen er sat op, og den næste udgave er lavet.</em></p>{% endif %}
 <p>Den færdige EPUB lægges i Google Drive-mappen Rakuten Kobo.</p></html>"""
 
+PUBLIC_PAGE_STYLE = """<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem;color:#16201c;line-height:1.55}a{color:#31584d}</style>"""
+PRIVACY_PAGE = f"""<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Privatliv – Mads Morgen</title>{PUBLIC_PAGE_STYLE}
+<h1>Privatliv</h1><p>Mads Morgen er en personlig, privat morgenavis til én bruger. Den indsamler offentligt tilgængelige nyhedslinks og RSS-data, skaber en EPUB og lægger den i brugerens valgte Google Drive-mappe.</p><p>Google Drive-adgangen bruges kun til at oprette, læse og slette de EPUB-filer, som Mads Morgen selv har oprettet. Appen læser ikke andre Drive-filer.</p><p>Artikel-feedback gemmes i et privat GitHub-repository for at forbedre fremtidige udvælgelser. Data sælges ikke og deles ikke med andre.</p><p>Spørgsmål: <a href=\"mailto:madsbh@me.com\">madsbh@me.com</a></p>"""
+TERMS_PAGE = f"""<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Vilkår – Mads Morgen</title>{PUBLIC_PAGE_STYLE}
+<h1>Vilkår</h1><p>Mads Morgen er en privat, personlig automatisering. Den bruges på ejerens eget ansvar og er ikke en offentlig nyhedstjeneste.</p><p>Artikler og billeder tilhører deres respektive udgivere. EPUB’en er alene til personlig læsning; den må ikke videredistribueres.</p><p>Brugeren kan til enhver tid tilbagekalde Google Drive-adgangen fra sin Google-konto.</p><p>Spørgsmål: <a href=\"mailto:madsbh@me.com\">madsbh@me.com</a></p>"""
+
 
 def create_app(start_scheduler=True):
     app = Flask(__name__)
@@ -76,6 +82,14 @@ def create_app(start_scheduler=True):
     @app.get("/healthz")
     def healthz():
         return jsonify(status="ok", next_run=str(next_run()))
+
+    @app.get("/privacy")
+    def privacy():
+        return PRIVACY_PAGE
+
+    @app.get("/terms")
+    def terms():
+        return TERMS_PAGE
 
     @app.get("/")
     @page_auth
