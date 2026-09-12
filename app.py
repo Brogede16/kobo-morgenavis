@@ -106,7 +106,12 @@ def create_app(start_scheduler=True):
     @app.post("/run")
     @page_auth
     def run_from_page():
-        result = run_edition(settings, use_web_search=True)
+        try:
+            result = run_edition(settings, use_web_search=True)
+        except RuntimeError as exc:
+            logger.warning("Manual edition was not sent: %s", exc)
+            return render_template_string(PAGE, next_run=next_run(), result=str(exc),
+                                          edition=latest_edition(), feedback_enabled=feedback_configured()), 503
         sync_note = " Feedback er klar." if result.get("github_saved") else " Avisen er sendt, men GitHub-feedback blev ikke gemt; kontrollér GitHub-feedbackforbindelsen i Render."
         return render_template_string(PAGE, next_run=next_run(),
                                       result=f"Færdig: {result['articles']} historier er sendt til Drive." + sync_note,

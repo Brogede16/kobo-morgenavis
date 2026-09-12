@@ -8,7 +8,7 @@ edition:
   ai_shortlist_size: 140
   max_summary_characters: 360
   max_articles_per_source: 3
-  minimum_articles: 14 # Do not deliver a thin or broken edition.
+  minimum_articles: 8 # Deliver a useful edition when publishers block article extraction.
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:

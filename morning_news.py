@@ -282,7 +282,7 @@ def select_articles(candidates, settings):
         logger.warning("Feedback unavailable (%s); using Git profile", type(exc).__name__)
     cap = int(settings["edition"]["max_articles"])
     instructions = (
-        f"You edit Mads Morgen. Select up to {cap} worthwhile articles and up to 12 ranked backups. "
+        f"You edit Mads Morgen. Select up to {cap} worthwhile articles and up to 24 ranked backups. "
         "Aim for a varied edition of about 20-22 items when credible material exists; do not invent filler. "
         "Group reports about the same event with the same story_id. "
         "Put short daily news first, longer reading later. Aim for 6-8 genuine longreads or deeper explainers, and label "
@@ -300,7 +300,7 @@ def select_articles(candidates, settings):
         "Do not rewrite full articles. Return JSON "
         '{"selected":[{"i":0,"section":"Danmark","why":"2-3 precise Danish sentences: what happened, what it changes, and why Mads should care",'
         '"format":"short or longread","story_id":"event-slug","use_image":false}],'
-        '"backups":[{"i":1,"section":"Teknologi","why":"2-3 precise Danish sentences",'
+        '"backups":[{"i":1,"section":"Teknologi","why":"one precise Danish sentence",'
         '"format":"longread","story_id":"another-event","use_image":true}],'
         '"gaps":["Danish explanation"]}. ')
     payload = {"profile": profile, "candidates": compact}
@@ -311,7 +311,7 @@ def select_articles(candidates, settings):
     result = ai_call(instructions + json.dumps(payload, ensure_ascii=False), settings)
     sent_indexes = {c["i"] for c in payload["candidates"]}
     approved = []
-    for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:12]):
+    for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:24]):
         if not isinstance(item, dict) or type(item.get("i")) is not int or item["i"] not in sent_indexes:
             continue
         candidate = candidates[item["i"]]
@@ -339,7 +339,7 @@ def run_edition(settings=None, use_web_search=None):
     candidates = merge_candidate_pools(feeds, web, settings)
     approved = select_articles(candidates, settings)
     prepared = []
-    for article in approved[:int(settings["edition"]["max_articles"]) + 12]:
+    for article in approved[:int(settings["edition"]["max_articles"]) + 24]:
         if len(prepared) >= int(settings["edition"]["max_articles"]):
             break
         if len(diverse_selection(prepared + [article], settings)) == len(prepared):
