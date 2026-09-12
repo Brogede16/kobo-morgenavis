@@ -165,7 +165,9 @@ def ai_call(prompt, settings, search=False):
         "model": model,
         "input": prompt,
         "max_output_tokens": int(config.get("search_output_tokens" if search else "selection_output_tokens", 3000)),
-        "reasoning": {"effort": "minimal"},
+        # OpenAI's web-search tool is incompatible with minimal reasoning;
+        # discovery needs search, while the editorial selection stays minimal.
+        "reasoning": {"effort": "none" if search else "minimal"},
         "store": False,
     }
     if search:
