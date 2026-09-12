@@ -26,6 +26,7 @@ PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Mads M
 <form method=post action=\"{{ url_for('run_from_page') }}\"><p>En manuel kørsel bruger også den automatiske websøgning.</p><button>Lav og send avis nu</button></form>
 {% if edition %}<h2>Seneste udgave</h2><p>Fortæl gerne indimellem, hvad du vil have mere eller mindre af. Det bruges i næste udvælgelse.</p>
 {% if edition.report and edition.report.editor_note %}<p class=note><strong>Redaktørens note</strong><br>{{ edition.report.editor_note }}</p>{% endif %}
+{% if not feedback_enabled %}<p class=note><strong>Feedback er ikke aktiv endnu.</strong><br>Tilføj eller kontrollér GitHub-feedbackforbindelsen i Render, så knapperne kan gemme dine valg.</p>{% endif %}
 {% for article in edition.articles %}<article class=article><p><small>{{ article.section }} · {{ article.reading_minutes }} min.</small></p><a href=\"{{ article.url }}\" target=\"_blank\" rel=\"noreferrer\"><strong>{{ article.title }}</strong></a><p>{{ article.source }} · {{ article.summary }}</p><p class=why><strong>Kort fortalt:</strong> {{ article.why }}</p>
 {% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=url value=\"{{ article.url }}\"><select name=reason aria-label=\"Hvorfor?\"><option value=\"\">Valgfrit: hvorfor?</option><option value=\"great_match\">Godt emne og vinkel</option><option value=\"great_depth\">God dybde</option><option value=\"surprising\">Overraskende fed</option><option value=\"uninteresting\">Uinteressant</option><option value=\"too_generic\">For generisk verdensnyhed</option><option value=\"unclear\">For svært eller uklart skrevet</option><option value=\"good_but_too_technical\">God, men for nørdet</option><option value=\"too_thin\">For tynd</option><option value=\"too_long\">For lang eller kedelig</option><option value=\"too_promotional\">For meget PR</option><option value=\"too_old\">For gammel</option><option value=\"duplicate\">Gentagelse</option></select><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>
 {% endfor %}{% if edition.report and edition.report.source_health %}<details><summary>Kildestatus for denne udgave</summary><ul>{% for name, state in edition.report.source_health.items() %}<li class=\"{{ 'ok' if state.status == 'ok' else 'error' }}\">{{ name }}: {{ state.status }}{% if state.status == 'ok' %} ({{ state.items }} fund){% endif %}</li>{% endfor %}</ul></details>{% endif %}
@@ -106,8 +107,9 @@ def create_app(start_scheduler=True):
     @page_auth
     def run_from_page():
         result = run_edition(settings, use_web_search=True)
+        sync_note = " Feedback er klar." if result.get("github_saved") else " Avisen er sendt, men GitHub-feedback blev ikke gemt; kontrollér GitHub-feedbackforbindelsen i Render."
         return render_template_string(PAGE, next_run=next_run(),
-                                      result=f"Færdig: {result['articles']} historier er sendt til Drive.",
+                                      result=f"Færdig: {result['articles']} historier er sendt til Drive." + sync_note,
                                       edition=latest_edition(), feedback_enabled=feedback_configured())
 
     @app.post("/feedback")

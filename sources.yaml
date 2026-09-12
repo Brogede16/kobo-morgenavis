@@ -127,6 +127,10 @@ sources:
     url: https://www.wired.com/feed/rss
     enabled: true
     format: mixed
+  - name: Atlas Magasin
+    url: https://atlasmag.dk/rss.xml
+    enabled: true
+    format: longread
   - name: MIT Technology Review
     url: https://www.technologyreview.com/feed/
     enabled: true
