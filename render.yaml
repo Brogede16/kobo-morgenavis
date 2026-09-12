@@ -4,7 +4,10 @@ services:
     runtime: python
     plan: starter # An always-on instance is required for the internal scheduler.
     buildCommand: pip install -r requirements.txt
-    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1
+    # A complete edition performs RSS collection, an OpenAI web-search pass,
+    # article extraction and Drive upload in one request.  The Gunicorn default
+    # is only 30 seconds, which interrupts a healthy first run mid-request.
+    startCommand: gunicorn app:app --bind 0.0.0.0:$PORT --workers 1 --timeout 240 --graceful-timeout 30
     healthCheckPath: /healthz
     autoDeploy: true
     envVars:
