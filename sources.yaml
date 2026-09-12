@@ -99,6 +99,9 @@ collection:
   max_download_bytes: 50000000
 ai:
   model: gpt-5-mini
+  # gpt-5-mini remains the inexpensive editor. Web search needs a model that
+  # supports the built-in web tool, so keep that capability separate.
+  web_search_model: gpt-5.6-luna
   max_prompt_characters: 70000
   search_output_tokens: 2200
   selection_output_tokens: 4200

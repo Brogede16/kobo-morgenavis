@@ -159,8 +159,10 @@ def ai_call(prompt, settings, search=False):
     config = settings.get("ai", {})
     if len(prompt) > int(config.get("max_prompt_characters", 55000)):
         raise ValueError("AI prompt exceeds configured character budget")
+    model = (config.get("web_search_model", "gpt-5.6-luna") if search
+             else os.environ.get("OPENAI_MODEL", config.get("model", "gpt-5-mini")))
     options = {
-        "model": os.environ.get("OPENAI_MODEL", config.get("model", "gpt-5-mini")),
+        "model": model,
         "input": prompt,
         "max_output_tokens": int(config.get("search_output_tokens" if search else "selection_output_tokens", 3000)),
         "reasoning": {"effort": "minimal"},
@@ -229,7 +231,7 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
             except (requests.RequestException, ValueError, etree.Error):
                 continue
     except Exception as exc:
-        logger.warning("Search unavailable (%s); using feeds and open radar", type(exc).__name__)
+        logger.warning("Search unavailable (%s: %s); using feeds and open radar", type(exc).__name__, str(exc)[:500])
         if source_health is not None:
             source_health["OpenAI websøgning"] = {"status": "fejl", "items": 0}
     else:
