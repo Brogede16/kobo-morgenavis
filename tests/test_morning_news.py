@@ -66,6 +66,13 @@ def test_model_json_parser_repairs_only_bare_object_keys(monkeypatch):
     assert ai_call("test", settings())["selected"][0]["i"] == 1
 
 
+def test_malformed_ai_reply_gets_one_retry(monkeypatch):
+    from morning_news import AIResponseFormatError, ai_call_with_retry
+    replies = iter([AIResponseFormatError("bad json"), {"selected": []}])
+    monkeypatch.setattr("morning_news.ai_call", lambda *args, **kwargs: (_ for _ in ()).throw(value) if isinstance((value := next(replies)), Exception) else value)
+    assert ai_call_with_retry("test", settings(), pause=0) == {"selected": []}
+
+
 def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
     profile = tmp_path / "editorial.yaml"
     profile.write_text("editorial: {voice: Calm}\nexamples:\n  read:\n" + "\n".join(f"    - url: https://x/{i}\n      reason: useful" for i in range(15)))

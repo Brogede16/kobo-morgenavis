@@ -28,6 +28,10 @@ logger = logging.getLogger(__name__)
 ROOT = Path(__file__).parent
 
 
+class AIResponseFormatError(ValueError):
+    """The provider answered, but not in the machine-readable shape requested."""
+
+
 def load_settings(path=ROOT / "sources.yaml"):
     with open(path, encoding="utf-8") as file:
         data = yaml.safe_load(file)
@@ -205,20 +209,20 @@ def ai_call(prompt, settings, search=False):
                 continue
             if isinstance(parsed, dict) and ("selected" in parsed or "articles" in parsed):
                 return parsed
-    raise ValueError("OpenAI response did not contain the requested JSON object")
+    raise AIResponseFormatError("OpenAI response did not contain the requested JSON object")
 
 
-# Only these are worth paying for twice. A prompt that is too long, or a reply
-# that is not the requested JSON, fails the same way on the second attempt.
+# Transient provider failures and an occasional malformed model reply are worth
+# one retry. Invalid local configuration still fails immediately.
 TRANSIENT_AI_ERRORS = (RateLimitError, APITimeoutError, APIConnectionError, InternalServerError)
 
 
-def ai_call_with_retry(prompt, settings, search=False, attempts=2, pause=20):
+def ai_call_with_retry(prompt, settings, search=False, attempts=2, pause=5):
     """The scheduled run gets one second chance; a single 429 should not cost a day's paper."""
     for attempt in range(1, attempts + 1):
         try:
             return ai_call(prompt, settings, search=search)
-        except TRANSIENT_AI_ERRORS as exc:
+        except TRANSIENT_AI_ERRORS + (AIResponseFormatError,) as exc:
             if attempt >= attempts:
                 raise
             logger.warning("OpenAI attempt %s failed (%s); retrying in %ss", attempt, type(exc).__name__, pause)

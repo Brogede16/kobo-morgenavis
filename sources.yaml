@@ -133,7 +133,7 @@ ai:
   # trimmed before it can grow beyond this budget.
   max_prompt_characters: 90000
   search_output_tokens: 2200
-  selection_output_tokens: 4200
+  selection_output_tokens: 5200 # Room for 20-22 selections plus reserves; billed use is still actual output.
 sources:
   - name: DR Nyheder
     url: https://www.dr.dk/nyheder/service/feeds/senestenyt
