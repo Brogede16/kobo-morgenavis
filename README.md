@@ -8,13 +8,15 @@ Der er et enkelt, loginbeskyttet kontrolpanel, men ingen fancy frontend og intet
 
 `sources.yaml` er redaktionens source of truth for kilder og versioneres i Git. Den henter bredt (op til 35 indslag pr. RSS-kilde), læser et lille sæt danske nyhedssektioner på **overskrifts- og previewniveau** og kombinerer det med én begrænset OpenAI-websøgning. For højst tre relevante links pr. sektion læses en kort offentlig beskrivelse eller indledning; det hjælper redaktøren med at forstå sagen uden at gøre det til en ny, token-tung AI-proces. Politiken, Information og Kulturmonitor er kun redaktionel radar: appen kopierer aldrig deres tekst eller leverer en betalingsmuret artikel, men finder i stedet tilgængelig original eller uafhængig dækning af sagen. Derefter triageres der lokalt ned til en AI-shortlist, og OpenAI vælger den færdige blanding: omkring 20-22 historier med både korte, vigtige opdateringer og 6-8 longreads/analyser. `gpt-5-mini` bruges til den billige redigering, mens den særskilte, lave-pris web-søgemodel kun bruges til ét begrænset søgekald pr. udgave. [editorial_profile.yaml](editorial_profile.yaml) er den omfattende redaktionelle profil, herunder dine læse/ikke-læse-eksempler. Se også [editorial_feedback.md](editorial_feedback.md) for processen.
 
-Kildediversitet håndhæves også i kode: standarden er højst to artikler pr. outlet, og MacRumors højst én. Rest of World og 404 Media indgår som web-radarer, så teknologidækningen ikke alene følger produktnyheder eller de største teknologimedier.
+Kildediversitet håndhæves også i kode: standarden er højst tre artikler pr. outlet (`edition.max_articles_per_source`), og enkelte kilder er sat lavere under `source_limits` — MacRumors højst én. Loftet er et loft, ikke en kvote: en kerne­kilde må gerne gå igen, når artiklen er det bedste bud.
 
 ## Kør nu
 
-Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Den kører hele kæden inklusive websøgning og uploader EPUB’en til Google Drive.
+Avisen sendes af sig selv hver morgen. Knappen er til test.
 
-Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Websøgning er standard; `?web_search=false` er kun til fejlsøgning.
+Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `ADMIN_USERNAME` og `ADMIN_PASSWORD`, og tryk **Lav og send avis nu**. Kørslen starter i en baggrundstråd og siden svarer med det samme, så webservicen bliver ved med at besvare Renders healthcheck imens, og et tryk på F5 ikke kan starte en ny, betalt kørsel. Forsiden viser undervejs at kørslen er i gang, og bagefter hvor mange historier der blev sendt, eller hvad der gik galt.
+
+Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Den starter kørslen og svarer `202` med det samme; `?wait=true` venter på det fulde resultat. Websøgning er standard; `?web_search=false` er kun til fejlsøgning. Der kan kun køre én udgave ad gangen; et forsøg på nummer to svarer `409`.
 
 Kobo Libra Colour understøtter Google Drive direkte. Forbind Kobo-kontoen med Google Drive én gang på læseren, og brug den automatisk oprettede **`Rakuten Kobo`**-mappe som upload-mappe. Når Kobo synkroniserer over Wi‑Fi, henter den nye DRM-frie EPUB’er; de kan også ses under **More → My Google Drive**. Det er en officiel Kobo-funktion, ikke en uofficiel Kobo-API-integration.
 
@@ -37,7 +39,7 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Den normale udgave samler op til 240 kandidater og bruger gratis lokal triage før AI-kaldet. 35 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren ser højst 120 korte resuméer á 260 tegn, men prompten har samtidig et hårdt loft på 55.000 tegn. Google-grounded søgning kører i ét afgrænset kald med højst 1.600 outputtokens; selve valget har højst 2.400. Artiklerne omskrives ikke af AI. Den komplette redaktionelle historik bliver i Git, mens kun fire relevante positive og negative eksempler samt kompakt klikfeedback indgår i en kørsel. Sæt et projektbudget/spend alert på Google AI-kontoen som ekstra sikkerhedsnet.
+Tallene står i `sources.yaml` og er dem, der styrer forbruget. Udgaven samler op til 360 kandidater og triagerer dem gratis lokalt før AI-kaldet. 55 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren kan se op til 140 korte resuméer á 300 tegn, men prompten har et hårdt loft på 90.000 tegn. Hvis materialet fylder mere, beskæres shortlisten kildebalanceret, og det logges som en advarsel. Der er to OpenAI-kald pr. udgave: én websøgning med højst 2.200 outputtokens og selve udvælgelsen med højst 4.200. Udvælgelsen prøves to gange ved 429/timeout. Artiklerne omskrives ikke af AI. Den komplette redaktionelle historik bliver i Git, mens kun otte relevante positive og negative eksempler samt klikfeedback fra de seneste 120 dage indgår i en kørsel. Sæt et spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
 
 Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
@@ -53,7 +55,9 @@ Forsiden viser for hver artikel den korte redaktionelle begrundelse, som allered
 
 ### Langt, kort og grafik
 
-Den færdige EPUB er en rigtig læseavis: forside, indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Redaktøren tvinges til en blanding af korte nyheder og 2-3 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
+Den færdige EPUB er en rigtig læseavis: forside, prioriteret indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Øverst står **Hvis du kun læser fem**, rangeret af redaktøren; resten følger i emneafsnit. Redaktøren tvinges til en blanding af korte nyheder og 6-8 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
+
+Hver udgave får en genereret forside med dato, antal historier, læsetid og dagens overskrifter grupperet i de tre afsnit. Den tegnes lokalt med Pillow, så den koster hverken API-kald eller ventetid, og den gør de ti udgaver i Kobo-biblioteket til at skelne fra hinanden. Er der et brugbart artikelbillede, sættes det ind på forsiden.
 
 Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke.
 
@@ -90,10 +94,25 @@ base64 -i service-account.json | tr -d '\n'
 1. Opret et GitHub-repo og push denne mappe til `main`.
 2. I Render: vælg **New → Blueprint**, forbind repoet, og lad Render læse `render.yaml`.
 3. Udfyld OpenAI-, Drive-, GitHub- og login-secrets fra tabellen ovenfor. `RUN_NOW_TOKEN` og en første admin-adgangskode oprettes automatisk af Blueprintet.
-4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel. Åbn `/` og log ind for at køre en prøveudgave.
+4. Deploy. Åbn `/healthz`; den viser næste planlagte kørsel og resultatet af den seneste. Åbn `/` og log ind for at køre en prøveudgave.
 5. Alternativt: test med en POST til `/run-now` og headeren `Authorization: Bearer <RUN_NOW_TOKEN>`.
 
 Render deployer automatisk ved push til `main`. Loggene i Render viser antal fundne historier, fejl pr. feed og resultatet af uploaden.
+
+### Når noget går galt
+
+Kørslen er bygget til at være selvkørende, så fejl skal være synlige uden at du logger ind nogen steder:
+
+- Fejler en udgave, uploades en EPUB på én side med overskriften **Ingen avis i dag** og årsagen. Den hedder `mads-morgen-<dato>-status.epub` — altså ikke det samme som en rigtig udgave, så en fejlet testkørsel midt på dagen kan ikke overskrive den avis, der gik ud kl. 05:30. Den tæller med i de ti bevarede udgaver på Drive.
+- OpenAI-kaldet til udvælgelsen prøver to gange med 20 sekunders pause. En enkelt 429 eller timeout koster ikke en dags avis.
+- Bliver servicen genstartet eller deployet omkring det planlagte tidspunkt, køres udgaven alligevel: planlæggeren har en times `misfire_grace_time`, og halvandet minut efter opstart tjekker servicen i GitHub-arkivet om dagens udgave mangler. Den henter kun op inden for fire timer efter det planlagte tidspunkt (`CATCH_UP_WINDOW_HOURS`), så et deploy om eftermiddagen ikke starter en ny betalt kørsel. Det kræver, at GitHub-feedback er sat op, for arkivet er det eneste sted der overlever en genstart.
+- `/healthz` og forsiden viser tidspunkt, antal historier og eventuel fejl fra seneste kørsel.
+
+### Hvad avisen husker fra i går
+
+Før udvælgelsen hentes de seneste tre udgaver fra `feedback/editions/` og alt, der allerede har været bragt, sorteres fra: samme URL, samme `story_id` og næsten samme overskrift. Det koster ét GitHub-opslag og ingen AI-kald, og det er det, der forhindrer at gårsdagens sag kommer igen fra et andet medie. Antallet styres med `edition.history_editions`.
+
+Klikfeedback ældre end 21 dage indgår ikke længere i udvælgelsen. En holdning, du gav udtryk for for tre måneder siden, skal ikke styre avisen, uden at du klikker igen.
 
 ## Begrænsninger i v1
 

@@ -16,6 +16,7 @@ LATEST_PATH = "feedback/latest_edition.json"
 EVENTS_PATH = "feedback/events.jsonl"
 EDITIONS_PREFIX = "feedback/editions"
 RETENTION_DAYS = 10
+FEEDBACK_WINDOW_DAYS = 120  # Mads visits occasionally, so preferences need time to accumulate.
 
 
 def branch():
@@ -118,7 +119,8 @@ def record_edition(articles, report=None):
         "created_at": created_at.isoformat(),
         "articles": [
             {key: str(article.get(key, ""))[:500] for key in (
-                "title", "source", "url", "summary", "format", "section", "why", "reading_minutes"
+                "title", "source", "url", "summary", "format", "section", "group",
+                "story_id", "why", "reading_minutes"
             )}
             for article in articles
         ],
@@ -169,20 +171,66 @@ def add_feedback(article, direction):
     return True
 
 
-def recent_feedback(limit=30):
-    """Return compact signals for the next editorial selection."""
+def recent_feedback(limit=30, days=FEEDBACK_WINDOW_DAYS):
+    """Return compact, recent signals for the next editorial selection.
+
+    Feedback is kept for four months because the reader visits occasionally.
+    The durable editorial profile remains the long-term source of truth.
+    """
     text, _ = _read(EVENTS_PATH)
     if not text:
         return []
+    cutoff = datetime.now(timezone.utc) - timedelta(days=days) if days else None
     events = []
     for line in text.splitlines()[-limit:]:
         try:
             event = json.loads(line)
-            if event.get("direction") in {"more", "less"}:
-                events.append({key: event.get(key, "") for key in ("created_at", "direction", "title", "source", "summary", "reason")})
         except json.JSONDecodeError:
             continue
+        if event.get("direction") not in {"more", "less"}:
+            continue
+        if cutoff is not None:
+            try:
+                created = datetime.fromisoformat(str(event.get("created_at", "")).replace("Z", "+00:00"))
+            except (TypeError, ValueError):
+                continue
+            if created < cutoff:
+                continue
+        events.append({key: event.get(key, "") for key in ("created_at", "direction", "title", "source", "summary", "reason")})
     return events
+
+
+def published_history(editions=3):
+    """URLs, story ids and headlines from the last few editions.
+
+    Used to stop the paper reprinting yesterday's story from another outlet.
+    Costs one directory listing plus one read per edition, no AI call.
+    """
+    empty = {"urls": [], "story_ids": [], "titles": []}
+    if not configured() or editions < 1:
+        return empty
+    response = requests.get(
+        f"{API}/repos/{os.environ['GITHUB_REPOSITORY']}/contents/{EDITIONS_PREFIX}",
+        headers=_headers(), params={"ref": branch()}, timeout=12,
+    )
+    if response.status_code == 404:
+        return empty
+    response.raise_for_status()
+    paths = sorted(item["path"] for item in response.json() if item.get("name", "").endswith(".json"))
+    history = {"urls": [], "story_ids": [], "titles": []}
+    for path in paths[-editions:]:
+        text, _ = _read(path)
+        if not text:
+            continue
+        try:
+            edition = json.loads(text)
+        except json.JSONDecodeError:
+            continue
+        for article in edition.get("articles", []):
+            history["urls"].append(article.get("url", ""))
+            history["story_ids"].append(article.get("story_id", ""))
+            history["titles"].append(article.get("title", ""))
+    return history
 
 
 def editorial_note(days=7):

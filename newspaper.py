@@ -11,7 +11,7 @@ from zoneinfo import ZoneInfo
 
 from ebooklib import epub
 from lxml import etree, html as lxml_html
-from PIL import Image, ImageOps
+from PIL import Image, ImageDraw, ImageFont, ImageOps
 from readability import Document
 import requests
 
@@ -33,12 +33,28 @@ img {max-width:100%;height:auto} figure {margin:1em 0} li {margin-bottom:.6em}
 """
 
 
+GROUPS = ("Danmark og kultur", "Teknologi og verden", "Fordybelse")
+# Whole-word matching only. Substring matching used to file "Ukraine",
+# "detailhandel" and "Thailand" under Teknologi, because all three contain "ai".
+GROUP_WORDS = {
+    "Danmark og kultur": {"danmark", "dansk", "danske", "politik", "politisk", "samfund", "økonomi",
+                          "kultur", "kulturpolitik", "københavn", "folketinget", "regeringen",
+                          "kommune", "museum", "museer", "film", "biograf"},
+    "Teknologi og verden": {"ai", "teknologi", "tech", "apple", "mac", "iphone", "verden", "global",
+                            "globalt", "cyber", "sikkerhed", "udland", "eu", "usa", "software",
+                            "chip", "robot", "data"},
+}
+
+
 def overview_group(article):
-    value = (article.get("section", "") + " " + article.get("title", "")).lower()
-    if any(word in value for word in ("danmark", "politik", "samfund", "økonomi", "kulturpolitik", "københavn")):
-        return "Danmark og kultur"
-    if any(word in value for word in ("ai", "teknologi", "apple", "mac", "verden", "global", "cyber")):
-        return "Teknologi og verden"
+    """Use the group the editor already chose; fall back to whole-word matching."""
+    declared = str(article.get("group", "")).strip()
+    if declared in GROUPS:
+        return declared
+    words = set(re.findall(r"[\wæøåÆØÅ]+", (article.get("section", "") + " " + article.get("title", "")).lower()))
+    for group in ("Danmark og kultur", "Teknologi og verden"):
+        if words & GROUP_WORDS[group]:
+            return group
     return "Fordybelse"
 
 
@@ -83,6 +99,102 @@ def prepare_article(article, reader):
         return None
 
 
+FONT_CANDIDATES = (
+    "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
+    "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
+    "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+)
+MONTHS = ("januar", "februar", "marts", "april", "maj", "juni",
+          "juli", "august", "september", "oktober", "november", "december")
+WEEKDAYS = ("mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag", "søndag")
+
+
+def danish_date(day):
+    return f"{WEEKDAYS[day.weekday()]} {day.day}. {MONTHS[day.month - 1]} {day.year}"
+
+
+def load_font(size):
+    """A real font when the host has one, otherwise Pillow's bundled scalable font.
+
+    Render's image does not always ship system fonts, and load_default() without a
+    size is an unreadable bitmap, so never rely on the system font being there.
+    """
+    for path in FONT_CANDIDATES:
+        try:
+            return ImageFont.truetype(path, size)
+        except OSError:
+            continue
+    return ImageFont.load_default(size=size)
+
+
+def wrap_text(draw, text, font, width):
+    lines, line = [], ""
+    for word in text.split():
+        candidate = f"{line} {word}".strip()
+        if line and draw.textlength(candidate, font=font) > width:
+            lines.append(line)
+            line = word
+        else:
+            line = candidate
+    if line:
+        lines.append(line)
+    return lines
+
+
+def build_cover_image(articles, settings, day, hero=None):
+    """A dated front page so ten editions are not ten identical books on the Kobo.
+
+    Drawn locally with Pillow: no API call, no per-day cost, works offline.
+    """
+    width, height, margin = 1200, 1600, 80
+    paper, ink, accent, muted = (244, 241, 232), (18, 40, 34), (155, 77, 40), (82, 100, 92)
+    canvas = Image.new("RGB", (width, height), paper)
+    draw = ImageDraw.Draw(canvas)
+    inner = width - 2 * margin
+    y = margin
+
+    draw.text((margin, y), "DIN PERSONLIGE MORGENAVIS", font=load_font(26), fill=accent)
+    y += 46
+    draw.text((margin, y), settings["edition"]["title"], font=load_font(104), fill=ink)
+    y += 128
+    draw.text((margin, y), danish_date(day), font=load_font(34), fill=muted)
+    y += 52
+    minutes = sum(article.get("reading_minutes", 1) for article in articles)
+    draw.text((margin, y), f"{len(articles)} historier · cirka {minutes} minutters læsning", font=load_font(30), fill=muted)
+    y += 58
+    draw.line((margin, y, width - margin, y), fill=ink, width=3)
+    y += 34
+
+    if hero:
+        try:
+            with Image.open(io.BytesIO(hero)) as image:
+                picture = ImageOps.fit(ImageOps.exif_transpose(image).convert("RGB"), (inner, 420))
+            canvas.paste(picture, (margin, y))
+            y += 452
+        except (OSError, ValueError):
+            pass
+
+    heading_font, title_font = load_font(28), load_font(36)
+    for group in GROUPS:
+        entries = [a for a in articles if overview_group(a) == group]
+        if not entries or y > height - 200:
+            continue
+        draw.text((margin, y), group.upper(), font=heading_font, fill=accent)
+        y += 44
+        for article in entries[:3]:
+            for line in wrap_text(draw, article.get("title", ""), title_font, inner)[:2]:
+                if y > height - 120:
+                    break
+                draw.text((margin, y), line, font=title_font, fill=ink)
+                y += 46
+            y += 12
+        y += 18
+
+    output = io.BytesIO()
+    canvas.save(output, format="JPEG", quality=82, optimize=True)
+    return output.getvalue()
+
+
 def image_bytes(url, reader, config):
     raw, _, _ = reader.get(url, limit=int(config.get("max_bytes", 2500000)))
     with Image.open(io.BytesIO(raw)) as image:
@@ -99,7 +211,8 @@ def build_epub(articles, settings, output_dir=None, reader=None):
     output_dir = Path(output_dir or Path(__file__).parent / "output")
     output_dir.mkdir(parents=True, exist_ok=True)
     reader = reader or WebReader()
-    today = datetime.now(ZoneInfo(settings["edition"]["timezone"])).date().isoformat()
+    day = datetime.now(ZoneInfo(settings["edition"]["timezone"])).date()
+    today = day.isoformat()
     book = epub.EpubBook()
     title = f"{settings['edition']['title']} — {today}"
     book.set_identifier(f"mads-morgen-{today}")
@@ -109,6 +222,26 @@ def build_epub(articles, settings, output_dir=None, reader=None):
     css = epub.EpubItem(uid="style", file_name="style.css", media_type="text/css", content=STYLE.encode())
     book.add_item(css)
 
+    image_settings, images_added = settings.get("images", {}), 0
+    cover_name = ""
+    try:
+        hero = None
+        if image_settings.get("enabled"):
+            for article in articles:
+                if not article.get("image_url"):
+                    continue
+                try:
+                    hero = image_bytes(article["image_url"], reader, image_settings)
+                except Exception as exc:  # noqa: BLE001 - a cover must never fail the edition
+                    logger.info("Cover hero unavailable (%s)", type(exc).__name__)
+                if hero:
+                    break
+        cover_name = "cover.jpg"
+        book.set_cover(cover_name, build_cover_image(articles, settings, day, hero), create_page=False)
+    except Exception as exc:  # noqa: BLE001
+        cover_name = ""
+        logger.warning("Cover could not be generated (%s)", type(exc).__name__)
+
     def chapter(title, filename, body, lang="da"):
         item = epub.EpubHtml(title=title, file_name=filename, lang=lang)
         item.content = body
@@ -117,14 +250,22 @@ def build_epub(articles, settings, output_dir=None, reader=None):
         return item
 
     e = html.escape
+    cover_picture = f'<figure><img src="{cover_name}" alt="Forside"/></figure>' if cover_name else ""
     cover = chapter("Forside", "index.xhtml",
-        f'<div class="cover"><p class="kicker">DIN PERSONLIGE MORGENAVIS</p><h1>{e(settings["edition"]["title"])}</h1>'
-        f'<p>{today}</p><p>{len(articles)} historier · cirka {sum(a.get("reading_minutes", 1) for a in articles)} minutters læsning</p>'
+        f'{cover_picture}<div class="cover"><p class="kicker">DIN PERSONLIGE MORGENAVIS</p><h1>{e(settings["edition"]["title"])}</h1>'
+        f'<p>{e(danish_date(day))}</p><p>{len(articles)} historier · cirka {sum(a.get("reading_minutes", 1) for a in articles)} minutters læsning</p>'
         '<p>Det, der er værd at vide, før dagen begynder.</p></div>')
+    essentials = list(enumerate(articles[:5], 1))
     groups = {"Danmark og kultur": [], "Teknologi og verden": [], "Fordybelse": []}
-    for i, article in enumerate(articles, 1):
+    for i, article in enumerate(articles[5:], 6):
         groups[overview_group(article)].append((i, article))
-    overview_body = '<h1>Dagens overblik</h1><p>De vigtigste historier først; læs resten, når du har tid.</p>'
+    overview_body = '<h1>Dagens overblik</h1><p>Redaktørens prioritering af det vigtigste og det mest interessante i dag.</p>'
+    if essentials:
+        overview_body += '<section class="overview-group"><h2>Hvis du kun læser fem</h2><ol>' + "".join(
+            f'<li><a href="article-{i}.xhtml">{e(a["title"])}</a><p>{e(a.get("why", ""))}</p></li>'
+            for i, a in essentials) + "</ol></section>"
+    if any(groups.values()):
+        overview_body += '<h2>Resten af avisen</h2>'
     for heading, entries in groups.items():
         if entries:
             overview_body += f'<section class="overview-group"><h2>{e(heading)}</h2><ol>' + "".join(
@@ -132,7 +273,6 @@ def build_epub(articles, settings, output_dir=None, reader=None):
                 for i, a in entries) + "</ol></section>"
     overview = chapter("Dagens overblik", "overview.xhtml", overview_body)
     chapters = [cover, overview]
-    image_settings, images_added = settings.get("images", {}), 0
     for i, article in enumerate(articles, 1):
         picture = ""
         if (image_settings.get("enabled") and article.get("use_image") and article.get("image_url")
@@ -162,5 +302,43 @@ def build_epub(articles, settings, output_dir=None, reader=None):
     book.add_item(nav)
     book.spine = [*chapters]
     path = output_dir / f"mads-morgen-{today}.epub"
+    epub.write_epub(str(path), book)
+    return path
+
+
+def build_notice_epub(settings, reason, output_dir=None):
+    """A one-page edition saying why today's paper is missing.
+
+    The Kobo is where the paper is read, so it is also where a failure has to be
+    visible. Its own '-status' filename, never the real edition's: a failing
+    manual run at midday must not overwrite the paper that went out at 05:30.
+    Drive retention still recognises and prunes it.
+    """
+    output_dir = Path(output_dir or Path(__file__).parent / "output")
+    output_dir.mkdir(parents=True, exist_ok=True)
+    day = datetime.now(ZoneInfo(settings["edition"]["timezone"])).date()
+    today = day.isoformat()
+    book = epub.EpubBook()
+    book.set_identifier(f"mads-morgen-{today}-status")
+    book.set_title(f"{settings['edition']['title']} — {today} (kunne ikke udkomme)")
+    book.set_language("da")
+    book.add_author("Mads Morgen")
+    css = epub.EpubItem(uid="style", file_name="style.css", media_type="text/css", content=STYLE.encode())
+    book.add_item(css)
+    e = html.escape
+    page = epub.EpubHtml(title="Ingen avis i dag", file_name="index.xhtml", lang="da")
+    page.content = (f'<div class="cover"><p class="kicker">INGEN AVIS I DAG</p>'
+                    f'<h1>{e(settings["edition"]["title"])}</h1><p>{e(danish_date(day))}</p></div>'
+                    f'<div class="why"><strong>Hvad gik galt:</strong> {e(str(reason)[:600])}</div>'
+                    '<p>Kørslen prøver igen i morgen. Du kan starte en ny kørsel fra kontrolpanelet.</p>')
+    page.add_item(css)
+    book.add_item(page)
+    book.toc = (page,)
+    book.add_item(epub.EpubNcx())
+    nav = epub.EpubNav()
+    nav.add_item(css)
+    book.add_item(nav)
+    book.spine = [page]
+    path = output_dir / f"mads-morgen-{today}-status.epub"
     epub.write_epub(str(path), book)
     return path

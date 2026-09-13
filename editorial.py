@@ -36,13 +36,15 @@ def fair_sample(items, limit):
     return result
 
 
-def compact_profile(profile, candidates=(), max_chars=11500):
+# Everything in editorial_profile.yaml reaches the editor except the keys below.
+# A denylist means a new policy added to the profile is used immediately; the old
+# allowlist silently dropped any key someone forgot to register here.
+PROFILE_SKIP_KEYS = {"priorities"}  # sent separately as rotating relevant_interests
+
+
+def compact_profile(profile, candidates=(), max_chars=16000):
     editorial = profile.get("editorial", {})
-    keys = ("voice", "desired_mix", "daily_structure", "priority_tiers", "exclusions",
-            "source_policy", "source_roles", "paywall_policy", "readability_policy",
-            "daily_readiness_test", "film_policy", "culture_policy", "gaming_policy",
-            "photography_source_policy", "sexuality_policy")
-    brief = {key: editorial[key] for key in keys if key in editorial}
+    brief = {key: value for key, value in editorial.items() if key not in PROFILE_SKIP_KEYS}
     # Keep every interest in Git. Include relevant detail plus rotating discovery interests.
     priorities = [text_value(p) for p in editorial.get("priorities", [])]
     relevant = terms(" ".join(c.get("title", "") + " " + c.get("summary", "") for c in candidates))
@@ -52,13 +54,13 @@ def compact_profile(profile, candidates=(), max_chars=11500):
         rotated = priorities[offset:] + priorities[:offset]
     else:
         rotated = []
-    brief["relevant_interests"] = list(dict.fromkeys(ordered[:8] + rotated[:4]))
+    brief["relevant_interests"] = list(dict.fromkeys(ordered[:10] + rotated[:6]))
     result = {"editorial": brief, "examples": {}}
     for direction in ("read", "skip"):
         entries = [e for e in profile.get("examples", {}).get(direction, []) if isinstance(e, dict)]
         entries.sort(key=lambda e: len(terms(e.get("reason", "") + " " + e.get("url", "")) & relevant), reverse=True)
         result["examples"][direction] = [{"url": str(e.get("url", ""))[:240],
-                                           "reason": str(e.get("reason", ""))[:220]} for e in entries[:4]]
+                                           "reason": str(e.get("reason", ""))[:220]} for e in entries[:8]]
     # Remove optional detail first; never cut a rule halfway through a sentence.
     while len(json.dumps(result, ensure_ascii=False)) > max_chars:
         removable = result["editorial"].get("relevant_interests", [])
@@ -71,6 +73,39 @@ def compact_profile(profile, candidates=(), max_chars=11500):
         else:
             raise ValueError("Core editorial rules exceed configured prompt budget")
     return result
+
+
+def near_duplicate(title_words, other_words, shared=3, ratio=.7):
+    """True when two headlines clearly describe the same story."""
+    overlap = len(title_words & other_words)
+    if overlap < shared:
+        return False
+    return overlap / max(1, min(len(title_words), len(other_words))) >= ratio
+
+
+def drop_already_published(candidates, history):
+    """Remove candidates that recent editions already carried.
+
+    `history` comes from feedback_store.published_history(): the URLs, story ids
+    and headlines of the last few editions. Without it the paper has no memory
+    and reprints the same story from a different outlet the next morning.
+    """
+    if not history:
+        return candidates
+    urls = set(history.get("urls", ()))
+    stories = {value for value in history.get("story_ids", ()) if value}
+    titles = [terms(value) for value in history.get("titles", ())]
+    kept = []
+    for item in candidates:
+        if canonical_url(item.get("url", "")) in urls:
+            continue
+        if item.get("story_id") and item["story_id"] in stories:
+            continue
+        words = terms(item.get("title", ""))
+        if words and any(near_duplicate(words, old) for old in titles):
+            continue
+        kept.append(item)
+    return kept
 
 
 def dedupe(items):
@@ -94,10 +129,8 @@ def diverse_selection(selected, settings):
         cap = int(limits.get(source, limits.get(item.get("source"), per_source)))
         story_id = item.get("story_id")
         title_words = terms(item.get("title", ""))
-        near_duplicate = any(len(title_words & terms(old["title"])) >= 3 and
-                             len(title_words & terms(old["title"])) / max(1, min(len(title_words), len(terms(old["title"])))) >= .7
-                             for old in result)
-        if counts.get(source, 0) >= cap or near_duplicate or (story_id and story_id in seen_stories):
+        repeat = any(near_duplicate(title_words, terms(old["title"])) for old in result)
+        if counts.get(source, 0) >= cap or repeat or (story_id and story_id in seen_stories):
             continue
         result.append(item)
         counts[source] = counts.get(source, 0) + 1

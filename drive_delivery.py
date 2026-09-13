@@ -12,7 +12,10 @@ from googleapiclient.discovery import build
 from googleapiclient.http import MediaFileUpload
 
 logger = logging.getLogger(__name__)
-PATTERN = re.compile(r"^mads-morgen-(\d{4}-\d{2}-\d{2})\.epub$")
+# The optional "-status" suffix is the one-page failure notice. It is kept under
+# the same retention rule, but it is a separate file so it can never replace
+# a real edition that already went out that morning.
+PATTERN = re.compile(r"^mads-morgen-(\d{4}-\d{2}-\d{2})(?:-status)?\.epub$")
 MIME = "application/epub+zip"
 
 

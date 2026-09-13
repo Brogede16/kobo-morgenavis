@@ -6,9 +6,10 @@ edition:
   max_candidates: 360 # Broad collection; the model only sees the shortlisted items below.
   web_candidate_reserve: 55 # Prevent RSS volume from crowding out news-radar and web results.
   ai_shortlist_size: 140
-  max_summary_characters: 360
+  max_summary_characters: 300
   max_articles_per_source: 3
   minimum_articles: 8 # Deliver a useful edition when publishers block article extraction.
+  history_editions: 3 # Skip stories the last three editions already carried.
   timezone: Europe/Copenhagen
   schedule: "30 5 * * *" # 05:30 every day, in the timezone above
   topics:
@@ -102,7 +103,9 @@ ai:
   # gpt-5-mini remains the inexpensive editor. Web search needs a model that
   # supports the built-in web tool, so keep that capability separate.
   web_search_model: gpt-5.6-luna
-  max_prompt_characters: 70000
+  # A firm cost ceiling. Collection may be broad, but paid editorial context is
+  # trimmed before it can grow beyond this budget.
+  max_prompt_characters: 90000
   search_output_tokens: 2200
   selection_output_tokens: 4200
 sources:
