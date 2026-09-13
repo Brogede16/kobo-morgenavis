@@ -5,8 +5,8 @@ edition:
   max_articles: 22
   max_candidates: 360 # Broad collection; the model only sees the shortlisted items below.
   web_candidate_reserve: 55 # Prevent RSS volume from crowding out news-radar and web results.
-  ai_shortlist_size: 140
-  max_summary_characters: 300
+  ai_shortlist_size: 75 # Fits the prompt budget instead of being silently trimmed.
+  max_summary_characters: 400 # More context per article while keeping token use controlled.
   max_articles_per_source: 3
   minimum_articles: 8 # Deliver a useful edition when publishers block article extraction.
   history_editions: 3 # Skip stories the last three editions already carried.
@@ -28,7 +28,7 @@ edition:
 web_search:
   # OpenAI web search runs in the scheduled edition.
   enabled_for_schedule: true
-  rotating_queries_per_day: 3 # Five core searches plus three rotating specialist searches.
+  rotating_queries_per_day: 3 # Four core searches plus three rotating specialist searches.
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -75,12 +75,10 @@ news_site_signals:
       max_previews: 4
     - name: Ekstra Bladet
       url: https://ekstrabladet.dk/
-      role: reading
       max_items: 8
       max_previews: 3
     - name: B.T.
       url: https://www.bt.dk/
-      role: reading
       max_items: 8
       max_previews: 3
     - name: Berlingske
@@ -122,8 +120,9 @@ collection:
   max_items_per_source: 35
   max_news_age_days: 3
   max_http_requests: 260
-  max_download_bytes: 50000000
+  max_download_bytes: 100000000
   max_candidate_previews: 45 # Better editorial judgement without another AI call.
+  candidate_preview_budget_fraction: 0.6 # Keep at least 40% for selected articles and images.
 ai:
   model: gpt-5-mini
   # gpt-5-mini remains the inexpensive editor. Web search needs a model that

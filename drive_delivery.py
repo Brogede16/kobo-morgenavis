@@ -15,7 +15,7 @@ logger = logging.getLogger(__name__)
 # The optional "-status" suffix is the one-page failure notice. It is kept under
 # the same retention rule, but it is a separate file so it can never replace
 # a real edition that already went out that morning.
-PATTERN = re.compile(r"^mads-morgen-(\d{4}-\d{2}-\d{2})(?:-status)?\.epub$")
+PATTERN = re.compile(r"^mads-morgen-(\d{4}-\d{2}-\d{2})(?:(-status)|-\d+)?\.epub$")
 MIME = "application/epub+zip"
 
 
@@ -59,7 +59,7 @@ def upload_to_drive(path):
     return uploaded
 
 
-def prune_old_drive_editions(drive, folder_id, keep=10):
+def prune_old_drive_editions(drive, folder_id, keep=1):
     if keep < 1:
         raise ValueError("At least one edition must be retained")
     files = list_files(drive, f"'{quote(folder_id)}' in parents and mimeType='{MIME}' and trashed=false")
@@ -72,7 +72,8 @@ def prune_old_drive_editions(drive, folder_id, keep=10):
             day = date.fromisoformat(match[1])
         except ValueError:
             continue
-        editions.append((day, item["id"]))
-    for _, file_id in sorted(editions, reverse=True)[keep:]:
+        # A real paper wins over a failure notice from the same day.
+        editions.append((day, match[2] is None, item.get("createdTime", ""), item["id"]))
+    for *_, file_id in sorted(editions, reverse=True)[keep:]:
         drive.files().update(fileId=file_id, body={"trashed": True}).execute()
         logger.info("Moved expired newspaper to Drive trash")

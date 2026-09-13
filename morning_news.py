@@ -20,7 +20,7 @@ from openai import (APIConnectionError, APITimeoutError, InternalServerError, Op
 
 from editorial import compact_profile, dedupe, diverse_selection, drop_already_published, fair_sample
 from feedback_store import editorial_note, published_history, recent_feedback, record_edition
-from news_io import WebReader, canonical_url
+from news_io import BudgetExhausted, WebReader, canonical_url
 from newspaper import GROUPS, build_epub, build_notice_epub, prepare_article
 from drive_delivery import upload_to_drive, prune_old_drive_editions
 
@@ -217,7 +217,7 @@ def ai_call(prompt, settings, search=False):
 TRANSIENT_AI_ERRORS = (RateLimitError, APITimeoutError, APIConnectionError, InternalServerError)
 
 
-def ai_call_with_retry(prompt, settings, search=False, attempts=2, pause=5):
+def ai_call_with_retry(prompt, settings, search=False, attempts=2, pause=None):
     """The scheduled run gets one second chance; a single 429 should not cost a day's paper."""
     for attempt in range(1, attempts + 1):
         try:
@@ -225,8 +225,9 @@ def ai_call_with_retry(prompt, settings, search=False, attempts=2, pause=5):
         except TRANSIENT_AI_ERRORS + (AIResponseFormatError,) as exc:
             if attempt >= attempts:
                 raise
-            logger.warning("OpenAI attempt %s failed (%s); retrying in %ss", attempt, type(exc).__name__, pause)
-            time.sleep(pause)
+            wait = pause if pause is not None else (2 if isinstance(exc, AIResponseFormatError) else 20)
+            logger.warning("OpenAI attempt %s failed (%s); retrying in %ss", attempt, type(exc).__name__, wait)
+            time.sleep(wait)
 
 
 def fetch_web_candidates(settings, reader=None, source_health=None):
@@ -236,7 +237,7 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
     config = settings.get("web_search", {})
     signals = fair_sample(fetch_news_site_signals(settings, reader, source_health), 40)
     queries = config.get("queries", [])
-    core, rotation = queries[:5], queries[5:]
+    core, rotation = queries[:4], queries[4:]
     if rotation:
         offset = datetime.now(timezone.utc).date().toordinal() % len(rotation)
         rotation = rotation[offset:] + rotation[:offset]
@@ -293,12 +294,19 @@ def enrich_candidate_previews(candidates, settings, reader):
     limit = int(settings.get("collection", {}).get("max_candidate_previews", 45))
     selected = fair_sample(candidates, min(limit, len(candidates)))
     selected_urls = {item["url"] for item in selected}
-    enriched = 0
+    fraction = float(settings.get("collection", {}).get("candidate_preview_budget_fraction", 0.6))
+    enriched, stopped = 0, False
     for item in candidates:
         if item["url"] not in selected_urls:
             continue
+        if reader.bytes >= reader.max_bytes * fraction or reader.requests >= reader.max_requests * fraction:
+            stopped = True
+            break
         try:
             actual = public_preview(item["url"], reader)
+        except BudgetExhausted:
+            stopped = True
+            break
         except (requests.RequestException, ValueError, etree.Error):
             continue
         preview = actual.get("preview", "")
@@ -307,8 +315,9 @@ def enrich_candidate_previews(candidates, settings, reader):
             enriched += 1
         if actual.get("published") and not item.get("published"):
             item["published"] = actual["published"]
-    logger.info("Enriched %s of %s candidate previews", enriched, len(selected))
-    return candidates, enriched
+    logger.info("Enriched %s of %s candidate previews%s", enriched, len(selected),
+                " (stopped to reserve extraction budget)" if stopped else "")
+    return candidates, enriched, stopped
 
 
 def shortlist_candidates(candidates, settings):
@@ -440,16 +449,22 @@ def _run_edition(settings, use_web_search=None):
     candidates = drop_already_published(candidates, history)
     repeats = before - len(candidates)
     logger.info("Dropped %s candidates already published in recent editions", repeats)
-    candidates, enriched = enrich_candidate_previews(candidates, settings, reader)
+    candidates, enriched, preview_budget_stopped = enrich_candidate_previews(candidates, settings, reader)
     approved = select_articles(candidates, settings)
     prepared, dropped = [], {"diversity": 0, "unreadable": 0}
+    budget_exhausted = False
     for article in approved[:int(settings["edition"]["max_articles"]) + 24]:
         if len(prepared) >= int(settings["edition"]["max_articles"]):
             break
         if len(diverse_selection(prepared + [article], settings)) == len(prepared):
             dropped["diversity"] += 1
             continue
-        readable = prepare_article(article, reader)
+        try:
+            readable = prepare_article(article, reader)
+        except BudgetExhausted:
+            budget_exhausted = True
+            logger.warning("Article extraction stopped because the edition download budget was exhausted")
+            break
         if readable:
             prepared.append(readable)
         else:
@@ -463,11 +478,13 @@ def _run_edition(settings, use_web_search=None):
     report = {
         "editor_note": editorial_note(),
         "collection": {"rss_candidates": len(feeds), "web_candidates": len(web), "total_candidates": len(candidates),
-                       "repeats_dropped": repeats, "previews_enriched": enriched},
+                       "repeats_dropped": repeats, "previews_enriched": enriched,
+                       "preview_budget_stopped": preview_budget_stopped},
         # Most stories disappear during extraction, not during collection. Counting
         # that is what makes a thin edition explainable instead of mysterious.
         "extraction": {"approved": len(approved), "prepared": len(prepared),
-                       "dropped_unreadable": dropped["unreadable"], "dropped_diversity": dropped["diversity"]},
+                       "dropped_unreadable": dropped["unreadable"], "dropped_diversity": dropped["diversity"],
+                       "budget_exhausted": budget_exhausted},
         "source_health": source_health,
     }
     result = {"path": str(path), "articles": len(prepared), "article_list": metadata,

@@ -15,7 +15,7 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from readability import Document
 import requests
 
-from news_io import WebReader, canonical_url
+from news_io import BudgetExhausted, WebReader, canonical_url
 
 logger = logging.getLogger(__name__)
 STYLE = """
@@ -94,6 +94,8 @@ def prepare_article(article, reader):
         return dict(article, url=url, body=body, reading_minutes=max(1, math.ceil(len(text.split()) / 220)),
                     language=languages[0] if languages else "und",
                     image_url=urljoin(url, images[0]) if images else "")
+    except BudgetExhausted:
+        raise
     except (requests.RequestException, ValueError, etree.Error) as exc:
         logger.info("Skipping unreadable article (%s)", type(exc).__name__)
         return None

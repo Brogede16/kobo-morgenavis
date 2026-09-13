@@ -6,6 +6,10 @@ from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 import requests
 
 
+class BudgetExhausted(RuntimeError):
+    """The edition-wide network safety budget has been used up."""
+
+
 def canonical_url(url):
     try:
         parts = urlsplit(str(url))
@@ -48,9 +52,9 @@ class WebReader:
             return self.cache[url]
         original = url
         for _ in range(5):
-            url = public_url(url)
             if self.requests >= self.max_requests or self.bytes >= self.max_bytes:
-                raise ValueError("Edition download budget exhausted")
+                raise BudgetExhausted("Edition download budget exhausted")
+            url = public_url(url)
             self.requests += 1
             with requests.get(url, timeout=(5, 12), stream=True, allow_redirects=False,
                               headers={"User-Agent": "MadsMorgen/1.1 (personal news reader)"}) as response:
@@ -62,7 +66,9 @@ class WebReader:
                 for chunk in response.iter_content(16384):
                     self.bytes += len(chunk)
                     content.extend(chunk)
-                    if len(content) > limit or self.bytes > self.max_bytes:
+                    if self.bytes > self.max_bytes:
+                        raise BudgetExhausted("Edition download byte budget exhausted")
+                    if len(content) > limit:
                         raise ValueError("Download exceeds byte limit")
                 result = (bytes(content), response.headers.get("Content-Type", ""), url)
                 self.cache[original] = result

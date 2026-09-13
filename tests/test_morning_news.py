@@ -117,6 +117,9 @@ def test_web_candidates_are_reserved_before_global_cap():
 
 def test_candidate_previews_are_enriched_without_an_ai_call():
     class Reader:
+        bytes = requests = 0
+        max_bytes = max_requests = 100
+
         def get(self, url, limit=None):
             page = b'<html><head><meta name="description" content="Useful context"></head><body><article><p>First paragraph with substance.</p><p>Second paragraph.</p></article></body></html>'
             return page, "text/html", url
@@ -124,12 +127,13 @@ def test_candidate_previews_are_enriched_without_an_ai_call():
     configured = settings()
     configured["collection"] = {"max_candidate_previews": 1}
     items = [{"title": "A", "source": "One", "url": "https://one.test/a", "summary": ""}]
-    result, count = enrich_candidate_previews(items, configured, Reader())
+    result, count, stopped = enrich_candidate_previews(items, configured, Reader())
     assert count == 1
+    assert stopped is False
     assert "Useful context" in result[0]["summary"]
 
 
-def test_drive_retention_deletes_only_editions_beyond_ten():
+def test_drive_retention_keeps_only_the_latest_edition():
     class Files:
         def __init__(self):
             self.trashed = []
@@ -147,7 +151,7 @@ def test_drive_retention_deletes_only_editions_beyond_ten():
 
     files = Files()
     prune_old_drive_editions(type("Drive", (), {"files": lambda _: files})(), "folder")
-    assert files.trashed == ["1", "0"]
+    assert files.trashed == [str(i) for i in range(10, -1, -1)]
 
 
 # --- Regression cover for the parts that fail quietly -------------------------
@@ -317,7 +321,8 @@ def test_full_edition_runs_without_network(monkeypatch, tmp_path):
     assert result["articles"] == 3
     assert result["report"]["collection"]["repeats_dropped"] == 1
     assert result["report"]["extraction"] == {"approved": 3, "prepared": 3,
-                                              "dropped_unreadable": 0, "dropped_diversity": 0}
+                                              "dropped_unreadable": 0, "dropped_diversity": 0,
+                                              "budget_exhausted": False}
     assert [a["group"] for a in result["article_list"]] == ["Danmark og kultur", "Teknologi og verden", "Fordybelse"]
     assert "https://dr.test/old" not in sent["prompt"]
     assert Path(result["path"]).exists()
@@ -349,6 +354,14 @@ def test_failure_notice_never_overwrites_a_real_edition(tmp_path):
     assert real.name != notice.name
     # Drive retention must still recognise the notice, or it would never be pruned.
     assert PATTERN.fullmatch(notice.name) and PATTERN.fullmatch(real.name)
+    assert PATTERN.fullmatch("mads-morgen-2026-09-12-2.epub")
+
+
+def test_web_reader_reports_edition_budget_separately(monkeypatch):
+    from news_io import BudgetExhausted, WebReader
+    reader = WebReader(max_requests=0, max_bytes=100)
+    with pytest.raises(BudgetExhausted):
+        reader.get("https://example.test/article")
 
 
 def test_selection_retry_skips_errors_that_cannot_succeed(monkeypatch):

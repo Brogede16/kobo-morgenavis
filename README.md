@@ -39,7 +39,7 @@ Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut
 
 ### Token- og forbrugsramme
 
-Tallene står i `sources.yaml` og er dem, der styrer forbruget. Udgaven samler op til 360 kandidater og triagerer dem gratis lokalt før AI-kaldet. 55 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren kan se op til 140 korte resuméer á 300 tegn, men prompten har et hårdt loft på 90.000 tegn. Hvis materialet fylder mere, beskæres shortlisten kildebalanceret, og det logges som en advarsel. Der er to OpenAI-kald pr. udgave: én websøgning med højst 2.200 outputtokens og selve udvælgelsen med højst 4.200. Udvælgelsen prøves to gange ved 429/timeout. Artiklerne omskrives ikke af AI. Den komplette redaktionelle historik bliver i Git, mens kun otte relevante positive og negative eksempler samt klikfeedback fra de seneste 120 dage indgår i en kørsel. Sæt et spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
+Tallene står i `sources.yaml` og er dem, der styrer forbruget. Udgaven samler op til 360 kandidater og triagerer dem gratis lokalt før AI-kaldet. 55 pladser er reserveret til web- og nyhedsradar-resultater, så RSS-mængden ikke skubber dem ud. Redaktøren ser op til 75 kildebalancerede resuméer á 400 tegn; det passer reelt under promptens hårde loft på 90.000 tegn. Der er normalt to OpenAI-kald pr. udgave: én websøgning med højst 2.200 outputtokens og selve udvælgelsen med højst 5.200. En fejlformateret besvarelse prøves igen efter 2 sekunder; 429/timeout venter 20 sekunder. Artiklerne omskrives ikke af AI. Den komplette redaktionelle historik bliver i Git, mens kun otte relevante positive og negative eksempler samt klikfeedback fra de seneste 120 dage indgår i en kørsel. Sæt et spend alert på OpenAI-kontoen som ekstra sikkerhedsnet.
 
 Paywalls som Politiken, Information og Kulturmonitor bruges som **radar**, ikke som læseemner: Hvis en paywalled overskrift er vigtig, søger avisen efter en tilgængelig primær eller uafhængig kilde til samme historie. På samme måde skal DFI behandles som et emne, men institutionens egne pressemeddelelser og eventopslag fravælges til fordel for ekstern dækning, data eller analyse.
 
@@ -57,9 +57,9 @@ Forsiden viser for hver artikel den korte redaktionelle begrundelse, som allered
 
 Den færdige EPUB er en rigtig læseavis: forside, prioriteret indholdsfortegnelse, titel, kilde, fuld læsbar artikeltekst og link til originalen. Øverst står **Hvis du kun læser fem**, rangeret af redaktøren; resten følger i emneafsnit. Redaktøren tvinges til en blanding af korte nyheder og 6-8 longreads/analyser. Når `images.enabled` er aktivt, hentes hero-billeder fra sidernes Open Graph-metadata og pakker højst fire ind i en udgave, placeret under overskrift og kilde. Kun JPEG/PNG på højst 2,5 MB accepteres, så filen virker offline på Kobo Colour uden at blive unødigt stor. Hvis et billede ikke kan hentes, fortsætter artiklen pænt uden.
 
-Hver udgave får en genereret forside med dato, antal historier, læsetid og dagens overskrifter grupperet i de tre afsnit. Den tegnes lokalt med Pillow, så den koster hverken API-kald eller ventetid, og den gør de ti udgaver i Kobo-biblioteket til at skelne fra hinanden. Er der et brugbart artikelbillede, sættes det ind på forsiden.
+Hver udgave får en genereret forside med dato, antal historier, læsetid og dagens overskrifter grupperet i de tre afsnit. Den tegnes lokalt med Pillow, så den koster hverken API-kald eller ventetid. Er der et brugbart artikelbillede, sættes det ind på forsiden.
 
-Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun de ti nyeste `mads-morgen-`-EPUB'er**. Den ældste genererede avis flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke.
+Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun den nyeste `mads-morgen-`-EPUB**. Ældre genererede aviser og gamle nummererede dubletter flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke. GitHub-historikken bevares separat, så gentagelser stadig kan undgås.
 
 ## Secrets og miljøvariabler
 
@@ -103,8 +103,9 @@ Render deployer automatisk ved push til `main`. Loggene i Render viser antal fun
 
 Kørslen er bygget til at være selvkørende, så fejl skal være synlige uden at du logger ind nogen steder:
 
-- Fejler en udgave, uploades en EPUB på én side med overskriften **Ingen avis i dag** og årsagen. Den hedder `mads-morgen-<dato>-status.epub` — altså ikke det samme som en rigtig udgave, så en fejlet testkørsel midt på dagen kan ikke overskrive den avis, der gik ud kl. 05:30. Den tæller med i de ti bevarede udgaver på Drive.
-- OpenAI-kaldet til udvælgelsen prøver to gange med 20 sekunders pause. En enkelt 429 eller timeout koster ikke en dags avis.
+- Fejler en planlagt udgave, uploades en EPUB på én side med overskriften **Ingen avis i dag** og årsagen. Den hedder `mads-morgen-<dato>-status.epub`. Findes en rigtig avis fra samme dag, prioriteres den over fejlmeddelelsen ved oprydning.
+- OpenAI-kaldet til udvælgelsen prøver to gange. En fejlformateret besvarelse gentages hurtigt, mens en 429 eller timeout får 20 sekunders pause.
+- Prøvelæsning må højst bruge 60 procent af udgavens netværksbudget. Hvis grænsen nås, reserveres resten til fulde artikler og billeder, og årsagen vises særskilt i rapporten.
 - Bliver servicen genstartet eller deployet omkring det planlagte tidspunkt, køres udgaven alligevel: planlæggeren har en times `misfire_grace_time`, og halvandet minut efter opstart tjekker servicen i GitHub-arkivet om dagens udgave mangler. Den henter kun op inden for fire timer efter det planlagte tidspunkt (`CATCH_UP_WINDOW_HOURS`), så et deploy om eftermiddagen ikke starter en ny betalt kørsel. Det kræver, at GitHub-feedback er sat op, for arkivet er det eneste sted der overlever en genstart.
 - `/healthz` og forsiden viser tidspunkt, antal historier og eventuel fejl fra seneste kørsel.
 
@@ -112,7 +113,7 @@ Kørslen er bygget til at være selvkørende, så fejl skal være synlige uden a
 
 Før udvælgelsen hentes de seneste tre udgaver fra `feedback/editions/` og alt, der allerede har været bragt, sorteres fra: samme URL, samme `story_id` og næsten samme overskrift. Det koster ét GitHub-opslag og ingen AI-kald, og det er det, der forhindrer at gårsdagens sag kommer igen fra et andet medie. Antallet styres med `edition.history_editions`.
 
-Klikfeedback ældre end 21 dage indgår ikke længere i udvælgelsen. En holdning, du gav udtryk for for tre måneder siden, skal ikke styre avisen, uden at du klikker igen.
+Klikfeedback fra de seneste 120 dage kan indgå i udvælgelsen, fordi feedback gives lejlighedsvist. Den varige redaktionelle profil i Git er fortsat den egentlige source of truth.
 
 ## Begrænsninger i v1
 
