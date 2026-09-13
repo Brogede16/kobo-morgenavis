@@ -35,7 +35,7 @@ Uden `OPENAI_API_KEY` afbrydes kørslen, så der aldrig sendes en uredigeret avi
 
 ## Konfiguration
 
-Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`). Websøgning er slået til for både planlagte og manuelle kørsler; fire kernespor suppleres af tre dagligt roterende specialspor.
+Redigér `sources.yaml` og commit filen. `schedule` følger cron-formatet `minut time dag måned ugedag`, og anvender tidszonen i `edition.timezone` (som standard `Europe/Copenhagen`). Standardkørslen begynder kl. 05.30, så EPUB-filen normalt ligger i Drive i god tid før kl. 06.30. Kobo skal være på Wi-Fi og synkronisere; webappen kan ikke fjernstarte selve Kobo-enhedens synkronisering. Websøgning er slået til for både planlagte og manuelle kørsler; kernespor suppleres af dagligt roterende specialspor.
 
 ### Token- og forbrugsramme
 

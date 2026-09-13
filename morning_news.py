@@ -114,7 +114,7 @@ def public_preview(url, reader):
     title = doc.xpath("//meta[@property='og:title']/@content") or doc.xpath("//h1//text()") or doc.xpath("//title/text()")
     descriptions = doc.xpath("//meta[@name='description' or @property='og:description']/@content")
     intro = doc.xpath("//article//p//text()")
-    preview = " ".join(" ".join(descriptions[:1] + intro[:2]).split())[:420]
+    preview = " ".join(" ".join(descriptions[:1] + intro[:3]).split())[:700]
     dates = doc.xpath("//meta[@property='article:published_time']/@content | //time/@datetime")
     return {"title": " ".join(title).strip()[:220], "preview": preview,
             "url": final_url, "published": dates[0] if dates else ""}
@@ -232,7 +232,7 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
     config = settings.get("web_search", {})
     signals = fair_sample(fetch_news_site_signals(settings, reader, source_health), 40)
     queries = config.get("queries", [])
-    core, rotation = queries[:4], queries[4:]
+    core, rotation = queries[:5], queries[5:]
     if rotation:
         offset = datetime.now(timezone.utc).date().toordinal() % len(rotation)
         rotation = rotation[offset:] + rotation[:offset]
@@ -284,6 +284,29 @@ def merge_candidate_pools(feed_candidates, web_candidates, settings):
     return fair_sample(feeds, max(0, cap - len(web))) + web
 
 
+def enrich_candidate_previews(candidates, settings, reader):
+    """Give the editor more than headlines without spending additional AI tokens."""
+    limit = int(settings.get("collection", {}).get("max_candidate_previews", 45))
+    selected = fair_sample(candidates, min(limit, len(candidates)))
+    selected_urls = {item["url"] for item in selected}
+    enriched = 0
+    for item in candidates:
+        if item["url"] not in selected_urls:
+            continue
+        try:
+            actual = public_preview(item["url"], reader)
+        except (requests.RequestException, ValueError, etree.Error):
+            continue
+        preview = actual.get("preview", "")
+        if len(preview) > len(item.get("summary", "")):
+            item["summary"] = preview
+            enriched += 1
+        if actual.get("published") and not item.get("published"):
+            item["published"] = actual["published"]
+    logger.info("Enriched %s of %s candidate previews", enriched, len(selected))
+    return candidates, enriched
+
+
 def shortlist_candidates(candidates, settings):
     cap = int(settings["edition"].get("ai_shortlist_size", 120))
     web = fair_sample([c for c in candidates if c.get("pool") == "web"], min(cap // 3, 45))
@@ -323,7 +346,10 @@ def select_articles(candidates, settings):
         "This is not a general world-news wire: reject generic foreign accidents, death-toll updates, fires, crime, "
         "humanitarian incidents, NGO campaigns, fund launches and institutional jargon. Only keep an international "
         "crisis when the supplied metadata makes a specific Danish or European policy, security, energy, economic, "
-        "or cultural consequence clear. "
+        "or cultural consequence clear. Give substantial Russia/Ukraine, European security and war reporting serious "
+        "weight when it changes Denmark's security, defence, energy, economy, alliances or political choices; reject "
+        "routine battlefield updates that add no strategic understanding. Prefer candidates with a meaningful preview "
+        "over headline-only candidates when editorial value is otherwise similar. "
         "Unknown dates must be background, not presented as today's breaking news. "
         "An old disinterest vote rejects that article, not its entire subject. 'Good but too technical' keeps topic interest. "
         "Source diversity is a ceiling, not a quota: repeat a trusted core source when its article is clearly the best fit. "
@@ -410,6 +436,7 @@ def _run_edition(settings, use_web_search=None):
     candidates = drop_already_published(candidates, history)
     repeats = before - len(candidates)
     logger.info("Dropped %s candidates already published in recent editions", repeats)
+    candidates, enriched = enrich_candidate_previews(candidates, settings, reader)
     approved = select_articles(candidates, settings)
     prepared, dropped = [], {"diversity": 0, "unreadable": 0}
     for article in approved[:int(settings["edition"]["max_articles"]) + 24]:
@@ -432,7 +459,7 @@ def _run_edition(settings, use_web_search=None):
     report = {
         "editor_note": editorial_note(),
         "collection": {"rss_candidates": len(feeds), "web_candidates": len(web), "total_candidates": len(candidates),
-                       "repeats_dropped": repeats},
+                       "repeats_dropped": repeats, "previews_enriched": enriched},
         # Most stories disappear during extraction, not during collection. Counting
         # that is what makes a thin edition explainable instead of mysterious.
         "extraction": {"approved": len(approved), "prepared": len(prepared),

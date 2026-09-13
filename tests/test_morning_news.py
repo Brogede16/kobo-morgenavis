@@ -7,7 +7,7 @@ import pytest
 from PIL import Image
 
 from feedback_store import editorial_note
-from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
+from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, enrich_candidate_previews, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
 from newspaper import overview_group
 
 
@@ -106,6 +106,20 @@ def test_web_candidates_are_reserved_before_global_cap():
     feeds = [{"title": str(i), "source": "RSS", "url": f"https://rss/{i}", "summary": ""} for i in range(5)]
     web = [{"title": str(i), "source": "Web", "url": f"https://web/{i}", "summary": ""} for i in range(2)]
     assert [item["source"] for item in merge_candidate_pools(feeds, web, configured)] == ["RSS", "RSS", "Web", "Web"]
+
+
+def test_candidate_previews_are_enriched_without_an_ai_call():
+    class Reader:
+        def get(self, url, limit=None):
+            page = b'<html><head><meta name="description" content="Useful context"></head><body><article><p>First paragraph with substance.</p><p>Second paragraph.</p></article></body></html>'
+            return page, "text/html", url
+
+    configured = settings()
+    configured["collection"] = {"max_candidate_previews": 1}
+    items = [{"title": "A", "source": "One", "url": "https://one.test/a", "summary": ""}]
+    result, count = enrich_candidate_previews(items, configured, Reader())
+    assert count == 1
+    assert "Useful context" in result[0]["summary"]
 
 
 def test_drive_retention_deletes_only_editions_beyond_ten():

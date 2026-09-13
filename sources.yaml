@@ -28,12 +28,13 @@ edition:
 web_search:
   # OpenAI web search runs in the scheduled edition.
   enabled_for_schedule: true
-  rotating_queries_per_day: 3 # Four core searches plus three rotating specialist searches.
+  rotating_queries_per_day: 3 # Five core searches plus three rotating specialist searches.
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
     - "dansk film kulturpolitik Det Danske Filminstitut -site:dfi.dk Esben Danielsen analyser"
     - "dansk politik reformer økonomi samfund væsentlige analyser nyheder"
+    - "Rusland Ukraine krig NATO europæisk sikkerhed dansk forsvar energi økonomi konsekvenser analyse nyheder"
     - "museer kulturinstitutioner publikum data brand partnerships biografer AI kultur aktuelle analyser"
     - "site:dr.dk/kultur dansk kulturpolitik store kulturelle begivenheder udstillinger koncerter film aktuelle nyheder"
     - "Warcraft Age of Empires Planet Zoo GTA survival games major announcement sequel expansion release date news"
@@ -60,6 +61,30 @@ news_site_signals:
     - name: DR Kultur
       url: https://www.dr.dk/kultur
       role: reading
+      max_items: 8
+      max_previews: 3
+    - name: TV 2 Nyheder
+      url: https://nyheder.tv2.dk/
+      role: reading
+      max_items: 10
+      max_previews: 4
+    - name: EKKO
+      url: https://www.ekkofilm.dk/
+      role: reading
+      max_items: 8
+      max_previews: 4
+    - name: Ekstra Bladet
+      url: https://ekstrabladet.dk/
+      role: reading
+      max_items: 8
+      max_previews: 3
+    - name: B.T.
+      url: https://www.bt.dk/
+      role: reading
+      max_items: 8
+      max_previews: 3
+    - name: Berlingske
+      url: https://www.berlingske.dk/
       max_items: 8
       max_previews: 3
     - name: Politiken Politik
@@ -98,6 +123,7 @@ collection:
   max_news_age_days: 3
   max_http_requests: 260
   max_download_bytes: 50000000
+  max_candidate_previews: 45 # Better editorial judgement without another AI call.
 ai:
   model: gpt-5-mini
   # gpt-5-mini remains the inexpensive editor. Web search needs a model that

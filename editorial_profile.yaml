@@ -18,6 +18,7 @@ editorial:
     daily_core:
       - Danish politics, public policy, economy, society, and culture policy
       - world politics and geopolitics with Danish or European consequences
+      - Russia's war against Ukraine, European security, NATO, and consequences for Denmark
       - AI, technology, Apple/Mac, and practical personal technology
       - Danish film, culture, cultural institutions, and major culture in a Danish context
     rotation:
@@ -30,6 +31,7 @@ editorial:
     - technology, science, culture, and ideas
     - Danish politics, public policy, economics, and society
     - international politics and geopolitics when it explains consequences
+    - "Russia and Ukraine, war, NATO, and European security when the reporting adds strategic understanding or explains consequences for Danish defence, energy, economy, alliances, or daily life"
     - significance over novelty
     - Apple/Mac, AI models, meaningful new AI features, and credible product leaks
     - Danish film, film policy, culture analysis, and Esben Danielsen's public analysis
@@ -101,6 +103,7 @@ editorial:
   gaming_policy: "This is not a gaming-news feed. Select only major, playable news: a new game, sequel, release, large expansion, major roadmap, fundamental gameplay change, or a surprising new project from a relevant studio. Prioritise Age of Empires, Warcraft, 7 Days to Die, survival, management, builders, strategy, Planet Zoo/Planet Coaster-like games, Manor Lords-like games, and genuinely breakout new titles in those genres."
   place_and_systems_policy: "These stories should be selected for substance: a meaningful project, real operational insight, strong case study, or a concrete consequence. Treat event-production, hospitality, pricing, infrastructure, and institutional-business stories as longread-friendly rather than daily filler."
   readability_policy: "Do not select institutional press releases, official news roundups, or technically dense research announcements as the main reading item when a clearer journalistic explainer is available. A science story must explain the surprising question, what changed, and why it matters in ordinary Danish; primary sources may support the summary but should not become homework."
+  war_policy: "Russia's war against Ukraine and other wars are relevant when reporting explains a meaningful military, political, economic, energy, humanitarian, or security development — especially its effect on Denmark or Europe. Prefer analysis and verified reporting over repetitive frontline updates, casualty tickers, propaganda, or isolated violence without wider consequence."
   sexuality_policy: "Sexuality, intimacy, and erotic culture are neither excluded nor automatically promoted. Select them on the same demanding standard as everything else when the reporting is genuinely interesting, insightful, culturally relevant, or surprising — never merely for titillation."
 examples:
   read:
