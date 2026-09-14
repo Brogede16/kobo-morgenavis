@@ -33,6 +33,20 @@ def test_select_without_key(monkeypatch):
         select_articles(candidates, settings())
 
 
+def test_feed_control_characters_are_removed_before_epub_selection(monkeypatch):
+    import morning_news
+    entry = {"title": "Overskrift med \x0b lodret tabulator", "link": "https://example.test/a",
+             "summary": "Indledning\x00 med kontroltegn"}
+    monkeypatch.setattr(morning_news.feedparser, "parse",
+                        lambda raw: type("Feed", (), {"entries": [entry]})())
+    configured = settings()
+    configured["sources"] = [{"name": "Kilde", "url": "https://example.test/feed"}]
+    reader = type("Reader", (), {"get": lambda self, url: (b"feed", "application/xml", url)})()
+    candidate = morning_news.fetch_candidates(configured, reader)[0]
+    assert candidate["title"] == "Overskrift med  lodret tabulator"
+    assert "\x00" not in candidate["summary"]
+
+
 def test_editor_selection_uses_ids_assigned_after_prompt_reordering(monkeypatch):
     candidates = [
         {"title": "A1", "source": "A", "url": "https://a.test/1", "summary": "a"},
@@ -141,6 +155,23 @@ def test_malformed_ai_reply_gets_one_retry(monkeypatch):
     replies = iter([AIResponseFormatError("bad json"), {"selected": []}])
     monkeypatch.setattr("morning_news.ai_call", lambda *args, **kwargs: (_ for _ in ()).throw(value) if isinstance((value := next(replies)), Exception) else value)
     assert ai_call_with_retry("test", settings(), pause=0) == {"selected": []}
+
+
+@pytest.mark.parametrize("wrong", ['"en streng"', '{"a":1}', '42', 'null'])
+def test_wrong_selected_type_is_a_retryable_format_error(monkeypatch, wrong):
+    from morning_news import AIResponseFormatError, ai_call_with_retry
+    calls = []
+    class Client:
+        class Responses:
+            def create(self, **kwargs):
+                calls.append(1)
+                return type("Response", (), {"output_text": '{"selected":' + wrong + '}', "usage": None})()
+        responses = Responses()
+    monkeypatch.setattr("morning_news.OpenAI", lambda **kwargs: Client())
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    with pytest.raises(AIResponseFormatError):
+        ai_call_with_retry("test", settings(), pause=0)
+    assert len(calls) == 2
 
 
 def test_editorial_prompt_profile_caps_examples(monkeypatch, tmp_path):
@@ -441,6 +472,13 @@ def test_web_reader_has_a_whole_edition_deadline(monkeypatch):
     reader = news_io.WebReader(max_seconds=1)
     with pytest.raises(news_io.BudgetExhausted, match="time budget"):
         reader.check_budget()
+
+
+def test_web_reader_caches_typical_article_pages_but_keeps_total_cap():
+    from news_io import WebReader
+    reader = WebReader()
+    assert reader.max_cache_item_bytes == 1_000_000
+    assert reader.max_cache_bytes == 25_000_000
 
 
 def test_web_search_uses_short_leads_and_retry(monkeypatch):

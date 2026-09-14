@@ -44,7 +44,7 @@ class WebReader:
     """One edition's cache, request count and actual downloaded-byte budget."""
 
     def __init__(self, max_requests=180, max_bytes=35_000_000, max_seconds=1800,
-                 max_cache_bytes=25_000_000, max_cache_item_bytes=300_000):
+                 max_cache_bytes=25_000_000, max_cache_item_bytes=1_000_000):
         self.max_requests, self.max_bytes = max_requests, max_bytes
         self.deadline = time.monotonic() + max_seconds
         self.max_cache_bytes, self.max_cache_item_bytes = max_cache_bytes, max_cache_item_bytes

@@ -32,6 +32,14 @@ class AIResponseFormatError(ValueError):
     """The provider answered, but not in the machine-readable shape requested."""
 
 
+CONTROL_CHARACTERS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
+
+
+def clean_text(value):
+    """Strip characters accepted by feeds and JSON but forbidden by EPUB XML."""
+    return CONTROL_CHARACTERS.sub("", str(value or ""))
+
+
 def load_settings(path=ROOT / "sources.yaml"):
     with open(path, encoding="utf-8") as file:
         data = yaml.safe_load(file)
@@ -96,10 +104,10 @@ def fetch_candidates(settings, reader=None, source_health=None):
                 published = entry.get("published", entry.get("updated", ""))
                 if published and not fresh(published, days):
                     continue
-                url, title = canonical_url(entry.get("link", "")), entry.get("title", "").strip()
+                url, title = canonical_url(entry.get("link", "")), clean_text(entry.get("title", "")).strip()
                 if url and title:
                     candidates.append({"source": source["name"], "title": title[:220], "url": url,
-                        "summary": html.unescape(re.sub("<[^>]+>", "", entry.get("summary", "")))[:700],
+                        "summary": clean_text(html.unescape(re.sub("<[^>]+>", "", entry.get("summary", ""))))[:700],
                         "format": source.get("format", "mixed"), "published": published,
                         "role": source.get("role", "reading"), "pool": "rss"})
             logger.info("Feed %s: %s entries", source["name"], len(feed.entries))
@@ -118,9 +126,9 @@ def public_preview(url, reader):
     title = doc.xpath("//meta[@property='og:title']/@content") or doc.xpath("//h1//text()") or doc.xpath("//title/text()")
     descriptions = doc.xpath("//meta[@name='description' or @property='og:description']/@content")
     intro = doc.xpath("//article//p//text()")
-    preview = " ".join(" ".join(descriptions[:1] + intro[:3]).split())[:700]
+    preview = clean_text(" ".join(" ".join(descriptions[:1] + intro[:3]).split()))[:700]
     dates = doc.xpath("//meta[@property='article:published_time']/@content | //time/@datetime")
-    return {"title": " ".join(title).strip()[:220], "preview": preview,
+    return {"title": clean_text(" ".join(title)).strip()[:220], "preview": preview,
             "url": final_url, "published": dates[0] if dates else ""}
 
 
@@ -145,7 +153,7 @@ def fetch_news_site_signals(settings, reader=None, source_health=None):
                 anchors = doc.xpath("//main//a[@href][not(ancestor::nav) and not(ancestor::footer)]")
             seen, source_signals = set(), []
             for anchor in anchors:
-                title = " ".join(anchor.text_content().split())
+                title = clean_text(" ".join(anchor.text_content().split()))
                 href = canonical_url(urljoin(url, anchor.get("href", "")))
                 if not 28 <= len(title) <= 220 or not href or href in seen:
                     continue
@@ -207,7 +215,10 @@ def ai_call(prompt, settings, search=False):
                 parsed, _ = decoder.raw_decode(candidate[match.start():])
             except json.JSONDecodeError:
                 continue
-            if isinstance(parsed, dict) and ("selected" in parsed or "articles" in parsed):
+            expected = "articles" if search else "selected"
+            if isinstance(parsed, dict) and isinstance(parsed.get(expected), list):
+                if not search and "backups" in parsed and not isinstance(parsed["backups"], list):
+                    continue
                 return parsed
     raise AIResponseFormatError("OpenAI response did not contain the requested JSON object")
 
@@ -421,12 +432,13 @@ def select_articles(candidates, settings):
         candidate = candidate_lookup[item["candidate_id"]]
         if candidate.get("role") in {"radar", "documentation"}:
             continue
-        group = str(item.get("group", "")).strip()
-        approved.append(dict(candidate, section=str(item.get("section", "Udvalgt"))[:60],
+        group = clean_text(item.get("group", "")).strip()
+        approved.append(dict(candidate, section=clean_text(item.get("section", "Udvalgt"))[:60],
                              group=group if group in GROUPS else "",
-                             why=str(item.get("why", ""))[:650],
+                             why=clean_text(item.get("why", ""))[:650],
                              format="longread" if item.get("format") == "longread" else "short",
-                             story_id=str(item.get("story_id", ""))[:100], use_image=item.get("use_image") is True))
+                             story_id=clean_text(item.get("story_id", ""))[:100],
+                             use_image=item.get("use_image") is True))
     logger.info("Editorial gaps: %s", result.get("gaps", []))
     return approved
 
