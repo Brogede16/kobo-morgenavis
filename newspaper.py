@@ -5,6 +5,7 @@ import logging
 import math
 import re
 from datetime import datetime
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from urllib.parse import urljoin
 from zoneinfo import ZoneInfo
@@ -19,8 +20,8 @@ from news_io import BudgetExhausted, WebReader, canonical_url
 
 logger = logging.getLogger(__name__)
 STYLE = """
-body {font-family:serif;line-height:1.5;margin:5%;color:#18201c}
-h1,h2 {font-family:sans-serif;line-height:1.2;color:#123f38}
+body {font-family:serif;line-height:1.5;max-width:34em;margin:0 auto;padding:1.5em 1.2em;color:#18201c}
+h1,h2,h3 {font-family:sans-serif;line-height:1.2;color:#123f38}
 h1 {font-size:1.8em;margin:.3em 0 .5em} h2 {font-size:1.2em}
 p {margin:0 0 1em} a {color:#12594d}
 .kicker,.source {font-family:sans-serif;font-size:.8em}
@@ -30,6 +31,10 @@ p {margin:0 0 1em} a {color:#12594d}
 .cover {margin-top:15%}.cover h1 {font-size:2.5em}
 img {max-width:100%;height:auto} figure {margin:1em 0} li {margin-bottom:.6em}
 .overview-group {border-top:2px solid #dce7e1;margin-top:1.6em;padding-top:.4em}
+.overview-group h3 {font-size:1em;color:#9b4d28;letter-spacing:.06em;text-transform:uppercase}
+.rest {list-style:none;padding-left:0}
+.rest li {margin-bottom:.9em}
+.meta {font-family:sans-serif;font-size:.78em;color:#52645c;display:block;margin-top:.15em}
 """
 
 
@@ -105,6 +110,8 @@ FONT_CANDIDATES = (
     "/usr/share/fonts/truetype/dejavu/DejaVuSerif.ttf",
     "/usr/share/fonts/truetype/liberation/LiberationSerif-Regular.ttf",
     "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf",
+    "/System/Library/Fonts/Supplemental/Georgia.ttf",
+    "/System/Library/Fonts/Supplemental/Arial.ttf",
 )
 MONTHS = ("januar", "februar", "marts", "april", "maj", "juni",
           "juli", "august", "september", "oktober", "november", "december")
@@ -113,6 +120,60 @@ WEEKDAYS = ("mandag", "tirsdag", "onsdag", "torsdag", "fredag", "lørdag", "søn
 
 def danish_date(day):
     return f"{WEEKDAYS[day.weekday()]} {day.day}. {MONTHS[day.month - 1]} {day.year}"
+
+
+def short_date(value):
+    """Return a compact Danish date for ISO-8601 or RSS/RFC 2822 input."""
+    text = str(value or "").strip()
+    if not text:
+        return ""
+    for parse in (lambda value: datetime.fromisoformat(value.replace("Z", "+00:00")),
+                  parsedate_to_datetime):
+        try:
+            stamp = parse(text)
+        except (TypeError, ValueError, OverflowError):
+            continue
+        return f"{stamp.day}. {MONTHS[stamp.month - 1][:3]}"
+    return ""
+
+
+def reading_span(minutes):
+    """Use hours for long editions while keeping short editions natural."""
+    minutes = max(1, int(minutes))
+    if minutes < 90:
+        return f"{minutes} minutters læsning"
+    return f"{minutes // 60} t {minutes % 60} min. læsning"
+
+
+def article_meta(article):
+    """The compact information needed to decide when to read an article."""
+    return " · ".join(part for part in (
+        str(article.get("source", "")), short_date(article.get("published")),
+        f'{article.get("reading_minutes", 1)} min.') if part)
+
+
+def build_overview(articles):
+    """Keep the overview short; detailed reasoning belongs only on the top five."""
+    e = html.escape
+    essentials = list(enumerate(articles[:5], 1))
+    groups = {group: [] for group in GROUPS}
+    for number, article in enumerate(articles[5:], 6):
+        groups[overview_group(article)].append((number, article))
+    body = '<h1>Dagens overblik</h1><p>Redaktørens prioritering af det vigtigste og det mest interessante i dag.</p>'
+    if essentials:
+        body += '<section class="overview-group"><h2>Hvis du kun læser fem</h2><ol>' + "".join(
+            f'<li><a href="article-{number}.xhtml">{e(article["title"])}</a>'
+            f'<span class="meta">{e(article_meta(article))}</span><p>{e(article.get("why", ""))}</p></li>'
+            for number, article in essentials) + "</ol></section>"
+    if any(groups.values()):
+        body += '<h2>Resten af avisen</h2>'
+    for heading, entries in groups.items():
+        if entries:
+            body += f'<section class="overview-group"><h3>{e(heading)}</h3><ul class="rest">' + "".join(
+                f'<li><a href="article-{number}.xhtml">{e(article["title"])}</a>'
+                f'<span class="meta">{e(article_meta(article))}</span></li>'
+                for number, article in entries) + "</ul></section>"
+    return body
 
 
 def load_font(size):
@@ -162,35 +223,25 @@ def build_cover_image(articles, settings, day, hero=None):
     draw.text((margin, y), danish_date(day), font=load_font(34), fill=muted)
     y += 52
     minutes = sum(article.get("reading_minutes", 1) for article in articles)
-    draw.text((margin, y), f"{len(articles)} historier · cirka {minutes} minutters læsning", font=load_font(30), fill=muted)
+    draw.text((margin, y), f"{len(articles)} historier · cirka {reading_span(minutes)}", font=load_font(30), fill=muted)
     y += 58
     draw.line((margin, y, width - margin, y), fill=ink, width=3)
     y += 34
 
-    if hero:
-        try:
-            with Image.open(io.BytesIO(hero)) as image:
-                picture = ImageOps.fit(ImageOps.exif_transpose(image).convert("RGB"), (inner, 420))
-            canvas.paste(picture, (margin, y))
-            y += 452
-        except (OSError, ValueError):
-            pass
-
-    heading_font, title_font = load_font(28), load_font(36)
-    for group in GROUPS:
-        entries = [a for a in articles if overview_group(a) == group]
-        if not entries or y > height - 200:
-            continue
-        draw.text((margin, y), group.upper(), font=heading_font, fill=accent)
-        y += 44
-        for article in entries[:3]:
-            for line in wrap_text(draw, article.get("title", ""), title_font, inner)[:2]:
-                if y > height - 120:
-                    break
-                draw.text((margin, y), line, font=title_font, fill=ink)
-                y += 46
-            y += 12
-        y += 18
+    # The library cover is a glanceable front page, not a second contents page.
+    # Omitting the hero leaves enough room for all five priorities at large type.
+    heading_font, title_font, meta_font = load_font(28), load_font(38), load_font(26)
+    draw.text((margin, y), "HVIS DU KUN LÆSER FEM", font=heading_font, fill=accent)
+    y += 52
+    for article in articles[:5]:
+        if y > height - 150:
+            break
+        for line in wrap_text(draw, article.get("title", ""), title_font, inner)[:2]:
+            draw.text((margin, y), line, font=title_font, fill=ink)
+            y += 48
+        draw.text((margin, y), f'{article.get("source", "")} · {article.get("reading_minutes", 1)} min.',
+                  font=meta_font, fill=muted)
+        y += 52
 
     output = io.BytesIO()
     canvas.save(output, format="JPEG", quality=82, optimize=True)
@@ -227,19 +278,8 @@ def build_epub(articles, settings, output_dir=None, reader=None):
     image_settings, images_added = settings.get("images", {}), 0
     cover_name = ""
     try:
-        hero = None
-        if image_settings.get("enabled"):
-            for article in articles:
-                if not article.get("image_url"):
-                    continue
-                try:
-                    hero = image_bytes(article["image_url"], reader, image_settings)
-                except Exception as exc:  # noqa: BLE001 - a cover must never fail the edition
-                    logger.info("Cover hero unavailable (%s)", type(exc).__name__)
-                if hero:
-                    break
         cover_name = "cover.jpg"
-        book.set_cover(cover_name, build_cover_image(articles, settings, day, hero), create_page=False)
+        book.set_cover(cover_name, build_cover_image(articles, settings, day), create_page=False)
     except Exception as exc:  # noqa: BLE001
         cover_name = ""
         logger.warning("Cover could not be generated (%s)", type(exc).__name__)
@@ -252,28 +292,13 @@ def build_epub(articles, settings, output_dir=None, reader=None):
         return item
 
     e = html.escape
-    cover_picture = f'<figure><img src="{cover_name}" alt="Forside"/></figure>' if cover_name else ""
+    cover_picture = ""
+    total_reading = reading_span(sum(a.get("reading_minutes", 1) for a in articles))
     cover = chapter("Forside", "index.xhtml",
         f'{cover_picture}<div class="cover"><p class="kicker">DIN PERSONLIGE MORGENAVIS</p><h1>{e(settings["edition"]["title"])}</h1>'
-        f'<p>{e(danish_date(day))}</p><p>{len(articles)} historier · cirka {sum(a.get("reading_minutes", 1) for a in articles)} minutters læsning</p>'
+        f'<p>{e(danish_date(day))}</p><p>{len(articles)} historier · cirka {e(total_reading)}</p>'
         '<p>Det, der er værd at vide, før dagen begynder.</p></div>')
-    essentials = list(enumerate(articles[:5], 1))
-    groups = {"Danmark og kultur": [], "Teknologi og verden": [], "Fordybelse": []}
-    for i, article in enumerate(articles[5:], 6):
-        groups[overview_group(article)].append((i, article))
-    overview_body = '<h1>Dagens overblik</h1><p>Redaktørens prioritering af det vigtigste og det mest interessante i dag.</p>'
-    if essentials:
-        overview_body += '<section class="overview-group"><h2>Hvis du kun læser fem</h2><ol>' + "".join(
-            f'<li><a href="article-{i}.xhtml">{e(a["title"])}</a><p>{e(a.get("why", ""))}</p></li>'
-            for i, a in essentials) + "</ol></section>"
-    if any(groups.values()):
-        overview_body += '<h2>Resten af avisen</h2>'
-    for heading, entries in groups.items():
-        if entries:
-            overview_body += f'<section class="overview-group"><h2>{e(heading)}</h2><ol>' + "".join(
-                f'<li><a href="article-{i}.xhtml">{e(a["title"])}</a><p>{e(a.get("why", ""))}</p></li>'
-                for i, a in entries) + "</ol></section>"
-    overview = chapter("Dagens overblik", "overview.xhtml", overview_body)
+    overview = chapter("Dagens overblik", "overview.xhtml", build_overview(articles))
     chapters = [cover, overview]
     for i, article in enumerate(articles, 1):
         picture = ""
@@ -291,8 +316,9 @@ def build_epub(articles, settings, output_dir=None, reader=None):
         body = article.get("body", "")
         if not body:
             raise ValueError("Only prepared, readable articles may enter an EPUB")
+        source_line = e(article_meta(article))
         content = (f'<p class="kicker">{e(article.get("section", "Udvalgt"))}</p><h1>{e(article["title"])}</h1>'
-                   f'<p class="source">{e(article["source"])} · {article.get("reading_minutes", 1)} min.</p>{picture}'
+                   f'<p class="source">{source_line}</p>{picture}'
                    f'<div class="why"><strong>Kort fortalt:</strong> {e(article.get("why", ""))}</div>'
                    f'<div lang="{e(article.get("language", "und"))}">{body}</div>'
                    f'<p><a href="{e(article["url"], quote=True)}">Læs originalen</a></p>')

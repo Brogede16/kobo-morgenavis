@@ -1,3 +1,4 @@
+import base64
 import io
 import json
 from datetime import datetime, timezone
@@ -64,6 +65,48 @@ def test_build_epub(tmp_path):
                "body": "<div><p>Tekst</p></div>", "why": "Relevant", "reading_minutes": 1}
     path = build_epub([article], settings(), tmp_path)
     assert path.exists() and path.suffix == ".epub"
+
+
+def test_reading_span_uses_hours_for_long_editions():
+    from newspaper import reading_span
+    assert reading_span(43) == "43 minutters læsning"
+    assert reading_span(163) == "2 t 43 min. læsning"
+
+
+def test_short_date_accepts_iso_and_rss_dates():
+    from newspaper import short_date
+    assert short_date("2026-09-12T18:20:00+02:00") == "12. sep"
+    assert short_date("Fri, 12 Sep 2026 18:20:00 +0200") == "12. sep"
+    assert short_date("ikke en dato") == ""
+
+
+def test_overview_explains_only_the_top_five_and_shows_metadata():
+    from newspaper import build_overview
+    articles = [
+        {"title": f"Historie {number}", "source": "Kilde", "published": "2026-09-12T18:20:00+02:00",
+         "reading_minutes": 4, "why": f"Begrundelse {number}", "group": "Fordybelse"}
+        for number in range(1, 7)
+    ]
+    overview = build_overview(articles)
+    assert "Begrundelse 5" in overview
+    assert "Begrundelse 6" not in overview
+    assert "Kilde · 12. sep · 4 min." in overview
+    assert '<h3>Fordybelse</h3><ul class="rest">' in overview
+
+
+def test_control_panel_renders_source_count_and_mobile_viewport(monkeypatch):
+    import app as app_module
+    edition = {"articles": [], "report": {"source_health": {"DR": {"status": "ok", "items": 35}}}}
+    monkeypatch.setattr(app_module, "latest_edition", lambda: edition)
+    monkeypatch.setattr(app_module, "feedback_configured", lambda: False)
+    monkeypatch.setenv("ADMIN_USERNAME", "mads")
+    monkeypatch.setenv("ADMIN_PASSWORD", "hemmelig")
+    application = app_module.create_app(start_scheduler=False)
+    token = base64.b64encode(b"mads:hemmelig").decode()
+    page = application.test_client().get("/", headers={"Authorization": f"Basic {token}"}).get_data(as_text=True)
+    assert "DR: ok (35 fund)" in page
+    assert "built-in method" not in page
+    assert 'name="viewport"' in page
 
 
 def test_overview_groups_make_the_newspaper_scannable():
