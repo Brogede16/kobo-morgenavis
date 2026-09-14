@@ -157,6 +157,64 @@ def test_malformed_ai_reply_gets_one_retry(monkeypatch):
     assert ai_call_with_retry("test", settings(), pause=0) == {"selected": []}
 
 
+def test_truncated_ai_reply_is_not_retried(monkeypatch):
+    from morning_news import AIResponseTruncatedError, ai_call_with_retry
+    calls = []
+
+    class Client:
+        class Responses:
+            def create(self, **kwargs):
+                calls.append(kwargs)
+                details = type("Details", (), {"reason": "max_output_tokens"})()
+                return type("Response", (), {
+                    "status": "incomplete", "incomplete_details": details,
+                    "output_text": '{"selected":[]}', "usage": None,
+                })()
+        responses = Responses()
+
+    client_options = {}
+
+    def client(**kwargs):
+        client_options.update(kwargs)
+        return Client()
+
+    configured = settings()
+    configured["ai"] = {"selection_output_tokens": 10000, "selection_timeout_seconds": 180}
+    monkeypatch.setattr("morning_news.OpenAI", client)
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    with pytest.raises(AIResponseTruncatedError, match="10000"):
+        ai_call_with_retry("test", configured, pause=0)
+    assert len(calls) == 1
+    assert client_options["max_retries"] == 0
+    assert client_options["timeout"] == 180
+
+
+def test_editorial_backup_count_is_configurable(monkeypatch):
+    configured = settings()
+    configured["edition"]["max_backups"] = 3
+    candidates = [
+        {"title": f"Historie {i}", "source": "Kilde", "url": f"https://x.test/{i}", "summary": "Kort"}
+        for i in range(8)
+    ]
+    captured = {}
+
+    def editor(prompt, _settings):
+        captured["prompt"] = prompt
+        return {
+            "selected": [{"candidate_id": "c000", "why": "God historie"}],
+            "backups": [{"candidate_id": f"c{i:03d}", "why": "God reserve"} for i in range(1, 8)],
+        }
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    monkeypatch.setattr("morning_news.shortlist_candidates", lambda items, _settings: items)
+    monkeypatch.setattr("morning_news.editorial_prompt_profile", lambda items: {})
+    monkeypatch.setattr("morning_news.recent_feedback", lambda: [])
+    monkeypatch.setattr("morning_news.ai_call_with_retry", editor)
+    chosen = select_articles(candidates, configured)
+    assert "up to 3 ranked backups" in captured["prompt"]
+    assert sum(article["is_backup"] for article in chosen) == 3
+
+
 @pytest.mark.parametrize("wrong", ['"en streng"', '{"a":1}', '42', 'null'])
 def test_wrong_selected_type_is_a_retryable_format_error(monkeypatch, wrong):
     from morning_news import AIResponseFormatError, ai_call_with_retry

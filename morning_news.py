@@ -33,6 +33,10 @@ class AIResponseFormatError(ValueError):
     """The provider answered, but not in the machine-readable shape requested."""
 
 
+class AIResponseTruncatedError(RuntimeError):
+    """The provider stopped because the configured output budget was exhausted."""
+
+
 CONTROL_CHARACTERS = re.compile(r"[\x00-\x08\x0b\x0c\x0e-\x1f\x7f]")
 
 
@@ -200,9 +204,21 @@ def ai_call(prompt, settings, search=False):
         options["tools"] = [{"type": "web_search", "search_context_size": "low"}]
     else:
         options["text"] = {"format": {"type": "json_object"}}
-    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=90.0)
+    timeout = float(config.get("search_timeout_seconds" if search else "selection_timeout_seconds", 90))
+    # Keep retries in ai_call_with_retry, where they are logged and bounded. The
+    # SDK otherwise retries underneath us and makes one visible attempt cost two.
+    client = OpenAI(api_key=os.environ["OPENAI_API_KEY"], timeout=timeout, max_retries=0)
     response = client.responses.create(**options)
     logger.info("OpenAI %s usage: %s", "search" if search else "selection", response.usage)
+    status = getattr(response, "status", None)
+    details = getattr(response, "incomplete_details", None)
+    reason = details.get("reason") if isinstance(details, dict) else getattr(details, "reason", None)
+    if status == "incomplete" and reason == "max_output_tokens":
+        raise AIResponseTruncatedError(
+            f"OpenAI response was truncated at {options['max_output_tokens']} output tokens"
+        )
+    if status == "incomplete":
+        raise RuntimeError(f"OpenAI response was incomplete ({reason or 'unknown reason'})")
     value = (response.output_text or "").strip()
     if value.startswith("```"):
         value = value.split("\n", 1)[-1].rsplit("```", 1)[0]
@@ -377,8 +393,9 @@ def select_articles(candidates, settings):
     except Exception as exc:
         logger.warning("Feedback unavailable (%s); using Git profile", type(exc).__name__)
     cap = int(settings["edition"]["max_articles"])
+    backup_cap = int(settings["edition"].get("max_backups", 8))
     instructions = (
-        f"You edit Mads Morgen. Select up to {cap} worthwhile articles and up to 24 ranked backups. "
+        f"You edit Mads Morgen. Select up to {cap} worthwhile articles and up to {backup_cap} ranked backups. "
         "Aim for a varied edition of about 20-22 items when credible material exists; do not invent filler. "
         "Group reports about the same event with the same story_id. Rank selected items by value to Mads: the first "
         "five are the stories he should read if he has limited time. Put essential daily news before optional reading, "
@@ -446,7 +463,7 @@ def select_articles(candidates, settings):
     result = ai_call_with_retry(instructions + json.dumps(payload, ensure_ascii=False), settings)
     approved = []
     tagged = [(item, False) for item in result.get("selected", [])[:cap]]
-    tagged += [(item, True) for item in result.get("backups", [])[:24]]
+    tagged += [(item, True) for item in result.get("backups", [])[:backup_cap]]
     seen = set()
     for item, is_backup in tagged:
         if (not isinstance(item, dict) or not isinstance(item.get("candidate_id"), str)
