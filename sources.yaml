@@ -3,7 +3,7 @@ edition:
   title: "Mads Morgen"
   language: da
   max_articles: 22
-  max_backups: 8 # Enough extraction reserves without bloating the editor's JSON response.
+  max_backups: 16 # Real runs lose many paywalled/JS pages; still fits below the 10k response ceiling.
   max_candidates: 360 # Broad collection; the model only sees the shortlisted items below.
   web_candidate_reserve: 55 # Prevent RSS volume from crowding out news-radar and web results.
   ai_shortlist_size: 75 # Fits the prompt budget instead of being silently trimmed.
