@@ -25,6 +25,15 @@ edition:
     - museer
     - spil
     - fotografi
+curation:
+  # Local shortlist hints only, never hard exclusions or final editorial quotas.
+  # One fifth of the shortlist remains available for broad discovery.
+  interest_signals:
+    dansk_politik: [regeringen, finanslov, reform, forlig, minister, folketing, kommune, velfærd, dansk politik, danish politics]
+    kultur: [kulturpolitik, kulturstøtte, museum, museer, publikum, publikumsudvikling, biograf, filmstøtte, festival, sponsorater, audience development, cultural policy]
+    teknologi: [AI, kunstig intelligens, agents, agenter, apple, mac, iphone, kobo, e-ink, automatisering, vibe coding, wearables]
+    verden: [ukraine, rusland, russia, NATO, forsvar, europæisk sikkerhed, defence, geopolitics]
+    interesser: [planet zoo, warcraft, age of empires, survival, astronomi, astronomy, cosmology, kosmologi, arkæologi, archaeology, bunkere, tunnels, københavn, copenhagen, fotografi, photography, the cure, new order, kraftwerk, pink floyd]
 web_search:
   # OpenAI web search runs in the scheduled edition.
   enabled_for_schedule: true

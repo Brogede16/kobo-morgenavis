@@ -22,6 +22,18 @@ Kobo Libra Colour understøtter Google Drive direkte. Forbind Kobo-kontoen med G
 
 ## Lokal test
 
+Udvælgelsen før AI prioriterer nu interesse, tilgængelig indledning og aktualitet lokalt.
+De dansk/engelske signaler kan redigeres i `sources.yaml` under `curation.interest_signals`.
+De er bløde prioriteringer, ikke fravalg: omkring en femtedel af shortlisten reserveres
+til kildebalancerede opdagelser, og webfund beholder reserverede pladser. AI-redaktøren
+foretager fortsat det endelige valg. Ukendt dato giver ikke en aktualitetsbonus.
+
+AI'en mærker valg og reserver med emne. Hvis en artikel falder ud, forsøges først en
+godkendt reserve med samme emne og format, derefter samme emne og til sidst øvrige
+godkendte reserver. Kildeloft, dubletkontrol og læsbarhedskrav gælder stadig. Panelet
+viser, hvis den færdige blanding har færre historier i et emne eller færre longreads
+end redaktøren planlagde. Der tilføjes ingen ekstra AI-kald og intet ukureret fyldstof.
+
 ```bash
 python -m venv .venv
 source .venv/bin/activate

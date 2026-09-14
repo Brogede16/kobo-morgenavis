@@ -19,6 +19,7 @@ from openai import (APIConnectionError, APITimeoutError, InternalServerError, Op
                     RateLimitError)
 
 from editorial import compact_profile, dedupe, diverse_selection, drop_already_published, fair_sample
+from curation import TOPICS, ranked_shortlist, take_replacement, mix_report
 from feedback_store import editorial_note, published_history, recent_feedback, record_edition
 from news_io import BudgetExhausted, WebReader, canonical_url
 from newspaper import GROUPS, build_epub, build_notice_epub, prepare_article
@@ -353,10 +354,7 @@ def enrich_candidate_previews(candidates, settings, reader):
 
 
 def shortlist_candidates(candidates, settings):
-    cap = int(settings["edition"].get("ai_shortlist_size", 120))
-    web = fair_sample([c for c in candidates if c.get("pool") == "web"], min(cap // 3, 45))
-    urls = {c["url"] for c in web}
-    return fair_sample([c for c in candidates if c["url"] not in urls], cap - len(web)) + web
+    return ranked_shortlist(candidates, settings)
 
 
 def enforce_source_diversity(selected, candidates, settings):
@@ -403,6 +401,11 @@ def select_articles(candidates, settings):
         "standard as a selection. Keep the complete JSON response inside the output budget. "
         f'Set "group" to exactly one of {json.dumps(list(GROUPS), ensure_ascii=False)}; it decides where the story sits '
         "in the printed overview. "
+        f"Set editorial_topic to one of {json.dumps(TOPICS)} for each selection and backup. "
+        "Use dansk_politik only for concrete Danish politics or society, kultur for culture, "
+        "teknologi for technology, verden for international affairs and security, and fordybelse "
+        "for science, history and other personal interests. Spread worthwhile backups across the "
+        "topics and reading depths of your selections so blocked articles can be replaced. "
         "Copy source_title exactly from the chosen candidate's title. Write why only about that same candidate. "
         "Do not rewrite full articles. Return JSON "
         '{"selected":[{"candidate_id":"c000","source_title":"Exact candidate title","section":"Danmark","group":"Danmark og kultur",'
@@ -442,15 +445,21 @@ def select_articles(candidates, settings):
     payload["candidates"] = prompt_candidates
     result = ai_call_with_retry(instructions + json.dumps(payload, ensure_ascii=False), settings)
     approved = []
-    for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:24]):
+    tagged = [(item, False) for item in result.get("selected", [])[:cap]]
+    tagged += [(item, True) for item in result.get("backups", [])[:24]]
+    seen = set()
+    for item, is_backup in tagged:
         if (not isinstance(item, dict) or not isinstance(item.get("candidate_id"), str)
                 or item["candidate_id"] not in candidate_lookup):
             continue
         candidate = candidate_lookup[item["candidate_id"]]
-        if candidate.get("role") in {"radar", "documentation"}:
+        if candidate.get("role") in {"radar", "documentation"} or candidate["url"] in seen:
             continue
+        seen.add(candidate["url"])
         group = clean_text(item.get("group", "")).strip()
         approved.append(dict(candidate, section=clean_text(item.get("section", "Udvalgt"))[:60],
+                             is_backup=is_backup,
+                             editorial_topic=item.get("editorial_topic") if item.get("editorial_topic") in TOPICS else "",
                              group=group if group in GROUPS else "",
                              why=clean_text(item.get("why", ""))[:650],
                              format="longread" if item.get("format") == "longread" else "short",
@@ -524,11 +533,17 @@ def _run_edition(settings, use_web_search=None):
     approved = select_articles(candidates, settings)
     prepared, dropped = [], {"diversity": 0, "unreadable": 0}
     budget_exhausted = False
-    for article in approved[:int(settings["edition"]["max_articles"]) + 24]:
+    pending = [a for a in approved if not a.get("is_backup")]
+    backups = [a for a in approved if a.get("is_backup")]
+    while pending or backups:
         if len(prepared) >= int(settings["edition"]["max_articles"]):
             break
+        article = pending.pop(0) if pending else backups.pop(0)
         if len(diverse_selection(prepared + [article], settings)) == len(prepared):
             dropped["diversity"] += 1
+            replacement = take_replacement(backups, article)
+            if replacement:
+                pending.insert(0, replacement)
             continue
         try:
             readable = prepare_article(article, reader)
@@ -540,6 +555,9 @@ def _run_edition(settings, use_web_search=None):
             prepared.append(readable)
         else:
             dropped["unreadable"] += 1
+            replacement = take_replacement(backups, article)
+            if replacement:
+                pending.insert(0, replacement)
     minimum = int(settings["edition"].get("minimum_articles", 5))
     if len(prepared) < minimum:
         raise RuntimeError(f"Kun {len(prepared)} fulde, læsbare artikler fundet; mindst {minimum} kræves. Ingen avis sendt.")
@@ -558,6 +576,7 @@ def _run_edition(settings, use_web_search=None):
     metadata = [{k: v for k, v in a.items() if k not in {"body", "image_url"}} for a in prepared]
     report = {
         "editor_note": note,
+        "editorial_mix": mix_report(approved, prepared),
         "collection": {"rss_candidates": len(feeds), "web_candidates": len(web), "total_candidates": len(candidates),
                        "repeats_dropped": repeats, "previews_enriched": enriched,
                        "preview_budget_stopped": preview_budget_stopped},
