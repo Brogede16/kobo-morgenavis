@@ -125,6 +125,15 @@ def test_control_panel_renders_source_count_and_mobile_viewport(monkeypatch):
     assert 'name="viewport"' in page
 
 
+def test_control_panel_prefers_completed_github_edition_over_stale_running_state():
+    from app import visible_state
+    state = {"running": True, "started_at": "2026-09-14T21:53:38+02:00", "articles": 0}
+    edition = {"created_at": "2026-09-14T19:56:33+00:00", "articles": [{}, {}]}
+    shown = visible_state(state, edition)
+    assert shown["running"] is False
+    assert shown["articles"] == 2
+
+
 def test_overview_groups_make_the_newspaper_scannable():
     assert overview_group({"section": "Dansk politik"}) == "Danmark og kultur"
     assert overview_group({"section": "AI og teknologi"}) == "Teknologi og verden"
@@ -311,7 +320,7 @@ def test_readability_is_checked_before_editorial_selection(monkeypatch):
     assert report == {"checked": 2, "full_text": 1, "stopped": False}
 
 
-def test_drive_retention_keeps_only_the_latest_edition():
+def test_drive_retention_keeps_the_latest_three_editions():
     class Files:
         def __init__(self):
             self.trashed = []
@@ -329,7 +338,7 @@ def test_drive_retention_keeps_only_the_latest_edition():
 
     files = Files()
     prune_old_drive_editions(type("Drive", (), {"files": lambda _: files})(), "folder")
-    assert files.trashed == [str(i) for i in range(10, -1, -1)]
+    assert files.trashed == [str(i) for i in range(8, -1, -1)]
 
 
 # --- Regression cover for the parts that fail quietly -------------------------

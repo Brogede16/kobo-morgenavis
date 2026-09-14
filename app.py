@@ -9,7 +9,7 @@ from functools import wraps
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from dotenv import load_dotenv
-from flask import Flask, Response, jsonify, redirect, render_template_string, request, url_for
+from flask import Flask, Response, jsonify, make_response, redirect, render_template_string, request, url_for
 from zoneinfo import ZoneInfo
 
 from feedback_store import add_feedback, configured as feedback_configured, latest_edition
@@ -60,6 +60,25 @@ STATUS_MESSAGES = {
     "feedback-off": "GitHub-feedback er ikke sat op endnu.",
     "feedback-error": "Feedback kunne ikke gemmes lige nu. Prøv igen senere.",
 }
+
+
+def visible_state(state, edition):
+    """Prefer a completed GitHub edition over stale in-memory worker state."""
+    shown = dict(state)
+    if not edition or not shown.get("running"):
+        return shown
+    try:
+        created = datetime.fromisoformat(str(edition.get("created_at", "")).replace("Z", "+00:00"))
+        started = datetime.fromisoformat(str(shown.get("started_at", "")).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return shown
+    # Render can replace the web process while the isolated edition child is
+    # finishing. The GitHub archive is durable and therefore authoritative.
+    if created < started:
+        return shown
+    shown.update(running=False, error=None, finished_at=created.isoformat(timespec="seconds"),
+                 articles=len(edition.get("articles", [])), drive=True)
+    return shown
 
 
 def create_app(start_scheduler=True):
@@ -195,10 +214,16 @@ def create_app(start_scheduler=True):
         except Exception:
             logger.exception("Could not load latest feedback edition")
             edition = None
-        return render_template_string(PAGE, next_run=next_run(),
-                                      result=STATUS_MESSAGES.get(request.args.get("status", "")),
-                                      state=state, edition=edition,
-                                      feedback_enabled=feedback_configured())
+        shown_state = visible_state(state, edition)
+        status = request.args.get("status", "")
+        result = None if status == "started" and not shown_state.get("running") else STATUS_MESSAGES.get(status)
+        response = make_response(render_template_string(
+            PAGE, next_run=next_run(), result=result, state=shown_state,
+            edition=edition, feedback_enabled=feedback_configured()))
+        # This is a live control panel; do not let Safari reuse the snapshot
+        # from before a background edition completed.
+        response.headers["Cache-Control"] = "no-store, max-age=0"
+        return response
 
     @app.post("/run")
     @page_auth

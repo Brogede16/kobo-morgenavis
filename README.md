@@ -75,7 +75,7 @@ Den færdige EPUB er en rigtig læseavis: forside, prioriteret indholdsfortegnel
 
 Hver udgave får en genereret forside med dato, antal historier, læsetid og dagens overskrifter grupperet i de tre afsnit. Den tegnes lokalt med Pillow, så den koster hverken API-kald eller ventetid. Er der et brugbart artikelbillede, sættes det ind på forsiden.
 
-Efter upload beholder **Google Drive-mappen `Rakuten Kobo` kun den nyeste `mads-morgen-`-EPUB**. Ældre genererede aviser og gamle nummererede dubletter flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke. GitHub-historikken bevares separat, så gentagelser stadig kan undgås.
+Efter upload beholder **Google Drive-mappen `Rakuten Kobo` de tre nyeste `mads-morgen-`-EPUB’er**. En manuel kørsel samme dag opdaterer dagens fil frem for at skabe en dublet. Ældre genererede aviser og gamle nummererede dubletter flyttes til Google Drives papirkurv ved næste succesfulde upload; andre filer i mappen berøres ikke. GitHub-historikken bevares separat, så gentagelser stadig kan undgås.
 
 ## Secrets og miljøvariabler
 

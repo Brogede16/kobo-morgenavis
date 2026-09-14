@@ -59,7 +59,7 @@ def upload_to_drive(path):
     return uploaded
 
 
-def prune_old_drive_editions(drive, folder_id, keep=1):
+def prune_old_drive_editions(drive, folder_id, keep=3):
     if keep < 1:
         raise ValueError("At least one edition must be retained")
     files = list_files(drive, f"'{quote(folder_id)}' in parents and mimeType='{MIME}' and trashed=false")
