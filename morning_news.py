@@ -235,7 +235,11 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
         return []
     reader = reader or WebReader()
     config = settings.get("web_search", {})
-    signals = fair_sample(fetch_news_site_signals(settings, reader, source_health), 40)
+    try:
+        signals = fair_sample(fetch_news_site_signals(settings, reader, source_health), 40)
+    except Exception as exc:
+        logger.warning("News radar unavailable (%s); continuing without leads", type(exc).__name__)
+        signals = []
     queries = config.get("queries", [])
     core, rotation = queries[:4], queries[4:]
     if rotation:
@@ -251,10 +255,12 @@ def fetch_web_candidates(settings, reader=None, source_health=None):
               "exclude generic foreign accidents, death-toll updates, fires, crime, charity campaigns and "
               "institutional announcements unless they have a specific, well-explained Danish or European consequence. "
               'Respond with JSON only: {"articles":[{"url":"https://..."}]}. '
-              "Queries: " + json.dumps(queries, ensure_ascii=False) + " Leads: " + json.dumps(signals, ensure_ascii=False))
+              "Queries: " + json.dumps(queries, ensure_ascii=False) + " Leads: "
+              + json.dumps([{**signal, "preview": signal.get("preview", "")[:200]} for signal in signals],
+                           ensure_ascii=False))
     found = []
     try:
-        payload = ai_call(prompt, settings, search=True)
+        payload = ai_call_with_retry(prompt, settings, search=True)
         for item in payload.get("articles", [])[:18]:
             if not isinstance(item, dict) or not canonical_url(item.get("url", "")):
                 continue
@@ -379,7 +385,15 @@ def select_articles(candidates, settings):
         '"why":"2 precise Danish sentences, 180-280 characters total, same standard as a selection",'
         '"format":"longread","story_id":"another-event","use_image":true}],'
         '"gaps":["Danish explanation"]}. ')
-    payload = {"profile": profile, "candidates": compact}
+    # Keep stable policy text at the front so OpenAI can cache the long common
+    # prefix. Rotating interests, examples and feedback stay after candidates.
+    editorial_profile = dict(profile.get("editorial", {}))
+    relevant_interests = editorial_profile.pop("relevant_interests", [])
+    fixed_profile = {"editorial": editorial_profile}
+    daily_context = {"relevant_interests": relevant_interests,
+                     "examples": profile.get("examples", {}),
+                     "feedback": profile.get("feedback", [])}
+    payload = {"fixed_profile": fixed_profile, "candidates": compact, "daily_context": daily_context}
     while len(instructions + json.dumps(payload, ensure_ascii=False)) > int(settings.get("ai", {}).get("max_prompt_characters", 55000)):
         if len(payload["candidates"]) <= 10:
             raise ValueError("Editorial context too large")
@@ -428,6 +442,22 @@ def deliver_notice(settings, reason):
         return None
 
 
+def prune_local_editions(directory, keep_days=2):
+    """Remove only generated local editions older than the short recovery window."""
+    cutoff = datetime.now(timezone.utc).date() - timedelta(days=keep_days)
+    for path in Path(directory).glob("mads-morgen-*.epub"):
+        match = re.fullmatch(r"mads-morgen-(\d{4}-\d{2}-\d{2})(?:-status|-\d+)?\.epub", path.name)
+        if not match:
+            continue
+        try:
+            expired = datetime.fromisoformat(match.group(1)).date() < cutoff
+        except ValueError:
+            continue
+        if expired:
+            path.unlink(missing_ok=True)
+            logger.info("Removed expired local newspaper %s", path.name)
+
+
 def run_edition(settings=None, use_web_search=None, deliver_failure=True):
     settings = settings or load_settings()
     try:
@@ -443,7 +473,9 @@ def _run_edition(settings, use_web_search=None):
         raise RuntimeError("OPENAI_API_KEY mangler. Tilføj nøglen før første udgave.")
     collection = settings.get("collection", {})
     reader = WebReader(max_requests=int(collection.get("max_http_requests", 180)),
-                       max_bytes=int(collection.get("max_download_bytes", 35000000)))
+                       max_bytes=int(collection.get("max_download_bytes", 35000000)),
+                       max_seconds=int(collection.get("max_seconds", 1800)),
+                       max_cache_bytes=int(collection.get("max_cache_bytes", 25000000)))
     source_health = {}
     feeds = fetch_candidates(settings, reader, source_health)
     use_web = settings.get("web_search", {}).get("enabled_for_schedule", True) if use_web_search is None else use_web_search
@@ -484,6 +516,8 @@ def _run_edition(settings, use_web_search=None):
         raise RuntimeError(f"Kun {len(prepared)} fulde, læsbare artikler fundet; mindst {minimum} kræves. Ingen avis sendt.")
     path = build_epub(prepared, settings, reader=reader)
     uploaded = upload_to_drive(path) if os.environ.get("GOOGLE_DRIVE_FOLDER_ID") else None
+    if uploaded:
+        prune_local_editions(path.parent, keep_days=2)
     metadata = [{k: v for k, v in a.items() if k not in {"body", "image_url"}} for a in prepared]
     report = {
         "editor_note": editorial_note(),

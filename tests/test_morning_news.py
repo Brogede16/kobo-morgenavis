@@ -42,7 +42,7 @@ def test_editor_selection_uses_ids_assigned_after_prompt_reordering(monkeypatch)
     captured = {}
 
     def editor(prompt, configured):
-        payload = json.loads(prompt[prompt.index('{"profile"'):])
+        payload = json.loads(prompt[prompt.index('{"fixed_profile"'):])
         captured["first"] = payload["candidates"][0]
         return {"selected": [{"candidate_id": "c000", "why": "Den rigtige forklaring",
                               "section": "Test", "group": "Fordybelse"}], "backups": []}
@@ -432,6 +432,44 @@ def test_web_reader_reports_edition_budget_separately(monkeypatch):
     reader = WebReader(max_requests=0, max_bytes=100)
     with pytest.raises(BudgetExhausted):
         reader.get("https://example.test/article")
+
+
+def test_web_reader_has_a_whole_edition_deadline(monkeypatch):
+    import news_io
+    ticks = iter([100.0, 102.0])
+    monkeypatch.setattr(news_io.time, "monotonic", lambda: next(ticks))
+    reader = news_io.WebReader(max_seconds=1)
+    with pytest.raises(news_io.BudgetExhausted, match="time budget"):
+        reader.check_budget()
+
+
+def test_web_search_uses_short_leads_and_retry(monkeypatch):
+    import morning_news
+    captured = {}
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    monkeypatch.setattr(morning_news, "fetch_news_site_signals", lambda *args: [
+        {"title": "Dansk politisk historie", "url": "https://example.test/a", "source": "Radar",
+         "role": "radar", "preview": "x" * 700}])
+    def search(prompt, configured, search=False):
+        captured.update(prompt=prompt, search=search)
+        return {"articles": []}
+    monkeypatch.setattr(morning_news, "ai_call_with_retry", search)
+    morning_news.fetch_web_candidates(settings(), source_health={})
+    assert captured["search"] is True
+    assert "x" * 200 in captured["prompt"]
+    assert "x" * 201 not in captured["prompt"]
+
+
+def test_local_cleanup_only_removes_old_generated_editions(tmp_path):
+    from morning_news import prune_local_editions
+    old = tmp_path / "mads-morgen-2020-01-01.epub"
+    current = tmp_path / f"mads-morgen-{datetime.now(timezone.utc).date().isoformat()}.epub"
+    unrelated = tmp_path / "min-bog.epub"
+    for path in (old, current, unrelated):
+        path.write_bytes(b"epub")
+    prune_local_editions(tmp_path)
+    assert not old.exists()
+    assert current.exists() and unrelated.exists()
 
 
 def test_selection_retry_skips_errors_that_cannot_succeed(monkeypatch):

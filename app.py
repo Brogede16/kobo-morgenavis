@@ -3,6 +3,7 @@ import logging
 import os
 import hmac
 import threading
+import time
 from datetime import datetime, timedelta
 from functools import wraps
 
@@ -31,6 +32,7 @@ PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><meta name=\"
 <form method=post action=\"{{ url_for('run_from_page') }}\"><p>Avisen sendes automatisk hver morgen. Knappen her er til test.</p><button>Lav og send avis nu</button></form>
 {% if edition %}<h2>Seneste udgave</h2><p>Fortæl gerne indimellem, hvad du vil have mere eller mindre af. Det bruges i næste udvælgelse.</p>
 {% if edition.report and edition.report.editor_note %}<p class=note><strong>Redaktørens note</strong><br>{{ edition.report.editor_note }}</p>{% endif %}
+{% if edition.report and edition.report.source_health and edition.report.source_health.get('OpenAI websøgning', {}).get('status') == 'fejl' %}<p class="note error"><strong>Websøgningen fejlede i denne udgave.</strong><br>Avisen blev lavet med RSS-kilder og den åbne nyhedsradar.</p>{% endif %}
 {% if not feedback_enabled %}<p class=note><strong>Feedback er ikke aktiv endnu.</strong><br>Tilføj eller kontrollér GitHub-feedbackforbindelsen i Render, så knapperne kan gemme dine valg.</p>{% endif %}
 {% for article in edition.articles %}<article class=article id=\"article-{{ loop.index }}\"><p><small>{{ article.section }} · {{ article.reading_minutes }} min.</small></p><a href=\"{{ article.url }}\" target=\"_blank\" rel=\"noreferrer\"><strong>{{ article.title }}</strong></a><p>{{ article.source }} · {{ article.summary }}</p><p class=why><strong>Kort fortalt:</strong> {{ article.why }}</p>
 {% if feedback_enabled %}<form class=actions method=post action=\"{{ url_for('article_feedback') }}\"><input type=hidden name=url value=\"{{ article.url }}\"><input type=hidden name=article_index value=\"{{ loop.index }}\"><select name=reason aria-label=\"Hvorfor?\"><option value=\"\">Valgfrit: hvorfor?</option><option value=\"great_match\">Godt emne og vinkel</option><option value=\"great_depth\">God dybde</option><option value=\"surprising\">Overraskende fed</option><option value=\"uninteresting\">Uinteressant</option><option value=\"too_generic\">For generisk verdensnyhed</option><option value=\"unclear\">For svært eller uklart skrevet</option><option value=\"good_but_too_technical\">God, men for nørdet</option><option value=\"too_thin\">For tynd</option><option value=\"too_long\">For lang eller kedelig</option><option value=\"too_promotional\">For meget PR</option><option value=\"too_old\">For gammel</option><option value=\"duplicate\">Gentagelse</option></select><button name=direction value=more>Mere af den slags</button><button class=less name=direction value=less>Mindre af den slags</button></form>{% endif %}</article>
@@ -54,6 +56,7 @@ STATUS_MESSAGES = {
     "busy": "Der kører allerede en udgave. Vent til den er færdig.",
     "feedback": "Gemte din feedback i GitHub.",
     "feedback-off": "GitHub-feedback er ikke sat op endnu.",
+    "feedback-error": "Feedback kunne ikke gemmes lige nu. Prøv igen senere.",
 }
 
 
@@ -70,21 +73,37 @@ def create_app(start_scheduler=True):
 
     def execute(use_web_search=None, deliver_failure=True):
         """Run an edition in the background. Returns False when one is already running."""
-        if not run_lock.acquire(blocking=False):
+        nonlocal run_lock
+        if state["running"] and state["started_at"]:
+            try:
+                age = datetime.now(timezone) - datetime.fromisoformat(state["started_at"])
+            except (TypeError, ValueError):
+                age = timedelta(0)
+            if age > timedelta(minutes=45):
+                logger.error("Discarding stale run lock after %s", age)
+                run_lock = threading.Lock()
+                state["running"] = False
+        active_lock = run_lock
+        if not active_lock.acquire(blocking=False):
             return False
-        state.update(running=True, started_at=datetime.now(timezone).isoformat(timespec="seconds"), error=None)
+        run_id = time.monotonic_ns()
+        state.update(running=True, started_at=datetime.now(timezone).isoformat(timespec="seconds"),
+                     error=None, run_id=run_id)
 
         def work():
             try:
                 result = run_edition(settings, use_web_search=use_web_search,
                                      deliver_failure=deliver_failure)
-                state.update(articles=result["articles"], drive=bool(result.get("drive_file")), error=None)
+                if state.get("run_id") == run_id:
+                    state.update(articles=result["articles"], drive=bool(result.get("drive_file")), error=None)
             except Exception as exc:
-                state.update(error=f"{type(exc).__name__}: {exc}"[:400], articles=0)
+                if state.get("run_id") == run_id:
+                    state.update(error=f"{type(exc).__name__}: {exc}"[:400], articles=0)
                 logger.exception("Morning edition failed")
             finally:
-                state.update(running=False, finished_at=datetime.now(timezone).isoformat(timespec="seconds"))
-                run_lock.release()
+                if state.get("run_id") == run_id:
+                    state.update(running=False, finished_at=datetime.now(timezone).isoformat(timespec="seconds"))
+                active_lock.release()
 
         threading.Thread(target=work, name="edition", daemon=True).start()
         return True
@@ -194,7 +213,11 @@ def create_app(start_scheduler=True):
     @app.post("/feedback")
     @page_auth
     def article_feedback():
-        edition = latest_edition() or {}
+        try:
+            edition = latest_edition() or {}
+        except Exception:
+            logger.exception("Could not load edition for feedback")
+            return redirect(url_for("home", status="feedback-error"), code=303)
         url = request.form.get("url", "")
         article = next((dict(item) for item in edition.get("articles", []) if item.get("url") == url), None)
         if not article:
@@ -204,6 +227,9 @@ def create_app(start_scheduler=True):
             saved = add_feedback(article, request.form.get("direction", ""))
         except ValueError:
             return Response("Ugyldig feedback", 400)
+        except Exception:
+            logger.exception("Could not save feedback")
+            return redirect(url_for("home", status="feedback-error"), code=303)
         index = request.form.get("article_index", "")
         anchor = f"article-{index}" if index.isdigit() else None
         return redirect(url_for("home", status="feedback" if saved else "feedback-off", _anchor=anchor), code=303)

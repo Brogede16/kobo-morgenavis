@@ -1,6 +1,8 @@
 """Bounded public-web retrieval shared by feeds, previews and EPUB extraction."""
 import ipaddress
 import socket
+import time
+from collections import OrderedDict
 from urllib.parse import parse_qsl, urlencode, urljoin, urlsplit, urlunsplit
 
 import requests
@@ -41,19 +43,29 @@ def public_url(url):
 class WebReader:
     """One edition's cache, request count and actual downloaded-byte budget."""
 
-    def __init__(self, max_requests=180, max_bytes=35_000_000):
+    def __init__(self, max_requests=180, max_bytes=35_000_000, max_seconds=1800,
+                 max_cache_bytes=25_000_000, max_cache_item_bytes=300_000):
         self.max_requests, self.max_bytes = max_requests, max_bytes
+        self.deadline = time.monotonic() + max_seconds
+        self.max_cache_bytes, self.max_cache_item_bytes = max_cache_bytes, max_cache_item_bytes
         self.requests = self.bytes = 0
-        self.cache = {}
+        self.cache_bytes = 0
+        self.cache = OrderedDict()
+
+    def check_budget(self):
+        if time.monotonic() >= self.deadline:
+            raise BudgetExhausted("Edition time budget exhausted")
+        if self.requests >= self.max_requests or self.bytes >= self.max_bytes:
+            raise BudgetExhausted("Edition download budget exhausted")
 
     def get(self, url, limit=1_500_000):
         url = canonical_url(url)
         if url in self.cache:
+            self.cache.move_to_end(url)
             return self.cache[url]
         original = url
         for _ in range(5):
-            if self.requests >= self.max_requests or self.bytes >= self.max_bytes:
-                raise BudgetExhausted("Edition download budget exhausted")
+            self.check_budget()
             url = public_url(url)
             self.requests += 1
             with requests.get(url, timeout=(5, 12), stream=True, allow_redirects=False,
@@ -64,6 +76,7 @@ class WebReader:
                 response.raise_for_status()
                 content = bytearray()
                 for chunk in response.iter_content(16384):
+                    self.check_budget()
                     self.bytes += len(chunk)
                     content.extend(chunk)
                     if self.bytes > self.max_bytes:
@@ -71,6 +84,12 @@ class WebReader:
                     if len(content) > limit:
                         raise ValueError("Download exceeds byte limit")
                 result = (bytes(content), response.headers.get("Content-Type", ""), url)
-                self.cache[original] = result
+                size = len(content)
+                if size <= self.max_cache_item_bytes:
+                    while self.cache and self.cache_bytes + size > self.max_cache_bytes:
+                        _, expired = self.cache.popitem(last=False)
+                        self.cache_bytes -= len(expired[0])
+                    self.cache[original] = result
+                    self.cache_bytes += size
                 return result
         raise ValueError("Too many redirects")
