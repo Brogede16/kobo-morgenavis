@@ -52,15 +52,19 @@ class WebReader:
         self.cache_bytes = 0
         self.cache = OrderedDict()
 
-    def check_budget(self):
+    def check_budget(self, new_request=True):
         if time.monotonic() >= self.deadline:
             raise BudgetExhausted("Edition time budget exhausted")
-        if self.requests >= self.max_requests or self.bytes >= self.max_bytes:
+        if (new_request and self.requests >= self.max_requests) or self.bytes >= self.max_bytes:
             raise BudgetExhausted("Edition download budget exhausted")
 
     def get(self, url, limit=1_500_000):
+        if time.monotonic() >= self.deadline:
+            raise BudgetExhausted("Edition time budget exhausted")
         url = canonical_url(url)
         if url in self.cache:
+            if len(self.cache[url][0]) > limit:
+                raise ValueError("Download exceeds byte limit")
             self.cache.move_to_end(url)
             return self.cache[url]
         original = url
@@ -76,7 +80,7 @@ class WebReader:
                 response.raise_for_status()
                 content = bytearray()
                 for chunk in response.iter_content(16384):
-                    self.check_budget()
+                    self.check_budget(new_request=False)
                     self.bytes += len(chunk)
                     content.extend(chunk)
                     if self.bytes > self.max_bytes:
@@ -85,7 +89,7 @@ class WebReader:
                         raise ValueError("Download exceeds byte limit")
                 result = (bytes(content), response.headers.get("Content-Type", ""), url)
                 size = len(content)
-                if size <= self.max_cache_item_bytes:
+                if size <= min(self.max_cache_item_bytes, self.max_cache_bytes):
                     while self.cache and self.cache_bytes + size > self.max_cache_bytes:
                         _, expired = self.cache.popitem(last=False)
                         self.cache_bytes -= len(expired[0])

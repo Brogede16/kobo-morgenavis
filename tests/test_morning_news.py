@@ -142,12 +142,12 @@ def test_model_json_parser_repairs_only_bare_object_keys(monkeypatch):
     class Client:
         class Responses:
             def create(self, **kwargs):
-                return type("Response", (), {"output_text": '[]\n{selected:[{"i": 1, "why": "ok",},],}', "usage": None})()
+                return type("Response", (), {"output_text": '[]\n{selected:[{"candidate_id": "c001", "why": "ok",},],}', "usage": None})()
         responses = Responses()
     monkeypatch.setattr("morning_news.OpenAI", lambda **kwargs: Client())
     monkeypatch.setenv("OPENAI_API_KEY", "test")
     from morning_news import ai_call
-    assert ai_call("test", settings())["selected"][0]["i"] == 1
+    assert ai_call("test", settings())["selected"][0]["candidate_id"] == "c001"
 
 
 def test_malformed_ai_reply_gets_one_retry(monkeypatch):

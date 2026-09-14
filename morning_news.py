@@ -219,6 +219,21 @@ def ai_call(prompt, settings, search=False):
             if isinstance(parsed, dict) and isinstance(parsed.get(expected), list):
                 if not search and "backups" in parsed and not isinstance(parsed["backups"], list):
                     continue
+                if not search:
+                    entries = parsed["selected"] + parsed.get("backups", [])
+                    if any(not isinstance(item, dict)
+                           or not isinstance(item.get("candidate_id"), str)
+                           or not isinstance(item.get("why"), str)
+                           or not item["why"].strip() for item in entries):
+                        continue
+                    marker = prompt.find('{"fixed_profile"')
+                    if marker >= 0:
+                        sent = json.loads(prompt[marker:])["candidates"]
+                        titles = {item["candidate_id"]: item["title"] for item in sent}
+                        if any(item["candidate_id"] not in titles or
+                               item.get("source_title") != titles[item["candidate_id"]]
+                               for item in entries):
+                            continue
                 return parsed
     raise AIResponseFormatError("OpenAI response did not contain the requested JSON object")
 
@@ -388,11 +403,12 @@ def select_articles(candidates, settings):
         "standard as a selection. Keep the complete JSON response inside the output budget. "
         f'Set "group" to exactly one of {json.dumps(list(GROUPS), ensure_ascii=False)}; it decides where the story sits '
         "in the printed overview. "
+        "Copy source_title exactly from the chosen candidate's title. Write why only about that same candidate. "
         "Do not rewrite full articles. Return JSON "
-        '{"selected":[{"candidate_id":"c000","section":"Danmark","group":"Danmark og kultur",'
+        '{"selected":[{"candidate_id":"c000","source_title":"Exact candidate title","section":"Danmark","group":"Danmark og kultur",'
         '"why":"2 precise Danish sentences, 180-280 characters total: what happened, what it changes, and why Mads should care",'
         '"format":"short or longread","story_id":"event-slug","use_image":false}],'
-        '"backups":[{"candidate_id":"c001","section":"Teknologi","group":"Teknologi og verden",'
+        '"backups":[{"candidate_id":"c001","source_title":"Exact candidate title","section":"Teknologi","group":"Teknologi og verden",'
         '"why":"2 precise Danish sentences, 180-280 characters total, same standard as a selection",'
         '"format":"longread","story_id":"another-event","use_image":true}],'
         '"gaps":["Danish explanation"]}. ')
@@ -427,7 +443,8 @@ def select_articles(candidates, settings):
     result = ai_call_with_retry(instructions + json.dumps(payload, ensure_ascii=False), settings)
     approved = []
     for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:24]):
-        if not isinstance(item, dict) or item.get("candidate_id") not in candidate_lookup:
+        if (not isinstance(item, dict) or not isinstance(item.get("candidate_id"), str)
+                or item["candidate_id"] not in candidate_lookup):
             continue
         candidate = candidate_lookup[item["candidate_id"]]
         if candidate.get("role") in {"radar", "documentation"}:
@@ -529,10 +546,18 @@ def _run_edition(settings, use_web_search=None):
     path = build_epub(prepared, settings, reader=reader)
     uploaded = upload_to_drive(path) if os.environ.get("GOOGLE_DRIVE_FOLDER_ID") else None
     if uploaded:
-        prune_local_editions(path.parent, keep_days=2)
+        try:
+            prune_local_editions(path.parent, keep_days=2)
+        except Exception as exc:
+            logger.warning("Delivery succeeded; local cleanup failed (%s)", type(exc).__name__)
+    try:
+        note = editorial_note()
+    except Exception as exc:
+        logger.warning("Editorial note unavailable (%s)", type(exc).__name__)
+        note = "Feedbackoversigten kunne ikke hentes. Avisen er dannet."
     metadata = [{k: v for k, v in a.items() if k not in {"body", "image_url"}} for a in prepared]
     report = {
-        "editor_note": editorial_note(),
+        "editor_note": note,
         "collection": {"rss_candidates": len(feeds), "web_candidates": len(web), "total_candidates": len(candidates),
                        "repeats_dropped": repeats, "previews_enriched": enriched,
                        "preview_budget_stopped": preview_budget_stopped},

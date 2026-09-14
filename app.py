@@ -13,7 +13,8 @@ from flask import Flask, Response, jsonify, redirect, render_template_string, re
 from zoneinfo import ZoneInfo
 
 from feedback_store import add_feedback, configured as feedback_configured, latest_edition
-from morning_news import cron_fields, load_settings, run_edition
+from morning_news import cron_fields, load_settings
+from edition_process import run_isolated
 
 load_dotenv()
 logging.basicConfig(
@@ -73,16 +74,6 @@ def create_app(start_scheduler=True):
 
     def execute(use_web_search=None, deliver_failure=True):
         """Run an edition in the background. Returns False when one is already running."""
-        nonlocal run_lock
-        if state["running"] and state["started_at"]:
-            try:
-                age = datetime.now(timezone) - datetime.fromisoformat(state["started_at"])
-            except (TypeError, ValueError):
-                age = timedelta(0)
-            if age > timedelta(minutes=45):
-                logger.error("Discarding stale run lock after %s", age)
-                run_lock = threading.Lock()
-                state["running"] = False
         active_lock = run_lock
         if not active_lock.acquire(blocking=False):
             return False
@@ -92,7 +83,7 @@ def create_app(start_scheduler=True):
 
         def work():
             try:
-                result = run_edition(settings, use_web_search=use_web_search,
+                result = run_isolated(settings, use_web_search=use_web_search,
                                      deliver_failure=deliver_failure)
                 if state.get("run_id") == run_id:
                     state.update(articles=result["articles"], drive=bool(result.get("drive_file")), error=None)
@@ -105,7 +96,12 @@ def create_app(start_scheduler=True):
                     state.update(running=False, finished_at=datetime.now(timezone).isoformat(timespec="seconds"))
                 active_lock.release()
 
-        threading.Thread(target=work, name="edition", daemon=True).start()
+        try:
+            threading.Thread(target=work, name="edition", daemon=True).start()
+        except Exception:
+            state.update(running=False)
+            active_lock.release()
+            raise
         return True
 
     def catch_up():
@@ -243,9 +239,6 @@ def create_app(start_scheduler=True):
         if not hmac.compare_digest(request.headers.get("Authorization", "").encode("utf-8"),
                                    f"Bearer {token}".encode("utf-8")):
             return jsonify(error="unauthorized"), 401
-        if request.args.get("wait") == "true":
-            return jsonify(run_edition(settings, use_web_search=request.args.get("web_search", "true") == "true",
-                                       deliver_failure=False))
         started = execute(use_web_search=request.args.get("web_search", "true") == "true", deliver_failure=False)
         return jsonify(started=started, state=dict(state)), 202 if started else 409
 
