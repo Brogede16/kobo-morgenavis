@@ -338,7 +338,7 @@ def select_articles(candidates, settings):
     if not candidates:
         return []
     summary_cap = int(settings["edition"].get("max_summary_characters", 260))
-    compact = [{"i": i, "title": c["title"][:160], "source": c["source"], "url": c["url"][:260],
+    compact = [{"candidate_index": i, "title": c["title"][:160], "source": c["source"], "url": c["url"][:260],
                 "format": c.get("format", "mixed"), "published": c.get("published", "unknown"),
                 "summary": c.get("summary", "")[:summary_cap]} for i, c in enumerate(candidates)]
     profile = editorial_prompt_profile(candidates)
@@ -372,10 +372,10 @@ def select_articles(candidates, settings):
         f'Set "group" to exactly one of {json.dumps(list(GROUPS), ensure_ascii=False)}; it decides where the story sits '
         "in the printed overview. "
         "Do not rewrite full articles. Return JSON "
-        '{"selected":[{"i":0,"section":"Danmark","group":"Danmark og kultur",'
+        '{"selected":[{"candidate_id":"c000","section":"Danmark","group":"Danmark og kultur",'
         '"why":"2 precise Danish sentences, 180-280 characters total: what happened, what it changes, and why Mads should care",'
         '"format":"short or longread","story_id":"event-slug","use_image":false}],'
-        '"backups":[{"i":1,"section":"Teknologi","group":"Teknologi og verden",'
+        '"backups":[{"candidate_id":"c001","section":"Teknologi","group":"Teknologi og verden",'
         '"why":"one precise Danish sentence, maximum 120 characters",'
         '"format":"longread","story_id":"another-event","use_image":true}],'
         '"gaps":["Danish explanation"]}. ')
@@ -388,13 +388,23 @@ def select_articles(candidates, settings):
         logger.warning("Prompt budget trimmed the shortlist from %s to %s candidates; "
                        "raise ai.max_prompt_characters or lower edition.max_summary_characters",
                        len(compact), len(payload["candidates"]))
+    # Assign opaque IDs only after the final prompt trimming. Earlier versions sent
+    # sparse original list indexes; models sometimes interpreted those as positions
+    # in the trimmed array, coupling a good explanation to the wrong article.
+    candidate_lookup = {}
+    prompt_candidates = []
+    for position, item in enumerate(payload["candidates"]):
+        candidate_id = f"c{position:03d}"
+        candidate_lookup[candidate_id] = candidates[item["candidate_index"]]
+        prompt_candidates.append({"candidate_id": candidate_id,
+                                  **{key: value for key, value in item.items() if key != "candidate_index"}})
+    payload["candidates"] = prompt_candidates
     result = ai_call_with_retry(instructions + json.dumps(payload, ensure_ascii=False), settings)
-    sent_indexes = {c["i"] for c in payload["candidates"]}
     approved = []
     for item in (result.get("selected", [])[:cap] + result.get("backups", [])[:24]):
-        if not isinstance(item, dict) or type(item.get("i")) is not int or item["i"] not in sent_indexes:
+        if not isinstance(item, dict) or item.get("candidate_id") not in candidate_lookup:
             continue
-        candidate = candidates[item["i"]]
+        candidate = candidate_lookup[item["candidate_id"]]
         if candidate.get("role") in {"radar", "documentation"}:
             continue
         group = str(item.get("group", "")).strip()

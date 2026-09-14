@@ -32,6 +32,33 @@ def test_select_without_key(monkeypatch):
         select_articles(candidates, settings())
 
 
+def test_editor_selection_uses_ids_assigned_after_prompt_reordering(monkeypatch):
+    candidates = [
+        {"title": "A1", "source": "A", "url": "https://a.test/1", "summary": "a"},
+        {"title": "A2", "source": "A", "url": "https://a.test/2", "summary": "a"},
+        {"title": "B1", "source": "B", "url": "https://b.test/1", "summary": "b"},
+    ]
+    captured = {}
+
+    def editor(prompt, configured):
+        payload = json.loads(prompt[prompt.index('{"profile"'):])
+        captured["first"] = payload["candidates"][0]
+        return {"selected": [{"candidate_id": "c000", "why": "Den rigtige forklaring",
+                              "section": "Test", "group": "Fordybelse"}], "backups": []}
+
+    monkeypatch.setenv("OPENAI_API_KEY", "test")
+    monkeypatch.setattr("morning_news.shortlist_candidates", lambda items, configured: items)
+    monkeypatch.setattr("morning_news.editorial_prompt_profile", lambda items: {})
+    monkeypatch.setattr("morning_news.recent_feedback", lambda: [])
+    monkeypatch.setattr("morning_news.ai_call_with_retry", editor)
+    chosen = select_articles(candidates, settings())
+
+    assert captured["first"]["candidate_id"] == "c000"
+    assert "candidate_index" not in captured["first"]
+    assert chosen[0]["title"] == captured["first"]["title"]
+    assert chosen[0]["why"] == "Den rigtige forklaring"
+
+
 def test_build_epub(tmp_path):
     article = {"title": "Historie", "source": "Kilde", "url": "https://example.test", "summary": "Kort",
                "body": "<div><p>Tekst</p></div>", "why": "Relevant", "reading_minutes": 1}
@@ -310,9 +337,9 @@ def test_full_edition_runs_without_network(monkeypatch, tmp_path):
     def fake_ai(prompt, settings, search=False, **kwargs):
         sent["prompt"] = prompt
         return {"selected": [
-            {"i": 0, "section": "Politik", "group": "Danmark og kultur", "why": "a", "format": "short", "story_id": "forlig"},
-            {"i": 1, "section": "Teknologi", "group": "Teknologi og verden", "why": "b", "format": "short", "story_id": "ai"},
-            {"i": 2, "section": "Fordybelse", "group": "Fordybelse", "why": "c", "format": "longread", "story_id": "tunnel"},
+            {"candidate_id": "c000", "section": "Politik", "group": "Danmark og kultur", "why": "a", "format": "short", "story_id": "forlig"},
+            {"candidate_id": "c001", "section": "Teknologi", "group": "Teknologi og verden", "why": "b", "format": "short", "story_id": "ai"},
+            {"candidate_id": "c002", "section": "Fordybelse", "group": "Fordybelse", "why": "c", "format": "longread", "story_id": "tunnel"},
         ], "backups": [], "gaps": []}
 
     monkeypatch.setattr(morning_news, "ai_call_with_retry", fake_ai)
