@@ -63,6 +63,8 @@ def test_pipeline_replaces_blocked_politics_before_filling_with_technology(monke
     monkeypatch.setattr(news, "fetch_web_candidates", lambda *a: [])
     monkeypatch.setattr(news, "published_history", lambda *a: {})
     monkeypatch.setattr(news, "enrich_candidate_previews", lambda *a: ([missing], 0, False))
+    monkeypatch.setattr(news, "assess_candidate_readability",
+                        lambda *a: ([missing], {"checked": 0, "full_text": 0, "stopped": False}))
     monkeypatch.setattr(news, "select_articles", lambda *a: [missing, tech, politics])
     attempts = []
     def prepare(a, reader):

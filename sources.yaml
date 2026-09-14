@@ -3,7 +3,7 @@ edition:
   title: "Mads Morgen"
   language: da
   max_articles: 22
-  max_backups: 16 # Real runs lose many paywalled/JS pages; still fits below the 10k response ceiling.
+  max_backups: 10 # Preflighted full-text reserves; no need to pay for a large blind fallback pool.
   max_candidates: 360 # Broad collection; the model only sees the shortlisted items below.
   web_candidate_reserve: 55 # Prevent RSS volume from crowding out news-radar and web results.
   ai_shortlist_size: 75 # Fits the prompt budget instead of being silently trimmed.
@@ -39,6 +39,7 @@ web_search:
   # OpenAI web search runs in the scheduled edition.
   enabled_for_schedule: true
   rotating_queries_per_day: 3 # Four core searches plus three rotating specialist searches.
+  feed_leads: 20 # Turn strong RSS/paywall headlines into searches for readable independent coverage.
   queries:
     - "vigtige nyheder i dag Danmark verden teknologi videnskab"
     - "Apple Mac AI modeller nye features produkt leaks nyheder i dag"
@@ -135,6 +136,8 @@ collection:
   max_cache_bytes: 25000000 # Keep Render memory bounded even with a larger download budget.
   max_candidate_previews: 45 # Better editorial judgement without another AI call.
   candidate_preview_budget_fraction: 0.6 # Keep at least 40% for selected articles and images.
+  max_readability_checks: 65 # Extract before selection, then reuse the full text in the EPUB.
+  readability_budget_fraction: 0.8 # Leave at least 20% of the HTTP/byte budget for images and delivery.
 ai:
   model: gpt-5-mini
   # gpt-5-mini remains the inexpensive editor. Web search needs a model that

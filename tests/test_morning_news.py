@@ -8,7 +8,9 @@ import pytest
 from PIL import Image
 
 from feedback_store import editorial_note
-from morning_news import build_epub, editorial_prompt_profile, enforce_source_diversity, enrich_candidate_previews, load_settings, merge_candidate_pools, prune_old_drive_editions, select_articles
+from morning_news import (assess_candidate_readability, build_epub, editorial_prompt_profile,
+                          enforce_source_diversity, enrich_candidate_previews, load_settings,
+                          merge_candidate_pools, prune_old_drive_editions, select_articles)
 from newspaper import overview_group
 
 
@@ -292,6 +294,23 @@ def test_candidate_previews_are_enriched_without_an_ai_call():
     assert "Useful context" in result[0]["summary"]
 
 
+def test_readability_is_checked_before_editorial_selection(monkeypatch):
+    items = [
+        {"title": "Fuld", "source": "A", "url": "https://a.test/1", "summary": "kort"},
+        {"title": "Lukket", "source": "B", "url": "https://b.test/2", "summary": "langt " * 40},
+    ]
+    prepared = dict(items[0], body="<div>tekst</div>", word_count=640, reading_minutes=3)
+    monkeypatch.setattr("morning_news.prepare_article",
+                        lambda article, reader: prepared if article["source"] == "A" else None)
+    reader = type("Reader", (), {"bytes": 0, "requests": 0, "max_bytes": 100, "max_requests": 100})()
+    checked, report = assess_candidate_readability(items, settings(), reader)
+    assert checked[0]["readability"] == "full_text"
+    assert checked[0]["word_count"] == 640
+    assert checked[0]["_prepared"]["body"] == "<div>tekst</div>"
+    assert checked[1]["readability"] == "preview_only"
+    assert report == {"checked": 2, "full_text": 1, "stopped": False}
+
+
 def test_drive_retention_keeps_only_the_latest_edition():
     class Files:
         def __init__(self):
@@ -550,10 +569,15 @@ def test_web_search_uses_short_leads_and_retry(monkeypatch):
         captured.update(prompt=prompt, search=search)
         return {"articles": []}
     monkeypatch.setattr(morning_news, "ai_call_with_retry", search)
-    morning_news.fetch_web_candidates(settings(), source_health={})
+    feed_lead = {"title": "Betalingsmur om vigtig kulturpolitik", "url": "https://paywall.test/a",
+                 "source": "Betalingskilde", "summary": "å" * 700}
+    morning_news.fetch_web_candidates(settings(), source_health={}, feed_signals=[feed_lead])
     assert captured["search"] is True
     assert "x" * 200 in captured["prompt"]
     assert "x" * 201 not in captured["prompt"]
+    assert "Betalingsmur om vigtig kulturpolitik" in captured["prompt"]
+    assert "å" * 200 in captured["prompt"]
+    assert "å" * 201 not in captured["prompt"]
 
 
 def test_local_cleanup_only_removes_old_generated_editions(tmp_path):

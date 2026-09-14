@@ -90,13 +90,15 @@ def prepare_article(article, reader):
             return None
         body = sanitise_body(Document(raw).summary(html_partial=True), url)
         text = lxml_html.fromstring(body).text_content()
+        word_count = len(text.split())
         minimum_words = 550 if article.get("format") == "longread" else 260
-        if len(text.split()) < minimum_words:
+        if word_count < minimum_words:
             logger.info("Skipping incomplete article from %s", article.get("source"))
             return None
         images = page.xpath("//meta[@property='og:image' or @name='og:image']/@content")
         languages = page.xpath("/html/@lang")
-        return dict(article, url=url, body=body, reading_minutes=max(1, math.ceil(len(text.split()) / 220)),
+        return dict(article, url=url, body=body, word_count=word_count,
+                    reading_minutes=max(1, math.ceil(word_count / 220)),
                     language=languages[0] if languages else "und",
                     image_url=urljoin(url, images[0]) if images else "")
     except BudgetExhausted:

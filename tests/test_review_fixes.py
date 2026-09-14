@@ -54,6 +54,8 @@ def test_successful_delivery_survives_optional_failures(monkeypatch, tmp_path):
     monkeypatch.setattr(news, "fetch_web_candidates", lambda *a: [])
     monkeypatch.setattr(news, "published_history", lambda *a: {})
     monkeypatch.setattr(news, "enrich_candidate_previews", lambda *a: ([article], 0, False))
+    monkeypatch.setattr(news, "assess_candidate_readability",
+                        lambda *a: ([article], {"checked": 0, "full_text": 0, "stopped": False}))
     monkeypatch.setattr(news, "select_articles", lambda *a: [article])
     monkeypatch.setattr(news, "prepare_article", lambda a, r: dict(a, body="text"))
     monkeypatch.setattr(news, "build_epub", lambda *a, **kw: tmp_path / "edition.epub")
