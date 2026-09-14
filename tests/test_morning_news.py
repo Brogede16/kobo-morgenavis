@@ -571,13 +571,16 @@ def test_web_search_uses_short_leads_and_retry(monkeypatch):
     monkeypatch.setattr(morning_news, "ai_call_with_retry", search)
     feed_lead = {"title": "Betalingsmur om vigtig kulturpolitik", "url": "https://paywall.test/a",
                  "source": "Betalingskilde", "summary": "å" * 700}
-    morning_news.fetch_web_candidates(settings(), source_health={}, feed_signals=[feed_lead])
+    configured = settings()
+    configured["alternative_coverage"] = {"videnskab": ["quantamagazine.org", "videnskab.dk"]}
+    morning_news.fetch_web_candidates(configured, source_health={}, feed_signals=[feed_lead])
     assert captured["search"] is True
     assert "x" * 200 in captured["prompt"]
     assert "x" * 201 not in captured["prompt"]
     assert "Betalingsmur om vigtig kulturpolitik" in captured["prompt"]
     assert "å" * 200 in captured["prompt"]
     assert "å" * 201 not in captured["prompt"]
+    assert '"videnskab": ["quantamagazine.org", "videnskab.dk"]' in captured["prompt"]
 
 
 def test_local_cleanup_only_removes_old_generated_editions(tmp_path):

@@ -309,7 +309,10 @@ def fetch_web_candidates(settings, reader=None, source_health=None, feed_signals
               "exclude generic foreign accidents, death-toll updates, fires, crime, charity campaigns and "
               "institutional announcements unless they have a specific, well-explained Danish or European consequence. "
               'Respond with JSON only: {"articles":[{"url":"https://..."}]}. '
-              "Queries: " + json.dumps(queries, ensure_ascii=False) + " Leads: "
+              "Preferred readable domains by topic are hints, not quotas; use another credible open source when it "
+              "explains the lead better. Queries: " + json.dumps(queries, ensure_ascii=False)
+              + " Preferred domains: " + json.dumps(settings.get("alternative_coverage", {}), ensure_ascii=False)
+              + " Leads: "
               + json.dumps([{**signal, "preview": signal.get("preview", "")[:200]} for signal in signals],
                            ensure_ascii=False))
     found = []

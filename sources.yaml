@@ -60,6 +60,15 @@ web_search:
     - "animal cognition octopus crow raven whale elephant geoengineering Dyson sphere astronomical anomaly Denmark critical infrastructure bunker tunnel metro utilities"
     - "site:politiken.dk/politik OR site:information.dk Danmark politik reform lovforslag minister konflikt analyse OR site:kulturmonitor.dk kulturpolitik"
     - "site:altinget.dk dansk politik forlig lovforslag reform kommune region analyse OR site:zetland.dk dansk samfund politik"
+alternative_coverage:
+  # Preferred open destinations when a radar source identifies a strong story.
+  # These are hints for the existing bounded web-search call, not extra searches.
+  dansk_politik: [dr.dk, nyheder.tv2.dk, videnskab.dk, kosmopol.tv2reg.digital]
+  verden_og_sikkerhed: [theguardian.com, bbc.com, bbc.co.uk]
+  teknologi: [arstechnica.com, techcrunch.com, technologyreview.com, wired.com, theverge.com]
+  videnskab: [quantamagazine.org, videnskab.dk, theconversation.com, bbc.com]
+  kultur: [hyperallergic.com, museumnext.com, artsprofessional.co.uk, blooloop.com, ekkofilm.dk]
+  spil: [eurogamer.net, videogameschronicle.com]
 news_site_signals:
   # Headline-level editorial radar. These URLs are not copied into the EPUB.
   # The bounded OpenAI web search call seeks accessible reporting on the leads.
@@ -116,12 +125,42 @@ news_site_signals:
       url: https://www.zetland.dk/
       max_items: 8
       max_previews: 3
+    - name: TV 2 Kosmopol
+      url: https://kosmopol.tv2reg.digital/
+      role: radar
+      max_items: 8
+      max_previews: 3
+    - name: Magasinet KBH
+      url: https://www.magasinetkbh.dk/
+      role: radar
+      max_items: 8
+      max_previews: 3
+    - name: Arts Professional
+      url: https://www.artsprofessional.co.uk/
+      role: radar
+      max_items: 6
+      max_previews: 3
+    - name: The Verge
+      url: https://www.theverge.com/
+      role: radar
+      max_items: 8
+      max_previews: 3
+    - name: VGC
+      url: https://www.videogameschronicle.com/
+      role: radar
+      max_items: 6
+      max_previews: 2
 source_limits:
   MacRumors: 1
   TechCrunch: 2
   The Guardian Technology: 2
   Ars Technica: 2
   WIRED: 2
+  Quanta Magazine: 1
+  Videnskab.dk: 1
+  Hyperallergic: 1
+  MuseumNext: 1
+  Eurogamer: 1
 images:
   enabled: true
   max_per_edition: 4
@@ -196,5 +235,25 @@ sources:
     format: mixed
   - name: TechCrunch
     url: https://techcrunch.com/feed/
+    enabled: true
+    format: mixed
+  - name: Quanta Magazine
+    url: https://www.quantamagazine.org/feed/
+    enabled: true
+    format: longread
+  - name: Videnskab.dk
+    url: https://videnskab.dk/feed/
+    enabled: true
+    format: mixed
+  - name: Hyperallergic
+    url: https://hyperallergic.com/feed/
+    enabled: true
+    format: mixed
+  - name: MuseumNext
+    url: https://www.museumnext.com/feed/
+    enabled: true
+    format: longread
+  - name: Eurogamer
+    url: https://www.eurogamer.net/feed
     enabled: true
     format: mixed
