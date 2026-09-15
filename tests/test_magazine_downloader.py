@@ -43,6 +43,46 @@ def test_discover_issues_follows_the_official_issue_page(monkeypatch):
     }]
 
 
+def test_discover_issues_honours_a_page_base_and_one_official_download_page(monkeypatch):
+    class Response:
+        def __init__(self, url, content):
+            self.url, self.content = url, content
+
+        def raise_for_status(self):
+            pass
+
+    responses = iter([
+        Response("https://archive.example.test/issues/42", b'''<html>
+          <a href="/issues/42/download">Get the issue</a></html>'''),
+        Response("https://archive.example.test/issues/42/download", b'''<html>
+          <base href="https://archive.example.test/">
+          <a href="files/issue-42.pdf">Download PDF</a></html>'''),
+    ])
+    monkeypatch.setattr(magazines, "public_url", lambda url: url)
+    monkeypatch.setattr(magazines.requests, "get", lambda *args, **kwargs: next(responses))
+    archive = b'<html><a href="/issues/42">Issue 42</a></html>'
+    issues = magazines.discover_issues({
+        "issue_url_pattern": r"/issues/[0-9]+$",
+        "download_page_pattern": r"/issues/[0-9]+/download$",
+    }, "https://archive.example.test", archive, 6)
+    assert issues == [{
+        "url": "https://archive.example.test/files/issue-42.pdf",
+        "title": "Issue 42",
+    }]
+
+
+def test_sequential_issue_pages_backfills_from_the_newest_public_issue():
+    pages = magazines.sequential_issue_pages([
+        {"url": "https://journal.example.test/issues/165", "title": "165"},
+    ], 4)
+    assert [page["url"] for page in pages] == [
+        "https://journal.example.test/issues/165",
+        "https://journal.example.test/issues/164",
+        "https://journal.example.test/issues/163",
+        "https://journal.example.test/issues/162",
+    ]
+
+
 def test_sync_reports_reader_only_archives_without_downloading(monkeypatch):
     class Response:
         url = "https://archive.example.test/issues"

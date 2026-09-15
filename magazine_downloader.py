@@ -32,9 +32,11 @@ def slug(value):
 def public_pdf_links(archive_url, raw, keep):
     """Return the first direct PDF links in the archive's own order."""
     page = lxml_html.fromstring(raw)
+    bases = page.xpath("//base[@href]/@href")
+    link_base = urljoin(archive_url, bases[0]) if bases else archive_url
     seen, issues = set(), []
     for link in page.xpath("//a[@href]"):
-        href = canonical_url(urljoin(archive_url, link.get("href", "")))
+        href = canonical_url(urljoin(link_base, link.get("href", "")))
         if not href or href in seen:
             continue
         path = urlsplit(href).path.lower()
@@ -42,7 +44,7 @@ def public_pdf_links(archive_url, raw, keep):
         # Several journal platforms use a download endpoint without a .pdf
         # suffix. It is still safe: download_public_pdf verifies the PDF magic
         # bytes before anything is saved.
-        if not path.endswith(".pdf") and not re.search(r"\b(download\s+)?pdf\b", label, re.I):
+        if not path.endswith(".pdf") and not re.search(r"\bdownload\b.{0,24}\bpdf\b", label, re.I):
             continue
         seen.add(href)
         title = label
@@ -58,10 +60,12 @@ def public_pdf_links(archive_url, raw, keep):
 def issue_page_links(archive_url, raw, pattern, keep):
     """Find the newest issue pages when their PDFs live one official click in."""
     page = lxml_html.fromstring(raw)
+    bases = page.xpath("//base[@href]/@href")
+    link_base = urljoin(archive_url, bases[0]) if bases else archive_url
     seen, issues = set(), []
     expression = re.compile(pattern, re.I)
     for link in page.xpath("//a[@href]"):
-        href = canonical_url(urljoin(archive_url, link.get("href", "")))
+        href = canonical_url(urljoin(link_base, link.get("href", "")))
         if not href or href in seen or not expression.search(href):
             continue
         seen.add(href)
@@ -69,6 +73,23 @@ def issue_page_links(archive_url, raw, pattern, keep):
         issues.append({"url": href, "title": title[:180] or Path(urlsplit(href).path).name})
         if len(issues) >= keep:
             break
+    return issues
+
+
+def sequential_issue_pages(issues, keep):
+    """Backfill numeric issue URLs when an archive only renders the newest one."""
+    if not issues:
+        return issues
+    match = re.match(r"^(.*?/)([0-9]+)$", issues[0]["url"])
+    if not match:
+        return issues
+    prefix, newest = match.groups()
+    seen = {issue["url"] for issue in issues}
+    for number in range(int(newest) - 1, max(-1, int(newest) - keep), -1):
+        url = f"{prefix}{number}"
+        if url not in seen:
+            issues.append({"url": url, "title": str(number)})
+            seen.add(url)
     return issues
 
 
@@ -80,15 +101,32 @@ def discover_issues(source, archive_url, raw, keep):
     pattern = source.get("issue_url_pattern")
     if not pattern:
         return []
+    page_limit = max(keep, int(source.get("max_issue_pages", keep)))
+    issue_pages = issue_page_links(archive_url, raw, pattern, page_limit)
+    if source.get("sequential_issue_pages"):
+        issue_pages = sequential_issue_pages(issue_pages, page_limit)
     resolved = []
-    for issue in issue_page_links(archive_url, raw, pattern, keep):
+    for issue in issue_pages:
         response = requests.get(public_url(issue["url"]), timeout=(5, 25),
                                 headers={"User-Agent": "MadsMorgen/1.0"})
         response.raise_for_status()
         files = public_pdf_links(response.url, response.content, 1)
+        # A few open journal platforms expose an issue landing page first and
+        # place its one official PDF link on a second, dedicated download page.
+        # This remains deliberately bounded: one configured extra link only.
+        if not files and source.get("download_page_pattern"):
+            nested = issue_page_links(response.url, response.content,
+                                      source["download_page_pattern"], 1)
+            if nested:
+                download_page = requests.get(public_url(nested[0]["url"]), timeout=(5, 25),
+                                             headers={"User-Agent": "MadsMorgen/1.0"})
+                download_page.raise_for_status()
+                files = public_pdf_links(download_page.url, download_page.content, 1)
         if files:
             files[0]["title"] = issue["title"]
             resolved.append(files[0])
+            if len(resolved) >= keep:
+                break
     return resolved
 
 
