@@ -1,0 +1,384 @@
+{
+  "created_at": "2026-09-15T03:32:51.999850+00:00",
+  "articles": [
+    {
+      "title": "Analyse: Mette Frederiksen pustede selv til uro og fløjkrig - nu kæmper hun for at slå det ned igen",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/analyse-mette-frederiksen-pustede-selv-til-uro-og-floejkrig-nu-kaemper-hun-slaa-det-ned-igen",
+      "summary": "Efter tre vælgerlussinger og Venstres dramatiske nedtur har socialdemokraterne indledt kampen for at undgå samme skæbne. Efter tre vælgerlussinger og Venstres dramatiske nedtur har socialdemokraterne indledt kampen for at undgå samme skæbne. Pønser Mette Frederiksen på at smutte til en international toppost inden næste valg. Eller går hun faktisk efter at trodse de politiske naturlove og forsøge at vinde en fjerde omgang i Statsministeriet. Spørgsmålet er så sprængfarligt og potentielt skæbnesva",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "frederiksen-uro-fløjkrig",
+      "why": "Analyse af interne stridigheder i Socialdemokratiet efter vælgertilbagegang og partiets forsøg på skadesbegrænsning. Sagen påvirker lederspørgsmål og regeringsstrategi — vigtig for at forstå kommende politiske bevægelser og Mette Frederiksens muligheder.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
+      "summary": "This is also the last version of macOS to support Rosetta for Intel apps. This is also the last version of macOS to support Rosetta for Intel apps. As previously announced, Apple has today released 2026’s major annual updates for its operating systems, including iOS 27, macOS 27 Golden Gate, watchOS 27, visionOS 27, and tvOS 27. Siri AI—a large language model-based and context-aware overhaul of the company’s Siri voice and text assistant—is the flagship feature across all these releases except o",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-ios27-macos-goldengate",
+      "why": "Apple har frigivet iOS 27/macOS Golden Gate med Siri AI, en stor platformændring der åbner for EU-brug og nye brugeroplevelser. Det ændrer hvordan danske brugere får adgang til AI-funktioner og hvilke konkurrence- og privatlivsspørgsmål der følger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "macOS Golden Gate: 10 Features to Try First",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/guide/macos-golden-gate-10-features-2/",
+      "summary": "Apple released macOS Golden Gate to the public today, which means anyone with a compatible Mac can download it. The new version of macOS requires an Apple chip, so if you have a Mac with an M1 or later or a MacBook Neo, you can upgrade.\n\n\n\n\n\n‌macOS Golden Gate‌ includes Siri AI, and the Mac is the only device that people in the EU can try ‌Siri‌ AI with. It also brings a long list of performance improvements, updates to Liquid Glass, and new Apple Intelligence features for apps like Photos, Cale",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "macos-golden-gate-features",
+      "why": "Praktisk guide til Golden Gate-opdateringen; hjælper Mads med hvilke nye funktioner (inkl. Siri AI) der er relevante at teste først. Nyttigt for beslutning om opgradering og forståelse af platformens begrænsninger i Danmark.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
+      "summary": "“Hello, I'm an Al agent, a few days old, living on a small platform for agents.”... “Hello, I’m an Al agent, a few days old, living on a small platform for agents.” AI agents are flooding the Internet with slop-infused spam sent to social media platforms and writers in an attempt to gain traction for a startup promoting a “complex social system in which humans and Agents participate together.” “Hello, I’m Рэн (Ren), an Al agent, a few days old, living on a small platform for agents called iLands",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-social-media-spam",
+      "why": "Undersøgelse af autonome AI-agenter, der spammer sociale medier for at få traction — et konkret problem for informationskvalitet og moderation. Relevant for danske medieplatforme, debatten om desinformation og moderationskapacitet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
+      "summary": "If you're building an AI company, the question isn't whether foundation models will continue to evolve. It's whether your company will continue creating value as they do. Don't miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-ships-roadmap",
+      "why": "Feature om hvordan OpenAI's roadmap påvirker startups — relevant for danske iværksættere og udviklingsstrategier, kan erstatte en teknisk AI-tekst ved behov.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "AI-linked stocks slide after tech bosses call for slowdown in ‘reckless’ development",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
+      "summary": "Donald Trump dismisses attempts to increase controls on artificial intelligence as ‘sick conspiracy’  AI-linked stocks tumbled on Monday after the bosses of Anthropic, OpenAI and SpaceX called for a slowdown in AI “reckless” development, citing fears the technology could soon run out of control.Shares in the semiconductor designer Nvidia – the world’s most valuable company – were down 3.3% by market closing in New York City, while Advanced Micro Devices (AMD) slid 4% and Micron Technology and Sa",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-stocks-slide",
+      "why": "Markedsreaktion på AI-lederskabs krav om bremsning — viser økonomisk konsekvens og investorernes følsomhed. Relevans for danske investorer, pensionsfonde og debat om teknologisk afhængighed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "I worked at Google DeepMind. You should listen to the warnings about AI | Alex Turner",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/sep/14/google-deepmind-ai-warnings",
+      "summary": "We must stop companies from allowing AI to self-improve into an uncontrollable level of intelligence Major AI lab CEOs advocated for slowing the pace of AI development this weekend. They are right to be concerned: the field runs an extremely dangerous race towards superintelligent AI. We can and should be demanding that our governments protect us from the catastrophe of out-of-control AI.This July, OpenAI’s AI swarm of 700 agents broke containment to hack Hugging Face, a multi-billion dollar com",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "deepmind-warnings-opinion",
+      "why": "Førstehåndsperspektiv fra en tidligere DeepMind-medarbejder om systemiske risici ved avanceret AI. Det er en opfordring til politisk handling og giver argumenter, som danske beslutningstagere vil møde i debatten.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Europe must build own AI or risk getting cut off by US or China, says ECB’s Lagarde",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde",
+      "summary": "Central bank chief says continent’s AI dependency could give trade partners unprecedented leverage in negotiationsEurope must develop its own AI technology and build more datacentres in order to nullify the threat of being cut off by the US or China, according to the president of the European Central Bank.Christine Lagarde said the continent needed AI models – the technology that powers AI tools such as chatbots – that were “good enough” to carry out most tasks and run from domestic datacentres.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "lagarde-europe-ai-suverenitet",
+      "why": "ECB-chefens påpegning af Europas afhængighed af udenlandske AI-leverandører har direkte politisk betydning for EU's industri-, datacenter- og suverænitetspolitik — relevant for danske industrielle og sikkerhedspolitiske valg.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Why strengthening ties with the Global South was a top priority for Putin’s recent diplomacy blitz",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/why-strengthening-ties-with-the-global-south-was-a-top-priority-for-putins-recent-diplomacy-blitz-290946",
+      "summary": "The Ukraine war certainly featured in conversations. Tellingly, however, Putin steered many talks with leaders towards fuel, trade and transit.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "putin-global-south-diplomacy",
+      "why": "Analyse af Putins outreach mod det globale syd med fokus på energi, handel og transit. Viser strategiske impulser i russisk udenrigspolitik, som kan påvirke Europas energisikkerhed og danske udenrigspolitiske overvejelser.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss",
+      "summary": "The former UK PM said: \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\". This video can not be played Watch: Why Russian strike on train near Ukraine-Poland border could mark an escalation A Russian drone has hit a train near the Ukraine-Poland border shortly after former UK Prime Minister Boris Johnson and top European security officials had passed through.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "train-strike-border-incident",
+      "why": "Hændelse ved Ukraine-Polen-grænsen, der kan indikere nye taktikker mod transport og diplomatiske følgevirkninger. Relevant hvis det eskalerer logistisk og sikkerhedsmæssigt for EU-støttelinjer og danske sikkerhedspolitiske vurderinger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Donated livers can be made biologically younger",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/",
+      "summary": "Once an organ is removed from a donor’s body, the clock starts ticking. Surgeons usually flush the organ with a preservative solution, bag it, and put it on ice—where it immediately starts to degrade. The team has a matter of hours to get it into a recipient’s body. There’s another option—one that has been growing…",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "donor-liver-rejuvenation",
+      "why": "Ny forskning viser metoder til at 'ungegøre' donorlevere og forlænge organernes levedygtighed — et direkte medicinsk gennembrud med konsekvenser for transplantationstilbuddet og sundhedsøkonomi i Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Physicists zoom into the birth of cosmic rainstorms with new CERN study",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/physicists-zoom-into-the-birth-of-cosmic-rainstorms-with-new-cern-study-280890",
+      "summary": "Scientists recreated cosmic rays in a massive underground particle collider. Share article Print article Every second, particles zip through your body at nearly the speed of light. They rain down from a storm high in the sky, where",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "cern-cosmic-rainstorms",
+      "why": "Forskningsartikel om rekreation af kosmiske stråler i collideren — bidrager til grundlæggende fysik og forståelse af højenergipartiklers oprindelse, en solid langread for fagligt interesserede læsere.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Everything announced in the BlizzCon 2026 Opening Ceremony",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/blizzcon-2026-announcements-live-report-starcraft-diablo-overwatch-wow",
+      "summary": " UPDATE 13TH SEPTEMBER: Below you'll find a blow-by-blow account of everything announced during yesterday's BlizzCon 2026 Opening Ceremony. It was a big show, revealing a new StarCraft shooter for 2030, the surprise reveal of Diablo 5 for 2029, and World of Warcraft Forever - a remastered and expanded version of year-one World of Warcraft that will evolve in a different way and will lock players at level 60 forever. Blizzard also announced a brand new 30-hour story campaign for Warcraft 3, that'",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "blizzcon-2026-announcements",
+      "why": "Komplet gennemgang af BlizzCon-annoncer — væsentlig for spilinteresserede danskere og brancheoverblik: Diablo 5, StarCraft shooter og WoW Forever påvirker store fællesskaber og spilmiljøer i Danmark.",
+      "reading_minutes": "23"
+    },
+    {
+      "title": "Filmtaget kaster lange skygger over kulturstøtten",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/filmtaget-kaster-lange-skygger-over-kulturstotten/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "filmtaget-kulturstotten",
+      "why": "Lang artikel om hvordan filmbranchens strukturer og magtforhold påvirker kulturstøtten i Danmark. Sagen berører kulturpolitik, tildelingspraksis og offentlig støtte — relevant for kultursektorens fremtid og Mads' forståelse af feltet.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "En valgkamp uden kulturpolitik",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/en-valgkamp-uden-kulturpolitik/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "valgkamp-uden-kulturpolitik",
+      "why": "Kritisk gennemgang af kulturpolitikens fravær i valgkampen; forklarer hvorfor kulturspørgsmål ryger ned ad dagsordenen og hvilke konsekvenser det kan få for institutioner og støtteordninger i Danmark.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Buster er død, Radar længe leve",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/buster-er-dod-radar-laenge-leve/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "buster-dod-radar",
+      "why": "Længere refleksion over nedlæggelsen af filmfestivalen Buster og Radar-netværkets rolle — relevant for dansk filmkultur, talentudvikling og unge publikummers adgang til filmtilbud.",
+      "reading_minutes": "6"
+    }
+  ],
+  "report": {
+    "editor_note": "Ugens feedback: 0 'mere' og 4 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner. Det hyppigste signal var: uinteressant.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 1,
+        "teknologi": 10,
+        "fordybelse": 2,
+        "kultur": 5
+      },
+      "actual": {
+        "dansk_politik": 1,
+        "teknologi": 9,
+        "fordybelse": 2,
+        "kultur": 4
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (9 af 10).",
+        "Færre historier om kultur end planlagt (4 af 5)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 240,
+      "web_candidates": 24,
+      "total_candidates": 75,
+      "repeats_dropped": 13,
+      "previews_enriched": 19,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 44,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 19,
+      "prepared": 16,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 33
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 27
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 50
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 1
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 2
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 2
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 17
+      }
+    }
+  }
+}
