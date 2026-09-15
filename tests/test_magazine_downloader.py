@@ -95,6 +95,35 @@ def test_sequential_issue_pages_backfills_from_the_newest_public_issue():
     ]
 
 
+def test_reader_download_issues_keeps_stable_issue_url_and_uses_official_action():
+    issues = magazines.reader_download_issues({
+        "issue_urls": ["https://reader.example.test/2026/september/?page=1"],
+        "download_post_path": "GetPDF.ashx",
+    }, 6)
+    assert issues == [{
+        "url": "https://reader.example.test/2026/september/?page=1",
+        "title": "september",
+        "download_post_url": "https://reader.example.test/2026/september/GetPDF.ashx",
+    }]
+
+
+def test_download_reader_pdf_uses_the_public_redirect(monkeypatch):
+    class Response:
+        is_redirect = True
+        headers = {"Location": "https://cdn.example.test/fresh-signed.pdf"}
+
+        def raise_for_status(self):
+            raise AssertionError("a redirect is expected")
+
+    monkeypatch.setattr(magazines, "public_url", lambda url: url)
+    monkeypatch.setattr(magazines.requests, "post", lambda *args, **kwargs: Response())
+    monkeypatch.setattr(magazines, "download_public_pdf",
+                        lambda url, maximum: (b"%PDF-test", url))
+    content, url = magazines.download_reader_pdf("https://reader.example.test/GetPDF.ashx", 123)
+    assert content == b"%PDF-test"
+    assert url == "https://cdn.example.test/fresh-signed.pdf"
+
+
 def test_sync_reports_reader_only_archives_without_downloading(monkeypatch):
     class Response:
         url = "https://archive.example.test/issues"

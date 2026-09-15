@@ -139,6 +139,33 @@ def discover_issues(source, archive_url, raw, keep):
     return resolved
 
 
+def configured_issue_pages(source, keep):
+    """Use an explicitly configured official reader page, newest first.
+
+    Some publishers' archives lag behind their reader.  A configured page lets
+    us use the publisher's own download action without scanning an old archive.
+    The stable reader URL is kept as the issue origin; the short-lived download
+    URL is never used for deduplication.
+    """
+    issues = []
+    for url in source.get("issue_urls", [])[:keep]:
+        url = canonical_url(url)
+        if url:
+            issues.append({"url": url, "title": Path(urlsplit(url).path).name})
+    return issues
+
+
+def reader_download_issues(source, keep):
+    """Build the official reader download action for configured issue pages."""
+    issues = configured_issue_pages(source, keep)
+    action = source.get("download_post_path")
+    if not action:
+        return issues
+    for issue in issues:
+        issue["download_post_url"] = canonical_url(urljoin(issue["url"].rstrip("/") + "/", action))
+    return issues
+
+
 def download_public_pdf(url, maximum_bytes):
     """Download only a real PDF from a public endpoint, with a hard size cap."""
     current = canonical_url(url)
@@ -159,6 +186,20 @@ def download_public_pdf(url, maximum_bytes):
                 raise ValueError("Archive link was not a PDF")
             return bytes(content), current
     raise ValueError("Too many redirects")
+
+
+def download_reader_pdf(post_url, maximum_bytes):
+    """Use a publisher's own public reader download action, then fetch its PDF."""
+    response = requests.post(public_url(post_url), data={"pageNumbers": ""},
+                             timeout=(5, 25), allow_redirects=False,
+                             headers={"User-Agent": "MadsMorgen/1.0 (personal magazine archive)"})
+    if not response.is_redirect:
+        response.raise_for_status()
+        raise ValueError("Reader did not provide a PDF download redirect")
+    target = response.headers.get("Location", "")
+    if not target:
+        raise ValueError("Reader download redirect had no target")
+    return download_public_pdf(urljoin(post_url, target), maximum_bytes)
 
 
 def managed_files(drive, folder_id, source_key):
@@ -210,10 +251,13 @@ def sync_magazines(config, drive=None):
         name, source_key = source["name"], slug(source["name"])
         item = {"name": name, "status": "ok", "found": 0, "uploaded": 0}
         try:
-            archive = public_url(source["archive_url"])
-            response = requests.get(archive, timeout=(5, 25), headers={"User-Agent": "MadsMorgen/1.0"})
-            response.raise_for_status()
-            issues = discover_issues(source, response.url, response.content, keep)
+            if source.get("issue_urls"):
+                issues = reader_download_issues(source, keep)
+            else:
+                archive = public_url(source["archive_url"])
+                response = requests.get(archive, timeout=(5, 25), headers={"User-Agent": "MadsMorgen/1.0"})
+                response.raise_for_status()
+                issues = discover_issues(source, response.url, response.content, keep)
             item["found"] = len(issues)
             if not issues:
                 item["status"] = "no_public_pdf"
@@ -225,7 +269,10 @@ def sync_magazines(config, drive=None):
             for issue in issues:
                 if canonical_url(issue["url"]) in by_origin:
                     continue
-                content, final_url = download_public_pdf(issue["url"], maximum_bytes)
+                if issue.get("download_post_url"):
+                    content, final_url = download_reader_pdf(issue["download_post_url"], maximum_bytes)
+                else:
+                    content, final_url = download_public_pdf(issue["url"], maximum_bytes)
                 store_issue(drive, folder_id, source, issue, content, final_url)
                 item["uploaded"] += 1
                 report["uploaded"] += 1

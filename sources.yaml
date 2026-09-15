@@ -288,7 +288,13 @@ magazines:
       pdf_url_pattern: ^https://tidsskrift\.dk/periskop/issue/download/
     - name: DSB Ud & Se
       archive_url: https://www.dsb.dk/om-dsb/ud--se/
-      enabled: false # iPaper has no stable public PDF URL; never take other DSB PDFs
+      # iPaper issues publish a fresh signed PDF URL via this official action.
+      # Keep only the current issue here: it prevents an initial scan from
+      # importing DSB's older archive.  Add a new official iPaper URL above
+      # this one when the next issue appears.
+      issue_urls:
+        - https://ipaper.ipapercms.dk/DSB/udogse/2026/ud-se-september/?page=1
+      download_post_path: GetPDF.ashx
     - name: J26 Journal
       archive_url: https://j26journal.com/issues
       issue_url_pattern: /issue-[0-9]+$
