@@ -13,6 +13,36 @@ def test_public_pdf_links_keeps_direct_files_in_archive_order():
     assert issues[1]["url"] == "https://archive.example.test/older.pdf"
 
 
+def test_public_pdf_links_accepts_a_public_download_endpoint_without_pdf_suffix():
+    raw = b'<html><a href="/download/issue-65">Download PDF</a></html>'
+    issues = magazines.public_pdf_links("https://archive.example.test/issues", raw, 1)
+    assert issues == [{"url": "https://archive.example.test/download/issue-65", "title": "Download PDF"}]
+
+
+def test_discover_issues_follows_the_official_issue_page(monkeypatch):
+    class Response:
+        def __init__(self, url, content):
+            self.url, self.content = url, content
+
+        def raise_for_status(self):
+            pass
+
+    responses = iter([Response(
+        "https://archive.example.test/issues/2026-09",
+        b'<html><a href="/download/2026-09">Download PDF</a></html>',
+    )])
+    monkeypatch.setattr(magazines, "public_url", lambda url: url)
+    monkeypatch.setattr(magazines.requests, "get", lambda *args, **kwargs: next(responses))
+    archive = b'<html><a href="/issues/2026-09">September 2026</a></html>'
+    issues = magazines.discover_issues(
+        {"issue_url_pattern": r"/issues/"}, "https://archive.example.test", archive, 6,
+    )
+    assert issues == [{
+        "url": "https://archive.example.test/download/2026-09",
+        "title": "September 2026",
+    }]
+
+
 def test_sync_reports_reader_only_archives_without_downloading(monkeypatch):
     class Response:
         url = "https://archive.example.test/issues"

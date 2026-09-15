@@ -281,13 +281,18 @@ magazines:
       archive_url: https://prosabladet.dk/magasinarkiv
     - name: Periskop
       archive_url: https://tidsskrift.dk/periskop/issue/archive
+      issue_url_pattern: /periskop/issue/view/
     - name: DSB Ud & Se
       archive_url: https://www.dsb.dk/om-dsb/ud--se/
     - name: J26 Journal
       archive_url: https://j26journal.com/issues
+      issue_url_pattern: /issues?/
     - name: KALTBLUT
       archive_url: https://www.kaltblut-magazine.com/category/issues/
+      issue_url_pattern: /issue-[0-9]
     - name: On-Curating
       archive_url: https://on-curating.org/issues.html
+      issue_url_pattern: /issues/issue-[0-9]+\.html$
     - name: e-flux Journal
       archive_url: https://www.e-flux.com/journal
+      issue_url_pattern: /journal/[0-9]+$

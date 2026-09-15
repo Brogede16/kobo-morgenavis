@@ -38,10 +38,14 @@ def public_pdf_links(archive_url, raw, keep):
         if not href or href in seen:
             continue
         path = urlsplit(href).path.lower()
-        if not path.endswith(".pdf"):
+        label = " ".join(link.text_content().split())
+        # Several journal platforms use a download endpoint without a .pdf
+        # suffix. It is still safe: download_public_pdf verifies the PDF magic
+        # bytes before anything is saved.
+        if not path.endswith(".pdf") and not re.search(r"\b(download\s+)?pdf\b", label, re.I):
             continue
         seen.add(href)
-        title = " ".join(link.text_content().split())
+        title = label
         # An image-only link often has the useful issue label one level up.
         if not title and link.getparent() is not None:
             title = " ".join(link.getparent().text_content().split())
@@ -49,6 +53,43 @@ def public_pdf_links(archive_url, raw, keep):
         if len(issues) >= keep:
             break
     return issues
+
+
+def issue_page_links(archive_url, raw, pattern, keep):
+    """Find the newest issue pages when their PDFs live one official click in."""
+    page = lxml_html.fromstring(raw)
+    seen, issues = set(), []
+    expression = re.compile(pattern, re.I)
+    for link in page.xpath("//a[@href]"):
+        href = canonical_url(urljoin(archive_url, link.get("href", "")))
+        if not href or href in seen or not expression.search(href):
+            continue
+        seen.add(href)
+        title = " ".join(link.text_content().split())
+        issues.append({"url": href, "title": title[:180] or Path(urlsplit(href).path).name})
+        if len(issues) >= keep:
+            break
+    return issues
+
+
+def discover_issues(source, archive_url, raw, keep):
+    """Use direct archive PDFs first, then follow only configured official issue pages."""
+    direct = public_pdf_links(archive_url, raw, keep)
+    if direct:
+        return direct
+    pattern = source.get("issue_url_pattern")
+    if not pattern:
+        return []
+    resolved = []
+    for issue in issue_page_links(archive_url, raw, pattern, keep):
+        response = requests.get(public_url(issue["url"]), timeout=(5, 25),
+                                headers={"User-Agent": "MadsMorgen/1.0"})
+        response.raise_for_status()
+        files = public_pdf_links(response.url, response.content, 1)
+        if files:
+            files[0]["title"] = issue["title"]
+            resolved.append(files[0])
+    return resolved
 
 
 def download_public_pdf(url, maximum_bytes):
@@ -125,7 +166,7 @@ def sync_magazines(config, drive=None):
             archive = public_url(source["archive_url"])
             response = requests.get(archive, timeout=(5, 25), headers={"User-Agent": "MadsMorgen/1.0"})
             response.raise_for_status()
-            issues = public_pdf_links(response.url, response.content, keep)
+            issues = discover_issues(source, response.url, response.content, keep)
             item["found"] = len(issues)
             if not issues:
                 item["status"] = "no_public_pdf"
