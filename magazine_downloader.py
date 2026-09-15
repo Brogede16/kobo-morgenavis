@@ -8,6 +8,7 @@ import logging
 import os
 import re
 import tempfile
+from datetime import date
 from pathlib import Path
 from urllib.parse import unquote, urljoin, urlsplit
 
@@ -21,6 +22,8 @@ from news_io import canonical_url, public_url
 logger = logging.getLogger(__name__)
 PDF_MIME = "application/pdf"
 GENERATOR = "mads-morgen-magazine"
+MONTH_SLUGS_DA = ("januar", "februar", "marts", "april", "maj", "juni",
+                  "juli", "august", "september", "oktober", "november", "december")
 
 
 def slug(value):
@@ -139,7 +142,7 @@ def discover_issues(source, archive_url, raw, keep):
     return resolved
 
 
-def configured_issue_pages(source, keep):
+def configured_issue_pages(source, keep, today=None):
     """Use an explicitly configured official reader page, newest first.
 
     Some publishers' archives lag behind their reader.  A configured page lets
@@ -147,11 +150,20 @@ def configured_issue_pages(source, keep):
     The stable reader URL is kept as the issue origin; the short-lived download
     URL is never used for deduplication.
     """
-    issues = []
-    for url in source.get("issue_urls", [])[:keep]:
+    today = today or date.today()
+    urls = []
+    template = source.get("current_issue_url_template")
+    if template:
+        urls.append(template.format(year=today.year, month=MONTH_SLUGS_DA[today.month - 1]))
+    urls.extend(source.get("issue_urls", []))
+    issues, seen = [], set()
+    for url in urls:
         url = canonical_url(url)
-        if url:
+        if url and url not in seen:
             issues.append({"url": url, "title": Path(urlsplit(url).path).name})
+            seen.add(url)
+        if len(issues) >= keep:
+            break
     return issues
 
 
@@ -164,6 +176,15 @@ def reader_download_issues(source, keep):
     for issue in issues:
         issue["download_post_url"] = canonical_url(urljoin(issue["url"].rstrip("/") + "/", action))
     return issues
+
+
+def stale_files(existing, desired, uploads, keep, retain_existing):
+    """Return only app-owned files that should be removed from this title."""
+    if not retain_existing:
+        return [file for file in existing
+                if file.get("appProperties", {}).get("origin") not in desired]
+    excess = max(0, len(existing) + uploads - keep)
+    return sorted(existing, key=lambda file: file.get("createdTime", ""))[:excess]
 
 
 def download_public_pdf(url, maximum_bytes):
@@ -243,7 +264,7 @@ def sync_magazines(config, drive=None):
         raise RuntimeError("GOOGLE_DRIVE_FOLDER_ID mangler")
     drive = drive or drive_service()
     keep = max(1, int(config.get("keep_per_title", 6)))
-    maximum_bytes = max(1_000_000, int(config.get("max_pdf_bytes", 120_000_000)))
+    default_maximum_bytes = max(1_000_000, int(config.get("max_pdf_bytes", 120_000_000)))
     report = {"enabled": True, "sources": [], "uploaded": 0}
     for source in config.get("sources", []):
         if not source.get("enabled", True):
@@ -251,6 +272,7 @@ def sync_magazines(config, drive=None):
         name, source_key = source["name"], slug(source["name"])
         item = {"name": name, "status": "ok", "found": 0, "uploaded": 0}
         try:
+            maximum_bytes = max(1_000_000, int(source.get("max_pdf_bytes", default_maximum_bytes)))
             if source.get("issue_urls"):
                 issues = reader_download_issues(source, keep)
             else:
@@ -264,6 +286,14 @@ def sync_magazines(config, drive=None):
                 report["sources"].append(item)
                 continue
             existing = managed_files(drive, folder_id, source_key)
+            origin_pattern = source.get("origin_url_pattern")
+            if origin_pattern:
+                approved = re.compile(origin_pattern, re.I)
+                invalid = [file for file in existing
+                           if not approved.search(file.get("appProperties", {}).get("origin", ""))]
+                for file in invalid:
+                    drive.files().update(fileId=file["id"], body={"trashed": True}).execute()
+                existing = [file for file in existing if file not in invalid]
             by_origin = {file.get("appProperties", {}).get("origin"): file for file in existing}
             desired = {canonical_url(issue["url"]) for issue in issues}
             for issue in issues:
@@ -276,11 +306,11 @@ def sync_magazines(config, drive=None):
                 store_issue(drive, folder_id, source, issue, content, final_url)
                 item["uploaded"] += 1
                 report["uploaded"] += 1
-            # Never touch unrelated Drive files.  Only app-owned PDFs that are
-            # no longer among this archive's newest public issues are trashed.
-            for file in existing:
-                if file.get("appProperties", {}).get("origin") not in desired:
-                    drive.files().update(fileId=file["id"], body={"trashed": True}).execute()
+            # Never touch unrelated Drive files. A progressive collection keeps
+            # prior app-owned issues and only removes its oldest item at the cap.
+            for file in stale_files(existing, desired, item["uploaded"], keep,
+                                    source.get("retain_existing", False)):
+                drive.files().update(fileId=file["id"], body={"trashed": True}).execute()
             item["kept"] = len(issues)
         except (requests.RequestException, ValueError, OSError) as exc:
             item["status"] = "error"

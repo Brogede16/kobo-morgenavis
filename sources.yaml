@@ -289,12 +289,16 @@ magazines:
     - name: DSB Ud & Se
       archive_url: https://www.dsb.dk/om-dsb/ud--se/
       # iPaper issues publish a fresh signed PDF URL via this official action.
-      # Keep only the current issue here: it prevents an initial scan from
-      # importing DSB's older archive.  Add a new official iPaper URL above
-      # this one when the next issue appears.
+      # The current-month pattern is checked first every day. It never scans
+      # DSB's historic archive; old issues accumulate only after a new issue
+      # has genuinely appeared. The known September URL is a safe fallback.
+      current_issue_url_template: https://ipaper.ipapercms.dk/DSB/udogse/{year}/ud-se-{month}/?page=1
       issue_urls:
         - https://ipaper.ipapercms.dk/DSB/udogse/2026/ud-se-september/?page=1
       download_post_path: GetPDF.ashx
+      origin_url_pattern: ^https://ipaper\.ipapercms\.dk/DSB/udogse/
+      retain_existing: true
+      max_pdf_bytes: 350000000
     - name: J26 Journal
       archive_url: https://j26journal.com/issues
       issue_url_pattern: /issue-[0-9]+$

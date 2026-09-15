@@ -1,4 +1,5 @@
 import magazine_downloader as magazines
+from datetime import date
 
 
 def test_public_pdf_links_keeps_direct_files_in_archive_order():
@@ -122,6 +123,26 @@ def test_download_reader_pdf_uses_the_public_redirect(monkeypatch):
     content, url = magazines.download_reader_pdf("https://reader.example.test/GetPDF.ashx", 123)
     assert content == b"%PDF-test"
     assert url == "https://cdn.example.test/fresh-signed.pdf"
+
+
+def test_configured_issue_pages_checks_current_month_before_its_safe_fallback():
+    issues = magazines.configured_issue_pages({
+        "current_issue_url_template": "https://reader.example.test/{year}/{month}/?page=1",
+        "issue_urls": ["https://reader.example.test/2026/september/?page=1"],
+    }, 6, today=date(2026, 10, 1))
+    assert [issue["url"] for issue in issues] == [
+        "https://reader.example.test/2026/oktober/?page=1",
+        "https://reader.example.test/2026/september/?page=1",
+    ]
+
+
+def test_stale_files_keeps_a_progressive_collection_until_it_reaches_its_cap():
+    existing = [
+        {"id": "old", "createdTime": "2026-01-01T00:00:00Z", "appProperties": {"origin": "old"}},
+        {"id": "recent", "createdTime": "2026-02-01T00:00:00Z", "appProperties": {"origin": "recent"}},
+    ]
+    assert magazines.stale_files(existing, {"new"}, 1, 3, True) == []
+    assert magazines.stale_files(existing, {"new"}, 2, 3, True) == [existing[0]]
 
 
 def test_sync_reports_reader_only_archives_without_downloading(monkeypatch):
