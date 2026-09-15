@@ -29,15 +29,23 @@ def slug(value):
     return text[:70] or "magasin"
 
 
-def public_pdf_links(archive_url, raw, keep):
-    """Return the first direct PDF links in the archive's own order."""
+def public_pdf_links(archive_url, raw, keep, url_pattern=None):
+    """Return approved direct PDF links in the archive's own order.
+
+    ``url_pattern`` is intentionally source-specific.  A publisher's general
+    website can contain unrelated PDFs (job adverts, press kits or forms),
+    which must never be mistaken for a magazine issue.
+    """
     page = lxml_html.fromstring(raw)
     bases = page.xpath("//base[@href]/@href")
     link_base = urljoin(archive_url, bases[0]) if bases else archive_url
+    allowed = re.compile(url_pattern, re.I) if url_pattern else None
     seen, issues = set(), []
     for link in page.xpath("//a[@href]"):
         href = canonical_url(urljoin(link_base, link.get("href", "")))
         if not href or href in seen:
+            continue
+        if allowed and not allowed.search(href):
             continue
         path = urlsplit(href).path.lower()
         label = " ".join(link.text_content().split())
@@ -95,7 +103,8 @@ def sequential_issue_pages(issues, keep):
 
 def discover_issues(source, archive_url, raw, keep):
     """Use direct archive PDFs first, then follow only configured official issue pages."""
-    direct = public_pdf_links(archive_url, raw, keep)
+    allowed_urls = source.get("pdf_url_pattern")
+    direct = public_pdf_links(archive_url, raw, keep, allowed_urls)
     if direct:
         return direct
     pattern = source.get("issue_url_pattern")
@@ -110,7 +119,7 @@ def discover_issues(source, archive_url, raw, keep):
         response = requests.get(public_url(issue["url"]), timeout=(5, 25),
                                 headers={"User-Agent": "MadsMorgen/1.0"})
         response.raise_for_status()
-        files = public_pdf_links(response.url, response.content, 1)
+        files = public_pdf_links(response.url, response.content, 1, allowed_urls)
         # A few open journal platforms expose an issue landing page first and
         # place its one official PDF link on a second, dedicated download page.
         # This remains deliberately bounded: one configured extra link only.
@@ -121,7 +130,7 @@ def discover_issues(source, archive_url, raw, keep):
                 download_page = requests.get(public_url(nested[0]["url"]), timeout=(5, 25),
                                              headers={"User-Agent": "MadsMorgen/1.0"})
                 download_page.raise_for_status()
-                files = public_pdf_links(download_page.url, download_page.content, 1)
+                files = public_pdf_links(download_page.url, download_page.content, 1, allowed_urls)
         if files:
             files[0]["title"] = issue["title"]
             resolved.append(files[0])

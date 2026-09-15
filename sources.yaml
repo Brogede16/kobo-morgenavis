@@ -277,25 +277,33 @@ magazines:
   sources:
     - name: Magasinet MUSEUM
       archive_url: https://www.magasinetmuseum.dk/arkiv/
+      pdf_url_pattern: ^https://www\.magasinetmuseum\.dk/wp-content/uploads/.+\.pdf$
     - name: PROSAbladet
       archive_url: https://prosabladet.dk/magasinarkiv
+      pdf_url_pattern: ^https://prosabladet\.dk/fileadmin/user_upload/.+\.pdf$
     - name: Periskop
       archive_url: https://tidsskrift.dk/periskop/issue/archive
       issue_url_pattern: /periskop/issue/view/
       download_page_pattern: /periskop/issue/view/[0-9]+/[0-9]+$
+      pdf_url_pattern: ^https://tidsskrift\.dk/periskop/issue/download/
     - name: DSB Ud & Se
       archive_url: https://www.dsb.dk/om-dsb/ud--se/
+      enabled: false # iPaper has no stable public PDF URL; never take other DSB PDFs
     - name: J26 Journal
       archive_url: https://j26journal.com/issues
       issue_url_pattern: /issue-[0-9]+$
+      enabled: false # download requires an email gate
     - name: KALTBLUT
       archive_url: https://www.kaltblut-magazine.com/category/issues/
       issue_url_pattern: /issue-[0-9]
+      enabled: false # current issues expose no public PDF
     - name: On-Curating
       archive_url: https://on-curating.org/issues.html
       issue_url_pattern: /issues/issue-[0-9]+\.html$
+      pdf_url_pattern: ^https://on-curating\.org/files/oc/dateiverwaltung/.+\.pdf$
     - name: e-flux Journal
       archive_url: https://www.e-flux.com/journal
       issue_url_pattern: /journal/[0-9]+$
+      pdf_url_pattern: ^https://images-eflux\.b-cdn\.net/assets/
       sequential_issue_pages: true
       max_issue_pages: 10

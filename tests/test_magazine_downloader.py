@@ -19,6 +19,18 @@ def test_public_pdf_links_accepts_a_public_download_endpoint_without_pdf_suffix(
     assert issues == [{"url": "https://archive.example.test/download/issue-65", "title": "Download PDF"}]
 
 
+def test_public_pdf_links_respects_the_source_specific_allowlist():
+    raw = b'''<html>
+      <a href="/jobs/branding.pdf">Job advert</a>
+      <a href="/issues/autumn.pdf">Magazine</a>
+    </html>'''
+    issues = magazines.public_pdf_links(
+        "https://publisher.example.test", raw, 6,
+        r"^https://publisher\.example\.test/issues/.+\.pdf$",
+    )
+    assert issues == [{"url": "https://publisher.example.test/issues/autumn.pdf", "title": "Magazine"}]
+
+
 def test_discover_issues_follows_the_official_issue_page(monkeypatch):
     class Response:
         def __init__(self, url, content):
