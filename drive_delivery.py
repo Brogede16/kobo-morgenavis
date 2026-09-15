@@ -23,10 +23,10 @@ def quote(value):
     return str(value).replace("\\", "\\\\").replace("'", "\\'")
 
 
-def list_files(drive, query):
+def list_files(drive, query, fields="id,name,mimeType,createdTime"):
     files, token = [], None
     while True:
-        result = drive.files().list(q=query, fields="nextPageToken,files(id,name,mimeType,createdTime)",
+        result = drive.files().list(q=query, fields=f"nextPageToken,files({fields})",
                                     pageSize=100, pageToken=token).execute()
         files.extend(result.get("files", []))
         token = result.get("nextPageToken")
@@ -34,8 +34,8 @@ def list_files(drive, query):
             return files
 
 
-def upload_to_drive(path):
-    folder_id = os.environ["GOOGLE_DRIVE_FOLDER_ID"]
+def drive_service():
+    """Create the one Drive connection used by newspapers and public magazines."""
     if os.environ.get("GOOGLE_OAUTH_REFRESH_TOKEN"):
         credentials = Credentials(token=None, refresh_token=os.environ["GOOGLE_OAUTH_REFRESH_TOKEN"],
             token_uri="https://oauth2.googleapis.com/token", client_id=os.environ["GOOGLE_OAUTH_CLIENT_ID"],
@@ -43,7 +43,12 @@ def upload_to_drive(path):
     else:
         info = json.loads(base64.b64decode(os.environ["GOOGLE_SERVICE_ACCOUNT_JSON_B64"]))
         credentials = service_account.Credentials.from_service_account_info(info, scopes=["https://www.googleapis.com/auth/drive.file"])
-    drive = build("drive", "v3", credentials=credentials, cache_discovery=False)
+    return build("drive", "v3", credentials=credentials, cache_discovery=False)
+
+
+def upload_to_drive(path):
+    folder_id = os.environ["GOOGLE_DRIVE_FOLDER_ID"]
+    drive = drive_service()
     existing = list_files(drive, f"'{quote(folder_id)}' in parents and name='{quote(path.name)}' and mimeType='{MIME}' and trashed=false")
     metadata = {"name": path.name, "mimeType": MIME, "appProperties": {"generator": "mads-morgen"}}
     media = MediaFileUpload(str(path), mimetype=MIME, resumable=True)

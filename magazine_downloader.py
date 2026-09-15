@@ -1,0 +1,155 @@
+"""Low-cost archiver for public magazine PDFs chosen by the user.
+
+This deliberately has no AI calls.  It only reads each configured archive page
+and follows links that are already direct public PDF files.  Reader embeds,
+paywalls and login pages are reported rather than worked around.
+"""
+import logging
+import os
+import re
+import tempfile
+from pathlib import Path
+from urllib.parse import unquote, urljoin, urlsplit
+
+import requests
+from googleapiclient.http import MediaFileUpload
+from lxml import html as lxml_html
+
+from drive_delivery import drive_service, list_files, quote
+from news_io import canonical_url, public_url
+
+logger = logging.getLogger(__name__)
+PDF_MIME = "application/pdf"
+GENERATOR = "mads-morgen-magazine"
+
+
+def slug(value):
+    """A stable Drive-safe source key; the visible title remains unchanged."""
+    text = re.sub(r"[^a-z0-9]+", "-", str(value).lower()).strip("-")
+    return text[:70] or "magasin"
+
+
+def public_pdf_links(archive_url, raw, keep):
+    """Return the first direct PDF links in the archive's own order."""
+    page = lxml_html.fromstring(raw)
+    seen, issues = set(), []
+    for link in page.xpath("//a[@href]"):
+        href = canonical_url(urljoin(archive_url, link.get("href", "")))
+        if not href or href in seen:
+            continue
+        path = urlsplit(href).path.lower()
+        if not path.endswith(".pdf"):
+            continue
+        seen.add(href)
+        title = " ".join(link.text_content().split())
+        # An image-only link often has the useful issue label one level up.
+        if not title and link.getparent() is not None:
+            title = " ".join(link.getparent().text_content().split())
+        issues.append({"url": href, "title": title[:180] or Path(unquote(path)).stem})
+        if len(issues) >= keep:
+            break
+    return issues
+
+
+def download_public_pdf(url, maximum_bytes):
+    """Download only a real PDF from a public endpoint, with a hard size cap."""
+    current = canonical_url(url)
+    for _ in range(4):
+        current = public_url(current)
+        with requests.get(current, timeout=(5, 35), stream=True, allow_redirects=False,
+                          headers={"User-Agent": "MadsMorgen/1.0 (personal magazine archive)"}) as response:
+            if response.is_redirect:
+                current = urljoin(current, response.headers.get("Location", ""))
+                continue
+            response.raise_for_status()
+            content = bytearray()
+            for chunk in response.iter_content(65536):
+                content.extend(chunk)
+                if len(content) > maximum_bytes:
+                    raise ValueError("PDF exceeds configured size limit")
+            if not bytes(content).startswith(b"%PDF-"):
+                raise ValueError("Archive link was not a PDF")
+            return bytes(content), current
+    raise ValueError("Too many redirects")
+
+
+def managed_files(drive, folder_id, source_key):
+    query = (f"'{quote(folder_id)}' in parents and trashed=false and "
+             f"appProperties has {{ key='generator' and value='{GENERATOR}' }} and "
+             f"appProperties has {{ key='source' and value='{quote(source_key)}' }}")
+    return list_files(drive, query, "id,name,mimeType,createdTime,appProperties")
+
+
+def store_issue(drive, folder_id, source, issue, content, final_url):
+    source_key = slug(source["name"])
+    basename = Path(unquote(urlsplit(final_url).path)).name or "issue.pdf"
+    filename = f"magasin--{source_key}--{basename}"[:220]
+    with tempfile.NamedTemporaryFile(suffix=".pdf") as temporary:
+        temporary.write(content)
+        temporary.flush()
+        metadata = {
+            "name": filename,
+            "mimeType": PDF_MIME,
+            "parents": [folder_id],
+            "appProperties": {"generator": GENERATOR, "source": source_key,
+                              "origin": canonical_url(issue["url"]), "title": issue["title"]},
+        }
+        return drive.files().create(body=metadata,
+            media_body=MediaFileUpload(temporary.name, mimetype=PDF_MIME, resumable=True),
+            fields="id,name").execute()
+
+
+def sync_magazines(config, drive=None):
+    """Check archive pages and retain exactly the newest public PDFs per title.
+
+    A source without direct PDFs is not an error: it remains visible in the
+    report as ``no_public_pdf``.  This protects publishers' reader/paywall
+    choices while still making the scanner useful for every source that exposes
+    a normal public file.
+    """
+    if not config.get("enabled", False):
+        return {"enabled": False, "sources": []}
+    folder_id = os.environ.get("GOOGLE_MAGAZINES_FOLDER_ID") or os.environ.get("GOOGLE_DRIVE_FOLDER_ID")
+    if not folder_id:
+        raise RuntimeError("GOOGLE_DRIVE_FOLDER_ID mangler")
+    drive = drive or drive_service()
+    keep = max(1, int(config.get("keep_per_title", 6)))
+    maximum_bytes = max(1_000_000, int(config.get("max_pdf_bytes", 120_000_000)))
+    report = {"enabled": True, "sources": [], "uploaded": 0}
+    for source in config.get("sources", []):
+        if not source.get("enabled", True):
+            continue
+        name, source_key = source["name"], slug(source["name"])
+        item = {"name": name, "status": "ok", "found": 0, "uploaded": 0}
+        try:
+            archive = public_url(source["archive_url"])
+            response = requests.get(archive, timeout=(5, 25), headers={"User-Agent": "MadsMorgen/1.0"})
+            response.raise_for_status()
+            issues = public_pdf_links(response.url, response.content, keep)
+            item["found"] = len(issues)
+            if not issues:
+                item["status"] = "no_public_pdf"
+                report["sources"].append(item)
+                continue
+            existing = managed_files(drive, folder_id, source_key)
+            by_origin = {file.get("appProperties", {}).get("origin"): file for file in existing}
+            desired = {canonical_url(issue["url"]) for issue in issues}
+            for issue in issues:
+                if canonical_url(issue["url"]) in by_origin:
+                    continue
+                content, final_url = download_public_pdf(issue["url"], maximum_bytes)
+                store_issue(drive, folder_id, source, issue, content, final_url)
+                item["uploaded"] += 1
+                report["uploaded"] += 1
+            # Never touch unrelated Drive files.  Only app-owned PDFs that are
+            # no longer among this archive's newest public issues are trashed.
+            for file in existing:
+                if file.get("appProperties", {}).get("origin") not in desired:
+                    drive.files().update(fileId=file["id"], body={"trashed": True}).execute()
+            item["kept"] = len(issues)
+        except (requests.RequestException, ValueError, OSError) as exc:
+            item["status"] = "error"
+            item["error"] = type(exc).__name__
+            logger.warning("Magazine scan failed for %s (%s)", name, type(exc).__name__)
+        report["sources"].append(item)
+    return report

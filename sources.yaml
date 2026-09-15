@@ -135,6 +135,11 @@ news_site_signals:
       role: radar
       max_items: 8
       max_previews: 3
+    - name: Seismograf
+      url: https://seismograf.org/da
+      role: radar
+      max_items: 8
+      max_previews: 3
     - name: Arts Professional
       url: https://www.artsprofessional.co.uk/
       role: radar
@@ -257,3 +262,32 @@ sources:
     url: https://www.eurogamer.net/feed
     enabled: true
     format: mixed
+
+# A separate, zero-AI personal library.  The scan visits only these archive
+# pages once a day and follows direct public PDF links.  It never signs in,
+# pays, circumvents an embedded reader or downloads a page that is not a PDF.
+# PDFs go to GOOGLE_MAGAZINES_FOLDER_ID when set; otherwise directly to the
+# configured Rakuten Kobo folder.  Files are labelled and only app-owned files
+# are cleaned up.
+magazines:
+  enabled: true
+  schedule: "15 2 * * *"
+  keep_per_title: 6
+  max_pdf_bytes: 120000000
+  sources:
+    - name: Magasinet MUSEUM
+      archive_url: https://www.magasinetmuseum.dk/arkiv/
+    - name: PROSAbladet
+      archive_url: https://prosabladet.dk/magasinarkiv
+    - name: Periskop
+      archive_url: https://tidsskrift.dk/periskop/issue/archive
+    - name: DSB Ud & Se
+      archive_url: https://www.dsb.dk/om-dsb/ud--se/
+    - name: J26 Journal
+      archive_url: https://j26journal.com/issues
+    - name: KALTBLUT
+      archive_url: https://www.kaltblut-magazine.com/category/issues/
+    - name: On-Curating
+      archive_url: https://on-curating.org/issues.html
+    - name: e-flux Journal
+      archive_url: https://www.e-flux.com/journal
