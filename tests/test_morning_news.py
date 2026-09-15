@@ -409,6 +409,36 @@ def test_sanitise_body_removes_scripts_and_keeps_readable_text():
     assert "Tekst" in body
 
 
+def test_sanitise_body_removes_media_viewer_and_subscription_cta():
+    from newspaper import sanitise_body
+    body = sanitise_body(
+        '<article><p>Den egentlige indledning.</p>'
+        '<div>Åbn Billedefremviser<span>Foto: TV 2 / TV 2</span></div>'
+        '<p><em>Join me and my colleagues for a subscriber-exclusive Roundtable discussion.</em></p>'
+        '<p>Den egentlige afslutning.</p></article>', "https://example.test/artikel")
+    assert "Billedefremviser" not in body
+    assert "subscriber-exclusive" not in body
+    assert "egentlige indledning" in body
+    assert "egentlige afslutning" in body
+
+
+def test_prepare_article_rejects_obvious_continuations_and_event_pages():
+    from newspaper import prepare_article
+
+    class Reader:
+        def __init__(self, text):
+            self.text = text
+
+        def get(self, url, limit=None):
+            return (f"<html><body><article><p>{self.text}</p><p>"
+                    + "mere tekst " * 800 + "</p></article></body></html>").encode(), "text/html", url
+
+    continuation = "Og således tilbage til spørgsmålet om, hvorvidt dette er lovligt."
+    event_page = "Frequently Asked Questions. What is Roundtables?"
+    assert prepare_article({"url": "https://example.test/a", "source": "TV 2"}, Reader(continuation)) is None
+    assert prepare_article({"url": "https://example.test/b", "source": "MIT"}, Reader(event_page)) is None
+
+
 def test_paywalled_articles_never_reach_the_epub():
     from newspaper import prepare_article
 

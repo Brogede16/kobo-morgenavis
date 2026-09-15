@@ -65,8 +65,27 @@ def overview_group(article):
 
 def sanitise_body(content, base_url):
     root = lxml_html.fragment_fromstring(content, create_parent="div")
-    for node in root.xpath("//script|//style|//iframe|//form|//nav|//footer|//aside|//img|//picture|//svg|//video|//audio|//object|//pre|//code"):
+    # Reading-view HTML is often still littered with the publisher's media
+    # widgets.  They add captions twice (TV 2's "Åbn Billedefremviser" is a
+    # typical example) but no useful article prose: we use the separately
+    # fetched Open Graph image when an image belongs in the EPUB.
+    for node in root.xpath("//script|//style|//iframe|//form|//nav|//footer|//aside|//figure|//figcaption|//img|//picture|//svg|//video|//audio|//object|//pre|//code"):
         if node.getparent() is not None:
+            node.drop_tree()
+    # Subscription prompts, events and newsletter CTAs are not part of the
+    # story.  This is deliberately local and rules-based: it costs no tokens
+    # and works even when a source changes its page template.
+    promotional_markers = (
+        "subscriber-exclusive", "subscribe to", "subscribe now", "sign up for",
+        "sign up to", "join me and my colleagues", "roundtable discussion",
+        "newsletter", "email preferences", "become a member", "bliv abonnent",
+        "tilmeld dig", "abonnér på",
+    )
+    for node in reversed(list(root.iterdescendants())):
+        if not isinstance(node.tag, str) or node.getparent() is None:
+            continue
+        node_text = " ".join(node.text_content().split()).lower()
+        if node_text.startswith("åbn billedefremviser") or any(marker in node_text for marker in promotional_markers):
             node.drop_tree()
     allowed = {"div", "p", "h2", "h3", "h4", "blockquote", "ul", "ol", "li", "strong", "em", "b", "i", "a", "br", "span"}
     for node in list(root.iterdescendants()):
@@ -81,6 +100,31 @@ def sanitise_body(content, base_url):
     return etree.tostring(root, encoding="unicode", method="xml")
 
 
+def unsuitable_article_text(text):
+    """Reject pages which are clearly not a complete editorial article.
+
+    An extractor cannot responsibly invent a missing opening.  Returning a
+    reserve article is better than sending a Kobo page that begins in the
+    middle of a political argument or is really a subscriber event landing
+    page.
+    """
+    compact = " ".join(str(text or "").split()).lower()
+    opening = compact[:260]
+    continuation_openings = (
+        "og således tilbage til spørgsmålet",
+        "tilbage til spørgsmålet om",
+        "som tidligere nævnt",
+        "fortsættelse følger",
+    )
+    landing_page_markers = (
+        "frequently asked questions",
+        "what is roundtables",
+        "the series is only available to",
+    )
+    return (not compact or any(marker in opening for marker in continuation_openings)
+            or any(marker in compact for marker in landing_page_markers))
+
+
 def prepare_article(article, reader):
     try:
         raw, _, url = reader.get(article["url"])
@@ -90,6 +134,9 @@ def prepare_article(article, reader):
             return None
         body = sanitise_body(Document(raw).summary(html_partial=True), url)
         text = lxml_html.fromstring(body).text_content()
+        if unsuitable_article_text(text):
+            logger.info("Skipping incomplete or promotional page from %s", article.get("source"))
+            return None
         word_count = len(text.split())
         minimum_words = 550 if article.get("format") == "longread" else 260
         if word_count < minimum_words:
