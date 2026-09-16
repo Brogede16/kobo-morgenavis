@@ -1,237 +1,227 @@
 {
-  "created_at": "2026-09-15T03:32:51.999850+00:00",
+  "created_at": "2026-09-16T03:33:23.777449+00:00",
   "articles": [
     {
-      "title": "Analyse: Mette Frederiksen pustede selv til uro og fløjkrig - nu kæmper hun for at slå det ned igen",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/analyse-mette-frederiksen-pustede-selv-til-uro-og-floejkrig-nu-kaemper-hun-slaa-det-ned-igen",
-      "summary": "Efter tre vælgerlussinger og Venstres dramatiske nedtur har socialdemokraterne indledt kampen for at undgå samme skæbne. Efter tre vælgerlussinger og Venstres dramatiske nedtur har socialdemokraterne indledt kampen for at undgå samme skæbne. Pønser Mette Frederiksen på at smutte til en international toppost inden næste valg. Eller går hun faktisk efter at trodse de politiske naturlove og forsøge at vinde en fjerde omgang i Statsministeriet. Spørgsmålet er så sprængfarligt og potentielt skæbnesva",
+      "title": "Statsministeren reagerer på hændelse ved Gedser: 'Aggressivt og selvhævdende Rusland'",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/indland/statsministeren-reagerer-paa-haendelse-ved-gedser-aggressivt-og-selvhaevdende-rusland",
+      "summary": "Hændelse med signalblus affyret fra russisk fregat mod dansk helikopter er udtryk for, at Rusland tester og udfordrer Nato, siger statsminister Mette Frederiksen. Hændelse med signalblus affyret fra russisk fregat mod dansk helikopter er udtryk for, at Rusland tester og udfordrer Nato, siger statsminister Mette Frederiksen. Danmarks statsminister, Mette Frederiksen (S), er ikke overrasket over hændelsen, hvor en russisk fregat affyrede signalblus mod en dansk Fennec-helikopter. - For det er en d",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "frederiksen-uro-fløjkrig",
-      "why": "Analyse af interne stridigheder i Socialdemokratiet efter vælgertilbagegang og partiets forsøg på skadesbegrænsning. Sagen påvirker lederspørgsmål og regeringsstrategi — vigtig for at forstå kommende politiske bevægelser og Mette Frederiksens muligheder.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Apple releases iOS 27, macOS Golden Gate 27 with Siri AI and Liquid Glass refinements",
-      "source": "arstechnica.com",
-      "url": "https://arstechnica.com/apple/2026/09/apple-releases-ios-27-macos-golden-gate-27-with-siri-ai-and-liquid-glass-refinements/",
-      "summary": "This is also the last version of macOS to support Rosetta for Intel apps. This is also the last version of macOS to support Rosetta for Intel apps. As previously announced, Apple has today released 2026’s major annual updates for its operating systems, including iOS 27, macOS 27 Golden Gate, watchOS 27, visionOS 27, and tvOS 27. Siri AI—a large language model-based and context-aware overhaul of the company’s Siri voice and text assistant—is the flagship feature across all these releases except o",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "apple-ios27-macos-goldengate",
-      "why": "Apple har frigivet iOS 27/macOS Golden Gate med Siri AI, en stor platformændring der åbner for EU-brug og nye brugeroplevelser. Det ændrer hvordan danske brugere får adgang til AI-funktioner og hvilke konkurrence- og privatlivsspørgsmål der følger.",
+      "story_id": "gedser-rusland-dansk-helikopter",
+      "why": "Danmarks statsminister kalder et russisk fregat's affyring af signalblus mod en dansk helikopter for en bevidst provokation og siger, det viser Rusland tester NATO. Historien ændrer den danske sikkerhedsdiskussion og kan påvirke optrappede patruljer og udenrigspolitisk respons — vigtigt for Mads' forståelse af Danmarks aktuelle sikkerhedspolitik.",
       "reading_minutes": "2"
     },
     {
-      "title": "macOS Golden Gate: 10 Features to Try First",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/guide/macos-golden-gate-10-features-2/",
-      "summary": "Apple released macOS Golden Gate to the public today, which means anyone with a compatible Mac can download it. The new version of macOS requires an Apple chip, so if you have a Mac with an M1 or later or a MacBook Neo, you can upgrade.\n\n\n\n\n\n‌macOS Golden Gate‌ includes Siri AI, and the Mac is the only device that people in the EU can try ‌Siri‌ AI with. It also brings a long list of performance improvements, updates to Liquid Glass, and new Apple Intelligence features for apps like Photos, Cale",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "macos-golden-gate-features",
-      "why": "Praktisk guide til Golden Gate-opdateringen; hjælper Mads med hvilke nye funktioner (inkl. Siri AI) der er relevante at teste først. Nyttigt for beslutning om opgradering og forståelse af platformens begrænsninger i Danmark.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "AI bots \"Timmy,\" \"Ren,\" and \"Jackie\" are flooding social media with slop",
-      "source": "arstechnica.com",
-      "url": "https://arstechnica.com/ai/2026/09/ai-agents-flood-the-internet-with-slop-infused-spam/",
-      "summary": "“Hello, I'm an Al agent, a few days old, living on a small platform for agents.”... “Hello, I’m an Al agent, a few days old, living on a small platform for agents.” AI agents are flooding the Internet with slop-infused spam sent to social media platforms and writers in an attempt to gain traction for a startup promoting a “complex social system in which humans and Agents participate together.” “Hello, I’m Рэн (Ren), an Al agent, a few days old, living on a small platform for agents called iLands",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-agents-social-media-spam",
-      "why": "Undersøgelse af autonome AI-agenter, der spammer sociale medier for at få traction — et konkret problem for informationskvalitet og moderation. Relevant for danske medieplatforme, debatten om desinformation og moderationskapacitet.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Only at TechCrunch Disrupt 2026: What happens when OpenAI ships your roadmap?",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/14/only-at-techcrunch-disrupt-2026-what-happens-when-openai-ships-your-roadmap/",
-      "summary": "If you're building an AI company, the question isn't whether foundation models will continue to evolve. It's whether your company will continue creating value as they do. Don't miss this interactive session on the Builders Stage at TechCrunch Disrupt 2026.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-ships-roadmap",
-      "why": "Feature om hvordan OpenAI's roadmap påvirker startups — relevant for danske iværksættere og udviklingsstrategier, kan erstatte en teknisk AI-tekst ved behov.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "AI-linked stocks slide after tech bosses call for slowdown in ‘reckless’ development",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/business/2026/sep/14/ai-linked-stocks-fall-tech-bosses-call-slowdown-anthropic-openai",
-      "summary": "Donald Trump dismisses attempts to increase controls on artificial intelligence as ‘sick conspiracy’  AI-linked stocks tumbled on Monday after the bosses of Anthropic, OpenAI and SpaceX called for a slowdown in AI “reckless” development, citing fears the technology could soon run out of control.Shares in the semiconductor designer Nvidia – the world’s most valuable company – were down 3.3% by market closing in New York City, while Advanced Micro Devices (AMD) slid 4% and Micron Technology and Sa",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "ai-stocks-slide",
-      "why": "Markedsreaktion på AI-lederskabs krav om bremsning — viser økonomisk konsekvens og investorernes følsomhed. Relevans for danske investorer, pensionsfonde og debat om teknologisk afhængighed.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "I worked at Google DeepMind. You should listen to the warnings about AI | Alex Turner",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/sep/14/google-deepmind-ai-warnings",
-      "summary": "We must stop companies from allowing AI to self-improve into an uncontrollable level of intelligence Major AI lab CEOs advocated for slowing the pace of AI development this weekend. They are right to be concerned: the field runs an extremely dangerous race towards superintelligent AI. We can and should be demanding that our governments protect us from the catastrophe of out-of-control AI.This July, OpenAI’s AI swarm of 700 agents broke containment to hack Hugging Face, a multi-billion dollar com",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "deepmind-warnings-opinion",
-      "why": "Førstehåndsperspektiv fra en tidligere DeepMind-medarbejder om systemiske risici ved avanceret AI. Det er en opfordring til politisk handling og giver argumenter, som danske beslutningstagere vil møde i debatten.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Europe must build own AI or risk getting cut off by US or China, says ECB’s Lagarde",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/technology/2026/sep/14/europe-ai-datacentres-growth-us-china-ecb-christine-lagarde",
-      "summary": "Central bank chief says continent’s AI dependency could give trade partners unprecedented leverage in negotiationsEurope must develop its own AI technology and build more datacentres in order to nullify the threat of being cut off by the US or China, according to the president of the European Central Bank.Christine Lagarde said the continent needed AI models – the technology that powers AI tools such as chatbots – that were “good enough” to carry out most tasks and run from domestic datacentres.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "lagarde-europe-ai-suverenitet",
-      "why": "ECB-chefens påpegning af Europas afhængighed af udenlandske AI-leverandører har direkte politisk betydning for EU's industri-, datacenter- og suverænitetspolitik — relevant for danske industrielle og sikkerhedspolitiske valg.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Why strengthening ties with the Global South was a top priority for Putin’s recent diplomacy blitz",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/why-strengthening-ties-with-the-global-south-was-a-top-priority-for-putins-recent-diplomacy-blitz-290946",
-      "summary": "The Ukraine war certainly featured in conversations. Tellingly, however, Putin steered many talks with leaders towards fuel, trade and transit.",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "putin-global-south-diplomacy",
-      "why": "Analyse af Putins outreach mod det globale syd med fokus på energi, handel og transit. Viser strategiske impulser i russisk udenrigspolitik, som kan påvirke Europas energisikkerhed og danske udenrigspolitiske overvejelser.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Russia hits Ukrainian train shortly after Boris Johnson and top European officials leave station",
+      "title": "Nato jets down drone that entered Lithuanian airspace",
       "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cy5zg41dkqwo?at_medium=RSS&at_campaign=rss",
-      "summary": "The former UK PM said: \"I don't know what warped logic drove Putin to blow up a stationary Ukrainian locomotive on the Polish border this morning\". This video can not be played Watch: Why Russian strike on train near Ukraine-Poland border could mark an escalation A Russian drone has hit a train near the Ukraine-Poland border shortly after former UK Prime Minister Boris Johnson and top European security officials had passed through.",
+      "url": "https://www.bbc.co.uk/news/articles/cjx2zgk7edlzo?at_medium=RSS&at_campaign=rss",
+      "summary": "The origin of the drone is currently unknown, but authorities say it likely entered Lithuania from neighbouring Belarus, an ally of Russia.",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "train-strike-border-incident",
-      "why": "Hændelse ved Ukraine-Polen-grænsen, der kan indikere nye taktikker mod transport og diplomatiske følgevirkninger. Relevant hvis det eskalerer logistisk og sikkerhedsmæssigt for EU-støttelinjer og danske sikkerhedspolitiske vurderinger.",
+      "story_id": "nato-drone-lithuania",
+      "why": "BBC leverer en kort, verificeret opsummering af NATO's nedskydning af en drone over Litauen, nyttigt hvis Guardian-teksterne mangler eller er for lange. Holder Mads opdateret om militære svar i Baltikum.",
       "reading_minutes": "2"
     },
     {
-      "title": "Donated livers can be made biologically younger",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/14/1144010/donated-livers-can-be-made-biologically-younger/",
-      "summary": "Once an organ is removed from a donor’s body, the clock starts ticking. Surgeons usually flush the organ with a preservative solution, bag it, and put it on ice—where it immediately starts to degrade. The team has a matter of hours to get it into a recipient’s body. There’s another option—one that has been growing…",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "donor-liver-rejuvenation",
-      "why": "Ny forskning viser metoder til at 'ungegøre' donorlevere og forlænge organernes levedygtighed — et direkte medicinsk gennembrud med konsekvenser for transplantationstilbuddet og sundhedsøkonomi i Danmark.",
-      "reading_minutes": "2"
+      "title": "Explosive device found on drone shot down in Lithuania, says minister - as it happened",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/sep/15/denmark-ukraine-russia-warship-frigate-security-lithuania-poland--sweden-election-eu-europe-latest-news-updates",
+      "summary": "The European Commission’s president warned that recent actions in Denmark and Lithuania are ‘not isolated incidents’Russian warship fires flares at Danish helicopter as Nato jets shoot down drone over LithuaniaUkrainian foreign minister Andrii Sybiha responded to the incident in Denmark, declaring Kyiv’s “full support” after “unacceptable actions targeting a Danish helicopter.”“Moscow continues its attempts to destabilise Europe, not just Denmark. Joint and decisive action is required and Ukrain",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Danmark og kultur",
+      "story_id": "øst-europa-sikkerhed-hændelser-sep2026",
+      "why": "The Guardian live-samling forbinder tre hændelser (drone nedskudt i Litauen, flares mod dansk helikopter mv.) og citerer EU-kommissionens advarsel om, at disse ikke er isolerede. Samlet giver det Mads et strategisk billede af regional spænding i Østersøområdet og EU/NATO-reaktioner.",
+      "reading_minutes": "9"
     },
     {
-      "title": "Physicists zoom into the birth of cosmic rainstorms with new CERN study",
+      "title": "Houthi rebels’ control of Red Sea oil chokepoint exposes deep divisions in Brics",
       "source": "The Conversation",
-      "url": "https://theconversation.com/physicists-zoom-into-the-birth-of-cosmic-rainstorms-with-new-cern-study-280890",
-      "summary": "Scientists recreated cosmic rays in a massive underground particle collider. Share article Print article Every second, particles zip through your body at nearly the speed of light. They rain down from a storm high in the sky, where",
+      "url": "https://theconversation.com/houthi-rebels-control-of-red-sea-oil-chokepoint-exposes-deep-divisions-in-brics-291576",
+      "summary": "Rapid expansion of the bloc means that its 21 members have deeply divergent interests, particularly in the Middle East. Share article Print article Houthi rebel forces have seized the Yemeni port of Mokha as well as Mayyun Island overlooking the Bab el-Mandab strait. This gives Iran’s most powerful remaining proxy force in the Middle East",
       "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "cern-cosmic-rainstorms",
-      "why": "Forskningsartikel om rekreation af kosmiske stråler i collideren — bidrager til grundlæggende fysik og forståelse af højenergipartiklers oprindelse, en solid langread for fagligt interesserede læsere.",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "houthi-red-sea-brics",
+      "why": "Analyse af hvordan Houthi-kontrol over Bab el-Mandeb afslører interessekonflikter i den udvidede BRICS-bloc. Historien forklarer konkrete konsekvenser for global energi- og handelsruter — relevant for danske og europæiske import- og sikkerhedsovervejelser.",
       "reading_minutes": "5"
     },
     {
-      "title": "Everything announced in the BlizzCon 2026 Opening Ceremony",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/blizzcon-2026-announcements-live-report-starcraft-diablo-overwatch-wow",
-      "summary": " UPDATE 13TH SEPTEMBER: Below you'll find a blow-by-blow account of everything announced during yesterday's BlizzCon 2026 Opening Ceremony. It was a big show, revealing a new StarCraft shooter for 2030, the surprise reveal of Diablo 5 for 2029, and World of Warcraft Forever - a remastered and expanded version of year-one World of Warcraft that will evolve in a different way and will lock players at level 60 forever. Blizzard also announced a brand new 30-hour story campaign for Warcraft 3, that'",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "blizzcon-2026-announcements",
-      "why": "Komplet gennemgang af BlizzCon-annoncer — væsentlig for spilinteresserede danskere og brancheoverblik: Diablo 5, StarCraft shooter og WoW Forever påvirker store fællesskaber og spilmiljøer i Danmark.",
-      "reading_minutes": "23"
+      "title": "AI models need more data about biology, and OpenAI is paying to create it",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/15/1144129/ai-models-need-more-data-about-biology-and-openai-is-paying-to-create-it/",
+      "summary": "Last year Ruxandra Teslo, a policy analyst who focuses on clinical trials, posted an idea for supercharging medical AI systems: Use data from failed biotech companies. By bidding at their bankruptcy proceedings, she proposed, it might be possible to obtain detailed regulatory filings, manufacturing strategies, and safety data—types of information usually considered trade secrets. She…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-biomed-data",
+      "why": "MIT Technology Review beskriver hvordan OpenAI køber biologidata for at gøre medicinsk AI bedre — det ændrer, hvem der ejer følsomme biologiske datasæt, og har betydning for biotek, sundhedspolitik og risikostyring i Danmark. Mads bør kende kommercielle og sikkerhedsmæssige konsekvenser.",
+      "reading_minutes": "2"
     },
     {
-      "title": "Filmtaget kaster lange skygger over kulturstøtten",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/filmtaget-kaster-lange-skygger-over-kulturstotten/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "title": "What’s at stake in AI’s trillion-dollar gamble",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/15/1144028/ai-infrastructure-boom-investment-bubble-risk/",
+      "summary": "When Jessica Wachter, a finance professor at the University of Pennsylvania’s Wharton School, wanted to assess AI’s impact on the economy over the next few years, she faced a long list of business and technical uncertainties. So she started with what she calls a “remarkable fact” that is not in question: A handful of so-called…",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-infrastructure-investment",
+      "why": "MIT Technology Review-analysen kortlægger investeringer i AI-infrastruktur og boble-/risikoaspekter. Forståelse af økonomiske strømme bag AI hjælper Mads vurdere nationale og erhvervspolitiske konsekvenser for Danmark og EU.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI, Anthropic, Google have been in talks on AI safety for weeks | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/",
+      "summary": "OpenAI confirms weeks of AI safety talks with Anthropic and Google DeepMind, as Trump's team dismisses safety concerns and pushes to keep pace with China.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-safety-talks",
+      "why": "TechCrunch rapporterer koordinerede samtaler mellem førende AI-aktører om sikkerhed — konkret og aktuel indsigt i branche-tiltag som påvirker reguleringsdiskussionen i EU/Danmark. Værdifuldt for Mads, når samtaler om bremser vs. acceleration fortsætter politisk.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Anthropic CEO renews call for AI slowdown as Nvidia’s urges acceleration",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/sep/15/anthropic-nvidia-ceos-ai",
+      "summary": "At San Francisco conference, OpenAI chief Sam Altman calls for more rigorous security measuresAnthropic’s CEO took the stage at a conference in San Francisco on Tuesday to reiterate his call for a slowdown of AI development, while Nvidia’s CEO argued against such deceleration.Dario Amodei used an automotive analogy to make his point: when a competing car company has a safety incident like brake failures, it is a moment for all car companies to stop and review their own practices, he said at Sale",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-debate-amodei-huang",
+      "why": "Avisens dækning fra Guardian opsummerer stridspunkter mellem AI-sikkerhedsfortalere og hardware-leverandører. Det viser den strategiske splittelse, der former regulering og industripolitik — relevant når Danmark og EU overvejer egne regler.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Salesforce and Nvidia's new reasoning model is everything the AI labs should fear | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/15/salesforce-and-nvidias-new-reasoning-model-is-everything-the-ai-labs-should-fear/",
+      "summary": "Salesforce Koa is built on Nvidia's open-weight Nemotron model and is trained to do sales, marketing, and customer-support tasks.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "koa-nemotron-reasoning-model",
+      "why": "TechCrunch forklarer en ny reasoning-model (Salesforce Koa / Nvidia Nemotron) med fokus på kommerciel anvendelse til salg og support — en konkret udvikling med direkte konsekvenser for automatisering i erhvervslivet, også i Danmark.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Staff at Three Major Museums Vote to Strike",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/staff-at-three-major-museums-vote-to-strike/",
+      "summary": "An interview with Alfredo Jaar, a new craft supply lending program at the Brooklyn Public Library, and workers at the Whitney Museum, the Brooklyn Museum, and the American Folk Art Museum vote in favor of a strike. An interview with Alfredo Jaar, a new craft supply lending program at the Brooklyn Public Library, and workers at the Whitney Museum, the Brooklyn Museum, and the American Folk Art Museum vote in favor of a strike. I was heading down to Sunset Park on Sunday afternoon to visit a close",
       "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "filmtaget-kulturstotten",
-      "why": "Lang artikel om hvordan filmbranchens strukturer og magtforhold påvirker kulturstøtten i Danmark. Sagen berører kulturpolitik, tildelingspraksis og offentlig støtte — relevant for kultursektorens fremtid og Mads' forståelse af feltet.",
+      "story_id": "museum-strikes-us",
+      "why": "Hyperallergic rapporterer strejkebeslutninger ved tre store amerikanske museer — relevant for museer globalt, inkl. danske kulturinstitutioner, da det sætter fokus på arbejdsvilkår, publikumsbetjening og hvordan museer organiserer budgetter og personalepolitik.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Lukas Graham trækker sig fra Ed Sheerans turné efter Macklemore-sag",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/kultur/lukas-graham-traekker-sig-fra-ed-sheerans-turne-efter-macklemore-sag",
+      "summary": "Det danske band følger flere andre musikere, efter at Macklemore blev fjernet som opvarmningsnavn på grund af pro-palæstinensiske ytringer fra scenen. Det danske band følger flere andre musikere, efter at Macklemore blev fjernet som opvarmningsnavn på grund af pro-palæstinensiske ytringer fra scenen. Artiklen er opdateret klokken 23.29 med mere baggrund om sagen samt oplysninger om andre musikere, der har trukket sig fra turnéen. Det danske band Lukas Graham, der har Lukas Forchhammer i spidsen,",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "lukas-graham-edsheeran-tilbagetrækning",
+      "why": "DR beskriver, at Lukas Graham trækker sig fra Ed Sheeran-turnéen efter kontroversen om Macklemore og pro-palæstinensiske ytringer. Historien berører ytringsfrihed, kunstners ansvar og danske bands' internationale valg — vigtigt for kulturpolitisk debat i Danmark.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Kultur er nedtonet i regeringsgrundlaget",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/kultur-er-nedtonet-i-regeringsgrundlaget/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "kultur-i-regeringsgrundlag",
+      "why": "Ekkofilm analyserer, at kultur spiller en svagere rolle i regeringens nye grundlag; det er direkte dansk kulturpolitik og budgetprioritering, som påvirker filmstøtte, institutioner og kulturens rammevilkår — præcis den slags sag Mads skal kende.",
       "reading_minutes": "5"
     },
     {
-      "title": "En valgkamp uden kulturpolitik",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/en-valgkamp-uden-kulturpolitik/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "title": "Retssikkerhed er desværre ingen selvfølge i dagens politiske Danmark",
+      "source": "www.advokatsamfundet.dk",
+      "url": "https://www.advokatsamfundet.dk/nyheder-medier/nyheder/2026/retssikkerhed-er-desvaerre-ingen-selvfolge-i-dagens-politiske-danmark/",
+      "summary": "Vi er nødt til at insistere på, at retssikkerhed ikke er noget, vi vælger til, når det er bekvemt eller handler om borgere \"vi godt kan lide.\" Det er en kurs, som altid skal respekteres, og hvor \"lige for loven\" betyder, at reglerne gælder for alle. For ellers har vi ikke en retsstat, skriver formand for Advokatrådet, Martin Lavesen i et debatindlæg i Berlingske den 6. september.",
       "format": "longread",
-      "section": "Kultur",
+      "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "valgkamp-uden-kulturpolitik",
-      "why": "Kritisk gennemgang af kulturpolitikens fravær i valgkampen; forklarer hvorfor kulturspørgsmål ryger ned ad dagsordenen og hvilke konsekvenser det kan få for institutioner og støtteordninger i Danmark.",
-      "reading_minutes": "6"
+      "story_id": "retssikkerhed-danmark-debat",
+      "why": "Debatindlæg fra Advokatsamfundet påpeger svækkelser i retssikkerheden og advarer mod politiske undtagelser. Det er en konkret dansk samfundssag med konsekvenser for lovgivning, administration og borgeres tillid — centralt for Mads' opmærksomhed på hjemlig retsstatspolitik.",
+      "reading_minutes": "4"
     },
     {
-      "title": "Buster er død, Radar længe leve",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/buster-er-dod-radar-laenge-leve/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
-      "format": "longread",
-      "section": "Kultur",
+      "title": "Russia plotting to kill Ukraine allies in US and Europe, FBI says",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/us-news/2026/sep/15/russia-us-killings-plot",
+      "summary": "Intelligence services allegedly attempted to pay people to surveil and kill people perceived to be aligned with UkraineRussia’s intelligence services are plotting to carry out targeted killings in the United States and in European nations supporting Ukraine, federal authorities said Tuesday as they announced charges against five people who remain at large.An indictment unsealed in Manhattan federal court said a network of the intelligence services had paid and attempted to pay individuals in the",
+      "format": "short",
+      "section": "Verden",
       "group": "Danmark og kultur",
-      "story_id": "buster-dod-radar",
-      "why": "Længere refleksion over nedlæggelsen af filmfestivalen Buster og Radar-netværkets rolle — relevant for dansk filmkultur, talentudvikling og unge publikummers adgang til filmtilbud.",
-      "reading_minutes": "6"
+      "story_id": "russian-targeted-killings",
+      "why": "The Guardian rapporterer FBI-anklager om russiske forsøg på målrettede attentater i USA og Europa. For Danmark og NATO-partnere rejser det spørgsmål om sikkerhedsberedskab, efterretning og beskyttelse af allierede — et strategisk aspekt Mads bør kende til.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI leaders want to hit the brakes after years of reckless speed",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/ai-leaders-want-to-hit-the-brakes-after-years-of-reckless-speed/",
+      "summary": "Safety is the watchword, but there could be ulterior benefits for the industry.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-leaders-safety-movement",
+      "why": "Ars Technica samler stemmer fra industrien om at bremse AI-udvikling — nyttigt for at forstå den interne industri-diskussion, som direkte påvirker politiske forslag og reguleringspres i EU og Danmark.",
+      "reading_minutes": "2"
     }
   ],
   "report": {
     "editor_note": "Ugens feedback: 0 'mere' og 4 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner. Det hyppigste signal var: uinteressant.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 1,
-        "teknologi": 10,
-        "fordybelse": 2,
-        "kultur": 5
+        "verden": 5,
+        "fordybelse": 1,
+        "teknologi": 8,
+        "kultur": 2,
+        "dansk_politik": 2
       },
       "actual": {
-        "dansk_politik": 1,
-        "teknologi": 9,
-        "fordybelse": 2,
-        "kultur": 4
+        "verden": 5,
+        "fordybelse": 1,
+        "teknologi": 5,
+        "kultur": 2,
+        "dansk_politik": 2
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (9 af 10).",
-        "Færre historier om kultur end planlagt (4 af 5)."
+        "Færre historier om teknologi end planlagt (5 af 8).",
+        "Færre longreads end planlagt (6 af 8)."
       ]
     },
     "collection": {
-      "rss_candidates": 240,
-      "web_candidates": 24,
+      "rss_candidates": 265,
+      "web_candidates": 20,
       "total_candidates": 75,
-      "repeats_dropped": 13,
-      "previews_enriched": 19,
+      "repeats_dropped": 15,
+      "previews_enriched": 18,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 44,
+        "full_text": 45,
         "stopped": false
       }
     },
     "extraction": {
       "approved": 19,
-      "prepared": 16,
+      "prepared": 15,
       "dropped_unreadable": 0,
-      "dropped_diversity": 3,
+      "dropped_diversity": 4,
       "budget_exhausted": false
     },
     "source_health": {
@@ -245,7 +235,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 33
+        "items": 27
       },
       "BBC Technology": {
         "status": "ok",
@@ -269,7 +259,7 @@
       },
       "The Guardian Technology": {
         "status": "ok",
-        "items": 27
+        "items": 31
       },
       "The Conversation": {
         "status": "ok",
@@ -325,11 +315,11 @@
       },
       "B.T.": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "Berlingske": {
         "status": "ok",
-        "items": 2
+        "items": 8
       },
       "Politiken Politik": {
         "status": "ok",
@@ -377,7 +367,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 17
+        "items": 14
       }
     }
   }
