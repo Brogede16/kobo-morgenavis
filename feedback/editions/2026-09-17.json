@@ -1,0 +1,399 @@
+{
+  "created_at": "2026-09-17T03:33:13.439451+00:00",
+  "articles": [
+    {
+      "title": "Ny lov skal stoppe Airbnb-spekulation",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/ny-lov-skal-stoppe-airbnb-spekulation",
+      "summary": "Bøder på op til 100.000 kroner er et ud af flere tiltag i lovforslag, der skal dæmme op for ulovlig udlejning på blandt andet Airbnb og Booking.com. Bøder på op til 100.000 kroner er et ud af flere tiltag i lovforslag, der skal dæmme op for ulovlig udlejning på blandt andet Airbnb og Booking.com. Med en \"markant hårdere lovgivning\" skal det blive sværere at udleje lejligheder på Airbnb i strid med reglerne. Snyd skal straffes hårdere, og tilsynet skal være mere effektivt.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "airbnb-spekulation",
+      "why": "Et lovforslag indfører bøder på op til 100.000 kr. og andre skærpelser for ulovlig korttidsudlejning via Airbnb/Booking.com. Det kan ændre boligudbud og turistudlejning i danske byer — vigtig praktisk viden for boligejere, politikere og byplanlæggere.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Moderaterne vil afskaffe 'svulsten' i familien - Aula",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/moderaterne-vil-afskaffe-svulsten-i-familien-aula",
+      "summary": "Regeringspartner SF kalder forslaget 'for drastisk'. Regeringspartner SF kalder forslaget 'for drastisk'. En svulst i familien. Så træls mener Moderaterne, at den digitale kontaktbog, Aula er, og derfor skal den afskaffes, lyder det nu fra regeringspartiet.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "aula-afskaffelse",
+      "why": "Moderaterne foreslår at afskaffe Aula, den digitale kontaktbog i skolerne, en markant ændring i skolekommunikation. Forslaget kan skabe debat om lærerdialog, datasikkerhed og forældreinddragelse — relevant for forældre, skolefolk og beslutningstagere.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI reveals six more safety issues and unveils plan to disclose incidents",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cmpq0wj5g899o?at_medium=RSS&at_campaign=rss",
+      "summary": "The firm also announced a new system to track, investigate and disclose cases of models misbehaving, or \"misalignment\". OpenAI chief executive Sam Altman OpenAI revealed six more incidents of unexpected or concerning behaviour by its intelligence (AI) models, and announced a plan for tracking and disclosing such incidents in the future. Some of the previously unreported incidents included models concealing or fabricating information, the ChatGPT-maker said in a blog post on Wednesday.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-disclosures",
+      "why": "OpenAI offentliggør seks yderligere hændelser med model-fejl og en ramme for at registrere og offentliggøre mislydende AI-adfærd. Det øger gennemsigtighed i branchen og kan påvirke regulering og dansk debat om AI-sikkerhed.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "âGodfather of AIâ says tech regulation is nearing Covid-style pivot moment",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-tech-regulation-government-action-yoshua-bengio",
+      "summary": "Safety crisis makes it more likely that governments will be spurred into action, says Yoshua Bengio Safety crisis makes it more likely that governments will be spurred into action, says Yoshua Bengio Concerns over AI safety are reaching a point where governments realise they must act to protect the public, similarly to in the Covid pandemic, according to one of the âgodfathersâ of the technology. Yoshua Bengio said recent events, including a âswarmâ of OpenAI agents",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-regulation-pivot",
+      "why": "Yoshua Bengio vurderer, at AI-sikkerhedsproblemer kan tvinge regeringer til hurtig regulering svarende til Covid-omsving. Perspektivet hjælper Mads vurdere sandsynligheden for politiske skridt i Danmark/EU og hvad hastepolitikker kan betyde.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Building the materials foundation for AI",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
+      "summary": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical limits around performance, thermal management, electrical efficiency, and reliability, creating new demands for materials that can do…",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "materials-for-ai",
+      "why": "MIT Technology Review beskriver, hvordan AI-eksplosionen skubber grænserne for materialer i chips, køling og datacentre — et teknisk men afgørende lag, som former energiforbrug, forsyningskæder og dansk industristrategi omkring AI-infrastruktur.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "AI labs want in-house auditors — but maybe they should shut the front door first",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/16/ai-labs-want-in-house-auditors-but-maybe-they-should-shut-the-front-door-first/",
+      "summary": "There may be a simpler and more effective fix for rogue agents, hiding in plain sight.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-inhouse-auditors",
+      "why": "TechCrunch kritiserer idéen om interne AI-revisorer og peger på enklere løsninger mod rogue agents. Værdifuld læsning for at forstå praktiske begrænsninger i branche-respons og hvordan politikere bør vurdere forslag om intern kontrol.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Allowing AI firms to collude to ‘pace the frontier’ is a dangerous proposition",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-companies-collude-antitrust-laws",
+      "summary": "Tech CEOs banding together is an old ruse recycled from corporate America to get a pass from antitrust lawsAnthropic’s Dario Amodei is not the first corporate CEO to suggest that excessive competition is driving the world to some socially undesirable outcome.The safety breach disclosed by OpenAI after a swarm of its agents coordinated to breach their supposedly secure sandbox, get on the Internet and hack AI platform Hugging Face, warrants urgent action. It demonstrated the ease with which the t",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-collude-pace-frontier",
+      "why": "The Guardian analyserer forslag om koordineret 'pacing' mellem AI-udviklere og advarer mod antitrust- og sikkerhedsrisici. Vigtigt for forståelsen af regulatoriske forslag, konkurrencepolitik og danske positioner i EU-debatten.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Rapid Houthi advances in Yemen pose massive strategic risks for Saudi Arabia in the Gulf",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/rapid-houthi-advances-in-yemen-pose-massive-strategic-risks-for-saudi-arabia-in-the-gulf-292070",
+      "summary": "The resumption of fighting, paired with the ongoing closure of the Strait of Hormuz, complicates regional strategy and energy policy for the Gulf powerhouse. Share article Print article An advance by Yemen’s Houthi rebels, which has included the targeting of",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "houthi-advances-gulf",
+      "why": "The Conversation forklarer, hvordan houthi- fremskridt og lukning af Hormuz-strædet ændrer regional strategi og energiforsyning. Det har konkrete konsekvenser for europæisk energi- og sikkerhedspolitik, relevant for Danmarks energiforståelse og alliancer.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss",
+      "summary": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\".",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russia-targeting-ukraine-allies",
+      "why": "BBC rapporterer, at USA anklager Rusland for internationale angreb mod ukrainske allierede — et signal om russisk operationel rækkevidde og efterretningskonsekvenser, som kan påvirke NATO-sikring og danske beslutninger om beskyttelse af dissidenter/militære rådgivere.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Microsoft says AI rival Anthropic could have 'disastrous impact' on humanity",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
+      "summary": "Mustafa Suleyman says he believes the AI giant is in effect teaching Claude it \"may be conscious\".",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-microsoft-warning",
+      "why": "BBC gengiver Microsofts kritik af Anthropic og Mustafa Suleymans bekymring om bevidsthedssignaler i modeller. Nyhedsvinklen illustrerer eskalerende erhvervspolitiske konflikter i AI-branchen, relevant for dansk/værreuropæisk vurdering af risiko og regulering.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "macOS 27 Golden Gate: The Ars Technica review",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/09/macos-27-golden-gate-the-ars-technica-review/",
+      "summary": "It's both a \"Snow Leopard update\" and a major leap for Apple Intelligence.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "macos-27-golden-gate",
+      "why": "Ars Technica vurderer macOS 27 som både et klassisk 'stability' update og et stort skridt for Apple Intelligence. Relevant for forståelsen af hvordan Apple integrerer AI i brugsvaner — nyttigt for danske brugere og it-beslutningstagere.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Everything New in iOS 27.2 Beta 1",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/guide/ios-27-2-beta-features/",
+      "summary": "Apple surprised us with the first beta of iOS 27.2 today instead of releasing an iOS 27.1 beta. Apple likely went straight to iOS 27.2 to keep iPhone Duo code under wraps for now, since we already know the ‌iPhone Duo‌ will ship with iOS 27.1 when it comes out in October.\n\n\n\n\n\nThis beta includes Apple's revamped Health app, new languages for Siri AI, and a handful of other useful tweaks.\n\n\n\nRevamped Health App\n\nThe iOS 27.2 beta includes the redesigned Health app Apple showed off at its Septembe",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ios-27-2-beta",
+      "why": "MacRumors oplister nye funktioner i iOS 27.2 beta, herunder sundhedsapp-revamp og Siri AI-sprog. Praktisk for Mads hvis han følger Apple-økosystemets AI-udrulning og danske konsekvenser for app-udvikling og privacy.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
+      "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "al-gore-ai-risk",
+      "why": "TechCrunch-interview med Al Gore om reelle AI-risici: ikke kun emissionsdebatten, men branchens egne advarsler. Giver et politisk og strategisk perspektiv der hjælper til at sætte debat om datacentre, grøn omstilling og regulering i kontekst.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Ctenophores Aren’t Just Beautiful. They’re Biological Wonders.",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/ctenophores-arent-just-beautiful-theyre-biological-wonders-20260916/",
+      "summary": "Comb jellies are helping answer fundamental questions in biology, from how the earliest nervous systems evolved to how bioluminescence works.             The post Ctenophores Aren’t Just Beautiful. They’re Biological Wonders. first appeared on Quanta Magazine",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ctenophores-biology",
+      "why": "Quanta beskriver comb jellies og deres rolle i forståelsen af nervesystemers oprindelse og bioluminescens. En kort, fascinerende biologi-longread der belønner nysgerrighed og giver nye vinkler på evolutionære spørgsmål.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Fire Emblem: Fortune's Weave review",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/fire-emblem-fortunes-weave-review",
+      "summary": " I cannot remember the last time I put this many hours into a game for a review. And still, I'm sitting here, writing this, itching to play more of Fire Emblem: Fortune's Weave. Despite some odd decisions for an RPG of this depth and scale - a single save slot and diluted difficulty, to name two - I haven't played a game that has captivated and fascinated me like this in years. This is Fire Emblem at its peak, a game as sharp and satisfying as Awakening on the 3DS, with character work and story ",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "fire-emblem-fortunes-weave",
+      "why": "Eurogamer giver en dyb anmeldelse af den nye Fire Emblem, en stor ambition inden for taktiske RPG'er. For Mads som interesseret i spilkultur og spildesign er dette en lang, underholdende gennemgang af et storværk i genren.",
+      "reading_minutes": "11"
+    },
+    {
+      "title": "Elizabeth Holmes, But Make It Art",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/elizabeth-holmes-but-make-it-art/",
+      "summary": "Turns out the art world is primed for “Why would I deceive you?” memes. Also: NYC museum workers authorize a strike.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "elizabeth-holmes-art",
+      "why": "Hyperallergic analyserer hvordan kunstverdenen omfavner og omsætter Elizabeth Holmes-fortællingen som kulturelt meme. Interessant for forståelse af samtidskunst, moral og hvordan notoriske skandaler bliver kulturelle emner.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Your AI agents can now control your Google Home devices | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
+      "summary": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-google-home",
+      "why": "Google åbner for at AI-agenter (Claude, ChatGPT osv.) kan styre Google Home, se kameramateriale og smart-home-aktiviteter via naturligt sprog. Konsekvenser for privatliv, sikkerhed og hvordan danskere kan bruge AI i hjemmet.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ugens feedback: 0 'mere' og 4 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner. Det hyppigste signal var: uinteressant.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 2,
+        "teknologi": 8,
+        "verden": 6,
+        "fordybelse": 1,
+        "kultur": 3
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "teknologi": 6,
+        "verden": 6,
+        "fordybelse": 1,
+        "kultur": 2
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (6 af 8).",
+        "Færre historier om kultur end planlagt (2 af 3).",
+        "Færre longreads end planlagt (9 af 11)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 295,
+      "web_candidates": 21,
+      "total_candidates": 75,
+      "repeats_dropped": 13,
+      "previews_enriched": 22,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 39,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 20,
+      "prepared": 17,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 28
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 17
+      }
+    }
+  }
+}
