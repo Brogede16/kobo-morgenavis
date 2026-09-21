@@ -18,14 +18,6 @@ Forsiden er et bevidst lille kontrolpanel: Åbn Render-adressen, log ind med `AD
 
 Der er også en automatvenlig endpoint: `POST /run-now` med `Authorization: Bearer <RUN_NOW_TOKEN>`. Den starter kørslen og svarer `202` med det samme, også hvis en ældre klient sender `?wait=true`. Websøgning er standard; `?web_search=false` er kun til fejlsøgning. Der kan kun køre én udgave ad gangen pr. app-proces; et forsøg på nummer to svarer `409`.
 
-## Magasinarkiv uden AI
-
-Den samme service har et separat **Magasiner**-afsnit på kontrolpanelet. Hver dag kl. 02.15 henter den kun de konfigurerede arkivsider og ser, om der ligger nye, direkte offentlige PDF'er. Når et arkiv peger på en officiel nummerside først, følger den også dét ene link og finder den synlige **Download PDF**-fil dér. Der foretages **ingen OpenAI-kald**; normale dage er derfor blot små HTML-opslag. Når en offentlig PDF er ny, hentes den én gang og gemmes i Drive. For hvert titelarkiv beholdes de seks nyeste offentligt tilgængelige filer; kun filer, som Mads Morgen selv har oprettet, kan ryddes op.
-
-Det er bevidst ikke en omgåelse af betalingsmure eller digitale læsere. Magasinet MUSEUM og PROSAbladet har direkte offentlige PDF-filer i deres arkiver; Periskop går via én officiel downloadside, og On-Curating og e-flux eksponerer PDF'en fra den officielle nummerside. Hver aktiv kilde har en specifik tilladt PDF-adresse, så eksempelvis en jobannonce på et magasin-sites domæne aldrig kan blive hentet som et magasin. Ud & Se bruger iPaper-læserens egen offentlige **Download PDF**-handling, som udsteder en frisk, tidsbegrænset filadresse. Den tjekker kun den aktuelle måneds officielle nummerlink, springer allerede gemte numre over og bygger derefter løbende et arkiv på op til seks rigtige udgaver. DSB's store PDF'er får en særskilt filgrænse uden at hæve grænsen for de øvrige kilder. J26 kræver e-mail for at frigive sin PDF, og KALTBLUTs nyeste nummer eksponerer ingen PDF; de to er derfor deaktiveret.
-
-Sæt eventuelt `GOOGLE_MAGAZINES_FOLDER_ID` til en særskilt Drive-mappe, hvis du vil holde PDF'erne adskilt fra Kobo-aviserne. Uden variablen bruger henteren den eksisterende `GOOGLE_DRIVE_FOLDER_ID` (`Rakuten Kobo`). Alle magasinkilder og tidsplanen ligger i `sources.yaml` under `magazines`.
-
 Kobo Libra Colour understøtter Google Drive direkte. Forbind Kobo-kontoen med Google Drive én gang på læseren, og brug den automatisk oprettede **`Rakuten Kobo`**-mappe som upload-mappe. Når Kobo synkroniserer over Wi‑Fi, henter den nye DRM-frie EPUB’er; de kan også ses under **More → My Google Drive**. Det er en officiel Kobo-funktion, ikke en uofficiel Kobo-API-integration.
 
 ## Lokal test
@@ -97,7 +89,6 @@ Sæt disse som Render Environment Variables — aldrig i Git:
 | `GITHUB_FEEDBACK_BRANCH` | Nej | Standard er `feedback-data`; klik her deployer ikke appen |
 | `GITHUB_FEEDBACK_TOKEN` | Nej | Fine-grained token med Contents read/write til det ene repo |
 | `GOOGLE_DRIVE_FOLDER_ID` | Ja for upload | ID fra Drive-mappens URL |
-| `GOOGLE_MAGAZINES_FOLDER_ID` | Nej | Valgfri særskilt Drive-mappe til de offentlige magasin-PDF'er; ellers bruges Kobo-mappen |
 | `GOOGLE_OAUTH_CLIENT_ID` | Ja for normal Drive-upload | OAuth-klient-id fra dit Google Cloud-projekt |
 | `GOOGLE_OAUTH_CLIENT_SECRET` | Ja for normal Drive-upload | OAuth-klienthemmelighed |
 | `GOOGLE_OAUTH_REFRESH_TOKEN` | Ja for normal Drive-upload | Langlivet brugeradgang til Kobo-mappen |

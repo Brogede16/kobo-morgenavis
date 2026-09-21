@@ -15,7 +15,6 @@ from zoneinfo import ZoneInfo
 from feedback_store import add_feedback, configured as feedback_configured, latest_edition
 from morning_news import cron_fields, load_settings
 from edition_process import run_isolated
-from magazine_downloader import sync_magazines
 
 load_dotenv()
 logging.basicConfig(
@@ -32,9 +31,6 @@ PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><meta name=\"
 {% elif state.error %}<p class=\"note error\"><strong>Seneste kørsel fejlede</strong> {{ state.finished_at }}<br>{{ state.error }}</p>
 {% elif state.finished_at %}<p class=note><strong>Seneste kørsel</strong> {{ state.finished_at }}: {{ state.articles }} historier{% if state.drive %}, sendt til Drive{% endif %}.</p>{% endif %}
 <form method=post action=\"{{ url_for('run_from_page') }}\"><p>Avisen sendes automatisk hver morgen. Knappen her er til test.</p><button>Lav og send avis nu</button></form>
-{% if magazines.enabled %}<h2>Magasiner</h2><p>Scanner offentlige arkiver dagligt kl. 02:15 uden AI eller tokens. Kun direkte, offentlige PDF'er gemmes; læsere, login og betalingsmure springes over.</p>
-{% if magazines.running %}<p class=note><strong>Magasinscan i gang</strong> siden {{ magazines.started_at }}.</p>{% elif magazines.finished_at %}<p class=note><strong>Seneste magasinscan</strong> {{ magazines.finished_at }}: {{ magazines.uploaded }} nye PDF'er{% if magazines.error %} — {{ magazines.error }}{% endif %}.</p>{% endif %}
-<form method=post action=\"{{ url_for('run_magazines_from_page') }}\"><button>Scan og hent magasiner nu</button></form>{% endif %}
 {% if edition %}<h2>Seneste udgave</h2><p>Fortæl gerne indimellem, hvad du vil have mere eller mindre af. Det bruges i næste udvælgelse.</p>
 {% if edition.report and edition.report.editor_note %}<p class=note><strong>Redaktørens note</strong><br>{{ edition.report.editor_note }}</p>{% endif %}
 {% if edition.report and edition.report.editorial_mix and edition.report.editorial_mix.warnings %}<div class=note><strong>Det mangler i denne udgave</strong><ul>{% for warning in edition.report.editorial_mix.warnings %}<li>{{ warning }}</li>{% endfor %}</ul></div>{% endif %}
@@ -50,7 +46,7 @@ PAGE = """<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><meta name=\"
 
 PUBLIC_PAGE_STYLE = """<style>body{font:17px system-ui;max-width:46rem;margin:4rem auto;padding:0 1rem;color:#16201c;line-height:1.55}a{color:#31584d}</style>"""
 PRIVACY_PAGE = f"""<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Privatliv – Mads Morgen</title>{PUBLIC_PAGE_STYLE}
-<h1>Privatliv</h1><p>Mads Morgen er en personlig, privat morgenavis til én bruger. Den indsamler offentligt tilgængelige nyhedslinks og RSS-data, skaber en EPUB og lægger den i brugerens valgte Google Drive-mappe.</p><p>Google Drive-adgangen bruges kun til at oprette, læse og slette de EPUB-filer og offentlige magasin-PDF'er, som Mads Morgen selv har oprettet. Appen læser ikke andre Drive-filer.</p><p>Artikel-feedback gemmes i et privat GitHub-repository for at forbedre fremtidige udvælgelser. Data sælges ikke og deles ikke med andre.</p><p>Spørgsmål: <a href=\"mailto:madsbh@me.com\">madsbh@me.com</a></p>"""
+<h1>Privatliv</h1><p>Mads Morgen er en personlig, privat morgenavis til én bruger. Den indsamler offentligt tilgængelige nyhedslinks og RSS-data, skaber en EPUB og lægger den i brugerens valgte Google Drive-mappe.</p><p>Google Drive-adgangen bruges kun til at oprette, læse og slette de EPUB-filer, som Mads Morgen selv har oprettet. Appen læser ikke andre Drive-filer.</p><p>Artikel-feedback gemmes i et privat GitHub-repository for at forbedre fremtidige udvælgelser. Data sælges ikke og deles ikke med andre.</p><p>Spørgsmål: <a href=\"mailto:madsbh@me.com\">madsbh@me.com</a></p>"""
 TERMS_PAGE = f"""<!doctype html><html lang=\"da\"><meta charset=\"utf-8\"><title>Vilkår – Mads Morgen</title>{PUBLIC_PAGE_STYLE}
 <h1>Vilkår</h1><p>Mads Morgen er en privat, personlig automatisering. Den bruges på ejerens eget ansvar og er ikke en offentlig nyhedstjeneste.</p><p>Artikler og billeder tilhører deres respektive udgivere. EPUB’en er alene til personlig læsning; den må ikke videredistribueres.</p><p>Brugeren kan til enhver tid tilbagekalde Google Drive-adgangen fra sin Google-konto.</p><p>Spørgsmål: <a href=\"mailto:madsbh@me.com\">madsbh@me.com</a></p>"""
 
@@ -63,8 +59,6 @@ STATUS_MESSAGES = {
     "feedback": "Gemte din feedback i GitHub.",
     "feedback-off": "GitHub-feedback er ikke sat op endnu.",
     "feedback-error": "Feedback kunne ikke gemmes lige nu. Prøv igen senere.",
-    "magazines-started": "Magasinscanningen er startet. Den bruger ingen AI eller tokens.",
-    "magazines-busy": "Der kører allerede en magasinscanning.",
 }
 
 
@@ -95,12 +89,8 @@ def create_app(start_scheduler=True):
     # One edition at a time. The scheduled run is the real product; manual runs are
     # for testing, and must never collide with it or with a double-clicked button.
     run_lock = threading.Lock()
-    magazine_lock = threading.Lock()
     state = {"running": False, "started_at": None, "finished_at": None,
              "articles": 0, "error": None, "drive": None}
-    magazine_config = settings.get("magazines", {})
-    magazine_state = {"enabled": bool(magazine_config.get("enabled", False)), "running": False,
-                      "started_at": None, "finished_at": None, "uploaded": 0, "error": None}
 
     def execute(use_web_search=None, deliver_failure=True):
         """Run an edition in the background. Returns False when one is already running."""
@@ -132,29 +122,6 @@ def create_app(start_scheduler=True):
             state.update(running=False)
             active_lock.release()
             raise
-        return True
-
-    def execute_magazines():
-        """Run the independent, zero-token magazine scan in the background."""
-        if not magazine_state["enabled"] or not magazine_lock.acquire(blocking=False):
-            return False
-        magazine_state.update(running=True, started_at=datetime.now(timezone).isoformat(timespec="seconds"),
-                              error=None)
-
-        def work():
-            try:
-                result = sync_magazines(magazine_config)
-                magazine_state.update(uploaded=result.get("uploaded", 0), error=None,
-                                      report=result.get("sources", []))
-            except Exception as exc:
-                magazine_state.update(error=f"{type(exc).__name__}: {exc}"[:300])
-                logger.exception("Magazine scan failed")
-            finally:
-                magazine_state.update(running=False,
-                                      finished_at=datetime.now(timezone).isoformat(timespec="seconds"))
-                magazine_lock.release()
-
-        threading.Thread(target=work, name="magazines", daemon=True).start()
         return True
 
     def catch_up():
@@ -201,10 +168,6 @@ def create_app(start_scheduler=True):
     # Ninety seconds after boot, so the health check answers first.
     scheduler.add_job(catch_up, trigger="date", id="catch-up", replace_existing=True,
                       run_date=datetime.now(timezone) + timedelta(seconds=90))
-    if magazine_state["enabled"]:
-        scheduler.add_job(execute_magazines, trigger="cron", id="magazine-scan", replace_existing=True,
-                          max_instances=1, coalesce=True, misfire_grace_time=3600,
-                          **cron_fields(magazine_config.get("schedule", "15 2 * * *")))
     # Flask's development reloader starts a second process; Render/Gunicorn does not.
     if start_scheduler:
         scheduler.start()
@@ -233,7 +196,7 @@ def create_app(start_scheduler=True):
 
     @app.get("/healthz")
     def healthz():
-        return jsonify(status="ok", next_run=str(next_run()), last_run=dict(state), magazines=dict(magazine_state))
+        return jsonify(status="ok", next_run=str(next_run()), last_run=dict(state))
 
     @app.get("/privacy")
     def privacy():
@@ -256,7 +219,7 @@ def create_app(start_scheduler=True):
         result = None if status == "started" and not shown_state.get("running") else STATUS_MESSAGES.get(status)
         response = make_response(render_template_string(
             PAGE, next_run=next_run(), result=result, state=shown_state,
-            edition=edition, feedback_enabled=feedback_configured(), magazines=dict(magazine_state)))
+            edition=edition, feedback_enabled=feedback_configured()))
         # This is a live control panel; do not let Safari reuse the snapshot
         # from before a background edition completed.
         response.headers["Cache-Control"] = "no-store, max-age=0"
@@ -268,12 +231,6 @@ def create_app(start_scheduler=True):
         # Start in the background and redirect, so the single worker keeps answering
         # the health check and a page refresh cannot trigger a second paid run.
         return redirect(url_for("home", status="started" if execute(use_web_search=True, deliver_failure=False) else "busy"), code=303)
-
-    @app.post("/magazines/run")
-    @page_auth
-    def run_magazines_from_page():
-        started = execute_magazines()
-        return redirect(url_for("home", status="magazines-started" if started else "magazines-busy"), code=303)
 
     @app.post("/feedback")
     @page_auth

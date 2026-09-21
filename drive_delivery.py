@@ -35,7 +35,7 @@ def list_files(drive, query, fields="id,name,mimeType,createdTime"):
 
 
 def drive_service():
-    """Create the one Drive connection used by newspapers and public magazines."""
+    """Create the Drive connection used by newspapers."""
     if os.environ.get("GOOGLE_OAUTH_REFRESH_TOKEN"):
         credentials = Credentials(token=None, refresh_token=os.environ["GOOGLE_OAUTH_REFRESH_TOKEN"],
             token_uri="https://oauth2.googleapis.com/token", client_id=os.environ["GOOGLE_OAUTH_CLIENT_ID"],
