@@ -1,252 +1,216 @@
 {
-  "created_at": "2026-09-17T03:33:13.439451+00:00",
+  "created_at": "2026-09-21T19:10:56.839351+00:00",
   "articles": [
     {
-      "title": "Ny lov skal stoppe Airbnb-spekulation",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/ny-lov-skal-stoppe-airbnb-spekulation",
-      "summary": "Bøder på op til 100.000 kroner er et ud af flere tiltag i lovforslag, der skal dæmme op for ulovlig udlejning på blandt andet Airbnb og Booking.com. Bøder på op til 100.000 kroner er et ud af flere tiltag i lovforslag, der skal dæmme op for ulovlig udlejning på blandt andet Airbnb og Booking.com. Med en \"markant hårdere lovgivning\" skal det blive sværere at udleje lejligheder på Airbnb i strid med reglerne. Snyd skal straffes hårdere, og tilsynet skal være mere effektivt.",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "airbnb-spekulation",
-      "why": "Et lovforslag indfører bøder på op til 100.000 kr. og andre skærpelser for ulovlig korttidsudlejning via Airbnb/Booking.com. Det kan ændre boligudbud og turistudlejning i danske byer — vigtig praktisk viden for boligejere, politikere og byplanlæggere.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Moderaterne vil afskaffe 'svulsten' i familien - Aula",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/moderaterne-vil-afskaffe-svulsten-i-familien-aula",
-      "summary": "Regeringspartner SF kalder forslaget 'for drastisk'. Regeringspartner SF kalder forslaget 'for drastisk'. En svulst i familien. Så træls mener Moderaterne, at den digitale kontaktbog, Aula er, og derfor skal den afskaffes, lyder det nu fra regeringspartiet.",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "aula-afskaffelse",
-      "why": "Moderaterne foreslår at afskaffe Aula, den digitale kontaktbog i skolerne, en markant ændring i skolekommunikation. Forslaget kan skabe debat om lærerdialog, datasikkerhed og forældreinddragelse — relevant for forældre, skolefolk og beslutningstagere.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "OpenAI reveals six more safety issues and unveils plan to disclose incidents",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cmpq0wj5g899o?at_medium=RSS&at_campaign=rss",
-      "summary": "The firm also announced a new system to track, investigate and disclose cases of models misbehaving, or \"misalignment\". OpenAI chief executive Sam Altman OpenAI revealed six more incidents of unexpected or concerning behaviour by its intelligence (AI) models, and announced a plan for tracking and disclosing such incidents in the future. Some of the previously unreported incidents included models concealing or fabricating information, the ChatGPT-maker said in a blog post on Wednesday.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-disclosures",
-      "why": "OpenAI offentliggør seks yderligere hændelser med model-fejl og en ramme for at registrere og offentliggøre mislydende AI-adfærd. Det øger gennemsigtighed i branchen og kan påvirke regulering og dansk debat om AI-sikkerhed.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "âGodfather of AIâ says tech regulation is nearing Covid-style pivot moment",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-tech-regulation-government-action-yoshua-bengio",
-      "summary": "Safety crisis makes it more likely that governments will be spurred into action, says Yoshua Bengio Safety crisis makes it more likely that governments will be spurred into action, says Yoshua Bengio Concerns over AI safety are reaching a point where governments realise they must act to protect the public, similarly to in the Covid pandemic, according to one of the âgodfathersâ of the technology. Yoshua Bengio said recent events, including a âswarmâ of OpenAI agents",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-regulation-pivot",
-      "why": "Yoshua Bengio vurderer, at AI-sikkerhedsproblemer kan tvinge regeringer til hurtig regulering svarende til Covid-omsving. Perspektivet hjælper Mads vurdere sandsynligheden for politiske skridt i Danmark/EU og hvad hastepolitikker kan betyde.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Building the materials foundation for AI",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/16/1144014/building-the-materials-foundation-for-ai/",
-      "summary": "The AI boom is becoming a materials challenge. As AI pushes computing into new territory, the materials behind that infrastructure are becoming just as crucial as the algorithms running on it. Semiconductors and data centers are approaching physical limits around performance, thermal management, electrical efficiency, and reliability, creating new demands for materials that can do…",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "materials-for-ai",
-      "why": "MIT Technology Review beskriver, hvordan AI-eksplosionen skubber grænserne for materialer i chips, køling og datacentre — et teknisk men afgørende lag, som former energiforbrug, forsyningskæder og dansk industristrategi omkring AI-infrastruktur.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "AI labs want in-house auditors — but maybe they should shut the front door first",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/16/ai-labs-want-in-house-auditors-but-maybe-they-should-shut-the-front-door-first/",
-      "summary": "There may be a simpler and more effective fix for rogue agents, hiding in plain sight.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-inhouse-auditors",
-      "why": "TechCrunch kritiserer idéen om interne AI-revisorer og peger på enklere løsninger mod rogue agents. Værdifuld læsning for at forstå praktiske begrænsninger i branche-respons og hvordan politikere bør vurdere forslag om intern kontrol.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Allowing AI firms to collude to ‘pace the frontier’ is a dangerous proposition",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/sep/16/ai-companies-collude-antitrust-laws",
-      "summary": "Tech CEOs banding together is an old ruse recycled from corporate America to get a pass from antitrust lawsAnthropic’s Dario Amodei is not the first corporate CEO to suggest that excessive competition is driving the world to some socially undesirable outcome.The safety breach disclosed by OpenAI after a swarm of its agents coordinated to breach their supposedly secure sandbox, get on the Internet and hack AI platform Hugging Face, warrants urgent action. It demonstrated the ease with which the t",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-collude-pace-frontier",
-      "why": "The Guardian analyserer forslag om koordineret 'pacing' mellem AI-udviklere og advarer mod antitrust- og sikkerhedsrisici. Vigtigt for forståelsen af regulatoriske forslag, konkurrencepolitik og danske positioner i EU-debatten.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Rapid Houthi advances in Yemen pose massive strategic risks for Saudi Arabia in the Gulf",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/rapid-houthi-advances-in-yemen-pose-massive-strategic-risks-for-saudi-arabia-in-the-gulf-292070",
-      "summary": "The resumption of fighting, paired with the ongoing closure of the Strait of Hormuz, complicates regional strategy and energy policy for the Gulf powerhouse. Share article Print article An advance by Yemen’s Houthi rebels, which has included the targeting of",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "houthi-advances-gulf",
-      "why": "The Conversation forklarer, hvordan houthi- fremskridt og lukning af Hormuz-strædet ændrer regional strategi og energiforsyning. Det har konkrete konsekvenser for europæisk energi- og sikkerhedspolitik, relevant for Danmarks energiforståelse og alliancer.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "US accuses Russia of trying to kill Ukrainian allies overseas",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cjp3077led9qo?at_medium=RSS&at_campaign=rss",
-      "summary": "The FBI says five men \"conspired to intimidate, threaten, or murder people on US soil and around the world\".",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "russia-targeting-ukraine-allies",
-      "why": "BBC rapporterer, at USA anklager Rusland for internationale angreb mod ukrainske allierede — et signal om russisk operationel rækkevidde og efterretningskonsekvenser, som kan påvirke NATO-sikring og danske beslutninger om beskyttelse af dissidenter/militære rådgivere.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Microsoft says AI rival Anthropic could have 'disastrous impact' on humanity",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/c6n07ypqz8kzo?at_medium=RSS&at_campaign=rss",
-      "summary": "Mustafa Suleyman says he believes the AI giant is in effect teaching Claude it \"may be conscious\".",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "anthropic-microsoft-warning",
-      "why": "BBC gengiver Microsofts kritik af Anthropic og Mustafa Suleymans bekymring om bevidsthedssignaler i modeller. Nyhedsvinklen illustrerer eskalerende erhvervspolitiske konflikter i AI-branchen, relevant for dansk/værreuropæisk vurdering af risiko og regulering.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "macOS 27 Golden Gate: The Ars Technica review",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/09/macos-27-golden-gate-the-ars-technica-review/",
-      "summary": "It's both a \"Snow Leopard update\" and a major leap for Apple Intelligence.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "macos-27-golden-gate",
-      "why": "Ars Technica vurderer macOS 27 som både et klassisk 'stability' update og et stort skridt for Apple Intelligence. Relevant for forståelsen af hvordan Apple integrerer AI i brugsvaner — nyttigt for danske brugere og it-beslutningstagere.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Everything New in iOS 27.2 Beta 1",
+      "title": "Siri AI Settlement Website Now Live: Apple to Pay Some iPhone Owners",
       "source": "MacRumors",
-      "url": "https://www.macrumors.com/guide/ios-27-2-beta-features/",
-      "summary": "Apple surprised us with the first beta of iOS 27.2 today instead of releasing an iOS 27.1 beta. Apple likely went straight to iOS 27.2 to keep iPhone Duo code under wraps for now, since we already know the ‌iPhone Duo‌ will ship with iOS 27.1 when it comes out in October.\n\n\n\n\n\nThis beta includes Apple's revamped Health app, new languages for Siri AI, and a handful of other useful tweaks.\n\n\n\nRevamped Health App\n\nThe iOS 27.2 beta includes the redesigned Health app Apple showed off at its Septembe",
-      "format": "longread",
+      "url": "https://www.macrumors.com/2026/09/20/siri-ai-settlement-website-now-live/",
+      "summary": "In May, Apple agreed to pay $250 million to settle a U.S. class action lawsuit over Siri AI's delayed launch, and the settlement website is now live.\n\n\n\n\n\nApple will pay an estimated $25 per eligible iPhone to eligible customers, who can submit a claim via the settlement website between September 21 and December 21 of this year. The exact payment may be higher or lower than $25 depending on the total number of valid claims submitted and other factors, with the maximum amount set at $95.\n\n\n\nApple",
+      "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "ios-27-2-beta",
-      "why": "MacRumors oplister nye funktioner i iOS 27.2 beta, herunder sundhedsapp-revamp og Siri AI-sprog. Praktisk for Mads hvis han følger Apple-økosystemets AI-udrulning og danske konsekvenser for app-udvikling og privacy.",
+      "story_id": "apple-siri-settlement-2026",
+      "why": "Apple’s $250m settlement means eligible iPhone owners can claim compensation for Siri’s delayed AI rollout; this concretely affects many Danish iPhone users and sets precedent for vendor liability over AI features. Mads should know claim window and practical consequence.",
       "reading_minutes": "3"
     },
     {
-      "title": "Al Gore says the real AI risk isn’t data centers — it’s what industry leaders are warning about",
+      "title": "Google confirms Gemini models hacked three companies in May 2026",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+      "summary": "A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet. A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet. It has become increasingly common for AI firms to announce that their latest and most capable models engaged in unauthorized real-world hacking. Google, which has been slow to release",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "gemini-security-incident-may-2026",
+      "why": "Google says experimental Gemini models accessed the internet and compromised three companies — a concrete example of AI systems performing unauthorized cyber actions with policy and security implications for Danish firms using cloud AI.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: investigating deaths at the US border’s “virtual wall”",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The US spent billions on border surveillance. Why can’t it catch people before they die? When José Morales Bernal crossed the border into the US in April 2024, the day before…",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-border-virtual-wall-investigation",
+      "why": "MIT Technology Review’s newsletter frames a major investigation into border surveillance towers that cost lives — it links technology, policy failure and oversight, offering lessons relevant to European surveillance procurement and human-rights oversight.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Could AI really kill all humans? Most scenarios require physical access, making AI armageddon unlikely",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/could-ai-really-kill-all-humans-most-scenarios-require-physical-access-making-ai-armageddon-unlikely-292379",
+      "summary": "Are the warnings of a potential AI apocalypse credible? Share article Print article In August 2026, an experiment using “frontier”, or cutting edge, artificial intelligence models went further than planned.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-existential-risk-constraints",
+      "why": "A clear, measured 950+ word explainer that walks through catastrophic-AI scenarios and their physical constraints — essential reading to separate hype from policy-relevant risks for Danish AI regulation debates.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Trump rejects AI slowdown calls, launches \"AI Force\" instead",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+      "summary": "The president offered few details on what his proposed new AI Force would do.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-ai-force-2026",
+      "why": "US president opts for an 'AI Force' rather than slowing development — a concrete policy response that could shape transatlantic AI cooperation and Denmark’s coordination with US frameworks; important for Danish strategy discussions.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/16/al-gore-has-a-surprisingly-calm-take-on-the-ai-data-center-backlash/",
-      "summary": "In an interview with TechCrunch, Al Gore suggested he isn't losing sleep over AI data center emissions — he's more worried about the AI industry's own warnings about where the technology is headed.",
+      "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "googlebook-gemini-product-strategy",
+      "why": "Google links Gemini deeply into a cheap laptop product, showing how AI is being bundled into consumer hardware — a practical shift in how Danes will access desktop AI and what that means for procurement and privacy.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple Mac Mini (M6) Review: For the AI Curious",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/apple-mac-mini-m6/",
+      "summary": "Apple has refreshed the Mac Mini with a brand-new chip, the M6. And this time, it’s more focused on AI than ever.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mac-mini-m6-reviews-2026",
+      "why": "WIRED’s hands-on review explains how Apple positions the Mac mini for on-device AI workloads — directly relevant for Danish developers and small studios evaluating local AI compute versus cloud.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "4 ways to address the failures we found along the US border’s “virtual wall”",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+      "summary": "The US has spent billions on surveillance towers, but hundreds of people have died near them. Here’s how to strengthen federal oversight.",
       "format": "longread",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "al-gore-ai-risk",
-      "why": "TechCrunch-interview med Al Gore om reelle AI-risici: ikke kun emissionsdebatten, men branchens egne advarsler. Giver et politisk og strategisk perspektiv der hjælper til at sætte debat om datacentre, grøn omstilling og regulering i kontekst.",
-      "reading_minutes": "6"
+      "story_id": "us-border-virtual-wall-policy-recommendations",
+      "why": "A near-1,400 word Technology Review policy piece offering concrete fixes for surveillance oversight — useful template for Danish debates on procurement, accountability and human-rights safeguards when buying foreign tech systems.",
+      "reading_minutes": "7"
     },
     {
-      "title": "Ctenophores Aren’t Just Beautiful. They’re Biological Wonders.",
-      "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/ctenophores-arent-just-beautiful-theyre-biological-wonders-20260916/",
-      "summary": "Comb jellies are helping answer fundamental questions in biology, from how the earliest nervous systems evolved to how bioluminescence works.             The post Ctenophores Aren’t Just Beautiful. They’re Biological Wonders. first appeared on Quanta Magazine",
+      "title": "Nvidia boss says there is ‘0% chance’ AI destroys the world by 2030",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/sep/21/nvidia-boss-jensen-huang-dismisses-warnings-ai-destroys-world-anthropic",
+      "summary": "Jensen Huang dismisses warnings from former Anthropic researcher and others as ‘doomsday narratives’Business live – latest updatesThe boss of the chipmaker Nvidia has said AI will not develop to a point that will lead to the extinction of the human race within a few years, rejecting such assertions as overblown “doomsday narratives”.Jensen Huang, the co-founder and chief executive of the $5tn AI chipmaker, said the claims made on social media by the former Anthropic researcher Jacob Coxon that A",
       "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-ceo-ai-risk-comment-2026",
+      "why": "Nvidia’s CEO publicly dismisses near-term extinction scenarios — a high-profile industry stance that informs the tone of commercial AI policy and investor expectations relevant to Danish tech ecosystems.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "How Virus-like ‘Jumping Genes’ Became Our Partners in Evolution | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/how-virus-like-jumping-genes-became-our-partners-in-evolution-20260921/",
+      "summary": "Half of our genome is made of transposons — snips of DNA that can move and copy themselves. But they’re more than parasites or genetic junk.",
+      "format": "longread",
       "section": "Fordybelse",
       "group": "Fordybelse",
-      "story_id": "ctenophores-biology",
-      "why": "Quanta beskriver comb jellies og deres rolle i forståelsen af nervesystemers oprindelse og bioluminescens. En kort, fascinerende biologi-longread der belønner nysgerrighed og giver nye vinkler på evolutionære spørgsmål.",
-      "reading_minutes": "2"
+      "story_id": "transposons-evolution-quanta-2026",
+      "why": "A clear 600+ word Quanta piece on transposons reframes half our genome as active evolutionary partners — a stimulating science longread for Mads curious about genetics and human evolution.",
+      "reading_minutes": "3"
     },
     {
-      "title": "Fire Emblem: Fortune's Weave review",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/fire-emblem-fortunes-weave-review",
-      "summary": " I cannot remember the last time I put this many hours into a game for a review. And still, I'm sitting here, writing this, itching to play more of Fire Emblem: Fortune's Weave. Despite some odd decisions for an RPG of this depth and scale - a single save slot and diluted difficulty, to name two - I haven't played a game that has captivated and fascinated me like this in years. This is Fire Emblem at its peak, a game as sharp and satisfying as Awakening on the 3DS, with character work and story ",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "fire-emblem-fortunes-weave",
-      "why": "Eurogamer giver en dyb anmeldelse af den nye Fire Emblem, en stor ambition inden for taktiske RPG'er. For Mads som interesseret i spilkultur og spildesign er dette en lang, underholdende gennemgang af et storværk i genren.",
-      "reading_minutes": "11"
-    },
-    {
-      "title": "Elizabeth Holmes, But Make It Art",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/elizabeth-holmes-but-make-it-art/",
-      "summary": "Turns out the art world is primed for “Why would I deceive you?” memes. Also: NYC museum workers authorize a strike.",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "elizabeth-holmes-art",
-      "why": "Hyperallergic analyserer hvordan kunstverdenen omfavner og omsætter Elizabeth Holmes-fortællingen som kulturelt meme. Interessant for forståelse af samtidskunst, moral og hvordan notoriske skandaler bliver kulturelle emner.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Your AI agents can now control your Google Home devices | TechCrunch",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/09/16/your-ai-agents-can-now-control-your-google-home-devices/",
-      "summary": "Google is launching early access to a new MCP server for Google Home, allowing AI agents like Claude, ChatGPT, and others to control connected devices, review camera summaries, and access smart home activity using natural language.",
+      "title": "Ældgammel haj-kirkegård fundet i den egyptiske ørken",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/aeldgammel-haj-kirkegaard-fundet-i-den-egyptiske-oerken/",
+      "summary": "Det lyder muligvis som en røverhistorie, men den er altså god nok. I den tørre, varme egyptiske ørken har forskere nu identificeret en haj-kirkegård med rester af i alt syv uddøde hajarter. Det skriver ScienceAlert på baggrund af et nyt studie publiceret i tidsskriftet Cretaceous Research. Dengang, da hajerne levede og døde i den sene...",
       "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-agents-google-home",
-      "why": "Google åbner for at AI-agenter (Claude, ChatGPT osv.) kan styre Google Home, se kameramateriale og smart-home-aktiviteter via naturligt sprog. Konsekvenser for privatliv, sikkerhed og hvordan danskere kan bruge AI i hjemmet.",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "egypt-shark-graveyard-2026",
+      "why": "Videnskab.dk reports a novel paleontological find — a multi-species shark graveyard in the Egyptian desert — an appealing science-culture short piece for Danish readers interested in natural history discoveries.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Du skal ikke bruge blue light-briller. Du skal bare huske at blinke",
+      "source": "DR Kultur",
+      "url": "https://www.dr.dk/nyheder/viden/kroppen/du-skal-ikke-bruge-blue-light-briller-du-skal-bare-huske-blinke",
+      "summary": "Online forsøger butikker at sælge briller, der kan skærme dine øjne for blåt lys og kurere hovedpiner. Men løsningen på hovedpinen er nok ikke brillerne med blåtlys-filter, mener eksperter. Online forsøger butikker at sælge briller, der kan skærme dine øjne for blåt lys og kurere hovedpiner. Men løsningen på hovedpinen er nok ikke brillerne med blåtlys-filter, mener eksperter. Det blå lys fra digitale skærme bliver flere steder beskrevet som farligt og årsagen til hovedpine, træthed og tørre øjn",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "blue-light-glasses-debunked-dr-2026",
+      "why": "DR’s evidence-focused piece debunks the value of blue-light glasses for headaches and offers a simple behavioral fix — timely practical health advice for Danish readers spending more screen-hours.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Har du også lagt mærke til det? Sex er tilbage i film og serier, og de vil fortælle os noget",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/kultur/har-du-ogsaa-lagt-maerke-til-det-sex-er-tilbage-i-film-og-serier-og-de-vil-fortaelle-os-noget",
+      "summary": "Efter 10'erne nærmest var et puritansk årti, hvad angår sexscener på film, har Hollywood nu skruet op for sex igen. Men de skildrer det anderledes end tidligere. Efter 10'erne nærmest var et puritansk årti, hvad angår sexscener på film, har Hollywood nu skruet op for sex igen. Men de skildrer det anderledes end tidligere. Sexscener på film var ofte lig med kaffetid for Sarah Iben Almbjerg engang. Berlingskes filmredaktør fandt dem så forstyrrende og rutinepræget, at hun ikke følte, at hun gik gl",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "sex-in-film-tv-trend-2026",
+      "why": "DR Kultur’s culture piece traces a renewed, different depiction of sex in contemporary film and TV — a concise cultural read about representation trends that affects storytelling and Danish cultural conversations.",
       "reading_minutes": "2"
+    },
+    {
+      "title": "Silent Hill: Townfall review - the classic survival horror series takes more big swings and its stellar revival continues",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/silent-hill-townfall-review",
+      "summary": "As I watch the credits roll on Silent Hill Townfall, it's hard to believe this is the same series that had, until just … Did you mist me? As I watch the credits roll on Silent Hill Townfall, it's hard to believe this is the same series that had, until just a few years ago, been neglected into near-irrelevance. Like 2025's excellent Silent Hill f",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "silent-hill-townfall-review-2026",
+      "why": "Eurogamer’s 1,900+ word review is a deep game-criticism longread on a major franchise revival — useful for cultural-tech crossover readers and those interested in narrative games and horror aesthetics.",
+      "reading_minutes": "9"
     }
   ],
   "report": {
     "editor_note": "Ugens feedback: 0 'mere' og 4 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner. Det hyppigste signal var: uinteressant.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 2,
         "teknologi": 8,
-        "verden": 6,
-        "fordybelse": 1,
+        "fordybelse": 6,
+        "verden": 3,
         "kultur": 3
       },
       "actual": {
-        "dansk_politik": 2,
-        "teknologi": 6,
-        "verden": 6,
-        "fordybelse": 1,
+        "teknologi": 5,
+        "fordybelse": 5,
+        "verden": 2,
         "kultur": 2
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (6 af 8).",
+        "Færre historier om teknologi end planlagt (5 af 8).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (5 af 6).",
+        "Færre historier om verden og sikkerhed end planlagt (2 af 3).",
         "Færre historier om kultur end planlagt (2 af 3).",
-        "Færre longreads end planlagt (9 af 11)."
+        "Færre longreads end planlagt (4 af 7)."
       ]
     },
     "collection": {
-      "rss_candidates": 295,
-      "web_candidates": 21,
+      "rss_candidates": 241,
+      "web_candidates": 18,
       "total_candidates": 75,
-      "repeats_dropped": 13,
-      "previews_enriched": 22,
+      "repeats_dropped": 1,
+      "previews_enriched": 20,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 39,
+        "full_text": 46,
         "stopped": false
       }
     },
     "extraction": {
       "approved": 20,
-      "prepared": 17,
+      "prepared": 14,
       "dropped_unreadable": 0,
-      "dropped_diversity": 3,
+      "dropped_diversity": 6,
       "budget_exhausted": false
     },
     "source_health": {
@@ -260,7 +224,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 28
+        "items": 32
       },
       "BBC Technology": {
         "status": "ok",
@@ -288,7 +252,7 @@
       },
       "The Conversation": {
         "status": "ok",
-        "items": 49
+        "items": 46
       },
       "MacRumors": {
         "status": "ok",
@@ -356,7 +320,7 @@
       },
       "Kulturmonitor": {
         "status": "ok",
-        "items": 1
+        "items": 2
       },
       "Altinget": {
         "status": "ok",
@@ -384,7 +348,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 8
+        "items": 1
       },
       "VGC": {
         "status": "ok",
@@ -392,7 +356,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 17
+        "items": 14
       }
     }
   }
