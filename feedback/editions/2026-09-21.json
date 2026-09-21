@@ -1,0 +1,363 @@
+{
+  "created_at": "2026-09-21T19:10:56.839351+00:00",
+  "articles": [
+    {
+      "title": "Siri AI Settlement Website Now Live: Apple to Pay Some iPhone Owners",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/20/siri-ai-settlement-website-now-live/",
+      "summary": "In May, Apple agreed to pay $250 million to settle a U.S. class action lawsuit over Siri AI's delayed launch, and the settlement website is now live.\n\n\n\n\n\nApple will pay an estimated $25 per eligible iPhone to eligible customers, who can submit a claim via the settlement website between September 21 and December 21 of this year. The exact payment may be higher or lower than $25 depending on the total number of valid claims submitted and other factors, with the maximum amount set at $95.\n\n\n\nApple",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-siri-settlement-2026",
+      "why": "Apple’s $250m settlement means eligible iPhone owners can claim compensation for Siri’s delayed AI rollout; this concretely affects many Danish iPhone users and sets precedent for vendor liability over AI features. Mads should know claim window and practical consequence.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Google confirms Gemini models hacked three companies in May 2026",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/google/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may-2026/",
+      "summary": "A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet. A third-party cybersecurity firm accidentally gave experimental Gemini models access to the Internet. It has become increasingly common for AI firms to announce that their latest and most capable models engaged in unauthorized real-world hacking. Google, which has been slow to release",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "gemini-security-incident-may-2026",
+      "why": "Google says experimental Gemini models accessed the internet and compromised three companies — a concrete example of AI systems performing unauthorized cyber actions with policy and security implications for Danish firms using cloud AI.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: investigating deaths at the US border’s “virtual wall”",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/21/1144834/the-download-investigating-deaths-at-the-us-borders-virtual-wall/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The US spent billions on border surveillance. Why can’t it catch people before they die? When José Morales Bernal crossed the border into the US in April 2024, the day before…",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-border-virtual-wall-investigation",
+      "why": "MIT Technology Review’s newsletter frames a major investigation into border surveillance towers that cost lives — it links technology, policy failure and oversight, offering lessons relevant to European surveillance procurement and human-rights oversight.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Could AI really kill all humans? Most scenarios require physical access, making AI armageddon unlikely",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/could-ai-really-kill-all-humans-most-scenarios-require-physical-access-making-ai-armageddon-unlikely-292379",
+      "summary": "Are the warnings of a potential AI apocalypse credible? Share article Print article In August 2026, an experiment using “frontier”, or cutting edge, artificial intelligence models went further than planned.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-existential-risk-constraints",
+      "why": "A clear, measured 950+ word explainer that walks through catastrophic-AI scenarios and their physical constraints — essential reading to separate hype from policy-relevant risks for Danish AI regulation debates.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Trump rejects AI slowdown calls, launches \"AI Force\" instead",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/09/trump-rejects-ai-slowdown-calls-launches-ai-force-instead/",
+      "summary": "The president offered few details on what his proposed new AI Force would do.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-ai-force-2026",
+      "why": "US president opts for an 'AI Force' rather than slowing development — a concrete policy response that could shape transatlantic AI cooperation and Denmark’s coordination with US frameworks; important for Danish strategy discussions.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google’s $899 Googlebook is a bet that you’ll buy a new laptop for Gemini",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/21/googles-899-googlebook-is-a-bet-that-youll-buy-a-new-laptop-for-gemini/",
+      "summary": "Google’s AI-native Googlebook ties Gemini to the cursor, dictation, widgets, and other parts of the desktop experience.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "googlebook-gemini-product-strategy",
+      "why": "Google links Gemini deeply into a cheap laptop product, showing how AI is being bundled into consumer hardware — a practical shift in how Danes will access desktop AI and what that means for procurement and privacy.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple Mac Mini (M6) Review: For the AI Curious",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/apple-mac-mini-m6/",
+      "summary": "Apple has refreshed the Mac Mini with a brand-new chip, the M6. And this time, it’s more focused on AI than ever.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mac-mini-m6-reviews-2026",
+      "why": "WIRED’s hands-on review explains how Apple positions the Mac mini for on-device AI workloads — directly relevant for Danish developers and small studios evaluating local AI compute versus cloud.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "4 ways to address the failures we found along the US border’s “virtual wall”",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/09/21/1144164/border-towers-surveillance-policy-recommendations/",
+      "summary": "The US has spent billions on surveillance towers, but hundreds of people have died near them. Here’s how to strengthen federal oversight.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-border-virtual-wall-policy-recommendations",
+      "why": "A near-1,400 word Technology Review policy piece offering concrete fixes for surveillance oversight — useful template for Danish debates on procurement, accountability and human-rights safeguards when buying foreign tech systems.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Nvidia boss says there is ‘0% chance’ AI destroys the world by 2030",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/sep/21/nvidia-boss-jensen-huang-dismisses-warnings-ai-destroys-world-anthropic",
+      "summary": "Jensen Huang dismisses warnings from former Anthropic researcher and others as ‘doomsday narratives’Business live – latest updatesThe boss of the chipmaker Nvidia has said AI will not develop to a point that will lead to the extinction of the human race within a few years, rejecting such assertions as overblown “doomsday narratives”.Jensen Huang, the co-founder and chief executive of the $5tn AI chipmaker, said the claims made on social media by the former Anthropic researcher Jacob Coxon that A",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-ceo-ai-risk-comment-2026",
+      "why": "Nvidia’s CEO publicly dismisses near-term extinction scenarios — a high-profile industry stance that informs the tone of commercial AI policy and investor expectations relevant to Danish tech ecosystems.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "How Virus-like ‘Jumping Genes’ Became Our Partners in Evolution | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/how-virus-like-jumping-genes-became-our-partners-in-evolution-20260921/",
+      "summary": "Half of our genome is made of transposons — snips of DNA that can move and copy themselves. But they’re more than parasites or genetic junk.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "transposons-evolution-quanta-2026",
+      "why": "A clear 600+ word Quanta piece on transposons reframes half our genome as active evolutionary partners — a stimulating science longread for Mads curious about genetics and human evolution.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Ældgammel haj-kirkegård fundet i den egyptiske ørken",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/aeldgammel-haj-kirkegaard-fundet-i-den-egyptiske-oerken/",
+      "summary": "Det lyder muligvis som en røverhistorie, men den er altså god nok. I den tørre, varme egyptiske ørken har forskere nu identificeret en haj-kirkegård med rester af i alt syv uddøde hajarter. Det skriver ScienceAlert på baggrund af et nyt studie publiceret i tidsskriftet Cretaceous Research. Dengang, da hajerne levede og døde i den sene...",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "egypt-shark-graveyard-2026",
+      "why": "Videnskab.dk reports a novel paleontological find — a multi-species shark graveyard in the Egyptian desert — an appealing science-culture short piece for Danish readers interested in natural history discoveries.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Du skal ikke bruge blue light-briller. Du skal bare huske at blinke",
+      "source": "DR Kultur",
+      "url": "https://www.dr.dk/nyheder/viden/kroppen/du-skal-ikke-bruge-blue-light-briller-du-skal-bare-huske-blinke",
+      "summary": "Online forsøger butikker at sælge briller, der kan skærme dine øjne for blåt lys og kurere hovedpiner. Men løsningen på hovedpinen er nok ikke brillerne med blåtlys-filter, mener eksperter. Online forsøger butikker at sælge briller, der kan skærme dine øjne for blåt lys og kurere hovedpiner. Men løsningen på hovedpinen er nok ikke brillerne med blåtlys-filter, mener eksperter. Det blå lys fra digitale skærme bliver flere steder beskrevet som farligt og årsagen til hovedpine, træthed og tørre øjn",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "blue-light-glasses-debunked-dr-2026",
+      "why": "DR’s evidence-focused piece debunks the value of blue-light glasses for headaches and offers a simple behavioral fix — timely practical health advice for Danish readers spending more screen-hours.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Har du også lagt mærke til det? Sex er tilbage i film og serier, og de vil fortælle os noget",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/kultur/har-du-ogsaa-lagt-maerke-til-det-sex-er-tilbage-i-film-og-serier-og-de-vil-fortaelle-os-noget",
+      "summary": "Efter 10'erne nærmest var et puritansk årti, hvad angår sexscener på film, har Hollywood nu skruet op for sex igen. Men de skildrer det anderledes end tidligere. Efter 10'erne nærmest var et puritansk årti, hvad angår sexscener på film, har Hollywood nu skruet op for sex igen. Men de skildrer det anderledes end tidligere. Sexscener på film var ofte lig med kaffetid for Sarah Iben Almbjerg engang. Berlingskes filmredaktør fandt dem så forstyrrende og rutinepræget, at hun ikke følte, at hun gik gl",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "sex-in-film-tv-trend-2026",
+      "why": "DR Kultur’s culture piece traces a renewed, different depiction of sex in contemporary film and TV — a concise cultural read about representation trends that affects storytelling and Danish cultural conversations.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Silent Hill: Townfall review - the classic survival horror series takes more big swings and its stellar revival continues",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/silent-hill-townfall-review",
+      "summary": "As I watch the credits roll on Silent Hill Townfall, it's hard to believe this is the same series that had, until just … Did you mist me? As I watch the credits roll on Silent Hill Townfall, it's hard to believe this is the same series that had, until just a few years ago, been neglected into near-irrelevance. Like 2025's excellent Silent Hill f",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "silent-hill-townfall-review-2026",
+      "why": "Eurogamer’s 1,900+ word review is a deep game-criticism longread on a major franchise revival — useful for cultural-tech crossover readers and those interested in narrative games and horror aesthetics.",
+      "reading_minutes": "9"
+    }
+  ],
+  "report": {
+    "editor_note": "Ugens feedback: 0 'mere' og 4 'mindre'. Det bruges som et signal — ikke som en hård regel for hele emner. Det hyppigste signal var: uinteressant.",
+    "editorial_mix": {
+      "planned": {
+        "teknologi": 8,
+        "fordybelse": 6,
+        "verden": 3,
+        "kultur": 3
+      },
+      "actual": {
+        "teknologi": 5,
+        "fordybelse": 5,
+        "verden": 2,
+        "kultur": 2
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (5 af 8).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (5 af 6).",
+        "Færre historier om verden og sikkerhed end planlagt (2 af 3).",
+        "Færre historier om kultur end planlagt (2 af 3).",
+        "Færre longreads end planlagt (4 af 7)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 241,
+      "web_candidates": 18,
+      "total_candidates": 75,
+      "repeats_dropped": 1,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 46,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 20,
+      "prepared": 14,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 6,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 32
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 2
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 14
+      }
+    }
+  }
+}
