@@ -1,0 +1,400 @@
+{
+  "created_at": "2026-09-23T03:33:01.921483+00:00",
+  "articles": [
+    {
+      "title": "US to build two military bases in Greenland under new deal with Denmark",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c9dr74g32g8go?at_medium=RSS&at_campaign=rss",
+      "summary": "The defence deal signed at the UN General Assembly also re-affirms Denmark's sovereignty over its semi-autonomous Arctic territory. US President Donald Trump signed the deal alongside Danish Prime Minister Mette Frederiksen The US, Denmark and Greenland have signed a defence deal that allows Washington to build two new military bases in the Arctic territory, while reaffirming Copenhagen's sovereignty over it. Before a signing ceremony at the UN General Assembly in New York, US President Donald T",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "greenland-us-bases-deal",
+      "why": "USA, Danmark og Grønland har underskrevet en forsvarsaftale, der tillader Washington at etablere to nye militærbaser i Grønland og genbekræfter dansk suverænitet. Det ændrer direkte dansk-arktisk sikkerhedsdagsorden og har konsekvenser for Forsvaret, politik og grønlandsk debat — vigtige punkter for Mads.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Sam Altman kalder hændelsen ”frygtindgydende”. Har han ret?",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/tech/2026-09-22-sam-altman-kalder-haendelsen-frygtindgydende-har-han-ret",
+      "summary": "Ikke alle køber dommedagsfortællingen. Her er historien bag Hugging Face-hændelsen. Ikke alle køber dommedagsfortællingen. Her er historien bag Hugging Face-hændelsen. OpenAI's Sam Altman er kommet i søgelyset. Kunne han have forhindret, at hans AI-modeller brød ind i en anden virksomhed? Foto: Grafik: Göran Blomquist, TV 2 / Ritzau Scanpix",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "huggingface-incident-explainer",
+      "why": "Dansk gennemgang af Hugging Face-hændelsen, med fokus på om OpenAI-ledelsen kunne forhindret modellen i at ‘brække ind’ i en anden virksomhed. Vigtig for at følge ansvar, governance og konsekvenser for AI-udvikling, som berører danske regulatoriske og erhvervspolitiske diskussioner.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "New Anthropic, OpenAI models make same promise: A little more for a lot less money",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/09/new-anthropic-openai-models-make-same-promise-a-little-more-for-a-lot-less-money/",
+      "summary": "The frontier AI model race has entered its comparison shopping phase. The frontier AI model race has entered its comparison shopping phase. OpenAI and Anthropic both recently released new models aimed at lowering costs. Anthropic announced Opus 5.5, the latest version of its main mass-market workhorse model, used for tasks like coding and other complex knowledge work. And OpenAI announced GPT-6 Sol and Luna, the latest versions of its middle-of-the-road or smaller models focused on efficiency an",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "frontier-model-cost-competition",
+      "why": "Sammenligning af nyeste modeller fra Anthropic og OpenAI, der lover lavere omkostninger for højere kapacitet — central viden for Mads når AI-økonomi og modelvalg begynder at forme danske virksomheder, medier og startups.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Microsoft disrupts AI-assisted platform that compromised 12,000 accounts",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/09/microsoft-disrupts-ai-assisted-platform-that-compromised-12000/",
+      "summary": "EvilTokens provided an end-to-end platform that makes mass compromises faster and easier. EvilTokens provided an end-to-end platform that makes mass compromises faster and easier. Microsoft said Tuesday that it led an industry-wide disruption of a subscription-based scam platform that used an AI chatbot to compromise 12,000 Microsoft accounts over a few-month span. Named EvilTokens, the platform was introduced over a Telegram channel in February and charged an initial $1,500 fee and a recurring ",
+      "format": "short",
+      "section": "Sikkerhed",
+      "group": "Teknologi og verden",
+      "story_id": "eviltokens-disruption",
+      "why": "Microsoft ledede en operation mod 'EvilTokens', en AI-drevet platform, som kompromitterede 12.000 Microsoft-konti. Historien viser hvordan AI muliggør masseangreb — relevant for danske it-sikkerhedsafdelinger og beslutningstagere.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Don’t be fooled by this summer of AI hype",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/",
+      "summary": "It’s been a busy few months for AI hype. At the end of April, Anthropic claimed that its model Claude Mythos is better at finding software vulnerabilities than most security experts. Then we had the OpenAI–Hugging Face hacking incident, after which Anthropic (proudly) and Meta (reluctantly) disclosed similar incidents involving their models. This was followed…",
+      "format": "short",
+      "section": "Analyse",
+      "group": "Teknologi og verden",
+      "story_id": "ai-hype-summer-analysis",
+      "why": "Nuanceret, kritisk gennemgang af sommerens AI-hype, inkl. modelpåstande og hændelser som OpenAI–Hugging Face — hjælper Mads adskille markedsføring fra reelle tekniske og sikkerhedsmæssige skift.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Three Ts will dominate Trump-Xi summit – but expect little movement on trade, less on Taiwan and who knows on tech",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/three-ts-will-dominate-trump-xi-summit-but-expect-little-movement-on-trade-less-on-taiwan-and-who-knows-on-tech-291819",
+      "summary": "Chinese and American leaders meet amid growing urgency over the issue of AI regulation. Share article Print article When Presidents Donald Trump and Xi Jinping",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-xi-three-ts",
+      "why": "Lang analyse af Trump–Xi-topmødet med fokus på trade, Taiwan og teknologi (særligt AI). Relevant for Europa/Danmark: udfald kan ændre globale forsyningskæder, tech-regulering og strategiske alliancer.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Big tech says AI can find a cure for cancer. So where is it?",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/science/ng-interactive/2026/sep/23/big-tech-claims-ai-health-medical-advancement-cure-for-cancer",
+      "summary": "Alongside warnings about its ability to destroy humanity, artificial intelligence is also hailed for its potential to revolutionise health treatment. Just how far can it take us?Her name was June. June would be the last month she ever knew.I remember the way her bed made her so small, swallowed her up in the middle of the room, turned as it was to face the window. With her liver failing, her skin was a ghostly apricot. June – I called her Nan – had been stalked by the king of terrors, the empero",
+      "format": "longread",
+      "section": "Sundhed & teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-and-cancer-claims",
+      "why": "Store, kritiske gennemgang af hvilke konkrete fremskridt (og begrænsninger) AI har leveret i medicinsk forskning. Mads får evidensbaseret perspektiv på »AI-løfter« indenfor sundhed — vigtigt for forsknings- og sundhedspolitik-debatten i Danmark.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "Lyner det på fjerne planeter? Dansk forskning peger på masser af bulder og brag",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/rummet/lyner-det-paa-fjerne-planeter-dansk-forskning-peger-paa-masser-af-bulder-og-brag/",
+      "summary": "Planeten K2-18b er berømt for fund af mulige tegn på liv. Nu tyder ny forskning på, at den famøse planet er fyldt med voldsomt vejr. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "k2-18b-weather-danish-research",
+      "why": "Dansk-relateret forskning om voldsomt vejr på exoplaneten K2-18b; både nyskabende og nationale forskningsresultater, interessant for Mads som oplysning om dansk forskningsprofil i rumforskning.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Hummelgaard stempler ind: 'Hvis vi for alvor skal rykke noget, er der behov for Finansministeriets fulde muskelkraft - og kreativitet'",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/indland/hummelgaard-stempler-ind-hvis-vi-alvor-skal-rykke-noget-er-der-behov-finansministeriets-fulde",
+      "summary": "Hvad, ved han ikke. Men der skal noget stort til at genskabe balancen i Danmark, lyder det fra finansminister Peter Hummelgaard (S). Hvad, ved han ikke. Men der skal noget stort til at genskabe balancen i Danmark, lyder det fra finansminister Peter Hummelgaard (S). Finansminister Peter Hummelgaard (S) puster tungt ud, da han sætter sig ind på de lyse læderbagsæder af sin ministerbil. - For at være helt ærlig: Jeg har endnu ikke en klar idé om, hvordan vi skal gøre det her, siger han et par minut",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "hummelgaard-priorities",
+      "why": "Interview/portræt med finansminister Peter Hummelgaard om behovet for større økonomisk indsats for at genskabe balance i Danmark. Relevant for økonomisk politik, budgetprioriteringer og Mads' forståelse af regeringens ambitioner.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Fire flexselskaber med offentlig kørsel for 233 millioner erklæret konkurs",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/2026-09-22-fire-flexselskaber-med-offentlig-koersel-for-233-millioner-erklaeret-konkurs",
+      "summary": "Erhvervsstyrelsen kunne ikke konstatere, at Yahya Majid Al-Shimmari udøver den faktiske ledelse af Flex Syd, som ellers oplyst i CVR-registeret. Erhvervsstyrelsen kunne ikke konstatere, at Yahya Majid Al-Shimmari udøver den faktiske ledelse af Flex Syd, som ellers oplyst i CVR-registeret. Yahya Majid Al-Shimmari ses på billedet her. Han var sygemeldt, da skifteretten i Odense mandag skulle behandle de fire konkursbegæringer Foto: / Privatfoto.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "flex-transport-bankruptcies",
+      "why": "Fire selskaber, der kørte offentligt flekskørsel for 233 mio. kr., er erklæret konkurs — konkret konsekvens for kommunal service, sårbar transport og offentlige kontrakter, som Mads bør kende til i lokal- og velfærdspolitisk kontekst.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Kultur er nedtonet i regeringsgrundlaget",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/kultur-er-nedtonet-i-regeringsgrundlaget/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "culture-downplayed-in-coalition-agreement",
+      "why": "Analyse af hvordan kultur er prioriteret lavere i det nye regeringsgrundlag — afgørende for scenarier omkring kulturbudgetter, støttesystemer og fremtidige kulturpolitiske konflikter i Danmark.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "YouSee-konflikt rammer DR og TV 2",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/yousee-konflikt-rammer-dr-og-tv-2/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur & medier",
+      "group": "Danmark og kultur",
+      "story_id": "yousee-dispute-dr-tv2",
+      "why": "Konflikt mellem YouSee og danske public/private tv-kanaler rammer DR og TV2 — konkret påvirkning af distributionsaftaler, seertilgang og indtægtsmodeller i dansk medielandskab; vigtigt for kultur- og medieøkonomiindsigt.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Rabbit Is Back, This Time With an AI Agent App",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/rabbit-r1-os3-jesse-lyu/",
+      "summary": "Two years after trying to sidestep mobile apps with dedicated AI hardware, Rabbit is launching OS3, a cross-platform agent that lives on the screens you already use. Jesse Lyu doesn't think the Rabbit R1",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "rabbit-os3-agent",
+      "why": "Rabbit lancerer OS3, en cross-platform AI-agent, der lever på eksisterende skærme — konkret produktstrategiændring for 'agent'-økosystemet og relevant for hvordan danske brugere og virksomheder kan få adgang til assisterende AI på tværs af enheder.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple Releases First Public Betas of iOS 27.2 and macOS Golden Gate 27.2",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/22/apple-releases-ios-27-2-public-beta/",
+      "summary": "Apple today seeded the first betas of iOS 27.2, iPadOS 27.2, macOS Golden Gate 27.2, tvOS 27.2, and watchOS 27.2. The software comes a day after Apple provided the second betas to developers.\n\n\n\n\n\nTo get the new betas, you can sign up on Apple's beta testing website. After you're signed up, the betas can be installed through the Software Update section in the Settings app on each device.\n\n\n\niOS 27.2 includes the redesigned Health app that Apple introduced at its September iPhone event. It featur",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-public-betas-27-2",
+      "why": "Apple udruller offentlige betaversioner af iOS 27.2 og macOS 27.2 — vigtigt for danske brugere, udviklere og organisationer der planlægger opdateringsvinduer, kompatibilitet og nye funktioner.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Lula’s UN address points to two starkly different visions of Brazilian nationalism ahead of crucial election",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/lulas-un-address-points-to-two-starkly-different-visions-of-brazilian-nationalism-ahead-of-crucial-election-290470",
+      "summary": "The race between the incumbent president and Flávio Bolsonaro is a part of a decades-long right-left split in the country over the meaning of the nation. Share article Print article When Luiz Inácio Lula da Silva addressed the United Nations General Assembly on Sept. 22, 2026, the Brazilian president posed a question to both an international and domestic audience: Who is to decide Brazil’s future?",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "lula-un-address-nationalism",
+      "why": "Lang analyse af Lulas FN-tale og de to idéer om brasiliansk nationalisme foran et væsentligt valg — nyttig geopolitisk læsning, når valg i store lande påvirker globale alliancer og råvare-/handelsdynamikker.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Forgotten Mozart notebook reveals how a young woman learned to compose",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/forgotten-mozart-notebook-reveals-how-a-young-woman-learned-to-compose-292028",
+      "summary": "The notebook preserves something that composer-centred histories often miss: the musical work taking place around Mozart, in this case by a young woman.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Fordybelse",
+      "story_id": "mozart-notebook-women-composers",
+      "why": "Interessant musikhistorisk fund: en glemt Mozarts-notesbog belyst hvordan unge kvinder lærte komposition — en velresearcheret kultur- og kønshistorisk vinkel, god som dybdelæsning for Mads.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Met Museum Brokers Return of Three Artworks to Nigeria",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/met-museum-brokers-return-of-three-artworks-to-nigeria/",
+      "summary": "Collector Ceil Pulitzer provided detailed provenance of the works, but the museum preferred another route. Collector Ceil Pulitzer provided detailed provenance of the works, but the museum preferred another route. The Metropolitan Museum of Art has brokered the return of three sculptures to Nigeria through a long-term loan agreement for their display in New York. The",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "met-brokers-return-nigeria",
+      "why": "Metropolitan Museum formidler tilbageførsel af tre skulpturer til Nigeria via langtidslån — vigtig case for repatriering, udstillingspolitik og institutionel ansvarlighed, emner der påvirker danske museers debat om samlinger.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "verden": 5,
+        "teknologi": 6,
+        "fordybelse": 4,
+        "dansk_politik": 3,
+        "kultur": 3
+      },
+      "actual": {
+        "verden": 3,
+        "teknologi": 5,
+        "fordybelse": 4,
+        "dansk_politik": 2,
+        "kultur": 3
+      },
+      "warnings": [
+        "Færre historier om verden og sikkerhed end planlagt (3 af 5).",
+        "Færre historier om teknologi end planlagt (5 af 6).",
+        "Færre historier om dansk politik og samfund end planlagt (2 af 3).",
+        "Færre longreads end planlagt (9 af 11)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 271,
+      "web_candidates": 18,
+      "total_candidates": 75,
+      "repeats_dropped": 24,
+      "previews_enriched": 24,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 45,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 21,
+      "prepared": 17,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 4,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 24
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 0
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 13
+      }
+    }
+  }
+}
