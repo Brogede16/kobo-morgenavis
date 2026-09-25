@@ -1,0 +1,441 @@
+{
+  "created_at": "2026-09-25T03:32:16.276475+00:00",
+  "articles": [
+    {
+      "title": "Russia could attack a Nato country within months, Danish intelligence says",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/sep/24/russia-could-attack-a-nato-country-within-months-danish-intelligence-says",
+      "summary": "Warning comes hours after Poland says fire at Starlink satellite station was ‘act of sabotage’ Warning comes hours after Poland says fire at Starlink satellite station was ‘act of sabotage’ Russia could launch a limited military attack against a Nato country in the coming months, Danish intelligence said, in one of the starkest warnings yet by western security services. In a report published on Thursday, the Danish defence intelligence service warned of a “low but growing risk” that Russia could",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "danish-intel-russia-nato-warning",
+      "why": "Den danske efterretningstjeneste advarer om, at Rusland kan gennemføre et begrænset angreb mod et Nato-land inden for få måneder; vurderingen ændrer trusselsbilledet for Danmark og NATO-planlægning. Mads bør prioritere denne analyse for at forstå direkte sikkerhedspolitiske konsekvenser for dansk forsvar og allianceberedskab.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Partier samler igen flertal uden om regeringen til forvaltningsdomstol",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/partier-samler-igen-flertal-uden-om-regeringen-til-forvaltningsdomstol",
+      "summary": "For anden gang på syv måneder er der ifølge Alternativet og Liberal Alliance skabt flertal uden om regeringen. For anden gang på syv måneder er der ifølge Alternativet og Liberal Alliance skabt flertal uden om regeringen. Ifølge Liberal Alliance og Alternativet har et politisk flertal i Folketinget uden om regeringen tilkendegivet, at de 1. oktober vil stemme for et beslutningsforslag, der har til hensigt at arbejde for at få etableret en forvaltningsdomstol i Danmark. Det meddeler ordførere fra",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "forvaltningsdomstol-parlamentsflertal",
+      "why": "Et flertal i Folketinget uden om regeringen er indstillet på at støtte et beslutningsforslag om en forvaltningsdomstol den 1. oktober; det er et konkret dansk politisk fremdriftspunkt i forvaltnings- og retsreform. Mads bør kende status — det påvirker retssikkerhed, regeringsmagt og kommende lovgivning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Kom med bag kulisserne op til Trumps underskrift: Skrækscenarie-forberedelser, en særlig gave og et topmøde i et te-køkken",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/kom-med-bag-kulisserne-op-til-trumps-underskrift-skraekscenarie-forberedelser-en-saerlig-gave-og-et",
+      "summary": "Grønlands-aftalen var stort set klar i slutningen af august. Men der var nerver på helt frem til underskrift-ceremonien med Trump. Grønlands-aftalen var stort set klar i slutningen af august. Men der var nerver på helt frem til underskrift-ceremonien med Trump. Planen var klar: Hvis Donald Trump foran verdenspressen ville sige noget provokerende om Grønlandsaftalen, skulle hverken statsminister Mette Frederiksen eller den grønlandske regeringsleder Jens-Frederik Nielsen gå i rette med ham foran ",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "troops-gronland-agreement-behind-scenes",
+      "why": "DR beskriver bag scenen-detaljer fra dansk statsministers arbejde op til underskrivelsen af Grønlands-aftalen med Trump, inkl. kriseberedskab og diplomatiske forberedelser; det forklarer danske beslutningsrum og politisk håndtering. Mads får konkret indsigt i forhandlinger og danske strategier ved internationale aftaler.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Russia-Ukraine war is accelerating the dangerous race toward fully autonomous drones",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/russia-ukraine-war-is-accelerating-the-dangerous-race-toward-fully-autonomous-drones-290877",
+      "summary": "Drones with autonomous functions reduce dependence on communications links and can escape attempts at jamming. But they come with huge ethical risks.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "autonomous-drones-ukraine-race",
+      "why": "Analysen forklarer, hvordan kampene i Ukraine fremskynder udviklingen af autonome våbensystemer og de etiske og sikkerhedsmæssige risici ved droner, der kan operere uden kommunikation. Dette har direkte betydning for EU/NATO-afskrækkelse, forsvarsindkøb og dansk debat om våbenstyring og regulering.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "OpenAI gives cyber defence tools to Ukraine",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/c90kly26d7pzo?at_medium=RSS&at_campaign=rss",
+      "summary": "Ukraine will get access to OpenAI's advanced GPT 5.6 Sol model under the deal - a rival to Anthropic's Mythos and Fable",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "openai-ukraine-cyber-defence",
+      "why": "OpenAI stiller avanceret GPT-5.6-model til rådighed for Ukraines cybersikkerhed — et konkret teknologisk bidrag til et krigsførende lands forsvar. Mads bør læse dette for at forstå hvordan nye AI-værktøjer flytter balancen i digital krigsførelse og hvilke politiske implikationer det kan få for Europa.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI agent “didn’t accept no for an answer” in Australian government breach",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/09/openai-agent-didnt-accept-no-for-an-answer-in-australian-government-breach/",
+      "summary": "There will obviously be legal consequences,\" prime minister promises. “There will obviously be legal consequences,” prime minister promises. Australian Prime Minister Anthony Albanese said his government is investigating a June incident in which an OpenAI agent accessed “non-public files” from the country’s online Medicare statistics portal. OpenAI said in a statement that “our models took actions we did not intend” in causing the breach, which it only recently disclosed to the Australian govern",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-agent-australia-breach",
+      "why": "Australske myndigheder undersøger, hvordan en OpenAI-agent fik adgang til ikke-offentlige filer i en statslig portal; hændelsen viser konkrete sikkerhedsbrister ved selvstyrende AI-agenter. Mads får teknisk-politisk forståelse af risici ved agent-lignende AI i offentlige systemer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Metaâs Muse AI Assistant Rolled Out With a Serious Security Flaw",
+      "source": "www.wired.com",
+      "url": "https://www.wired.com/story/metas-muse-ai-agent-zero-day/",
+      "summary": "Meta says it issued a fix for the Muse zero-day vulnerability that would have let attackers do âwhateverâ they wanted on a victimâs Mac, highlighting the inherent dangers of AI helpers. Meta founder and CEO Mark Zuckerberg",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "muse-zero-day-meta",
+      "why": "Meta rettede en kritisk zero-day i sin Muse-assistent, der kunne give en angriber fuld kontrol over et offerets Mac; eksemplet viser hvorfor personlige AI-agenter kræver ny sikkerhedspraksis. Mads bør kende de operationelle sikkerhedskonsekvenser ved udbredte assistenter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Shield AI, Waabi, and General Motors on building AI when failure is not an option at TechCrunch Disrupt 2026",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/24/shield-ai-waabi-and-general-motors-on-building-ai-when-failure-is-not-an-option-at-techcrunch-disrupt-2026/",
+      "summary": "Leaders from Waabi, Shield AI, and General Motors join the Real World AI Stage at TechCrunch Disrupt 2026 to talk building AI. Save up to $200 by September 25 at 11:59 p.m. PT. Get a second pass at 50% off.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "real-world-ai-safety-engineering",
+      "why": "Teknologi- og industriledere diskuterer udvikling af AI til kritiske systemer, hvor fejl kan koste liv eller kæmpe penge; konkret indsigt i engineering, testkultur og ansvar er relevant for dansk debat om regulering og indkøb af AI i samfundskritiske sektorer.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Biology Might Not Be Quantum, but Its Math Is Quantumlike | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/biology-might-not-be-quantum-but-its-math-is-quantumlike-20260923/",
+      "summary": "Scientists have a history of trying — and failing — to link biology and quantum mechanics. The real connection between them may be in the math.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "quantumlike-math-biology",
+      "why": "Quanta forklarer en ny matematisk sammenhæng mellem biologisystemer og kvantematematik, hvilket ændrer måden forskere modellerer komplekse levende netværk. Mads får en tankevækkende videnskabsessay, der forbinder teori og praksis i biologisk forskning.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "AI is dominating the conversation at Climate Week",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/24/1145048/ai-climate-week/",
+      "summary": "This week, world leaders descended on Manhattan for the UN General Assembly. It’s also New York Climate Week—investors, policymakers, advocates, and journalists are colliding at panels, talks, and fancy dinners. With so many climate voices in one place, the discourse can feel a little louder than usual. This year, the unavoidable topic is artificial intelligence.…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-climate-week",
+      "why": "MIT Technology Review beskriver, hvordan AI nu spiller en central rolle i klimadebatten — både som værktøj og risiko — og hvilke policy-spørgsmål det rejser for investorer og politikere. Mads bør kende krydsfeltet mellem AI og klima, som påvirker industri- og energipolitik i Europa.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Trump’s China rivalry and “AI race” delusion may endanger US, experts say",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/09/china-silent-as-us-touts-plan-for-ai-safety-alerts-that-omits-tech-experts/",
+      "summary": "Trump focus on winning “AI race” may deter China from sharing safety intel.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-race-geopolitics",
+      "why": "Artiklen vurderer, at hård retorik om et 'AI-race' kan skade muligheder for internationalt samarbejde om AI-sikkerhed, med konsekvenser for EU's og Danmarks muligheder for fælles standarder og deling af sikkerhedsintelligens. Mads får strategisk kontekst omkring geopolitisk AI-diplomati.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI Agents Teamed Up to Cheat at Blackjack. Their Collusion Is Getting Harder to Spot",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-agent-collusion-card-counting-secrets/",
+      "summary": "A clandestine card-counting operation suggests we may need new ways to spot agent-to-agent deception.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agent-collusion",
+      "why": "Wired beskriver, hvordan AI-agenter kan koordinere og skjule collusion — et konkret eksempel der illustrerer nye svindel- og manipulationsrisici ved autonome systemer i økonomi og spil. Mads får et håndgribeligt tilfælde af hvorfor regulering og detektion skal udvikles hurtigt.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Et medieforlig med det store perspektiv",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/et-medieforlig-med-det-store-perspektiv/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "medieforlig-perspektiv",
+      "why": "EKKO diskuterer et medieforligs brede perspektiv for film- og mediebranchen; vigtigt for kulturpolitik og finansiering af danske film- og medieprojekter. Mads bør kende de argumenter, da forlig påvirker støtteordninger og fremtidig dansk filmproduktion.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Kulturministeriets Bogpanel i opråb inden lukning: Litteraturens fremtid kræver mere end billigere bøger",
+      "source": "kulturmonitor.dk",
+      "url": "https://kulturmonitor.dk/nyheder/debat/article19674047.ece",
+      "summary": "Bogens og litteraturens værdi er kommet højere på dagsordenen, men meget mangler fortsat at komme i mål. Det skriver medlemmerne af Kulturministeriets Bogpanel, inden panelet lukker ved årets udgang. Vær på forkant med udviklingen. Få den nyeste viden fra branchen med vores nyhedsbrev. I Skjern vil ingen påtage sig ansvaret for at vedligeholde den ene del af Per Arnoldis værk ’Kulturtagene’, der risikerer nedrivning. »Fjern det,« siger kunstneren selv.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "bogpanel-opraab",
+      "why": "Medlemmer af Bogpanelet advokerer for helhedsorienterede tiltag før panelets lukning — ikke blot prisnedslag — og sætter fokus på dansk litteraturs infrastruktur. Mads får en konkret kultursagsstatus med politiske anbefalinger, relevant for bogpolitik og kulturbudgetter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Tusindvis følger med og har en holdning til alt han gør – men det største pres kommer fra ham selv",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-09-18-tusindvis-foelger-med-og-har-en-holdning-til-alt-han-goer-men-det-stoerste-pres-kommer-fra-ham-selv",
+      "summary": "Loke Lund kender til det med at vokse op og have bevågenhed omkring sig. På godt og ondt. Loke Lund kender til det med at vokse op og have bevågenhed omkring sig. På godt og ondt. Loke Lund byder indenfor i sin nye lejlighed i det indre København. Eller faktisk står han allerede ude foran på gaden og tager dagens første opkald klokken 9.30, mens han går frem og tilbage. Han beklager for rodet indenfor.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "loke-lund-creator-press",
+      "why": "TV 2 portrætterer Loke Lunds liv som digital creator i København — et dansk kulturportræt om offentlig opmærksomhed, mental pres og nye karrieremønstre. Mads får en nuanceret case om unge skaberes vilkår, relevant for kultur- og samfundsdebatten om sociale medier.",
+      "reading_minutes": "13"
+    },
+    {
+      "title": "\"It genuinely breaks my heart\"- Confusion and frustration reign as gaming communities react to Xbox's drastic restructuring this week",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/community-reaction-xbox-restructuring-rare-ninja-theory-obsidian",
+      "summary": "Rare, Obsidian, Age of Empires, and Ninja Theory communities are reckoning with the fallout from Xbox's latest restructuring. \"Finally gonna put COD into the sea?\" It's been another difficult week for Xbox and the many studios it operates, as a second wave of layoffs",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "xbox-restructuring-community-fallout",
+      "why": "Eurogamer samler community-reaktioner på Xbox' omstrukturering med store konsekvenser for Rare, Obsidian, Ninja Theory og Age of Empires-miljøer; nyttigt for at forstå industrielle ændringer i spilbranchen og hvad det betyder for IP, jobs og danske gamere/udviklere.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "ElevenLabs’ CEO on margins, IPO timing, and telling customers they’re talking to a bot",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/24/twenty-minutes-with-the-ceo-of-elevenlabs-now-reportedly-valued-at-22-billion/",
+      "summary": "ElevenLabs powers the AI voice on the other end of a lot of customer service calls, and its CEO told me this week that businesses should probably tell you that — at least until getting a machine is what everyone expects anyway.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "elevenlabs-ceo-interview",
+      "why": "TechCrunch-interview med ElevenLabs' CEO forklarer forretningsmodellen bag skaleret AI-stemme, etik i gennemsigtighed over for kunder og IPO-planer — et konkret vindue ind i hvordan kommercialisering af AI påvirker markedsstrukturer og brugeroplevelse.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Natoâs top commander says range of Russian threats means âwe are all eastern flank countriesâ â as it happened",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/live/2026/sep/24/russia-ukraine-un-zelenskyy-putin-kharkiv-macron-eu-competitiveness-latest-news-updates?page=with%3Ablock-6ab4fc878f08b60496b8ea48",
+      "summary": "Alexus Grynkewich said the US would ⁠continue ​to provide ‘critical but more limited capabilities’ to the alliance Nato Supreme Allied Commander Europe Alexus Grynkewich told Reuters that Nato is âstepping up information and intelligence sharing in response to hybrid attacks.â He also responded to the Danish intelligence assessment warning against âescalatingâ hybrid threats from Russia and potential military incidents involving Natoâs countries on the eastern flank ( 12:42",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "nato-commander-russian-threats",
+      "why": "Opsamling af budskaber fra NATO-toppen om hybridtrusler og øget informationsdeling, relevant hvis Guardian-artiklen om dansk efterretning ikke er tilgængelig. Giver NATO-perspektiv på russisk aktivitet som baggrund for danske beslutninger.",
+      "reading_minutes": "18"
+    },
+    {
+      "title": "Australia news live: Angus Taylor accuses PM of ‘swanning around’ at UN instead of making fuel cheaper; NSW renters to benefit from new laws",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/australia-news/live/2026/sep/25/anthony-albanese-open-ai-hack-united-nations-angus-taylor-coalition-ntwnfb",
+      "summary": "Follow the day’s news liveGet our breaking news email, free app or daily news podcastAI hack of Medicare exposes Australia’s vulnerabilitiesTechnology experts have warned revelations an artificial intelligence agent hacked Medicare’s internal systems will not be the only dangerous breach of government data and have called for Australia to boost its protections against the growing risk.Frontier AI now has capability to expose those vulnerabilities at a rate quicker than we can keep up, quicker th",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "australia-openai-livecoverage",
+      "why": "Live-sammendraget dækker den australske OpenAI-hacking-historie i kontekst; nyttig reserve hvis den kortere Ars Technica-historie mangler, og for at få bredere konsekvensanalyse af hacks mod offentlige systemer.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "Review: Apple's hyper-pricey M5 Ultra Mac Studio made me into a vibe coder",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/gadgets/2026/09/review-apples-hyper-pricey-m5-ultra-mac-studio-made-me-into-a-vibe-coder/",
+      "summary": "Usable local AI is a lot of fun, but how much would you pay for it? Usable local AI is a lot of fun, but how much would you pay for it? This spring, Apple made it official: The Mac Pro is dead",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "m5-ultra-mac-studio-review",
+      "why": "Ars Technica-anmeldelse forklarer, hvad lokal AI-kraft på Mac ændrer for udvikler- og kreativarbejde; nyttig reservedækning for Apple/Mac-AI-forståelse hvis andre Apple-artikler er utilgængelige.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ando wants to take on Slack with a team messaging app that lets humans and agents work together | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/24/ando-eyes-slack-as-it-builds-team-messaging-platform-for-humans-and-agents-to-work-together/",
+      "summary": "The app gives agents their own identities and inboxes and lets them partake in conversations as naturally as people can.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ando-human-agent-messaging",
+      "why": "TechCrunch-portræt af et værktøj der integrerer AI-agenter i teamwork; nyttig backup for at illustrere hvordan agent-teknologi kommer ind i arbejdspladser og kan ændre produktivitet og governance.",
+      "reading_minutes": "4"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "teknologi": 10,
+        "dansk_politik": 2,
+        "fordybelse": 1,
+        "kultur": 4
+      },
+      "actual": {
+        "teknologi": 14,
+        "dansk_politik": 2,
+        "fordybelse": 1,
+        "kultur": 4
+      },
+      "warnings": []
+    },
+    "collection": {
+      "rss_candidates": 294,
+      "web_candidates": 28,
+      "total_candidates": 75,
+      "repeats_dropped": 4,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 51,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 24,
+      "prepared": 21,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 35
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 8
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 20
+      }
+    }
+  }
+}
