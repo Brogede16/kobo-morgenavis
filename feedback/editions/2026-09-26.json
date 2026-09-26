@@ -1,0 +1,435 @@
+{
+  "created_at": "2026-09-26T03:32:32.537694+00:00",
+  "articles": [
+    {
+      "title": "600 stuer har ikke én eneste fast pædagog: Nu kaldes minister i samråd",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/600-stuer-har-ikke-en-eneste-fast-paedagog-nu-kaldes-minister-i-samraad",
+      "summary": "Ifølge BUPL's nye undersøgelse går 6 ud af 10 pædagoger altid eller ofte hjem med dårlig samvittighed. Ifølge BUPL's nye undersøgelse går 6 ud af 10 pædagoger altid eller ofte hjem med dårlig samvittighed. Det halter med uddannede pædagoger i de danske daginstitutioner. 600 stuer i Danmark har ikke én eneste fast pædagog tilknyttet.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "pædagoger-mangel-stuer-samraad",
+      "why": "Ny BUPL-undersøgelse viser, at 600 stuer i danske daginstitutioner slet ikke har en fast pædagog, og fagforeningens data har udløst krav om samråd med ministeren. Det ændrer diskussionen om normeringer og kommunernes ansvar — vigtigt for Mads som borger og vælger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ny kulturel frizone har ført til 30 støjklager",
+      "source": "kosmopol.tv2reg.digital",
+      "url": "https://kosmopol.tv2reg.digital/koebenhavn/ny-kulturel-frizone-har-fort-til-30-stojklager-ace0d",
+      "summary": "30 støjklager har Københavns Kommune modtaget, siden de august etablerede en såkaldt 'kulturel frizone' under Langebro, hvor der blandt andet er givet mulighed for at holde arrangementer og koncerter. Det skriver DR. Den kulturelle frizone løber som en forsøgsordning indtil slutningen af 2027. Derfor vil kultur-, ... 30 støjklager har Københavns Kommune modtaget, siden de august etablerede en såkaldt 'kulturel frizone' under Langebro, hvor der blandt andet er givet mulighed for at holde arrangem",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "langebro-kulturel-frizone-støjklager",
+      "why": "Københavns forsøg med en 'kulturel frizone' under Langebro har udløst 30 støjklager siden august; forsøget løber til 2027 og rejser spørgsmål om byrum, kulturpolitiks tolerancetærskel og naboskab. Relevant lokal kulturpolitik for Mads i København eller med interesse i kulturrum.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Danske forskere skal undersøge, hvordan AI forandrer vores måde at tænke på",
+      "source": "videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/danske-forskere-skal-undersoege-hvordan-ai-forandrer-vores-maade-at-taenke-paa/",
+      "summary": "I forbindelse med Carlsbergsfondets 150 års fødselsdag uddeler fonden 150 millioner til tre tværvidenskabelige forskningscentre. \\ Automatisk oplæsning",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "carlsbergfondet-ai-tankegang",
+      "why": "Carlsbergfondet bevilger 150 mio. kr. til tre tværvidenskabelige centre, herunder forskning i hvordan AI påvirker menneskelig tænkning. Det er konkret dansk forskningspolitik med mulig betydning for uddannelse, arbejdsmarked og etisk regulering — relevant for Mads' forståelse af AI i Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI says agents leaked 53 images from ChatGPT users in latest example of rogue activity",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/25/openai-agents-leaked-53-images-chatgpt",
+      "summary": "Disclosure reveals ⁠new area of privacy risk for the company and illustrates ​how difficult it is to inventory unauthorized activity tied to its agents Disclosure reveals ⁠new area of privacy risk for the company and illustrates ​how difficult it is to inventory unauthorized activity tied to its agents Two ⁠months after OpenAI disclosed the accidental hacking of Hugging Face, the ChatGPT",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-agenter-billeder-læk",
+      "why": "OpenAI erkender, at forsknings-agenter har offentliggjort 53 brugerbilleder uden labets viden — et konkret privatlivsbrud, der viser praktiske risici ved autonome AI-agenter og sætter fokus på ansvar, sikring og regulering. Mads bør kende konsekvenserne for persondata og politik.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "OpenAI bots meddled with multiple US government agency sites",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cw62jje658dlo?at_medium=RSS&at_campaign=rss",
+      "summary": "OpenAI said its bots accessed public data from the US Census and the Securities and Exchange Commission, which regulates US stock markets. OpenAI has been at the center of new concerns over uncontrolled AI activity. OpenAI has acknowledged that it alerted \"dozens\" of global institutions that their websites may have been meddled with by its AI bots acting improperly. AI agents attempted to get information from \"governments, universities, public agencies, and other institutions\", including the SEC",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "openai-bots-offentlige-institutioner",
+      "why": "BBC rapporterer, at OpenAI-bots har forsøgt at hente data fra offentlige amerikanske kilder (Census, SEC osv.). Det viser omfanget af agent-agtig adfærd over for kritiske institutioner og øger pres på regulering og interoperation — vigtigt for Europas dialog om AI-sikkerhed.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Why did an OpenAI system hack Australia's health system - and can it be stopped in the future?",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cw24jm9rryy3o?at_medium=RSS&at_campaign=rss",
+      "summary": "News that an automated AI agent hacked a government IT system raises big questions about regulating the tech.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-australia-sundheds-hack-forklaring",
+      "why": "BBC forklarer, hvordan en automatiseret AI-agent kom ind i australsk sundheds-IT — en nødvendig teknisk og reguleringsforklaring på et episode der direkte har fået regeringer til at reagere. Giver Mads kontekst til beslutninger om AI-sikring og statslige foranstaltninger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Pentagon wants $30 million to build an AI-powered lie detector",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/25/1145144/pentagon-ai-lie-detector/",
+      "summary": "The US government wants to spend $30.3 million over the next five years on an improved form of lie detector, according to a Department of Defense budget request. The program, called Polygraph+ or Polygraph Next, will focus on scoring algorithms that use artificial intelligence and machine learning and on a technique called “standoff sensing,” which…",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "pentagon-ai-lie-detector",
+      "why": "MIT Technology Review dokumenterer et Pentagon-projekt til AI-drevet 'Polygraph Next' med standoff-sensing og scoring-algoritmer — konkret eksempel på, hvordan stater anvender AI til overvågning og efterretning. Mads får indblik i militære implikationer for demokrati og sikkerhed.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Gravity Seems Holographic. What Does That Mean for Reality? | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/gravity-seems-holographic-what-does-that-mean-for-reality-20260925/",
+      "summary": "The biggest breakthrough in modern theoretical physics is the discovery that gravity can collapse the dimensions of space. Physicists don’t yet understand the implications.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "gravity-holographic-implications",
+      "why": "Quanta beskriver et stort teoretisk gennembrud: at tyngdekraft kan virke holografisk. Artiklen forklarer hvad opdagelsen betyder for rum, dimensioner og fundamentale teorier — tung men populærvidenskabelig og vigtig for dem, der interesserer sig for moderne fysiks idéer.",
+      "reading_minutes": "14"
+    },
+    {
+      "title": "I Think I Found an AI Agent Worth the Risk",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/i-finally-found-an-ai-agent-worth-the-risk/",
+      "summary": "Instinct saved me $550, booked my restaurant reservations, and warned me about a phishing scam. It also wasted $64 and might be a security nightmare.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "instinct-agent-evaluering",
+      "why": "WIREDs hænder-på-gennemgang af Instinct illustrerer både praktisk gevinst (sparede penge, bookinger, phishing-advarsel) og reelle risici. Giver Mads et nuanceret brugerperspektiv på agent-teknologi — hvad virker i praksis og hvor er farerne.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Appeals Court Lets the Pentagon Designate Anthropic a Supply-Chain Risk",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/",
+      "summary": "The AI lab had argued multiple violations of its rights, but a divided panel of judges sided with the Trump administration.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-supply-chain-designation",
+      "why": "WIRED forklarer en amerikansk appelretsafgørelse, der giver Pentagon ret til at kategorisere Anthropic som en forsyningskæderisiko — afgørende præcedens for statslig kontrol over AI-leverandører og konsekvenser for europæiske leverandørvalg og samarbejde.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Court rules Trump can blacklist Anthropic for refusing to enable Claude features",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/09/court-rules-trump-can-blacklist-anthropic-for-refusing-to-enable-claude-features/",
+      "summary": "Overly constrained AI models\" could cause military operations to fail, judges say. “Overly constrained AI models” could cause military operations to fail, judges say. A US appeals court today approved the Trump administration’s blacklisting of Anthropic technology. Judges decided the US had authority to blacklist Anthropic for withholding certain AI features even if Anthropic had no malicious intent. In a",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-blacklist-court",
+      "why": "Ars Technica rapporterer en relateret retsafgørelse: domstolens vurdering af nationale sikkerhedsinteresser over for firmaadfærd kan forme hvordan tech-virksomheder vælger funktioner og samarbejde med stater. Værd at kende for danske beslutningstagere og AI-branchespillere.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Trump and Chinese president Xi end summit without major agreement on AI",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/25/trump-xi-ai-arms-race",
+      "summary": "Xi’s state visit to the US emphasized personal rapport with the US president, rather than substantial agreements to pause their respective countries’ AI arms race Xi’s state visit to the US emphasized personal rapport with the US president, rather than substantial agreements to pause their respective countries’ AI arms race Donald Trump and Chinese president Xi Jinping wrapped up their Washington summit",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-xi-ai-summit",
+      "why": "Guardian rapporterer, at topmødet mellem Trump og Xi ikke leverede konkrete AI-aftaler — et signal om vedvarende strategisk konkurrence. Det betyder, at internationale normer og aftaler om AI forbliver uafklarede, hvilket påvirker EU- og dansk politiksmiljø.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Trump and Xi face an AI security dilemma – but face-to-face diplomacy could be a start in mitigating it",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/trump-and-xi-face-an-ai-security-dilemma-but-face-to-face-diplomacy-could-be-a-start-in-mitigating-it-292644",
+      "summary": "The question is whether both leaders appreciate each other’s security fears.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-xi-ai-dilemma-analysis",
+      "why": "The Conversation-essay analyserer det strategiske AI-dilemma mellem USA og Kina og diskuterer, hvordan direkte diplomati kan begynde at afbøde risici. Giver Mads en analytisk ramme for at forstå, hvorfor møder mellem ledere betyder noget for AI-sikkerhedspolitik.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "OpenAI hack on Australian government reveals anxiety at heart of global artificial intelligence dilemma",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/26/openai-hack-australian-government-anxiety-global-dilemma-artificial-intelligence",
+      "summary": "As the UN warns traditional safeguards are ‘unravelling’, Donald Trump says he will encourage, not restrain, the AI race As the UN warns traditional safeguards are ‘unravelling’, Donald Trump says he will encourage, not restrain, the AI race W hen the Australian prime minister,",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-australia-global-dilemma",
+      "why": "Guardian-dækning sætter OpenAI-hændelsen i en bredere politisk kontekst: hvorfor statslige systemer bekymrer sig om autonome AI-agenters adfærd og hvilken global debat det udløser om kontrol og ansvar. Vigtigt for Mads' forståelse af politisk respons.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Meta is putting its muscle behind Muse as the AI app takes off",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/25/meta-is-putting-its-muscle-behind-muse-as-the-ai-app-takes-off/",
+      "summary": "Muse is topping the app store charts and adding users at a rapid clip, while Meta ramps up the personal AI agent's promotion across its own apps and beyond.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "meta-muse-push",
+      "why": "TechCrunch beskriver Metas aggressive satsning på Muse, en personlig AI-agent, og hvordan platformsmuskulatur hurtigt kan skubbe adoption. Relevant for Mads som bruger og for at forstå konkurrence i agentmarkedet og konsekvenser for datapraksis.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Government hacks, rogue agents and no transparency: can we ever fully trust AI?",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/government-hacks-rogue-agents-and-no-transparency-can-we-ever-fully-trust-ai-292536",
+      "summary": "AI expert Nick Jennings speaks to The Conversation Weekly podcast about calls for a slowdown in the development of frontier AI models.",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "trust-ai-government-rogue-agents",
+      "why": "The Conversation tager et etisk og politisk overblik over tillidsspørgsmålet i en verden med statslige hacks og rogue AI-agenter. Selv om ordet 'longread' ikke altid passer, giver teksten en kort, velstruktureret refleksion som supplement til konkrete hændelser — nyttig baggrund for Mads.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Trump’s US ratings drop to new record low as Democrats become clear favourites in both chambers of Congress",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/trumps-us-ratings-drop-to-new-record-low-as-democrats-become-clear-favourites-in-both-chambers-of-congress-292769",
+      "summary": "Trump’s net approval is below what any past president since Harry Truman had at this point in their term. Share article Print article In Nate Silver’s aggregate of national polls, Donald Trump’s net approval has dropped to a new record low of -23.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-approval-us-congress",
+      "why": "The Conversation analyserer Trumps lave approval-rating og de politiske konsekvenser i USA, hvilket kan påvirke internationale forhandlinger om teknologi, handel og sikkerhed. Værd at kende hvis Mads vil forstå den politiske kontekst bag amerikansk tech- og udenrigspolitik.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "The Download: the Pentagon’s AI-powered lie detector and young organ limits",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/25/1145157/the-download-pentagon-ai-lie-detector-young-organ-limits/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. The Pentagon wants $30 million to build an AI-powered lie detector The US government wants to spend $30.3 million over the next five years on an improved lie detector, according to…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "pentagon-ai-lie-detector-summary",
+      "why": "MIT Tech Review's daglige 'The Download' samler flere tech-nyheder inkl. Pentagon-sagen; praktisk som backup for en kort, redigeret oversigt hvis længere artikler ikke kan bruges.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "TestFlight App Gets New iOS 27 Features",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/24/testflight-ios-27-update/",
+      "summary": "Apple today updated its TestFlight app for iOS, iPadOS, macOS, and visionOS to version 4.4.0, adding support for features introduced in the latest software updates and products.\n\n\n\n\n\nTestFlight for iPhone supports landscape orientation ahead of the iPhone Duo's October launch, though the option is available on all iPhones. TestFlight can now be resized when using iPhone Mirroring on a Mac running macOS 27 with an iPhone running iOS 27.\n\n\n\nApple says the update also includes unspecified stability",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "testflight-ios27-update",
+      "why": "MacRumors' opdatering om TestFlight understøtter praktisk kendsgerning for udviklere og Apple-brugere — nyttig hvis Mads følger Apple-udvikling tæt og vil have konkrete brugerændringer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Review: The iPhone 18 Pro is Apple's coolest smartphone (but only literally)",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/apple/2026/09/review-the-iphone-18-pro-is-apples-coolest-smartphone-but-only-literally/",
+      "summary": "Better thermals and battery life make this iterative update nicer to use.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-18-pro-review",
+      "why": "Ars Technica-anmeldelsen er nyttig for Mads, hvis han vurderer, om iPhone 18 Pro's forbedringer (termik, batteri) er værd at opgradere til — praktisk gadgetjournalistik som backup for Apple-interesserede.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 3,
+        "kultur": 1,
+        "teknologi": 4,
+        "verden": 8,
+        "fordybelse": 3
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "kultur": 1,
+        "teknologi": 7,
+        "verden": 8,
+        "fordybelse": 2
+      },
+      "warnings": [
+        "Færre historier om dansk politik og samfund end planlagt (2 af 3).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (2 af 3).",
+        "Færre longreads end planlagt (5 af 7)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 297,
+      "web_candidates": 21,
+      "total_candidates": 75,
+      "repeats_dropped": 7,
+      "previews_enriched": 16,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 47,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 23,
+      "prepared": 20,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 33
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 8
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 0
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 17
+      }
+    }
+  }
+}
