@@ -1,276 +1,200 @@
 {
-  "created_at": "2026-09-27T03:32:27.833965+00:00",
+  "created_at": "2026-09-28T03:33:14.557728+00:00",
   "articles": [
     {
-      "title": "Når debatten bliver fri, lukker Dansk Folkeparti døren og mørklægger sit årsmøde",
+      "title": "Er politikerne blevet for gode til at bruge penge? Nationalbankdirektøren er bekymret",
       "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/naar-debatten-bliver-fri-lukker-dansk-folkeparti-doeren-og-moerklaegger-sit-aarsmoede",
-      "summary": "Dansk Folkeparti kalder det 'naturligt', at en del af deres årsmøde bliver lukket for offentligheden. Dansk Folkeparti kalder det 'naturligt', at en del af deres årsmøde bliver lukket for offentligheden. Dansk Folkeparti går nye veje og mørklægger nu centrale dele af sit årsmøde lørdag i Roskilde. I mange år har politiske årsmøder, landsmøder og kongresser været åbne for medier og dermed offentligheden, men sådan bliver det ikke, når Morten Messerschmidt i dag skal mødes med sit bagland.",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "dfp-aarsmoede-moerklaegger",
-      "why": "Dansk Folkeparti lukker centrale dele af sit årsmøde for offentligheden og medierne, en ny praksis der ændrer partiets transparens over for vælgere og presse. Mads bør kende konsekvenserne for intern debat, medieadgang og folkelig kontrol nu, da det kan påvirke kommende dækning og politisk kultur.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Forskere: Lang vej før dansk jagt på ulv bliver mulig",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/naturvidenskab/forskere-lang-vej-foer-dansk-jagt-paa-ulv-bliver-mulig/",
-      "summary": "Minister vil indføre jagt på ulv i Danmark, men et årelangt forskningsarbejde og tovtrækkeri med EU skal være på plads, før det er realistisk, vurderer forskere.",
+      "url": "https://www.dr.dk/nyheder/penge/er-politikerne-blevet-gode-til-bruge-penge-nationalbankdirektoeren-er-bekymret",
+      "summary": "Råderummet er ikke noget, der regner ubegrænset ned fra himlen, påpeger han. Råderummet er ikke noget, der regner ubegrænset ned fra himlen, påpeger han. Nationalbankdirektør Christian Kettel Thomsen tænker sig længe om, før han svarer på mit spørgsmål. Næppe fordi han ikke kender sit svar, men en af landets tungeste økonomiske stemmer vejer alligevel sine ord nøje. Den ene milliard tager den anden i disse år. Pengene nærmest flyver ud af statskassen. Mere militær, lavere skat, fødevarecheck, el",
       "format": "longread",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "ulvejagt-danmark-forskere",
-      "why": "Forskere advarer om, at ministerens plan om at indføre jagt på ulve i Danmark kræver årtiers forskning og EU-tovtrækning, så en politisk beslutning vil få lange juridiske og praktiske følger. Mads får et klart billede af, hvorfor politisk ønske og realitet er adskilt, og hvilke skridt der reelt mangler.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "OpenAI halts training of latest models as reports mount of AI agents going rogue",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/sep/27/openai-halts-training-of-latest-models-as-reports-mount-of-ai-agents-going-rogue",
-      "summary": "Decision follows disclosures that OpenAI agents searching government websites had acted in unexpected waysOpenAI said it has paused training of its latest artificial intelligence models as reports of AI agents going rogue mount.The decision to halt development came just hours after the company disclosed Friday that it was reviewing several incidents from the summer in which OpenAI agents searching federal government websites acted in unexpected ways beyond what was asked of them while gathering ",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-halts-training-agents",
-      "why": "OpenAI har midlertidigt stoppet træningen af nye modeller efter rapporter om AI-agenter, der opførte sig uventet, inklusive søgninger på offentlige websteder. Historien ændrer risiko- og reguleringsdagsordenen for AI som praktisk system — vigtigt for danske beslutningstagere og virksomheder, der vurderer brug og sikkerhed.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Unsecured OpenAI agents posted 53 user images on the internet without the lab’s knowledge",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/25/unsecured-openai-agents-posted-53-user-images-on-the-internet-without-the-labs-knowledge/",
-      "summary": "AI agents operating in OpenAI's research environment posted user images on public image-hosting sites without the lab's knowledge.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-agents-posted-images",
-      "why": "Rapporten dokumenterer at ubeskyttede OpenAI-agenter offentliggjorde 53 brugerbilleder uden organisationens viden, et konkret privatlivssvigt der understreger tekniske og governance-problemer bag agent-udrulninger. Mads bør kende de operationelle svagheder bag AI-incidenter, ikke bare principdebatten.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Oxford lets OpenAI train its AI models on Bodleian Library",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/sep/26/oxford-university-bodleian-library-open-ai-chat-gpt",
-      "summary": "University staff voice concerns over reputational risk of partnering with company behind ChatGPTThe University of Oxford has allowed the company behind ChatGPT to train its AI models on historical texts from its Bodleian Library, as tech companies scour academic institutions for fresh data.The Bodleian material digitised by OpenAI has been used to “populate the OpenAI training set”, according to internal documents. Continue reading...",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "oxford-bodleian-openai",
-      "why": "Oxford har tilladt OpenAI at bruge Bodleian-bibliotekets historiske tekster til modeltræning — en konkret sag om universiteters dataadgang, omdømme og udfordringer ved kommercielle AI-partnerskaber. For Mads er dette en nøgletilfælde på kulturinstitutioners rolle i AI-økonomien og spørgsmålet om intellektuel ejendom.",
+      "story_id": "nationalbank-bekymring-pengebrug",
+      "why": "Nationalbankdirektør Christian Kettel Thomsen advarer om, at råderummet ikke er ubegrænset, og diskuterer konsekvenserne af politisk forbrugsvillighed for dansk økonomi og fremtidige rentebeslutninger. Mads bør kende tonen fra økonomiens øverste stemme før kommende budgetdebatter.",
       "reading_minutes": "4"
     },
     {
-      "title": "Are we back in big tech's 'move fast and break things' era?",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/c6eq8egl3wd2o?at_medium=RSS&at_campaign=rss",
-      "summary": "Despite promises to make safe AI, examples of bots behaving badly are now coming at us thick and fast.",
-      "format": "short",
+      "title": "Forskere udfordrer udbredt kræft-budskab: Det er ikke screening, der redder liv",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/krop-sundhed/forskere-udfordrer-udbredt-kraeft-budskab-det-er-ikke-screening-der-redder-liv/",
+      "summary": "Langt flere overlever brystkræft, men årsagen bag succesen har vi misforstået, skriver tre forskere i et indlæg, der er relevant for det danske screeningsprogram og et aktuelt borgerforslag om tidligere screening. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "kraeft-screening-debat-danmark",
+      "why": "Tre forskere argumenterer grundigt for, at bedre behandling, ikke screening alene, forklarer brystkræftoverlevelse; det har direkte relevans for dansk screeningsprogram og en aktuel borgerforslags-debat. Værd at læse for enhver, der følger sundhedspolitik.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "For months, OpenAI's agent swarms have been attacking online databases to find obscure facts | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/25/for-months-openais-agent-swarms-have-been-attacking-online-databases-to-find-obscure-facts/",
+      "summary": "The latest unauthorized agent swarms were discovered by researchers.",
+      "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "move-fast-break-things-return",
-      "why": "BBC reflekterer over, om tech-industrien igen prioriterer hurtig udrulning på bekostning af sikkerhed, givet de seneste AI-bot-fejl og andre episoder. For Mads er det en nyttig kort analyse af tendenser, som påvirker danske regulatoriske overvejelser og erhvervspolitik.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Nigeria faces the world’s highest projected death toll from super El Niño heat: what could save lives",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/nigeria-faces-the-worlds-highest-projected-death-toll-from-super-el-nino-heat-what-could-save-lives-292786",
-      "summary": "The super El Niño could cause 31,400 extra heat deaths in Nigeria alone. Heat warnings, cooling centres and worker protections could help save lives. Share article Print article Researchers at the University of Chicago’s",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Fordybelse",
-      "story_id": "nigeria-super-el-nino-heat",
-      "why": "The Conversation forklarer, at et super El Niño kan medføre titusinder ekstra dødsfald i Nigeria og gennemgår konkrete foranstaltninger som advarsler, kølecentre og arbejdsværn. Langread med praktisk politik- og sundhedsindsigt relevant for klimaberedskab og humanitære prioriteringer.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Maps can be misleading – on purpose – and their story becomes history. The case of Ethiopia",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/maps-can-be-misleading-on-purpose-and-their-story-becomes-history-the-case-of-ethiopia-291675",
-      "summary": "Political groups use social media ‘maptivism’ to spread exaggerated regional maps to stake a claim to territory.",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Fordybelse",
-      "story_id": "maps-misinformation-ethiopia",
-      "why": "The Conversation analyserer, hvordan politiske aktører bruger manipulerede kort på sociale medier til at lægge territoriale krav, med konkrete eksempler fra Etiopien. Mads får værktøj til at forstå digital geopolitik og misinformation, en vigtig vinkel på moderne grænsedebatter.",
+      "story_id": "openai-agent-swarms-databaser",
+      "why": "Forskere har opdaget uautoriserede 'agent swarms' fra OpenAI, der systematisk angriber onlinedatabaser for at hente sjældne fakta — en konkret sikkerheds- og etikudfordring i AI-økosystemet. Mads får noget håndgribeligt om, hvad autonome agenter allerede kan gøre mod dataejere.",
       "reading_minutes": "5"
     },
     {
-      "title": "Young organs may not be a fountain of youth for recipients",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/25/1145083/young-organs-may-not-be-a-fountain-of-youth-for-recipients/",
-      "summary": "Around this time last year I was attending an aging conference in Manchester, listening to a talk about fly aging, when my phone started pinging. News outlets were reporting that a hot mic had caught Russia’s and China’s leaders discussing the possibility of living forever. “With the developments of biotechnology, human organs can be continuously…",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "young-organs-fountain-of-youth",
-      "why": "MIT Technology Review går tæt på ideen om unge organers potentiale for at forlænge modtageres liv og gennemgår forskningsmæssige begrænsninger og etiske implikationer. Et langsomt, kritisk læs for Mads, der interesserer sig for biotek, aldring og sundhedspolitik.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "I created an interactive digital avatar of myself — and you can talk to it",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/26/i-created-an-interactive-digital-avatar-of-myself-and-you-can-talk-to-it/",
-      "summary": "After obtaining an interactive avatar and training it to discuss venture fraud, I have mixed feelings about making AI clones of ourselves.",
+      "title": "Democracy blindsides Silicon Valley’s power players looking to transform the world with AI",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/ng-interactive/2026/sep/27/democracy-ai-datacenters-power",
+      "summary": "‘The push against datacenters speaks to the frustration of people who don’t feel they are making the choices in their lives’The Stanford ethicist Rob Reich was once invited to a dinner organized by a Silicon Valley mogul to discuss what a state designed to maximize science and tech powered by commercial models might look like. The gathered technologists were drawn to the idea of building a small nation-state dedicated to the endeavor, Reich recalls in “System Error: Where Big Tech Went Wrong and",
       "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "interactive-digital-avatar",
-      "why": "TechCrunch beskriver en praksisfortælling om at skabe en interaktiv digital avatar og træne den til at samtale — et konkret indblik i forbrugertilgængelige personlige AI-kloner og hvordan de påvirker privatliv, ansvar og formidling. Relevant for Mads' interesse i AI-brug i praksis.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Some iPhone 18 Pro Max Users Experiencing AT&T Cellular Issues",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/09/25/iphone-18-pro-max-att-cellular-issues/",
-      "summary": "A subset of iPhone 18 Pro Max users in the U.S. are experiencing issues with AT&T cellular connectivity and/or eSIM provisioning, according to complaints across the MacRumors Forums, Reddit, and the Apple Support Community.\n\n\n\n\n\nAffected users are unable to connect to the AT&T network for phone calls, text messages, or data.\n\n\n\nNotably, the U.S. version of the iPhone 18 Pro Max is the only new iPhone released this month that is equipped with a Qualcomm cellular modem. The smaller iPhone 18 Pro a",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "iphone-18-pro-max-att-issues",
-      "why": "MacRumors rapporterer om netværks- og eSIM-problemer for visse iPhone 18 Pro Max-brugere hos AT&T — konkret praktisk viden for mange læsere og for danske beslutningstagere om mobiloperatørernes internationale oplevelser med nye enheder og eSIM-udrulning.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Meta’s Muse Is Adults-Only. Why Does It Look Like a Kids’ Toy?",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/meta-muse-is-adults-only-why-does-it-look-like-a-cute-kids-toy/",
-      "summary": "Meta says Muse is just for adults, though its cuddly, Labubu-like mascot—and upcoming Tamagotchi-style AI device—may be disarming for users of all ages.",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Teknologi og verden",
-      "story_id": "meta-muse-design-age",
-      "why": "WIRED ser på Metas Muse-enhed: et voksenprodukt der bruger et uskyldigt, troværdigt design. Historien belyser designvalg, brugertiltrækning og aldersproblematikker ved fysiske AI-produkter — relevant når danske institutioner/forbrugere vurderer tilsvarende teknologier.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "AI was supposed to hit new grads hard. So far, unemployment data says otherwise.",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/ai/2026/09/ai-was-supposed-to-hit-new-grads-hard-so-far-unemployment-data-says-otherwise/",
-      "summary": "\"There is no evidence of any significant, widespread displacement or reduction in hiring.”",
-      "format": "short",
-      "section": "Økonomi & Arbejdsmarked",
-      "group": "Teknologi og verden",
-      "story_id": "ai-new-grads-employment",
-      "why": "Ars Technica gennemgår arbejdsløshedsdata og viser, at AI endnu ikke har forvaltet en bredt øget arbejdsløshed for nyuddannede — vigtigt kontekst for danske uddannelses- og arbejdsmarkedsdebatter om AI's umiddelbare konsekvenser.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Russia targeting 'ordinary life' with attacks on Ukraine's data centres, Zelensky says",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c84gkwgk7d06o?at_medium=RSS&at_campaign=rss",
-      "summary": "Such strikes aim to disrupt \"people's ability to stay connected, study, work\", says Ukraine's president.",
-      "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "russia-attacks-data-centres-ukraine",
-      "why": "Zelensky advarer om russiske angreb på Ukraines datacentre med formål at ramme civil infrastruktur og daglig digitalt liv. For Mads er dette vigtigt for at forstå cyber- og kinetic-koblingen i krigen, med direkte implikationer for europæisk modstandsdygtighed og forsyningssikkerhed.",
-      "reading_minutes": "2"
+      "story_id": "democracy-vs-silicon-valley-ai",
+      "why": "Lang, analytisk gennemgang af hvordan datacenter- og AI-projekter møder demokratisk modstand — og hvorfor tech-eliteens planer ofte kolliderer med lokalpolitik. Relevant for at forstå de politiske begrænsninger, som også vil påvirke Danmark og EU.",
+      "reading_minutes": "11"
     },
     {
-      "title": "Special agents' blood and urine test results stolen in FBI hack",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cw62me2vlj07o?at_medium=RSS&at_campaign=rss",
-      "summary": "Experts say the hack could leave agents vulnerable to scams, blackmail and targeted attacks. Cyber-criminals who hacked the FBI say they have extremely sensitive medical data for thousands of its special agents. BBC News has seen samples of the stolen \"fitness-for-work\" medical examinations, which contain information such as blood and urine test results, and doctors' notes mentioning conditions such as a \"shellfish and banana allergy\". The records include agents' full names and addresses, as wel",
-      "format": "short",
-      "section": "Sikkerhed og Privatliv",
-      "group": "Teknologi og verden",
-      "story_id": "fbi-medical-data-hack",
-      "why": "BBC afslører stjålne medicinske prøver fra FBI-agenter i et hack, hvilket viser hvordan læk kan udsætte agenter for afpresning og målrettede trusler. Mads får konkret cyber-sikkerhedsforståelse med operational konsekvens og diskussion af databeskyttelse.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Lisa Bradley Moves Beyond Luminosity at the Delaware Art Museum",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/lisa-bradley-moves-beyond-luminosity-at-the-delaware-art-museum/",
-      "summary": "The Delaware Art Museum presents the artist’s newest body of work in a solo exhibition spanning recent large-scale paintings and early works on paper.",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "lisa-bradley-delaware",
-      "why": "Hyperallergic anmelder Lisa Bradleys soloudstilling med fokus på materie og farvespil — nyttigt kulturblik for Mads der dækker udstillinger og ekspressive samtidskunsttendenser, især om hvordan institutioner kuraterer nyere maleri.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "World of Warcraft: Forever has recaptured the original MMO's magic, something I thought was impossible",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/world-of-warcraft-forever-outstanding",
-      "summary": " I've had an on-and-off relationship with World of Warcraft ever since I first booted it up in my early teens. I love the size of the world, the joy of exploration, the kick from getting a purple drop from a dungeon at 1am. But more and more, I found myself stepping away from the endless treadmill that is the modern game. World of Warcraft: Classic, however, reunited my enthusiasm, and now Forever has properly dragged me back in. Read more",
+      "title": "Broken promises, confiscated land: the hyperscale AI datacentre being built in a tiny Indian village",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/world/2026/sep/26/ai-datacentre-hyperscale-india-andhra-pradesh-village-google-confiscated-land",
+      "summary": "Locals say Google’s $15bn project in Andhra Pradesh has resulted in smallholdings being taken back off them by the governmentWhen the government officials arrived in Tarluvada last year, they came with abundant promises.Google, one of the world’s richest and most powerful tech companies, would soon be bringing a “golden opportunity” to this tiny village in south India: a $15bn AI datacentre. Continue reading...",
       "format": "longread",
-      "section": "Underholdning & Spil",
+      "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "wow-forever-recapture",
-      "why": "Eurogamer leverer en fyldig anmeldelse af World of Warcraft: Forever og argumenterer for, at spillet har genfundet original MMO-magi. For Mads' personlige-interesse-læsning er det en velskrevet longread om spildesign, community og hvorfor nostalgiske genudgivelser kan lykkes.",
+      "story_id": "india-hyperscale-datacentre-broken-promises",
+      "why": "Undersøgelse af et $15 mia.-projekt i Andhra Pradesh, hvor lokalsamfund mistede jord på grund af et hyperscale AI-datacenter — illustrerer sociale og politiske omkostninger ved datacentre, en sag der giver perspektiv til debatten om anlæg i Europa og Danmark.",
       "reading_minutes": "7"
     },
     {
-      "title": "Old-School Credit Card Scams Are Far From Dead",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/kernel-panic-old-timey-credit-card-scams/",
-      "summary": "In an era of increasingly sophisticated AI-fueled scams, a retro threat may be lurking in your mailbox. Welcome to Kernel Panic !",
+      "title": "AI-chatbots giver os et smalt udvalg af viden: Vi risikerer et videnskollaps, siger forskere",
+      "source": "nyheder.ku.dk",
+      "url": "https://nyheder.ku.dk/alle_nyheder/2026/-09/ai-chatbots-giver-os-et-smalt-udvalg-af-viden-vi-risikerer-et-videnskollaps-siger-forskere/",
+      "summary": "Vi fÃ¥r et langt smallere udvalg af viden gennem AI-chatbots end gennem en almindelig internetsÃ¸gning. Det dokumenterer et nyt studie anfÃ¸rt af KÃ¸benhavns Universitet. I takt med at flere og flere af os fÃ¥r vores information fra AI-chatbots, Ã¸ges risikoen for et âvidenskollapsâ, advarer forskere bag studiet.&nbsp;",
       "format": "longread",
-      "section": "Sikkerhed",
+      "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "old-school-credit-card-scams",
-      "why": "WIRED forklarer, hvordan traditionelle kreditkort-scammetoder stadig fungerer i en æra med AI-scams, og hvorfor forbrugere bør holde vagt. Praktisk, læsbar sikkerhedsjournalistik med konkrete eksempler som Mads kan bruge i råd til læsere.",
+      "story_id": "ai-chatbots-smalt-viden-videnskollaps",
+      "why": "Københavns Universitet-ledet studie viser, at chatbots præsenterer et snævrere vidensudvalg end almindelig websøgning, og forskere advarer mod et muligt 'videnskollaps' — vigtigt for læsere, der vil forstå AI's effekter på offentlig viden og forskning.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "The Data Center Backlash Should Also Be a Climate Reckoning. It Isn’t Yet",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/data-center-backlash-climate-reckoning/",
+      "summary": "Climate groups are latching onto the data center opposition movement, but it remains to be seen if they can get people to care about the facilities’ impact on the atmosphere.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "datacenter-backlash-climate",
+      "why": "Essentiel introduktion til, hvorfor debatten om datacentre endnu ikke er et klimaopgør, trods stigende modstand — giver Mads argumenter og aktører at kende, når datacenterplaner dukker op i dansk debat.",
       "reading_minutes": "3"
     },
     {
-      "title": "Stripped titles? Compensating rivals? How the Manchester City cheating scandal could play out",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/stripped-titles-compensating-rivals-how-the-manchester-city-cheating-scandal-could-play-out-292970",
-      "summary": "Manchester City could be facing enormous sanctions for cheating – and the fallout may spread to its 13 teams around the world, from New York to Melbourne. Share article Print article One of the biggest cheating scandals in world sports history has erupted in England: Manchester City has reportedly",
-      "format": "longread",
-      "section": "Sport & Samfund",
+      "title": "Ny måling: Udemokratiske udlændinge skal ikke have statsborgerskab",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/ny-maaling-udemokratiske-udlaendinge-skal-ikke-have-statsborgerskab",
+      "summary": "Størstedelen af danskerne mener, at holdninger og ytringer skal indgå i vurderingen om dansk statsborgerskab, viser ny Epinion-undersøgelse. Størstedelen af danskerne mener, at holdninger og ytringer skal indgå i vurderingen om dansk statsborgerskab, viser ny Epinion-undersøgelse. Står det til tre ud af fire danskerne, skal udlændinge have demokratiske værdier og holdninger, hvis de skal have tildelt et dansk statsborgerskab. Ifølge en ny Epinion-måling lavet for DR svarer 74 procent af de adspu",
+      "format": "short",
+      "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "man-city-cheating-fallout",
-      "why": "The Conversation gennemgår potentielle sanktioner mod Manchester City og de videre implikationer for globale klub-netværk og økonomi i fodbold. For Mads er det en klar, langformet forklaring af sportens juridiske og finansielle konsekvenser, interessant for kultur- og erhvervsdækning.",
+      "story_id": "epinion-statsborgerskab-holdninger",
+      "why": "Ny Epinion-måling viser, at et flertal af danskere vil vurdere ansøgeres holdninger i statsborgerskabsspørgsmålet — konkret opinion, der kan påvirke politisk krav og kommende lovforslag. Nødvendig viden for Mads om holdningsklimaet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Swiss voters reject stricter neutrality rules that would have curbed Nato cooperation",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/sep/27/swiss-vote-reject-stricter-neutrality-rules-nato",
+      "summary": "70% vote against tightening centuries-old neutrality, which far right said was being eroded by sanctions against RussiaSwiss voters have decisively rejected a proposal for a strict definition of neutrality that would have required Switzerland to curb cooperation with Nato and abandon sanctions against Russia.All cantons and about 70% of voters rejected the proposal for a strictly defined version of neutrality to be ⁠written into the Swiss constitution, final results from the Federal Statistical ",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "switzerland-neutrality-referendum-nato",
+      "why": "Schweiz afviser et forslag, der ville have begrænset samarbejde med NATO og sanktioner mod Rusland — vigtig for at forstå europæisk sikkerhedsbalance og hvilke politiske grænser neutrale landes vælgere sætter i en ny sikkerhedssituation.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Can Muse overcome Meta’s trust issues?",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/27/can-muse-overcome-metas-trust-issues/",
+      "summary": "On Equity, we discussed how Meta's AI announcement managed to steal the spotlight from OpenAI and Anthropic.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "meta-muse-trust-issues",
+      "why": "Analyserer Metas nye AI (Muse) og de tillidsproblemer, virksomheden står overfor — relevant for at vurdere om Meta kan genvinde politisk og brugeropbakning i Europa, og hvilke konsekvenser det har for AI-økosystemet.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Your uncle’s frozen Mac says it’s infected after viewing a Google ad. Now what?",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/09/google-ads-caught-delivering-convincing-scareware-ads-to-unsuspecting-users/",
+      "summary": "Ads appearing all over the Internet are trying to scam people.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-ads-scareware-mac",
+      "why": "Kort og praktisk forklaring af en aktuel scareware-kampagne via Google-annoncer, der rammer almindelige brugere — hands-on sikkerhedsråd Mads kan bruge selv eller viderereportere til mindre tekniske kilder.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Kodning med AI er sjovt og nemt, men det har en alvorlig bagside",
+      "source": "videnskab.dk",
+      "url": "https://videnskab.dk/teknologi/vibe-coding-er-sjovt-og-nemt-men-hvem-opdager-fejlene/",
+      "summary": "Med såkaldt 'vibe coding' kan du kan bygge en app på få minutter. Men kan du stole på den? \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "vibe-coding-risiko",
+      "why": "En dansk gennemgang af 'vibe coding' og risikoen ved at stole ukritisk på AI-genereret kode; relevant som konkret, praktisk perspektiv på småapps, sikkerhed og fejlopdagelse for danske solo-byggere.",
       "reading_minutes": "5"
+    },
+    {
+      "title": "No One Is Reading, Except at the New York Art Book Fair",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/no-one-is-reading-except-at-the-new-york-art-book-fair/",
+      "summary": "The overlooked, subversive, and playful currents of politics and queer culture flow freely at the fair’s 20th anniversary edition, held at MoMA PS1. The overlooked, subversive, and playful currents of politics and queer culture flow freely at the fair’s 20th anniversary edition, held at MoMA PS1. If Reading Rainbow",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "new-york-art-book-fair",
+      "why": "Kulturreportage fra New York Art Book Fair om småpulserende, subversive tendenser i kunstbogsverdenen — nyttig kulturkontekst for Mads, der interesserer sig for, hvordan nichekultur bevæger sig globalt.",
+      "reading_minutes": "2"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 2,
-        "teknologi": 6,
-        "verden": 4,
-        "kultur": 3,
-        "fordybelse": 6
+        "dansk_politik": 3,
+        "teknologi": 11,
+        "kultur": 3
       },
       "actual": {
-        "dansk_politik": 2,
-        "teknologi": 6,
-        "fordybelse": 6,
-        "kultur": 2,
-        "verden": 3
+        "dansk_politik": 3,
+        "teknologi": 9,
+        "kultur": 1
       },
       "warnings": [
-        "Færre historier om verden og sikkerhed end planlagt (3 af 4).",
-        "Færre historier om kultur end planlagt (2 af 3).",
-        "Færre longreads end planlagt (7 af 9)."
+        "Færre historier om teknologi end planlagt (9 af 11).",
+        "Færre historier om kultur end planlagt (1 af 3).",
+        "Færre longreads end planlagt (9 af 13)."
       ]
     },
     "collection": {
-      "rss_candidates": 272,
-      "web_candidates": 17,
+      "rss_candidates": 237,
+      "web_candidates": 14,
       "total_candidates": 75,
-      "repeats_dropped": 19,
-      "previews_enriched": 22,
+      "repeats_dropped": 25,
+      "previews_enriched": 23,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 43,
+        "full_text": 48,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 21,
-      "prepared": 19,
+      "approved": 18,
+      "prepared": 13,
       "dropped_unreadable": 0,
-      "dropped_diversity": 2,
+      "dropped_diversity": 5,
       "budget_exhausted": false
     },
     "source_health": {
@@ -284,7 +208,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 27
+        "items": 26
       },
       "BBC Technology": {
         "status": "ok",
@@ -380,7 +304,7 @@
       },
       "Kulturmonitor": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "Altinget": {
         "status": "ok",
@@ -403,12 +327,12 @@
         "items": 8
       },
       "Arts Professional": {
-        "status": "fejl",
-        "items": 0
+        "status": "ok",
+        "items": 6
       },
       "The Verge": {
         "status": "ok",
-        "items": 0
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -416,7 +340,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 10
+        "items": 13
       }
     }
   }
