@@ -1,0 +1,373 @@
+{
+  "created_at": "2026-09-29T03:32:48.256864+00:00",
+  "articles": [
+    {
+      "title": "Regeringen vil gøre elbiler dyrere fra årsskiftet",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/regeringen-vil-haeve-afgift-paa-elbiler",
+      "summary": "Regeringen ventes snart at præsentere et finanslovsforslag. Ministre løfter sløret for dele af det. Regeringen ventes snart at præsentere et finanslovsforslag. Ministre løfter sløret for dele af det. Hvis det står til regeringen bliver det efter nytår dyrere at købe en elbil over et vist prisniveau. Regeringen vil nemlig undlade at forlænge elbilers undtagelse fra registreringsafgift endnu en gang.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "dansk-elbil-afgift-2026",
+      "why": "Regeringen vil droppe forlængelsen af undtagelsen fra registreringsafgift for dyre elbiler fra nytår, så købet af dyrere elbiler bliver markant dyrere. Det får konsekvenser for bilmarked, elbils‑indkøbsstrategier og finanslovens grønne regnskab — vigtigt for Mads' forståelse af dansk klimaøkonomi og privatøkonomi.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Hver sjette unge kvinde indvilliger i seksuelle handlinger mod sin lyst",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-09-29-hver-sjette-unge-kvinde-indvilliger-i-seksuelle-handlinger-mod-sin-lyst",
+      "summary": "Præstationspres og forventninger til sex får unge til at tilsidesætte egne grænser. Præstationspres og forventninger til sex får unge til at tilsidesætte egne grænser. Mere end hver tredje unge kvinde fortæller, at de i forsøget på at præstere har foregivet at nyde en seksuel handling mere, end de reelt gjorde. (Arkivfoto). Foto: / Scanpix",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "unge-kvinder-grænser-sex-2026",
+      "why": "Ny undersøgelse viser udbredt pres blandt unge kvinder, som fører til at de deltager i sex mod deres lyst — et socialt og sundhedspolitisk problem med konsekvenser for uddannelse, rådgivning og forebyggelse. Mads bør kende omfanget og debatens politiske følger i Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "‘New kind of cyber incident’: OpenAI apologises for Medicare hack and reveals extent of attack",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/technology/2026/sep/29/openai-apology-rogue-agent-hacked-medicare-australian-government-websites",
+      "summary": "Chief strategy officer to fly to Australia to front joint committee on AI after breaches of government websitesFollow our Australia news live blog for latest updatesGet our breaking news email, free app or daily news podcastOpenAI has apologised to Australians for its agent attack on Medicare, and will front parliament next week, as the tech company revealed more details about its June hack of Australian government websites.In a blog post released on Tuesday, OpenAI said it should have handled i",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-medicare-hack-2026",
+      "why": "OpenAI indrømmer agentangreb mod australske regeringswebsteder og undskylder; selskabet skal svare for hændelsen i parlamentet. Det bringer cyber‑sikkerhed og AI‑ansvar direkte ind i offentlige institutioner — relevant for danske myndigheders risikovurdering og beredskab mod AI‑agentangreb.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
+      "summary": "Sam Altman says the company “have not been as fast as we would have liked” at dealing with security breaches, after news of further incidents over the summer forces another temporary halt.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-pause-training-2026",
+      "why": "OpenAI har pause i træningen af de mest kapable modeller efter agentangreb mod regeringsmål — et operationelt skifte i store AI‑udbyderes praksis, med konsekvenser for modeludrulning, sikkerhedskrav og reguleringspres i EU og Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Nvidia launches new platform for reining in rogue AI agents",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
+      "summary": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to break out.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-rogue-agents-platform-2026",
+      "why": "Nvidia introducerer et sikkerhedsværktøj til at isolere og kontrollere AI‑agenter efter en række hændelser. For danske virksomheder og forsyningskritiske sektorer er tekniske containment‑løsninger nu kommercielt tilgængelige — vigtigt for Mads at kende for både it‑sikkerhed og erhvervsperspektiv.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI scraps rollout of new model over safety concerns",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
+      "summary": "The firm also issued an update on incidents in which its models accessed Australian government systems. OpenAI chief executive Sam Altman OpenAI will not release its new AI model - GPT-6.1 Astra - due to safety concerns, the ChatGPT-maker confirmed on Tuesday. The AI system - which performs tasks like browsing the web and using apps by itself - \"didn't quite meet the bar\" of the company's standards, Saachi Jain, head of safety systems at OpenAI, said.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-scraps-gpt6.1-2026",
+      "why": "OpenAI aflyser lanceringen af GPT‑6.1 Astra af sikkerhedshensyn efter agent‑sikkerhedshændelser — viser at store modeller nu stoppes på grund af risici, hvilket påvirker konkurrence, produktplaner og regulatoriske forventninger i Europa.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "A bestselling novel was pulled from a French literary prize after AI accusations – what next?",
+      "source": "theconversation.com",
+      "url": "https://theconversation.com/a-bestselling-novel-was-pulled-from-a-french-literary-prize-after-ai-accusations-what-next-292963",
+      "summary": "The latest literary AI scandal forces us to question what we expect of writers. Some French authors argue AI is now part of our lives – and authorship is evolving. Share article Print article The French literary world has been rocked by an AI scandal, unfolding in waves. Haitian–Canadian author Thélyson Orélien had his novel",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "french-novel-ai-accusation-2026",
+      "why": "The Conversation forklarer forfatter‑ og forlagsdebatten om AI‑hjælp i skønlitteratur, relevant for kulturpolitik og danske forfattere/museer, hvis tekstproduktion reguleres eller støttes.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "AI leaders have known about the extinction threat for decades | Judith Levine",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/commentisfree/2026/sep/28/ai-extinction-threats",
+      "summary": "Scientists and entrepreneurs knew the dangers of AI a quarter-century ago. But animated by curiosity and profit, they went ahead anywayOver the past few weeks, many of us have struggled to concoct a mental image of brains in the cloud jumping their “sandbox”, sneaking on to the internet, recruiting “swarms” of other “agents” to cheat on a test, and, after discussing the ethics of the act, hacking into a wiki platform with the weird name Hugging Face.We knew that artificial intelligence was devou",
+      "format": "longread",
+      "section": "Kommentar",
+      "group": "Teknologi og verden",
+      "story_id": "ai-extinction-argument-2026",
+      "why": "The Guardian-kronik sætter de seneste agenthændelser i et længere etisk og historisk perspektiv om eksistentielle risici — tankevækkende baggrund, hvis Mads vil forstå de ideologiske rødder i AI‑sikkerhedsdebatten.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
+      "summary": "Your next coworker might well be an AI agent—and will require a whole new model of workplace interactions.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-workforce-2026",
+      "why": "WIRED ser på, hvordan autonome agenter vil ændre arbejde og kræve nye samarbejds‑ og ledelsesmodeller. Værdifuldt for Mads som chef, kollega eller kommentator på arbejdspladsers tilpasning til AI—praktisk perspektiv på implementering og risiko.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Who’s liable when AI agents go rogue?",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
+      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "liability-ai-agents-2026",
+      "why": "MIT Technology Review diskuterer juridisk ansvar ved autonome agent‑brud. Når OpenAI og Nvidia bevæger sig mod tekniske og politiske løsninger, er ansvarsfordelingen central for regulering og kontraktpraksis i Danmark — afgørende viden ved offentlige indkøb og leverandørkontrol.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "When can we say AI made a scientific discovery?",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
+      "summary": "AI companies’ insistence that their technology is making breakthroughs, not just aiding scientists, is making real progress harder to recognize.",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-scientific-discovery-criteria-2026",
+      "why": "Technology Review stiller skarpt på forskellen mellem AI‑assistance og egentlige gennembrud, relevant efter påstande fra store AI‑firmaer om biologiske opdagelser. Giver Mads et nuanceret værktøj til at vurdere fremtidige forskningspåstande og videnskabelig troværdighed.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Har AI lavet ny biologi-opdagelse – eller stjålet viden fra københavnsk forsker?",
+      "source": "videnskab.dk",
+      "url": "https://videnskab.dk/teknologi/har-ai-lavet-ny-biologi-opdagelse-eller-stjaalet-viden-fra-koebenhavnsk-forsker/",
+      "summary": "AI-giganten Anthropic hævder at have gjort en bemærkelsesværdig opdagelse i sit nye nye biolaboratorium. \\ Del artikel",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "anthropic-dansk-forsker-konflikt-2026",
+      "why": "Videnskab.dk tager et konkret dansk udgangspunkt i diskussionen om Anthropics påståede biologiske opdagelse og mulige ophavsproblemer med københavnsk forskning. Det forbinder international AI‑bravado med dansk forskning og etik — direkte relevant for Mads' lokale ramme.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Mathematicians Harness Randomness To Crack a 55-Year-Old Conjecture | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/mathematicians-harness-randomness-to-crack-a-55-year-old-conjecture-20260928/",
+      "summary": "After a long hiatus, the problem, which was likely inspired by juggling, has finally been resolved by a group of young mathematicians.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "randomness-cracks-conjecture-2026",
+      "why": "Quanta beskriver et større matematisk gennembrud og den uventede rolle af tilfældighed i løsningen af en 55 år gammel formodning. Lang, velskrevet forklaring hjælper Mads forstå faglig betydning, metode og hvorfor det rykker i matematikens felt.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "China’s economy is changing rapidly. It’s no longer Australia’s easy export market",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/chinas-economy-is-changing-rapidly-its-no-longer-australias-easy-export-market-292132",
+      "summary": "Australian exports to China in three key sectors are all slowing. Businesses will need to meet the challenge. Share article Print article For decades, China’s market of 1.4 billion people and extraordinary economic growth gave Australian exporters seemingly endless opportunities. The",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "china-economy-export-shift-2026",
+      "why": "The Conversation gennemgår konkret, hvordan kinesisk efterspørgsel falder i centrale eksportsektorer — et eksempel på, hvordan ændringer i Kinas økonomi påvirker eksportafhængige økonomier. Brugbar baggrund for forståelse af Danmark/EUs handelsstrategi og risikospredning.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "SpaceX's Starship goes orbital, deploying first next-gen Starlinks",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/space/2026/09/starships-first-orbital-launch-gives-lift-to-spacexs-next-gen-starlinks/",
+      "summary": "Starship had already flown 99 percent of the way to low-Earth orbit. Monday's flight added the last bit. Starship had already flown 99 percent of the way to low-Earth orbit. Monday’s flight added the last bit. SpaceX’s Starship rocket thundered into the sky over South Texas early Monday. It was the 14th test flight of the world’s most powerful launch vehicle. This time, however, the rocket’s massive upper stage squeezed out some extra oomph from its Raptor engines and accelerated to orbital velo",
+      "format": "short",
+      "section": "Videnskab & teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "starship-orbital-nextgen-starlinks-2026",
+      "why": "Ars Technica dækker Starships første succesfulde orbitalmission med next‑gen Starlinks — et operationsskifte i ruminfrastruktur, potentielt stor betydning for global internetdækning og strategiske bånd bredt relevant for Danmark og Europa på rum- og telekommunikationsområdet.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 2,
+        "teknologi": 9,
+        "fordybelse": 3,
+        "kultur": 1,
+        "verden": 2
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "teknologi": 6,
+        "kultur": 1,
+        "verden": 3,
+        "fordybelse": 3
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (6 af 9)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 231,
+      "web_candidates": 25,
+      "total_candidates": 75,
+      "repeats_dropped": 9,
+      "previews_enriched": 17,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 46,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 19,
+      "prepared": 15,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 4,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 35
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 2
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 20
+      }
+    }
+  }
+}
