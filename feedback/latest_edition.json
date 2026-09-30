@@ -1,185 +1,245 @@
 {
-  "created_at": "2026-09-29T03:32:48.256864+00:00",
+  "created_at": "2026-09-30T03:32:44.414871+00:00",
   "articles": [
     {
-      "title": "Regeringen vil gøre elbiler dyrere fra årsskiftet",
+      "title": "Wammen lod Franciska Rosenkilde føre ordet på sin egen hjemmebane – han kan nemlig tælle til 90",
       "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/regeringen-vil-haeve-afgift-paa-elbiler",
-      "summary": "Regeringen ventes snart at præsentere et finanslovsforslag. Ministre løfter sløret for dele af det. Regeringen ventes snart at præsentere et finanslovsforslag. Ministre løfter sløret for dele af det. Hvis det står til regeringen bliver det efter nytår dyrere at købe en elbil over et vist prisniveau. Regeringen vil nemlig undlade at forlænge elbilers undtagelse fra registreringsafgift endnu en gang.",
+      "url": "https://www.dr.dk/nyheder/politik/wammen-lod-franciska-rosenkilde-foere-ordet-paa-hans-egen-hjemmebane-han-kan-nemlig-taelle-til-90",
+      "summary": "Regeringens to støttepartier, Enhedslisten og Alternativet, får lov at bade sig i rampelyset i SSFRM-regeringens første tid – også mere end støttepartier typisk har fået lov til. Regeringens to støttepartier, Enhedslisten og Alternativet, får lov at bade sig i rampelyset i SSFRM-regeringens første tid – også mere end støttepartier typisk har fået lov til. Pressemødet tirsdag ved frokosttid foregik på justitsminister Nicolai Wammens hjemmebane – ministeriets have. Med ham som vært. Med en nyhed o",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "dansk-elbil-afgift-2026",
-      "why": "Regeringen vil droppe forlængelsen af undtagelsen fra registreringsafgift for dyre elbiler fra nytår, så købet af dyrere elbiler bliver markant dyrere. Det får konsekvenser for bilmarked, elbils‑indkøbsstrategier og finanslovens grønne regnskab — vigtigt for Mads' forståelse af dansk klimaøkonomi og privatøkonomi.",
-      "reading_minutes": "2"
+      "story_id": "wammen-rosenkilde-hjemmebane",
+      "why": "Regeringspartiernes interne rollefordeling blev synlig ved et pressemøde, hvor venstrefløjs-støttepartierne får ekstra taletid i den nye regering. Sagen ændrer magtbalancen i daglig politisk styring og er vigtig for Mads som kort, konkret status på koalitionens dynamik.",
+      "reading_minutes": "3"
     },
     {
-      "title": "Hver sjette unge kvinde indvilliger i seksuelle handlinger mod sin lyst",
-      "source": "TV 2 Nyheder",
-      "url": "https://nyheder.tv2.dk/samfund/2026-09-29-hver-sjette-unge-kvinde-indvilliger-i-seksuelle-handlinger-mod-sin-lyst",
-      "summary": "Præstationspres og forventninger til sex får unge til at tilsidesætte egne grænser. Præstationspres og forventninger til sex får unge til at tilsidesætte egne grænser. Mere end hver tredje unge kvinde fortæller, at de i forsøget på at præstere har foregivet at nyde en seksuel handling mere, end de reelt gjorde. (Arkivfoto). Foto: / Scanpix",
+      "title": "Elnetselskaber hæver prisen i døgnets travleste timer",
+      "source": "www.bt.dk",
+      "url": "https://www.bt.dk/erhverv/elnetselskaber-haever-prisen-i-doegnets-travleste-timer",
+      "summary": "Fra 1. oktober bliver det dyrere for danske elkunder at bruge strøm mellem klokken 17 og 21. Fra 1. oktober bliver det dyrere for danske elkunder at bruge strøm mellem klokken 17 og 21. Torsdag overgår landets elnetselskaber til de såkaldte vintertariffer, hvilket for mange danskere vil betyde dyrere strøm i døgnets travleste timer. Helt konkret tillægges elprisen en ekstra nettarif per kilowatt-time, der forbruges i tidsrummet mellem klokken 17 og klokken 21.",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "unge-kvinder-grænser-sex-2026",
-      "why": "Ny undersøgelse viser udbredt pres blandt unge kvinder, som fører til at de deltager i sex mod deres lyst — et socialt og sundhedspolitisk problem med konsekvenser for uddannelse, rådgivning og forebyggelse. Mads bør kende omfanget og debatens politiske følger i Danmark.",
+      "story_id": "vintertariffer-elnet-2026",
+      "why": "Fra 1. oktober stiger nettariffen i spidsbelastningsperioden 17–21, hvilket øger elregningen for mange danskere og ændrer incitamentet for tidsbestemt forbrug. Mads bør kende praktisk konsekvens og politisk dilemma før ugen begynder.",
       "reading_minutes": "2"
     },
     {
-      "title": "‘New kind of cyber incident’: OpenAI apologises for Medicare hack and reveals extent of attack",
+      "title": "‘We will not be intimidated,’ says Estonian PM after attributing recent arson attack to Russia – as it happened",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/technology/2026/sep/29/openai-apology-rogue-agent-hacked-medicare-australian-government-websites",
-      "summary": "Chief strategy officer to fly to Australia to front joint committee on AI after breaches of government websitesFollow our Australia news live blog for latest updatesGet our breaking news email, free app or daily news podcastOpenAI has apologised to Australians for its agent attack on Medicare, and will front parliament next week, as the tech company revealed more details about its June hack of Australian government websites.In a blog post released on Tuesday, OpenAI said it should have handled i",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-medicare-hack-2026",
-      "why": "OpenAI indrømmer agentangreb mod australske regeringswebsteder og undskylder; selskabet skal svare for hændelsen i parlamentet. Det bringer cyber‑sikkerhed og AI‑ansvar direkte ind i offentlige institutioner — relevant for danske myndigheders risikovurdering og beredskab mod AI‑agentangreb.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "OpenAI Pauses Training Its Most Powerful Models After Rogue Agents Target Government",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/openai-pauses-training-most-powerful-models-after-rogue-agents-target-government/",
-      "summary": "Sam Altman says the company “have not been as fast as we would have liked” at dealing with security breaches, after news of further incidents over the summer forces another temporary halt.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-pause-training-2026",
-      "why": "OpenAI har pause i træningen af de mest kapable modeller efter agentangreb mod regeringsmål — et operationelt skifte i store AI‑udbyderes praksis, med konsekvenser for modeludrulning, sikkerhedskrav og reguleringspres i EU og Danmark.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Nvidia launches new platform for reining in rogue AI agents",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/09/28/nvidia-launches-new-platform-for-reining-in-rogue-ai-agents/",
-      "summary": "Nvidia CEO Jensen Huang on Monday introduced a toolkit of software and hardware products that add independent security layers around AI agents to ensure they stay within their test environments even if they attempt to break out.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "nvidia-rogue-agents-platform-2026",
-      "why": "Nvidia introducerer et sikkerhedsværktøj til at isolere og kontrollere AI‑agenter efter en række hændelser. For danske virksomheder og forsyningskritiske sektorer er tekniske containment‑løsninger nu kommercielt tilgængelige — vigtigt for Mads at kende for både it‑sikkerhed og erhvervsperspektiv.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "OpenAI scraps rollout of new model over safety concerns",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cm5y5nynl75ko?at_medium=RSS&at_campaign=rss",
-      "summary": "The firm also issued an update on incidents in which its models accessed Australian government systems. OpenAI chief executive Sam Altman OpenAI will not release its new AI model - GPT-6.1 Astra - due to safety concerns, the ChatGPT-maker confirmed on Tuesday. The AI system - which performs tasks like browsing the web and using apps by itself - \"didn't quite meet the bar\" of the company's standards, Saachi Jain, head of safety systems at OpenAI, said.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-scraps-gpt6.1-2026",
-      "why": "OpenAI aflyser lanceringen af GPT‑6.1 Astra af sikkerhedshensyn efter agent‑sikkerhedshændelser — viser at store modeller nu stoppes på grund af risici, hvilket påvirker konkurrence, produktplaner og regulatoriske forventninger i Europa.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "A bestselling novel was pulled from a French literary prize after AI accusations – what next?",
-      "source": "theconversation.com",
-      "url": "https://theconversation.com/a-bestselling-novel-was-pulled-from-a-french-literary-prize-after-ai-accusations-what-next-292963",
-      "summary": "The latest literary AI scandal forces us to question what we expect of writers. Some French authors argue AI is now part of our lives – and authorship is evolving. Share article Print article The French literary world has been rocked by an AI scandal, unfolding in waves. Haitian–Canadian author Thélyson Orélien had his novel",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "french-novel-ai-accusation-2026",
-      "why": "The Conversation forklarer forfatter‑ og forlagsdebatten om AI‑hjælp i skønlitteratur, relevant for kulturpolitik og danske forfattere/museer, hvis tekstproduktion reguleres eller støttes.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "AI leaders have known about the extinction threat for decades | Judith Levine",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/commentisfree/2026/sep/28/ai-extinction-threats",
-      "summary": "Scientists and entrepreneurs knew the dangers of AI a quarter-century ago. But animated by curiosity and profit, they went ahead anywayOver the past few weeks, many of us have struggled to concoct a mental image of brains in the cloud jumping their “sandbox”, sneaking on to the internet, recruiting “swarms” of other “agents” to cheat on a test, and, after discussing the ethics of the act, hacking into a wiki platform with the weird name Hugging Face.We knew that artificial intelligence was devou",
-      "format": "longread",
-      "section": "Kommentar",
-      "group": "Teknologi og verden",
-      "story_id": "ai-extinction-argument-2026",
-      "why": "The Guardian-kronik sætter de seneste agenthændelser i et længere etisk og historisk perspektiv om eksistentielle risici — tankevækkende baggrund, hvis Mads vil forstå de ideologiske rødder i AI‑sikkerhedsdebatten.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "AI Agents Are About to Flood the Workforce. No One’s Ready for It",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/ai-agents-are-about-to-flood-the-workforce-no-ones-ready-for-it/",
-      "summary": "Your next coworker might well be an AI agent—and will require a whole new model of workplace interactions.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-agents-workforce-2026",
-      "why": "WIRED ser på, hvordan autonome agenter vil ændre arbejde og kræve nye samarbejds‑ og ledelsesmodeller. Værdifuldt for Mads som chef, kollega eller kommentator på arbejdspladsers tilpasning til AI—praktisk perspektiv på implementering og risiko.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Who’s liable when AI agents go rogue?",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/09/28/1145197/whos-liable-when-ai-agents-go-rogue/",
-      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of technology to help you understand what’s coming next. You can read more from the series here. Over the past few months, a cascade of cyberattacks by AI agents has stunned the world. In July, OpenAI disclosed that a swarm of its agents…",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "liability-ai-agents-2026",
-      "why": "MIT Technology Review diskuterer juridisk ansvar ved autonome agent‑brud. Når OpenAI og Nvidia bevæger sig mod tekniske og politiske løsninger, er ansvarsfordelingen central for regulering og kontraktpraksis i Danmark — afgørende viden ved offentlige indkøb og leverandørkontrol.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "When can we say AI made a scientific discovery?",
-      "source": "www.technologyreview.com",
-      "url": "https://www.technologyreview.com/2026/09/28/1145230/when-can-we-say-ai-made-a-scientific-discovery/",
-      "summary": "AI companies’ insistence that their technology is making breakthroughs, not just aiding scientists, is making real progress harder to recognize.",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "ai-scientific-discovery-criteria-2026",
-      "why": "Technology Review stiller skarpt på forskellen mellem AI‑assistance og egentlige gennembrud, relevant efter påstande fra store AI‑firmaer om biologiske opdagelser. Giver Mads et nuanceret værktøj til at vurdere fremtidige forskningspåstande og videnskabelig troværdighed.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Har AI lavet ny biologi-opdagelse – eller stjålet viden fra københavnsk forsker?",
-      "source": "videnskab.dk",
-      "url": "https://videnskab.dk/teknologi/har-ai-lavet-ny-biologi-opdagelse-eller-stjaalet-viden-fra-koebenhavnsk-forsker/",
-      "summary": "AI-giganten Anthropic hævder at have gjort en bemærkelsesværdig opdagelse i sit nye nye biolaboratorium. \\ Del artikel",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "anthropic-dansk-forsker-konflikt-2026",
-      "why": "Videnskab.dk tager et konkret dansk udgangspunkt i diskussionen om Anthropics påståede biologiske opdagelse og mulige ophavsproblemer med københavnsk forskning. Det forbinder international AI‑bravado med dansk forskning og etik — direkte relevant for Mads' lokale ramme.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Mathematicians Harness Randomness To Crack a 55-Year-Old Conjecture | Quanta Magazine",
-      "source": "www.quantamagazine.org",
-      "url": "https://www.quantamagazine.org/mathematicians-harness-randomness-to-crack-a-55-year-old-conjecture-20260928/",
-      "summary": "After a long hiatus, the problem, which was likely inspired by juggling, has finally been resolved by a group of young mathematicians.",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "randomness-cracks-conjecture-2026",
-      "why": "Quanta beskriver et større matematisk gennembrud og den uventede rolle af tilfældighed i løsningen af en 55 år gammel formodning. Lang, velskrevet forklaring hjælper Mads forstå faglig betydning, metode og hvorfor det rykker i matematikens felt.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "China’s economy is changing rapidly. It’s no longer Australia’s easy export market",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/chinas-economy-is-changing-rapidly-its-no-longer-australias-easy-export-market-292132",
-      "summary": "Australian exports to China in three key sectors are all slowing. Businesses will need to meet the challenge. Share article Print article For decades, China’s market of 1.4 billion people and extraordinary economic growth gave Australian exporters seemingly endless opportunities. The",
+      "url": "https://www.theguardian.com/world/live/2026/sep/29/ukraine-russia-war-odesa-overnight-lithuania-mark-rutte-europe-latest-news-updates",
+      "summary": "Kristen Michal says attack ‘against Milrem Robotics was ordered by Russian special services’, after Kremlin denies involvementRutte begins by recalling a drone shot down in Lithuanian airspace by Nato fighter jets two weeks ago.He says “the repeated drone incidents along our eastern flank showed the evolving nature of the threat, and we are strengthening our integrated air and missile defence.”“We are adapting and reinforcing our posture against drones.” Continue reading...",
       "format": "longread",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "china-economy-export-shift-2026",
-      "why": "The Conversation gennemgår konkret, hvordan kinesisk efterspørgsel falder i centrale eksportsektorer — et eksempel på, hvordan ændringer i Kinas økonomi påvirker eksportafhængige økonomier. Brugbar baggrund for forståelse af Danmark/EUs handelsstrategi og risikospredning.",
+      "story_id": "milrem-arson-estonia-russia",
+      "why": "Estland mener, at russiske sikkerhedstjenester stod bag branden mod Milrem Robotics, en leverandør til Ukraine; NATO-ledere reagerer. Historien har direkte betydning for dansk/nordisk sikkerhed, efterretning og debatten om hybrid trussel og civil-militær målbeskyttelse.",
+      "reading_minutes": "10"
+    },
+    {
+      "title": "'I was lured into a trap': Evan Gershkovich on moment that led to 16 months in Russian jail",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/ck9qr8jy8ynyo?at_medium=RSS&at_campaign=rss",
+      "summary": "The US journalist says he realised he was a \"a pawn in a greater game\" when he was not interrogated or tortured by FSB agents.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "gershkovich-russia-jail",
+      "why": "BBC‑interview om en frihedsberøvet journalist giver menneskelig vinkel på russisk efterretningspraksis; backup hvis andre Ukraine/Rusland‑artikler bliver utilgængelige, og nyttigt til forståelse af russisk behandling af vestlige journalister.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI unveils AI assistant 'dots' while safety worries delay new model",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cw7v42rp083eo?at_medium=RSS&at_campaign=rss",
+      "summary": "Sam Altman spoke in San Francisco during OpenAI’s annual event for tech developers. Sam Altman has spoken repeatedly in recent weeks about the risks posed by AI agents. OpenAI on Tuesday unveiled \"dots,\" a new artificial intelligence (AI) assistant they say can proactively carry out tasks on a user's behalf. At its annual developer day in San Francisco, chief executive Sam Altman referred to \"dots\" as \"remarkably capable, always-on agents that can handle really anything you can think of.\"",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-dots-safety",
+      "why": "OpenAI lancerer 'dots' — altid-aktive AI-agenter — samtidig med udskudt modeludrulning af hensyn til sikkerhed. Det ændrer hvilke AI-agent-funktioner brugere og virksomheder kan forvente, og berører debat om regulering, arbejdspladser og platformansvar.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI's latest features take direct aim at the app store model | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/29/openais-latest-features-take-direct-aim-at-the-app-store-model/",
+      "summary": "OpenAI is building out the pieces of an alternative to the traditional app store model, turning ChatGPT into a place where software can be discovered and used by people and AI agents alike.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-appstore-alternative",
+      "why": "TechCrunch forklarer, hvordan OpenAI forsøger at erstatte dele af app‑store-distributionen ved at gøre ChatGPT til et markeds- og udførelseslag for software og agenter. Det har store implikationer for platformøkonomi, app‑indtægter og danske udviklere.",
       "reading_minutes": "5"
     },
     {
-      "title": "SpaceX's Starship goes orbital, deploying first next-gen Starlinks",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/space/2026/09/starships-first-orbital-launch-gives-lift-to-spacexs-next-gen-starlinks/",
-      "summary": "Starship had already flown 99 percent of the way to low-Earth orbit. Monday's flight added the last bit. Starship had already flown 99 percent of the way to low-Earth orbit. Monday’s flight added the last bit. SpaceX’s Starship rocket thundered into the sky over South Texas early Monday. It was the 14th test flight of the world’s most powerful launch vehicle. This time, however, the rocket’s massive upper stage squeezed out some extra oomph from its Raptor engines and accelerated to orbital velo",
+      "title": "Here’s why OpenAI is absent from Nvidia’s industry-wide effort to end rogue AI agents",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/",
+      "summary": "OpenAI isn't a public supporter of Nvidia's Open Agent Safety Platform, but it is privately working with Nvidia, TechCrunch has learned.",
       "format": "short",
-      "section": "Videnskab & teknologi",
+      "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "starship-orbital-nextgen-starlinks-2026",
-      "why": "Ars Technica dækker Starships første succesfulde orbitalmission med next‑gen Starlinks — et operationsskifte i ruminfrastruktur, potentielt stor betydning for global internetdækning og strategiske bånd bredt relevant for Danmark og Europa på rum- og telekommunikationsområdet.",
+      "story_id": "nvidia-openai-agents-safety",
+      "why": "TechCrunch afdækker den strategiske afstand mellem OpenAI og Nvidias brede initiativ til agentsikkerhed. For Mads er det vigtigt for at forstå branchedynamik, interoperabilitet og hvor ansvar for 'rogue agents' forventes at lande—politisk og teknisk.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Nvidia’s Answer to Rogue Agents Is an Open-Source AI Security System",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/nvidias-answer-to-rogue-agents-is-an-open-source-ai-security-system/",
+      "summary": "In the wake of a series of high-profile AI safety incidents, Nvidia is introducing a new software tool that helps keep agents from escaping containment.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-open-source-security",
+      "why": "WIRED beskriver Nvidias open-source løsning til at holde AI-agenter inden for rammer. Artiklen forklarer tekniske greb og praktiske begrænsninger, vigtige detaljer hvis Danmark eller EU vurderer standarder og integration i kritiske systemer.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The ‘War Games’ problem: Computer science has long understood what it takes to keep AI under control",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/the-war-games-problem-computer-science-has-long-understood-what-it-takes-to-keep-ai-under-control-292884",
+      "summary": "A hit 1983 movie illustrates what computer scientists have long known: If you give an AI agent a goal but don’t control what it can and can’t do, you shouldn’t be surprised by what it does. Share article Print article AI agents don’t go rogue. That’s something only humans do.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "war-games-ai-control",
+      "why": "Langt, analytisk essay fra The Conversation der kobler klassisk CS‑indsigt til moderne agentproblemer og policyimplikationer. Giver Mads teoretisk og praktisk baggrund for risiko- og reguleringsdebatten om autonome AI-agenter.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "OpenAI Gets Sued Over the Hugging Face Hack",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/openai-sued-over-the-hugging-face-hack/",
+      "summary": "A nonprofit in California is doing what Hugging Face has not—attempting to hold OpenAI legally accountable for the actions of its agents. A legal nonprofit sued OpenAI",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-huggingface-suit",
+      "why": "WIRED følger en retssag, hvor en nonprofit forsøger at holde OpenAI juridisk ansvarlig for agent‑handlinger efter et hack. Sagen kan præcedenssætte ansvarsspørgsmål, hvilket er centralt for danske virksomheder og myndigheder, der bruger AI‑leverandører.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Australian government concedes no scientific consensus on social media harms for teenagers – but ‘credible risks’ justify ban",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/australia-news/2026/sep/30/social-media-ban-australia-high-court-mental-health-risks-teens",
+      "summary": "Commonwealth tells high court its proposed laws to let users opt out of algorithms would ultimately have the same effect as the banFollow our Australia news live blog for latest updatesGet our breaking news email, free app or daily news podcastThe Australian government has conceded it implemented the “world-leading” under-16s social media ban before there was scientific consensus on the link between mental health harms and social media use, but argued the “credible risks” of issues such as addic",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "australia-social-media-ban",
+      "why": "Guardian‑artikel om Australien‑sagens juridiske og politiske nuancer — god international reference om balance mellem lovgivning, bevisbyrde og børns trivsel; kan erstatte andre tech‑politiske læsninger.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "US tech leaders are urgently calling for rules on AI – China already has them",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/us-tech-leaders-are-urgently-calling-for-rules-on-ai-china-already-has-them-292965",
+      "summary": "China has already implemented many rules governing the use of artificial intelligence.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-regulation-us-china",
+      "why": "The Conversation forklarer forskelle i reguleringslandskabet mellem USA og Kina og konsekvenserne for global AI-politik. Relevans for Danmark/EU: regulatorisk konkurrence, dataadgang og hvor virksomheder placerer udvikling og drift.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Apple Reportedly Planned to Replace 5,000 Support Employees With AI",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/09/29/apple-reportedly-planned-5000-applecare-layoffs/",
+      "summary": "Apple recently considered laying off about 5,000 support employees, but it has put those plans on hold indefinitely, according to Bloomberg's Mark Gurman.\n\n\n\n\n\nThe report said that Apple believed that AI-powered phone and web agents could take over some of the responsibilities performed by the employees who would have been let go, but Apple is no longer \"currently looking to take such a step.\"\n\n\n\nLast month, we reported that customers who call the AppleCare phone number (1-800-APL-CARE) from the",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-5000-ai-support",
+      "why": "Bloomberg‑drevet MacRumors‑opsummering om en pause i Apples planer om at erstatte 5.000 supportansatte med AI. Historien er et konkret arbejdsmarkedseksempel på, hvordan virksomheder bruger agentteknologi — vigtigt for dansk arbejds- og IT‑politik-debat.",
       "reading_minutes": "2"
+    },
+    {
+      "title": "Mac mini M6 review: truly mighty but now more pricey",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/29/mac-mini-m6-review",
+      "summary": "Apple’s cheapest desktop computer is no longer a bargain but its newest, fastest chip makes it a pocket powerhouse Guardian journalism is independent. We earn a commission if you buy something through an affiliate link. Learn more .",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mac-mini-m6-review",
+      "why": "Guardian‑anmeldelse af nye Mac mini M6 forklarer praktisk ydelse vs. pris—relevant for læsere, der overvejer opgradering i mødet med AI‑tunge arbejdsgange. Brugbar, dansk‑venlig købs- og produktvurdering.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Russisk droneangreb rammer Ukraines Nationale Videnskabsakademi",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/russisk-droneangreb-rammer-ukraines-nationale-videnskabsakademi/",
+      "summary": "Klokken var cirka 13.30 lokal tid, og mange af de ansatte var i gang med deres frokostpause, da en almindelig arbejdsdag på Ukraines Nationale Videnskabsakademi tog en ubehagelig drejning. En russisk drone hamrede ind i og satte ild til den 170 år gamle bygning, der er et arkitektonisk vartegn i hjertet af Kyiv.  Flere af...",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "kyiv-academy-drone-attack",
+      "why": "Angrebet rammer en 170 år gammel akademibygning i Kyiv midt på dagen — et symboltab for Ukraines videnskabelige infrastruktur. Sagen er relevant for forståelsen af krigens kulturelle ødelæggelser og konsekvenser for forskningssamarbejde i Norden.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ukraine's prized steel industry left in ruins by Russian missile campaign",
+      "source": "www.bbc.co.uk",
+      "url": "https://www.bbc.co.uk/news/articles/cjkg7k6z9296o?at_medium=RSS&at_campaign=rss",
+      "summary": "Ukraine's remaining steelworks, a vital part of its economy, have all but ground to a halt because of relentless attacks. After one attack on the Zaporizhzhia steelworks, a blast furnace was restarted only for the site to be hit again hours later Like thousands of other residents of Zaporizhzhia, Denys Maksyshko has spent years working for local steel factory Zaporizhstal. For generations, it has been the biggest and richest source of employment in this major Ukrainian city. \"Zaporizhstal is not",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ukraine-steel-campaign",
+      "why": "BBC beskriver hvordan målrettede angreb har knækket Ukraines stålproduktion — med økonomiske og forsyningskædefølger i Europa. For Mads er det vigtigt for forståelsen af langsigtede europæiske industrikonsekvenser af krigen.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "US attempts to control Ukraine’s attacks on Russia reflect a fundamental strategic disconnect",
+      "source": "theconversation.com",
+      "url": "https://theconversation.com/us-attempts-to-control-ukraines-attacks-on-russia-reflect-a-fundamental-strategic-disconnect-292756",
+      "summary": "Ukraine needs to disrupt Russia’s economy. The US has a different set of objectives. Share article Print article In a recent phone call, Donald Trump urged Volodymyr Zelensky to stop Ukrainian attacks on Russian oil refineries. Whether a request or a demand, this appears, certainly at first glance, fundamentally different from the Biden administration’s policy of restricting the use of US long-range missiles to hit targets inside Russia.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-control-ukraine-attacks",
+      "why": "Analyse om forskellen mellem amerikanske og ukrainske strategiske mål i krigen, med fokus på målvalg som olieinfrastruktur. Giver Mads strategisk kontekst til større debat om allieredes koordination og danske støtteprioriteter.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "A Stormy Week of Art in NYC",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/a-stormy-week-of-art-in-nyc/",
+      "summary": "Reviews on major exhibitions at the New Museum, Guggenheim, and MoMA PS1, what it takes to get a fair union contract, and finding joy in the history of concrete. Reviews on major exhibitions at the New Museum, Guggenheim, and MoMA PS1, what it takes to get a fair union contract, and finding joy in the history of concrete. The actual nor’easter that punctuated last week’s whirlwind was bittersweet, for lack of a better word. Sweet in that I thought it might afford me the perfect excuse to go full",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "nyc-art-week-stormy",
+      "why": "Hyperallergics gennemgang af store udstillinger i New York kombinerer anmeldelser og faglig debat om museumsarbejde og fagforeninger — nyttigt perspektiv for danske kulturfolk, kuratorer og DR‑debatten om fiktion og institutioners prioritering.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "100 filmfolk i opråb til Bjarne Corydon: 'Fiktionsområdet er som fjernet fra strategien med skalpel'",
+      "source": "DR Kultur",
+      "url": "https://www.dr.dk/nyheder/kultur/100-filmfolk-i-opraab-til-bjarne-corydon-fiktionsomraadet-er-som-fjernet-fra-strategien-med-skalpel",
+      "summary": "I et debatindlæg i Politiken advarer en lang række tv-serie- og filmskabere om, at DR glemmer drama og fiktionsområdet. I et debatindlæg i Politiken advarer en lang række tv-serie- og filmskabere om, at DR glemmer drama og fiktionsområdet. Ord som \"tv-drama\", \"tv-serier\" eller \"fiktion\" optræder ikke i DR's strategi frem mod 2030",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "dr-fiktion-opraab-2026",
+      "why": "Danske filmskabere kritiserer DR's strategi for at negligere fiktion; en konkret kulturpolitisk konflikt med potentielle konsekvenser for dansk tv‑drama, finansiering og kulturpolitik. Mads bør kende denne interne debat.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Kom og tab med os",
+      "source": "Atlas Magasin",
+      "url": "https://atlasmag.dk/samfund/kom-og-tab-med-os",
+      "summary": "I den næste uge kører vi en for os fuldstændigt afgørende abonnementskampagne, hvor du kan tegne et gratis abonnement på ATLAS resten af året. Kampagnen varer til og med den 5. oktober og inkluderer både digital adgang og det printede magasin. Engang faldt jeg over en roman skrevet af sangeren Leonard Cohen, der hed Beautiful Losers . Jeg syntes titlen var fængende, så jeg købte den, men må indrømme, at jeg aldrig har fået den læst, så for mig er det mere blevet et slagord jeg selv lægger betydn",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "atlas-kom-og-tab-med-os",
+      "why": "Atlas‑essay om magasinets abonnementskampagne og kulturrefleksioner, der også rører ved offentlig kulturformidling og læserengagement. Et dansk, længere essay som læsevenlig kulturfordybelse for morgenkaffen.",
+      "reading_minutes": "4"
     }
   ],
   "report": {
@@ -187,40 +247,42 @@
     "editorial_mix": {
       "planned": {
         "dansk_politik": 2,
+        "verden": 5,
         "teknologi": 9,
         "fordybelse": 3,
-        "kultur": 1,
-        "verden": 2
+        "kultur": 3
       },
       "actual": {
         "dansk_politik": 2,
-        "teknologi": 6,
-        "kultur": 1,
-        "verden": 3,
-        "fordybelse": 3
+        "verden": 6,
+        "teknologi": 7,
+        "fordybelse": 2,
+        "kultur": 3
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (6 af 9)."
+        "Færre historier om teknologi end planlagt (7 af 9).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (2 af 3).",
+        "Færre longreads end planlagt (9 af 10)."
       ]
     },
     "collection": {
-      "rss_candidates": 231,
-      "web_candidates": 25,
+      "rss_candidates": 282,
+      "web_candidates": 26,
       "total_candidates": 75,
-      "repeats_dropped": 9,
-      "previews_enriched": 17,
+      "repeats_dropped": 13,
+      "previews_enriched": 21,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 46,
+        "full_text": 40,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 19,
-      "prepared": 15,
+      "approved": 26,
+      "prepared": 20,
       "dropped_unreadable": 0,
-      "dropped_diversity": 4,
+      "dropped_diversity": 6,
       "budget_exhausted": false
     },
     "source_health": {
@@ -234,7 +296,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 35
+        "items": 34
       },
       "BBC Technology": {
         "status": "ok",
@@ -258,11 +320,11 @@
       },
       "The Guardian Technology": {
         "status": "ok",
-        "items": 32
+        "items": 31
       },
       "The Conversation": {
         "status": "ok",
-        "items": 46
+        "items": 49
       },
       "MacRumors": {
         "status": "ok",
@@ -330,7 +392,7 @@
       },
       "Kulturmonitor": {
         "status": "ok",
-        "items": 2
+        "items": 1
       },
       "Altinget": {
         "status": "ok",
@@ -358,7 +420,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -366,7 +428,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 20
+        "items": 22
       }
     }
   }
