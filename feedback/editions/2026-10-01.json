@@ -1,0 +1,445 @@
+{
+  "created_at": "2026-10-01T03:32:35.813571+00:00",
+  "articles": [
+    {
+      "title": "Det var regeringens helt store gave til småbørnsfamilier: Men millioner af kroner ryger i andre lommer",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/det-var-regeringens-helt-store-gave-til-smaaboernsfamilier-men-millioner-af-kroner-ryger-i-andre",
+      "summary": "Selvom et politisk flertal på Christiansborg har afsat et milliardbeløb til mere pædagogisk personale og lavere forældrebetaling, har flere kommuner valgt at bruge pengene på andre ting. Selvom et politisk flertal på Christiansborg har afsat et milliardbeløb til mere pædagogisk personale og lavere forældrebetaling, har flere kommuner valgt at bruge pengene på andre ting. Der var ingen slinger i valsen, da regeringen sidste år præsenterede finanslovsudspillet. Landets vuggestuer og børnehaver sku",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "kommuner-omfordeler-paedagogmidler",
+      "why": "Kommuner har valgt at bruge et Christiansborg-bevilget milliardbeløb til daginstitutioner på andet end flere pædagoger eller lavere forældrebetaling. Det ændrer, hvordan reformens effekt måles og kan udløse politisk strid om styring og kontrol af reformpenge. Mads bør kende konsekvenserne for regeringens sociale politik og lokale ansvar.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Danske svin rejser mere end diplomater, siger Løkke",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/danske-svin-rejser-mere-end-diplomater-siger-loekke",
+      "summary": "- Vi må ikke ofre det gode dyreliv på effektivitetens alter, siger minister for natur og dyrevelfærd Christian Rabjerg Madsen (S). - Vi må ikke ofre det gode dyreliv på effektivitetens alter, siger minister for natur og dyrevelfærd Christian Rabjerg Madsen (S). Svineproduktionen i Danmark skal udvikles, ikke afvikles, og velfærden for dyrene skal hæves. Sådan lyder det på et pressemøde onsdag eftermiddag, hvor blandt andre minister for natur og dyrevelfærd Christian Rabjerg Madsen (S) har præsen",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "svineproduktion-dyrevelfaerd-politik",
+      "why": "Ny regeringserklæring og ministerudtalelser sætter ny linje for svineproduktion og dyrevelfærd: fokus på udvikling fremfor afvikling og højere velfærd. Det har direkte betydning for landbrugspolitik, eksport og lokale erhverv i Danmark. Mads bør følge politisk debat og interessekonflikter i fødevaresektoren.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "US trade regulator opens investigation into AI giants including Anthropic and OpenAI",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/us-news/2026/sep/30/ftc-investigation-anthropic-openai",
+      "summary": "FTC move is first official US enforcement ⁠action on rogue AI agents, following surge in incidents first reported in JulyThe US’s main trade regulator is conducting an industry-wide investigation ⁠into Anthropic, OpenAI and other ⁠AI labs ​to uncover the potential dangers their technology poses to consumers.The investigation by the Federal Trade Commission is the first official US enforcement ⁠action that delves into rogue AI agents, following a surge in incidents first reported in July that hav",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ftc-ai-investigation",
+      "why": "FTC undersøger store AI-leverandører for forbrugerrisici — det er USAs første store sektoromfattende håndhævelsestilsyn mod ’rogue’ AI-agenter. Undersøgelsen kan føre til reguleringspres i Europa og Danmark og ændre hvordan virksomheder udvikler og deployer AI. Mads bør kende mulige regulatoriske konsekvenser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "“We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/30/1145339/were-not-going-to-shoot-ourselves-in-the-foot-over-hugging-face-says-openais-chief-research-officer/",
+      "summary": "Two months after the bombshell news that a swarm of its agents had broken their containment and hacked into the computers of the AI company Hugging Face, OpenAI is still putting out fires. A steady drip of disclosures about other hacks in the weeks since has kept OpenAI in the spotlight and raised serious questions…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-hack-response",
+      "why": "OpenAI svarer på kritikken efter agent-hacks mod Hugging Face og tegner virksomhedens forsvars- og ansvarslinje fremover. Historien forklarer interne forandringskrav og sikkerhedsprioriteter i en central AI-aktør — vigtigt for danske beslutningstagere og virksomheder, der bygger på disse platforme.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Battle to Be Your Personal AI Agent Is Here",
+      "source": "www.wired.com",
+      "url": "https://www.wired.com/story/ai-agents-dots-devday-muse-battling-it-out/",
+      "summary": "OpenAI's Dots and Meta's Muse are vying to be your AI agent of choice. I've tried both—and I suspect you will too. Yesterday, I spent the morning at OpenAI",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-battle",
+      "why": "Praktisk test af OpenAI Dots og Metas Muse forklarer, hvordan personlige AI-agenter fungerer i dag — hvilke opgaver de løser, og hvor brugervenligheden stadig svigter. For Mads er dette direkte relevant: det viser, hvad danskerne snart kan møde i arbejdsliv og forbrug, og hvilke valg virksomheder må træffe.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Meta disputes claim that Muse read a user's private messages without permission | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/",
+      "summary": "Meta says its Muse AI agent cannot access a user’s Messages without explicit permission, disputing a journalist’s account that the agent read his private messages while the required Mac setting was turned off.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "muse-message-claim",
+      "why": "Konflikt om en AI-agents adgang til private beskeder rammer privatlivs- og sikkerhedsdebatten: Meta afviser påstande om uautoriseret adgang, men episoden rejser konkrete spørgsmål om brugerindstillinger og tilsyn. Værd at læse for at forstå risici ved udbredte agentplatforme.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Surprisingly Complex Waves Reveal the Brain’s Inner Workings",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/surprisingly-complex-waves-reveal-the-brains-inner-workings-20260930/",
+      "summary": "Unexpected patterns traveling across the human brain may be reorganizing its activity in real time.            The post Surprisingly Complex Waves Reveal the Brain’s Inner Workings first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "brain-waves-quanta",
+      "why": "Quanta-artikel med dyb gennemgang af uventede hjernebølge-mønstre og deres rolle i realtids-omorganisering af hjerneaktivitet. Lang, grundig videnskabsforklaring med nye paradigmer for forståelse af hjernekommunikation — god baggrund til samtaler om neurovidenskab og kognition.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "Chatbots as oracles: How AI is giving new life to the ancient practice of seeking answers from inscrutable sources",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/chatbots-as-oracles-how-ai-is-giving-new-life-to-the-ancient-practice-of-seeking-answers-from-inscrutable-sources-289279",
+      "summary": "Human beings have always turned to oracles and divination for answers to difficult questions. Today, AI might be fulfilling that role.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "chatbots-as-oracles",
+      "why": "Essay om den kulturelle og psykologiske rolle AI-chatbots kan få som moderne 'orakler'. Teksten diskuterer tillid, autoritet og hvordan folk bruger AI til beslutninger — relevant for at forstå sociale konsekvenser af samtalebaserede modeller i Danmark og globalt.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Cities across the world are sinking because of groundwater depletion. But the process can be reversed",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/cities-across-the-world-are-sinking-because-of-groundwater-depletion-but-the-process-can-be-reversed-292669",
+      "summary": "When groundwater reservoirs are replenished, the ground above rises. But the uplift is patchy because earthquake faults act like underground dams, channelling water. Share article Print article Many cities around the world are sinking because too much water is extracted from the groundwater reservoirs beneath them.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "groundwater-subsidence-reversal",
+      "why": "Langere forklaring om sænkning af byer pga. grundvandsudvinding og muligheder for genopretning. Har konkret relevans for danske byplanlæggere og klima-/vandstrategier i Europa — nyttigt for forståelse af infrastruktur- og klimatilpasningsvalg.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Apple's Smart Home Hub: Everything We Know So Far",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/guide/apple-command-center/",
+      "summary": "Apple is working on a new smart home accessory that will serve as a hub for interacting with Siri AI, controlling HomeKit devices, watching videos, checking the calendar and the weather, and generally offering up useful information to everyone in the household. \n\n\n\n\n\nThis guide aggregates everything that we know about Apple's smart home hub.\n\n\n\nDesign\n\nApple's smart home device will somewhat resemble an iPad, and it will have a display-focused design. It is expected to be square rather than rect",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-smart-home-hub",
+      "why": "Omfattende guide til Apples kommende hjemmetilbehør, der kan blive centralt for Siri- og HomeKit-økosystemet. Betydning for privatliv, interoperabilitet og dansk forbrugerelektronik — nyttigt for forståelse af, hvordan Apple kan forme smart home-markedet.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "The Download: OpenAI’s chief research officer explains its hacking response",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/09/30/1145350/the-download-openai-chief-research-officer-hacking-response/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. “We’re not going to shoot ourselves in the foot” over hack fallout, says OpenAI’s chief research officer Two months after OpenAI’s agents hacked into the computers of AI company Hugging Face,…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-download-explainer",
+      "why": "MIT Technology Review-portræt der går bag OpenAI's håndtering af agent-hacket og interne prioriteringer. Gir indsigt i governance, krisekommunikation og konsekvenser for tillid til AI-leverandører — vigtigt for danske virksomheder og politikere, der skal vurdere risici.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Forskere i kritik af ny PISA-måling: »Man handler i panik«",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/forskere-i-kritik-af-ny-pisa-maaling-man-handler-i-panik/",
+      "summary": "Reaktionen på PISA er ude af proportioner, siger forsker, der kalder testen for upræcis. Vi bør helt ignorere den, siger en anden kritiker. Forsker bag PISA forsvarer testen, men anerkender debatten. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "pisa-kritik-danmark",
+      "why": "Danske forskere kritiserer fortolkningen og reaktionerne på nye PISA-resultater som paniske og upræcise. Det rejser spørgsmål om uddannelsespolitik, beslutningsgrundlag og kommunal politisk respons — centralt for Mads hvis han følger uddannelsesdebatten og politisk prioritering.",
+      "reading_minutes": "10"
+    },
+    {
+      "title": "AI godfathers warn of runaway âintelligence explosionâ",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/sep/28/ai-godfathers-warn-of-runaway-intelligence-explosion",
+      "summary": "OpenAI chief scientist also among authors of report on prospect of ‘most consequential technological development in history’ OpenAI chief scientist also among authors of report on prospect of âmost consequential technological development in historyâ Two of the âgodfathersâ of modern AI and senior executives at OpenAI and Anthropic",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-godfathers-warning",
+      "why": "Avisportræt hvor førende AI-forskere advarer om risikoen for en 'intelligence explosion' og beskriver teknologiske og etiske konsekvenser. Værd at læse for at forstå argumenterne i den globale AI-sikkerhedsdebat, som påvirker dansk politik og industriens risikostyring.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Ubisoft's calling its next push into gen-AI game development Motherbrain",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/ubisoft-gen-ai-game-motherbrain-assassins-creed",
+      "summary": " Ubisoft is internally calling its latest generative-AI initiative 'Motherbrain' - you know, like the evil supercomputer turned gross brain-in-a-jar monster from Nintendo's Metroid series - according to trademarks filed by the Assassin's Creed and Far Cry publisher. Read more",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "ubisoft-motherbrain",
+      "why": "Ubisofts interne gen-AI-initiativ 'Motherbrain' viser, hvordan store spiludgivere vælger AI til kreativ udvikling. Relevans for spilindustrien og kulturel produktion i Danmark — nyttig viden om hvor spiludvikling bevæger sig hen teknologisk og arbejdspraktisk.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The AI telling farmers when to harvest",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cgk53dkmyxko?at_medium=RSS&at_campaign=rss",
+      "summary": "Will farmers want AI tools to help judge when to pick fruit, or is their own intuition enough? Choosing the right moment to harvest can be a make-or-break decision When the first day of the apple harvest rolled around in Washington State last year, the fruit was ripe and the pickers were ready – but the weather had other ideas. \"It was like 38C… it's not safe for people to work in that heat,\" recalls Joel Carter at Okanagan Specialty Fruits. \"We had to stop at 10 o'clock in the morning.\"",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-harvest-farmers",
+      "why": "Reportage om AI-værktøjer til at bestemme høsttidspunktet og hvordan landmænd forholder sig til teknologi vs. erfaring. Konkrete konsekvenser for fødevareproduktion, arbejdssikkerhed og klimafølsomhed — relevant for dansk landbrug og agro-teknologisk adoption.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Russia launches largest attack on Ukraine energy infrastructure since spring",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/ckjw5jx2l393o?at_medium=RSS&at_campaign=rss",
+      "summary": "In total 11 regions of the country were attacked overnight, with residential buildings and railways also targeted, the Ukrainian PM says.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russia-attack-ukraine-energy",
+      "why": "Større russisk angreb på Ukraines energiinfrastruktur kan påvirke Europas energitiltag, gasmarkeder og forsyningssikkerhed. Historien er strategisk relevant for danske energi- og forsvarspolitiske beslutninger og forberedelse på mulige konsekvenser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Milwaukee Art Museum Returns Two Jars to David Drake’s Descendants",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/milwaukee-art-museum-returns-two-jars-to-david-drakes-descendants/",
+      "summary": "The Wisconsin museumâs ownership transfer was followed up by a Virginia museumâs announcement of the return of another âDave the Potterâ vessel this week. The Wisconsin museumâs ownership transfer was followed up by a Virginia museumâs announcement of the return of another âDave the Potterâ vessel this week. The Milwaukee Art Museum has returned two 19th-century stoneware vessels by Dave (David) Drake to the descendants of the African-American ceramicist under an ownership transf",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "milwaukee-return-david-drake",
+      "why": "Museum returnerer værker til efterkommere af en afroamerikansk keramiker — konkret sag om ejerskab, restitution og institutionel praksis. Relevant for danske museer der står over for lignende krav og debat om provenance og etik i samlingspolitik.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google's early attempt to pay websites for AI answers is struggling",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/google/2026/09/google-is-paying-100-websites-for-contributions-to-ai-overviews-but-the-amounts-are-tiny/",
+      "summary": "Many sites see just one-tenth of one percent of their advertising revenue from AI payments.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-ai-payments-struggle",
+      "why": "Konkret forretningscase: Google betaler nogle sites små beløb for at bidrage til AI-overviews, men beløbene er ubetydelige. Relevant backup om økonomiske konsekvenser af AI-økosystemet for danske medier og indholdsleverandører.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Whitney Museum Workers Declare Strike",
+      "source": "hyperallergic.com",
+      "url": "https://hyperallergic.com/whitney-museum-workers-declare-strike/",
+      "summary": "The union prepares for work stoppage ahead of the Lichtenstein show. Plus, Teresa Margolles distills the language of violence at MoMA PS1. The union prepares for work stoppage ahead of the Lichtenstein show. Plus, Teresa Margolles distills the language of violence at MoMA PS1. Next up in the art world juggernaut that is September: Teresa Margolles’s solo exhibition at MoMA PS1, where she co-opts the language of minimalism to honor the lives disrupted or destroyed by borders, capitalism, and stat",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "whitney-strike",
+      "why": "Kuratorer og museumspersonale varsler strejke foran stor Lichtenstein-udstilling — illustrerer arbejdsstrid i kultursektoren og pres på institutioner under store blockbusters. Relevant for danske kulturarbejdsmiljø-diskussioner og institutioners budgetprioriteringer.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "There Are Plenty of Reasons to Be Concerned About Bioweapons Development—Even Without AI",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/you-dont-need-ai-to-be-concerned-about-bioweapons-development-but-it-helps/",
+      "summary": "In her new book on biological warfare, Annie Jacobsen didn’t even discuss AI because scientists can already warp Mother Nature to create extinction-level events.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "bioweapons-concerns",
+      "why": "Wired-gennemgang af biologisk våbenudvikling og risici uden at afhænge af AI-hypoteser; god backup til bredere biosecurity-diskussioner, hvis højdosis AI-stof blokeres.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI tool that copied actor’s ‘lustrous’ voice violated his rights, Tokyo court rules",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/technology/2026/sep/30/ai-tool-copied-actor-kenjiro-tsuda-tokyo-court",
+      "summary": "Kenjiro Tsuda wins case against TikTok account in landmark Japanese verdict to protect publicity rightsA court in Japan has ruled that the human voice has legal protection after a landmark case involving a well-known actor and a TikTok account that he claimed had cloned his “lustrous” baritone voice in its AI-generated videos.Tokyo district court said on Wednesday that voices should enjoy the same protection as publicity rights, at the end of a closely watched legal action brought against TikTok",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "tokyo-voice-ruling",
+      "why": "Japansk retsafgørelse anerkender stemmerettigheder mod voice-cloning — relevant backup om juridiske konsekvenser af deepfakes og hvordan rettigheder kan blive beskyttet i Europa og Danmark.",
+      "reading_minutes": "3"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 3,
+        "teknologi": 6,
+        "fordybelse": 3,
+        "verden": 4,
+        "kultur": 3
+      },
+      "actual": {
+        "dansk_politik": 3,
+        "teknologi": 8,
+        "fordybelse": 2,
+        "verden": 5,
+        "kultur": 3
+      },
+      "warnings": [
+        "Færre historier om fordybelse og personlige interesser end planlagt (2 af 3)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 298,
+      "web_candidates": 22,
+      "total_candidates": 75,
+      "repeats_dropped": 20,
+      "previews_enriched": 22,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 48,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 23,
+      "prepared": 21,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 2,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 32
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 31
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 14
+      }
+    }
+  }
+}
