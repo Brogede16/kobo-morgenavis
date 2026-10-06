@@ -1,0 +1,455 @@
+{
+  "created_at": "2026-10-06T03:32:28.019026+00:00",
+  "articles": [
+    {
+      "title": "Regeringen vil forkorte tilladelsesprocesser til elnet landet over",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/regeringen-vil-forkorte-tilladelsesprocesser-til-elnet-landet-over",
+      "summary": "I størstedelen af Danmark skal der være kortere behandling af tilladelser til nyt elnet, siger minister. I størstedelen af Danmark skal der være kortere behandling af tilladelser til nyt elnet, siger minister. Der skal skæres flere år af sagsbehandlingen for udbygning af elnet i Danmark. Det mener regeringen, der i et nyt udspil vil forkorte tilladelsesprocesser for at udrulle elnettet hurtigere.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "tilladelsesprocesser-elnet-danmark",
+      "why": "Regeringen foreslår at skære år af sagsbehandlingstider for udbygning af elnettet, så flere områder får hurtigere tilladelser til ny elinfrastruktur. Mads bør kende detaljerne: det påvirker tempoet i vind/sol-udbygning, netkapacitet og lokale konflikter om anlæg.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Lov om statsborgerskab til 2.055 personer bliver genfremsat efter intern uenighed i regeringen",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/lov-om-statsborgerskab-til-2-055-personer-bliver-genfremsat-efter-intern-uenighed-i-regeringen",
+      "summary": "2.055 personer var først godkendt til at blive statsborgere i Danmark, men så faldt loven bort. Nu vil regeringen genfremsætte lovforslaget, men ikke screene personerne. 2.055 personer var først godkendt til at blive statsborgere i Danmark, men så faldt loven bort. Nu vil regeringen genfremsætte lovforslaget, men ikke screene personerne. Regeringen har besluttet at genfremsætte et lovforslag om at give 2.055 personer, der lever op til alle kravene, statsborgerskab. Det har Udlændinge- og Integra",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "statsborgerskab-2055-genfremsat",
+      "why": "Regeringen genfremsætter et lovforslag, så 2.055 godkendte personer kan få dansk statsborgerskab uden ny screening — efter intern splittelse. Væsentligt for sagsbehandling, integrationspolitik og regeringssamarbejde; Mads får et konkret dansk-politisk punkt i dag.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Tre regeringspartier går imod regeringens egen indfødsretspolitik",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/tre-regeringspartier-gaar-imod-regeringens-egen-indfoedsretspolitik",
+      "summary": "2.055 borgere skal ikke vente på ekspertgruppe, før de får dansk pas, som regeringens politik lyder. Det mener de tre regeringspartier Moderaterne, SF og Radikale. 2.055 borgere skal ikke vente på ekspertgruppe, før de får dansk pas, som regeringens politik lyder. Det mener de tre regeringspartier Moderaterne, SF og Radikale. Regeringens indfødsretspolitik rammer uden for skiven. Det siger flere af regeringens egne partier nu til DR, efter at flere eksperter har vurderet, at politikken kan være ",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "regeringspartier-motsaetning-indfoedsret",
+      "why": "Moderaterne, SF og Radikale siger nej til regeringens krav om at vente på en ekspertgruppe, før 2.055 kandidater får pas — en åben intern konflikt om indfødsretspolitikken, der ændrer regeringskoalitionens dynamik og kan få parlamentariske følger.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Russian drones strike Ukraine’s data centers by exploiting air defense gaps",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/10/russian-drones-strike-ukraines-data-centers-by-exploiting-air-defense-gaps/",
+      "summary": "Russian attacks on Internet, phone services threaten Ukraine’s wartime economy.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russian-drones-data-centers",
+      "why": "Russiske droner angriber ukrainske datacentre og rammer internet- og teleinfrastruktur ved at udnytte luftforsvarshuller. Historien forklarer et nyt træk i krigens teknologiske dimension — relevant for dansk/sikkerhedsdebat om kritisk infrastruktur og cyber-/forsvarssamarbejde.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Fuel from South Korea being shipped to Russia as Ukraine war grinds on",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/06/oil-tankers-south-korea-russia-ukraine-war",
+      "summary": "Exclusive: Guardian analysis finds more than 150,000 tonnes of fuel was shipped to Russian ports in July and August, some using sanctioned tankers Fuel is being shipped from South Korea to Russia via sanctioned tankers as Moscow scrambles for supplies amid the war in Ukraine, a move one expert said “undermines” Seoul’s public backing for Kyiv.Guardian analysis of port records and ship-tracking data found that in July and August over 176,000 tonnes of fuel, mostly diesel, was loaded at several So",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "fuel-south-korea-russia",
+      "why": "Guardian-analyse viser store mængder brændstof sendt fra Sydkorea til russiske havne, delvist via sanktioneramte tankskibe. Det har konkrete følger for EU/koordinerede sanktioner, energiforsyning og diplomati — vigtigt for Danmarks vurdering af sanktionseffektivitet.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "MCP for agent-to-agent comms may be the riskiest protocol you've never heard of",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/10/vulnerability-in-agents-from-google-and-others-exposes-structural-flaw-in-mcp/",
+      "summary": "Trust gaps in the new protocol spread malicious prompts from one agent to another. Trust gaps in the new protocol spread malicious prompts from one agent to another. The adoption of AI agents in millions of organizations is creating new opportunities for attackers to make them take malicious actions, such as exfiltrating database contents and sensitive business and personal information. In the past five months, Google and four other organizations—with little in common except for their use of AI ",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mcp-agent-protocol-risk",
+      "why": "Ars Technica afdækker en strukturel svaghed i MCP-protokollen for AI-agenter, som kan lade ondsindede promptkæder sprede sig og lække følsomme data. Mads bør kende denne tekniske, men konkrete trussel mod enterprise-agenter og databeskyttelse.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Reflection debuts Beam, an open-weight AI model to rival Chinese models at lower compute cost",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/05/reflection-debuts-beam-a-open-weight-ai-model-to-rival-chinese-models-at-lower-compute-cost/",
+      "summary": "Reflection is aiming Beam and future models at enterprises and sovereign nations. The pitch is to build “AI factories,” a product that would let institutions build their own customized, local AI system by training Reflection’s AI models on their own proprietary data.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "reflection-beam-open-model",
+      "why": "Reflection lancerer 'Beam', et åbent vægtsmodel-projekt målrettet virksomheder og suveræne aktører for lokalt tilpassede AI-fabrikker. Relevans for danske virksomheder og offentlige aktører, som overvejer souverain AI eller lokale løsninger uden kinesiske/amerikanske bindinger.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "US 'watching closely' after plague researcher dies in Russia",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cv5yn3nwp5n5o?at_medium=RSS&at_campaign=rss",
+      "summary": "Donald Trump says the US was looking \"very strongly\" at the case of a lab technician who died at a research centre in Siberia.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "plague-researcher-dies-russia",
+      "why": "En forskers død ved et russisk plageresearchcenter vækker amerikansk opmærksomhed. Historien rejser spørgsmål om laboratoriesikkerhed og geopolitisk følsomme forskningsmiljøer — relevant for Danmark via samarbejde, biovåbenbekymringer og forskningssikkerhedspolitik.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Is AI the End of Math As We Know It?",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/is-ai-the-end-of-math-as-we-know-it-20261005/",
+      "summary": "Mathematicians are facing the sudden shift with grief, anger, and a desperate search for fresh ideas: “If we don’t adapt, there’s just no more math in 50 years.”            The post Is AI the End of Math As We Know It? first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-end-of-math",
+      "why": "Quanta ser på, hvordan AI ændrer matematisk praksis, forskning og uddannelse, og hvilke risici og muligheder det skaber for faget. Lang, nuanceret analyse der hjælper Mads forstå de dybere konsekvenser af AI i akademia og talentudvikling.",
+      "reading_minutes": "13"
+    },
+    {
+      "title": "Three years after October 7, global attention on Gaza has receded. The real test will come after Israel’s election",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/three-years-after-october-7-global-attention-on-gaza-has-receded-the-real-test-will-come-after-israels-election-292360",
+      "summary": "A small but vocal global campaign has maintained pressure on Israel, but will this hold if a less extreme government is elected? Share article Print article This week marks three years since Hamas’ massacre of October 7 2023, in which some 1,200 people, most of them Israeli civilians, were killed and 251 taken hostage.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "gaza-attention-after-oct7",
+      "why": "The Conversation analyserer, hvordan global interesse for Gaza ebber ud og hvorfor eftervalgsperioden i Israel bliver afgørende for fremtidig pres og politik. Relevant kontekst for dansk udenrigspolitik, NGO-arbejde og diplomatiske prioriteringer.",
+      "reading_minutes": "8"
+    },
+    {
+      "title": "Accept ‘bad things’ in return for benefits of AI, says Sam Altman",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/05/sam-altman-open-ai-chatgpt-benefits-risks",
+      "summary": "Boss of OpenAI calls for a regulatory light touch because of the ‘good stuff’ the technology can deliver Boss of OpenAI calls for a regulatory light touch because of the âgood stuffâ the technology can deliver Sam Altman says he believes the world should accept âbad thingsâ happening with AI in exchange for the benefits of the technology. The chief executive of OpenAI cited hacks, scams and âother bad things that will happenâ in an interview that sparked an instant backlash from crit",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "sam-altman-accept-bad-things",
+      "why": "OpenAI-chefens udmelding om at acceptere 'bad things' i bytte for AI's fordele rejser afgørende spørgsmål om regulering og risikograd. Mads får et klart indblik i den tone og strategi, som dominerer store AI-aktører — vigtigt for dansk politisk debat om regulering.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "OpenAI says its review into hacks, including on Australian government sites, is costing $500,000 a day",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/oct/03/openai-review-hacks-australian-government-sites-costing-500000-a-day",
+      "summary": "Company says it is reviewing 50 petabytes of data after its agents accessed websites including Medicare without authorisation Company says it is reviewing 50 petabytes of data after its agents accessed websites including Medicare without authorisation Get our breaking news email",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-review-costs",
+      "why": "OpenAI oplyser om enorme omkostninger ved review af hacking-hændelser, inkl. uautoriseret adgang til australske sites. Viser omkostninger og operationsmæssige konsekvenser af sikkerhedssvigt i store modeller — vigtigt for beslutningstagere, herunder danske brugere af AI-tjenester.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Pentagon stops using Anthropic tools after blacklisting company, BBC told",
+      "source": "www.bbc.co.uk",
+      "url": "https://www.bbc.co.uk/news/articles/c5j9x9pr0240o?at_medium=RSS&at_campaign=rss",
+      "summary": "It labelled Anthropic a \"supply chain risk\" in February after the firm refused to remove safety guardrails from its tools. Defence secretary Pete Hegseth has publicly criticised Anthropic's boss Dario Amodei The US Department of Defence is no longer using Anthropic's AI tools, an official has told the BBC, months after it designated the company a supply chain risk on national security grounds. The Pentagon \"has ceased the use of Anthropic products\", the department official said in a statement on",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "pentagon-stops-anthropic",
+      "why": "BBC-opslag om Pentagonens fravalg af Anthropic pga. forsyningskæderisici viser hvordan sikkerhedsbekymringer ændrer regeringers AI-anskaffelser — et oplagt backup for historier om statslig AI-sikkerhedspolitik.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Astronomers Confirm Discovery of the Youngest Known Exoplanet Ever",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/astronomers-confirm-discovery-of-youngest-known-exoplanet-ever/",
+      "summary": "Under 1 million years old, “Elias 2-24b” is now the youngest exoplanet ever observed, and it may force researchers to reevaluate theories about how planets are formed. How are planets born, and how do they grow? This is an essential question in astronomy, one that researchers try to answer by observing “young planets.” That’s easier said than done. All the planets in our solar system are the same age, 4.6 billion years old. Astronomers therefore need to look elsewhere to find planets that have f",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "youngest-exoplanet",
+      "why": "WIRED forklarer opdagelsen af en eksoplanet under 1 million år gammel, som kan tvangsrevidere planetdannelsesteorier. Et spændende naturvidenskabeligt format, der giver Mads et moderne vindue ind i astronomiens store spørgsmål.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "People really hate AI, so why can’t they get enough?",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/05/1145682/people-really-hate-ai-so-why-cant-they-get-enough/",
+      "summary": "Over the summer I talked to the CEO of Springboards, a startup building an LLM that’s designed to come up with a wider variety of responses than its mainstream rivals do. At the start of the call, he said something that’s been stuck in my head since: “We often say that we’re a self-loathing AI…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-popularity-paradox",
+      "why": "MIT Tech Review undersøger AI's popularitetsparadoks og offentlighedens ambivalente forhold til teknologien — kort, men analytisk, hjælper med at forstå forbruger- og politiske holdninger omkring AI i Europa og Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "En dans der skal danses for at findes",
+      "source": "Atlas Magasin",
+      "url": "https://atlasmag.dk/kultur/kunst/en-dans-der-skal-danses-findes",
+      "summary": "Amalie Smiths stil vibrerer mellem videnskabeligt essay og poesi. Det viser hendes nye ambitiøse og enestående udstilling på Charlottenborg. Måske er den også en omhyggeligt udført bøn på vegne af alt det levende. »Armeringsjern, betonklump, fossilplade med ammonitter, engangsgaffel, touch-pen, krakeleret plastbold med hul, Turing-mønstrede spillekort, strandede mursten, voksoffergaver (øje, dråbe, mursten), strikprøve (strata), glemte tennisbolde, borekerner…« Materialelisterne til Amalie Smith",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "amalie-smith-charlottenborg",
+      "why": "Atlas Magasin beskriver Amalie Smiths store udstilling på Charlottenborg, en kulturkritisk og poetisk udstilling der blander videnskab og æstetik. Relevant for Mads' kulturinteresse og indsigt i aktuelle danske samtidskunstudgivelser.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "9 gode grunde til at indtage hovedstaden på fredag",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/9-gode-grunde-til-at-indtage-hovedstaden-paa-fredag/",
+      "summary": "Kulturnatten står i høj grad i videnskabens tegn, når København åbner dørene.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "kulturnatten-koebenhavn-9-grunde",
+      "why": "Videnskab.dk guider til Kulturnatten i København med ni konkrete anbefalinger — praktisk kulturservice, som Mads kan bruge eller anbefale: hvilke begivenheder med videnskabskontrast og oplevelser der er værd at prioritere.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Connecting AI agents to enterprise knowledge",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/10/05/1145580/connecting-ai-agents-to-enterprise-knowledge/",
+      "summary": "For all the data that AI systems continually amass and analyze, enterprise AI agents often suffer from a curious shortcoming: a lack of knowledge. More than data, knowledge is the understanding of what the data means in the context of individual organizations. AI agents need this understanding to reason about situations, make decisions, and ultimately…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "agents-enterprise-knowledge",
+      "why": "Technology Review forklarer, hvordan AI-agenter mangler organisationsspecifik viden og hvad der skal til for at få dem til at handle korrekt på virksomheders data — nyttigt for danske offentlige/privates overvejelser om agent-brug.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Open or closed AI? How founders are choosing what to build on at TechCrunch Disrupt 2026",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/05/open-or-closed-ai-how-founders-are-choosing-what-to-build-on-at-techcrunch-disrupt-2026/",
+      "summary": "Learn how founders are choosing between building on open or closed AI at TechCrunch Disrupt 2026. Register now to save up to $100 and get a second pass at 50% off.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "open-or-closed-ai-disrupt",
+      "why": "TechCrunch-rapport fra Disrupt viser grundlæggende strategivalg mellem åbne og lukkede AI-økosystemer — praktisk for beslutningstagere i startups og offentlige indkøb i Danmark.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "The Nvidia Shield TV Is 7 Years Old. It Just Got a $100 Price Hike",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/7-year-old-tv-now-100-dollars-more-expensive-thank-ai/",
+      "summary": "The price of anything with memory is skyrocketing thanks to AI. Aging streaming devices are no exception.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-shield-price-hike",
+      "why": "WIRED om prisinflation på hardware drevet af AI-mindestigning: et konkret forbruger- og industri-fænomen, der forklarer pristryk i elektronikmarkedet og har betydning for danske indkøbs- og it-budgetter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The Download: AI’s popularity paradox and EmTech Future 2026",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/05/1145711/the-download-ai-popularity-paradox-emtech-future-2026/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. People really hate AI, so why can’t they get enough? —Will Douglas Heaven Over the summer I talked to the CEO of Springboards, a startup building an LLM designed to come…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "download-ai-popularity-paradox",
+      "why": "MIT Tech Review-digest med fokus på publikums ambivalens overfor AI og EmTech-festivalens tendenser — en kompakt baggrund for diskussioner om holdninger og teknologioptagelse i samfundet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Russia is using Ukraine’s children to win its occupation – and the wider war",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/russia-is-using-ukraines-children-to-win-its-occupation-and-the-wider-war-292404",
+      "summary": "Russia’s strategy is twofold, to secure compliance from parents in occupied areas and erase Ukrainian identity.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russia-using-ukraine-children",
+      "why": "The Conversation-artikel om russisk brug af børn som del af besættelsesstrategi analyserer politiske, sociale og identitetspolitiske konsekvenser — væsentlig baggrund for forståelse af russisk besættelsespolitik.",
+      "reading_minutes": "5"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 3,
+        "verden": 5,
+        "teknologi": 5,
+        "fordybelse": 2,
+        "kultur": 2
+      },
+      "actual": {
+        "dansk_politik": 3,
+        "verden": 6,
+        "teknologi": 9,
+        "fordybelse": 2,
+        "kultur": 2
+      },
+      "warnings": []
+    },
+    "collection": {
+      "rss_candidates": 231,
+      "web_candidates": 24,
+      "total_candidates": 75,
+      "repeats_dropped": 0,
+      "previews_enriched": 23,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 48,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 25,
+      "prepared": 22,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 24
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 31
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 18
+      }
+    }
+  }
+}
