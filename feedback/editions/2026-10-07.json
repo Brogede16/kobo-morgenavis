@@ -1,0 +1,455 @@
+{
+  "created_at": "2026-10-07T03:32:39.952800+00:00",
+  "articles": [
+    {
+      "title": "Regeringen vil afsætte 200 millioner til indsats på 100 udvalgte skoler",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/regeringen-vil-afsaette-200-millioner-til-indsats-paa-100-udvalgte-skoler",
+      "summary": "På næste års finanslov vil regeringen i alt prioritere 900 millioner kroner på folkeskolen. På næste års finanslov vil regeringen i alt prioritere 900 millioner kroner på folkeskolen. Regeringen vil i sit finanslovsforslag for 2027 afsætte 900 millioner kroner til folkeskolen. Det fortæller fire ministre i et interview med Politiken",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "regeringen-200m-100-skoler",
+      "why": "Regeringen foreslår 900 mio. kr. til folkeskolen på næste finanslov og vil målrette 200 mio. til 100 udvalgte skoler. Det ændrer den konkrete prioritering af undervisningsmidler og skolepolitik; relevant for diskussioner om uddannelsespolitik og kommunal økonomi i Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Bag Nobelprisen: Forskere fra København var med til at fange mystiske spøgelsespartikler",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/bag-nobelprisen-forskere-fra-koebenhavn-har-vaeret-med-til-at-fange-de-mystiske-spoegelsespartikler/",
+      "summary": "Forskere i Danmark har spillet en central rolle i det vilde projekt, der har ført til årets nobelpris i fysik. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "nobel-forskere-koebenhavn-spoegelsespartikler",
+      "why": "Danske forskere fra København har spillet en central rolle i forskningen bag årets Nobelpris i fysik, der involverer opdagelsen af sjældne ’spøgelsespartikler’. Historien viser dansk deltagelse i topforskning og giver nationalt perspektiv på et stort fagligt gennembrud.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Drones sink ships near NATO countries in “unacceptable” attacks, EU says",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/10/drone-strikes-likely-russian-sink-ships-in-nato-countries-economic-zones/",
+      "summary": "Two cargo ships have sunk, one ship was afire, and sailors are dead or missing. Two cargo ships have sunk, one ship was afire, and sailors are dead or missing. Drones sank two cargo ships and damaged a third in the exclusive economic zones of NATO member countries for the first time, killing at least two sailors. The attacks represent a notable escalation as Black Sea commercial shipping has increasingly come under attack during the Russian invasion of Ukraine, with Russia also being accused of ",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "black-sea-drone-attacks-nato-ez",
+      "why": "Droner har sænket fragtfartøjer i eksklusive økonomiske zoner tæt på NATO-lande — en klar eskalation i angreb mod kommerciel skibsfart i tilknytning til krigen i Sortehavet. Det har direkte sikkerheds- og handelsmæssige konsekvenser for Europas forsyningslinjer og NATO-samarbejde.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
+      "summary": "The reports of OpenAI agents harming third-party sites keep coming.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-agents-wikipedia-traffic",
+      "why": "Rapporter viser, at autonome AI-agenter fra OpenAI målrettede og overbelastede tredjepartsværktøjer som Wikipedia, hvilket rejser konkrete spørgsmål om agenters skadelig interaktion med offentlige informationsressourcer og behovet for både tekniske og politiske svar.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The next hurdle for AI agents: getting websites to let them in | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
+      "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-web-access-standards",
+      "why": "En analytisk gennemgang af, hvordan anti-bot-foranstaltninger og nye standarder former fremtidens personlige AI-agenter. Værdifuld for at forstå hvilke tekniske og forretningsmæssige barrierer der bestemmer, hvad agenternes praktiske muligheder bliver for danske brugere og virksomheder.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/",
+      "summary": "Sigil Wen, backed by a Silicon Valley who's who, has built an on-device AI assistant that promises to be free, fully private, and capable for everyday tasks.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "underdog-on-device-assistant",
+      "why": "Ny on-device AI-assistent lover stærk privatlivsprofil og relevant kapabilitet uden cloud-afhængighed. Værd at følge for danske beslutningstagere og virksomheder, fordi det kan ændre konkurrencen om hvor og hvordan personlige AI-tjenester leveres.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Apple iPhone 18 Pro review: big changes for small differences",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/05/apple-iphone-18-pro-review-battery-life-screen-siri-camera-variable-aperture-ios-27",
+      "summary": "Longer battery life, better screen, upgraded Siri and new variable aperture camera in refreshed design from last year’s modelApple’s smaller Pro iPhone gets the best kind of spec bump for 2026: longer battery life, faster chips and a fancy new variable aperture for the main camera.The iPhone 18 Pro is one of a pair of slab phones launched alongside Apple’s first folding phone, the iPhone Duo, and is the cheapest of the new phones, with a regular iPhone 18 yet to be announced.Screen: 6.3in Super ",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-18-pro-review",
+      "why": "Dyb produktgennemgang af iPhone 18 Pro: bedre batteri, opgraderet Siri, og variabel blænde. Værdifuldt for læsere interesseret i praktiske konsekvenser af Apples nye features og for hvordan danske forbrugere og medier bør vurdere opgraderingsværdien.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Who owns ‘brain rot’? Inside the international legal drama over a beloved meme",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/06/brain-rot-tung-tung-tung-sahur-noxa-openai-video",
+      "summary": "Copyright law in the US only applies to human-made creations, but AI characters like Tung Tung Tung Sahur are challenging thatOne of the most beloved characters in an absurdist genre of online video content has become the center of an international legal battle that could determine where human creativity ends and artificial intelligence begins.Tung Tung Tung Sahur, also known as Triple T, was created in 2025 by an Indonesian teen who goes by the username Noxa, using OpenAI’s image-generation too",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "brain-rot-legal-drama",
+      "why": "En omfattende gennemgang af en international ophavsretssag, der skærer ind til kernen af, hvordan lovgivning og domstole skal håndtere AI-skabte karakterer og memes. Relevans for Danmark: afsmitning på immaterialret og kreativ praksis i digitale medier.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "How geopolitical tensions tainted the 2026 Asian Games",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/how-geopolitical-tensions-tainted-the-2026-asian-games-293279",
+      "summary": "As world politics has become more divisive, international sporting contests are often turning into a stage for political contention. Share article Print article The 2026 Asian Games in Japan drew to a close on October 4 following two weeks of competition between 45 countries and territories across 43 sports. Despite the official slogan",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "geopolitics-2026-asian-games",
+      "why": "Analyse af, hvordan geopolitik påvirkede et stort sportsarrangement og gjorde sport til politisk scene. Relevant for kultur- og sportsdebatter i Danmark om internationalt samarbejde, boykot-press og kombinationen af politik og idræt.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Sudan’s death toll in 2025 could be as high as 100,000: how we did the count",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/sudans-death-toll-in-2025-could-be-as-high-as-100-000-how-we-did-the-count-292159",
+      "summary": "Much of the difference in number of deaths across reports stems from how organisations select and handle sources. Share article Print article Estimates of the number of people directly killed in",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "sudan-death-toll-methods",
+      "why": "Metodisk gennemgang af hvordan dødstal i komplekse konflikter estimeres. Nyttig læsning for at forstå forskelle i rapporter, kilder og konsekvenser for humanitær politik — især når politikere og medier citerer varierende estimater.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "US man arrested as second suspect in Canada mass school shooting planned with ChatGPT",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/06/tumbler-ridge-shooting-arrest-washington",
+      "summary": "Justice department detained James Codey Bryant and allege he offered ‘technical advice’ to primary suspectA surprise suspected accomplice has been arrested in connection with a mass school shooting in Canada that was made notorious after an 18-year-old allegedly killed six children after discussing it with the AI chatbot ChatGPT.The US Department of Justice said Tuesday it had detained James Codey Bryant, 30, a resident of western Washington state, on a charge of conspiracy to murder persons in ",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "chatgpt-assisted-shooting-arrest",
+      "why": "Den amerikanske anholdelse i en sag hvor en masse-skoleskyder angiveligt planlagde angrebet via ChatGPT, fremhæver konkrete retlige og sikkerhedsmæssige problemer ved AI-værktøjer og deres rolle i radikalisering og kriminalitet.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Autonomous AI agents tried to hack US, Canadian government websites",
+      "source": "www.bleepingcomputer.com",
+      "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
+      "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. The failed breach attempts targeted a website under the U.S. Department of Education and Library and Archives Canada. However, the collected data shows no evidence of access to non-public information. Nonprofit r",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "autonomous-agents-hack-govsites",
+      "why": "Rapport om autonome AI-agenter, der forsøgte at kompromittere offentlige myndigheders hjemmesider. Relevans: understreger cybersikkerhedsrisici og behov for statslige modforanstaltninger — vigtigt for danske institutioner og it-sikkerhedspolitik.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Trump chooses top spy boss to run new AI taskforce",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
+      "summary": "The US president said his national intelligence chief will lead the group as worries over AI grow.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-ai-taskforce-intel-chief",
+      "why": "USA udpeger sin efterretningstopleder til at lede en ny AI-taskforce — et signal om hvordan sikkerhedsapparatet institutionaliserer AI som national prioritet. Konsekvenserne kan påvirke NATO-samarbejde, regulering og danske alliancediskussioner.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ship sinks and crew missing after Black Sea drone attack",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c8ly0v5r602eo?at_medium=RSS&at_campaign=rss",
+      "summary": "It is not clear who is behind the attacks which come as Russia intensifies strikes in the Black Sea as part of its war against Ukraine.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "black-sea-drone-attacks-nato-ez-backup",
+      "why": "BBC's rapport om det samme Black Sea-angreb er en robust, pålidelig backup, nyttig hvis Ars-stykket ikke kan bruges. Den bekræfter eskalationen mod kommerciel skibsfart.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Seruminstitut ser ingen grund til pest-bekymring i Danmark",
+      "source": "DR Nyheder",
+      "url": "https://www.dr.dk/nyheder/seneste/seruminstitut-ser-ingen-grund-til-pest-bekymring-i-danmark",
+      "summary": "En kvinde meldes i Rusland død, af hvad der frygtes at være pest. Der er ifølge SSI ikke grund til særlig bekymring hos danskerne.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "ssi-pest-vurdering-danmark",
+      "why": "SSI vurderer, at der ikke er grund til særlig bekymring i Danmark efter rapporter om mulig pest-dødsfald i Rusland. Værd at kende for offentlig ro og for kommunal/regionale sundhedsvurderinger i Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Why old dogs might be able to teach Alzheimer’s researchers new tricks",
+      "source": "theconversation.com",
+      "url": "https://theconversation.com/why-old-dogs-might-be-able-to-teach-alzheimers-researchers-new-tricks-291257",
+      "summary": "As dogs age, their brains undergo similar changes to human brains, making them a valuable natural model to study dementia and other neurodegenerative diseases. Share article Print article Most people",
+      "format": "longread",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "old-dogs-alzheimers-models",
+      "why": "Forskningsvinkel: gamle hundes hjerneforandringer kan spejle menneskelig demens og fungere som naturligt modelorganisme. Giver ny metode- og forsøgsindsigt, relevant for dansk og international aldringsforskning.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
+      "summary": "Popular weight-loss drugs may do more than help people shed pounds. They might also melt away the years. Drug giants Eli Lilly and Novo Nordisk say patients taking their drugs age less quickly, according to readouts from molecular “aging clocks.” Such clocks assess a person’s biological age by looking at changes to DNA that accumulate…",
+      "format": "short",
+      "section": "Sundhed",
+      "group": "Fordybelse",
+      "story_id": "glp1-aging-clocks",
+      "why": "Farmavirksomheder rapporterer at GLP-1-lægemidler kan påvirke molekylære aldringsure. Historien rejser spørgsmål om sundhedspolitik, behandlingstilgængelighed og økonomiske/etiske konsekvenser for samfundet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "You Probably Aren’t Going to Get the Plague",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/what-we-know-about-plague-russia/",
+      "summary": "The death of a lab worker in Russia has authorities looking at whether plague played a role. Even if it did, though, the odds of it spreading are very low.",
+      "format": "short",
+      "section": "Baggrund",
+      "group": "Teknologi og verden",
+      "story_id": "you-probably-arent-get-plague",
+      "why": "WIRED forklarer hvorfor risikoen for pest-epidemi er lav selv efter dødsfald i Rusland. Giver nødvendig beroligende kontekst til WHO- og nationale udtalelser, nyttigt for at afkoble sensation fra fakta.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Three Years of 80% Charge Limits on iPhone: The Results",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/06/iphone-17-pro-charge-limit/",
+      "summary": "Since 2023, Apple's newer iPhones have had an 80 percent charge limit for those who want to extend battery lifespan. Charging to 80 percent instead of 100 percent is supposed to put less stress on the battery, improving longevity.\n\n\n\n\n\nFor the last three years, I've used that setting on my iPhone. I started with the iPhone 15 Pro Max, then did the iPhone 16 Pro Max, and most recently, the iPhone 17 Pro Max.\n\n\n\nAfter 12 months at an 80 percent maximum charge, my iPhone 17 Pro Max is at 97 percent",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-80pct-charge-results",
+      "why": "Praktisk test af betydningen af 80%-ladebegrænsning over tre år. Nyttigt, konkret læsestof for forbrugere i Danmark der ønsker at forlænge batterilevetid og vurdere Apples strømstyringsindstillinger.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Et medieforlig med det store perspektiv",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/et-medieforlig-med-det-store-perspektiv/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kulturpolitik",
+      "group": "Danmark og kultur",
+      "story_id": "medieforlig-perspektiv",
+      "why": "Analyse af et medieforlig og dets langsigtede perspektiv for kultur- og medieinstitutioner. Relevant for dansk kulturpolitik, public service-debat og funding af medier i Danmark.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "YouSee-konflikt rammer DR og TV 2",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/yousee-konflikt-rammer-dr-og-tv-2/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "longread",
+      "section": "Kultur & medier",
+      "group": "Danmark og kultur",
+      "story_id": "yousee-dr-tv2-konflikt",
+      "why": "Konflikt mellem YouSee og de store public/private tv-aktører betyder adgangs- og distributionsproblemer for DR og TV 2. Har direkte effekt på dansk tv-publikum og kan presse politiske tiltag om medieinfrastruktur og public service-adgang.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "OpenAI Is Pissing Off a Bunch of Mathematicians—Again",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/openai-is-pissing-off-a-bunch-of-mathematicians-again/",
+      "summary": "“There’s a perception of mobster behavior” from leading AI companies, one mathematician tells WIRED as OpenAI prepares to release more than 100 new solutions to unsolved problems.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-mathematicians-critique",
+      "why": "Kritisk kommentar om OpenAI’s praksis i forskningssamarbejder og community-relationer — brugbar hvis man vil dykke i relations- og troværdighedsaspekter ved store AI-firmaer som alternativ til mere tekniske stykker.",
+      "reading_minutes": "3"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 3,
+        "fordybelse": 4,
+        "verden": 6,
+        "teknologi": 6,
+        "kultur": 2
+      },
+      "actual": {
+        "dansk_politik": 3,
+        "fordybelse": 4,
+        "verden": 6,
+        "teknologi": 7,
+        "kultur": 2
+      },
+      "warnings": []
+    },
+    "collection": {
+      "rss_candidates": 281,
+      "web_candidates": 26,
+      "total_candidates": 75,
+      "repeats_dropped": 7,
+      "previews_enriched": 19,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 41,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 28,
+      "prepared": 22,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 29
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 31
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 21
+      }
+    }
+  }
+}
