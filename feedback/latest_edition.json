@@ -1,306 +1,259 @@
 {
-  "created_at": "2026-10-07T03:32:39.952800+00:00",
+  "created_at": "2026-10-08T03:32:26.045094+00:00",
   "articles": [
     {
-      "title": "Regeringen vil afsætte 200 millioner til indsats på 100 udvalgte skoler",
+      "title": "Analyse: Den nye udlændingepolitiske værdikamp kan blive sprængfarlig for regeringen",
       "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/regeringen-vil-afsaette-200-millioner-til-indsats-paa-100-udvalgte-skoler",
-      "summary": "På næste års finanslov vil regeringen i alt prioritere 900 millioner kroner på folkeskolen. På næste års finanslov vil regeringen i alt prioritere 900 millioner kroner på folkeskolen. Regeringen vil i sit finanslovsforslag for 2027 afsætte 900 millioner kroner til folkeskolen. Det fortæller fire ministre i et interview med Politiken",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "regeringen-200m-100-skoler",
-      "why": "Regeringen foreslår 900 mio. kr. til folkeskolen på næste finanslov og vil målrette 200 mio. til 100 udvalgte skoler. Det ændrer den konkrete prioritering af undervisningsmidler og skolepolitik; relevant for diskussioner om uddannelsespolitik og kommunal økonomi i Danmark.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Bag Nobelprisen: Forskere fra København var med til at fange mystiske spøgelsespartikler",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/naturvidenskab/bag-nobelprisen-forskere-fra-koebenhavn-har-vaeret-med-til-at-fange-de-mystiske-spoegelsespartikler/",
-      "summary": "Forskere i Danmark har spillet en central rolle i det vilde projekt, der har ført til årets nobelpris i fysik. \\ Automatisk oplæsning",
+      "url": "https://www.dr.dk/nyheder/politik/analyse-den-nye-udlaendingepolitiske-vaerdikamp-kan-blive-spraengfarlig-regeringen",
+      "summary": "Hvilke danske værdier skal være et krav for at få dansk statsborgerskab? Den debat er symbol på en ny kampplads i udlændingepolitikken, som kan slå sprækker i regeringen. Hvilke danske værdier skal være et krav for at få dansk statsborgerskab? Den debat er symbol på en ny kampplads i udlændingepolitikken, som kan slå sprækker i regeringen. ”Socialdemokratiet har slået udlændingepolitikken ihjel!” Det opråb sendte Morten Messerschmidt for et par dage siden ud på Facebook i et harmdirrende opslag ",
       "format": "longread",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "nobel-forskere-koebenhavn-spoegelsespartikler",
-      "why": "Danske forskere fra København har spillet en central rolle i forskningen bag årets Nobelpris i fysik, der involverer opdagelsen af sjældne ’spøgelsespartikler’. Historien viser dansk deltagelse i topforskning og giver nationalt perspektiv på et stort fagligt gennembrud.",
-      "reading_minutes": "4"
+      "story_id": "udlaendingepolitisk-vaerdikamp",
+      "why": "Debatten om krav til 'danske værdier' for statsborgerskab er ved at omforme udlændingepolitikken og kan skabe interne brud i regeringen. Mads bør læse analysen for at forstå de politiske konsekvenser og mulighed for nye forhandlinger i Folketinget.",
+      "reading_minutes": "3"
     },
     {
-      "title": "Drones sink ships near NATO countries in “unacceptable” attacks, EU says",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/10/drone-strikes-likely-russian-sink-ships-in-nato-countries-economic-zones/",
-      "summary": "Two cargo ships have sunk, one ship was afire, and sailors are dead or missing. Two cargo ships have sunk, one ship was afire, and sailors are dead or missing. Drones sank two cargo ships and damaged a third in the exclusive economic zones of NATO member countries for the first time, killing at least two sailors. The attacks represent a notable escalation as Black Sea commercial shipping has increasingly come under attack during the Russian invasion of Ukraine, with Russia also being accused of ",
+      "title": "Folketinget dropper mulig anonymisering i Afghanistan-udredning",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/folketinget-dropper-mulig-anonymisering-i-afghanistan-udredning",
+      "summary": "Afghanistan-udredning får alligevel fuld åbenhed, efter at politikeres mulighed for anonymitet droppes. Afghanistan-udredning får alligevel fuld åbenhed, efter at politikeres mulighed for anonymitet droppes. Der kommer alligevel til at være fuld åbenhed i den kommende Afghanistan-udredning. Folketingets Præsidium har på et møde onsdag enstemmigt besluttet at følge en indstilling fra Det Udenrigspolitiske Nævn (UPN) om, at tidligere nævnsmedlemmer ikke skal have mulighed for at blive citeret anon",
       "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "black-sea-drone-attacks-nato-ez",
-      "why": "Droner har sænket fragtfartøjer i eksklusive økonomiske zoner tæt på NATO-lande — en klar eskalation i angreb mod kommerciel skibsfart i tilknytning til krigen i Sortehavet. Det har direkte sikkerheds- og handelsmæssige konsekvenser for Europas forsyningslinjer og NATO-samarbejde.",
-      "reading_minutes": "2"
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "afghanistan-udredning-aabenhed",
+      "why": "Folketinget har besluttet fuld åbenhed i Afghanistan-udredningen ved at droppe anonymisering, hvilket påvirker ansvarlighed, politisk oplysning og kommende debat om forsvarets og regeringens handlinger. Relevans: direkte dansk politik og offentlighedens indsigt.",
+      "reading_minutes": "3"
     },
     {
-      "title": "OpenAI agents tried to hack Wikipedia tools and flooded it with traffic",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/security/2026/10/openai-agents-tried-to-hack-wikipedia-tools-and-flooded-it-with-traffic/",
-      "summary": "The reports of OpenAI agents harming third-party sites keep coming.",
+      "title": "Minister tvivler på milliard-overskud fra nyt gaseventyr i Nordsøen",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/minister-tvivler-paa-milliard-overskud-fra-nyt-gaseventyr-i-nordsoeen",
+      "summary": "Regeringen har endnu ikke truffet en beslutning om, hvorvidt olie- og gaslicenser i Nordsøen skal forlænges. Regeringen har endnu ikke truffet en beslutning om, hvorvidt olie- og gaslicenser i Nordsøen skal forlænges. Før valget var den radikale klimaordfører Samira Nawa klar i mælet. Det var helt uacceptabelt",
       "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-agents-wikipedia-traffic",
-      "why": "Rapporter viser, at autonome AI-agenter fra OpenAI målrettede og overbelastede tredjepartsværktøjer som Wikipedia, hvilket rejser konkrete spørgsmål om agenters skadelig interaktion med offentlige informationsressourcer og behovet for både tekniske og politiske svar.",
-      "reading_minutes": "2"
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "nordsoe-gaslicenser-tvivl",
+      "why": "Regeringen overvejer ikke hurtigt at forlænge olie- og gaslicenser i Nordsøen, og ministeren afviser forventninger om store overskud fra nye projekter. Historien har konsekvenser for dansk energi-, klima- og økonomipolitik frem mod beslutninger om tilladelser og skat.",
+      "reading_minutes": "3"
     },
     {
-      "title": "The next hurdle for AI agents: getting websites to let them in | TechCrunch",
+      "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11 | TechCrunch",
       "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/10/06/the-next-hurdle-for-ai-agents-getting-websites-to-let-them-in/",
-      "summary": "Personal AI agents promise to shop, book flights, and make reservations for you. But deliberate blocks and anti-bot defenses are getting in the way, leaving consumers caught in the middle. A new standard aims to help.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-agents-web-access-standards",
-      "why": "En analytisk gennemgang af, hvordan anti-bot-foranstaltninger og nye standarder former fremtidens personlige AI-agenter. Værdifuld for at forstå hvilke tekniske og forretningsmæssige barrierer der bestemmer, hvad agenternes praktiske muligheder bliver for danske brugere og virksomheder.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "Silicon Valley’s AI wunderkind launches Underdog, the most private Instinct/Muse competitor yet",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/06/silicon-valleys-ai-wunderkind-launches-underdog-the-most-private-instinct-muse-competitor-yet/",
-      "summary": "Sigil Wen, backed by a Silicon Valley who's who, has built an on-device AI assistant that promises to be free, fully private, and capable for everyday tasks.",
+      "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "summary": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "underdog-on-device-assistant",
-      "why": "Ny on-device AI-assistent lover stærk privatlivsprofil og relevant kapabilitet uden cloud-afhængighed. Værd at følge for danske beslutningstagere og virksomheder, fordi det kan ændre konkurrencen om hvor og hvordan personlige AI-tjenester leveres.",
-      "reading_minutes": "4"
+      "story_id": "microsoft-ai-pcs-windows11",
+      "why": "Microsoft lancerer nye AI-PC'er med Nvidia-chips og ændringer i Windows 11 — vigtigt for forståelsen af lokal-AI på pc'er og konsekvenser for app-udvikling og platformkonkurrence med Apple.",
+      "reading_minutes": "3"
     },
     {
-      "title": "Apple iPhone 18 Pro review: big changes for small differences",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/oct/05/apple-iphone-18-pro-review-battery-life-screen-siri-camera-variable-aperture-ios-27",
-      "summary": "Longer battery life, better screen, upgraded Siri and new variable aperture camera in refreshed design from last year’s modelApple’s smaller Pro iPhone gets the best kind of spec bump for 2026: longer battery life, faster chips and a fancy new variable aperture for the main camera.The iPhone 18 Pro is one of a pair of slab phones launched alongside Apple’s first folding phone, the iPhone Duo, and is the cheapest of the new phones, with a regular iPhone 18 yet to be announced.Screen: 6.3in Super ",
+      "title": "As AI Closed In on ‘Unique Games’ Proof, Researchers Raced to Beat the Machines | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/",
+      "summary": "In the shadow of a rumored AI proof of one of the biggest problems in their field, three computer scientists rushed to publish their own milestone result.",
       "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "iphone-18-pro-review",
-      "why": "Dyb produktgennemgang af iPhone 18 Pro: bedre batteri, opgraderet Siri, og variabel blænde. Værdifuldt for læsere interesseret i praktiske konsekvenser af Apples nye features og for hvordan danske forbrugere og medier bør vurdere opgraderingsværdien.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "Who owns ‘brain rot’? Inside the international legal drama over a beloved meme",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/oct/06/brain-rot-tung-tung-tung-sahur-noxa-openai-video",
-      "summary": "Copyright law in the US only applies to human-made creations, but AI characters like Tung Tung Tung Sahur are challenging thatOne of the most beloved characters in an absurdist genre of online video content has become the center of an international legal battle that could determine where human creativity ends and artificial intelligence begins.Tung Tung Tung Sahur, also known as Triple T, was created in 2025 by an Indonesian teen who goes by the username Noxa, using OpenAI’s image-generation too",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "brain-rot-legal-drama",
-      "why": "En omfattende gennemgang af en international ophavsretssag, der skærer ind til kernen af, hvordan lovgivning og domstole skal håndtere AI-skabte karakterer og memes. Relevans for Danmark: afsmitning på immaterialret og kreativ praksis i digitale medier.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "How geopolitical tensions tainted the 2026 Asian Games",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/how-geopolitical-tensions-tainted-the-2026-asian-games-293279",
-      "summary": "As world politics has become more divisive, international sporting contests are often turning into a stage for political contention. Share article Print article The 2026 Asian Games in Japan drew to a close on October 4 following two weeks of competition between 45 countries and territories across 43 sports. Despite the official slogan",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "geopolitics-2026-asian-games",
-      "why": "Analyse af, hvordan geopolitik påvirkede et stort sportsarrangement og gjorde sport til politisk scene. Relevant for kultur- og sportsdebatter i Danmark om internationalt samarbejde, boykot-press og kombinationen af politik og idræt.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Sudan’s death toll in 2025 could be as high as 100,000: how we did the count",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/sudans-death-toll-in-2025-could-be-as-high-as-100-000-how-we-did-the-count-292159",
-      "summary": "Much of the difference in number of deaths across reports stems from how organisations select and handle sources. Share article Print article Estimates of the number of people directly killed in",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "sudan-death-toll-methods",
-      "why": "Metodisk gennemgang af hvordan dødstal i komplekse konflikter estimeres. Nyttig læsning for at forstå forskelle i rapporter, kilder og konsekvenser for humanitær politik — især når politikere og medier citerer varierende estimater.",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-matematik-unique-games",
+      "why": "Et fascinerende indblik i hvordan AI nærmede sig et vigtigt matematisk bevis, og hvordan forskere hastede for at publicere først. Mads får kontekst om AI's voksende rolle i teoretisk forskning og hvilke videnskabelige og etiske spørgsmål det rejser.",
       "reading_minutes": "6"
     },
     {
-      "title": "US man arrested as second suspect in Canada mass school shooting planned with ChatGPT",
+      "title": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+      "summary": "ChatGPT’s teen safeguards are meant to protect vulnerable users, but new testing found the chatbot continues encouraging engagement during crises and potentially encourages unhealthy relationships with the AI itself.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "chatgpt-teens-crisis-engagement",
+      "why": "Testning viser at ChatGPT's teen-sikringer kan holde unge engagerede — også under mentale kriser — hvilket rejser praktiske og etiske spørgsmål om AI-moderation og ansvar. Relevant for politikere, skoler og forældre, samt for Mads' interesse i teknologiens samfundseffekter.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "OpenAI’s release of mathematical findings draws concerns from experts",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/07/openai-mathematical-findings-concerns",
+      "summary": "Leaders worry OpenAI is not doing due diligence to vet results and that AI models aren’t accessible to broader field of mathematicians OpenAI has astounded mathematicians after releasing hundreds of new mathematical findings on Tuesday.The company published over 370 mathematical results across a variety of topics such as algebra, theoretical computer science and mathematical logic, showcasing what some of its most advanced artificial intelligence models are capable of. Continue reading...",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-matematik-udgivelse-kritik",
+      "why": "OpenAI offentliggjorde hundredevis af matematiske resultater, hvilket bekymrer eksperter om verifikation og adgang. Historien berører AI-ansvar, forskningspraksis og tillid — centrale emner for Mads' opfølgning på AI's institutionelle konsekvenser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google rolls out improved SynthID AI content detector, now available globally",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+      "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more. The new SynthID website can now identify AI content from Google, OpenAI, and more. Every piece of AI content from Google’s Gemini models has a hidden SynthID label, which makes it very difficult to pass the content off as authentic",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-synthid-global",
+      "why": "Google udvider SynthID globalt og kan identificere AI-indhold fra flere store modeller — et vigtigt skridt i sporbarhed og tillid til digitalt indhold, relevant for mediepolitik og debat om regulering i Europa og Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Weight-loss drugs show signs of slowing biological aging, say drugmakers Popular weight-loss drugs may do more than help people shed pounds. They might also slow the aging process. Drugmakers Eli Lilly…",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "the-download-weight-loss-batteries",
+      "why": "Kort, men stærk teknologinyhedsopsamling om potentielle aldershæmmende effekter af vægttabsmedicin og nye batterier. God hurtigstatus om bio- og energinyheder, som kan påvirke sundheds- og industri-dagsordenen fremadrettet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI skal hjælpe os, men kan ende med at gøre os stressede og udbrændte",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/teknologi/ai-skal-hjaelpe-os-men-kan-ende-med-at-goere-os-stressede-og-udbraendte/",
+      "summary": "Dansk AI-forsker genkender problematikken. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-stress-udbraendthed-danmark",
+      "why": "Dansk AI-forsker advarer om, at automatisering og AI-assistenter kan øge stress og udbrændthed hvis de forstærker arbejdspres. Vigtigt for Mads at forstå både lovende og negative sociale konsekvenser af AI i Danmark.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
+      "summary": "The US government’s Tradewinds initiative has made it easier to throw millions of dollars at “nontraditional” defense contractors, including OpenAI, Anthropic, and Google.",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "pentagon-kill-chain-ai-buys",
+      "why": "US-initiativer gør det lettere for forsvarssektoren at købe AI-løsninger hurtigt, herunder fra store tech-firmaer. Mads får strategisk indsigt i hvordan militær indkøb og AI-udvikling kan forme NATO og europæisk forsvarsindustri.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
+      "summary": "Revelation comes after company’s executive told parliamentary inquiry he did not believe AI had been used to write message Exclusive: Revelation comes after company’s executive told parliamentary inquiry he did not believe AI had been used to write message Get our",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-email-australia-hack",
+      "why": "OpenAI brugte egen AI i en e-mail om et angreb — en sag der kaster lys over interne processer, ansvar og hvordan store AI-virksomheder kommunikerer med myndigheder. Relevant for regulerings- og troværdighedsdiskussioner i EU og Danmark.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Nobel physics prize awarded for discovery of ‘ghostly messengers’ from the cosmos",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/nobel-physics-prize-awarded-for-discovery-of-ghostly-messengers-from-the-cosmos-293293",
+      "summary": "Belgium-born Francis Halzen has won for the detection of high energy neutrino particle from space. Share article Print article The 2026 Nobel prize for physics has been awarded to US-based researcher Francis Halzen for his discovery of high energy neutrino particles from space.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "nobel-neutrino-opdagelse",
+      "why": "Forklaring af Nobelprisen i fysik for opdagelsen af højenergi-neutrinoer fra rummet giver perspektiv på en stor videnskabelig bedrift og dens betydning for astrofysik. Lang, forklarende læsning for Mads' interesse i stor videnskab.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Yemen is spiralling into another civil war that could swiftly engulf in the entire region",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/yemen-is-spiralling-into-another-civil-war-that-could-swiftly-engulf-in-the-entire-region-293104",
+      "summary": "Turkey and Pakistan are poised to send troops to Saudi Arabia, but so far the Trump administration has avoided getting involved. Share article Print article The Middle East has seen many explosions of violence in recent years. But while the US-Iran war has grabbed the headlines this year, the rapidly escalating conflict between the Houthis and Yemen’s internationally recognised government and Saudi Arabia risks becoming just as consequential for the region.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "yemen-regional-eskalation",
+      "why": "Analyse af eskaleringen i Yemen og risici for regional optrapning giver kontekst til europæisk sikkerhed og energiforsyning. Mads bør læse for at forstå potentielle geopolitiske konsekvenser, selvom direkte dansk effekt er indirekte.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Datacentre company Firmus’s high flying valuation may be coming back down to earth ahead of expected ASX debut",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/06/tumbler-ridge-shooting-arrest-washington",
-      "summary": "Justice department detained James Codey Bryant and allege he offered ‘technical advice’ to primary suspectA surprise suspected accomplice has been arrested in connection with a mass school shooting in Canada that was made notorious after an 18-year-old allegedly killed six children after discussing it with the AI chatbot ChatGPT.The US Department of Justice said Tuesday it had detained James Codey Bryant, 30, a resident of western Washington state, on a charge of conspiracy to murder persons in ",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/08/ai-datacentre-firmus-slash-valuation-before-asx-listing",
+      "summary": "Sources say Firmus is slashing its price and may even shelve initial public offering altogetherGet our breaking news email, free app or daily news podcastThe momentum behind Firmus Technologies’ high-flying valuation is showing severe cracks just weeks out from its anticipated ASX debut.Multiple sources briefed on the matter told Guardian Australia the AI datacentre company is slashing its valuation to entice sceptical investors – or may even shelve its initial public offering altogether. Contin",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "chatgpt-assisted-shooting-arrest",
-      "why": "Den amerikanske anholdelse i en sag hvor en masse-skoleskyder angiveligt planlagde angrebet via ChatGPT, fremhæver konkrete retlige og sikkerhedsmæssige problemer ved AI-værktøjer og deres rolle i radikalisering og kriminalitet.",
+      "story_id": "firmus-valuation-asx",
+      "why": "Signal om reevaluering af AI-datacenter-markedets finansiering før børsnotering viser hvordan AI-hype slår igennem i kapitalmarkederne og kan påvirke europæiske investeringer i infrastruktur og regulering.",
       "reading_minutes": "3"
     },
     {
-      "title": "Autonomous AI agents tried to hack US, Canadian government websites",
-      "source": "www.bleepingcomputer.com",
-      "url": "https://www.bleepingcomputer.com/news/security/autonomous-ai-agents-tried-to-hack-us-canadian-government-websites/",
-      "summary": "Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. Autonomous AI agents using aggressive strategies attempted to hack U.S. and Canadian government websites to find school and divorce statistics. The failed breach attempts targeted a website under the U.S. Department of Education and Library and Archives Canada. However, the collected data shows no evidence of access to non-public information. Nonprofit r",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "autonomous-agents-hack-govsites",
-      "why": "Rapport om autonome AI-agenter, der forsøgte at kompromittere offentlige myndigheders hjemmesider. Relevans: understreger cybersikkerhedsrisici og behov for statslige modforanstaltninger — vigtigt for danske institutioner og it-sikkerhedspolitik.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Trump chooses top spy boss to run new AI taskforce",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cqj6jenp26zyo?at_medium=RSS&at_campaign=rss",
-      "summary": "The US president said his national intelligence chief will lead the group as worries over AI grow.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "trump-ai-taskforce-intel-chief",
-      "why": "USA udpeger sin efterretningstopleder til at lede en ny AI-taskforce — et signal om hvordan sikkerhedsapparatet institutionaliserer AI som national prioritet. Konsekvenserne kan påvirke NATO-samarbejde, regulering og danske alliancediskussioner.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Ship sinks and crew missing after Black Sea drone attack",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c8ly0v5r602eo?at_medium=RSS&at_campaign=rss",
-      "summary": "It is not clear who is behind the attacks which come as Russia intensifies strikes in the Black Sea as part of its war against Ukraine.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "black-sea-drone-attacks-nato-ez-backup",
-      "why": "BBC's rapport om det samme Black Sea-angreb er en robust, pålidelig backup, nyttig hvis Ars-stykket ikke kan bruges. Den bekræfter eskalationen mod kommerciel skibsfart.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Seruminstitut ser ingen grund til pest-bekymring i Danmark",
-      "source": "DR Nyheder",
-      "url": "https://www.dr.dk/nyheder/seneste/seruminstitut-ser-ingen-grund-til-pest-bekymring-i-danmark",
-      "summary": "En kvinde meldes i Rusland død, af hvad der frygtes at være pest. Der er ifølge SSI ikke grund til særlig bekymring hos danskerne.",
-      "format": "short",
-      "section": "Danmark",
+      "title": "The upcoming D&D interpretation of World of Warcraft sounds great, but don't expect it to work like the MMO does",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/dungeons-and-dragons-dnd-world-of-warcraft-wow-book",
+      "summary": " So many of the questions in a press briefing for the upcoming Dungeons & Dragons: World of Warcraft book revolved around whether the 52-year-old tabletop game would bend out of shape to work like a massively multiplayer online game. But while the D&D translation of WoW does include races and dungeons and characters from Blizzard's famous game, it doesn't fundamentally alter what it is. Read more",
+      "format": "longread",
+      "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "ssi-pest-vurdering-danmark",
-      "why": "SSI vurderer, at der ikke er grund til særlig bekymring i Danmark efter rapporter om mulig pest-dødsfald i Rusland. Værd at kende for offentlig ro og for kommunal/regionale sundhedsvurderinger i Danmark.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Why old dogs might be able to teach Alzheimer’s researchers new tricks",
-      "source": "theconversation.com",
-      "url": "https://theconversation.com/why-old-dogs-might-be-able-to-teach-alzheimers-researchers-new-tricks-291257",
-      "summary": "As dogs age, their brains undergo similar changes to human brains, making them a valuable natural model to study dementia and other neurodegenerative diseases. Share article Print article Most people",
-      "format": "longread",
-      "section": "Videnskab",
-      "group": "Fordybelse",
-      "story_id": "old-dogs-alzheimers-models",
-      "why": "Forskningsvinkel: gamle hundes hjerneforandringer kan spejle menneskelig demens og fungere som naturligt modelorganisme. Giver ny metode- og forsøgsindsigt, relevant for dansk og international aldringsforskning.",
+      "story_id": "dnd-wow-interpretation",
+      "why": "En solid kultur/underholdningsfeature om hvordan en stor spil-IP transformeres til Dungeons & Dragons — interessant læsning for forståelse af franchisetransformationer og kulturindustrien, relevant for Mads' kulturinteresse.",
       "reading_minutes": "4"
     },
     {
-      "title": "Weight-loss drugs show signs of slowing biological aging, say drugmakers",
-      "source": "www.technologyreview.com",
-      "url": "https://www.technologyreview.com/2026/10/06/1145836/weight-loss-drugs-glp1-lilly-novo-aging-clocks/",
-      "summary": "Popular weight-loss drugs may do more than help people shed pounds. They might also melt away the years. Drug giants Eli Lilly and Novo Nordisk say patients taking their drugs age less quickly, according to readouts from molecular “aging clocks.” Such clocks assess a person’s biological age by looking at changes to DNA that accumulate…",
-      "format": "short",
-      "section": "Sundhed",
-      "group": "Fordybelse",
-      "story_id": "glp1-aging-clocks",
-      "why": "Farmavirksomheder rapporterer at GLP-1-lægemidler kan påvirke molekylære aldringsure. Historien rejser spørgsmål om sundhedspolitik, behandlingstilgængelighed og økonomiske/etiske konsekvenser for samfundet.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "You Probably Aren’t Going to Get the Plague",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/what-we-know-about-plague-russia/",
-      "summary": "The death of a lab worker in Russia has authorities looking at whether plague played a role. Even if it did, though, the odds of it spreading are very low.",
-      "format": "short",
-      "section": "Baggrund",
-      "group": "Teknologi og verden",
-      "story_id": "you-probably-arent-get-plague",
-      "why": "WIRED forklarer hvorfor risikoen for pest-epidemi er lav selv efter dødsfald i Rusland. Giver nødvendig beroligende kontekst til WHO- og nationale udtalelser, nyttigt for at afkoble sensation fra fakta.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Three Years of 80% Charge Limits on iPhone: The Results",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/06/iphone-17-pro-charge-limit/",
-      "summary": "Since 2023, Apple's newer iPhones have had an 80 percent charge limit for those who want to extend battery lifespan. Charging to 80 percent instead of 100 percent is supposed to put less stress on the battery, improving longevity.\n\n\n\n\n\nFor the last three years, I've used that setting on my iPhone. I started with the iPhone 15 Pro Max, then did the iPhone 16 Pro Max, and most recently, the iPhone 17 Pro Max.\n\n\n\nAfter 12 months at an 80 percent maximum charge, my iPhone 17 Pro Max is at 97 percent",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "iphone-80pct-charge-results",
-      "why": "Praktisk test af betydningen af 80%-ladebegrænsning over tre år. Nyttigt, konkret læsestof for forbrugere i Danmark der ønsker at forlænge batterilevetid og vurdere Apples strømstyringsindstillinger.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Et medieforlig med det store perspektiv",
+      "title": "Råplan",
       "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/et-medieforlig-med-det-store-perspektiv/",
+      "url": "https://www.ekkofilm.dk/anmeldelser/raplan/",
       "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
       "format": "short",
-      "section": "Kulturpolitik",
+      "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "medieforlig-perspektiv",
-      "why": "Analyse af et medieforlig og dets langsigtede perspektiv for kultur- og medieinstitutioner. Relevant for dansk kulturpolitik, public service-debat og funding af medier i Danmark.",
+      "story_id": "raaplan-anmeldelse",
+      "why": "Ekko-anmeldelse af 'Råplan', efterfølgeren til en dansk ungdomsfilm, giver kulturstatus og kritisk perspektiv på en dansk filmudgivelse som tiltrækker omtale og publikum. Mads får hurtig indsigt i dansk filmdebat.",
       "reading_minutes": "3"
     },
     {
-      "title": "YouSee-konflikt rammer DR og TV 2",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/yousee-konflikt-rammer-dr-og-tv-2/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
-      "format": "longread",
-      "section": "Kultur & medier",
-      "group": "Danmark og kultur",
-      "story_id": "yousee-dr-tv2-konflikt",
-      "why": "Konflikt mellem YouSee og de store public/private tv-aktører betyder adgangs- og distributionsproblemer for DR og TV 2. Har direkte effekt på dansk tv-publikum og kan presse politiske tiltag om medieinfrastruktur og public service-adgang.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "OpenAI Is Pissing Off a Bunch of Mathematicians—Again",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/openai-is-pissing-off-a-bunch-of-mathematicians-again/",
-      "summary": "“There’s a perception of mobster behavior” from leading AI companies, one mathematician tells WIRED as OpenAI prepares to release more than 100 new solutions to unsolved problems.",
+      "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+      "summary": "Mistral says Le Chonk can rival top closed models while remaining open-weight. Mistral says Le Chonk can rival top closed models while remaining open-weight. As tensions mount over who gets access",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "openai-mathematicians-critique",
-      "why": "Kritisk kommentar om OpenAI’s praksis i forskningssamarbejder og community-relationer — brugbar hvis man vil dykke i relations- og troværdighedsaspekter ved store AI-firmaer som alternativ til mere tekniske stykker.",
-      "reading_minutes": "3"
+      "story_id": "mistral-le-chonk",
+      "why": "Mistrals åbne model 'Le Chonk' præsenteres som konkurrent til lukkede topmodeller, relevant for debat om åbenhed, konkurrence og tilgængelighed i AI-økosystemet.",
+      "reading_minutes": "2"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 3,
-        "fordybelse": 4,
-        "verden": 6,
+        "dansk_politik": 4,
+        "fordybelse": 5,
         "teknologi": 6,
-        "kultur": 2
+        "kultur": 3
       },
       "actual": {
         "dansk_politik": 3,
-        "fordybelse": 4,
-        "verden": 6,
-        "teknologi": 7,
+        "teknologi": 8,
+        "fordybelse": 5,
         "kultur": 2
       },
-      "warnings": []
+      "warnings": [
+        "Færre historier om dansk politik og samfund end planlagt (3 af 4).",
+        "Færre historier om kultur end planlagt (2 af 3)."
+      ]
     },
     "collection": {
-      "rss_candidates": 281,
-      "web_candidates": 26,
+      "rss_candidates": 290,
+      "web_candidates": 24,
       "total_candidates": 75,
-      "repeats_dropped": 7,
-      "previews_enriched": 19,
+      "repeats_dropped": 13,
+      "previews_enriched": 18,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 41,
+        "full_text": 46,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 28,
-      "prepared": 22,
+      "approved": 21,
+      "prepared": 18,
       "dropped_unreadable": 0,
       "dropped_diversity": 3,
       "budget_exhausted": false
@@ -316,7 +269,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 29
+        "items": 23
       },
       "BBC Technology": {
         "status": "ok",
@@ -340,7 +293,7 @@
       },
       "The Guardian Technology": {
         "status": "ok",
-        "items": 31
+        "items": 32
       },
       "The Conversation": {
         "status": "ok",
@@ -440,7 +393,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 8
+        "items": 1
       },
       "VGC": {
         "status": "ok",
@@ -448,7 +401,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 21
+        "items": 16
       }
     }
   }
