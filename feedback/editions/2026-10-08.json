@@ -1,0 +1,408 @@
+{
+  "created_at": "2026-10-08T03:32:26.045094+00:00",
+  "articles": [
+    {
+      "title": "Analyse: Den nye udlændingepolitiske værdikamp kan blive sprængfarlig for regeringen",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/analyse-den-nye-udlaendingepolitiske-vaerdikamp-kan-blive-spraengfarlig-regeringen",
+      "summary": "Hvilke danske værdier skal være et krav for at få dansk statsborgerskab? Den debat er symbol på en ny kampplads i udlændingepolitikken, som kan slå sprækker i regeringen. Hvilke danske værdier skal være et krav for at få dansk statsborgerskab? Den debat er symbol på en ny kampplads i udlændingepolitikken, som kan slå sprækker i regeringen. ”Socialdemokratiet har slået udlændingepolitikken ihjel!” Det opråb sendte Morten Messerschmidt for et par dage siden ud på Facebook i et harmdirrende opslag ",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "udlaendingepolitisk-vaerdikamp",
+      "why": "Debatten om krav til 'danske værdier' for statsborgerskab er ved at omforme udlændingepolitikken og kan skabe interne brud i regeringen. Mads bør læse analysen for at forstå de politiske konsekvenser og mulighed for nye forhandlinger i Folketinget.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Folketinget dropper mulig anonymisering i Afghanistan-udredning",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/folketinget-dropper-mulig-anonymisering-i-afghanistan-udredning",
+      "summary": "Afghanistan-udredning får alligevel fuld åbenhed, efter at politikeres mulighed for anonymitet droppes. Afghanistan-udredning får alligevel fuld åbenhed, efter at politikeres mulighed for anonymitet droppes. Der kommer alligevel til at være fuld åbenhed i den kommende Afghanistan-udredning. Folketingets Præsidium har på et møde onsdag enstemmigt besluttet at følge en indstilling fra Det Udenrigspolitiske Nævn (UPN) om, at tidligere nævnsmedlemmer ikke skal have mulighed for at blive citeret anon",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "afghanistan-udredning-aabenhed",
+      "why": "Folketinget har besluttet fuld åbenhed i Afghanistan-udredningen ved at droppe anonymisering, hvilket påvirker ansvarlighed, politisk oplysning og kommende debat om forsvarets og regeringens handlinger. Relevans: direkte dansk politik og offentlighedens indsigt.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Minister tvivler på milliard-overskud fra nyt gaseventyr i Nordsøen",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/minister-tvivler-paa-milliard-overskud-fra-nyt-gaseventyr-i-nordsoeen",
+      "summary": "Regeringen har endnu ikke truffet en beslutning om, hvorvidt olie- og gaslicenser i Nordsøen skal forlænges. Regeringen har endnu ikke truffet en beslutning om, hvorvidt olie- og gaslicenser i Nordsøen skal forlænges. Før valget var den radikale klimaordfører Samira Nawa klar i mælet. Det var helt uacceptabelt",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "nordsoe-gaslicenser-tvivl",
+      "why": "Regeringen overvejer ikke hurtigt at forlænge olie- og gaslicenser i Nordsøen, og ministeren afviser forventninger om store overskud fra nye projekter. Historien har konsekvenser for dansk energi-, klima- og økonomipolitik frem mod beslutninger om tilladelser og skat.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Microsoft releases new Nvidia-chip AI PCs with revamped Windows 11 | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/",
+      "summary": "Microsoft revealed the specs and price for its Surface Laptop Ultra, AI PCs that run on Nvidia chips that are designed to run AI models and agents.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "microsoft-ai-pcs-windows11",
+      "why": "Microsoft lancerer nye AI-PC'er med Nvidia-chips og ændringer i Windows 11 — vigtigt for forståelsen af lokal-AI på pc'er og konsekvenser for app-udvikling og platformkonkurrence med Apple.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "As AI Closed In on ‘Unique Games’ Proof, Researchers Raced to Beat the Machines | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/as-ai-closed-in-on-unique-games-proof-researchers-raced-to-beat-the-machines-20261007/",
+      "summary": "In the shadow of a rumored AI proof of one of the biggest problems in their field, three computer scientists rushed to publish their own milestone result.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-matematik-unique-games",
+      "why": "Et fascinerende indblik i hvordan AI nærmede sig et vigtigt matematisk bevis, og hvordan forskere hastede for at publicere først. Mads får kontekst om AI's voksende rolle i teoretisk forskning og hvilke videnskabelige og etiske spørgsmål det rejser.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "ChatGPT for Teens keeps teens talking, even during mental health crises",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/07/chatgpt-for-teens-keeps-teens-talking-even-during-mental-health-crises/",
+      "summary": "ChatGPT’s teen safeguards are meant to protect vulnerable users, but new testing found the chatbot continues encouraging engagement during crises and potentially encourages unhealthy relationships with the AI itself.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "chatgpt-teens-crisis-engagement",
+      "why": "Testning viser at ChatGPT's teen-sikringer kan holde unge engagerede — også under mentale kriser — hvilket rejser praktiske og etiske spørgsmål om AI-moderation og ansvar. Relevant for politikere, skoler og forældre, samt for Mads' interesse i teknologiens samfundseffekter.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "OpenAI’s release of mathematical findings draws concerns from experts",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/07/openai-mathematical-findings-concerns",
+      "summary": "Leaders worry OpenAI is not doing due diligence to vet results and that AI models aren’t accessible to broader field of mathematicians OpenAI has astounded mathematicians after releasing hundreds of new mathematical findings on Tuesday.The company published over 370 mathematical results across a variety of topics such as algebra, theoretical computer science and mathematical logic, showcasing what some of its most advanced artificial intelligence models are capable of. Continue reading...",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-matematik-udgivelse-kritik",
+      "why": "OpenAI offentliggjorde hundredevis af matematiske resultater, hvilket bekymrer eksperter om verifikation og adgang. Historien berører AI-ansvar, forskningspraksis og tillid — centrale emner for Mads' opfølgning på AI's institutionelle konsekvenser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google rolls out improved SynthID AI content detector, now available globally",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/10/google-rolls-out-improved-synthid-ai-content-detector-now-available-globally/",
+      "summary": "The new SynthID website can now identify AI content from Google, OpenAI, and more. The new SynthID website can now identify AI content from Google, OpenAI, and more. Every piece of AI content from Google’s Gemini models has a hidden SynthID label, which makes it very difficult to pass the content off as authentic",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-synthid-global",
+      "why": "Google udvider SynthID globalt og kan identificere AI-indhold fra flere store modeller — et vigtigt skridt i sporbarhed og tillid til digitalt indhold, relevant for mediepolitik og debat om regulering i Europa og Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: weight-loss drugs slowing aging and carbon dioxide batteries",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/07/1145895/the-download-weight-loss-drugs-slow-aging-carbon-dioxide-batteries/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Weight-loss drugs show signs of slowing biological aging, say drugmakers Popular weight-loss drugs may do more than help people shed pounds. They might also slow the aging process. Drugmakers Eli Lilly…",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "the-download-weight-loss-batteries",
+      "why": "Kort, men stærk teknologinyhedsopsamling om potentielle aldershæmmende effekter af vægttabsmedicin og nye batterier. God hurtigstatus om bio- og energinyheder, som kan påvirke sundheds- og industri-dagsordenen fremadrettet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI skal hjælpe os, men kan ende med at gøre os stressede og udbrændte",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/teknologi/ai-skal-hjaelpe-os-men-kan-ende-med-at-goere-os-stressede-og-udbraendte/",
+      "summary": "Dansk AI-forsker genkender problematikken. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-stress-udbraendthed-danmark",
+      "why": "Dansk AI-forsker advarer om, at automatisering og AI-assistenter kan øge stress og udbrændthed hvis de forstærker arbejdspres. Vigtigt for Mads at forstå både lovende og negative sociale konsekvenser af AI i Danmark.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "The Pentagon Hopes to Speed Up ‘Kill Chain’ AI Buys With 5-Minute Videos",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/the-pentagon-hopes-to-speed-up-kill-chain-ai-buys-with-5-minute-videos/",
+      "summary": "The US government’s Tradewinds initiative has made it easier to throw millions of dollars at “nontraditional” defense contractors, including OpenAI, Anthropic, and Google.",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "pentagon-kill-chain-ai-buys",
+      "why": "US-initiativer gør det lettere for forsvarssektoren at købe AI-løsninger hurtigt, herunder fra store tech-firmaer. Mads får strategisk indsigt i hvordan militær indkøb og AI-udvikling kan forme NATO og europæisk forsvarsindustri.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "OpenAI used AI to help write email warning Australian government AI had hacked its websites",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/08/openai-used-ai-to-help-write-email-warning-australian-government-ai-had-hacked-its-websites",
+      "summary": "Revelation comes after company’s executive told parliamentary inquiry he did not believe AI had been used to write message Exclusive: Revelation comes after company’s executive told parliamentary inquiry he did not believe AI had been used to write message Get our",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-email-australia-hack",
+      "why": "OpenAI brugte egen AI i en e-mail om et angreb — en sag der kaster lys over interne processer, ansvar og hvordan store AI-virksomheder kommunikerer med myndigheder. Relevant for regulerings- og troværdighedsdiskussioner i EU og Danmark.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Nobel physics prize awarded for discovery of ‘ghostly messengers’ from the cosmos",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/nobel-physics-prize-awarded-for-discovery-of-ghostly-messengers-from-the-cosmos-293293",
+      "summary": "Belgium-born Francis Halzen has won for the detection of high energy neutrino particle from space. Share article Print article The 2026 Nobel prize for physics has been awarded to US-based researcher Francis Halzen for his discovery of high energy neutrino particles from space.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "nobel-neutrino-opdagelse",
+      "why": "Forklaring af Nobelprisen i fysik for opdagelsen af højenergi-neutrinoer fra rummet giver perspektiv på en stor videnskabelig bedrift og dens betydning for astrofysik. Lang, forklarende læsning for Mads' interesse i stor videnskab.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Yemen is spiralling into another civil war that could swiftly engulf in the entire region",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/yemen-is-spiralling-into-another-civil-war-that-could-swiftly-engulf-in-the-entire-region-293104",
+      "summary": "Turkey and Pakistan are poised to send troops to Saudi Arabia, but so far the Trump administration has avoided getting involved. Share article Print article The Middle East has seen many explosions of violence in recent years. But while the US-Iran war has grabbed the headlines this year, the rapidly escalating conflict between the Houthis and Yemen’s internationally recognised government and Saudi Arabia risks becoming just as consequential for the region.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "yemen-regional-eskalation",
+      "why": "Analyse af eskaleringen i Yemen og risici for regional optrapning giver kontekst til europæisk sikkerhed og energiforsyning. Mads bør læse for at forstå potentielle geopolitiske konsekvenser, selvom direkte dansk effekt er indirekte.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Datacentre company Firmus’s high flying valuation may be coming back down to earth ahead of expected ASX debut",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/australia-news/2026/oct/08/ai-datacentre-firmus-slash-valuation-before-asx-listing",
+      "summary": "Sources say Firmus is slashing its price and may even shelve initial public offering altogetherGet our breaking news email, free app or daily news podcastThe momentum behind Firmus Technologies’ high-flying valuation is showing severe cracks just weeks out from its anticipated ASX debut.Multiple sources briefed on the matter told Guardian Australia the AI datacentre company is slashing its valuation to entice sceptical investors – or may even shelve its initial public offering altogether. Contin",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "firmus-valuation-asx",
+      "why": "Signal om reevaluering af AI-datacenter-markedets finansiering før børsnotering viser hvordan AI-hype slår igennem i kapitalmarkederne og kan påvirke europæiske investeringer i infrastruktur og regulering.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The upcoming D&D interpretation of World of Warcraft sounds great, but don't expect it to work like the MMO does",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/dungeons-and-dragons-dnd-world-of-warcraft-wow-book",
+      "summary": " So many of the questions in a press briefing for the upcoming Dungeons & Dragons: World of Warcraft book revolved around whether the 52-year-old tabletop game would bend out of shape to work like a massively multiplayer online game. But while the D&D translation of WoW does include races and dungeons and characters from Blizzard's famous game, it doesn't fundamentally alter what it is. Read more",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "dnd-wow-interpretation",
+      "why": "En solid kultur/underholdningsfeature om hvordan en stor spil-IP transformeres til Dungeons & Dragons — interessant læsning for forståelse af franchisetransformationer og kulturindustrien, relevant for Mads' kulturinteresse.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Råplan",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/anmeldelser/raplan/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "raaplan-anmeldelse",
+      "why": "Ekko-anmeldelse af 'Råplan', efterfølgeren til en dansk ungdomsfilm, giver kulturstatus og kritisk perspektiv på en dansk filmudgivelse som tiltrækker omtale og publikum. Mads får hurtig indsigt i dansk filmdebat.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Mistral says \"Le Chonk\" can challenge the best AI models",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/10/mistral-says-le-chonk-can-challenge-the-best-ai-models/",
+      "summary": "Mistral says Le Chonk can rival top closed models while remaining open-weight. Mistral says Le Chonk can rival top closed models while remaining open-weight. As tensions mount over who gets access",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mistral-le-chonk",
+      "why": "Mistrals åbne model 'Le Chonk' præsenteres som konkurrent til lukkede topmodeller, relevant for debat om åbenhed, konkurrence og tilgængelighed i AI-økosystemet.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 4,
+        "fordybelse": 5,
+        "teknologi": 6,
+        "kultur": 3
+      },
+      "actual": {
+        "dansk_politik": 3,
+        "teknologi": 8,
+        "fordybelse": 5,
+        "kultur": 2
+      },
+      "warnings": [
+        "Færre historier om dansk politik og samfund end planlagt (3 af 4).",
+        "Færre historier om kultur end planlagt (2 af 3)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 290,
+      "web_candidates": 24,
+      "total_candidates": 75,
+      "repeats_dropped": 13,
+      "previews_enriched": 18,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 46,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 21,
+      "prepared": 18,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 23
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 16
+      }
+    }
+  }
+}
