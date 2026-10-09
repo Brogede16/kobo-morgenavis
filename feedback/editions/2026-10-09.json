@@ -1,0 +1,457 @@
+{
+  "created_at": "2026-10-09T03:32:13.933852+00:00",
+  "articles": [
+    {
+      "title": "Endnu flere unge end ventet står til at få skåret i SU’en, viser finanslovsudspil",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/endnu-flere-unge-end-ventet-staar-til-faa-skaaret-i-su-en-viser-finanslovsudspil",
+      "summary": "Finanslovsudspillet præsenteres officielt fredag morgen, men allerede nu afsløres flere af regeringens tiltag. Finanslovsudspillet præsenteres officielt fredag morgen, men allerede nu afsløres flere af regeringens tiltag. Antallet af hjemmeboende studerende, der vil blive ramt af regeringens plan om at skære i SU’en, bliver langt større end regeringens første udmelding. Det fremgår af det forslag til en finanslov, som regeringen fremlægger fredag morgen klokken 8, men som DR allerede er i besidd",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "su-finanslov-flere-rammes",
+      "why": "Finanslovsudspillet lækker nu oplysninger om, at langt flere hjemmeboende studerende end først oplyst rammes af regeringens plan om at skære i SU. Det ændrer omfanget af en central velfærdspolitik og kan udløse politisk pres på regeringen — relevant for studerende og beslutningstagere.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Goodfire says its new ‘inside-out’ monitors catch rogue AI agents at a fraction of the cost | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/08/goodfire-says-its-new-inside-out-monitors-catch-rogue-ai-agents-at-a-fraction-of-the-cost/",
+      "summary": "Goodfire just launched what it says is a cheaper way to keep AI agents in check: Instead of paying a second AI to read everything an agent does, its monitors peek inside the model while it works and only call in backup when something looks fishy.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "goodfire-inside-out-monitors",
+      "why": "Startup Goodfire lancerer en billigere måde at overvåge agent-AI på ved at 'kigge ind' i modeller i stedet for konstant at køre en separat læse-AI. Det kan gøre sikkerhedsmonitorering billigere og mere skalerbar — konkret for danske virksomheder og offentlige IT-sikkerhedsstrategier.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Google brings agentic AI to Gemini, starting with businesses | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/",
+      "summary": "Google is turning Gemini into an AI agent that can plan, execute tasks, and work across business apps and systems. The agent can delegate work to subagents, use multiple AI models, and even gets its own workplace identity, complete with an email address.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-gemini-agentic",
+      "why": "Google ruller agentisk AI ind i Gemini for virksomheder: agenter, underagenter og egen arbejdsidentitet med e‑mail. Det ændrer, hvordan organisationer kan automatisere opgavestrømme — vigtigt for danske virksomheder, offentlig forvaltning og reguleringsdiskussioner om agenter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI breakthroughs in robotics won’t change your life any time soon",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/",
+      "summary": "The story is a collaboration between MIT Technology Review and Aventine, a non-profit research foundation that creates and supports content about how technology and science are changing the way we live. A robot shaped like a human—white with a black head and torso—has been popping up on video feeds. Perhaps you’ve seen it dance or…",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-robotics-not-yet",
+      "why": "MIT Technology Review forklarer, hvorfor de nyeste AI-gennembrud i robotik endnu ikke er praktisk transformative for hverdagen og hvilke tekniske, økonomiske og sikkerhedsmæssige barrierer der står i vejen. Kritisk kontekst for danske industripolitiske og arbejdsmarkedsdiskussioner.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Tony Fadell on why the first wave of AI gadgets failed — and what comes next | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/07/tony-fadell-on-why-the-first-wave-of-ai-gadgets-failed-and-what-comes-next/",
+      "summary": "The “father of the iPod” says the first generation of AI gadgets failed to solve real problems — and the next wave will need to earn consumers’ trust.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "fadell-ai-gadgets-failed",
+      "why": "Tony Fadell vurderer, hvorfor de første AI‑gadgets ikke løste reelle brugerbehov, og hvad næste generation skal fikse for at vinde tillid og adoption. Relevant for danske produktteams, investorer og forbrugere, der overvejer nye AI‑hardwarekøb.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "‘Dystopian’: Co-op becomes latest firm to put staff under AI surveillance",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/08/co-op-legal-services-ai-customer-phone-call-surveillance",
+      "summary": "Whistleblower says recording and analysis of all probate calls in Co-op Legal Services is oppressive Whistleblower says recording and analysis of all probate calls in Co-op Legal Services is oppressive The Co-op has become the latest employer to place workers under AI surveillance with an automated listening technology that rates every phone call some of them make to customers. In a system described as âoppressive and dystopianâ by a whistleblower, Co-op Legal Services is using AI models to ",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "co-op-ai-surveillance",
+      "why": "Avisen beskriver, hvordan Co‑op Legal Services bruger automatisk lyd‑analyse til at bedømme alle medarbejdersopkald — et konkret eksempel på AI‑overvågning på arbejdspladsen med juridiske og etiske konsekvenser, som danske arbejdsgivere, fagforeninger og politikere bør følge.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Microsoft event debuts new AI-friendly hardware and Windows changes",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/10/microsoft-event-debuts-new-ai-friendly-hardware-and-windows-changes/",
+      "summary": "Get ready for more AI in your Windows and more AI on the desktop.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "microsoft-ai-hardware-windows",
+      "why": "Microsoft lancerede AI-venligt hardware og ændringer i Windows, der bringer mere AI direkte til pc-brugere. Vær praktisk orienteret for danske it‑indkøb, skoler og professionelle brugere — følg konsekvenserne for arbejdspladser og sikkerhedspolitikker.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI chip boom pushes Samsung profits to record $80bn",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/c687z8127302o?at_medium=RSS&at_campaign=rss",
+      "summary": "The tech giant is also expected to get a boost from its latest folding devices that were launched in August.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "samsung-ai-chip-profits",
+      "why": "Samsungs rekordprofitter fra AI‑chips viser, hvordan chipmarkedet og datacenterinvesteringer formas af generativ AI‑efterspørgsel. Et økonomisk signal med konsekvenser for europæiske leverandørkæder, energibehov og konkurrencepolitik — relevant for danske industriplanlægning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Hvor meget støj skal vi finde os i? London og København har forskellige svar",
+      "source": "videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/hvor-meget-stoej-skal-vi-finde-os-i-london-og-koebenhavn-har-forskellige-svar/",
+      "summary": "Støjforsker sammenligner London og København og ser nærmere på, hvad landenes forskellige regler fortæller om, hvor meget støj vi accepterer i byerne. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "stoej-london-koebenhavn",
+      "why": "Sammenligning af støjregler i London og København viser, hvordan regulering og normer styrer byliv og livskvalitet. Konkrete eksempler kan oplyse lokale debatter om byplanlægning, natteliv og boligpolitik i danske kommuner — et nærpolitisk emne med praktiske konsekvenser.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Nationalmuseet vil 3D-scanne landets runesten",
+      "source": "kosmopol.tv2reg.digital",
+      "url": "https://kosmopol.tv2reg.digital/koebenhavn/nationalmuseet-vil-3d-scanne-landets-runesten-28cc0",
+      "summary": "Nationalmuseet i København vil med en 3D-scanning af de danske runesten forsøge at finde svar på nogle af vikingetidens uopklarede spørgsmål. Det fortæller Nationalmuseet i en pressemeddelelse. Teknologien giver som noget nyt mulighed for at kortlægge runestenene i sociale og magtpolitiske netværk. - Selvom vi ... Nationalmuseet i København vil med en 3D-scanning af de danske runesten forsøge at finde svar på nogle af vikingetidens uopklarede spørgsmål. Det fortæller Nationalmuseet i en presseme",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "nationalmuseet-3d-runesten",
+      "why": "Nationalmuseet planlægger 3D-scanning af danske runesten for at kortlægge netværk og magtforhold i vikingetiden. En kultur- og forskningssag, der både bevarer kulturarv og kan ændre historiefortællinger — relevant for museal praksis og kulturpolitik i Danmark.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Anne Carson wins Nobel prize in literature – how she discovered new possibilities within language",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/anne-carson-wins-nobel-prize-in-literature-how-she-discovered-new-possibilities-within-language-293969",
+      "summary": "At a time when scholarship and creative writing are often treated as separate pursuits, Carson has shown how deeply they belong together. Share article Print article For over four decades, Anne Carson has been quietly redrawing the map of contemporary literature. Poet, translator, classicist, essayist, performer and visual artist, she has produced a body of work that refuses easy categorisation.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "anne-carson-nobel-analysis",
+      "why": "The Conversation analyserer Anne Carsons kunstneriske praksis og hvorfor Nobelprisen markerer et skifte i litterære former. Baggrund for danske kulturdebatter om poesi, oversættelse og krydsfeltet mellem forskning og kreativ skrivning — nyttigt for kulturinteresserede læsere.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Årets nobelprismodtager i litteratur fik lektor til at tænke: 'Kan man skrive sådan?'",
+      "source": "DR Kultur",
+      "url": "https://www.dr.dk/nyheder/kultur/aarets-nobelprismodtager-i-litteratur-fik-lektor-til-taenke-kan-man-skrive-saadan",
+      "summary": "Anne Carson viste os, at alle de sjoveste historier begynder i det gamle Grækenland, mener kulturredaktør. Anne Carson viste os, at alle de sjoveste historier begynder i det gamle Grækenland, mener kulturredaktør. Årets modtager af Nobelprisen i litteratur, Anne Carson, er alt det, \"som verden har brug for i 2026\". Sådan lyder det fra Lotte Folke, kulturredaktør på Politiken, efter at den canadiske forfatter, digter og oversætter",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "anne-carson-nobel-dk-reaction",
+      "why": "DRs kulturreportage om Anne Carsons Nobelpris sætter prisen i en dansk kulturkontekst og forklarer, hvad prisens valg betyder for danske læsere og undervisere i litteratur. Hurtig, lokal reaktion der supplerer dybere analyser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Google and Unity unveil gen-AI game-making platforms, and demonstrate one of them by creating depressingly rubbish \"dream game\" Space Corridor",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/google-playground-unity-spark-gen-ai-game-creators",
+      "summary": "It was only a matter of time. Google now lets you create simple games with AI text prompts. The Unity engine will also include text prompts and co-op creation. \"They successfully identified that their target market was people with no imagination.\" Google and Unity yesterday announced new generative-AI game-making platforms designed to make and shape games by inputting text prompts. Google's product is called Playground",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "google-unity-genai-games",
+      "why": "Google og Unity annoncerer generativ‑AI værktøjer til spilskabelse — relevant for den danske spilbranche og kreative værktøjer, hvis TechCrunch‑stykker er utilgængelige.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "15 Defining Photos From the Student Protests in France",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/15-defining-photos-from-the-student-protests-in-france/",
+      "summary": "Painted signs and trash bins have become a visual lexicon of resistance as protesters call for educational reform and an immediate end to police violence. Painted signs and trash bins have become a visual lexicon of resistance as protesters call for educational reform and an immediate end to police violence. Students in France are approaching their third week of protests over a host of ills in the country's education system, spanning dilapidated infrastructure, teacher shortages, underfunding, a",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "france-student-protests-photos",
+      "why": "Billedserie der indfanger æstetikken og symbolerne i de franske studenterprotester — nyttig visuel kontekst til løbende protestdækning og kulturens visuelle sprog. Brugbar til at forstå, hvordan demonstrationer kommunikerer budskaber.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI’s Jason Kwon gave even-toned, reassuring answers to the Australian government. Did … ChatGPT write this?",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/06/openai-delivers-a-mea-culpa-to-the-australian-government-in-person-but-answers-still-elude",
+      "summary": "Kwon’s answers were provided in a helpful, quiet and calm manner, but his mea culpa left the audience not much the wiserOpen AI’s Jason Kwon flew 15 hours from San Francisco to Sydney to give the company’s first in-person mea culpa after it admitted – in an unsigned email, to a public departmental inbox – that one of its AI agents had accessed a Services Australia website without authorisation and grabbed data related to Medicare.Kwon – polite, friendly, even-toned – got through a potentially di",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "openai-australia-mea-culpa",
+      "why": "The Guardian beskriver OpenAIs offentlige forklaring om et agent‑brud mod en australsk offentlig tjeneste og rejser spørgsmål om autenticitet og ansvar. Sagen har direkte relevans for danske myndigheders tillid, beredskab og krav til AI‑leverandører.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Italian opposition cries foul as Meloniâs electoral reform passed in secret ballot",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/oct/08/giorgia-meloni-italy-wins-bonus-seat-electoral-reform-vote",
+      "summary": "Parties vow to challenge law in court, arguing that extra reward for those with 42% of support distorts public representation Parties vow to challenge law in court, arguing that extra reward for those with 42% of support distorts public representation Europe live â latest updates A controversial overhaul to electoral law that critics say is aimed at boosting Giorgia Meloniâs chances of clinging on to power in elections next year has been given final approval by the Italian parliament.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "italy-electoral-reform",
+      "why": "Italiens parlament har vedtaget en kontroversiel valgreform i hemmelig afstemning, og oppositionen truer med retssager. Europæisk politisk udvikling med potentielt præcedens‑værdige konsekvenser for koalitionsdynamik og valgregler i EU‑nære stater.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "SpaceX calls for better coordination in orbit after near-misses with Starlink",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/space/2026/10/spacex-calls-for-better-coordination-in-orbit-after-near-misses-with-starlink/",
+      "summary": "These led to conjunctions of tens of meters to hundreds of meters. Way too close to comfort.\" “These led to conjunctions of tens of meters to hundreds of meters. Way too close to comfort.” Space has plenty of room for more megaconstellations, but only if all operators are willing to share information about where their satellites are and where they’re going, a top executive at SpaceX and its AI subsidiary said this week. Michael Nicolls, SpaceX’s vice president for Starlink and president of Elon ",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "spacex-orbit-coordination",
+      "why": "SpaceX advarer om tæt på-kollisioner mellem satellitter og efterlyser bedre koordination i kredsløb. Emnet har konkrete konsekvenser for europæisk rumpolitik, trafikstyring i rummet og danske forskningssatellitter — vigtigt for politikere og rumsektoren.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Trump giver Elon Musk prestigefyldt hædersbevisning",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/udland/2026-10-09-trump-giver-elon-musk-prestigefyldt-haedersbevisning",
+      "summary": "Seks topchefer fra amerikanske virksomheder fik torsdag overrakt medaljer af Trump. Blandt dem var Elon Musk. Seks topchefer fra amerikanske virksomheder fik torsdag overrakt medaljer af Trump. Blandt dem var Elon Musk. USA's præsident, Donald Trump, overrækker en medalje til Elon Musk. Foto: Win Mcnamee / Ritzau Scanpix",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-musk-medalje",
+      "why": "Trump overrækker en medalje til Elon Musk sammen med flere topchefer — et symbolsk politisk samspil mellem administration og tech‑elite, nyttigt for dem, der følger geopolitisk tech‑politik og lobbyrelationer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "French student protests: comparisons with 1968 will only serve the political extremes",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/french-student-protests-comparisons-with-1968-will-only-serve-the-political-extremes-293879",
+      "summary": "Both far left and far right will try to make political capital out of the unrest. Share article Print article The student demonstrations that have spread across France in recent weeks are not unprecedented. Indeed, commentators have been quick to point to comparisons with the events of May and June 1968, where, at their peak, more than 10 million students and workers took to the streets.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Danmark og kultur",
+      "story_id": "france-protests-1968-comparison",
+      "why": "The Conversation forklarer, hvorfor sammenligninger med 1968 skygger for forståelsen af nutidens protester og hvordan ekstremister kan udnytte narrativet. Værdifuld analyse for danske debattører og kulturfolk, der følger protestdynamikker i Europa.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "She Designed Meta’s New AI Logo. Then Came the Hate",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/she-designed-metas-new-ai-logo-then-came-the-hate/",
+      "summary": "Jessica Hische knew working for Meta might upset some people. But she didn’t anticipate just how angry they would get.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "meta-ai-logo-hate",
+      "why": "WIREDs portræt viser, hvordan designere rammes af onlinehad i forbindelse med store tech‑brands — interessant perspektiv for kultur‑ og mediedebatten i Danmark om skaberansvar og digital chikane.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Nvidia's big bet on physical AI aims for safer robotaxis, humanoid robots",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/ai/2026/10/nvidias-big-bet-on-physical-ai-aims-for-safer-robotaxis-humanoid-robots/",
+      "summary": "Full-stack safety solution for physical AI is being used by robotics companies. Full-stack safety solution for physical AI is being used by robotics companies. Investors bullish on AI data centers may be fueling Nvidia’s multitrillion-dollar market capitalization, but the AI chipmaker has also bet billions of dollars on physical AI technologies such as robotics and self-driving cars. Part of that gambit has involved developing a full-stack safety system that companies can build upon to reduce th",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-physical-ai-bet",
+      "why": "Ars Technica analyserer Nvidias investering i 'physical AI' for robotaxis og humanoide robotter — et strategisk træk der rykker på forsyningskæder, chipefterspørgsel og sikkerhedsstandarder. Relevans for dansk industripolitik og forskning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Italian PM files to trademark her voice against AI threats",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/ckly0g1ljq2yo?at_medium=RSS&at_campaign=rss",
+      "summary": "Giorgia Meloni submitted a four-second audio to a EU agency in a bid to protect her voice from deepfakes.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "meloni-trademark-voice",
+      "why": "Italiens premierminister indsender et kort lydklip til EU for at beskytte sin stemme mod deepfakes — konkret eksempel på personligheders juridiske strategi over for AI‑syntese, relevant for danske politikere og mediejurister.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 2,
+        "teknologi": 5,
+        "verden": 8,
+        "kultur": 4,
+        "fordybelse": 2
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "teknologi": 5,
+        "verden": 10,
+        "kultur": 5
+      },
+      "warnings": [
+        "Færre historier om fordybelse og personlige interesser end planlagt (0 af 2).",
+        "Færre longreads end planlagt (10 af 11)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 307,
+      "web_candidates": 28,
+      "total_candidates": 75,
+      "repeats_dropped": 14,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 47,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 27,
+      "prepared": 22,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 4,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 36
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 50
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 21
+      }
+    }
+  }
+}
