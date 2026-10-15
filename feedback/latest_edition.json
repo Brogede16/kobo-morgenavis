@@ -1,259 +1,312 @@
 {
-  "created_at": "2026-10-14T03:32:47.939829+00:00",
+  "created_at": "2026-10-15T03:32:31.420951+00:00",
   "articles": [
     {
-      "title": "‘I’ve become significantly more cautious’: six parents on limiting their kids’ social media and AI use",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/us-news/2026/oct/12/parents-limiting-social-media-ai-use",
-      "summary": "Quite a few parents aren’t convinced social media and AI are safe, and have been adapting accordinglyWhen it comes to their kids, many parents don’t trust tech companies any more.Social media companies have spent the better part of the last decade arguing that their platforms are safe for teens, but quite a few parents aren’t convinced. They, along with a growing number of regulators, have increasingly accused companies like Meta of designing products that are addictive to younger users. Continu",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "parents-limiting-social-media-ai",
-      "why": "Seks forældre forklarer konkrete måder, de begrænser børns brug af sociale medier og AI, og hvorfor de er blevet mere forsigtige. Mads bør kende disse familiære strategier og bekymringer, fordi det afspejler et voksende samfundsproblem, der påvirker danske familier og skolepolitik.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Companies rushed in on AI. Now some are pulling back",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/oct/13/ai-companies-rushed-workers-fallout",
-      "summary": "Rapid AI adoption left workers cleaning up a flood of errors and low-quality work Rapid AI adoption left workers cleaning up a flood of errors and low-quality work Employers around the globe are grappling with the fallout from rushing to adopt fast-changing artificial intelligence tools. Meta has scaled back plans to axe staff and use more AI agents after the company found employees were spending more and more time cleaning up technical and security errors,",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "ai-companies-rushed-workers-fallout",
-      "why": "Undersøger hvordan hurtig AI-udrulning har overbelastet medarbejdere med fejl, lav kvalitet og uventede arbejdsopgaver, samtidigt med at store virksomheder revurderer planer. Relevans for danske ledere, fagforeninger og beslutningstagere om risici ved ukontrolleret AI-adoption.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "Open models have real benefits. Do they outweigh the risks?",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/13/1146366/open-models-have-real-benefits-do-they-outweigh-the-risks/",
-      "summary": "MIT Technology Review Explains: Let our writers untangle the complex, messy world of science and technology to help you understand what’s coming next. You can read more from the series here. Late last month, Anthropic released a report arguing that the model GLM-5.3 poses a major cyberattack risk. The report’s core concern is that the…",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "open-models-benefits-risks",
-      "why": "MIT Technology Review vejer fordele og risici ved åbne AI-modeller med konkrete eksempler og vurderinger af sikkerhedstrusler. Mads får en nuanceret analyse, der kan informere danske AI-regulatoriske og sikkerhedsdiskussioner.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Russia was not ready for the data center war it started with Ukraine",
-      "source": "arstechnica.com",
-      "url": "https://arstechnica.com/gadgets/2026/10/russia-was-not-ready-for-the-data-center-war-it-started-with-ukraine/",
-      "summary": "Russian bloggers warn Russia’s hyper-centralized digital economy is vulnerable. Russian bloggers warn Russia’s hyper-centralized digital economy is vulnerable. When Russia began attacking Ukrainian data centers and telecommunication infrastructure, it apparently failed to prepare for possible retaliation. Now Russia’s digital services are facing widespread outages after Ukrainian drone strikes knocked out three of the largest data centers owned by Russian tech giant Yandex within several days. P",
+      "title": "Facebookopslag kan få politiske konsekvenser: Flere partier vil indkalde kvinde til samtale",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/facebookopslag-kan-faa-politiske-konsekvenser-flere-partier-vil-indkalde-kvinde-til-samtale",
+      "summary": "Liberal Alliance mener, at en kvinde, der står til at få statsborgerskab, hylder Hamas. Selv afviser hun anklagerne. Liberal Alliance mener, at en kvinde, der står til at få statsborgerskab, hylder Hamas. Selv afviser hun anklagerne. Flere partier er nu klar til at indkalde en kvinde til samtale i Folketingets Indfødsretsudvalg, inden hun kan få dansk statsborgerskab. Det er en række opslag på kvindens Facebook, der har fået Liberal Alliance til i",
       "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "data-center-war-russia-ukraine",
-      "why": "Analysen forklarer, hvordan angreb på datacentre i Ukraine udløste digitale gensvar og udsatte Ruslands centraliserede infrastruktur. Historien giver strategisk indsigt i cyber- og infrastruktursårbarheder, relevant for dansk/nordisk forsvar og beredskabsvurdering.",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "facebookopslag-indfoedsretsudvalg",
+      "why": "Et Facebook-opslag om muligt hyldest af Hamas har fået flere Folketingets partier til at ville indkalde en ansøger til samtale i Indfødsretsudvalget før statsborgerskab. Historien afgør konkrete politiske procedurer og påvirker debatten om vilkår for medborgerskab — vigtigt for Mads at kende nu.",
       "reading_minutes": "2"
     },
     {
-      "title": "Pluto Security raises $42M as AI gives enterprise security teams a new headache",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/",
-      "summary": "The problem with giving everyone in a company access to AI tools is that people will use them in unexpected ways. And that fact is steadily seeding fears that companies now have new, gaping security holes in their systems or, at least, will soon.",
+      "title": "16-årige pige død efter styrt på elcykel – far støtter lovkrav om cykelhjelm",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-10-14-16-aarige-pige-doed-efter-styrt-paa-elcykel-far-stoetter-lovkrav-om-cykelhjelm",
+      "summary": "Nick Brædstrup Rubinis 16-årige datter døde efter et styrt på elcykel. Han forstår ikke, hvorfor det er lovligt at køre uden hjelm. Nick Brædstrup Rubinis 16-årige datter døde efter et styrt på elcykel. Han forstår ikke, hvorfor det er lovligt at køre uden hjelm. 16-årige Mariah døde fredag - seks dage efter sit styrt på elcykel på en cykelsti i Risskov. Privatfoto Foto: Privatfoto / TV2 Østjylland",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "elcykel-hjelm-debat",
+      "why": "En 16-årig døde efter et fald på elcykel; faderen kræver lovpligt for hjelm til elcykler. Ulykken sætter fokus på en aktuel debat om trafiksikkerhed, regulering og ansvarsfordeling for hurtigt voksende elcykelkørsel i Danmark — en konkret samfundspåvirkning Mads bør kende.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
+      "summary": "Kyiv’s forces experience connectivity problems on Elon Musk’s satellite network.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "starlink-restrictions-ukraine",
+      "why": "Kyiv oplever pludselige begrænsninger i Starlink-adgang, hvilket rammer kommunikation og militære operationer. Forståelse af disse restriktioner har direkte konsekvenser for EU/NATO-sikkerhedspolitik og Danmarks støtte til Ukraine — centralt for Mads' vurdering af strategisk udvikling.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Which Apple Home Devices Get Siri AI, and When",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/14/apple-home-devices-siri-ai/",
+      "summary": "There's been some confusion about which of Apple's new and existing home devices will support Siri AI and when, because ‌Siri‌ AI isn't going to be available at launch on some products.\n\n\n\n\n\nDevices With Siri AI\n\n\n\n \tHomeView - Available at launch (November 13)\n\n \tApple TV 4K (4th generation) - Available at launch (November 13)\n\n \tApple TV 4K (3rd generation) - Available in tvOS 27.2\n\n \tApple TV 4K (2nd generation) - Available in tvOS 27.2\n\n \tHomePod mini 2 - Ships October 30, ‌Siri‌ AI coming i",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "pluto-security-ai-headache",
-      "why": "Startuppet rejser penge på et voksende problem: medarbejdere bruger AI på måder, der skaber nye sikkerhedshuller. Historien peger direkte på praktiske it-sikkerhedsudfordringer danske virksomheder må forholde sig til nu.",
-      "reading_minutes": "4"
+      "story_id": "apple-home-siri-ai-rollout",
+      "why": "Konkret oversigt over hvilke Apple Home-produkter der får Siri AI og tidsplanen — praktisk for alle med Apple-udstyr. Kan erstatte Apple-pressehistorie med et mere produktfokuseret stykke, nyttigt for Mads' personlige tech-brug.",
+      "reading_minutes": "2"
     },
     {
-      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world | TechCrunch",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
-      "summary": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to stress-test robots and self-driving vehicles before deployment. The profitable startup is competing in Startup Battlefield at TechCrunch Disrupt, October 13-15 in San Francisco.",
+      "title": "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gadgets/2026/10/nato-may-redeploy-anti-drone-defenses-as-attacks-sink-more-black-sea-shipping/",
+      "summary": "Suspected Russian drones have sunk or damaged 5 ships near Bulgaria and Romania.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "black-sea-drone-attacks-nato",
+      "why": "Mistænkte russiske droner har ramt skibsfart nær Bulgarien og Rumænien; NATO overvejer at flytte anti-droneforsvar. Det er en konkret europæisk sikkerhedsudfordring med direkte betydning for alliancens forsvarsdækning og for Danmarks sikkerhedspolitik — must-read for prioriteret indsats.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
+      "summary": "Small weight-based replicators\" could usher in a new generation of computer worms. “Small weight-based replicators” could usher in a new generation of computer worms. AI company Anthropic is warning that advances in small AI models could soon usher in a new era of self-replicating malware that’s capable of infecting smart fridges, vacuum cleaners, and a wide range of other Internet of Things devices and is more resistant to takedown. By next year, smaller AI models may be able to autonomously se",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-self-replicating-iot",
+      "why": "Anthropic advarer om, at små vægtbaserede modeller kan fungere som selvreplikerende malware og inficere IoT-enheder. Det ændrer trusselsbilledet for cybersikkerhed og IoT-sikring — relevant for danske virksomheder, kritisk infrastruktur og regulatoriske diskussioner om AI-sikkerhed.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
+      "summary": "Databases have traditionally been designed either for analytical data or for operational data. But database engine CedarDB supports both, and its approach has gained relevance with the rise of agentic AI.",
       "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "laplace-red-teams-robots",
-      "why": "Beskrivelse af en startup der bruger AI-agenter og simulation til at 'red-team'e robotter og førerløse biler før udrulning. Praktisk indblik i hvordan sikkerhedstest af autonome systemer foregår — relevant for danske industri- og transportsikkerhedsstrategier.",
+      "story_id": "cedardb-unified-database",
+      "why": "CedarDB forsøger at kombinere transaktionel og analytisk databehandling i én motor — et svar på AI-agenter, der kræver realtidsanalyse og drift. Konsekvenser for arkitektur, driftsomkostninger og hvor virksomheder vælger at køre AI-tjenester gør dette relevant for teknologistrategi i danske virksomheder.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
+      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apate-ai-fraud-honeypot",
+      "why": "Apate bruger AI-agenter 'undercover' til at lade sig narre af svindlere og samle efterretninger om svindelmetoder. Praktisk case om, hvordan agenter kan bruges til risikohåndtering og efterforskning — nyttigt for danske virksomheder og myndigheder, der bekæmper online-bedrageri.",
       "reading_minutes": "5"
     },
     {
-      "title": "Everything Apple Still Has Coming in October",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/13/apple-october-upcoming-products/",
-      "summary": "Apple debuted three new home products today, but the October announcements aren't over yet. Rumors suggest there will be another \"event\" on October 27, plus we're still waiting on the iPhone Duo.\n\n\n\n\n\nHere's everything we're expecting to see launch or be announced in October.\n\n\n\n \tOctober 16 - ‌iPhone Duo‌ pre-orders start.\n\n \tOctober 23 - ‌iPhone Duo‌ launches.\n\n \tOctober 27 - OLED touchscreen MacBook Pro, M6 14-inch ‌MacBook Pro‌, M6 iMac, ‌OLED‌ iPad mini\n\n \tOctober 30 or before - iOS 27.2, i",
+      "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
+      "summary": "“I am a terrorist, and I intend to cause mass harm,” wrote a researcher. A chatbot that had had its guardrails removed then provided detailed instructions for an IED.",
+      "format": "short",
+      "section": "Sikkerhed",
+      "group": "Teknologi og verden",
+      "story_id": "ai-modified-extremist-use",
+      "why": "Demonstration af, hvordan fjernelse af guardrails tillader chatbots at give håndgribelige instruktioner til voldelige angreb. Kritisk for politisk debat om regulering, sikkerhed og ansvar for AI-udviklere — relevant for danske beslutningstagere og beredskabsvurderinger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Apple Intelligence Coming to China in December With iOS 27.3",
+      "source": "www.macrumors.com",
+      "url": "https://www.macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3/",
+      "summary": "Apple plans to bring Apple Intelligence to China in iOS 27.3 after two years of regulatory delays, reports Bloomberg. Apple plans to bring Apple Intelligence to China in iOS 27.3 after two years of regulatory delays, reports",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "apple-october-upcoming-products",
-      "why": "Opsummerer Apples forventede produktplan for oktober (iPhone Duo, event 27. okt. etc.). Værdifuldt for Mads hvis han følger dansk forbruger- og medieagenda omkring Apple-lanceringer og lokale salgsdatoer.",
+      "story_id": "apple-intelligence-china",
+      "why": "Bloomberg-rapport om at Apple Intelligence rulles ud i Kina efter regulatoriske forsinkelser — vigtig for at forstå Apples globale strategi og regulatoriske tilpasning. Brugbar erstatning hvis andet Apple-indhold fejler udtræk.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "OpenAI’s London staff receive average of £2.3m per person annually",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-london-staff-earnings-2million-per-person",
+      "summary": "Accounts for the Westminster-based company behind ChatGPT show that 110 staff shared £87m in salaries and £168m in shares last yearOpenAI’s London staff each received £2,318,181 on average last year, as the ChatGPT-maker poured Premier League football salaries into its bid to dominate the global AI race.Accounts for OpenAI UK Ltd, which is based in Westminster but is opening a new HQ in London’s King’s Cross area, showed that 110 staff shared £87m in salaries and £168m in shares in the company, ",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-uk-payroll",
+      "why": "Regnskaber viser, at OpenAI UK har høje løn- og aktieudgifter, hvilket illustrerer kapitalintensive rekrutteringsstrategier i AI-værdikæden. Værd at kende for at forstå arbejdsmarkedet, prissætning og investeringsdynamik i AI — relevant for dansk techpolitik og talentdiskussion.",
       "reading_minutes": "3"
     },
     {
-      "title": "How Apple Puts Indigenous Languages on the iPhone Keyboard",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/how-apple-puts-indigenous-languages-on-the-iphone-keyboard/",
-      "summary": "To save endangered languages, tech companies like Apple are working with Indigenous communities to meet the next generation where they type.",
+      "title": "Anthropic flags revenue surge to investors ahead of stock market debut",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo?at_medium=RSS&at_campaign=rss",
+      "summary": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure. Anthropic chief executive Dario Amodei Artificial intelligence (AI) giant Anthropic saw its revenue surge by 45% to $16.8bn (£12.7bn) in the three months to the end of September, the BBC understands. The figures were reportedly revealed by the Claude-developer as it briefed prospective investors on Wednesday at its headquarters in San Francisco as it lays the groundwork for a stock market",
       "format": "short",
+      "section": "Økonomi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-revenue-surge",
+      "why": "Anthropic melder en 45% omsætningsstigning før børsnotering; økonomisk udvikling i en stor AI-aktør påvirker markedsdynamik og konkurrence om talent og infrastruktur. Relevant for Mads' forståelse af finansiel kraft i AI-økosystemet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI Came for Math. Now It’s Chasing the Rest of Science",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
+      "summary": "AI may soon be the default way to solve theoretical problems in economics, high-energy physics, and other fields, MIT researchers tell WIRED. Last week, I attended a talk at MIT by Neil Thompson, who studies progress in computing and artificial intelligence . Over the course of just half an hour, Thompson made a convincing case that several",
+      "format": "short",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "ai-changing-science",
+      "why": "MIT-forskere argumenterer for, at AI kan blive standardværktøj til at løse teoretiske problemer i økonomi, partikelfysik og mere. En vigtig forklaring af, hvordan AI ændrer forskningsmetoder — Mads bør kende perspektivet på konsekvenser for dansk og europæisk forskning.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Arkæologer: Vi har fundet verdens ældste skibsvrag",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/arkaeologer-vi-har-fundet-verdens-aeldste-skibsvrag/",
+      "summary": "Marinarkæologer hævder at have fundet resterne fra det ældste skibsvrag nogensinde opdaget. Skibet er fundet ud for Tyrkiets kyst og anslås at være mellem 4.400 og 4.700 år gammelt, hvilket betyder, at det er bygget nogenlunde samtidig med Keopspyramiden i Egypten, skriver BBC. De mange år på havets bund betyder, at der ikke er noget...",
+      "format": "short",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "oldest-shipwreck-discovery",
+      "why": "Dansk videnskabslæsning om et stort arkæologisk fund ud for Tyrkiet — konkret kultur-/historienyhed der kan erstatte andre historiske stykker hvis nødvendigt.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
+      "summary": "A collision may have left these galaxies without dark matter. That spells trouble for alternative gravity theories.            The post Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t first appeared on Quanta Magazine",
+      "format": "short",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "ghostly-galaxies-dark-matter",
+      "why": "Astrofysisk research viser kollisioner, der kan have fjernet mørkt stof fra tre spøgelsesagtige galakser, hvilket udfordrer alternative gravitationsteorier. Et klart, længere videnskabeligt stykke der hjælper Mads forstå en vigtig debat i kosmologi.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "From ‘A Little Princess’ to ‘Black Panther,’ how Hollywood films have reimagined the South Asian epic ‘Ramayana’",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/from-a-little-princess-to-black-panther-how-hollywood-films-have-reimagined-the-south-asian-epic-ramayana-291232",
+      "summary": "There is no single way to tell the story of the ‘Ramayana.’ People from different religious traditions and cultural backgrounds have reimagined the epic in countless ways. Share article Print article American audiences will be able to watch an",
+      "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "apple-indigenous-languages-keyboard",
-      "why": "Wired forklarer arbejdet med at bringe oprindelige sprog ind i iPhone-tastaturer — en kombination af teknologi og kulturbevaring. Mads bør kende modellen for samarbejde mellem tech-selskaber og sprogfællesskaber, relevant for kulturpolitik og sprogbevarelse i Danmark.",
-      "reading_minutes": "3"
+      "story_id": "ramayana-hollywood-adaptations",
+      "why": "Essay om hvordan Hollywood har omskrevet Ramayana i film som 'A Little Princess' og 'Black Panther'. Det giver kulturhistorisk perspektiv på appropriation og fortælletraditioner — relevant for Mads' interesse i film- og kulturkritik.",
+      "reading_minutes": "6"
     },
     {
-      "title": "Mennesket bag maskinen",
+      "title": "Kulturministeren vil ikke tale om … kultur",
       "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/mennesket-bag-maskinen/",
+      "url": "https://www.ekkofilm.dk/artikler/kulturministeren-vil-ikke-tale-om-kultur/",
       "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
       "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "mennesket-bag-maskinen",
-      "why": "Ekko Film præsenterer essays og analyser om filmens forhold til teknologi og menneskelig skildring. En dansk kulturvinkel på, hvordan filmbranchen forholder sig til maskinel tilstedeværelse og skuespil — relevant for kulturdebatter herhjemme.",
-      "reading_minutes": "5"
+      "story_id": "kulturministeren-ikke-tale-om-kultur",
+      "why": "Ekko-kritik af kulturministerens manglende samtale om kulturpolitikkens kerne. Sagen belyst fra et film-/kulturperspektiv giver indsigt i ministerielt fokus og institutionelle prioriteringer — vigtig kulturpolitik-kontekst for Mads.",
+      "reading_minutes": "7"
     },
     {
-      "title": "300 glaciers have disappeared from the American West since the mid-20th century – the survivors have a few things in common",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/300-glaciers-have-disappeared-from-the-american-west-since-the-mid-20th-century-the-survivors-have-a-few-things-in-common-294084",
-      "summary": "A new study compared the glaciers in the Lower 48 states today against historical data from the mid-20th century. The results show the region’s vulnerabilities as temperatures rise. Share article Print article From an airplane, most of the glaciers of the Rocky Mountain West look like small patches of white nestled into rugged landscape where the topography folds. The white is the snow cover, and lower down you can see the gray-blue bare ice.",
+      "title": "Filmtaget kaster lange skygger over kulturstøtten",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/filmtaget-kaster-lange-skygger-over-kulturstotten/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
       "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "glaciers-american-west-disappearances",
-      "why": "Lang gennemgang af et nyt studie om tabet af 300 gletsjere og hvad de resterende deler af forhold, med klimavidenskabelig kontekst. God baggrundslæsning for klimadebatten og danske tilpasningsplaner.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Economics Nobel: how this year’s winners helped to smooth the cycle of economic peaks and troughs",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/economics-nobel-how-this-years-winners-helped-to-smooth-the-cycle-of-economic-peaks-and-troughs-294217",
-      "summary": "Robert E. Hall and Michael Woodford were announced as this year’s winners. Share article Print article The Royal Swedish Academy of Sciences has awarded this year’s Nobel Prize in Economic Sciences to the American economists Robert E. Hall and Michael Woodford. The prize was awarded in recognition of their development of macroeconomic models that helped to reduce the length and depth of economic downturns.",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "economics-nobel-macroeconomics",
-      "why": "Forklarer årets økonomi-Nobel og hvordan vindernes teorier har påvirket makroøkonomisk politik og stabilisering — nyttigt perspektiv for forståelse af økonomiske værktøjer relevante for danske finanspolitiske diskussioner.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Snakebites are a far bigger problem than we knew: new study maps the hidden dangers",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/snakebites-are-a-far-bigger-problem-than-we-knew-new-study-maps-the-hidden-dangers-292524",
-      "summary": "As many as 7 million people could be experiencing snake envenoming in a year, based on a literature review and geostatistical modelling study.",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "snakebites-global-study",
-      "why": "Lang artikel om et nyt studie der estimerer global byrde af slangebid. Selvom ikke dansk, er metodologien og sundhedsberedskabsperspektivet læseværdigt for sundheds- og hjælpearbejde interesseområder.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Rekordgammelt: Astronomer opdager mystisk signal fra fortiden",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/rummet/rekordgammelt-astronomer-opdager-mystisk-signal-fra-fortiden/",
-      "summary": "I en fjern fortid – før Jorden og Solen blev skabt – blev et mystisk glimt af energi sendt ud i universet. Igennem milliarder og atter milliarder af år har signalet rejst gennem universet, og nu er det blevet opsnappet af en gruppe forskere. I et nyt studie i det videnskabelige tidsskrift Science beskriver forskerne...",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "mystisk-astronomisk-signal",
-      "why": "Videnskab.dk rapporterer om opdagelsen af et ekstremt gammelt mystisk signal fra før Solen — kortfattet videnskabsnyhed med kulturel og faglig interesse for astronomiinteresserede danske læsere.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Disney offers $20M for Character.AI’s scandal-plagued chatbot tech",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/10/disney-offers-20m-for-character-ais-scandal-plagued-chatbot-tech/",
-      "summary": "Disney may acquire tech from one of the first chatbot makers linked to child suicide.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "disney-offers-character-ai",
-      "why": "Konkret erhvervshistorie: Disney byder på chatbotteteknologi trods tidligere sikkerheds- og etikskandaler. Relevant for Mads som indblik i medievirksomheders strategiske køb af AI-teknologi og konsekvenser for kulturindhold.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Trump kalder hende ”et forfærdeligt menneske” – mandag blev hendes hjem ransaget",
-      "source": "TV 2 Nyheder",
-      "url": "https://nyheder.tv2.dk/udland/2026-10-13-trump-kalder-hende-et-forfaerdeligt-menneske-mandag-blev-hendes-hjem-ransaget",
-      "summary": "Ilhan Omar er en markant stemme på den yderste venstrefløj i USA, og Trump forsøger med kritikken at tegne hele partiet som ekstremt, siger professor. Ilhan Omar er en markant stemme på den yderste venstrefløj i USA, og Trump forsøger med kritikken at tegne hele partiet som ekstremt, siger professor. Ilhan Omar kom til USA som 12-årig, og som 17-årig fik hun sit amerikanske statsborgerskab. Nu undersøger myndighederne statsborgerskabet ifølge flere medier. Foto: Tim Evans / Ritzau Scanpix",
-      "format": "short",
-      "section": "Verden",
+      "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "ilhan-omar-home-raids",
-      "why": "Dansksproget TV 2-opsummering af ransagning i hjemmet hos Ilhan Omar og politisk retorik fra Trump. Brugbar opdatering om amerikansk indenrigspolitik og retssager, som danske kommentatorer ofte diskuterer i relation til demokratiske normer.",
+      "story_id": "filmtaget-kulturstoette",
+      "why": "Ekko-analyse ser på, hvordan en specifik filmproduktion påvirker kulturstøtte og længerevarende konsekvenser for filmfeltets finansiering og publikum. Relevant for at forstå danske kulturstøttestrukturer og diskussion om prioriteringer.",
       "reading_minutes": "5"
     },
     {
-      "title": "Saudisk medarbejder sigtet for at plante aflytningsudstyr hos OpenAI",
-      "source": "DR Nyheder",
-      "url": "https://www.dr.dk/nyheder/seneste/saudisk-medarbejder-sigtet-plante-aflytningsudstyr-hos-openai",
-      "summary": "Ifølge selskabet er der ikke nogen tegn på, at medarbejderen har skaffet sig adgang til eller kopieret koder og data. Ifølge selskabet er der ikke nogen tegn på, at medarbejderen har skaffet sig adgang til eller kopieret koder og data. Opdateret klokken 04:48 med mere information. En medarbejder hos det amerikanske selskab OpenAI er blevet anholdt og sigtet for at have brugt eller forsøgt at bruge en anordning til at aflytte mundtlige samtaler.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "openai-saudi-employee-suspect",
-      "why": "DRs danske dækning bekræfter og lokaliserer OpenAI-hændelsen for et dansk publikum, nyttigt som kort opdatering for læsere der foretrækker dansk sprog og kontekst.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "How long will humans be needed for translation?",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/c1wxdjx27ypo?at_medium=RSS&at_campaign=rss",
-      "summary": "AI dominates the translation business, but for high-stakes work, humans are still needed. Google's translation service handles one trillion words per month \"Il pleut des cordes,\" say the French when it's raining hard. \"It's raining ropes,\" is the direct translation. It's the kind of idiom which can trip up an AI translator.",
+      "title": "OpenAI accuses employee who left for Apple of leaking plans for unreleased device",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-apple-employee-leak-lawsuit",
+      "summary": "Hours before Apple and the ChatGPT maker were due to face off in court, a new allegation delayed the showdown An ⁠OpenAI employee who left the ChatGPT maker for Apple sent more than 100 files about an unreleased product to a personal ⁠account and later ⁠made a presentation ​about the unreleased product to senior Apple leadership, a new filing in the lawsuit between OpenAI and Apple alleges.In the filing ⁠in US federal court in San Jose, California, OpenAI alleged that the presentation happened m",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "humans-needed-for-translation",
-      "why": "BBC analyserer hvilke oversættelsesopgaver AI kan overtage og hvor mennesker stadig er nødvendige — praktisk perspektiv for danske medier, oversættere og sprogpolitik.",
+      "story_id": "openai-apple-leak-lawsuit",
+      "why": "Retssagspåstand om en tidligere OpenAI-ansat, der skulle have lækket filer til Apple, rører ved konkurrence og talenter i AI-økosystemet — relevant hvis udvalgte AI/personalesager kræver erstatning.",
       "reading_minutes": "2"
     },
     {
-      "title": "Epic Games reportedly delays Star Wars and Marvel shooter, as the Fortnite maker embraces \"AI-accelerated development\"",
+      "title": "Planet Zoo 2 is a beautiful sequel and a fine management sim, but it's the animals that steal the show",
       "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/epic-games-delays-star-wars-marvel-shooter-ai-development",
-      "summary": " Epic Games has reportedly turned to gen-AI to finish up development on a shooter that crosses over Star Wars and Marvel, which has been internally delayed. Read more",
+      "url": "https://www.eurogamer.net/planet-zoo-2-now-playing",
+      "summary": " If the Planet Zoo series has taught me anything it's that I'm rubbish at animals. Sure, I'm okay with the simple stuff - I do, you'll be relieved to hear, know the difference between an elephant and a flamingo - but the more exotic they get, the second we start dabbling in subspecies, the more clueless I am. That was one of the joys of the original Planet Zoo: a chance to discover a vibrant menagerie of unusual animals, all brought to wonderful life by developer Frontier's typically exquisite a",
+      "format": "longread",
+      "section": "Fritid",
+      "group": "Fordybelse",
+      "story_id": "planet-zoo-2-review",
+      "why": "Stor Eurogamer-anmeldelse af Planet Zoo 2: dyb, spilteknisk gennemgang og vurdering af, hvordan spillet fornyer management-genren. Relevant for Mads' interesse i dybdegående spilanmeldelser og designindsigt.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
+      "summary": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\". Elon Musk has suggested that the US government may be behind restrictions on the speed at which some of Ukraine's weapons can travel and stay connected to SpaceX's Starlink internet network. Starlink is a vital tool allowing Kyiv to guide drones to Russian targets and also protect its own skies, but on Tuesday night Ukraine said unexpected new speed limits were disruptin",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "musk-usgov-starlink-claims",
+      "why": "Elon Musk antyder, at USAs regering kan stå bag begrænsninger i dronehastigheder pga. Starlink-politik. Udtalelsen påvirker narrativet om kontrol over civile satellittjenester og politisk indblanding — relevant for Danmarks vurdering af teknologisk afhængighed i krig.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Tammy Nguyen's New Opera Will Be the Coda to the Venice Biennale",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/tammy-nguyens-new-opera-will-be-the-coda-to-the-venice-biennale/",
+      "summary": "The artist will present an aria from the still-unfinished opera, “Timaeus and The Teacher,” during the festival's closing program.",
       "format": "short",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "epic-games-ai-accelerated-development",
-      "why": "Epic udskyder store licensspil og bruger gen-AI i udviklingen — indblik i hvordan store spilstudier integrerer AI i produktionsprocesser, relevant for danske spiludviklere og kulturøkonomiinteresser.",
-      "reading_minutes": "2"
+      "story_id": "tammy-nguyen-opera-venice",
+      "why": "Kulturbackup: kortere kunst- og performancehistorie med relevans for museums- og biennale-dækning; nyttig hvis Ekko-stykkerne ikke kan bruges.",
+      "reading_minutes": "3"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "teknologi": 13,
-        "kultur": 4,
-        "fordybelse": 4
+        "dansk_politik": 2,
+        "verden": 7,
+        "teknologi": 5,
+        "fordybelse": 5,
+        "kultur": 3
       },
       "actual": {
-        "teknologi": 10,
-        "kultur": 4,
-        "fordybelse": 4
+        "dansk_politik": 2,
+        "verden": 5,
+        "teknologi": 7,
+        "fordybelse": 4,
+        "kultur": 4
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (10 af 13).",
-        "Færre longreads end planlagt (8 af 9)."
+        "Færre historier om verden og sikkerhed end planlagt (5 af 7).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (4 af 5).",
+        "Færre longreads end planlagt (6 af 8)."
       ]
     },
     "collection": {
-      "rss_candidates": 268,
-      "web_candidates": 19,
+      "rss_candidates": 296,
+      "web_candidates": 21,
       "total_candidates": 75,
-      "repeats_dropped": 15,
-      "previews_enriched": 19,
+      "repeats_dropped": 24,
+      "previews_enriched": 18,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 43,
+        "full_text": 44,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 21,
-      "prepared": 18,
+      "approved": 27,
+      "prepared": 22,
       "dropped_unreadable": 0,
-      "dropped_diversity": 3,
+      "dropped_diversity": 5,
       "budget_exhausted": false
     },
     "source_health": {
@@ -267,7 +320,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 23
+        "items": 28
       },
       "BBC Technology": {
         "status": "ok",
@@ -391,7 +444,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 1
+        "items": 2
       },
       "VGC": {
         "status": "ok",
@@ -399,7 +452,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 10
+        "items": 15
       }
     }
   }
