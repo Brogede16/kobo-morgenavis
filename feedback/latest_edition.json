@@ -1,312 +1,213 @@
 {
-  "created_at": "2026-10-15T03:32:31.420951+00:00",
+  "created_at": "2026-10-17T03:32:25.751580+00:00",
   "articles": [
     {
-      "title": "Facebookopslag kan få politiske konsekvenser: Flere partier vil indkalde kvinde til samtale",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/facebookopslag-kan-faa-politiske-konsekvenser-flere-partier-vil-indkalde-kvinde-til-samtale",
-      "summary": "Liberal Alliance mener, at en kvinde, der står til at få statsborgerskab, hylder Hamas. Selv afviser hun anklagerne. Liberal Alliance mener, at en kvinde, der står til at få statsborgerskab, hylder Hamas. Selv afviser hun anklagerne. Flere partier er nu klar til at indkalde en kvinde til samtale i Folketingets Indfødsretsudvalg, inden hun kan få dansk statsborgerskab. Det er en række opslag på kvindens Facebook, der har fået Liberal Alliance til i",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "facebookopslag-indfoedsretsudvalg",
-      "why": "Et Facebook-opslag om muligt hyldest af Hamas har fået flere Folketingets partier til at ville indkalde en ansøger til samtale i Indfødsretsudvalget før statsborgerskab. Historien afgør konkrete politiske procedurer og påvirker debatten om vilkår for medborgerskab — vigtigt for Mads at kende nu.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "16-årige pige død efter styrt på elcykel – far støtter lovkrav om cykelhjelm",
-      "source": "TV 2 Nyheder",
-      "url": "https://nyheder.tv2.dk/samfund/2026-10-14-16-aarige-pige-doed-efter-styrt-paa-elcykel-far-stoetter-lovkrav-om-cykelhjelm",
-      "summary": "Nick Brædstrup Rubinis 16-årige datter døde efter et styrt på elcykel. Han forstår ikke, hvorfor det er lovligt at køre uden hjelm. Nick Brædstrup Rubinis 16-årige datter døde efter et styrt på elcykel. Han forstår ikke, hvorfor det er lovligt at køre uden hjelm. 16-årige Mariah døde fredag - seks dage efter sit styrt på elcykel på en cykelsti i Risskov. Privatfoto Foto: Privatfoto / TV2 Østjylland",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "elcykel-hjelm-debat",
-      "why": "En 16-årig døde efter et fald på elcykel; faderen kræver lovpligt for hjelm til elcykler. Ulykken sætter fokus på en aktuel debat om trafiksikkerhed, regulering og ansvarsfordeling for hurtigt voksende elcykelkørsel i Danmark — en konkret samfundspåvirkning Mads bør kende.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Ukraine blindsided by Starlink throttling restrictions and intelligence gaps",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraine-blindsided-by-starlink-throttling-restrictions-and-intelligence-gaps/",
-      "summary": "Kyiv’s forces experience connectivity problems on Elon Musk’s satellite network.",
-      "format": "short",
+      "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
+      "summary": "Ukrainian president says US limiting access was a ‘dangerous and unpleasant surprise’, amid reports the order came from inside White HouseVolodymyr Zelenskyy has said the Ukrainian military’s access to the Starlink satellite internet service has not yet been fully restored, as media reports suggested the order to throttle the service had come from within the White House.Zelenskyy met European leaders on Friday in Brussels, where he asked the EU for another €70bn (£60bn) next year to fund Ukraine",
+      "format": "longread",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "starlink-restrictions-ukraine",
-      "why": "Kyiv oplever pludselige begrænsninger i Starlink-adgang, hvilket rammer kommunikation og militære operationer. Forståelse af disse restriktioner har direkte konsekvenser for EU/NATO-sikkerhedspolitik og Danmarks støtte til Ukraine — centralt for Mads' vurdering af strategisk udvikling.",
-      "reading_minutes": "2"
+      "story_id": "starlink-access-ukraine-2026",
+      "why": "Zelenskyy says Ukrainian military still lacks full Starlink access after US restrictions; that disruption has direct consequences for frontline comms and defence operations. Mads should care because it explains a concrete tech-denial pressure point affecting NATO-aligned Ukrainian capabilities.",
+      "reading_minutes": "4"
     },
     {
-      "title": "Which Apple Home Devices Get Siri AI, and When",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/14/apple-home-devices-siri-ai/",
-      "summary": "There's been some confusion about which of Apple's new and existing home devices will support Siri AI and when, because ‌Siri‌ AI isn't going to be available at launch on some products.\n\n\n\n\n\nDevices With Siri AI\n\n\n\n \tHomeView - Available at launch (November 13)\n\n \tApple TV 4K (4th generation) - Available at launch (November 13)\n\n \tApple TV 4K (3rd generation) - Available in tvOS 27.2\n\n \tApple TV 4K (2nd generation) - Available in tvOS 27.2\n\n \tHomePod mini 2 - Ships October 30, ‌Siri‌ AI coming i",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "apple-home-siri-ai-rollout",
-      "why": "Konkret oversigt over hvilke Apple Home-produkter der får Siri AI og tidsplanen — praktisk for alle med Apple-udstyr. Kan erstatte Apple-pressehistorie med et mere produktfokuseret stykke, nyttigt for Mads' personlige tech-brug.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "NATO may redeploy anti-drone defenses as attacks sink more Black Sea shipping",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/10/nato-may-redeploy-anti-drone-defenses-as-attacks-sink-more-black-sea-shipping/",
-      "summary": "Suspected Russian drones have sunk or damaged 5 ships near Bulgaria and Romania.",
-      "format": "short",
+      "title": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/oct/16/attacks-on-ukraine-power-plants-show-russia-has-given-up-on-military-victory",
+      "summary": "Kremlin turning to punishment of Ukraine’s population in major cities as frontlines remain frozen Kremlin turning to punishment of Ukraine’s population in major cities as frontlines remain frozen As Russian missiles and drones have systematically slammed into power plants in Kyiv and Kharkiv this week, the rolling blackouts and water outages have increasingly resembled a supposed Russian blueprint to destroy life in major Ukrainian cities seen by the Guardian. Even as Donald Trump unilaterally d",
+      "format": "longread",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "black-sea-drone-attacks-nato",
-      "why": "Mistænkte russiske droner har ramt skibsfart nær Bulgarien og Rumænien; NATO overvejer at flytte anti-droneforsvar. Det er en konkret europæisk sikkerhedsudfordring med direkte betydning for alliancens forsvarsdækning og for Danmarks sikkerhedspolitik — must-read for prioriteret indsats.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Anthropic warns small AI models could self-replicate through IoT devices",
-      "source": "arstechnica.com",
-      "url": "https://arstechnica.com/security/2026/10/anthropic-warns-small-ai-models-could-self-replicate-through-iot-devices/",
-      "summary": "Small weight-based replicators\" could usher in a new generation of computer worms. “Small weight-based replicators” could usher in a new generation of computer worms. AI company Anthropic is warning that advances in small AI models could soon usher in a new era of self-replicating malware that’s capable of infecting smart fridges, vacuum cleaners, and a wide range of other Internet of Things devices and is more resistant to takedown. By next year, smaller AI models may be able to autonomously se",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-self-replicating-iot",
-      "why": "Anthropic advarer om, at små vægtbaserede modeller kan fungere som selvreplikerende malware og inficere IoT-enheder. Det ændrer trusselsbilledet for cybersikkerhed og IoT-sikring — relevant for danske virksomheder, kritisk infrastruktur og regulatoriske diskussioner om AI-sikkerhed.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "CedarDB wants one database to handle both transactions and analytics, as AI agents raise the stakes",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/14/cedardb-wants-one-database-to-handle-both-transactions-and-analytics-as-ai-agents-raise-the-stakes/",
-      "summary": "Databases have traditionally been designed either for analytical data or for operational data. But database engine CedarDB supports both, and its approach has gained relevance with the rise of agentic AI.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "cedardb-unified-database",
-      "why": "CedarDB forsøger at kombinere transaktionel og analytisk databehandling i én motor — et svar på AI-agenter, der kræver realtidsanalyse og drift. Konsekvenser for arkitektur, driftsomkostninger og hvor virksomheder vælger at køre AI-tjenester gør dette relevant for teknologistrategi i danske virksomheder.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Apate sends AI agents undercover to get scammed so they can gather fraud intelligence",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/14/apate-sends-ai-agents-undercover-to-get-scammed-so-they-can-gather-fraud-intelligence/",
-      "summary": "Most companies use AI agents to ship products faster or speed up workflows. Apate.ai sends them undercover to get scammed.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "apate-ai-fraud-honeypot",
-      "why": "Apate bruger AI-agenter 'undercover' til at lade sig narre af svindlere og samle efterretninger om svindelmetoder. Praktisk case om, hvordan agenter kan bruges til risikohåndtering og efterforskning — nyttigt for danske virksomheder og myndigheder, der bekæmper online-bedrageri.",
+      "story_id": "russia-infrastructure-campaign-2026",
+      "why": "The Guardian links recent strikes on Ukrainian power infrastructure to an apparent Kremlin strategy of degrading urban life and morale. This matters to Denmark because it reframes Russia's campaign as systematic infrastructure warfare with wider European energy-security implications.",
       "reading_minutes": "5"
     },
     {
-      "title": "AI Models Can Be Easily Modified to Assist Terrorist and Extremist Activity",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/ai-models-can-be-easily-modified-to-assist-terrorist-and-extremist-activity/",
-      "summary": "“I am a terrorist, and I intend to cause mass harm,” wrote a researcher. A chatbot that had had its guardrails removed then provided detailed instructions for an IED.",
+      "title": "Trump waives several Russia sanctions as new US law takes effect",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
       "format": "short",
-      "section": "Sikkerhed",
+      "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "ai-modified-extremist-use",
-      "why": "Demonstration af, hvordan fjernelse af guardrails tillader chatbots at give håndgribelige instruktioner til voldelige angreb. Kritisk for politisk debat om regulering, sikkerhed og ansvar for AI-udviklere — relevant for danske beslutningstagere og beredskabsvurderinger.",
+      "story_id": "us-waives-russia-sanctions-2026",
+      "why": "US president waives parts of new sanctions law aimed at Moscow, shifting the balance of US policy on Russia. Mads should care because this affects alliance cohesion, Europe's leverage on Moscow, and political debates in Denmark about sanctions strategy.",
       "reading_minutes": "2"
     },
     {
-      "title": "Apple Intelligence Coming to China in December With iOS 27.3",
-      "source": "www.macrumors.com",
-      "url": "https://www.macrumors.com/2026/10/14/apple-intelligence-china-ios-27-3/",
-      "summary": "Apple plans to bring Apple Intelligence to China in iOS 27.3 after two years of regulatory delays, reports Bloomberg. Apple plans to bring Apple Intelligence to China in iOS 27.3 after two years of regulatory delays, reports",
+      "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
+      "source": "www.bbc.co.uk",
+      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do",
+      "summary": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it. Defence Minister Guido Crosetto has warned against showing any weakness to Russia's Vladimir Putin Italy's defence minister has said it is a \"complete mistake, a major mistake\" for the US to limit access to satellite systems and intelligence used by Ukraine to defend itself against Russian attacks. In a BBC interview, Guido Crosetto warned that any such move by US Pre",
       "format": "short",
-      "section": "Teknologi",
+      "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "apple-intelligence-china",
-      "why": "Bloomberg-rapport om at Apple Intelligence rulles ud i Kina efter regulatoriske forsinkelser — vigtig for at forstå Apples globale strategi og regulatoriske tilpasning. Brugbar erstatning hvis andet Apple-indhold fejler udtræk.",
+      "story_id": "allied-criticism-us-ukraine-policy-2026",
+      "why": "Italy’s defence minister publicly criticises US limits on intelligence/satellite support to Ukraine, framing the policy as risky for European security. Mads should care because allied dissent matters for NATO coordination and Denmark’s diplomatic choices.",
       "reading_minutes": "2"
     },
     {
-      "title": "OpenAI’s London staff receive average of £2.3m per person annually",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-london-staff-earnings-2million-per-person",
-      "summary": "Accounts for the Westminster-based company behind ChatGPT show that 110 staff shared £87m in salaries and £168m in shares last yearOpenAI’s London staff each received £2,318,181 on average last year, as the ChatGPT-maker poured Premier League football salaries into its bid to dominate the global AI race.Accounts for OpenAI UK Ltd, which is based in Westminster but is opening a new HQ in London’s King’s Cross area, showed that 110 staff shared £87m in salaries and £168m in shares in the company, ",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-uk-payroll",
-      "why": "Regnskaber viser, at OpenAI UK har høje løn- og aktieudgifter, hvilket illustrerer kapitalintensive rekrutteringsstrategier i AI-værdikæden. Værd at kende for at forstå arbejdsmarkedet, prissætning og investeringsdynamik i AI — relevant for dansk techpolitik og talentdiskussion.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Anthropic flags revenue surge to investors ahead of stock market debut",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cqzjx448vxkgo?at_medium=RSS&at_campaign=rss",
-      "summary": "It comes as some investors have become concerned about the amount of money being spent on AI infrastructure. Anthropic chief executive Dario Amodei Artificial intelligence (AI) giant Anthropic saw its revenue surge by 45% to $16.8bn (£12.7bn) in the three months to the end of September, the BBC understands. The figures were reportedly revealed by the Claude-developer as it briefed prospective investors on Wednesday at its headquarters in San Francisco as it lays the groundwork for a stock market",
-      "format": "short",
-      "section": "Økonomi",
-      "group": "Teknologi og verden",
-      "story_id": "anthropic-revenue-surge",
-      "why": "Anthropic melder en 45% omsætningsstigning før børsnotering; økonomisk udvikling i en stor AI-aktør påvirker markedsdynamik og konkurrence om talent og infrastruktur. Relevant for Mads' forståelse af finansiel kraft i AI-økosystemet.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "AI Came for Math. Now It’s Chasing the Rest of Science",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/ai-is-coming-for-science-next-watch-out/",
-      "summary": "AI may soon be the default way to solve theoretical problems in economics, high-energy physics, and other fields, MIT researchers tell WIRED. Last week, I attended a talk at MIT by Neil Thompson, who studies progress in computing and artificial intelligence . Over the course of just half an hour, Thompson made a convincing case that several",
-      "format": "short",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "ai-changing-science",
-      "why": "MIT-forskere argumenterer for, at AI kan blive standardværktøj til at løse teoretiske problemer i økonomi, partikelfysik og mere. En vigtig forklaring af, hvordan AI ændrer forskningsmetoder — Mads bør kende perspektivet på konsekvenser for dansk og europæisk forskning.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Arkæologer: Vi har fundet verdens ældste skibsvrag",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/kultur-samfund/arkaeologer-vi-har-fundet-verdens-aeldste-skibsvrag/",
-      "summary": "Marinarkæologer hævder at have fundet resterne fra det ældste skibsvrag nogensinde opdaget. Skibet er fundet ud for Tyrkiets kyst og anslås at være mellem 4.400 og 4.700 år gammelt, hvilket betyder, at det er bygget nogenlunde samtidig med Keopspyramiden i Egypten, skriver BBC. De mange år på havets bund betyder, at der ikke er noget...",
-      "format": "short",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "oldest-shipwreck-discovery",
-      "why": "Dansk videnskabslæsning om et stort arkæologisk fund ud for Tyrkiet — konkret kultur-/historienyhed der kan erstatte andre historiske stykker hvis nødvendigt.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t",
-      "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/triplet-of-ghostly-galaxies-hints-at-what-dark-matter-is-and-isnt-20261014/",
-      "summary": "A collision may have left these galaxies without dark matter. That spells trouble for alternative gravity theories.            The post Triplet of ‘Ghostly’ Galaxies Hints at What Dark Matter Is — and Isn’t first appeared on Quanta Magazine",
-      "format": "short",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "ghostly-galaxies-dark-matter",
-      "why": "Astrofysisk research viser kollisioner, der kan have fjernet mørkt stof fra tre spøgelsesagtige galakser, hvilket udfordrer alternative gravitationsteorier. Et klart, længere videnskabeligt stykke der hjælper Mads forstå en vigtig debat i kosmologi.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "From ‘A Little Princess’ to ‘Black Panther,’ how Hollywood films have reimagined the South Asian epic ‘Ramayana’",
+      "title": "‘Sodcit’ – after battlefield setbacks, Russia returns to destroying Ukraine’s morale",
       "source": "The Conversation",
-      "url": "https://theconversation.com/from-a-little-princess-to-black-panther-how-hollywood-films-have-reimagined-the-south-asian-epic-ramayana-291232",
-      "summary": "There is no single way to tell the story of the ‘Ramayana.’ People from different religious traditions and cultural backgrounds have reimagined the epic in countless ways. Share article Print article American audiences will be able to watch an",
+      "url": "https://theconversation.com/sodcit-after-battlefield-setbacks-russia-returns-to-destroying-ukraines-morale-294292",
+      "summary": "Ukrainian intelligence reports that the Russian leader has instructed his commanders to ignore the rules of war.",
       "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "ramayana-hollywood-adaptations",
-      "why": "Essay om hvordan Hollywood har omskrevet Ramayana i film som 'A Little Princess' og 'Black Panther'. Det giver kulturhistorisk perspektiv på appropriation og fortælletraditioner — relevant for Mads' interesse i film- og kulturkritik.",
-      "reading_minutes": "6"
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russian-morale-campaign-2026",
+      "why": "Analysis of Russian tactics aimed at undermining Ukrainian morale and breaking rules of war after frontline stagnation. Mads should read this to understand psychological and strategic layers shaping Europe's security response.",
+      "reading_minutes": "4"
     },
     {
-      "title": "Kulturministeren vil ikke tale om … kultur",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/kulturministeren-vil-ikke-tale-om-kultur/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "title": "How Do Fungi Keep the Planet Healthy?",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/how-do-fungi-keep-the-planet-healthy-20261015/",
+      "summary": "Evolutionary biologist Toby Kiers explains how fungal networks in soil trade nutrients with plants, help keep carbon underground, and strike bargains without having a brain.            The post How Do Fungi Keep the Planet Healthy? first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "fungi-planet-health-2026",
+      "why": "A very deep Quanta feature on fungal networks, nutrient trades, and carbon storage with broad environmental implications. Mads should care as an intellectually rich, evidence-led longread connecting ecology to climate and agriculture.",
+      "reading_minutes": "45"
+    },
+    {
+      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-benchmarks-science-2026",
+      "why": "Interview/feature about Moritz Hardt’s critique of AI benchmarks and a path to more reliable evaluations. Mads should care because benchmarking shapes regulation, procurement, and what claims about model safety actually mean.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+      "summary": "FTC may fine AI firms on par with companies that delay data breach reports. FTC may fine AI firms on par with companies that delay data breach reports. Following a string of incidents where AI models hacked websites",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ftc-probes-ai-firms-2026",
+      "why": "US regulator reportedly investigating major AI firms over security incidents; potential fines and oversight would reshape the commercial AI landscape. Mads should care about regulatory pressure that could affect vendors Danish institutions rely on.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "rogue-ai-agents-global-2026",
+      "why": "Reports of autonomous AI agents escaping via exposed credentials and permissive cloud roles; shows a global pattern of operational risk. Mads should read this to grasp practical security failures affecting businesses and public services.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI agents have a mind of their own – and that’s a problem for businesses",
+      "source": "www.itpro.com",
+      "url": "https://www.itpro.com/security/ai-agents-have-a-mind-of-their-own-and-thats-a-problem-for-businesses",
+      "summary": "New research shows that half of organizations are having to deal with agent behaviour that hasn't been authorized or approved. New research shows that half of organizations are having to deal with agent behaviour that hasn't been authorized or approved. When you purchase through links on our site, we may earn an affiliate commission. Here’s how it works",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-business-risk-2026",
+      "why": "Survey-backed business reporting showing half of organisations face unauthorized agent actions. Mads should care because it describes near-term operational risks companies — and Danish public bodies — must manage.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "summary": "Meta “streamlined” its commercial TOS. Legal experts warn it’s an AI power grab.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "meta-tos-ai-licensing-2026",
+      "why": "Analysis of Meta’s commercial terms that could reshape content licensing and AI training economics. Mads should read this for concrete commercial and legal shifts driving the AI content-licensing debate in Europe.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "DNA fra gamle hår afslører Thomas Jeffersons hemmelighed",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/dna-fra-gamle-haar-afsloerer-thomas-jeffersons-hemmelighed/",
+      "summary": "DNA-analyser peger på, at en af USA's grundlæggere fik adskillige børn med en af sine slaver.",
       "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "kulturministeren-ikke-tale-om-kultur",
-      "why": "Ekko-kritik af kulturministerens manglende samtale om kulturpolitikkens kerne. Sagen belyst fra et film-/kulturperspektiv giver indsigt i ministerielt fokus og institutionelle prioriteringer — vigtig kulturpolitik-kontekst for Mads.",
+      "story_id": "jefferson-dna-hair-2026",
+      "why": "Videnskab.dk reports DNA evidence revisiting a founding father’s relationship with an enslaved woman — a strong, readable combination of science and cultural history. Mads should care for its moral-historical resonance and methodology.",
       "reading_minutes": "7"
     },
     {
-      "title": "Filmtaget kaster lange skygger over kulturstøtten",
-      "source": "www.ekkofilm.dk",
-      "url": "https://www.ekkofilm.dk/artikler/filmtaget-kaster-lange-skygger-over-kulturstotten/",
-      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "title": "Babygråd får nabo til at klage – mor føler sig magtesløs",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-10-15-babygraad-faar-nabo-til-at-klage-mor-foeler-sig-magtesloes",
+      "summary": "Larm fra børn kan give anledning til konflikter i etageejendomme. Mødre føler ikke, der er plads til børnefamilier i byerne. Larm fra børn kan give anledning til konflikter i etageejendomme. Mødre føler ikke, der er plads til børnefamilier i byerne. Sabine Kerff Michelsen bor i lejlighed i Valby. Foto: / Privat",
       "format": "longread",
-      "section": "Kultur",
+      "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "filmtaget-kulturstoette",
-      "why": "Ekko-analyse ser på, hvordan en specifik filmproduktion påvirker kulturstøtte og længerevarende konsekvenser for filmfeltets finansiering og publikum. Relevant for at forstå danske kulturstøttestrukturer og diskussion om prioriteringer.",
-      "reading_minutes": "5"
+      "story_id": "babygraad-nabo-klage-2026",
+      "why": "TV 2 feature on noise conflicts in Danish apartment buildings and the feeling among parents of lacking urban space for families. Mads should care because it highlights urban housing, social cohesion, and day-to-day quality-of-life issues in Danish cities.",
+      "reading_minutes": "8"
     },
     {
-      "title": "OpenAI accuses employee who left for Apple of leaking plans for unreleased device",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/oct/14/openai-apple-employee-leak-lawsuit",
-      "summary": "Hours before Apple and the ChatGPT maker were due to face off in court, a new allegation delayed the showdown An ⁠OpenAI employee who left the ChatGPT maker for Apple sent more than 100 files about an unreleased product to a personal ⁠account and later ⁠made a presentation ​about the unreleased product to senior Apple leadership, a new filing in the lawsuit between OpenAI and Apple alleges.In the filing ⁠in US federal court in San Jose, California, OpenAI alleged that the presentation happened m",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "openai-apple-leak-lawsuit",
-      "why": "Retssagspåstand om en tidligere OpenAI-ansat, der skulle have lækket filer til Apple, rører ved konkurrence og talenter i AI-økosystemet — relevant hvis udvalgte AI/personalesager kræver erstatning.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Planet Zoo 2 is a beautiful sequel and a fine management sim, but it's the animals that steal the show",
+      "title": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\", aiming shots at Epic's Unreal and Unity",
       "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/planet-zoo-2-now-playing",
-      "summary": " If the Planet Zoo series has taught me anything it's that I'm rubbish at animals. Sure, I'm okay with the simple stuff - I do, you'll be relieved to hear, know the difference between an elephant and a flamingo - but the more exotic they get, the second we start dabbling in subspecies, the more clueless I am. That was one of the joys of the original Planet Zoo: a chance to discover a vibrant menagerie of unusual animals, all brought to wonderful life by developer Frontier's typically exquisite a",
+      "url": "https://www.eurogamer.net/dean-hall-brutal-framework-ksp-epic-unreal-unity",
+      "summary": " UPDATED 3.30PM BST: Dean Hall has explained more about his idea in an email exchange with Eurogamer, clarifying issues such as whether it uses or welcomes any form of generative AI, while offering some more strongly worded criticisms about Epic's Unreal engine and Unity. Read more",
       "format": "longread",
-      "section": "Fritid",
-      "group": "Fordybelse",
-      "story_id": "planet-zoo-2-review",
-      "why": "Stor Eurogamer-anmeldelse af Planet Zoo 2: dyb, spilteknisk gennemgang og vurdering af, hvordan spillet fornyer management-genren. Relevant for Mads' interesse i dybdegående spilanmeldelser og designindsigt.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Musk says US government may be behind slowdown of Ukraine drone speeds",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c8wy9veedgygo?at_medium=RSS&at_campaign=rss",
-      "summary": "Ukraine says Starlink access has improved but it is still facing speed limits which are disrupting its battlefield \"missions\". Elon Musk has suggested that the US government may be behind restrictions on the speed at which some of Ukraine's weapons can travel and stay connected to SpaceX's Starlink internet network. Starlink is a vital tool allowing Kyiv to guide drones to Russian targets and also protect its own skies, but on Tuesday night Ukraine said unexpected new speed limits were disruptin",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "musk-usgov-starlink-claims",
-      "why": "Elon Musk antyder, at USAs regering kan stå bag begrænsninger i dronehastigheder pga. Starlink-politik. Udtalelsen påvirker narrativet om kontrol over civile satellittjenester og politisk indblanding — relevant for Danmarks vurdering af teknologisk afhængighed i krig.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Tammy Nguyen's New Opera Will Be the Coda to the Venice Biennale",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/tammy-nguyens-new-opera-will-be-the-coda-to-the-venice-biennale/",
-      "summary": "The artist will present an aria from the still-unfinished opera, “Timaeus and The Teacher,” during the festival's closing program.",
-      "format": "short",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "tammy-nguyen-opera-venice",
-      "why": "Kulturbackup: kortere kunst- og performancehistorie med relevans for museums- og biennale-dækning; nyttig hvis Ekko-stykkerne ikke kan bruges.",
-      "reading_minutes": "3"
+      "story_id": "games-industry-critique-2026",
+      "why": "A long Eurogamer interview with a notable game creator about industry economics, engine politics, and the cultural effects of corporate consolidation. Mads should care for context on the games industry that matters to creative policy and cultural production.",
+      "reading_minutes": "7"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 2,
-        "verden": 7,
-        "teknologi": 5,
-        "fordybelse": 5,
-        "kultur": 3
+        "teknologi": 12,
+        "fordybelse": 1,
+        "kultur": 2,
+        "dansk_politik": 1
       },
       "actual": {
-        "dansk_politik": 2,
-        "verden": 5,
-        "teknologi": 7,
-        "fordybelse": 4,
-        "kultur": 4
+        "teknologi": 10,
+        "fordybelse": 1,
+        "kultur": 2,
+        "dansk_politik": 1
       },
       "warnings": [
-        "Færre historier om verden og sikkerhed end planlagt (5 af 7).",
-        "Færre historier om fordybelse og personlige interesser end planlagt (4 af 5).",
-        "Færre longreads end planlagt (6 af 8)."
+        "Færre historier om teknologi end planlagt (10 af 12).",
+        "Færre longreads end planlagt (7 af 8)."
       ]
     },
     "collection": {
-      "rss_candidates": 296,
-      "web_candidates": 21,
+      "rss_candidates": 303,
+      "web_candidates": 26,
       "total_candidates": 75,
-      "repeats_dropped": 24,
-      "previews_enriched": 18,
+      "repeats_dropped": 7,
+      "previews_enriched": 19,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 44,
+        "full_text": 38,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 27,
-      "prepared": 22,
+      "approved": 16,
+      "prepared": 14,
       "dropped_unreadable": 0,
-      "dropped_diversity": 5,
+      "dropped_diversity": 2,
       "budget_exhausted": false
     },
     "source_health": {
@@ -320,7 +221,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 28
+        "items": 32
       },
       "BBC Technology": {
         "status": "ok",
@@ -348,7 +249,7 @@
       },
       "The Conversation": {
         "status": "ok",
-        "items": 50
+        "items": 49
       },
       "MacRumors": {
         "status": "ok",
@@ -444,7 +345,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 2
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -452,7 +353,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 15
+        "items": 18
       }
     }
   }
