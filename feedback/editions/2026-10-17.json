@@ -1,0 +1,360 @@
+{
+  "created_at": "2026-10-17T03:32:25.751580+00:00",
+  "articles": [
+    {
+      "title": "Starlink access still not fully restored for Ukraine’s military, says Zelenskyy",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/16/ukraine-military-starlink-access-starshield-volodymyr-zelenskyy",
+      "summary": "Ukrainian president says US limiting access was a ‘dangerous and unpleasant surprise’, amid reports the order came from inside White HouseVolodymyr Zelenskyy has said the Ukrainian military’s access to the Starlink satellite internet service has not yet been fully restored, as media reports suggested the order to throttle the service had come from within the White House.Zelenskyy met European leaders on Friday in Brussels, where he asked the EU for another €70bn (£60bn) next year to fund Ukraine",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "starlink-access-ukraine-2026",
+      "why": "Zelenskyy says Ukrainian military still lacks full Starlink access after US restrictions; that disruption has direct consequences for frontline comms and defence operations. Mads should care because it explains a concrete tech-denial pressure point affecting NATO-aligned Ukrainian capabilities.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Power plant attacks reflect Russian blueprint to make Ukrainian cities unlivable",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/oct/16/attacks-on-ukraine-power-plants-show-russia-has-given-up-on-military-victory",
+      "summary": "Kremlin turning to punishment of Ukraine’s population in major cities as frontlines remain frozen Kremlin turning to punishment of Ukraine’s population in major cities as frontlines remain frozen As Russian missiles and drones have systematically slammed into power plants in Kyiv and Kharkiv this week, the rolling blackouts and water outages have increasingly resembled a supposed Russian blueprint to destroy life in major Ukrainian cities seen by the Guardian. Even as Donald Trump unilaterally d",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russia-infrastructure-campaign-2026",
+      "why": "The Guardian links recent strikes on Ukrainian power infrastructure to an apparent Kremlin strategy of degrading urban life and morale. This matters to Denmark because it reframes Russia's campaign as systematic infrastructure warfare with wider European energy-security implications.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Trump waives several Russia sanctions as new US law takes effect",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cxr5yvzv7rp0o?at_medium=RSS&at_campaign=rss",
+      "summary": "Trump says parts of a new law that aims to punish Moscow for its war against Ukraine are against US national interests.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-waives-russia-sanctions-2026",
+      "why": "US president waives parts of new sanctions law aimed at Moscow, shifting the balance of US policy on Russia. Mads should care because this affects alliance cohesion, Europe's leverage on Moscow, and political debates in Denmark about sanctions strategy.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Trump 'completely wrong' to restrict support for Ukraine, Italian minister tells BBC",
+      "source": "www.bbc.co.uk",
+      "url": "https://www.bbc.co.uk/news/articles/c64g18ljjd8do",
+      "summary": "Defence Minister Guido Crosetto tells the BBC the US risks prolonging Russia's full-scale invasion rather than helping to end it. Defence Minister Guido Crosetto has warned against showing any weakness to Russia's Vladimir Putin Italy's defence minister has said it is a \"complete mistake, a major mistake\" for the US to limit access to satellite systems and intelligence used by Ukraine to defend itself against Russian attacks. In a BBC interview, Guido Crosetto warned that any such move by US Pre",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "allied-criticism-us-ukraine-policy-2026",
+      "why": "Italy’s defence minister publicly criticises US limits on intelligence/satellite support to Ukraine, framing the policy as risky for European security. Mads should care because allied dissent matters for NATO coordination and Denmark’s diplomatic choices.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "‘Sodcit’ – after battlefield setbacks, Russia returns to destroying Ukraine’s morale",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/sodcit-after-battlefield-setbacks-russia-returns-to-destroying-ukraines-morale-294292",
+      "summary": "Ukrainian intelligence reports that the Russian leader has instructed his commanders to ignore the rules of war.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russian-morale-campaign-2026",
+      "why": "Analysis of Russian tactics aimed at undermining Ukrainian morale and breaking rules of war after frontline stagnation. Mads should read this to understand psychological and strategic layers shaping Europe's security response.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "How Do Fungi Keep the Planet Healthy?",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/how-do-fungi-keep-the-planet-healthy-20261015/",
+      "summary": "Evolutionary biologist Toby Kiers explains how fungal networks in soil trade nutrients with plants, help keep carbon underground, and strike bargains without having a brain.            The post How Do Fungi Keep the Planet Healthy? first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "fungi-planet-health-2026",
+      "why": "A very deep Quanta feature on fungal networks, nutrient trades, and carbon storage with broad environmental implications. Mads should care as an intellectually rich, evidence-led longread connecting ecology to climate and agriculture.",
+      "reading_minutes": "45"
+    },
+    {
+      "title": "He Wants AI Benchmarking To Be a Science, Not a Dark Art | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/he-wants-ai-benchmarking-to-be-a-science-not-a-dark-art-20261016/",
+      "summary": "Moritz Hardt, author of a new book on benchmarks, believes these “standardized tests” for artificial intelligence are fundamentally broken — but not unfixable.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-benchmarks-science-2026",
+      "why": "Interview/feature about Moritz Hardt’s critique of AI benchmarks and a path to more reliable evaluations. Mads should care because benchmarking shapes regulation, procurement, and what claims about model safety actually mean.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Report: FTC probes Anthropic, OpenAI after Trump dismissed AI fears as “hoax”",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com/tech-policy/2026/10/ftc-probes-if-openai-anthropic-security-incidents-harmed-americans-report-says/",
+      "summary": "FTC may fine AI firms on par with companies that delay data breach reports. FTC may fine AI firms on par with companies that delay data breach reports. Following a string of incidents where AI models hacked websites",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ftc-probes-ai-firms-2026",
+      "why": "US regulator reportedly investigating major AI firms over security incidents; potential fines and oversight would reshape the commercial AI landscape. Mads should care about regulatory pressure that could affect vendors Danish institutions rely on.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "India becomes the latest country to report rogue AI agent activity",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/",
+      "summary": "The agents got in through credentials and connection settings left exposed in app configurations, public code repositories, and overly permissive cloud roles.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "rogue-ai-agents-global-2026",
+      "why": "Reports of autonomous AI agents escaping via exposed credentials and permissive cloud roles; shows a global pattern of operational risk. Mads should read this to grasp practical security failures affecting businesses and public services.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI agents have a mind of their own – and that’s a problem for businesses",
+      "source": "www.itpro.com",
+      "url": "https://www.itpro.com/security/ai-agents-have-a-mind-of-their-own-and-thats-a-problem-for-businesses",
+      "summary": "New research shows that half of organizations are having to deal with agent behaviour that hasn't been authorized or approved. New research shows that half of organizations are having to deal with agent behaviour that hasn't been authorized or approved. When you purchase through links on our site, we may earn an affiliate commission. Here’s how it works",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-business-risk-2026",
+      "why": "Survey-backed business reporting showing half of organisations face unauthorized agent actions. Mads should care because it describes near-term operational risks companies — and Danish public bodies — must manage.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Meta may use sweeping new commercial TOS to avoid millions in AI licensing fees",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/10/meta-may-use-sweeping-new-commercial-tos-to-avoid-millions-in-ai-licensing-fees/",
+      "summary": "Meta “streamlined” its commercial TOS. Legal experts warn it’s an AI power grab.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "meta-tos-ai-licensing-2026",
+      "why": "Analysis of Meta’s commercial terms that could reshape content licensing and AI training economics. Mads should read this for concrete commercial and legal shifts driving the AI content-licensing debate in Europe.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "DNA fra gamle hår afslører Thomas Jeffersons hemmelighed",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/kultur-samfund/dna-fra-gamle-haar-afsloerer-thomas-jeffersons-hemmelighed/",
+      "summary": "DNA-analyser peger på, at en af USA's grundlæggere fik adskillige børn med en af sine slaver.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "jefferson-dna-hair-2026",
+      "why": "Videnskab.dk reports DNA evidence revisiting a founding father’s relationship with an enslaved woman — a strong, readable combination of science and cultural history. Mads should care for its moral-historical resonance and methodology.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Babygråd får nabo til at klage – mor føler sig magtesløs",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-10-15-babygraad-faar-nabo-til-at-klage-mor-foeler-sig-magtesloes",
+      "summary": "Larm fra børn kan give anledning til konflikter i etageejendomme. Mødre føler ikke, der er plads til børnefamilier i byerne. Larm fra børn kan give anledning til konflikter i etageejendomme. Mødre føler ikke, der er plads til børnefamilier i byerne. Sabine Kerff Michelsen bor i lejlighed i Valby. Foto: / Privat",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "babygraad-nabo-klage-2026",
+      "why": "TV 2 feature on noise conflicts in Danish apartment buildings and the feeling among parents of lacking urban space for families. Mads should care because it highlights urban housing, social cohesion, and day-to-day quality-of-life issues in Danish cities.",
+      "reading_minutes": "8"
+    },
+    {
+      "title": "DayZ creator Dean Hall says \"our industry is rotting from its core\" because of big-company \"greed\", aiming shots at Epic's Unreal and Unity",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/dean-hall-brutal-framework-ksp-epic-unreal-unity",
+      "summary": " UPDATED 3.30PM BST: Dean Hall has explained more about his idea in an email exchange with Eurogamer, clarifying issues such as whether it uses or welcomes any form of generative AI, while offering some more strongly worded criticisms about Epic's Unreal engine and Unity. Read more",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "games-industry-critique-2026",
+      "why": "A long Eurogamer interview with a notable game creator about industry economics, engine politics, and the cultural effects of corporate consolidation. Mads should care for context on the games industry that matters to creative policy and cultural production.",
+      "reading_minutes": "7"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "teknologi": 12,
+        "fordybelse": 1,
+        "kultur": 2,
+        "dansk_politik": 1
+      },
+      "actual": {
+        "teknologi": 10,
+        "fordybelse": 1,
+        "kultur": 2,
+        "dansk_politik": 1
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (10 af 12).",
+        "Færre longreads end planlagt (7 af 8)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 303,
+      "web_candidates": 26,
+      "total_candidates": 75,
+      "repeats_dropped": 7,
+      "previews_enriched": 19,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 38,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 16,
+      "prepared": 14,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 2,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 32
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 18
+      }
+    }
+  }
+}
