@@ -1,0 +1,362 @@
+{
+  "created_at": "2026-10-18T03:32:25.283184+00:00",
+  "articles": [
+    {
+      "title": "Emma baner vejen for månebaser: 3D-printer mursten med månestøv",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/rummet/emma-baner-vejen-for-maanebaser-3d-printer-mursten-med-maanestoev/",
+      "summary": "I en lagerhal på Lindø afprøver forskere en teknologi, som potentielt kan bruges til at bygge veje og habitater på Månen. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Teknologi og verden",
+      "story_id": "maanebaser-3d-printer-lindo",
+      "why": "Danske forskere tester i Lindø en 3D‑printteknik, der bruger månestøv til at bygge veje og habitatblokke — et praktisk skridt mod permanente månebaser. Mads bør kende status på dansk rumforskning og hvilke teknologiske og industrielle muligheder det åbner.",
+      "reading_minutes": "12"
+    },
+    {
+      "title": "Is the US limiting Starlink in Ukraine? The consequences could be catastrophic",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/is-the-us-limiting-starlink-in-ukraine-the-consequences-could-be-catastrophic-294496",
+      "summary": "The satellite technology is vital both on the battlefield and for defending Ukraine’s cities.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "starlink-ukraine-us-limits",
+      "why": "Analysen forklarer dokumenterede konsekvenser, hvis amerikansk politik begrænser Starlink‑adgang i Ukraine — både for kampførelse og civil infrastruktur. For Mads er det vigtigt, fordi resultaterne påvirker europæisk sikkerhedspolitik, kommunikationsberedskab og debatten om amerikansk kontrol over strategisk udstyr.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Trump’s pause on Russia sanctions is ‘reward’ for Putin, Zelenskyy says",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/17/volodymyr-zelenskyy-donald-trump-lift-sanctions-russia-intensify-war-ukraine",
+      "summary": "Ukrainian president warns it will embolden Russian leader and intensify war as Moscow hits country’s power plantsPower plant attacks reflect Russian blueprint to make Ukrainian cities unlivableVolodymyr Zelenskyy has described Donald Trump’s decision to roll back sanctions on Russia as a “reward” for Vladimir Putin and warned it will embolden the Russian leader and intensify the Kremlin’s war, as Moscow launched one of its worst strikes yet on Ukraine’s power plants in an attempt to black out th",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "trump-pause-russia-sanctions",
+      "why": "Zelenskyjs vurdering af Trumps beslutning om at rulle tilbage på sanktioner ændrer de geopolitiske beregninger i Europa og kan svække vestligt pres på Rusland. Mads bør forstå, hvordan amerikansk politik nu kan påvirke dansk/NATO‑sikring og støtte til Ukraine.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Microsoft Surface Laptop Ultra Review: The First Real AI PC",
+      "source": "WIRED",
+      "url": "https://www.wired.com/review/microsoft-surface-laptop-ultra/",
+      "summary": "The Surface Laptop Ultra is a true MacBook Pro competitor for Windows, and Microsoft has never been so close to dethroning Apple—if only it weren't for the lack of battery life.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "surface-laptop-ultra-review",
+      "why": "WIREDs gennemgang placerer Surface Laptop Ultra som en seriøs MacBook Pro‑konkurrent med integrerede AI‑funktioner — relevant for beslutninger om arbejds‑PC’er i danske virksomheder og offentlige indkøb. Mads får konkret viden om performance, begrænsninger og batterilevetid.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Elorian’s first AI model wants to reason with images, not just about them",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/",
+      "summary": "According to Elorian's evaluations, Glimpse outperforms even GPT-6 Astra on scientific chart reasoning and short-form video captioning, with competitive results on other visual reasoning tasks.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "elorian-glimpse-visual-reasoning",
+      "why": "TechCrunch beskriver et nyt visuelt‑resonnerende model (Glimpse) med stærke benchmarkresultater mod GPT‑6 Astra — vigtigt for Mads at følge udviklingen i multimodale AI og hvilke opgaver billedforståelses‑AI snart kan løse.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The power of AI is worrying senior Labour figures – as is the fear of ‘falling behind the public’",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/17/artificial-intelligence-ai-labour-government-safety-uk-extremism",
+      "summary": "Westminster appears to be waking up to warnings over AI safety, with concerns over its use by extremist groups and bad actors“I have this sense that, within a few months, AI is going to be all anyone is talking about,” said one cabinet minister, with an ominous stare.It was Labour conference, with everyone from ministers to activists jubilant at Andy Burnham’s takeover and a bounce in the polls after the change of leader. Continue reading...",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "labour-ai-concerns",
+      "why": "Lang, insider‑orienteret reportage fra Labour‑konference om politisk håndtering af AI‑risici og kommunikation. Giver et EU‑nært perspektiv på hvordan regeringer forsøger at balancere sikkerhed, innovation og vælgeroro — relevant for dansk politikudvikling.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Ember’s new temperature-controlled mug makes my nightly tea ritual even better",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/17/embers-new-temperature-controlled-mug-makes-my-nightly-tea-ritual-even-better/",
+      "summary": "The biggest change about Ember's new mug is that you no longer have to open the app to adjust your drink’s temperature.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ember-temperature-mug",
+      "why": "Test af praktisk forbrugerprodukt hvor design og brugbarhed gør en forskel i dagligdagen; nyttigt læsestof for Mads som gadget‑interesseret og når smarte husholdningsprodukter bliver modne nok til danske forbrugere.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The MacRumors Show: Was HomeView Worth the Wait?",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/16/the-macrumors-show-homeview-worth-the-wait/",
+      "summary": "Apple this week finally announced the HomePod mini 2, a new Apple TV 4K, and its \"HomeView\" smart home hub. On this week's episode of The MacRumors Show, we talk through our reactions to the announcements.\n\n\n\nSubscribe to The MacRumors Show YouTube channel for more videos\n\nApple's HomeView costs $299 and combines a 7-inch square display with Siri AI, FaceTime, music playback, and smart home controls. It has had something of a mixed reception from YouTubers and the wider Apple community, with som",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "macrumors-homeview-show",
+      "why": "Længere podcast/gennemgang af Apples nye HomeView‑hub og HomePod mini 2 med diskussion af funktionalitet og økosystem‑effekter. Relevant for danske hjemmebrugere og beslutningstagere, der vurderer smart‑home investeringer.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Danh Vo and Sandra Mujinga Selected for Met Museum Commissions",
+      "source": "hyperallergic.com",
+      "url": "https://hyperallergic.com/danh-vo-and-sandra-mujinga-selected-for-met-museum-commissions/",
+      "summary": "Genesis Facade and Great Hall artists announced, a new leader for the Armenian Museum of America, Bernie Sanders weighs in on the AI art debate, and more. Genesis Facade and Great Hall artists announced, a new leader for the Armenian Museum of America, Bernie Sanders weighs in on the AI art debate, and more. Art Movements, published every Thursday afternoon, is a roundup of must-know news, appointments, awards, and other happenings in today’s chaotic art world.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "met-commissions-vo-mujinga",
+      "why": "Metropolitan Museum vælger to samtidige kunstnere til store kommissioner — relevant kulturnyhed der sætter international kontekst for danske museers programmer og debatten om repræsentation og store udstillinger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Why AI Isn’t Ready to Tackle Our Convoluted Genomes",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/why-ai-isnt-ready-to-tackle-our-convoluted-genomes/",
+      "summary": "The DNA inside our cells isn’t just a series of instructions, but something far more dynamic. Like scientists, AI models don't yet have the data to properly decode it.",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-genomes-limitations",
+      "why": "WIRED forklarer hvorfor nuværende AI‑metoder endnu ikke kan afkode genomers kompleksitet — væsentligt for Mads hvis han følger biotek, sundhedspolitik eller investeringer i genomforskning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The mafia isn’t keeping fentanyl out of Europe – the lack of demand is",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/the-mafia-isnt-keeping-fentanyl-out-of-europe-the-lack-of-demand-is-294078",
+      "summary": "The theory that Italian mafia groups are choosing to keep fentanyl out of Europe does not fit what we know about drug markets or organised crime. Share article Print article Fentanyl and other synthetic opioids are still the single biggest driver of overdose deaths in the US. They were involved in around 38,000 of the roughly 70,000 deaths recorded in 2025, according to the",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Fordybelse",
+      "story_id": "fentanyl-europe-demand",
+      "why": "Langt essay om hvorfor Europa er mindre ramt af fentanyl end USA; forklarer markedsmekanismer og forbrugsmønstre, relevant for dansk stofpolitik og beslutninger om forebyggelse og grænsekontrol.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Inside Ukrainian offensive pushing Russia back - with Starlink playing a key role",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cvx284w16z1po?at_medium=RSS&at_campaign=rss",
+      "summary": "The BBC joins Ukraine's Operation Vivaldi as it regains crucial territory in the Donbas, but optimism has been dampened by souring relations with President Trump.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ukraine-starlink-offensive",
+      "why": "BBCs reportage viser konkrete eksempler på, hvordan Starlink og kommando‑og‑kontrol opsætter taktiske fordele for Ukraine — nyttigt supplement til analyser om kommunikationsinfrastruktur i konfliktområder.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Sega pulls Total War: Shogun 2 - Complete Edition from sale amid AI accusations, admitting it has \"fallen short\"",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/total-war-shogun-2-complete-edition-pulled-from-sale",
+      "summary": "Sega and Creative Assembly are working with platform holders to remove Total War: Shogun 2 - Complete Edition from sale and bring back the original game. Shogone. Sega and Creative Assembly are temporarily removing Total War: Shogun 2",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "sega-shogun2-ai-pull",
+      "why": "Spilbranchen og AI: Sega fjerner en opdateret udgivelse efter anklager om AI‑brug i remastering. Historien er relevant for ophavsrets‑ og kulturpolitikker som også berører danske spilstudier og institutioner.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Surface Laptop Ultra delivers on most of Microsoft's promises",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/reviews/2026/10/the-surface-laptop-ultra-delivers-on-most-of-microsofts-promises/",
+      "summary": "Microsoft promises one machine for dev, AI, and gaming, and mostly gets there.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "surface-ultra-arstechnica",
+      "why": "Ars Technicas hands‑on supplerer WIRED og uddyber tekniske kompromiser i Microsofts AI‑PC‑tilgang — nyttigt når Mads skal vurdere hvilken platform der bedst understøtter danske udviklings‑ og arbejdsbehov.",
+      "reading_minutes": "3"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 2,
+        "teknologi": 11,
+        "kultur": 3,
+        "fordybelse": 2
+      },
+      "actual": {
+        "dansk_politik": 1,
+        "teknologi": 9,
+        "kultur": 2,
+        "fordybelse": 2
+      },
+      "warnings": [
+        "Færre historier om dansk politik og samfund end planlagt (1 af 2).",
+        "Færre historier om teknologi end planlagt (9 af 11).",
+        "Færre historier om kultur end planlagt (2 af 3).",
+        "Færre longreads end planlagt (6 af 7)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 272,
+      "web_candidates": 23,
+      "total_candidates": 75,
+      "repeats_dropped": 9,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 37,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 18,
+      "prepared": 14,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 4,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 27
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 31
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 8
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 15
+      }
+    }
+  }
+}
