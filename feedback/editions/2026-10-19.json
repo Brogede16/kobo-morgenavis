@@ -1,0 +1,324 @@
+{
+  "created_at": "2026-10-19T03:32:29.550886+00:00",
+  "articles": [
+    {
+      "title": "Zelenskyy thanks Trump for resumed intelligence sharing after US Starlink ‘message’",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/18/killed-injured-russia-ukraine-strikes-power-infrastructure",
+      "summary": "Two people killed and at least 17 injured as Russia and Ukraine continue to trade strikes on power infrastructureVolodymyr Zelenskyy on Sunday thanked the Trump administration for resuming intelligence sharing between the two countries, but maintained the US had intentionally throttled its Starlink satellite internet access so that Donald Trump could send a “message” in his ongoing feud with the Ukrainian president.In an interview on NBC, Zelenskyy said the US had “unblocked” intelligence on imp",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ukraine-intel-starlink",
+      "why": "US intelligence-sharing choices and control of Starlink access are now a diplomatic lever affecting Ukraine. The story explains a concrete shift in Western support that can alter battlefield resilience and European security calculations — essential for understanding Danish NATO policy debates.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "What are self-replicating âAI wormsâ, and why is Anthropic worried about them?",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/oct/18/anthropic-ai-worm-worries",
+      "summary": "The tech company says successful AI worms need more capability on less powerful devices, but current trends make that feasible by the end of the year The tech company says successful AI worms need more capability on less powerful devices, but current trends make that feasible by the end of the year Warnings about what artificial intelligence might do in the future â together with alarming reports of what it has gotten up to already â are being issued so quickly that even security experts hav",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-worms-anthropic",
+      "why": "Anthropic warns that AI worms — autonomous, self-replicating code — could become feasible on weaker hardware within months, raising cybersecurity and policy urgency. Mads should care about the national-security and regulatory implications for Denmark and EU digital resilience.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Anthropic gives outside AI watchdog “employee-like” access",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/ai/2026/10/anthropic-gives-outside-ai-watchdog-employee-like-access/",
+      "summary": "The outside watchdog can publish its findings without Anthropic's approval. The outside watchdog can publish its findings without Anthropic’s approval. Anthropic has granted external evaluators “employee-like access” to assess the risks of its models, following through on a commitment to increase safeguards over concerns the technology could run catastrophically out of control. METR, a nonprofit that has worked with leading labs including OpenAI, Anthropic, Google and Meta, now has a team embedd",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-watchdog-access",
+      "why": "Anthropic’s move to grant deep external oversight while allowing public publication is an important model for AI governance. This explains concrete oversight mechanisms that Danish policymakers and regulators will likely reference when shaping national rules.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Controversial Battlefield 6 XP changes have been reversed, with Battlefield Studios saying they were \"unintended\"",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/battlefield-6-xp-cap-season-5-reverted",
+      "summary": " Season 5 launched in Battlefield 6 this week as planned, and though most of the new additions -  new maps, weapons and vehicles, and gameplay changes - were well received, the season began on a low note due to accusations of generative AI use and because of a major hit to XP gain. Read more",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "battlefield-6-xp-reversal",
+      "why": "This is a clear example of community pushback changing corporate behaviour in a major games release; relevant to culture, platform governance, and how developers respond to backlash — a practical culture-and-tech story Mads may want to follow.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Japan’s MMX mission aims to swipe soil samples from Mars’ moon Phobos",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/japans-mmx-mission-aims-to-swipe-soil-samples-from-mars-moon-phobos-294129",
+      "summary": "The mission could help resolve how Mars’ two moons were formed.",
+      "format": "longread",
+      "section": "Rummet",
+      "group": "Fordybelse",
+      "story_id": "mmx-phobos-mission",
+      "why": "A clear, accessible explainer of the MMX mission and why sampling Phobos could settle debates about Martian moons. This is a strong science longread for readers curious about planetary origins and mission trade-offs.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "James Webb-teleskopet opdager uventet forandring i mystiske ringe langt ude i Solsystemet",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/rummet/james-webb-teleskopet-opdager-uventet-forandring-i-mystiske-ringe-langt-ude-i-solsystemet/",
+      "summary": "En fjern asteroide kaldet Chariklo har et ringsystem, der er næsten umuligt at se fra Jorden, men nu har forskere opdaget en forandring. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Rummet",
+      "group": "Fordybelse",
+      "story_id": "chariklo-rings-jwst",
+      "why": "James Webb found an unexpected change in the rings of distant asteroid Chariklo — a digestible science piece that signals how new observations are reshaping our picture of small bodies in the outer solar system. Good Danish-language science reporting.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Arrests over France protests rise to 1,800, with whole streets in Paris ‘devastated’ – Europe live",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/18/paris-protests-france-demonstrations-europe-live-latest-news",
+      "summary": "Interior minister says ‘the Republic will not yield’ to France’s worst protests in yearsA dispatch here from Sam Jones, our reporter in Madrid, as protests have spread to Italy and PortugalThe angry protests that have convulsed Spain and France in recent weeks have spilled over to Italy and Portugal, with rioters clashing with police and setting property on fire in Milan, and a tent encampment springing up in Lisbon over the weekend. Continue reading...",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "europe-protests-oct2026",
+      "why": "A comprehensive daily on large European unrest that could have diplomatic, migration and political ripple effects across the EU. Important situational awareness for European politics coverage and how continent-wide protest waves affect Danish diplomacy.",
+      "reading_minutes": "15"
+    },
+    {
+      "title": "TechCrunch Mobility: Rivian’s next act",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/18/techcrunch-mobility-rivians-next-act/",
+      "summary": "Welcome back to TechCrunch Mobility, your hub for the future of transportation and now, more than ever, the role AI is playing in it.",
+      "format": "longread",
+      "section": "Erhverv",
+      "group": "Teknologi og verden",
+      "story_id": "rivian-next-act",
+      "why": "Analysis of Rivian’s strategy and mobility market shifts with EVs and AI driving product decisions — useful background for Denmark’s transport and industrial policy conversations about EV supply chains and green transition planning.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "No agenda, no rush, no leaving San Francisco: Benchmark’s partners on investing in a frenzied market",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/18/no-agenda-no-rush-no-leaving-san-francisco-benchmarks-partners-on-investing-in-a-frenzied-market/",
+      "summary": "Benchmark may have grown its funds and swapped out some partners, but onstage the five who are left sounded like friends who just happen to be running one of the Valley’s most storied firms",
+      "format": "longread",
+      "section": "Erhverv",
+      "group": "Teknologi og verden",
+      "story_id": "benchmark-investing",
+      "why": "A long profile of a major VC firm’s strategy and mindset offers insight into startup funding dynamics affecting European scaleups and investor behaviour — useful for readers tracking Danish tech investment and policy around innovation.",
+      "reading_minutes": "13"
+    },
+    {
+      "title": "Diaries of a Primitive Man",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/diaries-of-a-primitive-man/",
+      "summary": "John Yau on Roy Lichtenstein, Megan O’Grady on John Berger, and Paddy Johnson answers the question: Do I need an agent? John Yau on Roy Lichtenstein, Megan O’Grady on John Berger, and Paddy Johnson answers the question: Do I need an agent? It’s a sunny October afternoon in Manhattan and the steps of the Metropolitan Museum of Art are bustling with visitors. Tourists pose for selfies against the museum’s facade; street vendors sell chopped-up hotdogs in a nest of French fries; and the sound of sa",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "diaries-primitive-man",
+      "why": "An accessible cultural roundup and essays column useful for weekend reading and cultural context; it offers art-world perspectives that enrich wider cultural conversations in Denmark's institutions and critics’ circles.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Alberta and Québec referendums test Canadian unity amid hostility from the U.S.",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/alberta-and-quebec-referendums-test-canadian-unity-amid-hostility-from-the-u-s-294387",
+      "summary": "The Alberta and Québec independence referendums, motivated by vastly different concerns, will nonetheless create uncertainties for both provinces. Share article Print article People in the Canadian province of Alberta are voting on whether to stay in Canada or begin a process for a second, binding referendum on independence. By 2030, those in Québec could face a similar choice.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "canada-referendums",
+      "why": "Explainer on regional referendums in Canada that situates separatist pressures, geopolitics and US influence — useful comparative context for Danish readers about how domestic politics and external hostility interact in federations.",
+      "reading_minutes": "5"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "teknologi": 11,
+        "kultur": 6,
+        "fordybelse": 3
+      },
+      "actual": {
+        "teknologi": 7,
+        "kultur": 2,
+        "fordybelse": 2
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (7 af 11).",
+        "Færre historier om kultur end planlagt (2 af 6).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (2 af 3).",
+        "Færre longreads end planlagt (8 af 16)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 235,
+      "web_candidates": 18,
+      "total_candidates": 75,
+      "repeats_dropped": 14,
+      "previews_enriched": 23,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 40,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 20,
+      "prepared": 11,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 9,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 27
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 50
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 13
+      }
+    }
+  }
+}
