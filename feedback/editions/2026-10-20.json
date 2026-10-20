@@ -1,0 +1,458 @@
+{
+  "created_at": "2026-10-20T03:33:02.404650+00:00",
+  "articles": [
+    {
+      "title": "Det stormer i Venstre: På søndag venter et afgørende møde",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/det-stormer-i-venstre-paa-soendag-venter-et-afgoerende-moede",
+      "summary": "Venstre-krisen kulminerede foreløbigt i går, da profilen Søren Gade forlod Folketinget i protest mod linjen. I weekenden står Troels Lund Poulsen ansigt til ansigt med sit bagland. Venstre-krisen kulminerede foreløbigt i går, da profilen Søren Gade forlod Folketinget i protest mod linjen. I weekenden står Troels Lund Poulsen ansigt til ansigt med sit bagland. Det går ikke stille for sig i Venstre for tiden. Partiet har fået det dårligste valg nogensinde, men er alligevel lykkedes med at komme en",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "venstre-krise-møde",
+      "why": "Venstre står i en intern krise efter Søren Gades exit, og partiets ledelse skal møde baglandet til et afgørende møde. Det kan ændre regeringens parlamentariske stabilitet og har direkte betydning for Mads' forståing af dansk politikakts i denne uge.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Overborgmester langer ud efter Mette Frederiksen: 'Det er ikke korrekt'",
+      "source": "www.bt.dk",
+      "url": "https://www.bt.dk/politik/overborgmester-langer-ud-efter-mette-frederiksen-det-er-ikke-korrekt",
+      "summary": "Københavns overborgmester mener ikke, at statsministeren giver et retvisende billede, når hun kritiserer mangel på kød på de københavnske plejehjem. Københavns overborgmester mener ikke, at statsministeren giver et retvisende billede, når hun kritiserer mangel på kød på de københavnske plejehjem. På de københavnske plejehjem kan det være slut med en hakkebøf eller en omgang pasta med kødsovs, når beboerne har fødselsdag. Det kunne Berlingske berette søndag",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "foedepleje-kritik-koebenhavn",
+      "why": "Københavns overborgmester svarer PM Frederiksens kritik om manglende kød på plejehjem — en konkret konflikt om velfærd, kommunal praksis og regeringens retorik. Mads bør kende konflikten, fordi den rører socialpolitik og valgretorik i hovedstaden.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Russian spacecraft maneuvers in \"extreme proximity\" to satellite used by Ukraine",
+      "source": "arstechnica.com",
+      "url": "https://arstechnica.com:443/space/2026/10/russian-spacecraft-maneuvers-in-extreme-proximity-to-satellite-used-by-ukraine/",
+      "summary": "Kosmos 2612 closed from hundreds of kilometers away to extreme proximity to ICEYE-X36.\" “Kosmos 2612 closed from hundreds of kilometers away to extreme proximity to ICEYE-X36.” A Russian military satellite maneuvered in “extreme proximity” of a commercial Earth-imaging satellite in recent days in the first known example an unsanctioned rendezvous in low-Earth orbit, according to the orbital intelligence company LeoLabs. The Russian spacecraft, Kosmos 2612, “conducted a deliberate series of maneu",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "russian-close-approach-iceye",
+      "why": "En russisk militærsatellit foretog en usanktioneret, tæt manøvre mod en kommerciel jordobservationssatellit brugt af Ukraine — det første kendte tilfælde af sådan rendezvous. Det rejser spørgsmål om rumsikkerhed, civil-kommerciel adgang til data og risikoen for fysisk eskalation i LEO.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Making the internet better for AI agents might make it worse for everyone else",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/10/19/1147186/making-the-internet-better-for-ai-agents-might-make-it-worse-for-everyone-else/",
+      "summary": "Millions of AI agents are descending on a web built for humans. Websites are trying to keep them out, but the arrival of these new visitors could transform the internet.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "web-for-agents-vs-humans",
+      "why": "AI-agenter forandrer trafikmønstre på nettet: optimeringer for maskiner kan skade menneskeligt indhold, forringe site-oplevelser og skabe økonomiske og tekniske spændinger for danske udgivere og tjenester. Vigtigt for Mads at forstå konsekvenserne for web-økosystemet.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Laplace Intelligence red-teams robots and self-driving cars before they hit the real world | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/19/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/",
+      "summary": "University of Michigan spinout Laplace Intelligence uses AI agents and interactive simulation to stress-test robots and self-driving vehicles before deployment. The profitable startup is competing in Startup Battlefield at TechCrunch Disrupt, October 13-15 in San Francisco.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "laplace-red-team",
+      "why": "En spinout fra University of Michigan bruger AI-agenter og simulering til at stress-teste robotter og selvkørende biler før udrulning — en vigtig industriel tilgang til at reducere risiko og sikre sikkerhed i autonome systemer, relevant for danske virksomheder og regulering.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Microsoft says AI agents are like insider threats as 'frontier models can't be trusted' | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/19/microsoft-says-ai-agents-are-like-insider-threats-as-frontier-models-cant-be-trusted/",
+      "summary": "Microsoft wants enterprises to closely watch the agents that employees use with systems not controlled by AI labs like OpenAI and Anthropic.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "microsoft-agents-insider-threat",
+      "why": "Microsoft advarer om, at AI-agenter kan opføre sig som insider-trusler og opfordrer virksomheder til streng overvågning. Det er centralt for danske it‑sikkerhedsansvarlige og beslutningstagere, når virksomheder overvejer agent-udrulning eller regulering.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "“We were looking at it wrong”: The explosive claim that’s upended the AI world",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/19/1147149/we-were-looking-at-it-wrong-the-explosive-claim-thats-upended-the-ai-world/",
+      "summary": "“I think I have good news about the nature of neural networks.” With those simple words of optimism, Nick Cammarata, a researcher at the AI startup Goodfire, kicked off a 26,000-word blog post that has knocked the AI world on its head, sparking wild speculation as well as cautious (and not-so-cautious) celebration. Cammarata’s claim is…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "cammarata-claim-ai",
+      "why": "Et indflydelsesrigt 26.000-ords blogindlæg har udløst massiv debat om neuralnetværks natur og mulige gennembrud. Mads bør kende argumentet og konsekvenserne for AI-forskning, produktudvikling og forventninger i Danmark og Europa.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI Proved the Quasi-Riemann Hypothesis. What Happens Now? | Quanta Magazine",
+      "source": "www.quantamagazine.org",
+      "url": "https://www.quantamagazine.org/ai-proved-the-quasi-riemann-hypothesis-what-happens-now-20261019/",
+      "summary": "Unlike other recent AI proofs, this one has been unpacked by human experts. The implications, one mathematician said, are “staggering.”",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-quasi-riemann",
+      "why": "Et AI-system leverede en formel løsning på et komplekst matematikproblem, og menneskelige eksperter har unpacked beviset. Det ændrer både matematisk praksis og tilliden til AI-assisteret opdagelse — essentiel baggrund for faglig og epistemisk debat.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Apple Limiting U.S. iPhone Duo Orders to Two Per Customer",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/19/iphone-duo-order-limit-us/",
+      "summary": "Apple is only allowing customers in the United States to purchase a maximum of two iPhone Duos. Attempting to purchase more than two on the website or the Apple Store app gives the following notice: \"A maximum of 2 iPhone Duo can be purchased per customer. Please adjust the total quantity of ‌iPhone Duo‌ in your order before checking out.\"\n\n\n\n\n\nSome Reddit users describe the U.S. purchase limit as new, but we couldn't confirm if it was in place when pre-orders started on October 16. The Reddit t",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-duo-order-limit",
+      "why": "Apple begrænser køb af nye iPhone Duo til to per kunde i USA — et signal om efterspørgselsstyring og logistik. Relevant for forståelse af Apples salgsstrategi og hvordan efterspørgselshåndtering påvirker danske forhandlere og forbrugere.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Nvidia launches new open models to run agents in the enterprise and on PCs  | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/10/19/nvidia-launches-new-open-models-to-run-agents-in-the-enterprise-and-on-pcs/",
+      "summary": "Nvidia is leaning hard into the trend of enterprise companies wanting to run their own open models in their own data centers and also trying to make on-device, private AI agents a thing.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-open-agent-models",
+      "why": "Nvidia lancerer åbne modeller for enterprise- og on-device-agenter, hvilket kan ændre hvordan virksomheder og pc‑brugere kører private AI-agenter. En god erstatning hvis andre agent‑artikler falder fra.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "US teens can access ‘nudify’ apps despite Apple and Google’s parental controls, report finds",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/19/us-teens-nudify-apps-apple-google-parental-controls",
+      "summary": "Exclusive: Using test accounts acting as 13-year-olds, Tech Transparency Project downloaded 135 apps with features to generate nonconsensual nude imageryIn December 2025, Morgan Dorfman received distressing news: a student at her daughter’s Pennsylvania high school was making AI-generated pornographic material using the daughter’s image.He was using an artificial intelligence image-editing app called Movely to create sexual videos from pictures of her daughter and five other girls. Continue read",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nudify-apps-teens",
+      "why": "Undersøgelse viser at 13-årige kan hente apps, der genererer ikke-konsensuelle nøgenbilleder, trods platformkontroller. Problemstillingen berører digitale børns sikkerhed og platformansvar — relevant for danske forældrepolitik og reguleringstiltag.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "New AI tool can predict cancer survival by a single patient selfie, study suggests",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/19/ai-tool-predict-cancer-survival-patient-selfie",
+      "summary": "System can estimate a person’s biological age and predict chances of cancer survival from a single photographDoctors have developed an artificial intelligence tool that can predict a cancer patient’s chances of survival from a single photograph of their face.The AI system was custom-built by experts at Mass General Brigham, a nonprofit, integrated academic healthcare system in Massachusetts, to estimate biological age and directly predict survival outcomes in patients diagnosed with cancer. Cont",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "ai-selfie-cancer-survival",
+      "why": "Forskere viser et AI‑værktøj, der fra et enkelt ansigtsfoto estimerer biologisk alder og forudsiger kræftoverlevelse — en indgribende medicinsk anvendelse med etiske og kliniske implikationer, som Mads bør kende i forhold til sundhedsdata og patientbehandling.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "En psykiatrisk diagnose kan være en lettelse - men også volde skade",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/krop-sundhed/en-psykiatrisk-diagnose-kan-vaere-en-lettelse-men-ogsaa-volde-skade/",
+      "summary": "Vi bør være mere opmærksomme på, hvem der faktisk har gavn af en diagnose – og hvem der risikerer at blive begrænset, skriver forskere. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Danmark og kultur",
+      "story_id": "psykiatrisk-diagnose-nytte-skaade",
+      "why": "Danske forskere diskuterer, hvem der har gavn af en psykiatrisk diagnose, og hvem det kan skade — en vigtig samfundsdebatt om diagnosepraksis, ret til behandling og sociale konsekvenser for patienter og pårørende i Danmark.",
+      "reading_minutes": "8"
+    },
+    {
+      "title": "YouSee-konflikt rammer DR og TV 2",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/yousee-konflikt-rammer-dr-og-tv-2/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "yousee-dr-tv2-konflikt",
+      "why": "Konflikt mellem distributionsplatformen YouSee og hovedmedierne påvirker DR og TV 2s rækkevidde for seere — konkret betydning for danske kultur‑ og nyhedsdistributioner, seertal og public service‑økonomi.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Et medieforlig med det store perspektiv",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/et-medieforlig-med-det-store-perspektiv/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "medieforlig-perspektiv",
+      "why": "Essay om et nyt medieforligs perspektiver for dansk mediepolitik og kulturinstitutioners vilkår — relevant analyse for Mads når forlig påvirker public service, finansiering og kulturpolitik i den kommende tid.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI game clones are making indie developers afraid to show their work",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/gaming/2026/10/ai-game-clones-are-making-indie-developers-afraid-to-show-their-work/",
+      "summary": "Delayed Steam Next Fest demo is a sign of a growing problem for indie devs.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "ai-game-clones-indie-fear",
+      "why": "Indieudviklere udsætter demoer og playtests af frygt for AI-kloner, hvilket ændrer hvordan spil opdages og udvikles. Viktigt for Mads' interesse i spilkultur, kreativ rettighedsbeskyttelse og digital innovation.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Steam Next Fest 2026 has more than double the number of demos than last year, but how much of it is generative 'AI slop'?",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/steam-next-fest-2026-over-double",
+      "summary": " Steam Next Fest 2026 starts today, offering PC players a chance to get their hands on a staggering number of playable demos. With the full count coming to more than double last year's event, concerns about generative AI 'slop', plagiarism, and discoverability are circulating Read more",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "steam-next-fest-ai-slop",
+      "why": "Steam Next Fest eksploderer i mængde af demoer og rejser spørgsmål om kvalitet og AI-genereret indhold. Relevant for forståelse af spiløkosystemets sundhed og opdagelsesmuligheder, særlig interessant for Mads' gamerinteresser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "As French protests escalate into riots, they may prove a gift for Marine Le Pen’s right-wing party",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/as-french-protests-escalate-into-riots-they-may-prove-a-gift-for-marine-le-pens-right-wing-party-294673",
+      "summary": "What started as protests about conditions in French schools has widened into riots about cost of living – and taken hold in other European countries, too. Share article Print article Mass protests in France have spiralled into riots, with",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "france-protests-le-pen",
+      "why": "Franske protester har udviklet sig til uro, som kan booste højrefløjen før valg — en udvikling med politiske konsekvenser for EU-samarbejde, grænsepolitik og dansk debat om migration og sikkerhed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Hundreds Protest in Colombia After Far-Right President Removes Works From National Museum",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/hundreds-protest-in-colombia-after-far-right-president-removes-works-from-national-museum/",
+      "summary": "In a Trumpian move, the government of Abelardo de la Espriella took down works referencing LGBTQ+ and women’s rights and political violence. In a Trumpian move, the government of Abelardo de la Espriella took down works referencing LGBTQ+ and women’s rights and political violence. Hundreds protested at Colombia’s national museum in Bogotá this weekend, days after the country’s far-right government ordered the removal of objects addressing political violence, women’s rights, and LGBTQ+ history — ",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "colombia-museum-removals-protests",
+      "why": "Protester mod Colombias præsident efter fjernelse af værker med LGBTQ+- og kvindekamp-temaer viser kulturkrig og censur som politisk strategi. Relevant for Mads' overblik over internationale kulturpolitiske trends, som også kan spejles i Danmark.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Video game film adaptations used to be huge flops. Now studios can’t get enough",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/video-game-film-adaptations-used-to-be-huge-flops-now-studios-cant-get-enough-294354",
+      "summary": "From Mario to the new Street Fighter film, the video game-to-film pipeline is now bursting open – and there are several reasons for it. Share article Print article In the early 1990s, when the home video game market was still in its infancy, Hollywood attempted to leverage the appeal of this emerging entertainment for feature length films.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "video-game-film-adaptations",
+      "why": "Analyse af skiftet i filmatiseringer af spil og hvorfor industrien nu satser stort — nyttig baggrund for kulturøkonomi og danske producenter, hvis spiladaptationer diskuteres.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Disney Asked Character.AI to Go Bankrupt for a Get-Out-of-Lawsuits Card",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/disney-asked-characterai-to-go-bankrupt-for-a-get-out-of-lawsuits-card/",
+      "summary": "The entertainment giant hopes to get trust and safety tech, among other IP, from a startup whose chatbots dozens of states allege encouraged minors to self-harm and kill their parents.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "disney-characterai-bankrupt",
+      "why": "Disney's forhandlingstaktik om Character.AI rører IP, ansvar og opkøb i AI-æraen — relevant backup for historier om rettigheder og store medieselskabers håndtering af problematiske startups.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "China's growth accelerates as AI boom helps boost exports",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cm5yn098xz8lo?at_medium=RSS&at_campaign=rss",
+      "summary": "Exports have helped offset weak spending at home, but trade tensions and AI doubts cloud its outlook.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "china-growth-ai-exports",
+      "why": "Kinas vækst tilskrives AI-drevet eksport — væsentligt for danske eksportforventninger, globale forsyningskæder og makroøkonomisk ramme i EU. Bruges hvis større EU‑ eller Kina‑historier mangler.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 2,
+        "verden": 2,
+        "teknologi": 7,
+        "fordybelse": 3,
+        "kultur": 7
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "verden": 3,
+        "teknologi": 8,
+        "fordybelse": 3,
+        "kultur": 6
+      },
+      "warnings": [
+        "Færre historier om kultur end planlagt (6 af 7).",
+        "Færre longreads end planlagt (7 af 8)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 241,
+      "web_candidates": 19,
+      "total_candidates": 75,
+      "repeats_dropped": 8,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 48,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 29,
+      "prepared": 22,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 5,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 28
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 48
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 8
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 14
+      }
+    }
+  }
+}
