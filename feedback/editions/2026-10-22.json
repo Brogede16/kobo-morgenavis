@@ -1,0 +1,420 @@
+{
+  "created_at": "2026-10-22T03:33:20.299637+00:00",
+  "articles": [
+    {
+      "title": "Stewardesser og piloter dør oftere af strålingskræft, viser forskning i 500 erhverv",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/krop-sundhed/stewardesser-og-piloter-doer-oftere-af-straalingskraeft-viser-forskning-i-500-erhverv/",
+      "summary": "Visse kræftformer udgør en større andel af dødsfaldene blandt flypersonale end i andre erhverv ifølge nyt studie. Dansk forsker maner dog til ro og fremhæver flere forbehold ved studiet, man skal hæfte sig ved. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "flypersonale-straalingskraeft",
+      "why": "Nyt stort studie viser højere dødelighed af strålingsrelaterede kræftformer blandt flypersonale; en dansk forsker opfordrer til forsigtighed, men resultaterne kan få konsekvenser for arbejdsmiljø, forsikringer og regulering af luftfartspersonale. Mads bør kende usikkerhederne og mulige politiske/erhvervsmæssige konsekvenser.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Tidligere DF-profil er udansk, mener LA-ordfører",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/tidligere-df-profil-er-udansk-mener-la-ordfoerer",
+      "summary": "Ifølge den tidligere DF-profil Martin Henriksen skal homoseksuelle ikke kunne blive gift. Det gør ham ifølge Liberal Alliances politiske ordfører, Mads Strange, udansk. Ifølge den tidligere DF-profil Martin Henriksen skal homoseksuelle ikke kunne blive gift. Det gør ham ifølge Liberal Alliances politiske ordfører, Mads Strange, udansk. Kan man være dansk, hvis man synes, at homoseksualitet er uacceptabelt? Det spørgsmål blev heftigt debatteret i TV 2-programmet Højskolen, der blev sendt for to u",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "dansk-politik-identitet-konflikt",
+      "why": "En aktuel konflikt i dansk politik: LA's ordfører kalder en tidligere DF-profil 'udansk' pga. holdninger til homoseksuelles ret til ægteskab. Sagen viser interne skæringspunkter om værdipolitik og kan påvirke debatten om identitet og borgerlig luftrum i valgkampen. Mads får et kort indblik i et konkret dansk politisk sammenstød.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI-hitmager frygter ikke Spotifys oprydning: 'Der er så meget lort derude'",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/indland/ai-hitmager-frygter-ikke-spotifys-oprydning-der-er-saa-meget-lort-derude",
+      "summary": "Manden bag TikTok-hittet 'Blink Til Mig' hilser Spotifys oprydning velkommen, men professor advarer om, at oprydningen kan ramme skævt. Manden bag TikTok-hittet 'Blink Til Mig' hilser Spotifys oprydning velkommen, men professor advarer om, at oprydningen kan ramme skævt. Det kræver ikke længere et musikstudie, et band eller årevis med instrumentundervisning at lave en sang, der går viralt. Med kunstig intelligens kan en popsang opstå på få sekunder, og i princippet kan man udgive hundredvis af n",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "spotify-oprydning-ai-musik",
+      "why": "Dansk musikskaber og en ekspert diskuterer Spotifys oprydning mod AI- og lavkvalitetsmusik; det handler om rettigheder, discovery og danske kunstneres muligheder i et AI-drevent musiklandskab. Mads bør forstå hvordan platformtiltag påvirker lokale musikøkonomier og kunstnerisk synlighed.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Report: Musk ordered Starlink slowdown in Ukraine, then blamed it on Trump",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/10/report-says-musk-not-trump-ordered-starlink-throttling-that-blindsided-ukraine/",
+      "summary": "Musk and Trump both denied ordering Starlink slowdown. WSJ reports it was Musk.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "starlink-slowdown-ukraine",
+      "why": "Ny rapport hævder, at Musk beordrede en Starlink-nedskalering, som ramte Ukraine, med efterfølgende benægtelser. Påvirker danske og europæiske overvejelser om private aktørers rolle i krigsinfrastruktur og forsyningssikkerhed — et vigtigt spørgsmål for politisk regulering og sikkerhedspolitik.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
+      "summary": "Russia frees Stephen Hubbard after US request while Steve Witkoff praises Putin, wanted by ICC as war criminal, as a ‘humanitarian’Vladimir Putin ordered the release of an American man from a Russian jail as he met Donald Trump’s envoy Steve Witkoff in St Petersburg on Wednesday for fresh talks on ending the war in Ukraine, amid increasingly close relations between Moscow and Washington.Trump had previously asked Putin to free Stephen Hubbard, a 74-year-old former teacher who had spent more than",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "putin-witkoff-release",
+      "why": "Putins møde med Trump-udsending og løsladelse af en amerikaner signalerer intensiverede bagtalepolitiske kanaler mellem Moskva og Washington — et udviklingsspor med direkte betydning for EU/NATO-diplomati og Danmarks strategiske vurderinger i forhold til Ukraine-fred og allierede positioner.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
+      "summary": "The PHP Foundation has revealed two serious vulnerabilities that could impact millions of websites. Security experts warn that failure to quickly patch the flaws could have dire consequences.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "php-vulnerabilities-global",
+      "why": "To alvorlige PHP-sårbarheder kræver øjeblikkelig patching og truer millioner af hjemmesider. Konsekvenserne strækker sig til danske offentlige og private webtjenester, og Mads bør kende omfanget, risiciene og hvad webansvarlige nu må skynde sig at gøre.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The internet is having a very bad cybersecurity day",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/21/the-internet-is-having-a-very-bad-cybersecurity-day/",
+      "summary": "From AI-discovered PHP vulnerabilities to flaws in Node.js and popular AI tool LiteLLM, cybersecurity teams have plenty to worry about this week.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "cybersecurity-day",
+      "why": "Bred oversigt over samtidige sikkerhedshændelser: PHP-fejl, Node.js- og AI-tool-sårbarheder. Samlet perspektiv hjælper læseren med at forstå en koordineret cyber-arbejdsliste for it-sikkerhed i både danske virksomheder og offentlige institutioner.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
+      "summary": "Just 9 months after raising a $180 million seed round, Flapping Airplanes has landed a $1 billion Series A for its mission to build AI models \"without ingesting half the internet.\"",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "flapping-airplanes-funding",
+      "why": "En ung AI-lab rejser gigantiske midler med løfte om modeller uden masseindtag af internetdata — vigtigt for strategiudvikling, konkurrence og regulering af databrug. Mads bør kende aktørens profil; det kan ændre debatten om træningsdata og EU's dataregler.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
+      "summary": "At Nvidia’s GTC in Berlin, Huang unveiled the company’s new plug-in data center—the DSX Pod—as the key to unlocking Europe’s AI infrastructure lag. Oh, and autonomous humanoid robotics.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-dsx-pod-europe",
+      "why": "Nvidias fokus på plug-in datacentre kan ændre Europas AI-infrastrukturstrategi og påvirke energiforbrug, forsyningskæder og suverænitet i regionen. Relevans for danske beslutningstagere og industri: hvordan Europa kan indhente AI-infrastrukturkløften.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "See Inside Cells Like Never Before in These Vivid Microscopic Images",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/",
+      "summary": "Winning entries in the 2026 Nikon Small World competitions reveal the hidden interactions that govern everyday life.            The post See Inside Cells Like Never Before in These Vivid Microscopic Images first appeared on Quanta Magazine",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "nikon-small-world-2026",
+      "why": "Quanta viser vindende mikroskopiske billeder, der illustrerer biologiske processer og nye billedteknikker. Et visuelt og videnskabeligt langt read om metode, opdagelse og hvorfor nye billedværktøjer ændrer biologisk forskning — godt til morgenens fordybelse.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Han har fanget 15 butikstyve på én dag:  - Hr. og Fru Danmark er næsten værst",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-10-21-han-har-fanget-15-butikstyve-paa-en-dag-hr-og-fru-danmark-er-naesten-vaerst",
+      "summary": "I 24 år har Kjeld Mervin Povlsen været butiksdetektiv. Han siger selv, han har set det meste, men til sidst sagde kroppen stop. I 24 år har Kjeld Mervin Povlsen været butiksdetektiv. Han siger selv, han har set det meste, men til sidst sagde kroppen stop. Kjeld Mervin Povlsen har fanget 15 butikstyve på én dag. Foto: / TV 2 Nord",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "butikstyveri-danmark-portraet",
+      "why": "Portræt af en erfaren butiksdetektiv og hans erfaringer med butikstyveri; historien giver et menneskeligt vindue ind i sociale tendenser, detailbranchens udfordringer og kriminalitetsdebatten i Danmark — relevant for lokalpolitik og kulturforståelse.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Få uger efter hun blev minister, blev manden ramt af kræft",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/samfund/2026-10-21-faa-uger-efter-hun-blev-minister-blev-manden-ramt-af-kraeft",
+      "summary": "Monika Rubins mand var nødt til at aflyse tv-interview dagen før, fordi han havde fået konstateret en ny kræftdiagnose. Monika Rubins mand var nødt til at aflyse tv-interview dagen før, fordi han havde fået konstateret en ny kræftdiagnose. Monika Rubin sad i møde i ministeriet, da hendes mand ringede. Hun tog ikke telefonen i første omgang, fortæller hun.",
+      "format": "longread",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "minister-familie-diagnose",
+      "why": "Personligt portræt af minister Monika Rubin og hvordan en alvorlig familiediagnose rammer i begyndelsen af en ministerperiode; historien sætter menneskelige rammer for politisk arbejde, beslutningspres og offentlighedens forventninger.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "‘You are a humanitarian also, sir’: the US feeds Putin with lies as Ukraine’s children take cover and die | Andrew Roth",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/21/you-are-a-humanitarian-also-sir-us-putin-lies-ukraine-children-take-cover-and-die-witkoff",
+      "summary": "Steve Witkoff’s flattery of the Russian leader could be just the start of a mendacious stratagem from a US president who says Moscow ‘has been fine on Ukraine’They say the first casualty of war is truth. For the Trump administration, the road to peace with Russia now encompasses some extraordinary lies.Steve Witkoff delivered one as he sat down with Vladimir Putin in St Petersburg on Wednesday, aiming to close the deal on Russia’s land grab in Ukraine with the White House’s strategy of maximum p",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "witkoff-putin-analysis",
+      "why": "Analytisk kommentar om Steve Witkoffs ros af Putin og faren ved normalisering af relationer uden klare garantier for Ukraine. Giver Mads baggrund for at vurdere politiske signaler, diplomati og konsekvenser for dansk støtte til Ukraine.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Apple Stores Will Have 'Limited' Availability of iPhone Duo for Walk-In Customers",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/21/apple-stores-limited-iphone-duo-for-walk-in/",
+      "summary": "In a statement shared with MacRumors today, an Apple spokesperson said there will be \"limited\" availability of the iPhone Duo for walk-in customers at Apple Stores in select countries when the device launches this Friday, October 23.\n\n\n\n\n\nApple's full statement:On Friday morning, our teams look forward to welcoming customers at Apple Stores to experience iPhone Duo and the incredible iPhone line-up for themselves. Apple Stores will have limited iPhone Duo available for walk-in customers, and we'",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-duo-availability",
+      "why": "Praktisk oplysning om iPhone Duo-lancering: begrænset walk-in-tilgængelighed kan påvirke danske købsstrategier og butikstrafik ved lanceringen. Relevant for Mads' interesse i Apple-udrulninger og forbrugernes planlægning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The new human-crafted Apple Music brand matters in an AI world",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
+      "summary": "Opinion: In a world of AI slop, showing the human hands making things helps.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "apple-music-human-brand",
+      "why": "Kulturkommentar om Apple Musics branding som menneskeskabt i en AI-drevet musikøkonomi. Relevant for danske musikere, kulturpolitikere og Mads' forståelse af, hvordan teknologiplatforme forsøger at differentiere menneskelig kuratering fra AI-produkter.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Art World Has an AI Problem",
+      "source": "Hyperallergic",
+      "url": "https://hyperallergic.com/the-art-world-has-an-ai-problem/",
+      "summary": "A diatribe against AI-generated art writing, MIT professors bedazzle security cameras, and Art Basel Paris goes into lockdown.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "art-world-ai-problem",
+      "why": "Hyperallergic tager temperaturen på kunstverdenens konflikter omkring AI-genereret kunst og rettigheder. Værd at læse for indsigt i spørgsmål om ophavsret, museer og dansk kultursektor, hvor lignende diskussioner allerede raser.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The Download: introducing the Impossible issue",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/21/1147573/the-download-introducing-impossible-issue/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Introducing: the Impossible issue We wanted our last print edition of 2026 to include a slate of stories that check in on impossible ideas. Why? Because it’s fun to dream about…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mitr-impossible-issue",
+      "why": "MIT Technology Review-samling om 'umulige' teknologiske idéer og projekter — god kort læsning for at få udsyn og inspiration til, hvad kommende teknologier kan byde på, inkl. et strategisk perspektiv på risikovillighed i innovation.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Xbox follows in PlayStation's footsteps, introducing AMD FSR 4.1, targeting better graphics and performance on Series X/S",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/xbox-series-x-s-amd-fsr-4-1-upscaling",
+      "summary": " AMD, the company that designs the chips inside Xbox and PlayStation consoles, made a big announcement this week: it's bringing the latest version of its advanced, AI-driven image upscaling technology, FSR 4.1, to Xbox Series X, Series S, and handhelds ROG Ally and Ally X. Read more",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Teknologi og verden",
+      "story_id": "fsr-4-1-xbox",
+      "why": "Teknisk men praktisk nyhed om grafisk opskalering (FSR 4.1) til Xbox — relevant for spilkultur, performance og hvilke konsoller danske spillere kan forvente forbedringer på. Mads kan bruge det til at vurdere konsolkonkurrence og oplevelsesforbedringer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Thousands march in Greece over public education failures as Macron blasts ‘stupid’ commentary on French protests – as it happened",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/oct/21/us-russia-ukraine-putin-witkoff-zelenskyy-france-italy-protests-europe-latest-news-updates",
+      "summary": "Students, teachers and civil servants have shown up in Athens, with demonstrations also in Thessaloniki and other citiesMeanwhile, back to Witkoff’s meeting with Putin in St Petersburg, the US president, Donald Trump, has just welcomed the release of Stephen Hubbard, a US citizen held by Moscow on allegations of fighting as a mercenary for Ukraine (11:24).In a post on Truth Social, he said:“Stephen Hubbard, taken four years ago by Russia during the Biden Administration, was just released from pr",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "europe-protests-education-france-greece",
+      "why": "Live-opdatering om omfattende protester i Europa med politik- og uddannelseskonsekvenser; god kontekst for forståelse af nationale protestbølger og europæiske politiske dynamikker, som kan influere EU-dagsordener og dansk politik.",
+      "reading_minutes": "10"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 4,
+        "teknologi": 14,
+        "fordybelse": 1,
+        "kultur": 3
+      },
+      "actual": {
+        "dansk_politik": 4,
+        "teknologi": 11,
+        "fordybelse": 1,
+        "kultur": 3
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (11 af 14).",
+        "Færre longreads end planlagt (5 af 6)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 293,
+      "web_candidates": 19,
+      "total_candidates": 75,
+      "repeats_dropped": 14,
+      "previews_enriched": 20,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 39,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 22,
+      "prepared": 19,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 3,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 38
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 35
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 48
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 11
+      }
+    }
+  }
+}
