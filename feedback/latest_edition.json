@@ -1,273 +1,205 @@
 {
-  "created_at": "2026-10-22T03:33:20.299637+00:00",
+  "created_at": "2026-10-23T03:32:38.146595+00:00",
   "articles": [
     {
-      "title": "Stewardesser og piloter dør oftere af strålingskræft, viser forskning i 500 erhverv",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/krop-sundhed/stewardesser-og-piloter-doer-oftere-af-straalingskraeft-viser-forskning-i-500-erhverv/",
-      "summary": "Visse kræftformer udgør en større andel af dødsfaldene blandt flypersonale end i andre erhverv ifølge nyt studie. Dansk forsker maner dog til ro og fremhæver flere forbehold ved studiet, man skal hæfte sig ved. \\ Automatisk oplæsning",
-      "format": "longread",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "flypersonale-straalingskraeft",
-      "why": "Nyt stort studie viser højere dødelighed af strålingsrelaterede kræftformer blandt flypersonale; en dansk forsker opfordrer til forsigtighed, men resultaterne kan få konsekvenser for arbejdsmiljø, forsikringer og regulering af luftfartspersonale. Mads bør kende usikkerhederne og mulige politiske/erhvervsmæssige konsekvenser.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Tidligere DF-profil er udansk, mener LA-ordfører",
+      "title": "'Troede det var en joke': Folketingsmedlem skal mødes med Ruslands ambassadør",
       "source": "DR Politik",
-      "url": "https://www.dr.dk/nyheder/politik/tidligere-df-profil-er-udansk-mener-la-ordfoerer",
-      "summary": "Ifølge den tidligere DF-profil Martin Henriksen skal homoseksuelle ikke kunne blive gift. Det gør ham ifølge Liberal Alliances politiske ordfører, Mads Strange, udansk. Ifølge den tidligere DF-profil Martin Henriksen skal homoseksuelle ikke kunne blive gift. Det gør ham ifølge Liberal Alliances politiske ordfører, Mads Strange, udansk. Kan man være dansk, hvis man synes, at homoseksualitet er uacceptabelt? Det spørgsmål blev heftigt debatteret i TV 2-programmet Højskolen, der blev sendt for to u",
+      "url": "https://www.dr.dk/nyheder/politik/troede-det-var-en-joke-folketingsmedlem-skal-moedes-med-ruslands-ambassadoer",
+      "summary": "Løsgængeren Jacob Harris ønsker at Danmark skal være mere diplomatiske, og derfor vil han mødes med den russiske ambassadør. Et møde, der får massiv kritik fra samtlige partier. Løsgængeren Jacob Harris ønsker at Danmark skal være mere diplomatiske, og derfor vil han mødes med den russiske ambassadør. Et møde, der får massiv kritik fra samtlige partier. Artiklen er opdateret klokken 16:38 med kommentarer fra forsvarsminister Jeppe Bruus (S) og udenrigsminister Lars Løkke Rasmussen (M). Forholdet",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "dansk-politik-identitet-konflikt",
-      "why": "En aktuel konflikt i dansk politik: LA's ordfører kalder en tidligere DF-profil 'udansk' pga. holdninger til homoseksuelles ret til ægteskab. Sagen viser interne skæringspunkter om værdipolitik og kan påvirke debatten om identitet og borgerlig luftrum i valgkampen. Mads får et kort indblik i et konkret dansk politisk sammenstød.",
+      "story_id": "harris-moede-ruslands-ambassadoer",
+      "why": "Folketingsmedlem Jacob Harris vil mødes med Ruslands ambassadør for at tale diplomati, hvilket vækker massiv kritik fra samtlige partier. Historien berører dansk intern politik og Danmark–Rusland-diplomati og er relevant for Mads’ forståelse af indenrigsreaktioner på russisk tilnærmelse.",
       "reading_minutes": "2"
     },
     {
-      "title": "AI-hitmager frygter ikke Spotifys oprydning: 'Der er så meget lort derude'",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/indland/ai-hitmager-frygter-ikke-spotifys-oprydning-der-er-saa-meget-lort-derude",
-      "summary": "Manden bag TikTok-hittet 'Blink Til Mig' hilser Spotifys oprydning velkommen, men professor advarer om, at oprydningen kan ramme skævt. Manden bag TikTok-hittet 'Blink Til Mig' hilser Spotifys oprydning velkommen, men professor advarer om, at oprydningen kan ramme skævt. Det kræver ikke længere et musikstudie, et band eller årevis med instrumentundervisning at lave en sang, der går viralt. Med kunstig intelligens kan en popsang opstå på få sekunder, og i princippet kan man udgive hundredvis af n",
-      "format": "short",
+      "title": "Super Smash Bros. creator thinks gen-AI will cause a surge of unoriginal games, but says human creativity can't be replicated",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/smash-bros-masahiro-sakurai-generative-ai-unoriginal-games",
+      "summary": "Sakurai thinks developers like Shadow of the Colossus' Fumito Ueda have something AI never will.. It's-a-me, Dario. Masahiro Sakurai has spoken about the pitfalls of generative AI use in game development, saying that while he believes the technology will result in a surge of unoriginal video games, human creativity - such as that shown by designers like Ico's Fumito Ueda - can't be replicated. In an interview with",
+      "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "spotify-oprydning-ai-musik",
-      "why": "Dansk musikskaber og en ekspert diskuterer Spotifys oprydning mod AI- og lavkvalitetsmusik; det handler om rettigheder, discovery og danske kunstneres muligheder i et AI-drevent musiklandskab. Mads bør forstå hvordan platformtiltag påvirker lokale musikøkonomier og kunstnerisk synlighed.",
+      "story_id": "sakurai-ai-spil-creativity",
+      "why": "Masahiro Sakurai advarer om, at generativ AI kan udløse en bølge af uinspirerede spil, mens kernehuman kreativitet forbliver unik. Relevant for Mads som game-interesseret: det forklarer en konkret kultur- og produktionsspænding i spilindustrien.",
       "reading_minutes": "3"
     },
     {
-      "title": "Report: Musk ordered Starlink slowdown in Ukraine, then blamed it on Trump",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/10/report-says-musk-not-trump-ordered-starlink-throttling-that-blindsided-ukraine/",
-      "summary": "Musk and Trump both denied ordering Starlink slowdown. WSJ reports it was Musk.",
-      "format": "short",
-      "section": "Verden",
+      "title": "Making the case for context-aware AI",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
+      "summary": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints and relationships that determine whether a decision is the right one. As companies look to move AI from experimentation into everyday operations, the challenge ahead…",
+      "format": "longread",
+      "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "starlink-slowdown-ukraine",
-      "why": "Ny rapport hævder, at Musk beordrede en Starlink-nedskalering, som ramte Ukraine, med efterfølgende benægtelser. Påvirker danske og europæiske overvejelser om private aktørers rolle i krigsinfrastruktur og forsyningssikkerhed — et vigtigt spørgsmål for politisk regulering og sikkerhedspolitik.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Putin orders release of jailed American as he meets Trump envoy for Ukraine talks",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/21/putin-witkoff-russia-ukraine-trump-stephen-hubbard-release",
-      "summary": "Russia frees Stephen Hubbard after US request while Steve Witkoff praises Putin, wanted by ICC as war criminal, as a ‘humanitarian’Vladimir Putin ordered the release of an American man from a Russian jail as he met Donald Trump’s envoy Steve Witkoff in St Petersburg on Wednesday for fresh talks on ending the war in Ukraine, amid increasingly close relations between Moscow and Washington.Trump had previously asked Putin to free Stephen Hubbard, a 74-year-old former teacher who had spent more than",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "putin-witkoff-release",
-      "why": "Putins møde med Trump-udsending og løsladelse af en amerikaner signalerer intensiverede bagtalepolitiske kanaler mellem Moskva og Washington — et udviklingsspor med direkte betydning for EU/NATO-diplomati og Danmarks strategiske vurderinger i forhold til Ukraine-fred og allierede positioner.",
+      "story_id": "context-aware-ai-enterprise",
+      "why": "MIT Technology Review forklarer, hvorfor virksomheder får mere værdi ved at bygge kontekst omkring AI end kun jagte modeller. Det ændrer, hvordan danske virksomheder bør prioritere AI‑investeringer og drift — vigtigt for Mads' forståelse af praktisk AI-strategi.",
       "reading_minutes": "5"
     },
     {
-      "title": "‘This Is Not a Drill’: Critical PHP Vulnerabilities Are Setting the Internet on Fire",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/this-is-not-a-drill-2-php-vulnerabilities-are-setting-the-internet-on-fire/",
-      "summary": "The PHP Foundation has revealed two serious vulnerabilities that could impact millions of websites. Security experts warn that failure to quickly patch the flaws could have dire consequences.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "php-vulnerabilities-global",
-      "why": "To alvorlige PHP-sårbarheder kræver øjeblikkelig patching og truer millioner af hjemmesider. Konsekvenserne strækker sig til danske offentlige og private webtjenester, og Mads bør kende omfanget, risiciene og hvad webansvarlige nu må skynde sig at gøre.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "The internet is having a very bad cybersecurity day",
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/21/the-internet-is-having-a-very-bad-cybersecurity-day/",
-      "summary": "From AI-discovered PHP vulnerabilities to flaws in Node.js and popular AI tool LiteLLM, cybersecurity teams have plenty to worry about this week.",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "cybersecurity-day",
-      "why": "Bred oversigt over samtidige sikkerhedshændelser: PHP-fejl, Node.js- og AI-tool-sårbarheder. Samlet perspektiv hjælper læseren med at forstå en koordineret cyber-arbejdsliste for it-sikkerhed i både danske virksomheder og offentlige institutioner.",
+      "story_id": "1password-ai-agents",
+      "why": "1Password introducerer et konkret system, hvor AI‑agenter kan gennemføre logins uden at få adgang til brugernes hemmeligheder. Det er et praktisk sikkerhedsskifte med direkte betydning for dansk privatlivs- og sikkerhedspraksis.",
       "reading_minutes": "2"
     },
     {
-      "title": "Year-old AI lab Flapping Airplanes raises $1B at a $6B valuation",
+      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/21/year-old-ai-lab-flapping-airplanes-raises-1b-at-a-6b-valuation/",
-      "summary": "Just 9 months after raising a $180 million seed round, Flapping Airplanes has landed a $1 billion Series A for its mission to build AI models \"without ingesting half the internet.\"",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "flapping-airplanes-funding",
-      "why": "En ung AI-lab rejser gigantiske midler med løfte om modeller uden masseindtag af internetdata — vigtigt for strategiudvikling, konkurrence og regulering af databrug. Mads bør kende aktørens profil; det kan ændre debatten om træningsdata og EU's dataregler.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Jensen Huang’s Vision for Europe Runs on Plug-In Data Centers",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/jensen-huangs-vision-for-europe-runs-on-plug-in-data-centers/",
-      "summary": "At Nvidia’s GTC in Berlin, Huang unveiled the company’s new plug-in data center—the DSX Pod—as the key to unlocking Europe’s AI infrastructure lag. Oh, and autonomous humanoid robotics.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "nvidia-dsx-pod-europe",
-      "why": "Nvidias fokus på plug-in datacentre kan ændre Europas AI-infrastrukturstrategi og påvirke energiforbrug, forsyningskæder og suverænitet i regionen. Relevans for danske beslutningstagere og industri: hvordan Europa kan indhente AI-infrastrukturkløften.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "See Inside Cells Like Never Before in These Vivid Microscopic Images",
-      "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/see-inside-cells-like-never-before-in-these-vivid-microscopic-images-20261021/",
-      "summary": "Winning entries in the 2026 Nikon Small World competitions reveal the hidden interactions that govern everyday life.            The post See Inside Cells Like Never Before in These Vivid Microscopic Images first appeared on Quanta Magazine",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "nikon-small-world-2026",
-      "why": "Quanta viser vindende mikroskopiske billeder, der illustrerer biologiske processer og nye billedteknikker. Et visuelt og videnskabeligt langt read om metode, opdagelse og hvorfor nye billedværktøjer ændrer biologisk forskning — godt til morgenens fordybelse.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Han har fanget 15 butikstyve på én dag:  - Hr. og Fru Danmark er næsten værst",
-      "source": "TV 2 Nyheder",
-      "url": "https://nyheder.tv2.dk/samfund/2026-10-21-han-har-fanget-15-butikstyve-paa-en-dag-hr-og-fru-danmark-er-naesten-vaerst",
-      "summary": "I 24 år har Kjeld Mervin Povlsen været butiksdetektiv. Han siger selv, han har set det meste, men til sidst sagde kroppen stop. I 24 år har Kjeld Mervin Povlsen været butiksdetektiv. Han siger selv, han har set det meste, men til sidst sagde kroppen stop. Kjeld Mervin Povlsen har fanget 15 butikstyve på én dag. Foto: / TV 2 Nord",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "butikstyveri-danmark-portraet",
-      "why": "Portræt af en erfaren butiksdetektiv og hans erfaringer med butikstyveri; historien giver et menneskeligt vindue ind i sociale tendenser, detailbranchens udfordringer og kriminalitetsdebatten i Danmark — relevant for lokalpolitik og kulturforståelse.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Få uger efter hun blev minister, blev manden ramt af kræft",
-      "source": "TV 2 Nyheder",
-      "url": "https://nyheder.tv2.dk/samfund/2026-10-21-faa-uger-efter-hun-blev-minister-blev-manden-ramt-af-kraeft",
-      "summary": "Monika Rubins mand var nødt til at aflyse tv-interview dagen før, fordi han havde fået konstateret en ny kræftdiagnose. Monika Rubins mand var nødt til at aflyse tv-interview dagen før, fordi han havde fået konstateret en ny kræftdiagnose. Monika Rubin sad i møde i ministeriet, da hendes mand ringede. Hun tog ikke telefonen i første omgang, fortæller hun.",
+      "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "summary": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
       "format": "longread",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "minister-familie-diagnose",
-      "why": "Personligt portræt af minister Monika Rubin og hvordan en alvorlig familiediagnose rammer i begyndelsen af en ministerperiode; historien sætter menneskelige rammer for politisk arbejde, beslutningspres og offentlighedens forventninger.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "‘You are a humanitarian also, sir’: the US feeds Putin with lies as Ukraine’s children take cover and die | Andrew Roth",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/21/you-are-a-humanitarian-also-sir-us-putin-lies-ukraine-children-take-cover-and-die-witkoff",
-      "summary": "Steve Witkoff’s flattery of the Russian leader could be just the start of a mendacious stratagem from a US president who says Moscow ‘has been fine on Ukraine’They say the first casualty of war is truth. For the Trump administration, the road to peace with Russia now encompasses some extraordinary lies.Steve Witkoff delivered one as he sat down with Vladimir Putin in St Petersburg on Wednesday, aiming to close the deal on Russia’s land grab in Ukraine with the White House’s strategy of maximum p",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "witkoff-putin-analysis",
-      "why": "Analytisk kommentar om Steve Witkoffs ros af Putin og faren ved normalisering af relationer uden klare garantier for Ukraine. Giver Mads baggrund for at vurdere politiske signaler, diplomati og konsekvenser for dansk støtte til Ukraine.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Apple Stores Will Have 'Limited' Availability of iPhone Duo for Walk-In Customers",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/21/apple-stores-limited-iphone-duo-for-walk-in/",
-      "summary": "In a statement shared with MacRumors today, an Apple spokesperson said there will be \"limited\" availability of the iPhone Duo for walk-in customers at Apple Stores in select countries when the device launches this Friday, October 23.\n\n\n\n\n\nApple's full statement:On Friday morning, our teams look forward to welcoming customers at Apple Stores to experience iPhone Duo and the incredible iPhone line-up for themselves. Apple Stores will have limited iPhone Duo available for walk-in customers, and we'",
-      "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "iphone-duo-availability",
-      "why": "Praktisk oplysning om iPhone Duo-lancering: begrænset walk-in-tilgængelighed kan påvirke danske købsstrategier og butikstrafik ved lanceringen. Relevant for Mads' interesse i Apple-udrulninger og forbrugernes planlægning.",
-      "reading_minutes": "2"
+      "story_id": "microsoft-medical-ai-science",
+      "why": "TechCrunch dækker et studie i Science og Microsofts påstand om AI, der slår læger i svære tilfælde — det har potentielle konsekvenser for sundhedsvæsenets rolle, regulering og danske hospitalsstrategier. Værd at kende for beslutningstagere og læsere interesseret i medicinsk AI.",
+      "reading_minutes": "6"
     },
     {
-      "title": "The new human-crafted Apple Music brand matters in an AI world",
+      "title": "Russia bombards Kyiv with missiles hours after agreeing to resume talks with Ukraine",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/oct/22/russia-missile-attack-kyiv-hours-after-agreeing-to-talks-ukraine",
+      "summary": "Experts say Russia is trying to destroy energy infrastructure before winter and US ‘appeasement and flattery’ will not achieve peace Experts say Russia is trying to destroy energy infrastructure before winter and US ‘appeasement and flattery’ will not achieve peace Russia has carried out a massive “demonstrative” attack on Ukraine, bombarding Kyiv with ballistic missiles just hours after Vladimir Putin said he had agreed to resume trilateral negotiations after talks with the US envoy Steve Witko",
+      "format": "longread",
+      "section": "Udland",
+      "group": "Teknologi og verden",
+      "story_id": "russia-kyiv-missiles-after-talks",
+      "why": "The Guardian rapporterer om en massiv russisk missileangreb mod Kyiv lige efter en aftale om genoptagelse af forhandlinger; eksperter peger på energiinfrastruktur som mål før vinter. Historien påvirker europæisk energ- og sikkerhedsdagsorden, relevant for dansk strategi og beredskab.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "US official: Russia's stalker satellite sure looks like an orbital weapon",
       "source": "Ars Technica",
-      "url": "https://arstechnica.com/culture/2026/10/the-new-human-crafted-apple-music-brand-matters-in-an-ai-world/",
-      "summary": "Opinion: In a world of AI slop, showing the human hands making things helps.",
+      "url": "https://arstechnica.com/space/2026/10/russia-claims-its-stalker-satellite-is-purely-peaceful-in-character/",
+      "summary": "The Russian official who called commercial satellites \"legitimate targets\" now says concerns are \"unfounded.\"",
       "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "apple-music-human-brand",
-      "why": "Kulturkommentar om Apple Musics branding som menneskeskabt i en AI-drevet musikøkonomi. Relevant for danske musikere, kulturpolitikere og Mads' forståelse af, hvordan teknologiplatforme forsøger at differentiere menneskelig kuratering fra AI-produkter.",
+      "section": "Udland",
+      "group": "Teknologi og verden",
+      "story_id": "russia-stalker-satellite",
+      "why": "Ars Technica redegør for bekymringer om russisk 'stalker'‑satellit og dens mulige offensive karakter. Historien har direkte sikkerhedsmæssige implikationer for europæisk rum‑politik og NATO’s rumberedskab, relevant for Mads’ interesse i Europa‑sikkerhed.",
       "reading_minutes": "2"
     },
     {
-      "title": "The Art World Has an AI Problem",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/the-art-world-has-an-ai-problem/",
-      "summary": "A diatribe against AI-generated art writing, MIT professors bedazzle security cameras, and Art Basel Paris goes into lockdown.",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "art-world-ai-problem",
-      "why": "Hyperallergic tager temperaturen på kunstverdenens konflikter omkring AI-genereret kunst og rettigheder. Værd at læse for indsigt i spørgsmål om ophavsret, museer og dansk kultursektor, hvor lignende diskussioner allerede raser.",
-      "reading_minutes": "3"
+      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+      "summary": "Equating to the loss of 5% of its 93,000 global staff, job cuts come as bank announces jump in quarterly profitsBarclays is cutting 5,000 jobs as part of wider cost-saving plans that its bosses say are being driven by advances in AI.The job cuts will mean losing about 5% of the bank’s 93,000 global staff, with executives confirming they had already cut 1,000 workers since the start of the year. Continue reading...",
+      "format": "short",
+      "section": "Økonomi",
+      "group": "Teknologi og verden",
+      "story_id": "barclays-ai-jobcuts",
+      "why": "Guardian dækker Barclays' plan om 5.000 fyringer, motiveret af produktivitetsgevinster fra AI. En konkret case om arbejdsmarkedspåvirkning fra AI som kan danne sammenligning for danske banker og arbejdsmarkedets debat.",
+      "reading_minutes": "4"
     },
     {
-      "title": "The Download: introducing the Impossible issue",
+      "title": "Designing an AI serving harness built to last",
       "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/21/1147573/the-download-introducing-impossible-issue/",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. Introducing: the Impossible issue We wanted our last print edition of 2026 to include a slate of stories that check in on impossible ideas. Why? Because it’s fun to dream about…",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have…",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "mitr-impossible-issue",
-      "why": "MIT Technology Review-samling om 'umulige' teknologiske idéer og projekter — god kort læsning for at få udsyn og inspiration til, hvad kommende teknologier kan byde på, inkl. et strategisk perspektiv på risikovillighed i innovation.",
+      "story_id": "ai-serving-harness",
+      "why": "MIT Technology Review diskuterer arkitekturen bag robuste AI‑serving‑systemer — et teknisk men virksomhedsrelevant stykke, der viser hvor konkurrencemæssige fordele faktisk skabes. Værdifuld for Mads, som vil forstå operationelle AI‑valg.",
       "reading_minutes": "2"
     },
     {
-      "title": "Xbox follows in PlayStation's footsteps, introducing AMD FSR 4.1, targeting better graphics and performance on Series X/S",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/xbox-series-x-s-amd-fsr-4-1-upscaling",
-      "summary": " AMD, the company that designs the chips inside Xbox and PlayStation consoles, made a big announcement this week: it's bringing the latest version of its advanced, AI-driven image upscaling technology, FSR 4.1, to Xbox Series X, Series S, and handhelds ROG Ally and Ally X. Read more",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Teknologi og verden",
-      "story_id": "fsr-4-1-xbox",
-      "why": "Teknisk men praktisk nyhed om grafisk opskalering (FSR 4.1) til Xbox — relevant for spilkultur, performance og hvilke konsoller danske spillere kan forvente forbedringer på. Mads kan bruge det til at vurdere konsolkonkurrence og oplevelsesforbedringer.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Thousands march in Greece over public education failures as Macron blasts ‘stupid’ commentary on French protests – as it happened",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/live/2026/oct/21/us-russia-ukraine-putin-witkoff-zelenskyy-france-italy-protests-europe-latest-news-updates",
-      "summary": "Students, teachers and civil servants have shown up in Athens, with demonstrations also in Thessaloniki and other citiesMeanwhile, back to Witkoff’s meeting with Putin in St Petersburg, the US president, Donald Trump, has just welcomed the release of Stephen Hubbard, a US citizen held by Moscow on allegations of fighting as a mercenary for Ukraine (11:24).In a post on Truth Social, he said:“Stephen Hubbard, taken four years ago by Russia during the Biden Administration, was just released from pr",
+      "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+      "summary": "The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
       "format": "longread",
-      "section": "Verden",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "huggingface-ai-dna",
+      "why": "WIRED beskriver et open‑source biologimodel fra Hugging Face, der kan 'samtale' om DNA og forudsige genvirkninger. Det er et praktisk skridt i AI‑biotek, med konsekvenser for forskning, etik og regulering i Danmark og EU.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Brandvarm rekord: Sommerens hedebølger kostede over 50.000 liv i europæiske byer",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/brandvarm-rekord-sommerens-hedeboelger-kostede-over-50-000-liv-i-europaeiske-byer/",
+      "summary": "Sommeren 2026 var ekstraordinært hed i det meste af Europa og satte den ene varmerekord efter den anden.  Blandt andet registrerede Frankrig sin varmeste sommer nogensinde, mens der i Østrig blev målt 41 graders varme for første gang i landets historie. Lignende rekorder blev sat i Storbritannien, Irland, Holland, Belgien og Spanien.  Også herhjemme fik...",
+      "format": "short",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "europe-heatwaves-2026-deaths",
+      "why": "Videnskab.dk summerer dødstal og effekter fra sommerens ekstreme hedebølger i Europa og dokumenterer konsekvenser for byers folkesundhed. Det er konkret klimakonsekvensviden med relevans for dansk beredskab og klimatilpasning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Youth protests across Europe: the overlapping crises facing Gen Z",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/youth-protests-across-europe-the-overlapping-crises-facing-gen-z-294754",
+      "summary": "Young people appear to be facing increasing demands while some of the social resources that help them cope are weakening.",
+      "format": "longread",
+      "section": "Samfund",
+      "group": "Danmark og kultur",
+      "story_id": "youth-protests-genz-europe",
+      "why": "The Conversation analyserer årsagerne bag ungdomsprotester i Europa og de sammenflettede kriser som påvirker Gen Z. Værdifuld for Mads til at forstå sociale spændinger, ungepolitik og hvilke krav unge stiller i Danmark og EU.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Save $150 on the Apple Mac Mini M4, but There’s a Catch",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/mac-mini-m4-deal-october-2026/",
+      "summary": "Apple’s Mac Mini M4 is one of the best mini computers you can buy, and it’s $150 off. While it’s a good deal on a new, older-generation model, it’s more expensive than it was at launch.",
+      "format": "short",
+      "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "europe-protests-education-france-greece",
-      "why": "Live-opdatering om omfattende protester i Europa med politik- og uddannelseskonsekvenser; god kontekst for forståelse af nationale protestbølger og europæiske politiske dynamikker, som kan influere EU-dagsordener og dansk politik.",
-      "reading_minutes": "10"
+      "story_id": "mac-mini-m4-deal",
+      "why": "WIRED gennemgår et konkret tilbud på Mac Mini M4 og vurderer værdien — praktisk for Mads ved købsovervejelser eller når han skal rådgive om kontor‑hardware til effektivt arbejde.",
+      "reading_minutes": "2"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 4,
-        "teknologi": 14,
-        "fordybelse": 1,
+        "dansk_politik": 1,
+        "teknologi": 8,
+        "verden": 5,
+        "fordybelse": 4,
         "kultur": 3
       },
       "actual": {
-        "dansk_politik": 4,
-        "teknologi": 11,
-        "fordybelse": 1,
-        "kultur": 3
+        "dansk_politik": 1,
+        "teknologi": 6,
+        "verden": 3,
+        "fordybelse": 3
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (11 af 14).",
-        "Færre longreads end planlagt (5 af 6)."
+        "Færre historier om teknologi end planlagt (6 af 8).",
+        "Færre historier om verden og sikkerhed end planlagt (3 af 5).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (3 af 4).",
+        "Færre historier om kultur end planlagt (0 af 3).",
+        "Færre longreads end planlagt (6 af 10)."
       ]
     },
     "collection": {
-      "rss_candidates": 293,
-      "web_candidates": 19,
+      "rss_candidates": 302,
+      "web_candidates": 17,
       "total_candidates": 75,
-      "repeats_dropped": 14,
-      "previews_enriched": 20,
+      "repeats_dropped": 11,
+      "previews_enriched": 21,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 39,
+        "full_text": 45,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 22,
-      "prepared": 19,
+      "approved": 21,
+      "prepared": 13,
       "dropped_unreadable": 0,
-      "dropped_diversity": 3,
+      "dropped_diversity": 8,
       "budget_exhausted": false
     },
     "source_health": {
@@ -281,7 +213,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 38
+        "items": 37
       },
       "BBC Technology": {
         "status": "ok",
@@ -296,8 +228,8 @@
         "items": 50
       },
       "Atlas Magasin": {
-        "status": "ok",
-        "items": 10
+        "status": "fejl",
+        "items": 0
       },
       "MIT Technology Review": {
         "status": "ok",
@@ -309,7 +241,7 @@
       },
       "The Conversation": {
         "status": "ok",
-        "items": 48
+        "items": 50
       },
       "MacRumors": {
         "status": "ok",
@@ -405,7 +337,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 8
+        "items": 1
       },
       "VGC": {
         "status": "ok",
@@ -413,7 +345,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 11
+        "items": 8
       }
     }
   }
