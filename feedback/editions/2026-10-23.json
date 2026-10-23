@@ -1,0 +1,352 @@
+{
+  "created_at": "2026-10-23T03:32:38.146595+00:00",
+  "articles": [
+    {
+      "title": "'Troede det var en joke': Folketingsmedlem skal mødes med Ruslands ambassadør",
+      "source": "DR Politik",
+      "url": "https://www.dr.dk/nyheder/politik/troede-det-var-en-joke-folketingsmedlem-skal-moedes-med-ruslands-ambassadoer",
+      "summary": "Løsgængeren Jacob Harris ønsker at Danmark skal være mere diplomatiske, og derfor vil han mødes med den russiske ambassadør. Et møde, der får massiv kritik fra samtlige partier. Løsgængeren Jacob Harris ønsker at Danmark skal være mere diplomatiske, og derfor vil han mødes med den russiske ambassadør. Et møde, der får massiv kritik fra samtlige partier. Artiklen er opdateret klokken 16:38 med kommentarer fra forsvarsminister Jeppe Bruus (S) og udenrigsminister Lars Løkke Rasmussen (M). Forholdet",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "harris-moede-ruslands-ambassadoer",
+      "why": "Folketingsmedlem Jacob Harris vil mødes med Ruslands ambassadør for at tale diplomati, hvilket vækker massiv kritik fra samtlige partier. Historien berører dansk intern politik og Danmark–Rusland-diplomati og er relevant for Mads’ forståelse af indenrigsreaktioner på russisk tilnærmelse.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Super Smash Bros. creator thinks gen-AI will cause a surge of unoriginal games, but says human creativity can't be replicated",
+      "source": "www.eurogamer.net",
+      "url": "https://www.eurogamer.net/smash-bros-masahiro-sakurai-generative-ai-unoriginal-games",
+      "summary": "Sakurai thinks developers like Shadow of the Colossus' Fumito Ueda have something AI never will.. It's-a-me, Dario. Masahiro Sakurai has spoken about the pitfalls of generative AI use in game development, saying that while he believes the technology will result in a surge of unoriginal video games, human creativity - such as that shown by designers like Ico's Fumito Ueda - can't be replicated. In an interview with",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "sakurai-ai-spil-creativity",
+      "why": "Masahiro Sakurai advarer om, at generativ AI kan udløse en bølge af uinspirerede spil, mens kernehuman kreativitet forbliver unik. Relevant for Mads som game-interesseret: det forklarer en konkret kultur- og produktionsspænding i spilindustrien.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Making the case for context-aware AI",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/22/1146812/making-the-case-for-context-aware-ai/",
+      "summary": "Enterprise AI can generate recommendations, automate tasks, and help organizations make decisions faster. But without an understanding of how a business actually operates, even powerful models can miss the constraints and relationships that determine whether a decision is the right one. As companies look to move AI from experimentation into everyday operations, the challenge ahead…",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "context-aware-ai-enterprise",
+      "why": "MIT Technology Review forklarer, hvorfor virksomheder får mere værdi ved at bygge kontekst omkring AI end kun jagte modeller. Det ændrer, hvordan danske virksomheder bør prioritere AI‑investeringer og drift — vigtigt for Mads' forståelse af praktisk AI-strategi.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "1Password launches a way for AI agents to log in on your behalf without seeing your password",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/",
+      "summary": "The new feature allows agents to log into a customer's personal accounts while still protecting the private credentials that secure those accounts.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "1password-ai-agents",
+      "why": "1Password introducerer et konkret system, hvor AI‑agenter kan gennemføre logins uden at få adgang til brugernes hemmeligheder. Det er et praktisk sikkerhedsskifte med direkte betydning for dansk privatlivs- og sikkerhedspraksis.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Microsoft’s Mustafa Suleyman says its AI outperforms doctors on hard cases as he chases ‘medical superintelligence’",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/",
+      "summary": "Microsoft’s new AI diagnostic system beat generalist doctors on hard cases, according to a study in Science. But most of the improvement seems to come from the AI models underneath, not from Microsoft’s system itself.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "microsoft-medical-ai-science",
+      "why": "TechCrunch dækker et studie i Science og Microsofts påstand om AI, der slår læger i svære tilfælde — det har potentielle konsekvenser for sundhedsvæsenets rolle, regulering og danske hospitalsstrategier. Værd at kende for beslutningstagere og læsere interesseret i medicinsk AI.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Russia bombards Kyiv with missiles hours after agreeing to resume talks with Ukraine",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/world/2026/oct/22/russia-missile-attack-kyiv-hours-after-agreeing-to-talks-ukraine",
+      "summary": "Experts say Russia is trying to destroy energy infrastructure before winter and US ‘appeasement and flattery’ will not achieve peace Experts say Russia is trying to destroy energy infrastructure before winter and US ‘appeasement and flattery’ will not achieve peace Russia has carried out a massive “demonstrative” attack on Ukraine, bombarding Kyiv with ballistic missiles just hours after Vladimir Putin said he had agreed to resume trilateral negotiations after talks with the US envoy Steve Witko",
+      "format": "longread",
+      "section": "Udland",
+      "group": "Teknologi og verden",
+      "story_id": "russia-kyiv-missiles-after-talks",
+      "why": "The Guardian rapporterer om en massiv russisk missileangreb mod Kyiv lige efter en aftale om genoptagelse af forhandlinger; eksperter peger på energiinfrastruktur som mål før vinter. Historien påvirker europæisk energ- og sikkerhedsdagsorden, relevant for dansk strategi og beredskab.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "US official: Russia's stalker satellite sure looks like an orbital weapon",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/space/2026/10/russia-claims-its-stalker-satellite-is-purely-peaceful-in-character/",
+      "summary": "The Russian official who called commercial satellites \"legitimate targets\" now says concerns are \"unfounded.\"",
+      "format": "short",
+      "section": "Udland",
+      "group": "Teknologi og verden",
+      "story_id": "russia-stalker-satellite",
+      "why": "Ars Technica redegør for bekymringer om russisk 'stalker'‑satellit og dens mulige offensive karakter. Historien har direkte sikkerhedsmæssige implikationer for europæisk rum‑politik og NATO’s rumberedskab, relevant for Mads’ interesse i Europa‑sikkerhed.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Barclays to cut 5,000 jobs as bank’s bosses hail AI productivity advances",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/business/2026/oct/22/barclays-profits-up-as-uk-banks-brace-for-tax-increase-in-budget",
+      "summary": "Equating to the loss of 5% of its 93,000 global staff, job cuts come as bank announces jump in quarterly profitsBarclays is cutting 5,000 jobs as part of wider cost-saving plans that its bosses say are being driven by advances in AI.The job cuts will mean losing about 5% of the bank’s 93,000 global staff, with executives confirming they had already cut 1,000 workers since the start of the year. Continue reading...",
+      "format": "short",
+      "section": "Økonomi",
+      "group": "Teknologi og verden",
+      "story_id": "barclays-ai-jobcuts",
+      "why": "Guardian dækker Barclays' plan om 5.000 fyringer, motiveret af produktivitetsgevinster fra AI. En konkret case om arbejdsmarkedspåvirkning fra AI som kan danne sammenligning for danske banker og arbejdsmarkedets debat.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Designing an AI serving harness built to last",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/22/1146109/designing-an-ai-serving-harness-built-to-last/",
+      "summary": "The next competitive advantage in enterprise AI has less to do with which model you choose than with what you build around it. That’s an important shift. For the past several years, much of the AI conversation has centered on model capability: bigger models, better reasoning, larger context windows, higher benchmark scores. Those advances have…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-serving-harness",
+      "why": "MIT Technology Review diskuterer arkitekturen bag robuste AI‑serving‑systemer — et teknisk men virksomhedsrelevant stykke, der viser hvor konkurrencemæssige fordele faktisk skabes. Værdifuld for Mads, som vil forstå operationelle AI‑valg.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Hugging Face’s New AI Biology Model Lets You Chat With DNA",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/hugging-face-new-ai-biology-model-chat-with-dna/",
+      "summary": "The new open-source model speaks the language of DNA and can help researchers understand the effects of any changes on gene activity and health.",
+      "format": "longread",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "huggingface-ai-dna",
+      "why": "WIRED beskriver et open‑source biologimodel fra Hugging Face, der kan 'samtale' om DNA og forudsige genvirkninger. Det er et praktisk skridt i AI‑biotek, med konsekvenser for forskning, etik og regulering i Danmark og EU.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Brandvarm rekord: Sommerens hedebølger kostede over 50.000 liv i europæiske byer",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/brandvarm-rekord-sommerens-hedeboelger-kostede-over-50-000-liv-i-europaeiske-byer/",
+      "summary": "Sommeren 2026 var ekstraordinært hed i det meste af Europa og satte den ene varmerekord efter den anden.  Blandt andet registrerede Frankrig sin varmeste sommer nogensinde, mens der i Østrig blev målt 41 graders varme for første gang i landets historie. Lignende rekorder blev sat i Storbritannien, Irland, Holland, Belgien og Spanien.  Også herhjemme fik...",
+      "format": "short",
+      "section": "Videnskab",
+      "group": "Fordybelse",
+      "story_id": "europe-heatwaves-2026-deaths",
+      "why": "Videnskab.dk summerer dødstal og effekter fra sommerens ekstreme hedebølger i Europa og dokumenterer konsekvenser for byers folkesundhed. Det er konkret klimakonsekvensviden med relevans for dansk beredskab og klimatilpasning.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Youth protests across Europe: the overlapping crises facing Gen Z",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/youth-protests-across-europe-the-overlapping-crises-facing-gen-z-294754",
+      "summary": "Young people appear to be facing increasing demands while some of the social resources that help them cope are weakening.",
+      "format": "longread",
+      "section": "Samfund",
+      "group": "Danmark og kultur",
+      "story_id": "youth-protests-genz-europe",
+      "why": "The Conversation analyserer årsagerne bag ungdomsprotester i Europa og de sammenflettede kriser som påvirker Gen Z. Værdifuld for Mads til at forstå sociale spændinger, ungepolitik og hvilke krav unge stiller i Danmark og EU.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Save $150 on the Apple Mac Mini M4, but There’s a Catch",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/mac-mini-m4-deal-october-2026/",
+      "summary": "Apple’s Mac Mini M4 is one of the best mini computers you can buy, and it’s $150 off. While it’s a good deal on a new, older-generation model, it’s more expensive than it was at launch.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "mac-mini-m4-deal",
+      "why": "WIRED gennemgår et konkret tilbud på Mac Mini M4 og vurderer værdien — praktisk for Mads ved købsovervejelser eller når han skal rådgive om kontor‑hardware til effektivt arbejde.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 1,
+        "teknologi": 8,
+        "verden": 5,
+        "fordybelse": 4,
+        "kultur": 3
+      },
+      "actual": {
+        "dansk_politik": 1,
+        "teknologi": 6,
+        "verden": 3,
+        "fordybelse": 3
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (6 af 8).",
+        "Færre historier om verden og sikkerhed end planlagt (3 af 5).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (3 af 4).",
+        "Færre historier om kultur end planlagt (0 af 3).",
+        "Færre longreads end planlagt (6 af 10)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 302,
+      "web_candidates": 17,
+      "total_candidates": 75,
+      "repeats_dropped": 11,
+      "previews_enriched": 21,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 45,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 21,
+      "prepared": 13,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 8,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 37
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "fejl",
+        "items": 0
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 35
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 50
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 8
+      }
+    }
+  }
+}
