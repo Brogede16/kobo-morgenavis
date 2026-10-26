@@ -1,0 +1,353 @@
+{
+  "created_at": "2026-10-26T04:32:48.737643+00:00",
+  "articles": [
+    {
+      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+      "summary": "We have the mandate, we have the resources, and the support from our stakeholders.\" “We have the mandate, we have the resources, and the support from our stakeholders.” During a lengthy news conference on Friday, NASA provided a detailed overview",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "nasa-lander-orion-update",
+      "why": "NASA announced concrete changes to Artemis lander plans and a fix to a persistent Orion spacecraft problem, altering timelines and international partnership roles for upcoming Moon missions. Mads should care because it reshapes Europe's and Denmark-adjacent industrial and scientific opportunities in lunar programmes.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
+      "summary": "The AI boom is pitting local residents against corporate giants seeking to power their energy-hungry networks – but one Welsh city is fighting backDale Johnston opens the gate to his neat suburban garden on the western fringes of Newport in South Wales. There’s a trampoline and a slide on the lawn for his grandchildren, and chairs for him and his wife. He should be enjoying the light draining from the perfect autumnal sky – but almost his entire view is blotted out by a vast expanse of prefabric",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "datacentre-david-v-goliath",
+      "why": "A long feature on how datacentre expansion driven by AI is colliding with local communities over power, water and planning, with a concrete UK case that illustrates wider European conflicts over infrastructure siting. Mads should care because Denmark faces the same choices about energy, permits and community pushback as AI demand grows.",
+      "reading_minutes": "15"
+    },
+    {
+      "title": "Will AI expose the rickety infrastructure of the internet?",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-internet-infrastructure",
+      "why": "Investigative piece arguing AI workloads are stressing fragile internet systems, revealing risks to services and companies that Denmark relies on. Important for understanding how AI adoption could force policy and investment decisions about networks and resilience in Europe.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "The hottest AI wearables and gadgets you should know about",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-wearables-roundup-2026",
+      "why": "A practical round-up of current AI wearables and gadgets (Muse Charm, Bee, Friend, Plaud etc.) with hands-on details and implications for privacy and daily use. Mads should read this to judge which devices matter for Danish consumers and institutions.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+      "summary": "The tech billionaire accuses Ukraine of violating its terms of service by using the network for military activity.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "starlink-ukraine-restriction",
+      "why": "Elon Musk/SpaceX statement that Starlink was restricted for Ukraine and later restored raises governance and operational questions about private control of critical comms in war. Mads should read this for its implications on European security and Denmark's reliance on commercial satcom.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+      "summary": "Authentic Brands Group says AI company infringed on rights of songs by the King such as Can’t Help Falling in Love Authentic Brands Group says AI company infringed on rights of songs by the King such as Can’t Help Falling in Love The owners of Elvis Presley",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-elvis-lawsuit",
+      "why": "Major rights-holders have sued Anthropic over alleged use of Elvis songs to train models — a case with clear stakes for AI training law, licensing and media rights in Europe. Mads should care because legal precedents will affect Danish creators and tech firms.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Mulige spor af helium på fjern planet vækker håb i jagten på liv i rummet",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/rummet/mulige-spor-af-helium-paa-fjern-planet-vaekker-haab-i-jagten-paa-liv-i-rummet/",
+      "summary": "Helium kan potentielt afsløre, om en fjern planet har en atmosfære – og bringe os et lille skridt nærmere svaret på, om vi er alene i universet.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "helium-exoplanet-detection",
+      "why": "Videnskab.dk reports potential helium detection in an exoplanet atmosphere that could help diagnose atmospheres and habitability. Mads should care for its scientific significance and the longer-term cultural interest in space exploration.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "ANALYSE: Derfor er dagens møde så vigtigt for Troels Lund – og hvad kan gå helt galt eller godt?",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/analyse-derfor-er-dagens-moede-saa-vigtigt-troels-lund-og-hvad-kan-gaa-helt-galt-eller-godt",
+      "summary": "Søndag mødes Venstres hovedbestyrelse. Troels Lund Poulsen skal have opbakning til sin politiske linje – og dermed til at straffe dem, der er ikke følger linjen. Søndag mødes Venstres hovedbestyrelse. Troels Lund Poulsen skal have opbakning til sin politiske linje – og dermed til at straffe dem, der er ikke følger linjen. Venstres formand, Troels Lund Poulsen, står foran to vigtige uger. Først et ekstraindkaldt hovedbestyrelsesmøde søndag i Nyborg – og om to uger landsmøde i Herning. På den ande",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "venstre-troels-lund-stake",
+      "why": "DR analysis of Venstre leader Troels Lund Poulsen's critical party meeting and the internal stakes for party discipline and strategy. Mads should prioritize this for immediate Danish political relevance ahead of key decisions.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Apple Wants to Fix Safari's Cramped Layout on iPhone Duo",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/25/apple-wants-to-fix-safari-on-iphone-duo/",
+      "summary": "Apple is considering changes to Safari on the iPhone Duo that would give websites access to more of the outer display, although the company has yet to settle on an approach.\n\n\n\n\n\nThe challenge is allowing pages to occupy the area beneath Safari's side-mounted controls without making parts of a website inaccessible. In an Friday, October 23 WebKit post, Apple's Jen Simmons explained that an existing web setting could enable this, but Apple's research suggests many sites would not handle it correc",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "safari-iphone-duo-layout",
+      "why": "Apple considers Safari UI changes for the new foldable iPhone Duo, indicating real platform engineering trade-offs designers and developers will face. Mads should care for the practical effects on web developers and Danish users adopting new form factors.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo?at_medium=RSS&at_campaign=rss",
+      "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems. This video can not be played How did AI discover the internet's massive cyber-security risk? Microsoft boss Satya Nadella says he has not seen anything like the PHP emergency \"in a long, long time\".",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "php-security-scramble",
+      "why": "BBC reports on the immediate scramble to patch critical PHP vulnerabilities discovered by AI — a tangible cyber-resilience crisis affecting web services. Mads should care because Danish public and private sites need to patch and Danish cyber policy may respond.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "World leaders warn of security flaws found in PHP programming language",
+      "source": "www.aljazeera.com",
+      "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming",
+      "summary": "AI was used to pinpoint two vulnerabilities in the PHP language, used by about 70 percent of websites.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "php-security-global-warn",
+      "why": "Al Jazeera coverage of global leaders warning after AI-discovered PHP flaws emphasizes international attention and potential policy responses. Mads should read to understand geopolitical signalling and coordination around cyber vulnerability disclosure.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Cyberpunk: Edgerunners Season 2 is more than a retread of Netflix's beloved first season - it's a story that truly understands what it means to exist in Night City",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/cyberpunk-edgerunners-season-2-major-theme",
+      "summary": " Last night, I sat down with a greasy pizza and a few bottles of beer and braced myself for 10 episodes of heartbreak. Cyberpunk: Edgerunners' second season is out, and it follows in the footsteps of Studio Trigger's beloved, and tragic, debut. My expectations were way off. Read more",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "cyberpunk-edgerunners-s2",
+      "why": "A thoughtful Eurogamer piece on Cyberpunk: Edgerunners S2 that evaluates themes and craft — useful culture reading for conversations about gaming storytelling and animation. Mads should care as a high-quality cultural pick with international resonance.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "The Crucible: Arthur Miller’s morality tale was as much a reaction to his own marital failings as it was to the ‘red scare’",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/the-crucible-arthur-millers-morality-tale-was-as-much-a-reaction-to-his-own-marital-failings-as-it-was-to-the-red-scare-294832",
+      "summary": "At the height of America’s ‘red scare’ witch-hunts, Miller, whose play makes a martyr hero of the husband, was having an affair with Marilyn Monroe. Share article Print article Written at the height of the cold war “red scare”, Arthur Miller’s 1952 play The Crucible was a retelling of the 17th-century Salem witch trials (1692-93) which soon became the classic parable of mass hysteria.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "crucible-miller-personal-politics",
+      "why": "An accessible longread in The Conversation re-reads Miller’s The Crucible through personal and political lenses; a strong cultural essay for framing theatre and politics conversations in Denmark.",
+      "reading_minutes": "5"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "verden": 4,
+        "teknologi": 8,
+        "fordybelse": 2,
+        "kultur": 4,
+        "dansk_politik": 2
+      },
+      "actual": {
+        "verden": 4,
+        "teknologi": 5,
+        "fordybelse": 1,
+        "dansk_politik": 1,
+        "kultur": 2
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (5 af 8).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (1 af 2).",
+        "Færre historier om kultur end planlagt (2 af 4).",
+        "Færre historier om dansk politik og samfund end planlagt (1 af 2).",
+        "Færre longreads end planlagt (6 af 12)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 236,
+      "web_candidates": 20,
+      "total_candidates": 75,
+      "repeats_dropped": 12,
+      "previews_enriched": 21,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 42,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 20,
+      "prepared": 13,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 7,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 32
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 20
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 34
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 15
+      }
+    }
+  }
+}
