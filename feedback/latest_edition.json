@@ -1,288 +1,206 @@
 {
-  "created_at": "2026-10-24T03:32:57.298989+00:00",
+  "created_at": "2026-10-26T04:32:48.737643+00:00",
   "articles": [
     {
-      "title": "Pia Olsen Dyhrs forebyggelsesfond får kritik: '50 millioner får hurtigt ben at gå på'",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/penge/pia-olsen-dyhrs-forebyggelsesfond-faar-kritik-50-millioner-faar-hurtigt-ben-gaa-paa",
-      "summary": "Pia Olsen Dyhr gik til valg på en forebyggelsesfond på 15 milliarder i 2030. Nu har hun afsat 50 millioner til fonden, og det er langt fra nok, lyder kritikken. Pia Olsen Dyhr gik til valg på en forebyggelsesfond på 15 milliarder i 2030. Nu har hun afsat 50 millioner til fonden, og det er langt fra nok, lyder kritikken. - Regeringen har besluttet at prioritere stress rigtigt højt. Sådan lyder det fra økonomi- og indenrigsminister, Pia Olsen Dyhr (SF), efter hun i dag har afholdt en 'rundbordssna",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "forebyggelsesfond-kritik-2026",
-      "why": "Regeringen har afsat 50 mio. til en forebyggelsesfond, mens partiets valgoplæg talte om 15 mia. i 2030. Kritikken handler om politisk troværdighed og prioritering af forebyggelse i velfærden; Mads bør kende det som konkret dansk politik og et muligt konfliktpunkt i forhandlinger.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Annemarie var på indkøbstur med statsministeren: Nu er hun den eneste pensionist, der har fået lovning på 1.000 kr.",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/annemarie-var-paa-indkoebstur-med-statsministeren-men-s-garanterer-ikke-hun-er-en-af-de",
-      "summary": "Regeringen kritiseres for ikke at ville svare på, hvilke pensionister der kan se frem til ekstra penge. Kun Annemarie har fået klart svar fra S. Regeringen kritiseres for ikke at ville svare på, hvilke pensionister der kan se frem til ekstra penge. Kun Annemarie har fået klart svar fra S. Artiklen er opdateret, efter Socialdemokratiet vendte tilbage med et nyt svar, hvor partiet forsikrer, at Annemarie vil modtage de 1.000 kr. Regeringen med statsminister Mette Frederiksen (S) i spidsen er bleve",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "pensionist-garanti-annemarie-2026",
-      "why": "En enkelt pensionist fik en offentlig løfte om 1.000 kr., mens regeringen ikke vil sige hvilke pensionister som får ekstra penge. Historien viser kommunikationsrisiko og retorisk sårbarhed for regeringen — vigtigt for Mads til at følge politik og velfærdsdebattens dagsorden.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "âBlack Octoberâ: cybersecurity experts sound the alarm over new era of AI-enabled hacking",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/oct/23/cybersecurity-ai-hacking-php-vulnerability",
-      "summary": "After discovery of severe bug in the PHP programming language, executives warn of ‘vulnerability tsunami’ After discovery of severe bug in the PHP programming language, executives warn of âvulnerability tsunamiâ Leaders in cybersecurity are sounding the alarm after the discovery of a major vulnerability this week. They are predicting that artificial intelligence tools will expose more fundamental weaknesses in global internet infrastructure in the months to come. âI no longer think weâre",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "php-ai-vulnerability-tsunami-2026",
-      "why": "Opdagelsen af en alvorlig PHP-sårbarhed og eksperters advarsler om AI-accelererede angreb peger på et potentielt 'vulnerability tsunami' — det ændrer risikobilledet for danske udviklere, webhosting og offentlige services. Mads bør kende strategiske konsekvenser for cybersikkerhed.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Ukraine learns to fight without Starlink as Musk plays politics with satellites",
+      "title": "NASA updates lander plans for Moon landings, finally solves long-festering Orion issue",
       "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/10/ukraine-learns-to-fight-without-starlink-as-musk-plays-politics-with-satellites/",
-      "summary": "Ukraine has changed drone and war-fighting tech to reduce reliance on Starlink.",
+      "url": "https://arstechnica.com/space/2026/10/nasa-updates-lander-plans-for-moon-landings-finally-solves-long-festering-orion-issue/",
+      "summary": "We have the mandate, we have the resources, and the support from our stakeholders.\" “We have the mandate, we have the resources, and the support from our stakeholders.” During a lengthy news conference on Friday, NASA provided a detailed overview",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "ukraine-starlink-adaptation-2026",
-      "why": "Artikel forklarer konkrete teknologiske og taktiske ændringer i Ukraines krigsførsel som følge af begrænsninger i Starlink-tilgængelighed. Det har direkte betydning for Europas militære forsyningssikkerhed og for Danmarks støtte- og efterretningsafvejninger.",
+      "story_id": "nasa-lander-orion-update",
+      "why": "NASA announced concrete changes to Artemis lander plans and a fix to a persistent Orion spacecraft problem, altering timelines and international partnership roles for upcoming Moon missions. Mads should care because it reshapes Europe's and Denmark-adjacent industrial and scientific opportunities in lunar programmes.",
       "reading_minutes": "2"
     },
     {
-      "title": "AI firms say UK has a year to head off datacentre protests before construction is threatened",
+      "title": "The datacentre next door: on the frontline of tech’s latest David v Goliath battle",
       "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/uk-news/2026/oct/22/ai-firms-say-uk-has-a-year-to-head-off-datacentre-protests-before-construction-is-threatened",
-      "summary": "Exclusive: Nvidia, Microsoft and Cisco taskforce urges ministers to offer areas greater benefits from tech infrastructure amid fears of US-style opposition Exclusive: Nvidia, Microsoft and Cisco taskforce urges ministers to offer areas greater benefits from tech infrastructure amid fears of US-style opposition AI companies have told ministers they have 12 months to head off public opposition to datacentres in the UK or risk US-style protests that could threaten their construction. Successive dry",
+      "url": "https://www.theguardian.com/technology/2026/oct/24/the-datacentre-next-door-on-the-frontline-of-techs-latest-david-v-goliath-battle",
+      "summary": "The AI boom is pitting local residents against corporate giants seeking to power their energy-hungry networks – but one Welsh city is fighting backDale Johnston opens the gate to his neat suburban garden on the western fringes of Newport in South Wales. There’s a trampoline and a slide on the lawn for his grandchildren, and chairs for him and his wife. He should be enjoying the light draining from the perfect autumnal sky – but almost his entire view is blotted out by a vast expanse of prefabric",
       "format": "longread",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "uk-datacentre-protests-2026",
-      "why": "Store AI-aktører advarer britiske ministre om voksende modstand mod datacentre og kræver lokale fordele for at undgå blokering. Historien har direkte parallels for Danmark/EU: planlægning, lokal accept og energipolitik omkring infrastruktur bliver et politisk spørgsmål.",
-      "reading_minutes": "4"
+      "story_id": "datacentre-david-v-goliath",
+      "why": "A long feature on how datacentre expansion driven by AI is colliding with local communities over power, water and planning, with a concrete UK case that illustrates wider European conflicts over infrastructure siting. Mads should care because Denmark faces the same choices about energy, permits and community pushback as AI demand grows.",
+      "reading_minutes": "15"
     },
     {
-      "title": "AI’s hidden storage bill: What inference leaves behind",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/22/1146948/ais-hidden-storage-bill-what-inference-leaves-behind/",
-      "summary": "Ask most executives to picture the cost of AI and they’ll likely see GPUs—racks of accelerators with gigawatts of power—and a waitlist for silicon. But that picture leaves something out: Data storage costs. What happens to data after a model responds? Much of the back-end data that’s generated—from billions of daily prompts, images, and videos—needs…",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-storage-costs-2026",
-      "why": "Undersøgelse af de skjulte, voksende omkostninger ved dataopbevaring efter AI‑inference — et operativt regnskab der ændrer hvordan virksomheder og offentlige aktører vurderer AI‑økonomi og energiforbrug. Mads får konkret viden om pris, energi og policy‑implikationer.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Hegseth warns prediction market bets warp military judgment, endanger troops",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-memo-on-prediction-markets-says-insider-bets-put-troops-lives-at-risk/",
-      "summary": "Pentagon memo: Insider trading gives US enemies key intel on military operations. Pentagon memo: Insider trading gives US enemies key intel on military operations. Defense Secretary Pete Hegseth issued a memo warning military personnel against using nonpublic information to make bets on prediction markets, saying the wagers could give important clues to enemy countries. “Do Not Compromise Military Operations for Personal Financial Gain,” said the subject line of an",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "prediction-markets-military-2026",
-      "why": "Pentagon‑memo advarer imod at militærpersonel afgiver væddemål på prediction‑markets pga. risiko for lækage af operationel information. Relevans for Mads: interaktion mellem civile finansielle markeder, informationssikkerhed og militær beslutningstagning.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "From elite spies to ‘gig-economy’ operatives: the changing face of Russian sabotage",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/from-elite-spies-to-gig-economy-operatives-the-changing-face-of-russian-sabotage-294285",
-      "summary": "Across domains, Russia has turned unpredictability and disruption into its strategic weapon of choice.",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "russian-sabotage-shift-2026",
-      "why": "Giver en analytisk oversigt over, hvordan russisk sabotage har professionaliseret og fragmenteret sig — fra elitespionage til outsourcede operatører. Værdifuld for Mads som baggrund til at forstå hybride trusler mod Danmark og NATO-medlemmer.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Malaria Parasite Caught in the Act of Breaking and Entering | Quanta Magazine",
-      "source": "www.quantamagazine.org",
-      "url": "https://www.quantamagazine.org/malaria-parasite-caught-in-the-act-of-breaking-and-entering-20261023/",
-      "summary": "To invade red blood cells, the deadly protists create temporary molecular portals that disappear behind them — doors we can now see in fine detail.",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "malaria-portal-2026",
-      "why": "Quanta beskriver i detaljer den molekylære mekanik, hvormed malaria‑parasitten åbner midlertidige porte i røde blodlegemer — ny biologisk indsigt med klare forsknings- og medicinske implikationer. Læseværdigt videnskabeligt longread for nysgerrighed og faglig dybde.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Unlocking the secrets of the ‘Dragon Man’ skull – and what it reveals about human evolution",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/unlocking-the-secrets-of-the-dragon-man-skull-and-what-it-reveals-about-human-evolution-291321",
-      "summary": "Most of what we knew about early modern humans has been turned upside down in the past two decades – and many more questions remain. Share article Print article In September 2018, China Daily ran a story that found its way to my desk. It featured the photograph of a beautifully preserved fossil skull with huge brow-ridges, with a caption speculating – wrongly, as it would turn out – that it belonged to a species of human known as",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "dragon-man-evolution-2026",
-      "why": "Stor videnskabelig gennemgang af 'Dragon Man'-kraniet og dets betydning for menneskets evolutionær historie. Lang, veldokumenteret feature som giver perspektiv på et felt, der ofte vender op og ned på vores forståelse af menneskets stamtræ.",
-      "reading_minutes": "12"
-    },
-    {
-      "title": "Portrait of a Paris Art Week on Fire",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/portrait-of-a-paris-art-week-on-fire/",
-      "summary": "On protest, business as usual, and the surreal experience of attending an art fair while smelling burning plastic. On protest, business as usual, and the surreal experience of attending an art fair while smelling burning plastic. PARIS — “The people in the art world are courageous,” a collector told me at Asia Now, the first of the Paris art fairs that opened early in the week on Monday, in the heat of the protests. “But I would still like to be back at my hotel before 7pm, you know, just in cas",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "paris-art-week-protests-2026",
-      "why": "Hyperallergic rapporterer om protester og forstyrrelser under Paris Art Week — et blik på, hvordan kunstverdenens marked og politik kolliderer. Relevant for dansk kulturfelt og store institutioners risikohåndtering ved internationale fairer og messer.",
-      "reading_minutes": "8"
-    },
-    {
-      "title": "From Toast to Bessemer: Who founders will hear from at TechCrunch Founder Summit 2026",
+      "title": "Will AI expose the rickety infrastructure of the internet?",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/23/from-toast-to-bessemer-who-founders-will-hear-from-at-techcrunch-founder-summit-2026/",
-      "summary": "Hosted by TechCrunch in partnership with Fidelity Private Shares, the full-day event goes beyond fundraising and AI to explore the realities of finding customers, building teams, sharpening a pitch, developing founder leadership, and scaling companies both inside and outside traditional startup hubs.",
+      "url": "https://techcrunch.com/2026/10/24/will-ai-expose-the-rickety-infrastructure-of-the-internet/",
+      "summary": "The moment you realize the internet is \"held together by glue and dreams.\"",
       "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "techcrunch-founder-summit-2026",
-      "why": "Oversigt over emner og talere på TechCrunch Founder Summit — nyttigt baggrundsstof om aktuelle startup‑tendenser, investor‑dagsordener og hvordan grundlæggere tiltaler vækst i AI‑æraen.",
-      "reading_minutes": "5"
+      "story_id": "ai-internet-infrastructure",
+      "why": "Investigative piece arguing AI workloads are stressing fragile internet systems, revealing risks to services and companies that Denmark relies on. Important for understanding how AI adoption could force policy and investment decisions about networks and resilience in Europe.",
+      "reading_minutes": "7"
     },
     {
-      "title": "Experts cast doubt on Anthropic report detailing how AI has altered work at the company",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/oct/23/anthropic-report-ai-workplace-shifts",
-      "summary": "Anthropic claims AI will shift how work gets done and labor demand – but some experts are skeptical of the vision Anthropic claims AI will shift how work gets done and labor demand – but some experts are skeptical of the vision L ast year, the Anthropic CEO, Dario Amodei, warned that artificial intelligence could",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "anthropic-ai-work-debate-2026",
-      "why": "Kritisk gennemgang af Anthropic's påstande om AI‑omformning af arbejdspraksis og arbejdsstyrkens efterspørgsel. Bringer skeptiske eksperter i spil og hjælper med at vurdere corporate PR vs. virkelige effekter — vigtigt for Mads' bedømmelse af AI‑narrativer.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Startups don’t need to go viral to win customers",
+      "title": "The hottest AI wearables and gadgets you should know about",
       "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/23/startups-dont-need-to-go-viral-to-win-customers/",
-      "summary": "At TechCrunch Disrupt last week, two founders and a VC discussed how to not just gain an early following but keep one.",
-      "format": "short",
+      "url": "https://techcrunch.com/2026/10/25/the-hottest-ai-wearables-and-gadgets-you-should-know-about/",
+      "summary": "We compiled a list of all the hottest AI wearables, including Muse Charm, Bee, Friend, Plaud, and more.",
+      "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "startups-sustainable-growth-2026",
-      "why": "Praktisk rådgivning til grundlæggere om bæredygtig vækst — nyttig for dansk iværksætter‑dækning og forståelse af, hvordan mindre virksomheder kan navigere i en AI‑dreven økonomi uden at gå efter virale hits.",
-      "reading_minutes": "4"
+      "story_id": "ai-wearables-roundup-2026",
+      "why": "A practical round-up of current AI wearables and gadgets (Muse Charm, Bee, Friend, Plaud etc.) with hands-on details and implications for privacy and daily use. Mads should read this to judge which devices matter for Danish consumers and institutions.",
+      "reading_minutes": "6"
     },
     {
-      "title": "UK to invest £100m in 'world first' AI Biosecurity Lab",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cqdjv8xllvyyo?at_medium=RSS&at_campaign=rss",
-      "summary": "The chancellor will unveil AI spending aimed at shoring up the UK's defences in Wednesday's Budget. The UK says it will establish a national AI Biosecurity Lab (AIBL) to help strengthen its defences against emerging biological threats. As part of Wednesday's Budget, the government will commit £100m to establishing the new, \"world first\" institute with the support of leading AI firms. The chancellor will also pledge millions of pounds in spending across a range of initiatives aimed at shoring up ",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "uk-ai-biosecurity-lab-2026",
-      "why": "Briternes plan om en AI Biosecurity Lab kombinerer AI og biologisk sikkerhed med 100 mio. pund i finansiering. Det er et konkret offentlig‑privat initiativ som kan forme internationale standarder og samarbejde, relevant for dansk biosikkerhedspolitik og forskningssamarbejder.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Ukraine says Starlink still restricted after Trump says limits lifted",
+      "title": "Musk says SpaceX restricted Ukraine's Starlink connection as service restored",
       "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cq74pjpmx0e8o?at_medium=RSS&at_campaign=rss",
-      "summary": "The network is used by the Ukrainian military, sources say, and Trump says \"if there is a problem, I'll get it straightened out\".",
+      "url": "https://www.bbc.co.uk/news/articles/cvx28ljp8n4xo?at_medium=RSS&at_campaign=rss",
+      "summary": "The tech billionaire accuses Ukraine of violating its terms of service by using the network for military activity.",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "starlink-restrictions-2026",
-      "why": "BBC‑opdatering om fortsatte restriktioner på Starlink‑netværket trods påstande om ophævelse. Backup hvis Ars Technica‑stykket ikke kan udtrækkes; relevant for logistik og afhængighed af kommercielle satellittjenester i krig.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Tror du, din chatbot er en fejlfri korrekturlæser? Så tro om igen",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/teknologi/tror-du-din-chatbot-er-en-fejlfri-korrekturlaeser-saa-tro-om-igen/",
-      "summary": "Chatbotter er på kort tid blevet hvermandseje, og mange af os bruger ikke mindst sprogmodellerne som en pålidelig korrekturlæser, der kan hjælpe os med at sætte kommaet rigtigt og dele ordenene korrekt.  Botterne har nemlig ry for at være ekstremt sprogligt kompetente, men forventer man et fejlfrit sprog, når chatbotten har været teksten igennem, kan...",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "chatbot-proofreading-limits-2026",
-      "why": "Videnskab.dk forklarer praktiske begrænsninger ved chatbots som korrekturlæsere og illustrerer fejltyper. Brugerorienteret og konkret — vigtigt for alle, der benytter AI i dagligt skrivearbejde eller kommunikation i medier og forvaltning.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Flashy internal trailer for now-cancelled Mass Effect Universe appears online, following EA's closure of BioWare",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/mass-effect-universe-trailer-leak-real",
-      "summary": " An internal trailer for the cancelled Mass Effect game that was in-development at BioWare prior to its closure this week has appeared online. It's confirmed to be real, too, amid some initial suspicions it may have been an AI generated fake. Read more",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "mass-effect-trailer-leak-2026",
-      "why": "Intern trailer for et aflyst BioWare‑projekt lækket efter studiets lukning — relevant kultur/industrihistorie om spilbranche, IP‑styring og arbejdspladser i kreative techøkosystemer, hvis spilindustriens struktur interesserer Mads.",
+      "story_id": "starlink-ukraine-restriction",
+      "why": "Elon Musk/SpaceX statement that Starlink was restricted for Ukraine and later restored raises governance and operational questions about private control of critical comms in war. Mads should read this for its implications on European security and Denmark's reliance on commercial satcom.",
       "reading_minutes": "3"
     },
     {
-      "title": "Den blev designet for over 100 år siden - nu er hypet skotsk stol tilbage",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/kultur/den-blev-designet-over-100-aar-siden-nu-er-hypet-skotsk-stol-tilbage",
-      "summary": "En høj og ubehagelig stol er flyttet ind i mode- og designverdenen på det seneste. En høj og ubehagelig stol er flyttet ind i mode- og designverdenen på det seneste. Den ligner en ribbe fra en gymnastiksal, men er en dyr designstol. Den skotske arkitekt og designer Charles Rennie Mackintosh designede Hill House-stolen i 1902, og nu dukker den op på mange internationale",
+      "title": "Anthropic sued for allegedly using 274 Elvis Presley songs to train AI models",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/us-news/2026/oct/25/elvis-presley-anthropic-lawsuit-ai-models-music",
+      "summary": "Authentic Brands Group says AI company infringed on rights of songs by the King such as Can’t Help Falling in Love Authentic Brands Group says AI company infringed on rights of songs by the King such as Can’t Help Falling in Love The owners of Elvis Presley",
       "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "hill-house-chair-2026",
-      "why": "Designfeature om Hill House‑stolen der er tilbage i mode og designverdenen. Relevant for Mads' kulturinteresse: hvordan historisk design genoplives i samtidsmode og internationale gallerier, med betydning for danske designscener og samlere.",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-elvis-lawsuit",
+      "why": "Major rights-holders have sued Anthropic over alleged use of Elvis songs to train models — a case with clear stakes for AI training law, licensing and media rights in Europe. Mads should care because legal precedents will affect Danish creators and tech firms.",
       "reading_minutes": "2"
     },
     {
-      "title": "The Social Society Helping Women Join the AI Boom",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/aged-intelligence-society-interview/",
-      "summary": "WIRED spoke with the founders of the Aged Intelligence Society, a fast-growing events startup that brings women together to “solve midlife problems using frontier tools.”",
+      "title": "Mulige spor af helium på fjern planet vækker håb i jagten på liv i rummet",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/rummet/mulige-spor-af-helium-paa-fjern-planet-vaekker-haab-i-jagten-paa-liv-i-rummet/",
+      "summary": "Helium kan potentielt afsløre, om en fjern planet har en atmosfære – og bringe os et lille skridt nærmere svaret på, om vi er alene i universet.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "helium-exoplanet-detection",
+      "why": "Videnskab.dk reports potential helium detection in an exoplanet atmosphere that could help diagnose atmospheres and habitability. Mads should care for its scientific significance and the longer-term cultural interest in space exploration.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "ANALYSE: Derfor er dagens møde så vigtigt for Troels Lund – og hvad kan gå helt galt eller godt?",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/analyse-derfor-er-dagens-moede-saa-vigtigt-troels-lund-og-hvad-kan-gaa-helt-galt-eller-godt",
+      "summary": "Søndag mødes Venstres hovedbestyrelse. Troels Lund Poulsen skal have opbakning til sin politiske linje – og dermed til at straffe dem, der er ikke følger linjen. Søndag mødes Venstres hovedbestyrelse. Troels Lund Poulsen skal have opbakning til sin politiske linje – og dermed til at straffe dem, der er ikke følger linjen. Venstres formand, Troels Lund Poulsen, står foran to vigtige uger. Først et ekstraindkaldt hovedbestyrelsesmøde søndag i Nyborg – og om to uger landsmøde i Herning. På den ande",
       "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "venstre-troels-lund-stake",
+      "why": "DR analysis of Venstre leader Troels Lund Poulsen's critical party meeting and the internal stakes for party discipline and strategy. Mads should prioritize this for immediate Danish political relevance ahead of key decisions.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Apple Wants to Fix Safari's Cramped Layout on iPhone Duo",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/25/apple-wants-to-fix-safari-on-iphone-duo/",
+      "summary": "Apple is considering changes to Safari on the iPhone Duo that would give websites access to more of the outer display, although the company has yet to settle on an approach.\n\n\n\n\n\nThe challenge is allowing pages to occupy the area beneath Safari's side-mounted controls without making parts of a website inaccessible. In an Friday, October 23 WebKit post, Apple's Jen Simmons explained that an existing web setting could enable this, but Apple's research suggests many sites would not handle it correc",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "safari-iphone-duo-layout",
+      "why": "Apple considers Safari UI changes for the new foldable iPhone Duo, indicating real platform engineering trade-offs designers and developers will face. Mads should care for the practical effects on web developers and Danish users adopting new form factors.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "'It's been relentless' say IT workers on frontline of PHP cyber-security scramble",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cxnv025d8qpmo?at_medium=RSS&at_campaign=rss",
+      "summary": "IT and cyber experts have told the BBC about their struggles in the last 48 hours to update their systems. This video can not be played How did AI discover the internet's massive cyber-security risk? Microsoft boss Satya Nadella says he has not seen anything like the PHP emergency \"in a long, long time\".",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "php-security-scramble",
+      "why": "BBC reports on the immediate scramble to patch critical PHP vulnerabilities discovered by AI — a tangible cyber-resilience crisis affecting web services. Mads should care because Danish public and private sites need to patch and Danish cyber policy may respond.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "World leaders warn of security flaws found in PHP programming language",
+      "source": "www.aljazeera.com",
+      "url": "https://www.aljazeera.com/news/2026/10/22/world-leaders-warn-against-security-flaw-found-in-php-computer-programming",
+      "summary": "AI was used to pinpoint two vulnerabilities in the PHP language, used by about 70 percent of websites.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "php-security-global-warn",
+      "why": "Al Jazeera coverage of global leaders warning after AI-discovered PHP flaws emphasizes international attention and potential policy responses. Mads should read to understand geopolitical signalling and coordination around cyber vulnerability disclosure.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Cyberpunk: Edgerunners Season 2 is more than a retread of Netflix's beloved first season - it's a story that truly understands what it means to exist in Night City",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/cyberpunk-edgerunners-season-2-major-theme",
+      "summary": " Last night, I sat down with a greasy pizza and a few bottles of beer and braced myself for 10 episodes of heartbreak. Cyberpunk: Edgerunners' second season is out, and it follows in the footsteps of Studio Trigger's beloved, and tragic, debut. My expectations were way off. Read more",
+      "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "aged-intelligence-society-2026",
-      "why": "WIRED‑profil af et netværk, der hjælper midaldrende kvinder bruge AI — interessant case om inklusion, kompetenceopbygning og civilsamfundets rolle i teknologiovergang. Godt supplement til policy‑artikler om arbejdsmarkedet.",
-      "reading_minutes": "2"
+      "story_id": "cyberpunk-edgerunners-s2",
+      "why": "A thoughtful Eurogamer piece on Cyberpunk: Edgerunners S2 that evaluates themes and craft — useful culture reading for conversations about gaming storytelling and animation. Mads should care as a high-quality cultural pick with international resonance.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "The Crucible: Arthur Miller’s morality tale was as much a reaction to his own marital failings as it was to the ‘red scare’",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/the-crucible-arthur-millers-morality-tale-was-as-much-a-reaction-to-his-own-marital-failings-as-it-was-to-the-red-scare-294832",
+      "summary": "At the height of America’s ‘red scare’ witch-hunts, Miller, whose play makes a martyr hero of the husband, was having an affair with Marilyn Monroe. Share article Print article Written at the height of the cold war “red scare”, Arthur Miller’s 1952 play The Crucible was a retelling of the 17th-century Salem witch trials (1692-93) which soon became the classic parable of mass hysteria.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "crucible-miller-personal-politics",
+      "why": "An accessible longread in The Conversation re-reads Miller’s The Crucible through personal and political lenses; a strong cultural essay for framing theatre and politics conversations in Denmark.",
+      "reading_minutes": "5"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 2,
-        "teknologi": 7,
-        "verden": 7,
+        "verden": 4,
+        "teknologi": 8,
         "fordybelse": 2,
-        "kultur": 3
+        "kultur": 4,
+        "dansk_politik": 2
       },
       "actual": {
-        "dansk_politik": 2,
-        "teknologi": 6,
-        "verden": 6,
-        "fordybelse": 2,
-        "kultur": 4
+        "verden": 4,
+        "teknologi": 5,
+        "fordybelse": 1,
+        "dansk_politik": 1,
+        "kultur": 2
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (6 af 7).",
-        "Færre historier om verden og sikkerhed end planlagt (6 af 7).",
-        "Færre longreads end planlagt (8 af 13)."
+        "Færre historier om teknologi end planlagt (5 af 8).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (1 af 2).",
+        "Færre historier om kultur end planlagt (2 af 4).",
+        "Færre historier om dansk politik og samfund end planlagt (1 af 2).",
+        "Færre longreads end planlagt (6 af 12)."
       ]
     },
     "collection": {
-      "rss_candidates": 288,
+      "rss_candidates": 236,
       "web_candidates": 20,
       "total_candidates": 75,
-      "repeats_dropped": 13,
-      "previews_enriched": 20,
+      "repeats_dropped": 12,
+      "previews_enriched": 21,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 40,
+        "full_text": 42,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 28,
-      "prepared": 20,
+      "approved": 20,
+      "prepared": 13,
       "dropped_unreadable": 0,
-      "dropped_diversity": 8,
+      "dropped_diversity": 7,
       "budget_exhausted": false
     },
     "source_health": {
@@ -296,11 +214,11 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 21
+        "items": 32
       },
       "BBC Technology": {
         "status": "ok",
-        "items": 21
+        "items": 20
       },
       "Ars Technica": {
         "status": "ok",
@@ -420,7 +338,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -428,7 +346,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 17
+        "items": 15
       }
     }
   }
