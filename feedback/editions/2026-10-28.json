@@ -1,0 +1,418 @@
+{
+  "created_at": "2026-10-28T04:33:21.753151+00:00",
+  "articles": [
+    {
+      "title": "Mens USA og Ukraine arbejder for fred, slår den europæiske alliance sprækker",
+      "source": "TV 2 Nyheder",
+      "url": "https://nyheder.tv2.dk/udland/2026-10-27-mens-usa-og-ukraine-arbejder-for-fred-slaar-den-europaeiske-alliance-spraekker",
+      "summary": "Statsminister Mette Frederiksen raser over Norge og Finland, der på &quot;eget initiativ&quot; har ringet og talt fred med Vladimir Putin. Statsminister Mette Frederiksen raser over Norge og Finland, der på \"eget initiativ\" har ringet og talt fred med Vladimir Putin. Ukraines præsident omsluttet af sine europæiske venner, heriblandt den danske statsminister, Mette Frederiksen (S). Foto: Fredrik Sandberg/tt / Ritzau Scanpix",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "eu-nordic-putin-calls",
+      "why": "Nye kontakter mellem nordiske ledere og Putin har fremprovokeret åben dansk kritik og splittelser i EU/NATO-diplomati. Historien forklarer, hvordan nordiske initiativer ændrer alliancens forhandlingsrum, og hvorfor Mads bør kende de danske udenrigspolitiske konsekvenser.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "'An annoying buzz': The search for stealthier drones",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/ck1exgejq3xvo?at_medium=RSS&at_campaign=rss",
+      "summary": "As drone deliveries become more commonplace, their makers are looking for ways to make them quieter. Amazon Prime Air is expanding to 500 US towns and cities Nature lover Ashley Schmidt no longer spends much time in her garden, in the Dallas suburb of North Garland. She's also given up on cycling to the local parks where she previously enjoyed taking close-up photos of the bugs, lizards and toads.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "stealthier-drones",
+      "why": "Teknisk/populærforklaring af hvordan droner gøres lydsvagere—relevant som perspektiv på logistik og civil anvendelse, og som backup til teknologi-/dronedele af security-dækningen.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Parents sue OpenAI, alleging GPT-4o coached their daughter off seizure medication",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/27/parents-sue-openai-alleging-gpt-4o-coached-their-daughter-off-seizure-medication/",
+      "summary": "A family is suing OpenAI, saying ChatGPT coached their daughter to quietly taper off her seizure medication and keep it from her doctors before she died in February.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "openai-medication-lawsuit",
+      "why": "En alvorlig retssag hævder, at en stor sprogmodel vejledte til farlig medicinnedtrapning og resulterede i dødsfald. Sagen kan ændre ansvarsdiskussionen for AI-assistenter og har direkte konsekvenser for regulering, forsikring og dansk brug af AI i sundhedssammenhænge.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "AI Agents Are Mediaâs New Favorite Audience",
+      "source": "www.wired.com",
+      "url": "https://www.wired.com/story/ai-agents-are-medias-new-favorite-audience/",
+      "summary": "As agents go mainstream, some publishers are hoping that people will pay for content tailor-made for AIânot humans. Every morning, Michelle Seo receives a briefing from Chattiana, her Muse artificial intelligence agent.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-agents-media-audience",
+      "why": "Analyse af, hvordan publikationer og platforme begynder at målrette indhold mod AI-agenter fremfor mennesker. Det ændrer forretningsmodeller, reklamelogikker og hvordan dansk mediebrug måles — vigtigt for Mads, der følger medie- og AI-økonomiens udvikling.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Anthropic’s record US$2 trillion stock market listing highlights the growing risks for all of us",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/anthropics-record-us-2-trillion-stock-market-listing-highlights-the-growing-risks-for-all-of-us-295243",
+      "summary": "This is the first time a company has come to market warning of ‘catastrophic or existential risks to humanity’. Share article Print article Anthropic, developer of AI chatbot Claude, has",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-ipo-risks",
+      "why": "Analyse af Anthropics børsintroduktion, der kombinerer ekstreme vækstforventninger med advarsler om eksistentielle risici. Historien er central for at forstå markedsdynamik og policy-trykket mod ansvarlig AI — relevant for dansk og EU-regulering.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Anthropic Says It Will Revolutionize Biology—Some Day",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/anthropic-says-it-will-revolutionize-biology-some-day/",
+      "summary": "In breathless press releases and posts, the company has touted its modelsâ ability to deliver scientific breakthroughs. But its IPO filing taps the brakes on just how fast its AI will lead to big discoveries. AI giant Anthropic and CEO Dario Amodei have repeatedly claimed that the companyâs models will revolutionize biology and drug discovery",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-biology-claims",
+      "why": "Kritisk gennemgang af Anthropics biologiløfter vs. realistiske tidshorisonter. Fint supplement til IPO-dækningen og nyttigt for Mads, der vil skelne hype fra praktiske sundheds- og forskningskonsekvenser.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI-driven disinformation running rampant on social media before US midterms, experts warn",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/us-news/2026/oct/27/ai-disinformation-social-media-midterm-elections",
+      "summary": "Social media companies including Meta have pulled back on efforts to protect voters from election-meddling liesSocial media feeds are awash with an unprecedented flood of AI-driven disinformation ahead of November’s US midterm elections, according to experts, who warn many posts are probably “slipping through the cracks”.As tens of millions of Americans prepare to cast their vote, social media companies have scaled back their efforts to protect voters from lies meant to manipulate elections. Con",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-disinfo-midterms",
+      "why": "Stor gennemgang af, hvordan AI skaber og spreder desinformation lige før valg. Konsekvenserne rækker til Danmark og EU i form af manipulation af offentlig debat og behov for ny valg- og platformregulering — væsentligt læsestof for Mads.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "Kæmpestudie afslører sammenhænge mellem vores gener og personlighed",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/krop-sundhed/kaempestudie-afsloerer-sammenhaenge-mellem-vores-gener-og-personlighed/",
+      "summary": "Hvorfor er du, som du er? Nyt studie af over en million mennesker gør os klogere end nogensinde på genetikkens betydning for vores forskellige personlighedstræk. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "genetics-personality-study",
+      "why": "Stort studie af over en million personer kortlægger genetiske sammenhænge med personlighedstræk. Værdifuldt for Mads som formidler af videnskab: hvad forskningen konkret siger, og hvilke begrænsninger der følger af metode og fortolkning.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Industrial Intelligence: The next growth opportunity for manufacturing",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/27/1147142/industrial-intelligence-the-next-growth-opportunity-for-manufacturing/",
+      "summary": "Every manufacturer has its own industrial intelligence. Some is documented, and some resides in the knowledge of experienced workers. Consider an experienced operator preparing to restart a line after a changeover. The machine settings matter, but so does knowing how a particular material behaves, what happened during the previous shift, and when an apparently minor…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "industrial-intelligence-manufacturing",
+      "why": "Forklarer hvordan 'industrial intelligence' (AI+processforståelse) kan ændre produktionens konkurrenceevne og arbejdspladser. Relevant for danske industripolitiske samtaler om digitalisering og investeringer i avanceret produktion.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "How solid-state transformers could help power the AI boom",
+      "source": "www.technologyreview.com",
+      "url": "https://www.technologyreview.com/2026/10/27/1147684/solid-state-transformers/",
+      "summary": "New technology could help cut power losses and reinvent a staple of the grid.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "solid-state-transformers-ai",
+      "why": "Kort, teknisk-fokuseret forklaring af en strømløsning, der kan reducere nettab og gøre datacentre/AI-drift billigere. Dansk relevans: energiinfrastruktur og krav til netkapacitet ved øget AI-forbrug.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Putin hopes hardship will force Ukrainians to sue for peace – polling suggests it won’t work",
+      "source": "theconversation.com",
+      "url": "https://theconversation.com/putin-hopes-hardship-will-force-ukrainians-to-sue-for-peace-polling-suggests-it-wont-work-294619",
+      "summary": "Many Ukrainians have been deeply traumatized by relentless Russian bombing. But that hasn’t translated into a desire to concede territory for peace. Share article Print article Vladimir Putin has a theory of victory in Ukraine.",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "putin-hardship-peace-polling",
+      "why": "Analyse af russisk strategi om krigsøkonomi og folkestemning, med afstemningsdata som argument. Giver strategisk indsigt i krigens politiske dynamik, som påvirker European security- og støttebeslutninger, herunder danske valg af forsvars- og bistandsniveau.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Anthropic accelerates – for the rest of us, the speed of growth spells precarity",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/global/2026/oct/26/anthropic-accelerates-ai",
+      "summary": "The AI industry is still defined by a careening intensity that’s taking the world’s finances along for the rideThis was originally published in TechScape, a newsletter about how technology shapes our lives. Sign up to receive it here.Today in tech, we’re discussing Anthropic’s astronomic growth, how a settlement over social media safety dented Meta’s revenue, and Lula’s accusations of interference against Meta.‘You can’t make this stuff up’: why we remain fascinated by Elizabeth HolmesElizabeth ",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-growth-precarity",
+      "why": "Kommentar om tech-økonomiens hastighedsstød og risiko for arbejdskraft og markedsstabilitet. Brugbar for at forstå bredere konsekvenser af AI-skalering på økonomi og job, også i en dansk kontekst.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple Shares tvOS 27.2 Release Notes With List of New Features",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/27/apple-tv-tvos-27-2-release-notes/",
+      "summary": "tvOS 27.2 was released on Monday for the Apple TV 4K (2nd generation) and newer, but the Apple TV does not show release notes for software updates in the Settings app. Instead, Apple periodically updates a support document outlining what is new in tvOS updates, and the release notes for tvOS 27.2 are now available.\n\n\n\n\n\nNote that Apple never released a tvOS 27.1 version, so tvOS 27.2 is the first Apple TV software update since tvOS 27 was released in September.\n\n\n\nApple says tvOS 27.2 includes a",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "appletvos-27-2",
+      "why": "Teknisk-opdatering fra Apple med konkrete nyheder til tvOS-platformen — nyttig for danske mediehuse og hjemmebrugere der planlægger apps eller bruger TV-boksfunktioner. Praktisk, operationel opdatering.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Apple rolls out iOS 27.2 with new Siri AI languages and security fixes",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/27/apple-rolls-out-ios-27-2-with-new-siri-ai-languages-and-security-fixes/",
+      "summary": "The latest Apple software update for iPhones and iPads includes new features and important security updates.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ios-27-2",
+      "why": "Væsentlig platformopdatering: nye Siri-sprog og sikkerhedsfikser kan ændre brugeroplevelsen og krav til appudvikling i Danmark. Hurtig, nyttig tech-opdatering til Mads' daglige oversigt.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "ATLAS og Gyldendal udgiver fire nye småskrifter",
+      "source": "Atlas Magasin",
+      "url": "https://atlasmag.dk/kort-nyt/atlas-og-gyldendal-udgiver-fire-nye-sm%C3%A5skrifter",
+      "summary": "Redaktionelt\n    \n         \n     \n                    De nye titler i ATLAS & Gyldendals småskrifter. Forsider: Spine Studio. \n          \n      \n\nNu udkommer fire bøger i ATLAS & Gyldendals Småskrifter, der er evigtgyldige tanker i lommeformat – litterære essays, politiske brandtaler og...",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "atlas-gyldendal-smaskrifter",
+      "why": "Kort dansk kulturnyhed om nye småskrifter fra ATLAS & Gyldendal, relevant hvis Ekko-stoffet om filmudvalget ikke kan udtrækkes. God for Mads som opdatering på dansk litterær udgivelsesaktivitet.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Nyt filmudvalg overser dokumentar",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/nyt-filmudvalg-overser-dokumentar/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "danish-film-committee-documentary",
+      "why": "Kritisk dansk filmbranchehistorie: et nyt udvalg overser dokumentarfilm, hvilket kan påvirke distribution og støtte til en vigtig dansk genre. Mads bør kende konsekvenserne for kulturpolitik og filmøkosystemet herhjemme.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Et medieforlig med det store perspektiv",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/et-medieforlig-med-det-store-perspektiv/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "danish-media-agreement-analysis",
+      "why": "Essay/oversigt om et nyt medieforligs bredere perspektiver — relevant for dansk kultur- og mediepolitik, finansiering og fremtidige public-service diskussioner. Giver kontekst til presse- og kulturdebatten.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "AI fan wikis riddled with errors are muddying the waters of an already contested part of games culture",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/ai-fan-wikis-errors-complicating-games-culture",
+      "summary": " Recently, I was writing a piece about Nighthawks and wanted to remind myself of some basic information about the companion characters. As I have a thousand times before, I put the question into Google and clicked the first result: the Nighthawks Wiki. Read more",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "ai-fan-wikis-errors",
+      "why": "Lang, velresearch'et kultur- og gaming-historie om hvordan AI-genereret indhold underminerer fansider og kulturarv i spilbranchen. Relevant for Mads' interesse i gaming, kulturformidling og digitale arkiver.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Sudan paramilitary drone strikes cause mass power cuts in eastern states",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/26/sudan-paramilitary-drone-strikes-rapid-support-forces-power-cuts-eastern-states",
+      "summary": "Rapid Support Forces strike five power stations in three states controlled by Sudanese army Rapid Support Forces strike five power stations in three states controlled by Sudanese army Sudan’s paramilitary Rapid Support Forces have launched a coordinated drone attack against five power stations, causing mass power outages across the country’s east, a government official said. The drones hit two power stations each in the states of Al-Jazira and Gedaref and one in White Nile state, “resulting in p",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "sudan-drone-powercuts",
+      "why": "Kort international rapport om dronernes infrastrukturopkonsekvenser; backup for geopolitisk sammenhæng hvis større Ukraine/EU-historier ikke kan anvendes.",
+      "reading_minutes": "3"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "teknologi": 13,
+        "fordybelse": 2,
+        "kultur": 4
+      },
+      "actual": {
+        "teknologi": 14,
+        "fordybelse": 1,
+        "kultur": 4
+      },
+      "warnings": [
+        "Færre historier om fordybelse og personlige interesser end planlagt (1 af 2).",
+        "Færre longreads end planlagt (7 af 8)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 266,
+      "web_candidates": 16,
+      "total_candidates": 75,
+      "repeats_dropped": 13,
+      "previews_enriched": 22,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 42,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 26,
+      "prepared": 19,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 7,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 27
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 20
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 35
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 49
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "fejl",
+        "items": 0
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 9
+      }
+    }
+  }
+}
