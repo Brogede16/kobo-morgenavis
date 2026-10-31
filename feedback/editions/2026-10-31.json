@@ -1,0 +1,400 @@
+{
+  "created_at": "2026-10-31T04:34:50.283196+00:00",
+  "articles": [
+    {
+      "title": "Techgiganter har stået skoleret hos justitsministeren",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/indland/techgiganter-har-staaet-skoleret-hos-justitsministeren",
+      "summary": "Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. De store techgiganter gør alt for lidt for at passe på vores børn og unge. Sådan lyder budskabet fra justsminister Nicolai Wammen (S), som i dag har haft repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord til møde i ministeriet sammen med organisationerne Red Barnet og Digitalt Ansvar.",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "techgiganter-justitsministeren-2026",
+      "why": "Justitsminister Nicolai Wammen samlede repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord for at kritisere techgiganternes indsats omkring børn og unge. Historien betyder direkte politisk pres på platformregulering, som kan føre til konkrete danske regler eller krav — vigtig for Mads, der følger digital politik og børnebeskyttelse.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "iOS 27.3 Will Enable These Apple Intelligence Features in China",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/30/ios-27-3-apple-intelligence-china/",
+      "summary": "Apple's website in China says iOS 27.3 will enable some Apple Intelligence features in China, such as Writing Tools, Genmoji, Clean Up, Notification Summaries, Priority Notifications, Visual Intelligence, and Live Translation with AirPods. Select features will not be available, including Siri AI and Image Playground.\n\n\n\nThe features will be limited to the iPhone 15 Pro and newer until Apple receives approval to launch them on the iPad, Mac, and other devices in China. Apple said the first iOS 27",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-ios-27-3-china",
+      "why": "Apple annoncerer, at iOS 27.3 aktiverer en række Apple Intelligence-funktioner i Kina, med undtagelser som Siri AI. Det ændrer hvordan Apples AI-funktioner rulles globalt ud og viser, hvordan lovgivning og lokalpolitik former brugeroplevelsen — relevant for Mads' interesse i Apple og konsekvenserne af regionale AI-tilpasninger.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Cracks are emerging in the AI spending boom",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-spending-cracks-2026",
+      "why": "Big Techs enorme investeringer i AI-infrastruktur møder voksende gæld, negativt cashflow og investor-skepsis. Artiklen forklarer hvorfor AI‑byggeboomet kan bremse og hvilke konsekvenser det kan få for danske og europæiske leverandørkæder og investeringer — essentiel for at forstå kommende markedsskift.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-cosigner-nscale",
+      "why": "Nvidia overvejer at kautionere for et AI-datacenter for at sikre finansiering — et konkret eksempel på hvordan chipleverandører påvirker datacenterfinansiering. Det er et nyttigt tilfælde hvis man vil forstå hvordan leverandører underbygger AI‑udbygning, med potentielle konsekvenser for europæisk konkurrence og forsyningskæder.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+      "summary": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines. The AI software-development platform Cursor, which is owned by SpaceX , had a malicious",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "supply-chain-anthropic-extensions",
+      "why": "En leverandørkæde‑type angreb spredte ondsindede udvidelser til udviklere, men en fejl forhindrede fuld udbredelse. Sagen viser reelle sikkerhedsrisici ved hurtigt voksende AI‑økosystemer og vigtigheden af supply‑chain‑sikring — relevant for Mads' sikkerhedsforståelse af AI-platforme.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ukraine’s Zelenskyy praises US over $2.1bn Patriot missile deal but warns it could take years",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/31/ukraines-zelenskyy-praises-us-over-21bn-patriot-missile-deal-but-warns-it-could-take-years",
+      "summary": "The Ukrainian president called the US decision strong, but added that delivery of 500 Patriot PAC-3 missiles ⁠could take yearsThe US has approved the sale ⁠of 500 Patriot PAC-3 missiles ⁠to Ukraine for an estimated $2.1bn, but Volodymyr Zelenskyy has warned deliveries could take years and stockpiles were needed now to counter Russian ballistic missile attacks.“The proposed sale will improve Ukraine’s capability to meet current and future threats by improving its integrated air and missile defens",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "patriot-sale-ukraine-2026",
+      "why": "USA godkendte et salg af 500 Patriot PAC-3-missiler til Ukraine til $2,1 mia., men Zelenskyj advarer om lange leveringstider. Dette påvirker Europas luftforsvarssituation og leverings- og lagerpolitikker, som kan ændre danske og NATO-beslutninger om luft‑ og raketforsvar.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Details of thousands of US immigration agents leaked in major hack",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
+      "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "dhs-agent-leak-2026",
+      "why": "En stor læk frigav oplysninger på over 41.000 DHS‑ansatte. Sikkerhedsbruddet har vidtrækkende konsekvenser for personbeskyttelse og tjenestemands‑sikkerhedspolitik — en vigtig case om risici ved centralisering og datahåndtering, relevant for danske diskussioner om datasikkerhed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
+      "summary": "Applying for FAFSA may get messy as DOJ “ghost student” crackdown ramps up.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ghost-students-ai-doj",
+      "why": "DOJ afdækker omfattende bedrageri hvor AI blev brugt til at oprette 'ghost students' og stjæle studielån. Sagen viser konkrete misbrugsveje for AI i offentlige støtteordninger — relevant for forståelse af hvordan teknologien kan udnyttes i velfærdsstater som Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Eating disorders are on the rise. GLP-1s could make things worse.",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/",
+      "summary": "GLP-1 weight-loss drugs are one of the biggest biotech breakthroughs of the last decade. But to some clinical psychologists, they can represent something more sinister—a potential trigger for eating disorders. A new report suggests that the global incidence of anorexia nervosa and bulimia nervosa shot up between 1990 and 2023—by a whopping 71%. By 2023,…",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "glp1-eating-disorders-2026",
+      "why": "En længere analyse af hvordan GLP‑1‑vægtmedicin kan bidrage til stigende spiseforstyrrelser på globalt plan. Emnet kombinerer medicinsk forskning, samfundskonsekvenser og etik — vigtigt langtidsstof for Mads om en stor sundheds- og kulturændring.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: dead startups fueling AI and interspecies communication",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI labs are buying data from dead startups to train their models When Keelan Miskell began winding down his crypto startup, he didn’t think its data was worth much. But he’s…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "dead-startups-ai-data",
+      "why": "MIT Technology Review forklarer, hvordan AI‑laboratorier køber data fra døde startups og hvordan dette nærer nye AI-projekter, inkl. interspecies‑kommunikation. Giver konkret indsigt i datamarkeder og genbrug af aktiver — nyttigt for Mads til at forstå AI‑økonomiens mindre synlige mekanismer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi",
+      "summary": "Several Mississippi homes have been purchased near datacenters and one resident said realtor outlined target to buy more than 400People in a Mississippi neighborhood, many of whom dislike a nearby power plant central to Elon Musk’s artificial intelligence ambitions, have received a stark offer – to sell their houses to his company and make way.Real estate agents have been going door to door in Southaven, Mississippi, on behalf of xAI, touting a deal to purchase houses as long as the owners agree",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "elonville-datacenter-us",
+      "why": "Journalistik fra The Guardian viser, at xAI har tilbudt at købe huse i Mississippi for at undgå sagsanlæg om datacenterstøj. Sagen illustrerer hvordan AI‑infrastruktur presser lokalsamfund og skaber nye politiske og retlige dilemmaer — relevant for danske debat om datacentre og lokalsamfund.",
+      "reading_minutes": "8"
+    },
+    {
+      "title": "‘What we leave behind is not as important as how we’ve lived’: remembering actor Patrick Stewart",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/what-we-leave-behind-is-not-as-important-as-how-weve-lived-remembering-actor-patrick-stewart-295542",
+      "summary": "Passing away this week at 86, Stewart will be remembered as actor, dramaturge, Shakespearean exemplar, mutant professor, and distinguished Starfleet captain. Share article Print article At the end of Star Trek: Generations (1994), surveying the wreckage of the crashed USS Enterprise he captained for nearly a decade, Jean-Luc Picard (Patrick Stewart) muses to his first officer, William Riker (Jonathan Frakes):",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "patrick-stewart-tribute-2026",
+      "why": "En refleksiv portrætartikel om Patrick Stewart, hans arbejde i Shakespeare og populærkultur. Læsbar kulturessay der hjælper forstå en markant skuespillerkarrriere og dens kulturelle betydning — nyttigt kulturstof i en dag præget af teknik- og sikkerhedsnyheder.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030/",
+      "summary": "For decades, astronomers treated the interstellar medium as a static backdrop to the goings-on of the universe. Now, a wave of 3D mapping is bringing the interstellar medium’s dynamic nature into focus.            The post A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "map-empty-space-quanta-2026",
+      "why": "Quanta beskriver nye 3D‑kort over det interstellare medium, som ændrer opfattelsen af galaksens dynamik. Det er et klart, betydeligt astronomisk gennembrud med visualiserings- og forskningskonsekvenser — præcist for Mads, der følger store videnskabelige fortællinger.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "What animal bones in Malawi teach us about the social lives of people long ago",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/what-animal-bones-in-malawi-teach-us-about-the-social-lives-of-people-long-ago-281660",
+      "summary": "The bones of animals at an archaeological site in Malawi show that food was scarce over the last 21,000 years, but people didn’t cooperate far and wide to get it.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "animal-bones-malawi-2026",
+      "why": "En længere arkæologisk artikel der bruger dyreknogler til at rekonstruere 21.000 års sociale strategier i Malawi. Solid, tværfaglig forskning formidlet til læsere, som interesserer sig for historie og menneskelig adfærd — en klassisk fordybelse til Mads' morgenlæsning.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Hvorfor æder vilde spækhuggere ikke mennesker?",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/hvorfor-aeder-vilde-spaekhuggere-ikke-mennesker/",
+      "summary": "Spækhuggere er havets 'konge-rovdyr', der kan spise stort set alt, de har lyst til. Alligevel vækkes deres appetit ikke af os mennesker. Det har fået en læser til at undre sig. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "spaekhuggere-mennesker-2026",
+      "why": "Et dybdegående populærvidenskabeligt stykke om spækhuggere og hvorfor de undlader at angribe mennesker. Lang, lokal-relevant naturforklaring med base i adfærd og økologi — værd at læse for interesser i danske havområder og naturforståelse.",
+      "reading_minutes": "7"
+    },
+    {
+      "title": "I Texas vil man ikke give penge til dansk instruktørs abortfilm",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/kultur/film/i-texas-vil-man-ikke-give-penge-til-dansk-instruktoers-abortfilm",
+      "summary": "Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. En film af dansk-iranske Milad Avaz møder modstand i Texas. I hvert fald hævder instruktøren, at Texas-guvernør Greg Abbott har sat foden ned, når det kommer til filmstøtte. Og at elefanten i rummet er abort, er Milad Avaz ikke i tvivl om.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "abortfilm-texas-avaz-2026",
+      "why": "Dansk-iranske instruktør Milad Avaz oplever afslag på optagelsesstøtte i Texas fordi filmen handler om abort. Sagen berører ytringsfrihed, filmfinansiering og internationale optagelsesvilkår — konkret dansk kulturpolitik og relevante diskussioner om kunstnerisk frihed.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "us-tech-stocks-fall-ai-spend",
+      "why": "Store fald i amerikanske tech-aktier efter investorreaktioner samtidig med at AI‑udgifter nærmer sig $1tn. Nyheden forklarer makroøkonomiske risici ved AI‑boble og har direkte betydning for danske investorer og tech‑leverandører.",
+      "reading_minutes": "2"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 1,
+        "teknologi": 6,
+        "verden": 6,
+        "fordybelse": 5,
+        "kultur": 4
+      },
+      "actual": {
+        "dansk_politik": 1,
+        "teknologi": 4,
+        "verden": 6,
+        "fordybelse": 3,
+        "kultur": 3
+      },
+      "warnings": [
+        "Færre historier om teknologi end planlagt (4 af 6).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (3 af 5).",
+        "Færre historier om kultur end planlagt (3 af 4).",
+        "Færre longreads end planlagt (6 af 8)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 297,
+      "web_candidates": 15,
+      "total_candidates": 75,
+      "repeats_dropped": 16,
+      "previews_enriched": 22,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 46,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 22,
+      "prepared": 17,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 5,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 33
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 50
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 0
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 8
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 12
+      }
+    }
+  }
+}
