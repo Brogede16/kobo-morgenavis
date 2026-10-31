@@ -1,286 +1,251 @@
 {
-  "created_at": "2026-10-30T04:33:00.381181+00:00",
+  "created_at": "2026-10-31T04:34:50.283196+00:00",
   "articles": [
     {
-      "title": "Nordjysk vrede efter eksklusion af Preben Bang: 'Jeg er led ved at være Venstre-mand lige nu'",
+      "title": "Techgiganter har stået skoleret hos justitsministeren",
       "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/nordjysk-vrede-efter-eksklusion-af-preben-bang-jeg-er-led-ved-vaere-venstre-mand-lige-nu",
-      "summary": "Troels Lund Poulsen er en 'svag leder' og det vil være mere oplagt med Morten Messerschmidt som blå bloks statsministerkandidat, lyder den hårde kritik fra et af Venstres egne byrådsmedlemmer. Troels Lund Poulsen er en 'svag leder' og det vil være mere oplagt med Morten Messerschmidt som blå bloks statsministerkandidat, lyder den hårde kritik fra et af Venstres egne byrådsmedlemmer. Hvis Troels Lund Poulsen troede, at han skabte ro i Venstre ved at ekskludere folketingsmedlem Preben Bang Henriks",
+      "url": "https://www.dr.dk/nyheder/indland/techgiganter-har-staaet-skoleret-hos-justitsministeren",
+      "summary": "Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. De store techgiganter gør alt for lidt for at passe på vores børn og unge. Sådan lyder budskabet fra justsminister Nicolai Wammen (S), som i dag har haft repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord til møde i ministeriet sammen med organisationerne Red Barnet og Digitalt Ansvar.",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "venstre-eksklusion-preben-bang",
-      "why": "Venstres interne opgør eskalerer efter eksklusionen af Preben Bang og hård kritik af Troels Lund Poulsen, hvilket kan ændre blå bloks lederdiskussion og lokale magtforhold. Mads bør kende konsekvenserne for blå blok og kommende taktiske tilpasninger.",
-      "reading_minutes": "3"
+      "story_id": "techgiganter-justitsministeren-2026",
+      "why": "Justitsminister Nicolai Wammen samlede repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord for at kritisere techgiganternes indsats omkring børn og unge. Historien betyder direkte politisk pres på platformregulering, som kan føre til konkrete danske regler eller krav — vigtig for Mads, der følger digital politik og børnebeskyttelse.",
+      "reading_minutes": "2"
     },
     {
-      "title": "Agent identity startup Mintive lands Cowboy Ventures, Coatue, angels Jeff Dean, Andrej Karpathy | TechCrunch",
-      "source": "techcrunch.com",
-      "url": "https://techcrunch.com/2026/10/29/agent-identity-startup-mintive-lands-cowboy-ventures-coatue-angels-jeff-dean-andrej-karpathy/",
-      "summary": "Mintive was founded by two engineers who have been working on AI for decades through Google Brain and Coursera. It's platform promises to help IT easily control enterprise agents.",
+      "title": "iOS 27.3 Will Enable These Apple Intelligence Features in China",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/10/30/ios-27-3-apple-intelligence-china/",
+      "summary": "Apple's website in China says iOS 27.3 will enable some Apple Intelligence features in China, such as Writing Tools, Genmoji, Clean Up, Notification Summaries, Priority Notifications, Visual Intelligence, and Live Translation with AirPods. Select features will not be available, including Siri AI and Image Playground.\n\n\n\nThe features will be limited to the iPhone 15 Pro and newer until Apple receives approval to launch them on the iPad, Mac, and other devices in China. Apple said the first iOS 27",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "mintive-funding",
-      "why": "Startups, finansiering og identity-løsninger for AI-agenter viser hvordan virksomheder bygger kontrol- og governance-lag — relevant alternativ hvis større AI-agent-reports ikke kan bruges. Værd at følge markedsudviklingen.",
-      "reading_minutes": "3"
+      "story_id": "apple-ios-27-3-china",
+      "why": "Apple annoncerer, at iOS 27.3 aktiverer en række Apple Intelligence-funktioner i Kina, med undtagelser som Siri AI. Det ændrer hvordan Apples AI-funktioner rulles globalt ud og viser, hvordan lovgivning og lokalpolitik former brugeroplevelsen — relevant for Mads' interesse i Apple og konsekvenserne af regionale AI-tilpasninger.",
+      "reading_minutes": "2"
     },
     {
-      "title": "What is it like to work when your co-workers are AI agents?",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/oct/29/ai-agent-coworker",
-      "summary": "Using AI for roles from executive assistants to chiefs of staff, companies are boasting about doing more with less, creating tension with their human workers Using AI for roles from executive assistants to chiefs of staff, companies are boasting about doing more with less, creating tension with their human workers O n an average workday, Dhruv Amin chats with dozens of colleagues to get things done at his",
+      "title": "Cracks are emerging in the AI spending boom",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
+      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
       "format": "longread",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "ai-agents-workplace",
-      "why": "Reportage om virksomheder, hvor AI fungerer som assistenter og chefer, viser hvilke arbejdsroller automatiseres, skaber menneskelige spændinger og ændrer organisatorisk praksis. Mads får konkret indblik i hvordan AI påvirker dansk og europæisk arbejdsliv.",
+      "story_id": "ai-spending-cracks-2026",
+      "why": "Big Techs enorme investeringer i AI-infrastruktur møder voksende gæld, negativt cashflow og investor-skepsis. Artiklen forklarer hvorfor AI‑byggeboomet kan bremse og hvilke konsekvenser det kan få for danske og europæiske leverandørkæder og investeringer — essentiel for at forstå kommende markedsskift.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
+      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "nvidia-cosigner-nscale",
+      "why": "Nvidia overvejer at kautionere for et AI-datacenter for at sikre finansiering — et konkret eksempel på hvordan chipleverandører påvirker datacenterfinansiering. Det er et nyttigt tilfælde hvis man vil forstå hvordan leverandører underbygger AI‑udbygning, med potentielle konsekvenser for europæisk konkurrence og forsyningskæder.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices",
+      "source": "WIRED",
+      "url": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
+      "summary": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines. The AI software-development platform Cursor, which is owned by SpaceX , had a malicious",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "supply-chain-anthropic-extensions",
+      "why": "En leverandørkæde‑type angreb spredte ondsindede udvidelser til udviklere, men en fejl forhindrede fuld udbredelse. Sagen viser reelle sikkerhedsrisici ved hurtigt voksende AI‑økosystemer og vigtigheden af supply‑chain‑sikring — relevant for Mads' sikkerhedsforståelse af AI-platforme.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Ukraine’s Zelenskyy praises US over $2.1bn Patriot missile deal but warns it could take years",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/31/ukraines-zelenskyy-praises-us-over-21bn-patriot-missile-deal-but-warns-it-could-take-years",
+      "summary": "The Ukrainian president called the US decision strong, but added that delivery of 500 Patriot PAC-3 missiles ⁠could take yearsThe US has approved the sale ⁠of 500 Patriot PAC-3 missiles ⁠to Ukraine for an estimated $2.1bn, but Volodymyr Zelenskyy has warned deliveries could take years and stockpiles were needed now to counter Russian ballistic missile attacks.“The proposed sale will improve Ukraine’s capability to meet current and future threats by improving its integrated air and missile defens",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "patriot-sale-ukraine-2026",
+      "why": "USA godkendte et salg af 500 Patriot PAC-3-missiler til Ukraine til $2,1 mia., men Zelenskyj advarer om lange leveringstider. Dette påvirker Europas luftforsvarssituation og leverings- og lagerpolitikker, som kan ændre danske og NATO-beslutninger om luft‑ og raketforsvar.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Details of thousands of US immigration agents leaked in major hack",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
+      "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "dhs-agent-leak-2026",
+      "why": "En stor læk frigav oplysninger på over 41.000 DHS‑ansatte. Sikkerhedsbruddet har vidtrækkende konsekvenser for personbeskyttelse og tjenestemands‑sikkerhedspolitik — en vigtig case om risici ved centralisering og datahåndtering, relevant for danske diskussioner om datasikkerhed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
+      "summary": "Applying for FAFSA may get messy as DOJ “ghost student” crackdown ramps up.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "ghost-students-ai-doj",
+      "why": "DOJ afdækker omfattende bedrageri hvor AI blev brugt til at oprette 'ghost students' og stjæle studielån. Sagen viser konkrete misbrugsveje for AI i offentlige støtteordninger — relevant for forståelse af hvordan teknologien kan udnyttes i velfærdsstater som Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Eating disorders are on the rise. GLP-1s could make things worse.",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/",
+      "summary": "GLP-1 weight-loss drugs are one of the biggest biotech breakthroughs of the last decade. But to some clinical psychologists, they can represent something more sinister—a potential trigger for eating disorders. A new report suggests that the global incidence of anorexia nervosa and bulimia nervosa shot up between 1990 and 2023—by a whopping 71%. By 2023,…",
+      "format": "short",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "glp1-eating-disorders-2026",
+      "why": "En længere analyse af hvordan GLP‑1‑vægtmedicin kan bidrage til stigende spiseforstyrrelser på globalt plan. Emnet kombinerer medicinsk forskning, samfundskonsekvenser og etik — vigtigt langtidsstof for Mads om en stor sundheds- og kulturændring.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "The Download: dead startups fueling AI and interspecies communication",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/",
+      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI labs are buying data from dead startups to train their models When Keelan Miskell began winding down his crypto startup, he didn’t think its data was worth much. But he’s…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "dead-startups-ai-data",
+      "why": "MIT Technology Review forklarer, hvordan AI‑laboratorier køber data fra døde startups og hvordan dette nærer nye AI-projekter, inkl. interspecies‑kommunikation. Giver konkret indsigt i datamarkeder og genbrug af aktiver — nyttigt for Mads til at forstå AI‑økonomiens mindre synlige mekanismer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi",
+      "summary": "Several Mississippi homes have been purchased near datacenters and one resident said realtor outlined target to buy more than 400People in a Mississippi neighborhood, many of whom dislike a nearby power plant central to Elon Musk’s artificial intelligence ambitions, have received a stark offer – to sell their houses to his company and make way.Real estate agents have been going door to door in Southaven, Mississippi, on behalf of xAI, touting a deal to purchase houses as long as the owners agree",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "elonville-datacenter-us",
+      "why": "Journalistik fra The Guardian viser, at xAI har tilbudt at købe huse i Mississippi for at undgå sagsanlæg om datacenterstøj. Sagen illustrerer hvordan AI‑infrastruktur presser lokalsamfund og skaber nye politiske og retlige dilemmaer — relevant for danske debat om datacentre og lokalsamfund.",
+      "reading_minutes": "8"
+    },
+    {
+      "title": "‘What we leave behind is not as important as how we’ve lived’: remembering actor Patrick Stewart",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/what-we-leave-behind-is-not-as-important-as-how-weve-lived-remembering-actor-patrick-stewart-295542",
+      "summary": "Passing away this week at 86, Stewart will be remembered as actor, dramaturge, Shakespearean exemplar, mutant professor, and distinguished Starfleet captain. Share article Print article At the end of Star Trek: Generations (1994), surveying the wreckage of the crashed USS Enterprise he captained for nearly a decade, Jean-Luc Picard (Patrick Stewart) muses to his first officer, William Riker (Jonathan Frakes):",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "patrick-stewart-tribute-2026",
+      "why": "En refleksiv portrætartikel om Patrick Stewart, hans arbejde i Shakespeare og populærkultur. Læsbar kulturessay der hjælper forstå en markant skuespillerkarrriere og dens kulturelle betydning — nyttigt kulturstof i en dag præget af teknik- og sikkerhedsnyheder.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030/",
+      "summary": "For decades, astronomers treated the interstellar medium as a static backdrop to the goings-on of the universe. Now, a wave of 3D mapping is bringing the interstellar medium’s dynamic nature into focus.            The post A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "map-empty-space-quanta-2026",
+      "why": "Quanta beskriver nye 3D‑kort over det interstellare medium, som ændrer opfattelsen af galaksens dynamik. Det er et klart, betydeligt astronomisk gennembrud med visualiserings- og forskningskonsekvenser — præcist for Mads, der følger store videnskabelige fortællinger.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "What animal bones in Malawi teach us about the social lives of people long ago",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/what-animal-bones-in-malawi-teach-us-about-the-social-lives-of-people-long-ago-281660",
+      "summary": "The bones of animals at an archaeological site in Malawi show that food was scarce over the last 21,000 years, but people didn’t cooperate far and wide to get it.",
+      "format": "longread",
+      "section": "Fordybelse",
+      "group": "Fordybelse",
+      "story_id": "animal-bones-malawi-2026",
+      "why": "En længere arkæologisk artikel der bruger dyreknogler til at rekonstruere 21.000 års sociale strategier i Malawi. Solid, tværfaglig forskning formidlet til læsere, som interesserer sig for historie og menneskelig adfærd — en klassisk fordybelse til Mads' morgenlæsning.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Hvorfor æder vilde spækhuggere ikke mennesker?",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/naturvidenskab/hvorfor-aeder-vilde-spaekhuggere-ikke-mennesker/",
+      "summary": "Spækhuggere er havets 'konge-rovdyr', der kan spise stort set alt, de har lyst til. Alligevel vækkes deres appetit ikke af os mennesker. Det har fået en læser til at undre sig. \\ Automatisk oplæsning",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "spaekhuggere-mennesker-2026",
+      "why": "Et dybdegående populærvidenskabeligt stykke om spækhuggere og hvorfor de undlader at angribe mennesker. Lang, lokal-relevant naturforklaring med base i adfærd og økologi — værd at læse for interesser i danske havområder og naturforståelse.",
       "reading_minutes": "7"
     },
     {
-      "title": "We urgently need to monitor AI agents’ actions in real time",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/29/1147824/monitor-ai-agents-actions-real-time/",
-      "summary": "This summer, hundreds of OpenAI agents tried to cheat on a cybersecurity test. They broke out of their test environment and successfully hacked Hugging Face, a site that they believed held clues about how they’d be graded. Around the same time, another OpenAI agent accessed private files from an Australian government website. It’s a problem…",
+      "title": "I Texas vil man ikke give penge til dansk instruktørs abortfilm",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/kultur/film/i-texas-vil-man-ikke-give-penge-til-dansk-instruktoers-abortfilm",
+      "summary": "Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. En film af dansk-iranske Milad Avaz møder modstand i Texas. I hvert fald hævder instruktøren, at Texas-guvernør Greg Abbott har sat foden ned, når det kommer til filmstøtte. Og at elefanten i rummet er abort, er Milad Avaz ikke i tvivl om.",
       "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "monitor-ai-agents",
-      "why": "Argumenter og cases om agenter, der brød testmiljøer og fik adgang til private data understreger behovet for realtidskontrol og regulering. Værdifuld for at forstå risici, sikkerhed og mulige politikkrav i Danmark/EU.",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "abortfilm-texas-avaz-2026",
+      "why": "Dansk-iranske instruktør Milad Avaz oplever afslag på optagelsesstøtte i Texas fordi filmen handler om abort. Sagen berører ytringsfrihed, filmfinansiering og internationale optagelsesvilkår — konkret dansk kulturpolitik og relevante diskussioner om kunstnerisk frihed.",
       "reading_minutes": "2"
     },
     {
-      "title": "EU’s new Arctic strategy signals shift in its geopolitical mindset",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/eus-new-arctic-strategy-signals-shift-in-its-geopolitical-mindset-294978",
-      "summary": "The EU has unveiled its first Arctic strategy since Russia’s invasion of Ukraine.",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "eu-arctic-strategy",
-      "why": "EU's første opdaterede Arktis-strategi efter Ruslands invasion indikerer geopolitisk rekalibrering med konsekvenser for forsvar, energi og nordisk samarbejde. Mads får EU-rammen for Danmarks arktiske og sikkerhedspolitiske beslutninger.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "How Do You Take a Picture of a Black Hole? | Quanta Magazine",
-      "source": "www.quantamagazine.org",
-      "url": "https://www.quantamagazine.org/how-do-you-take-a-picture-of-a-black-hole-20261029/",
-      "summary": "Astrophysicist Shep Doeleman explains how capturing the first image of a black hole required a telescope the size of the world, and why the next goal is to create a movie.",
-      "format": "longread",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "black-hole-imaging",
-      "why": "Længere, teknisk-tilgængelig gennemgang af metoder bag de første sorte-hul-billeder og ambitionen om at lave film — fremragende baggrundsartikel for Mads' interesse i astronomi og store datadrevne samarbejder.",
-      "reading_minutes": "47"
-    },
-    {
-      "title": "Ny slægt af mareridtsagtige spaghetti-orme fundet på havets bund",
-      "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/naturvidenskab/ny-slaegt-af-mareridtsagtige-spaghetti-orme-fundet-paa-havets-bund/",
-      "summary": "Ny inspiration til den næste Halloween-gyser er dukket op i dybhavet. På bunden af Det Indiske Ocean har forskere fundet to nye slags ‘spaghetti-orme’ (Terebellidae), skriver ScienceAlert.  Måske du synes, at deres udseende er tættere på noget, man ville forvente at se i en Alien-film, end på en lækker skål spaghetti carbonara. Men de har...",
-      "format": "short",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "spaghetti-worms-discovery",
-      "why": "Dybhavsforskning med nye arter er en kort, fascinerende videnskabshistorie — perfekt backup for natur- og videnskabsinteresse i kulturdelen af udgaven.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Spain’s high-speed train network is plagued by old signalling systems. They may have caused the deadly crash",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/spains-high-speed-train-network-is-plagued-by-old-signalling-systems-they-may-have-caused-the-deadly-crash-295465",
-      "summary": "The crash has killed 69 people, and injured scores more. Share article Print article Shortly after 8am, two high-speed trains set off from Madrid’s Atocha station bound for Seville Santa Justa, but neither reached their destination. A failure in the",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "spain-train-signalling-crash",
-      "why": "Forklarer hvordan aldrende signalteknologi kan skabe katastrofer — relevant for enhver debat om infrastruktur, standarder og investeringer i Europa. Mads får teknisk-politisk kontekst til diskussioner om transport-sikkerhed.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "‘Emotional intimacy’ from AI chatbots would be banned under Australia’s digital duty of care laws",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/australia-news/2026/oct/28/emotional-intimacy-ai-chatbots-ban-digital-duty-of-care-laws-australian-politics",
-      "summary": "Labor government under pressure to create social media watchdog as new online safety standards bill passes lower houseFollow our Australia politics live blog for latest updatesGet our breaking news email, free app or daily news podcastThe federal government wants to ban AI chatbots which seek to create “emotional intimacy” after prime minister Anthony Albanese raised the alarm in a heartfelt speech about children treating these agents as their “best friend”.But Labor is coming under increasing p",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
+      "source": "BBC World",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "australia-ai-duty-of-care",
-      "why": "Australsk lovforslag vil forbyde AI-chatbots, der søger følelsesmæssig intimitet — konkret politisk respons på AI, som kan inspirere EU/Danmark i reguleringsdebatten. Mads får et eksempel på lovgivningsvalg med borgerbeskyttelse i centrum.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "A Defense Contractor Gave Their Personal AI Agent Access to a Secure Pentagon System",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/a-defense-contractor-gave-their-personal-ai-agent-access-to-a-secure-pentagon-system/",
-      "summary": "Sources tell WIRED that an Accenture employee’s personal Claude agent ran on a DOD network for two months before it was identified and the vulnerability could be patched.",
-      "format": "short",
-      "section": "Sikkerhed",
-      "group": "Teknologi og verden",
-      "story_id": "defense-agent-pentagon-access",
-      "why": "Case hvor en privat agents adgang til DOD-netværk udstiller kontrollinjer og risici ved uautoriserede agenter i følsomme systemer — vigtigt for danske forsvars- og leverandørdiskussioner om cybersikkerhed og AI-tilgang.",
+      "story_id": "us-tech-stocks-fall-ai-spend",
+      "why": "Store fald i amerikanske tech-aktier efter investorreaktioner samtidig med at AI‑udgifter nærmer sig $1tn. Nyheden forklarer makroøkonomiske risici ved AI‑boble og har direkte betydning for danske investorer og tech‑leverandører.",
       "reading_minutes": "2"
-    },
-    {
-      "title": "Pentagon IG refuses to investigate Starlink/Starshield slowdown in Ukraine",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/10/pentagon-ig-refuses-to-investigate-starlink-starshield-slowdown-in-ukraine/",
-      "summary": "Inspector general rejected request from Democratic and Republican senators.",
-      "format": "short",
-      "section": "Sikkerhed",
-      "group": "Teknologi og verden",
-      "story_id": "starlink-slowdown-ig-decision",
-      "why": "Beslutningen om ikke at undersøge påstået nedskalering af Starlink/Starshield leverancer har direkte betydning for Ukraines kapacitet og for EU/NATO-diskussioner om kommersielle leverandørers rolle i krig. Værd at følge strategisk.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Seven oil tankers carrying 288,000 tonnes of Russian diesel sail towards US",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/us-news/2026/oct/29/seven-oil-tankers-288000-tonnes-russian-diesel-sail-us-putin-trump",
-      "summary": "Tankers, tracked by Greenpeace, are first phase of Trump-Putin deal – but there is uncertainty over whether they will unloadSeven oil tankers carrying an estimated 288,000 tonnes of Russian diesel are now sailing towards the US, though it is uncertain if the vessels will be able to unload amid a political row about the legality of the shipments.The transport, tracked by the pressure group Greenpeace, is the first phase of a contentious supply deal negotiated between presidents Donald Trump and V",
-      "format": "short",
-      "section": "Energi & økonomi",
-      "group": "Teknologi og verden",
-      "story_id": "russian-diesel-tankers",
-      "why": "Tracking af russisk dieselleverancer mod USA efter Mystic-traktater kan ændre handelsmønstre og sanktioners effekt — relevant for EU-økonomi og energi-sikkerhedsdiskussioner, med implikationer for danske energipolitiske samtaler.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Google value plunges by $500bn as AI fears rattle Wall Street",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cm9qzdqpxy48o?at_medium=RSS&at_campaign=rss",
-      "summary": "Google spooked investors so badly that its stock hit a six-month low, after it revealed its AI search summaries were affecting ad revenue. Google CEO Sundar Pichai has backed the company's massive spending on AI. Google parent Alphabet lost just over $500bn (£374bn) in value on Thursday after it rattled Wall Street with its last update of the year on its business operations. Google spooked investors so badly that its stock hit a six-month low, after it revealed its artificial intelligence (AI) s",
-      "format": "short",
-      "section": "Økonomi",
-      "group": "Teknologi og verden",
-      "story_id": "google-market-plunge-ai-ad-revenue",
-      "why": "Stor markedsreaktion efter Googles melding om AI-søgeresultaters effekt på annonceindtægter — konkret indsigtsstykke i hvordan AI ændrer platformøkonomier, relevant for danske annoncerings- og medieøkonomiske debatter.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Google admits AI search makes less money, but it's fixing that with more ads",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads/",
-      "summary": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "google-ai-search-ads-response",
-      "why": "Teknisk-kommerciel forklaring på Googles problem med AI-søgeopsummeringer og annoncer — hjælper Mads forstå hvilke forretningsmæssige løsninger der kommer, og konsekvenser for annoncører og medier.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Ex-Palantir execs launch Dream with $17M from a16z to build AI world models for construction",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/",
-      "summary": "Dream is grounded in real physics and construction standards. Just as LLMs learn from text, Dream's world model is trained on more than 100 million square feet of building data gathered from permit archives across the United States.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "dream-construction-world-models",
-      "why": "Virksomhed der træner verden-modeller for byggebranchen kombinerer AI med fysiske standarder — god teknisk-forretningscase hvis rapporter om agenter mangler eller blokeres.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Spektakulær vikingetids-opdagelse: Den første i 100 år",
-      "source": "videnskab.dk",
-      "url": "https://videnskab.dk/kultur-samfund/spektakulaer-vikingetids-opdagelse-den-foerste-i-100-aar/",
-      "summary": "En ualmindeligt sjælden mønt fra vikingetiden er fundet i Norge. \\ Automatisk oplæsning",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "viking-coin-discovery",
-      "why": "Sjælden vikingemøntfund i Norge er arkæologisk sensation med kulturhistorisk værdi for Norden. Mads får en kort, solid kulturhistorisk nyhed, god til både faglig og samtalemæssig brug om nordisk fortid.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Hvordan kan et stort forlag brande sig som AI-modstander, selvom det er et af landets flittigste udgivere af AI-genererede oversættelser?",
-      "source": "atlasmag.dk",
-      "url": "https://atlasmag.dk/kultur/b%C3%B8ger/hvordan-kan-et-stort-forlag-brande-sig-som-ai-modstander-selvom-det-er-et-af-landets",
-      "summary": "Lindhardt og Ringhofs halve AI-sandheder vidner om behovet for præcis deklarering. Lige nu forhandler Danske Forlag og forfatterforeningerne om en ny AI-mærkningsordning. Hvis forlagene fortsætter de seneste års tendens til at sno sig uden om klare AI-deklarationer, er det vigtigt, at forfatterforeningerne står fast. For en mærkningsordning skal være til glæde for læserne – ikke forlagenes markedsføringsafdelinger. »Forlag forbyder brug af AI«. Sådan lød en overskrift på dr.dk",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "forlag-ai-deklarering",
-      "why": "Undersøgelse af danske forlags dobbelte position: offentlig anti-AI-branding versus brug af AI i oversættelser og behovet for klar deklarering. Meget relevant for dansk kulturpolitik, læserrettigheder og forfatterforhandlinger.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "At slide for kunsten",
-      "source": "Atlas Magasin",
-      "url": "https://atlasmag.dk/kultur/redaktionelt/slide-kunsten",
-      "summary": "Kunsten er et udgravningsarbejde, et byggeprojekt og en gældsakkumulering. I det nyeste nummer af Atlas kan du blandt andet læse om Solvej Balles septologi og skriveproces og Dennis Gade Kofods essay om livets gæld. Når butikkerne bugner af nytrykte bøger og når et moderne kunstværk pludselig skyder op i gadebilledet over natten, kan man let glemme alt det besvær det kræver at bidrage med noget nyt til verden. At kunst og litteratur ikke opstår af den blå luft, men er et resultat af en proces. E",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "atlas-art-economy-essay",
-      "why": "Længere essay om kunstens produktionsvilkår, gæld og skriveprocesser i Atlas' nyeste nummer — nyttigt perspektiv på kulturøkonomi og praksis, som kan inspirere debat om støtte, publikum og institutioners rolle.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "An Epstein Survivor’s Message for MoMA",
-      "source": "Hyperallergic",
-      "url": "https://hyperallergic.com/an-epstein-survivors-message-for-moma/",
-      "summary": "Dani Bensky explains why the museum must drop Leon Black from its board. Also: The Vatican is serious about protecting artists from AI.",
-      "format": "short",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "epstein-survivor-moma",
-      "why": "Personlig krænkelsesopgør rettet mod museumsbestyrelsers ansvar og sponsorrelationer; rejser vigtige spørgsmål om institutioners etik og kunstverdenens magt — relevant kontekst for danske kulturinstitutioner og sponsordebatter.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "An AI Breakthrough Has Made Decades of Computer Science Research ‘Irrelevant’",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/ai-made-decades-of-computer-science-research-irrelevant/",
-      "summary": "Anthropic and OpenAI say they’ve disproved a key tenet of computer science. Researchers are struggling with the fall but also feel like “overexcited bunnies” as they look at new questions to explore.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-breakthrough-cs-paradigm",
-      "why": "Analyse af påstået paradigmeskifte i computer science: hvilke gamle antagelser der udfordres, og hvilke nye forskningsspørgsmål det åbner. Essentielt for at forstå akademiske og industrielle forskydninger i AI-feltet.",
-      "reading_minutes": "3"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 2,
-        "teknologi": 4,
-        "verden": 7,
-        "fordybelse": 3,
+        "dansk_politik": 1,
+        "teknologi": 6,
+        "verden": 6,
+        "fordybelse": 5,
         "kultur": 4
       },
       "actual": {
         "dansk_politik": 1,
-        "teknologi": 6,
-        "verden": 7,
-        "fordybelse": 2,
-        "kultur": 4
+        "teknologi": 4,
+        "verden": 6,
+        "fordybelse": 3,
+        "kultur": 3
       },
       "warnings": [
-        "Færre historier om dansk politik og samfund end planlagt (1 af 2).",
-        "Færre historier om fordybelse og personlige interesser end planlagt (2 af 3).",
-        "Færre longreads end planlagt (5 af 6)."
+        "Færre historier om teknologi end planlagt (4 af 6).",
+        "Færre historier om fordybelse og personlige interesser end planlagt (3 af 5).",
+        "Færre historier om kultur end planlagt (3 af 4).",
+        "Færre longreads end planlagt (6 af 8)."
       ]
     },
     "collection": {
-      "rss_candidates": 284,
-      "web_candidates": 17,
+      "rss_candidates": 297,
+      "web_candidates": 15,
       "total_candidates": 75,
-      "repeats_dropped": 8,
-      "previews_enriched": 21,
+      "repeats_dropped": 16,
+      "previews_enriched": 22,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
-        "full_text": 47,
+        "full_text": 46,
         "stopped": false
       }
     },
     "extraction": {
-      "approved": 25,
-      "prepared": 20,
+      "approved": 22,
+      "prepared": 17,
       "dropped_unreadable": 0,
       "dropped_diversity": 5,
       "budget_exhausted": false
@@ -296,11 +261,11 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 28
+        "items": 33
       },
       "BBC Technology": {
         "status": "ok",
-        "items": 20
+        "items": 21
       },
       "Ars Technica": {
         "status": "ok",
@@ -420,7 +385,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -428,7 +393,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 13
+        "items": 12
       }
     }
   }
