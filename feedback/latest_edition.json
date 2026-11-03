@@ -1,241 +1,229 @@
 {
-  "created_at": "2026-10-31T04:34:50.283196+00:00",
+  "created_at": "2026-11-03T04:32:38.589951+00:00",
   "articles": [
     {
-      "title": "Techgiganter har stået skoleret hos justitsministeren",
+      "title": "Partier vil slå hårdere ned på ydmygelsesvideoer",
       "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/indland/techgiganter-har-staaet-skoleret-hos-justitsministeren",
-      "summary": "Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. Nicolai Wammen (S) mener ikke, at techvirksomhederne løfter deres ansvar. De store techgiganter gør alt for lidt for at passe på vores børn og unge. Sådan lyder budskabet fra justsminister Nicolai Wammen (S), som i dag har haft repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord til møde i ministeriet sammen med organisationerne Red Barnet og Digitalt Ansvar.",
+      "url": "https://www.dr.dk/nyheder/politik/partier-vil-slaa-haardere-ned-paa-ydmygelsesvideoer",
+      "summary": "I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. Venstres gruppeformand Morten Dahlin er forfærdet. Danske børn og unge ydmyger og tæver andre børn og unge i 82 videoer, som virksomheden Darksight Analytics",
       "format": "short",
       "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "techgiganter-justitsministeren-2026",
-      "why": "Justitsminister Nicolai Wammen samlede repræsentanter fra Meta, TikTok, Google, Snapchat, Roblox og Discord for at kritisere techgiganternes indsats omkring børn og unge. Historien betyder direkte politisk pres på platformregulering, som kan føre til konkrete danske regler eller krav — vigtig for Mads, der følger digital politik og børnebeskyttelse.",
+      "story_id": "ydmygelsesvideoer-danmark",
+      "why": "Danske politikere reagerer på 82 delte videoer, hvor børn og unge udsættes for ydmygelse og vold på sociale medier; flere ordførere kræver hårdere indgreb. Mads bør kende sagen: det er en aktuel debat om børns sikkerhed, ansvar for platforme og kommende dansk regulering.",
       "reading_minutes": "2"
     },
     {
-      "title": "iOS 27.3 Will Enable These Apple Intelligence Features in China",
-      "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/10/30/ios-27-3-apple-intelligence-china/",
-      "summary": "Apple's website in China says iOS 27.3 will enable some Apple Intelligence features in China, such as Writing Tools, Genmoji, Clean Up, Notification Summaries, Priority Notifications, Visual Intelligence, and Live Translation with AirPods. Select features will not be available, including Siri AI and Image Playground.\n\n\n\nThe features will be limited to the iPhone 15 Pro and newer until Apple receives approval to launch them on the iPad, Mac, and other devices in China. Apple said the first iOS 27",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "apple-ios-27-3-china",
-      "why": "Apple annoncerer, at iOS 27.3 aktiverer en række Apple Intelligence-funktioner i Kina, med undtagelser som Siri AI. Det ændrer hvordan Apples AI-funktioner rulles globalt ud og viser, hvordan lovgivning og lokalpolitik former brugeroplevelsen — relevant for Mads' interesse i Apple og konsekvenserne af regionale AI-tilpasninger.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Cracks are emerging in the AI spending boom",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/30/cracks-are-emerging-in-the-ai-spending-boom/",
-      "summary": "Big Tech is pouring billions into AI infrastructure, but mounting debt, negative cash flow, and growing investor skepticism are raising questions about the sustainability of the AI spending boom.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ai-spending-cracks-2026",
-      "why": "Big Techs enorme investeringer i AI-infrastruktur møder voksende gæld, negativt cashflow og investor-skepsis. Artiklen forklarer hvorfor AI‑byggeboomet kan bremse og hvilke konsekvenser det kan få for danske og europæiske leverandørkæder og investeringer — essentiel for at forstå kommende markedsskift.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Nvidia weighs playing the cosigner for Nscale’s AI data center in West Virginia",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/10/30/nvidia-weighs-playing-the-cosigner-for-nscales-ai-data-center-in-west-virginia/",
-      "summary": "When investors get nervous about AI spending, it helps to have the chipmaker that sells the chips offer to cosign the loan.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "nvidia-cosigner-nscale",
-      "why": "Nvidia overvejer at kautionere for et AI-datacenter for at sikre finansiering — et konkret eksempel på hvordan chipleverandører påvirker datacenterfinansiering. Det er et nyttigt tilfælde hvis man vil forstå hvordan leverandører underbygger AI‑udbygning, med potentielle konsekvenser for europæisk konkurrence og forsyningskæder.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "A Supply Chain Attack Put Malicious Anthropic Claude Extensions on Thousands of Devices",
-      "source": "WIRED",
-      "url": "https://www.wired.com/story/trojan-malware-targets-thousands-of-anthropic-claude-developer-systems/",
-      "summary": "Thanks to a lucky break, flawed code in a tainted Claude extension prevented the attacker from fully worming their way into some 5,000 developer machines. The AI software-development platform Cursor, which is owned by SpaceX , had a malicious",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "supply-chain-anthropic-extensions",
-      "why": "En leverandørkæde‑type angreb spredte ondsindede udvidelser til udviklere, men en fejl forhindrede fuld udbredelse. Sagen viser reelle sikkerhedsrisici ved hurtigt voksende AI‑økosystemer og vigtigheden af supply‑chain‑sikring — relevant for Mads' sikkerhedsforståelse af AI-platforme.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Ukraine’s Zelenskyy praises US over $2.1bn Patriot missile deal but warns it could take years",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/31/ukraines-zelenskyy-praises-us-over-21bn-patriot-missile-deal-but-warns-it-could-take-years",
-      "summary": "The Ukrainian president called the US decision strong, but added that delivery of 500 Patriot PAC-3 missiles ⁠could take yearsThe US has approved the sale ⁠of 500 Patriot PAC-3 missiles ⁠to Ukraine for an estimated $2.1bn, but Volodymyr Zelenskyy has warned deliveries could take years and stockpiles were needed now to counter Russian ballistic missile attacks.“The proposed sale will improve Ukraine’s capability to meet current and future threats by improving its integrated air and missile defens",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "patriot-sale-ukraine-2026",
-      "why": "USA godkendte et salg af 500 Patriot PAC-3-missiler til Ukraine til $2,1 mia., men Zelenskyj advarer om lange leveringstider. Dette påvirker Europas luftforsvarssituation og leverings- og lagerpolitikker, som kan ændre danske og NATO-beslutninger om luft‑ og raketforsvar.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Details of thousands of US immigration agents leaked in major hack",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cq8jzkpjr28vo?at_medium=RSS&at_campaign=rss",
-      "summary": "A group called the Department of Peace released information on more than 41,000 DHS staff.",
-      "format": "short",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "dhs-agent-leak-2026",
-      "why": "En stor læk frigav oplysninger på over 41.000 DHS‑ansatte. Sikkerhedsbruddet har vidtrækkende konsekvenser for personbeskyttelse og tjenestemands‑sikkerhedspolitik — en vigtig case om risici ved centralisering og datahåndtering, relevant for danske diskussioner om datasikkerhed.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "Thousands of “ghost students” use AI to steal millions in student loans, DOJ says",
-      "source": "Ars Technica",
-      "url": "https://arstechnica.com/tech-policy/2026/10/doj-exposes-ghost-students-using-ai-to-complete-courses-steal-student-loans/",
-      "summary": "Applying for FAFSA may get messy as DOJ “ghost student” crackdown ramps up.",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "ghost-students-ai-doj",
-      "why": "DOJ afdækker omfattende bedrageri hvor AI blev brugt til at oprette 'ghost students' og stjæle studielån. Sagen viser konkrete misbrugsveje for AI i offentlige støtteordninger — relevant for forståelse af hvordan teknologien kan udnyttes i velfærdsstater som Danmark.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Eating disorders are on the rise. GLP-1s could make things worse.",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/30/1147838/eating-disorders-rise-glp-1s-weight-loss-drugs/",
-      "summary": "GLP-1 weight-loss drugs are one of the biggest biotech breakthroughs of the last decade. But to some clinical psychologists, they can represent something more sinister—a potential trigger for eating disorders. A new report suggests that the global incidence of anorexia nervosa and bulimia nervosa shot up between 1990 and 2023—by a whopping 71%. By 2023,…",
-      "format": "short",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "glp1-eating-disorders-2026",
-      "why": "En længere analyse af hvordan GLP‑1‑vægtmedicin kan bidrage til stigende spiseforstyrrelser på globalt plan. Emnet kombinerer medicinsk forskning, samfundskonsekvenser og etik — vigtigt langtidsstof for Mads om en stor sundheds- og kulturændring.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "The Download: dead startups fueling AI and interspecies communication",
-      "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/10/28/1147767/the-download-dead-startups-fueling-ai-interspecies-communication/",
-      "summary": "This is today’s edition of The Download, our weekday newsletter that provides a daily dose of what’s going on in the world of technology. AI labs are buying data from dead startups to train their models When Keelan Miskell began winding down his crypto startup, he didn’t think its data was worth much. But he’s…",
-      "format": "short",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "dead-startups-ai-data",
-      "why": "MIT Technology Review forklarer, hvordan AI‑laboratorier køber data fra døde startups og hvordan dette nærer nye AI-projekter, inkl. interspecies‑kommunikation. Giver konkret indsigt i datamarkeder og genbrug af aktiver — nyttigt for Mads til at forstå AI‑økonomiens mindre synlige mekanismer.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "‘Elonville’: US residents say Musk’s xAI offered to buy homes if they don’t sue over datacenter noise",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/us-news/2026/oct/28/datacenter-noise-lawsuit-elon-musk-mississippi",
-      "summary": "Several Mississippi homes have been purchased near datacenters and one resident said realtor outlined target to buy more than 400People in a Mississippi neighborhood, many of whom dislike a nearby power plant central to Elon Musk’s artificial intelligence ambitions, have received a stark offer – to sell their houses to his company and make way.Real estate agents have been going door to door in Southaven, Mississippi, on behalf of xAI, touting a deal to purchase houses as long as the owners agree",
-      "format": "longread",
-      "section": "Verden",
-      "group": "Teknologi og verden",
-      "story_id": "elonville-datacenter-us",
-      "why": "Journalistik fra The Guardian viser, at xAI har tilbudt at købe huse i Mississippi for at undgå sagsanlæg om datacenterstøj. Sagen illustrerer hvordan AI‑infrastruktur presser lokalsamfund og skaber nye politiske og retlige dilemmaer — relevant for danske debat om datacentre og lokalsamfund.",
-      "reading_minutes": "8"
-    },
-    {
-      "title": "‘What we leave behind is not as important as how we’ve lived’: remembering actor Patrick Stewart",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/what-we-leave-behind-is-not-as-important-as-how-weve-lived-remembering-actor-patrick-stewart-295542",
-      "summary": "Passing away this week at 86, Stewart will be remembered as actor, dramaturge, Shakespearean exemplar, mutant professor, and distinguished Starfleet captain. Share article Print article At the end of Star Trek: Generations (1994), surveying the wreckage of the crashed USS Enterprise he captained for nearly a decade, Jean-Luc Picard (Patrick Stewart) muses to his first officer, William Riker (Jonathan Frakes):",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "patrick-stewart-tribute-2026",
-      "why": "En refleksiv portrætartikel om Patrick Stewart, hans arbejde i Shakespeare og populærkultur. Læsbar kulturessay der hjælper forstå en markant skuespillerkarrriere og dens kulturelle betydning — nyttigt kulturstof i en dag præget af teknik- og sikkerhedsnyheder.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy",
-      "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/a-new-map-of-empty-space-challenges-a-tranquil-picture-of-the-galaxy-20261030/",
-      "summary": "For decades, astronomers treated the interstellar medium as a static backdrop to the goings-on of the universe. Now, a wave of 3D mapping is bringing the interstellar medium’s dynamic nature into focus.            The post A New Map of ‘Empty’ Space Challenges a Tranquil Picture of the Galaxy first appeared on Quanta Magazine",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "map-empty-space-quanta-2026",
-      "why": "Quanta beskriver nye 3D‑kort over det interstellare medium, som ændrer opfattelsen af galaksens dynamik. Det er et klart, betydeligt astronomisk gennembrud med visualiserings- og forskningskonsekvenser — præcist for Mads, der følger store videnskabelige fortællinger.",
-      "reading_minutes": "4"
-    },
-    {
-      "title": "What animal bones in Malawi teach us about the social lives of people long ago",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/what-animal-bones-in-malawi-teach-us-about-the-social-lives-of-people-long-ago-281660",
-      "summary": "The bones of animals at an archaeological site in Malawi show that food was scarce over the last 21,000 years, but people didn’t cooperate far and wide to get it.",
-      "format": "longread",
-      "section": "Fordybelse",
-      "group": "Fordybelse",
-      "story_id": "animal-bones-malawi-2026",
-      "why": "En længere arkæologisk artikel der bruger dyreknogler til at rekonstruere 21.000 års sociale strategier i Malawi. Solid, tværfaglig forskning formidlet til læsere, som interesserer sig for historie og menneskelig adfærd — en klassisk fordybelse til Mads' morgenlæsning.",
-      "reading_minutes": "6"
-    },
-    {
-      "title": "Hvorfor æder vilde spækhuggere ikke mennesker?",
+      "title": "Mikroskopisk milepæl: Danskere bygger en maskine så lille, at du ikke kan se den",
       "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/naturvidenskab/hvorfor-aeder-vilde-spaekhuggere-ikke-mennesker/",
-      "summary": "Spækhuggere er havets 'konge-rovdyr', der kan spise stort set alt, de har lyst til. Alligevel vækkes deres appetit ikke af os mennesker. Det har fået en læser til at undre sig. \\ Automatisk oplæsning",
-      "format": "longread",
-      "section": "Kultur",
-      "group": "Danmark og kultur",
-      "story_id": "spaekhuggere-mennesker-2026",
-      "why": "Et dybdegående populærvidenskabeligt stykke om spækhuggere og hvorfor de undlader at angribe mennesker. Lang, lokal-relevant naturforklaring med base i adfærd og økologi — værd at læse for interesser i danske havområder og naturforståelse.",
-      "reading_minutes": "7"
-    },
-    {
-      "title": "I Texas vil man ikke give penge til dansk instruktørs abortfilm",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/kultur/film/i-texas-vil-man-ikke-give-penge-til-dansk-instruktoers-abortfilm",
-      "summary": "Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. Ifølge dansk-iranske Milad Avaz må hans nye film ikke få støtte i Texas, hvor den er optaget, fordi den handler om abort. En film af dansk-iranske Milad Avaz møder modstand i Texas. I hvert fald hævder instruktøren, at Texas-guvernør Greg Abbott har sat foden ned, når det kommer til filmstøtte. Og at elefanten i rummet er abort, er Milad Avaz ikke i tvivl om.",
+      "url": "https://videnskab.dk/teknologi/mikroskopisk-milepael-danskere-bygger-en-maskine-saa-lille-at-du-ikke-kan-se-den/",
+      "summary": "Opfindelsen af en lillebitte turbine markerer nu et stort gennembrud inden for det videnskabelige felt molekylære maskiner.  Det skriver Københavns Universitet i en pressemeddelelse. I et studie, der netop er udgivet i det prestigefulde tidsskrift Nature, beskriver et internationalt forskerhold med flere danske deltagere, hvordan de har udviklet turbinen, der blot måler en milliontedel af...",
       "format": "short",
-      "section": "Kultur",
+      "section": "Danmark",
       "group": "Danmark og kultur",
-      "story_id": "abortfilm-texas-avaz-2026",
-      "why": "Dansk-iranske instruktør Milad Avaz oplever afslag på optagelsesstøtte i Texas fordi filmen handler om abort. Sagen berører ytringsfrihed, filmfinansiering og internationale optagelsesvilkår — konkret dansk kulturpolitik og relevante diskussioner om kunstnerisk frihed.",
+      "story_id": "mikroskopisk-milepael-dansk-forskning",
+      "why": "Forskere med dansk deltagelse har lavet en turbine på størrelsen en milliontedel af en meter — et gennembrud i molekylære maskiner publiceret i Nature. Det kan ændre nanoteknologiens muligheder; Mads får en dansk-vendt forskningshistorie, relevant for innovation og forskningspolitik.",
       "reading_minutes": "2"
     },
     {
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
-      "summary": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+      "title": "AI-powered malware âhighly likelyâ to be used to hack UK infrastructure by 2028",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
+      "summary": "National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals AI-powered malicious software is âhighly likelyâ to be used in hacking attacks against the UKâs power stations, airports and hospitals by 2028, according to the state cybersecurity body. The National Cyber Security Centre (NCSC) said AI will probably enable a ",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-malware-infrastruktur-2028",
+      "why": "NCSC advarer om, at AI-drevet malware sandsynligvis vil angribe kritisk infrastruktur som kraftværker og hospitaler inden 2028. Historien har direkte europæiske sikkerheds- og beredskabskonsekvenser, som kan påvirke danske forsvars- og cybersikkerhedsprioriteter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The agentic web is here",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+      "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every…",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "agentic-web",
+      "why": "Analytisk gennemgang af webens udvikling mod agentiske systemer: autonome softwareagenter, deres muligheder og risici. For Mads: forklarer hvorfor internettet nu må gentænkes, og hvilke konsekvenser agentteknologi kan få for medier, platformer og dansk regulering.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Is There Anything Left in the Dream of Cold Fusion?",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
+      "summary": "Dig a little deeper and you’ll find a thriving research program with exotic atoms that won’t solve the energy crisis but stretches the boundaries of physics.              The post Is There Anything Left in the Dream of Cold Fusion? first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "cold-fusion-reappraisal",
+      "why": "Quanta dykker dybt i moderne forskning på feltet ofte kaldet ’cold fusion’ og viser et aktivt forskningsmiljø med usædvanlige eksotiske atomstudier. Lang, nuanceret gennemgang; relevant for Mads som bredt videnskabeligt perspektiv uden løfter om hurtig energiomstilling.",
+      "reading_minutes": "13"
+    },
+    {
+      "title": "Human speech follows the same patterns as birdsong — new research",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/human-speech-follows-the-same-patterns-as-birdsong-new-research-295030",
+      "summary": "A new study compares the songs of 367 bird species with song and speech from 52 human languages to reveal shared acoustic patterns.",
+      "format": "longread",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "speech-and-birdsong-patterns",
+      "why": "Ny komparativ forskning viser fælles akustiske mønstre i menneskesprog og fuglesang over hundreder af arter og sprog. En klar, læsbar videnskabsforklaring der forbinder evolution, sprog og adfærd; god langfaglig læsning for morgenens nysgerrighed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "When a bull falls for a donkey: what an unlikely relationship reveals about animal sexuality",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/when-a-bull-falls-for-a-donkey-what-an-unlikely-relationship-reveals-about-animal-sexuality-295306",
+      "summary": "Same-sex behaviour is common in animals, but a bull and a male donkey in Ethiopia are an unusual pair. What might they tell us about sex in nature? Share article Print article On an Ethiopian plateau, a bull called Achille formed an unusual relationship with a male donkey named Patroclo. They were observed spending time together, licking and rubbing against one another, and repeatedly having penetrative sex.",
+      "format": "longread",
+      "section": "Kultur & Videnskab",
+      "group": "Fordybelse",
+      "story_id": "bull-donkey-sexuality",
+      "why": "En fortællende artikel om usædvanlig dyreadfærd som gateway til bredere refleksioner om seksuel adfærd i dyreriget. Mads får en kompakt, overraskende naturhistorie med læsevenlig biologisk kontekst.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+      "summary": "Exclusive: Gap between NHS claim and trusts’ comments described as ‘very misleading’ by senior health officialMore than two dozen hospital trusts the NHS claims have benefited from Palantir’s medical data platform are not using all or most of the AI-powered technology, the Guardian can reveal.The 29 hospital trusts that NHS England publicly lists as “realising benefits” from the controversial £330m federated data platform (FDP) have said the system is not live or they are not using any of its ap",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "palantir-nhs-implementation-gap",
+      "why": "Undersøgelse viser et mismatch mellem NHS' påstande og faktisk brug af Palantirs platform i 29 trusts. Det rejser spørgsmål om anskaffelsespolitik, implementering af AI i sundhedsvæsenet og offentlig ansvarlighed — direkte relevant for danske beslutningstagere over sundheds-AI.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Apple's Q4 2026 Earnings Call Takeaways",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/",
+      "summary": "Apple held its earnings call for the fourth fiscal quarter of 2026 today, and it was Apple CEO John Ternus' first earnings call in his new role. He had Apple CFO Kevan Parekh on hand, and he brought in Chief Operating Officer Sabih Khan.\n\n\n\n\n\nThe trio covered iPhone Duo sales, Siri AI, and increasing memory costs, among other topics.\n\n\n\niPhone Duo\n\nAfter the earnings release, Ternus told Reuters that Apple isn't able to meet demand for the ‌iPhone Duo‌, and there's no word on when supply/demand ",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-q4-2026-takeaways",
+      "why": "Detaljeret gennemgang af Apples seneste resultatopkald: iPhone Duo-salg, Siri AI og stigende hukommelsesomkostninger. For Mads: kontant forretnings- og produktindsigt, som forklarer strategiske konsekvenser for platformøkonomi og danske udviklere/brugere.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Apple says it’s ‘hard to predict’ when iPhone Duo constraints will improve",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/",
+      "summary": "Apple says iPhone Duo production is ramping up, but it still can't say when supply will catch up with demand as shipping delays stretch into next year.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-duo-supply-constraints",
+      "why": "Supplerende rapport om Apples produktionsudfordringer og forsinkede udbud af foldbare iPhones. Giver Mads en kort opdatering fra et andet teknologimedie — nyttig baggrund hvis han følger Apple-strategi tæt.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-rsi-warning",
+      "why": "Anthropic advarer om nær forestående RSI-evne, hvor AI potentielt kan træne sig selv og accelerere udvikling. En vigtig påmindelse om hurtig AI-udvikling og risikohåndtering, relevant for politiske og teknologiske beslutninger i Danmark og EU.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "French pupils resume school blockades as country braces for more protests",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/education/2026/nov/02/franch-students-school-blockades-protests",
+      "summary": "Minister warns weeks without lessons are putting exams at risk as unions plan nationwide strike on ThursdayDozens of high schools across France were blockaded again on Monday as the government braced for another tense week of protests over school conditions and the high cost of living.The protests come amid warnings that weeks without lessons are putting some pupils’ school year and final exams at risk. Continue reading...",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "us-tech-stocks-fall-ai-spend",
-      "why": "Store fald i amerikanske tech-aktier efter investorreaktioner samtidig med at AI‑udgifter nærmer sig $1tn. Nyheden forklarer makroøkonomiske risici ved AI‑boble og har direkte betydning for danske investorer og tech‑leverandører.",
+      "story_id": "france-student-blockades",
+      "why": "Franske studerendes blokader og kommende strejker truer skoleåret og eksamener; en indikator for social uro i EU under økonomiske og uddannelsespres. For Mads: mønsteranalyse af europæisk socialpolitik og politiske risici.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
+      "summary": "The exchange froze transactions following the incident which has been linked to a North Korean group. Binance customers withdrew $3.6bn (£2.7bn) of assets from the world's biggest cryptocurrency exchange as it reopened on Sunday following what is believed to be the largest hack in history. The firm suspended all transactions in the wake of the incident, which impacted $6.3bn worth of digital assets.",
+      "format": "short",
+      "section": "Finans",
+      "group": "Teknologi og verden",
+      "story_id": "binance-mass-withdrawal",
+      "why": "Kunder trak $3,6 mia. ud efter et massivt hack på en kryptobørs, et af tidens største angreb. For Mads: konkret case om risici i digital finansinfrastruktur og regulatoriske efterspil i EU/ Danmark.",
       "reading_minutes": "2"
+    },
+    {
+      "title": "These firms you've never heard of are feeding fears the AI bubble could burst",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss",
+      "summary": "The amount of debt held by data centres is measured in the tens of billions of pounds.",
+      "format": "short",
+      "section": "Økonomi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-bubble-datacentre-debt",
+      "why": "BBC-analyse peger på store gældsgrader i datacentre og skjulte firmaer, der kan udløse en hård opbremsning i AI-investeringer. Brugbar for Mads når han vurderer økonomisk stabilitet i AI-økosystemet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Museums Don’t Need More Visitors. They Need More Contributors.",
+      "source": "MuseumNext",
+      "url": "https://www.museumnext.com/article/museums-dont-need-more-visitors-they-need-more-contributors/",
+      "summary": "On a wall in Amsterdam’s Nieuw-West district, a mural called Tolerance is fading away. Nobody is rushing to restore it. And yet it is still...\nThe post Museums Don’t Need More Visitors. They Need More Contributors. appeared first on MuseumNext.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "museums-contributors-not-visitors",
+      "why": "Case-baseret argument for, at museer bør fokusere på bidragydere frem for rå besøgstal; nyttig for kulturledelse og DFI/museumspolitik-diskussioner i Danmark. Mads får operationel kulturstrategi, ikke blot kritik.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/silver-pines-now-playing",
+      "summary": " It's those bloody typewriters all over again. Developer Wych Elm Games' Silver Pines is fantastic in a whole bunch of ways, from its woozy small-town ambience to its mix of taut survival horror and exploratory Metroidvania. But from the very first moment I saw its save system, its please-insert-coin phone box demands, I knew our relationship was going to be a fractious one. Read more",
+      "format": "longread",
+      "section": "Kultur & Gaming",
+      "group": "Fordybelse",
+      "story_id": "silver-pines-review",
+      "why": "Spilanmeldelse der diskuterer genreudvikling, designvalg og nostalgiske elementer i survival-horror/Metroidvania. Mads får kultur- og spilperspektiv, nyttigt for forståelse af spil som kulturform og digital fortælling.",
+      "reading_minutes": "5"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 1,
-        "teknologi": 6,
-        "verden": 6,
-        "fordybelse": 5,
-        "kultur": 4
+        "dansk_politik": 3,
+        "verden": 7,
+        "teknologi": 5,
+        "fordybelse": 3,
+        "kultur": 2
       },
       "actual": {
-        "dansk_politik": 1,
+        "dansk_politik": 2,
+        "verden": 5,
         "teknologi": 4,
-        "verden": 6,
         "fordybelse": 3,
-        "kultur": 3
+        "kultur": 2
       },
       "warnings": [
-        "Færre historier om teknologi end planlagt (4 af 6).",
-        "Færre historier om fordybelse og personlige interesser end planlagt (3 af 5).",
-        "Færre historier om kultur end planlagt (3 af 4).",
-        "Færre longreads end planlagt (6 af 8)."
+        "Færre historier om dansk politik og samfund end planlagt (2 af 3).",
+        "Færre historier om verden og sikkerhed end planlagt (5 af 7).",
+        "Færre historier om teknologi end planlagt (4 af 5).",
+        "Færre longreads end planlagt (10 af 13)."
       ]
     },
     "collection": {
-      "rss_candidates": 297,
+      "rss_candidates": 236,
       "web_candidates": 15,
       "total_candidates": 75,
-      "repeats_dropped": 16,
-      "previews_enriched": 22,
+      "repeats_dropped": 2,
+      "previews_enriched": 21,
       "preview_budget_stopped": false,
       "readability_preflight": {
         "checked": 65,
@@ -244,10 +232,10 @@
       }
     },
     "extraction": {
-      "approved": 22,
-      "prepared": 17,
+      "approved": 20,
+      "prepared": 16,
       "dropped_unreadable": 0,
-      "dropped_diversity": 5,
+      "dropped_diversity": 4,
       "budget_exhausted": false
     },
     "source_health": {
@@ -261,7 +249,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 33
+        "items": 36
       },
       "BBC Technology": {
         "status": "ok",
@@ -289,7 +277,7 @@
       },
       "The Conversation": {
         "status": "ok",
-        "items": 50
+        "items": 46
       },
       "MacRumors": {
         "status": "ok",
@@ -313,7 +301,7 @@
       },
       "MuseumNext": {
         "status": "ok",
-        "items": 0
+        "items": 10
       },
       "Eurogamer": {
         "status": "ok",
@@ -385,7 +373,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 8
+        "items": 1
       },
       "VGC": {
         "status": "ok",
@@ -393,7 +381,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 12
+        "items": 9
       }
     }
   }
