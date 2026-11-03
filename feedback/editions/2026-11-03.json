@@ -1,0 +1,388 @@
+{
+  "created_at": "2026-11-03T04:32:38.589951+00:00",
+  "articles": [
+    {
+      "title": "Partier vil slå hårdere ned på ydmygelsesvideoer",
+      "source": "www.dr.dk",
+      "url": "https://www.dr.dk/nyheder/politik/partier-vil-slaa-haardere-ned-paa-ydmygelsesvideoer",
+      "summary": "I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. Venstres gruppeformand Morten Dahlin er forfærdet. Danske børn og unge ydmyger og tæver andre børn og unge i 82 videoer, som virksomheden Darksight Analytics",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "ydmygelsesvideoer-danmark",
+      "why": "Danske politikere reagerer på 82 delte videoer, hvor børn og unge udsættes for ydmygelse og vold på sociale medier; flere ordførere kræver hårdere indgreb. Mads bør kende sagen: det er en aktuel debat om børns sikkerhed, ansvar for platforme og kommende dansk regulering.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Mikroskopisk milepæl: Danskere bygger en maskine så lille, at du ikke kan se den",
+      "source": "Videnskab.dk",
+      "url": "https://videnskab.dk/teknologi/mikroskopisk-milepael-danskere-bygger-en-maskine-saa-lille-at-du-ikke-kan-se-den/",
+      "summary": "Opfindelsen af en lillebitte turbine markerer nu et stort gennembrud inden for det videnskabelige felt molekylære maskiner.  Det skriver Københavns Universitet i en pressemeddelelse. I et studie, der netop er udgivet i det prestigefulde tidsskrift Nature, beskriver et internationalt forskerhold med flere danske deltagere, hvordan de har udviklet turbinen, der blot måler en milliontedel af...",
+      "format": "short",
+      "section": "Danmark",
+      "group": "Danmark og kultur",
+      "story_id": "mikroskopisk-milepael-dansk-forskning",
+      "why": "Forskere med dansk deltagelse har lavet en turbine på størrelsen en milliontedel af en meter — et gennembrud i molekylære maskiner publiceret i Nature. Det kan ændre nanoteknologiens muligheder; Mads får en dansk-vendt forskningshistorie, relevant for innovation og forskningspolitik.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "AI-powered malware âhighly likelyâ to be used to hack UK infrastructure by 2028",
+      "source": "www.theguardian.com",
+      "url": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
+      "summary": "National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals AI-powered malicious software is âhighly likelyâ to be used in hacking attacks against the UKâs power stations, airports and hospitals by 2028, according to the state cybersecurity body. The National Cyber Security Centre (NCSC) said AI will probably enable a ",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "ai-malware-infrastruktur-2028",
+      "why": "NCSC advarer om, at AI-drevet malware sandsynligvis vil angribe kritisk infrastruktur som kraftværker og hospitaler inden 2028. Historien har direkte europæiske sikkerheds- og beredskabskonsekvenser, som kan påvirke danske forsvars- og cybersikkerhedsprioriteter.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "The agentic web is here",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
+      "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every…",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "agentic-web",
+      "why": "Analytisk gennemgang af webens udvikling mod agentiske systemer: autonome softwareagenter, deres muligheder og risici. For Mads: forklarer hvorfor internettet nu må gentænkes, og hvilke konsekvenser agentteknologi kan få for medier, platformer og dansk regulering.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Is There Anything Left in the Dream of Cold Fusion?",
+      "source": "Quanta Magazine",
+      "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
+      "summary": "Dig a little deeper and you’ll find a thriving research program with exotic atoms that won’t solve the energy crisis but stretches the boundaries of physics.              The post Is There Anything Left in the Dream of Cold Fusion? first appeared on Quanta Magazine",
+      "format": "longread",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "cold-fusion-reappraisal",
+      "why": "Quanta dykker dybt i moderne forskning på feltet ofte kaldet ’cold fusion’ og viser et aktivt forskningsmiljø med usædvanlige eksotiske atomstudier. Lang, nuanceret gennemgang; relevant for Mads som bredt videnskabeligt perspektiv uden løfter om hurtig energiomstilling.",
+      "reading_minutes": "13"
+    },
+    {
+      "title": "Human speech follows the same patterns as birdsong — new research",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/human-speech-follows-the-same-patterns-as-birdsong-new-research-295030",
+      "summary": "A new study compares the songs of 367 bird species with song and speech from 52 human languages to reveal shared acoustic patterns.",
+      "format": "longread",
+      "section": "Forskning",
+      "group": "Fordybelse",
+      "story_id": "speech-and-birdsong-patterns",
+      "why": "Ny komparativ forskning viser fælles akustiske mønstre i menneskesprog og fuglesang over hundreder af arter og sprog. En klar, læsbar videnskabsforklaring der forbinder evolution, sprog og adfærd; god langfaglig læsning for morgenens nysgerrighed.",
+      "reading_minutes": "4"
+    },
+    {
+      "title": "When a bull falls for a donkey: what an unlikely relationship reveals about animal sexuality",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/when-a-bull-falls-for-a-donkey-what-an-unlikely-relationship-reveals-about-animal-sexuality-295306",
+      "summary": "Same-sex behaviour is common in animals, but a bull and a male donkey in Ethiopia are an unusual pair. What might they tell us about sex in nature? Share article Print article On an Ethiopian plateau, a bull called Achille formed an unusual relationship with a male donkey named Patroclo. They were observed spending time together, licking and rubbing against one another, and repeatedly having penetrative sex.",
+      "format": "longread",
+      "section": "Kultur & Videnskab",
+      "group": "Fordybelse",
+      "story_id": "bull-donkey-sexuality",
+      "why": "En fortællende artikel om usædvanlig dyreadfærd som gateway til bredere refleksioner om seksuel adfærd i dyreriget. Mads får en kompakt, overraskende naturhistorie med læsevenlig biologisk kontekst.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
+      "summary": "Exclusive: Gap between NHS claim and trusts’ comments described as ‘very misleading’ by senior health officialMore than two dozen hospital trusts the NHS claims have benefited from Palantir’s medical data platform are not using all or most of the AI-powered technology, the Guardian can reveal.The 29 hospital trusts that NHS England publicly lists as “realising benefits” from the controversial £330m federated data platform (FDP) have said the system is not live or they are not using any of its ap",
+      "format": "longread",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "palantir-nhs-implementation-gap",
+      "why": "Undersøgelse viser et mismatch mellem NHS' påstande og faktisk brug af Palantirs platform i 29 trusts. Det rejser spørgsmål om anskaffelsespolitik, implementering af AI i sundhedsvæsenet og offentlig ansvarlighed — direkte relevant for danske beslutningstagere over sundheds-AI.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Apple's Q4 2026 Earnings Call Takeaways",
+      "source": "MacRumors",
+      "url": "https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/",
+      "summary": "Apple held its earnings call for the fourth fiscal quarter of 2026 today, and it was Apple CEO John Ternus' first earnings call in his new role. He had Apple CFO Kevan Parekh on hand, and he brought in Chief Operating Officer Sabih Khan.\n\n\n\n\n\nThe trio covered iPhone Duo sales, Siri AI, and increasing memory costs, among other topics.\n\n\n\niPhone Duo\n\nAfter the earnings release, Ternus told Reuters that Apple isn't able to meet demand for the ‌iPhone Duo‌, and there's no word on when supply/demand ",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "apple-q4-2026-takeaways",
+      "why": "Detaljeret gennemgang af Apples seneste resultatopkald: iPhone Duo-salg, Siri AI og stigende hukommelsesomkostninger. For Mads: kontant forretnings- og produktindsigt, som forklarer strategiske konsekvenser for platformøkonomi og danske udviklere/brugere.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Apple says it’s ‘hard to predict’ when iPhone Duo constraints will improve",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/",
+      "summary": "Apple says iPhone Duo production is ramping up, but it still can't say when supply will catch up with demand as shipping delays stretch into next year.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "iphone-duo-supply-constraints",
+      "why": "Supplerende rapport om Apples produktionsudfordringer og forsinkede udbud af foldbare iPhones. Giver Mads en kort opdatering fra et andet teknologimedie — nyttig baggrund hvis han følger Apple-strategi tæt.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
+      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
+      "format": "longread",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-rsi-warning",
+      "why": "Anthropic advarer om nær forestående RSI-evne, hvor AI potentielt kan træne sig selv og accelerere udvikling. En vigtig påmindelse om hurtig AI-udvikling og risikohåndtering, relevant for politiske og teknologiske beslutninger i Danmark og EU.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "French pupils resume school blockades as country braces for more protests",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/education/2026/nov/02/franch-students-school-blockades-protests",
+      "summary": "Minister warns weeks without lessons are putting exams at risk as unions plan nationwide strike on ThursdayDozens of high schools across France were blockaded again on Monday as the government braced for another tense week of protests over school conditions and the high cost of living.The protests come amid warnings that weeks without lessons are putting some pupils’ school year and final exams at risk. Continue reading...",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "france-student-blockades",
+      "why": "Franske studerendes blokader og kommende strejker truer skoleåret og eksamener; en indikator for social uro i EU under økonomiske og uddannelsespres. For Mads: mønsteranalyse af europæisk socialpolitik og politiske risici.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
+      "summary": "The exchange froze transactions following the incident which has been linked to a North Korean group. Binance customers withdrew $3.6bn (£2.7bn) of assets from the world's biggest cryptocurrency exchange as it reopened on Sunday following what is believed to be the largest hack in history. The firm suspended all transactions in the wake of the incident, which impacted $6.3bn worth of digital assets.",
+      "format": "short",
+      "section": "Finans",
+      "group": "Teknologi og verden",
+      "story_id": "binance-mass-withdrawal",
+      "why": "Kunder trak $3,6 mia. ud efter et massivt hack på en kryptobørs, et af tidens største angreb. For Mads: konkret case om risici i digital finansinfrastruktur og regulatoriske efterspil i EU/ Danmark.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "These firms you've never heard of are feeding fears the AI bubble could burst",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss",
+      "summary": "The amount of debt held by data centres is measured in the tens of billions of pounds.",
+      "format": "short",
+      "section": "Økonomi",
+      "group": "Teknologi og verden",
+      "story_id": "ai-bubble-datacentre-debt",
+      "why": "BBC-analyse peger på store gældsgrader i datacentre og skjulte firmaer, der kan udløse en hård opbremsning i AI-investeringer. Brugbar for Mads når han vurderer økonomisk stabilitet i AI-økosystemet.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Museums Don’t Need More Visitors. They Need More Contributors.",
+      "source": "MuseumNext",
+      "url": "https://www.museumnext.com/article/museums-dont-need-more-visitors-they-need-more-contributors/",
+      "summary": "On a wall in Amsterdam’s Nieuw-West district, a mural called Tolerance is fading away. Nobody is rushing to restore it. And yet it is still...\nThe post Museums Don’t Need More Visitors. They Need More Contributors. appeared first on MuseumNext.",
+      "format": "longread",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "museums-contributors-not-visitors",
+      "why": "Case-baseret argument for, at museer bør fokusere på bidragydere frem for rå besøgstal; nyttig for kulturledelse og DFI/museumspolitik-diskussioner i Danmark. Mads får operationel kulturstrategi, ikke blot kritik.",
+      "reading_minutes": "9"
+    },
+    {
+      "title": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on",
+      "source": "Eurogamer",
+      "url": "https://www.eurogamer.net/silver-pines-now-playing",
+      "summary": " It's those bloody typewriters all over again. Developer Wych Elm Games' Silver Pines is fantastic in a whole bunch of ways, from its woozy small-town ambience to its mix of taut survival horror and exploratory Metroidvania. But from the very first moment I saw its save system, its please-insert-coin phone box demands, I knew our relationship was going to be a fractious one. Read more",
+      "format": "longread",
+      "section": "Kultur & Gaming",
+      "group": "Fordybelse",
+      "story_id": "silver-pines-review",
+      "why": "Spilanmeldelse der diskuterer genreudvikling, designvalg og nostalgiske elementer i survival-horror/Metroidvania. Mads får kultur- og spilperspektiv, nyttigt for forståelse af spil som kulturform og digital fortælling.",
+      "reading_minutes": "5"
+    }
+  ],
+  "report": {
+    "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
+    "editorial_mix": {
+      "planned": {
+        "dansk_politik": 3,
+        "verden": 7,
+        "teknologi": 5,
+        "fordybelse": 3,
+        "kultur": 2
+      },
+      "actual": {
+        "dansk_politik": 2,
+        "verden": 5,
+        "teknologi": 4,
+        "fordybelse": 3,
+        "kultur": 2
+      },
+      "warnings": [
+        "Færre historier om dansk politik og samfund end planlagt (2 af 3).",
+        "Færre historier om verden og sikkerhed end planlagt (5 af 7).",
+        "Færre historier om teknologi end planlagt (4 af 5).",
+        "Færre longreads end planlagt (10 af 13)."
+      ]
+    },
+    "collection": {
+      "rss_candidates": 236,
+      "web_candidates": 15,
+      "total_candidates": 75,
+      "repeats_dropped": 2,
+      "previews_enriched": 21,
+      "preview_budget_stopped": false,
+      "readability_preflight": {
+        "checked": 65,
+        "full_text": 46,
+        "stopped": false
+      }
+    },
+    "extraction": {
+      "approved": 20,
+      "prepared": 16,
+      "dropped_unreadable": 0,
+      "dropped_diversity": 4,
+      "budget_exhausted": false
+    },
+    "source_health": {
+      "DR Nyheder": {
+        "status": "ok",
+        "items": 20
+      },
+      "The Guardian World": {
+        "status": "ok",
+        "items": 45
+      },
+      "BBC World": {
+        "status": "ok",
+        "items": 36
+      },
+      "BBC Technology": {
+        "status": "ok",
+        "items": 21
+      },
+      "Ars Technica": {
+        "status": "ok",
+        "items": 20
+      },
+      "WIRED": {
+        "status": "ok",
+        "items": 50
+      },
+      "Atlas Magasin": {
+        "status": "ok",
+        "items": 10
+      },
+      "MIT Technology Review": {
+        "status": "ok",
+        "items": 10
+      },
+      "The Guardian Technology": {
+        "status": "ok",
+        "items": 32
+      },
+      "The Conversation": {
+        "status": "ok",
+        "items": 46
+      },
+      "MacRumors": {
+        "status": "ok",
+        "items": 20
+      },
+      "TechCrunch": {
+        "status": "ok",
+        "items": 20
+      },
+      "Quanta Magazine": {
+        "status": "ok",
+        "items": 5
+      },
+      "Videnskab.dk": {
+        "status": "ok",
+        "items": 40
+      },
+      "Hyperallergic": {
+        "status": "ok",
+        "items": 15
+      },
+      "MuseumNext": {
+        "status": "ok",
+        "items": 10
+      },
+      "Eurogamer": {
+        "status": "ok",
+        "items": 100
+      },
+      "DR Politik": {
+        "status": "ok",
+        "items": 8
+      },
+      "DR Kultur": {
+        "status": "ok",
+        "items": 8
+      },
+      "TV 2 Nyheder": {
+        "status": "ok",
+        "items": 10
+      },
+      "EKKO": {
+        "status": "ok",
+        "items": 0
+      },
+      "Ekstra Bladet": {
+        "status": "ok",
+        "items": 0
+      },
+      "B.T.": {
+        "status": "ok",
+        "items": 8
+      },
+      "Berlingske": {
+        "status": "ok",
+        "items": 8
+      },
+      "Politiken Politik": {
+        "status": "ok",
+        "items": 2
+      },
+      "Information Indland": {
+        "status": "ok",
+        "items": 8
+      },
+      "Kulturmonitor": {
+        "status": "ok",
+        "items": 1
+      },
+      "Altinget": {
+        "status": "ok",
+        "items": 8
+      },
+      "Zetland": {
+        "status": "ok",
+        "items": 0
+      },
+      "TV 2 Kosmopol": {
+        "status": "ok",
+        "items": 8
+      },
+      "Magasinet KBH": {
+        "status": "fejl",
+        "items": 0
+      },
+      "Seismograf": {
+        "status": "ok",
+        "items": 8
+      },
+      "Arts Professional": {
+        "status": "ok",
+        "items": 6
+      },
+      "The Verge": {
+        "status": "ok",
+        "items": 1
+      },
+      "VGC": {
+        "status": "ok",
+        "items": 0
+      },
+      "OpenAI websøgning": {
+        "status": "ok",
+        "items": 9
+      }
+    }
+  }
+}
