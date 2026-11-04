@@ -1,228 +1,236 @@
 {
-  "created_at": "2026-11-03T04:32:38.589951+00:00",
+  "created_at": "2026-11-04T04:32:51.544239+00:00",
   "articles": [
     {
-      "title": "Partier vil slå hårdere ned på ydmygelsesvideoer",
-      "source": "www.dr.dk",
-      "url": "https://www.dr.dk/nyheder/politik/partier-vil-slaa-haardere-ned-paa-ydmygelsesvideoer",
-      "summary": "I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. I 82 videoer delt på sociale medier bliver danske børn og unge ydmyget og tævet. Det får nu flere ordførere til at reagere. Venstres gruppeformand Morten Dahlin er forfærdet. Danske børn og unge ydmyger og tæver andre børn og unge i 82 videoer, som virksomheden Darksight Analytics",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "ydmygelsesvideoer-danmark",
-      "why": "Danske politikere reagerer på 82 delte videoer, hvor børn og unge udsættes for ydmygelse og vold på sociale medier; flere ordførere kræver hårdere indgreb. Mads bør kende sagen: det er en aktuel debat om børns sikkerhed, ansvar for platforme og kommende dansk regulering.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "Mikroskopisk milepæl: Danskere bygger en maskine så lille, at du ikke kan se den",
+      "title": "Den gør mange menneskers liv bedre – og andres værre: Nu overvejer Norge et forbud",
       "source": "Videnskab.dk",
-      "url": "https://videnskab.dk/teknologi/mikroskopisk-milepael-danskere-bygger-en-maskine-saa-lille-at-du-ikke-kan-se-den/",
-      "summary": "Opfindelsen af en lillebitte turbine markerer nu et stort gennembrud inden for det videnskabelige felt molekylære maskiner.  Det skriver Københavns Universitet i en pressemeddelelse. I et studie, der netop er udgivet i det prestigefulde tidsskrift Nature, beskriver et internationalt forskerhold med flere danske deltagere, hvordan de har udviklet turbinen, der blot måler en milliontedel af...",
-      "format": "short",
-      "section": "Danmark",
-      "group": "Danmark og kultur",
-      "story_id": "mikroskopisk-milepael-dansk-forskning",
-      "why": "Forskere med dansk deltagelse har lavet en turbine på størrelsen en milliontedel af en meter — et gennembrud i molekylære maskiner publiceret i Nature. Det kan ændre nanoteknologiens muligheder; Mads får en dansk-vendt forskningshistorie, relevant for innovation og forskningspolitik.",
-      "reading_minutes": "2"
-    },
-    {
-      "title": "AI-powered malware âhighly likelyâ to be used to hack UK infrastructure by 2028",
-      "source": "www.theguardian.com",
-      "url": "https://www.theguardian.com/technology/2026/nov/03/ai-powered-malware-artificial-intelligence-hacking-critical-uk-infrastructure",
-      "summary": "National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals National Cyber Security Centre expects attacks on critical facilities such as power stations, airports and hospitals AI-powered malicious software is âhighly likelyâ to be used in hacking attacks against the UKâs power stations, airports and hospitals by 2028, according to the state cybersecurity body. The National Cyber Security Centre (NCSC) said AI will probably enable a ",
+      "url": "https://videnskab.dk/teknologi/den-goer-mange-menneskers-liv-bedre-og-andres-vaerre-nu-overvejer-norge-et-forbud/",
+      "summary": "Udsatte grupper i vores samfund nyder stor gavn af AI, så vores frygt kan risikere at gå ud over dem, mener forskere.",
       "format": "longread",
-      "section": "Verden",
+      "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "ai-malware-infrastruktur-2028",
-      "why": "NCSC advarer om, at AI-drevet malware sandsynligvis vil angribe kritisk infrastruktur som kraftværker og hospitaler inden 2028. Historien har direkte europæiske sikkerheds- og beredskabskonsekvenser, som kan påvirke danske forsvars- og cybersikkerhedsprioriteter.",
-      "reading_minutes": "3"
+      "story_id": "norge-overvejer-forbud-ai",
+      "why": "Norske politikere overvejer et forbud mod en form for AI-teknologi efter forskere påpeger, at systemet hjælper udsatte grupper men samtidig skader andre. Det ændrer debatten om regulering i Norden; Mads bør kende konsekvenserne for dansk policy- og velfærdstale.",
+      "reading_minutes": "5"
     },
     {
-      "title": "The agentic web is here",
+      "title": "How “reverse game theory” could keep AI agents in check",
       "source": "MIT Technology Review",
-      "url": "https://www.technologyreview.com/2026/11/02/1147846/the-agentic-web-is-here/",
-      "summary": "In 2001, a decade after he invented the World Wide Web, Tim Berners-Lee articulated a new vision. Together with two colleagues, he published an article in the magazine Scientific American in which he outlined what he called the “Semantic Web”: an internet designed to be navigated by autonomous software agents that could address our every…",
-      "format": "longread",
-      "section": "Teknologi",
+      "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/",
+      "summary": "A new approach known as “reverse game theory” aims to control powerful AI models by designing systems that incentivize them to stick to the rules. As AI models become more capable, safety researchers are scrambling to ensure they are “aligned” with human desires—to make sure, in other words, that rogue agents don’t break the law,…",
+      "format": "short",
+      "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "agentic-web",
-      "why": "Analytisk gennemgang af webens udvikling mod agentiske systemer: autonome softwareagenter, deres muligheder og risici. For Mads: forklarer hvorfor internettet nu må gentænkes, og hvilke konsekvenser agentteknologi kan få for medier, platformer og dansk regulering.",
+      "story_id": "reverse-game-theory-ai",
+      "why": "Forskere præsenterer 'reverse game theory' som en praktisk metode til at designe incitamenter, så autonome AI-agenter overholder regler. Teksten er relevant for danske beslutningstagere og forsvars- eller sikkerhedsdiskussioner om agent-sikkerhed.",
       "reading_minutes": "3"
     },
     {
-      "title": "Is There Anything Left in the Dream of Cold Fusion?",
-      "source": "Quanta Magazine",
-      "url": "https://www.quantamagazine.org/is-there-anything-left-in-the-dream-of-cold-fusion-20261102/",
-      "summary": "Dig a little deeper and you’ll find a thriving research program with exotic atoms that won’t solve the energy crisis but stretches the boundaries of physics.              The post Is There Anything Left in the Dream of Cold Fusion? first appeared on Quanta Magazine",
-      "format": "longread",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "cold-fusion-reappraisal",
-      "why": "Quanta dykker dybt i moderne forskning på feltet ofte kaldet ’cold fusion’ og viser et aktivt forskningsmiljø med usædvanlige eksotiske atomstudier. Lang, nuanceret gennemgang; relevant for Mads som bredt videnskabeligt perspektiv uden løfter om hurtig energiomstilling.",
-      "reading_minutes": "13"
+      "title": "Anthropic is working on a system to prove AI models’ identity",
+      "source": "TechCrunch",
+      "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/",
+      "summary": "Called FlashProve, the system would let anyone check that an AI response really came from the model it claims to be from.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "anthropic-flashprove",
+      "why": "Anthropic udvikler 'FlashProve' til at verificere, at et svar virkelig kommer fra den påståede model — et vigtigt skridt mod ansvarlig AI-udrulning og provenance, som påvirker danske virksomheder og myndigheders tillid til AI-tjenester.",
+      "reading_minutes": "2"
     },
     {
-      "title": "Human speech follows the same patterns as birdsong — new research",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/human-speech-follows-the-same-patterns-as-birdsong-new-research-295030",
-      "summary": "A new study compares the songs of 367 bird species with song and speech from 52 human languages to reveal shared acoustic patterns.",
-      "format": "longread",
-      "section": "Forskning",
-      "group": "Fordybelse",
-      "story_id": "speech-and-birdsong-patterns",
-      "why": "Ny komparativ forskning viser fælles akustiske mønstre i menneskesprog og fuglesang over hundreder af arter og sprog. En klar, læsbar videnskabsforklaring der forbinder evolution, sprog og adfærd; god langfaglig læsning for morgenens nysgerrighed.",
-      "reading_minutes": "4"
+      "title": "CrowdStrike to shell out nearly $500M for 2 AI security startups as the market for securing agents takes off | TechCrunch",
+      "source": "techcrunch.com",
+      "url": "https://techcrunch.com/2026/11/03/crowdstrike-to-shell-out-nearly-500m-for-2-ai-security-startups-as-the-market-for-securing-agents-takes-off/",
+      "summary": "CrowdStrike said it will buy Fiddler AI, which makes AI agent observability software, and Dreadnode, which helps companies automate AI security testing.",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "crowdstrike-acquisitions-ai-security",
+      "why": "CrowdStrike køber to AI-sikkerhedsstartups for ~$500M—et tydeligt signal om, at markedet for at sikre AI-agenter og deres output er splinterny og kapitaltung. Dette har implikationer for virksomheder og danske it-sikkerhedsstrategier.",
+      "reading_minutes": "2"
     },
     {
-      "title": "When a bull falls for a donkey: what an unlikely relationship reveals about animal sexuality",
-      "source": "The Conversation",
-      "url": "https://theconversation.com/when-a-bull-falls-for-a-donkey-what-an-unlikely-relationship-reveals-about-animal-sexuality-295306",
-      "summary": "Same-sex behaviour is common in animals, but a bull and a male donkey in Ethiopia are an unusual pair. What might they tell us about sex in nature? Share article Print article On an Ethiopian plateau, a bull called Achille formed an unusual relationship with a male donkey named Patroclo. They were observed spending time together, licking and rubbing against one another, and repeatedly having penetrative sex.",
-      "format": "longread",
-      "section": "Kultur & Videnskab",
-      "group": "Fordybelse",
-      "story_id": "bull-donkey-sexuality",
-      "why": "En fortællende artikel om usædvanlig dyreadfærd som gateway til bredere refleksioner om seksuel adfærd i dyreriget. Mads får en kompakt, overraskende naturhistorie med læsevenlig biologisk kontekst.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Palantir AI tech unused or little used by 29 NHS trusts said to be benefiting from it",
-      "source": "The Guardian Technology",
-      "url": "https://www.theguardian.com/technology/2026/nov/02/palantir-unused-nhs-hospital-trusts",
-      "summary": "Exclusive: Gap between NHS claim and trusts’ comments described as ‘very misleading’ by senior health officialMore than two dozen hospital trusts the NHS claims have benefited from Palantir’s medical data platform are not using all or most of the AI-powered technology, the Guardian can reveal.The 29 hospital trusts that NHS England publicly lists as “realising benefits” from the controversial £330m federated data platform (FDP) have said the system is not live or they are not using any of its ap",
-      "format": "longread",
+      "title": "Here’s who is falling in line for Trump’s “Super Intelligence” loyalty test",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/02/1147932/heres-who-is-falling-in-line-for-trumps-super-intelligence-loyalty-test/",
+      "summary": "This story originally appeared in The Algorithm, our weekly newsletter on AI. To get stories like this in your inbox first, sign up here. At the end of September, President Trump signed an executive order that contained just one directive, ordering government agencies to rebrand what they had been calling artificial intelligence as “Super Intelligence.” That…",
+      "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "palantir-nhs-implementation-gap",
-      "why": "Undersøgelse viser et mismatch mellem NHS' påstande og faktisk brug af Palantirs platform i 29 trusts. Det rejser spørgsmål om anskaffelsespolitik, implementering af AI i sundhedsvæsenet og offentlig ansvarlighed — direkte relevant for danske beslutningstagere over sundheds-AI.",
-      "reading_minutes": "5"
+      "story_id": "trump-super-intelligence-order",
+      "why": "Analyse af en amerikansk beslutning om at rebrande AI som 'Super Intelligence' og hvilke institutionelle efterdønninger det skaber. Relevant for danske og europæiske regeringers sproglige og regulatoriske respons på amerikansk AI-politik.",
+      "reading_minutes": "2"
     },
     {
-      "title": "Apple's Q4 2026 Earnings Call Takeaways",
+      "title": "NYT demands Brave shut down its paywall blocker and end deals with AI firms",
+      "source": "Ars Technica",
+      "url": "https://arstechnica.com/tech-policy/2026/11/nyt-demands-brave-shut-down-its-paywall-blocker-and-end-deals-with-ai-firms/",
+      "summary": "Lawsuit calls Brave \"supplier, dealer, and distributor\" of stolen news content. Lawsuit calls Brave “supplier, dealer, and distributor” of stolen news content. The New York Times and other newspaper companies sued Brave Software yesterday, alleging that the browser maker illegally bypasses paywalls and sells stolen news content to AI companies. “Brave is the supplier, dealer, and distributor of stolen copyrighted content for its own users and many of the most prominent GenAI companies, including",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "nyt-vs-brave-paywall-ai",
+      "why": "New York Times sagsøger Brave for at omgå betalingsmure og sælge indhold til AI-firmaer — en præcedens der kan ændre forholdet mellem medier og AI-trænere og få konsekvenser for danske mediehuse og deres data-licenser.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Apple Releases New AirPods Beta Firmware",
       "source": "MacRumors",
-      "url": "https://www.macrumors.com/2026/11/02/apple-q4-2026-earnings-takeaways/",
-      "summary": "Apple held its earnings call for the fourth fiscal quarter of 2026 today, and it was Apple CEO John Ternus' first earnings call in his new role. He had Apple CFO Kevan Parekh on hand, and he brought in Chief Operating Officer Sabih Khan.\n\n\n\n\n\nThe trio covered iPhone Duo sales, Siri AI, and increasing memory costs, among other topics.\n\n\n\niPhone Duo\n\nAfter the earnings release, Ternus told Reuters that Apple isn't able to meet demand for the ‌iPhone Duo‌, and there's no word on when supply/demand ",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "apple-q4-2026-takeaways",
-      "why": "Detaljeret gennemgang af Apples seneste resultatopkald: iPhone Duo-salg, Siri AI og stigende hukommelsesomkostninger. For Mads: kontant forretnings- og produktindsigt, som forklarer strategiske konsekvenser for platformøkonomi og danske udviklere/brugere.",
-      "reading_minutes": "5"
-    },
-    {
-      "title": "Apple says it’s ‘hard to predict’ when iPhone Duo constraints will improve",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/02/apple-says-its-hard-to-predict-when-iphone-duo-constraints-will-improve/",
-      "summary": "Apple says iPhone Duo production is ramping up, but it still can't say when supply will catch up with demand as shipping delays stretch into next year.",
+      "url": "https://www.macrumors.com/2026/11/03/airpods-beta-firmware-9b5045a/",
+      "summary": "Apple today released new beta firmware for the AirPods Pro 2, AirPods Pro 3, AirPods 4, AirPods 5, and AirPods Max 2. The firmware has a build number of 9B5045a and is rolling out for developers and public beta testers.\n\n\n\n\n\nThere's no word on what's included in the firmware update because Apple doesn't offer notes for AirPods beta releases. \n\n\n\nWhen the AirPods are connected to an iPhone, iPad, or Mac running iOS 26, iPadOS 26, or macOS 26 or later, there is a beta firmware option that can be a",
       "format": "short",
       "section": "Teknologi",
       "group": "Teknologi og verden",
-      "story_id": "iphone-duo-supply-constraints",
-      "why": "Supplerende rapport om Apples produktionsudfordringer og forsinkede udbud af foldbare iPhones. Giver Mads en kort opdatering fra et andet teknologimedie — nyttig baggrund hvis han følger Apple-strategi tæt.",
+      "story_id": "apple-airpods-beta-9b5045a",
+      "why": "Apple udsender beta-firmware til flere AirPods-modeller uden detaljer; relevant for danske brugere og it-afdelinger, der tester hardware- og lytteoplevelsesændringer i økosystemet midt i julesæsonen.",
       "reading_minutes": "2"
     },
     {
-      "title": "Anthropic warns that it’s very close to RSI capability, aka self-building AI",
-      "source": "TechCrunch",
-      "url": "https://techcrunch.com/2026/11/02/anthropic-warns-that-its-very-close-to-rsi-capability-aka-self-building-ai/",
-      "summary": "RSI is the point at which AI grows so good at training itself that it spawns a dramatic acceleration of AI capabilities. To the AI doomers, RSI represents the cataclysm from which there is no return.",
-      "format": "longread",
-      "section": "Teknologi",
-      "group": "Teknologi og verden",
-      "story_id": "anthropic-rsi-warning",
-      "why": "Anthropic advarer om nær forestående RSI-evne, hvor AI potentielt kan træne sig selv og accelerere udvikling. En vigtig påmindelse om hurtig AI-udvikling og risikohåndtering, relevant for politiske og teknologiske beslutninger i Danmark og EU.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "French pupils resume school blockades as country braces for more protests",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/education/2026/nov/02/franch-students-school-blockades-protests",
-      "summary": "Minister warns weeks without lessons are putting exams at risk as unions plan nationwide strike on ThursdayDozens of high schools across France were blockaded again on Monday as the government braced for another tense week of protests over school conditions and the high cost of living.The protests come amid warnings that weeks without lessons are putting some pupils’ school year and final exams at risk. Continue reading...",
+      "title": "Apple warns of ‘unprecedented’ rise in memory chip prices",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/nov/02/apple-third-quarter-revenue-earnings",
+      "summary": "iPhone maker says decision to raise prices has offset some of impact, as revenues are stronger than expectedBusiness live – latest updatesApple has warned of an “unprecedented” rise in memory chip prices, as it battles with datacentres to lay its hands on supplies.The iPhone maker’s shares fell in after-hours trading after it told investors that the higher prices will eat into its profit margins. Continue reading...",
       "format": "short",
       "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "france-student-blockades",
-      "why": "Franske studerendes blokader og kommende strejker truer skoleåret og eksamener; en indikator for social uro i EU under økonomiske og uddannelsespres. For Mads: mønsteranalyse af europæisk socialpolitik og politiske risici.",
-      "reading_minutes": "3"
-    },
-    {
-      "title": "Binance users withdraw $3.6bn after largest-ever crypto hack",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cwj34gdmnly4o?at_medium=RSS&at_campaign=rss",
-      "summary": "The exchange froze transactions following the incident which has been linked to a North Korean group. Binance customers withdrew $3.6bn (£2.7bn) of assets from the world's biggest cryptocurrency exchange as it reopened on Sunday following what is believed to be the largest hack in history. The firm suspended all transactions in the wake of the incident, which impacted $6.3bn worth of digital assets.",
-      "format": "short",
-      "section": "Finans",
-      "group": "Teknologi og verden",
-      "story_id": "binance-mass-withdrawal",
-      "why": "Kunder trak $3,6 mia. ud efter et massivt hack på en kryptobørs, et af tidens største angreb. For Mads: konkret case om risici i digital finansinfrastruktur og regulatoriske efterspil i EU/ Danmark.",
+      "story_id": "apple-memory-chip-prices",
+      "why": "Apple advarer om kraftigt stigende DRAM-priser, som kan presse marginer og forstyrre forsyningskæder — det har videre konsekvenser for europæisk elektronikindustri og dansk forbrug i 2027.",
       "reading_minutes": "2"
     },
     {
-      "title": "These firms you've never heard of are feeding fears the AI bubble could burst",
-      "source": "BBC Technology",
-      "url": "https://www.bbc.co.uk/news/articles/cje36degrgv5o?at_medium=RSS&at_campaign=rss",
-      "summary": "The amount of debt held by data centres is measured in the tens of billions of pounds.",
-      "format": "short",
-      "section": "Økonomi",
+      "title": "Binance battles to save its brand after record $6.3bn crypto hack",
+      "source": "The Guardian Technology",
+      "url": "https://www.theguardian.com/technology/2026/nov/02/binance-cryptocurrency-exchange-hack",
+      "summary": "World’s largest crypto exchange faces fallout from angry customers, and Lula wins with WhatsAppThis was originally published in TechScape, a newsletter about how technology shapes our lives. Sign up to receive it hereThis week in tech, we’re discussing the fallout from the multibillion-dollar hack of Binance and the significance of Lula’s political mobilization on WhatsApp.And if you’ll be at Web Summit in Lisbon next week, drop me a line! I’ll be there moderating panels on open-source AI and hu",
+      "format": "longread",
+      "section": "Verden",
       "group": "Teknologi og verden",
-      "story_id": "ai-bubble-datacentre-debt",
-      "why": "BBC-analyse peger på store gældsgrader i datacentre og skjulte firmaer, der kan udløse en hård opbremsning i AI-investeringer. Brugbar for Mads når han vurderer økonomisk stabilitet i AI-økosystemet.",
+      "story_id": "binance-6-3bn-hack",
+      "why": "Et rekordstort hack af Binance ($6.3bn) skaber kundemæssig og regulatorisk tumult i krypto-markedet — relevant for danske investorer, fintech-virksomheder og politiske beslutningstagere om cybersikkerhed og kundebeskyttelse.",
+      "reading_minutes": "5"
+    },
+    {
+      "title": "Raising the quality of insights in agentic analytics",
+      "source": "MIT Technology Review",
+      "url": "https://www.technologyreview.com/2026/11/02/1147660/raising-the-quality-of-insights-in-agentic-analytics/",
+      "summary": "In just a few years, generative AI has changed the face of enterprise analytics, notably by making analytics accessible to users across the organization. Agentic AI promises to do even more, by automating entire workflows and taking actions based on agent insights. But there is a problem: The quality of insights that agents currently generate…",
+      "format": "short",
+      "section": "Teknologi",
+      "group": "Teknologi og verden",
+      "story_id": "agentic-analytics-quality",
+      "why": "Agentic analytics lover automatiserede beslutninger, men kvaliteten af indsigt halter. Artiklen forklarer fejltyper og hvordan virksomheder kan forbedre agent-output — vigtigt for danske dataansvarlige og ledere.",
       "reading_minutes": "2"
     },
     {
-      "title": "Museums Don’t Need More Visitors. They Need More Contributors.",
-      "source": "MuseumNext",
-      "url": "https://www.museumnext.com/article/museums-dont-need-more-visitors-they-need-more-contributors/",
-      "summary": "On a wall in Amsterdam’s Nieuw-West district, a mural called Tolerance is fading away. Nobody is rushing to restore it. And yet it is still...\nThe post Museums Don’t Need More Visitors. They Need More Contributors. appeared first on MuseumNext.",
+      "title": "Rasmus Wallbridge blev mødt med stående klapsalver i Hanstholm: 'Det var rørende'",
+      "source": "DR Kultur",
+      "url": "https://www.dr.dk/nyheder/kultur/rasmus-wallbridge-blev-moedt-med-staaende-klapsalver-i-hanstholm-det-var-roerende",
+      "summary": "Udover et enkelt opslag på Instagram har Rasmus Wallbridge forholdt sig tavs den seneste uge. Tirsdag aften mødte han publikum til test-show i Hanstholm. Udover et enkelt opslag på Instagram har Rasmus Wallbridge forholdt sig tavs den seneste uge. Tirsdag aften mødte han publikum til test-show i Hanstholm. Tirsdag aften har Danmarks mest omtalte komiker lige nu, Rasmus Wallbridge, testet sit kommende show i Hanstholm. Og her blev Wallbridge allerede mødt af stående klapsalver, da han trådte ind ",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "rasmus-wallbridge-hanstholm",
+      "why": "Rasmus Wallbridge dukkede op til testshow i Hanstholm efter en uge uden kommentarer og fik stående klapsalver. Historien er central for samtalen om dansk komik, publikumsreaktioner og hvordan offentligheden håndterer kontroversielle profiler.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Filmtaget kaster lange skygger over kulturstøtten",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/filmtaget-kaster-lange-skygger-over-kulturstotten/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
       "format": "longread",
       "section": "Kultur",
       "group": "Danmark og kultur",
-      "story_id": "museums-contributors-not-visitors",
-      "why": "Case-baseret argument for, at museer bør fokusere på bidragydere frem for rå besøgstal; nyttig for kulturledelse og DFI/museumspolitik-diskussioner i Danmark. Mads får operationel kulturstrategi, ikke blot kritik.",
-      "reading_minutes": "9"
+      "story_id": "filmtaget-kulturstoette",
+      "why": "Et længere essay om hvordan filmbranchen og beslutninger omkring 'filmtaget' påvirker kulturstøtten — relevant for forståelsen af dansk kulturpolitik, produktionsøkonomi og hvad der prioriteres i støtteordningerne.",
+      "reading_minutes": "5"
     },
     {
-      "title": "Silver Pines is a great survival horror throwback with an unexpected Metroidvania twist, but it makes me glad the genre's moved on",
-      "source": "Eurogamer",
-      "url": "https://www.eurogamer.net/silver-pines-now-playing",
-      "summary": " It's those bloody typewriters all over again. Developer Wych Elm Games' Silver Pines is fantastic in a whole bunch of ways, from its woozy small-town ambience to its mix of taut survival horror and exploratory Metroidvania. But from the very first moment I saw its save system, its please-insert-coin phone box demands, I knew our relationship was going to be a fractious one. Read more",
+      "title": "Nordisk Film skruer op for arthouse",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/nordisk-film-skruer-op-for-arthouse/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
+      "format": "short",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "nordisk-film-arthouse",
+      "why": "Nordisk Film ændrer strategi til at støtte flere arthouse-film — en konkret brancheændring med potentiale til at forme dansk filmproduktion, distribution og festivaldeltagelse i de kommende år.",
+      "reading_minutes": "3"
+    },
+    {
+      "title": "Buster er død, Radar længe leve",
+      "source": "www.ekkofilm.dk",
+      "url": "https://www.ekkofilm.dk/artikler/buster-er-dod-radar-laenge-leve/",
+      "summary": "Filmmagasinet Ekko er et magasin om film og medier. Det er anmeldelser, essays, analyser og baggrund, store interviews med hjemlige såvel som internationale filmikoner – skrevet af danske og internationale kritikere, filmfolk, journalister og kulturpersonligheder.",
       "format": "longread",
-      "section": "Kultur & Gaming",
+      "section": "Kultur",
+      "group": "Danmark og kultur",
+      "story_id": "buster-dod-radar",
+      "why": "Et dybdegående stykke om ændringer i danske filmtildelinger og festivaløkosystemet — langt og analytisk, nyttigt for Mads' overblik over kulturinstitutioners omstilling og publikumsøkonomi.",
+      "reading_minutes": "6"
+    },
+    {
+      "title": "Nearly all Americans believe corruption is a problem. But will it decide the midterm elections?",
+      "source": "The Conversation",
+      "url": "https://theconversation.com/nearly-all-americans-believe-corruption-is-a-problem-but-will-it-decide-the-midterm-elections-295075",
+      "summary": "The vast majority of Americans believe government corruption is widespread – both Democrats and Republicans. Politicians have taken notice. Share article Print article In a politically polarised American electorate, it can be hard to find bipartisan consensus on many issues. Ahead of the US midterm elections, however, there is one thing almost everyone can agree on: concern about government corruption.",
+      "format": "longread",
+      "section": "Verden",
       "group": "Fordybelse",
-      "story_id": "silver-pines-review",
-      "why": "Spilanmeldelse der diskuterer genreudvikling, designvalg og nostalgiske elementer i survival-horror/Metroidvania. Mads får kultur- og spilperspektiv, nyttigt for forståelse af spil som kulturform og digital fortælling.",
+      "story_id": "us-corruption-midterms",
+      "why": "Længere gennemgang af korruptionsbekymringens rolle i amerikansk politik før midtvejsvalget. God baggrund for at forstå amerikanske politiske strømninger, som kan påvirke håndteringen af transatlantiske spørgsmål relevant for Danmark.",
       "reading_minutes": "5"
+    },
+    {
+      "title": "Graduates are managing AI - but are they learning much else?",
+      "source": "BBC Technology",
+      "url": "https://www.bbc.co.uk/news/articles/c820vz6wyp65o?at_medium=RSS&at_campaign=rss",
+      "summary": "Graduates are spending more time managing AI, but are they missing out on other work experience? Managing AI agents is a big part of Lotte Underwood's job Recent university graduate Lotte Underwood is a public relations executive with a twist - she spends more time using AI than actually doing PR. Underwood, 25, joined London-based PR agency Fight or Flight in November last year, in the new role of \"AI associate\" after completing a degree and then a masters in marketing.",
+      "format": "short",
+      "section": "Verden",
+      "group": "Fordybelse",
+      "story_id": "graduates-managing-ai",
+      "why": "Undersøger hvordan nye dimittender primært arbejder som AI-managers og mister bredere læringserfaringer — relevant for dansk arbejdsmarked, uddannelsespolitik og diskussionen om fremtidens kompetencer.",
+      "reading_minutes": "2"
+    },
+    {
+      "title": "Canada joins coalition refusing to play ice hockey against Russia over Ukraine war",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/04/canada-bans-russian-players-junior-ice-hockey-championships-ukraine-war",
+      "summary": "Growing number of countries are resisting Russia’s reintegration into international hockey after a sports court lifted a ban on competitionCanada has joined a coalition of countries refusing to play ⁠ice ​hockey teams from Russia, with prime minister Mark Carney saying Russian skaters will not be able to compete in ⁠a world junior championship next month due to the war in Ukraine.“While Russia and Belarus are supporting this illegal, unjustified, horrific ‌war in Ukraine, as long as that’s going",
+      "format": "short",
+      "section": "Verden",
+      "group": "Teknologi og verden",
+      "story_id": "canada-hockey-russia-ukraine",
+      "why": "Canada og andre lande nægter at spille russiske hold i juniorhockey over krigen i Ukraine — et kulturelt-sportsligt prespunkt med diplomatiske signaler, som kan påvirke Europas holdning til russisk reintegration i internationale fora.",
+      "reading_minutes": "2"
     }
   ],
   "report": {
     "editor_note": "Ingen feedback den seneste uge endnu. Avisen følger den faste redaktionelle profil.",
     "editorial_mix": {
       "planned": {
-        "dansk_politik": 3,
-        "verden": 7,
-        "teknologi": 5,
-        "fordybelse": 3,
-        "kultur": 2
+        "teknologi": 14,
+        "dansk_politik": 1,
+        "kultur": 4,
+        "fordybelse": 2
       },
       "actual": {
-        "dansk_politik": 2,
-        "verden": 5,
-        "teknologi": 4,
-        "fordybelse": 3,
-        "kultur": 2
+        "teknologi": 11,
+        "kultur": 4,
+        "fordybelse": 2
       },
       "warnings": [
-        "Færre historier om dansk politik og samfund end planlagt (2 af 3).",
-        "Færre historier om verden og sikkerhed end planlagt (5 af 7).",
-        "Færre historier om teknologi end planlagt (4 af 5).",
-        "Færre longreads end planlagt (10 af 13)."
+        "Færre historier om teknologi end planlagt (11 af 14).",
+        "Færre historier om dansk politik og samfund end planlagt (0 af 1).",
+        "Færre longreads end planlagt (5 af 8)."
       ]
     },
     "collection": {
-      "rss_candidates": 236,
-      "web_candidates": 15,
+      "rss_candidates": 255,
+      "web_candidates": 21,
       "total_candidates": 75,
-      "repeats_dropped": 2,
+      "repeats_dropped": 8,
       "previews_enriched": 21,
       "preview_budget_stopped": false,
       "readability_preflight": {
@@ -232,8 +240,8 @@
       }
     },
     "extraction": {
-      "approved": 20,
-      "prepared": 16,
+      "approved": 21,
+      "prepared": 17,
       "dropped_unreadable": 0,
       "dropped_diversity": 4,
       "budget_exhausted": false
@@ -249,7 +257,7 @@
       },
       "BBC World": {
         "status": "ok",
-        "items": 36
+        "items": 32
       },
       "BBC Technology": {
         "status": "ok",
@@ -373,7 +381,7 @@
       },
       "The Verge": {
         "status": "ok",
-        "items": 1
+        "items": 8
       },
       "VGC": {
         "status": "ok",
@@ -381,7 +389,7 @@
       },
       "OpenAI websøgning": {
         "status": "ok",
-        "items": 9
+        "items": 13
       }
     }
   }
